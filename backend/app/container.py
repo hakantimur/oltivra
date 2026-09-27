@@ -223,6 +223,12 @@ class Container:
         return MatchmakingService(self)
 
     @cached_property
+    def survival_refill(self):
+        from app.survival.refill import SurvivalRefill
+
+        return SurvivalRefill(self)
+
+    @cached_property
     def settlement(self):
         from app.settlement.service import SettlementService
 

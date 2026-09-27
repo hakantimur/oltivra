@@ -85,3 +85,34 @@ async def test_quick_match_root_round_trips_through_rtdb(stores):
     assert "is_bot" not in str(public)
     assert T0 < public["reveal_ends_at_ms"]
     await live.delete("live-02", path)
+
+
+async def test_survival_root_round_trips_through_rtdb(stores):
+    from app.matches import engine
+    from app.matches.model import Mode
+    from tests.engine_helpers import KEYS, answer, new_match
+
+    _, live = stores
+    state, _ = new_match(Mode.SURVIVAL, humans=3, bots=1)
+    match_id = state["match_id"] = f"it-{uuid.uuid4().hex[:8]}"
+    path = f"matches/{match_id}"
+    await live.transaction("live-03", path, lambda cur: (engine.project(state, KEYS), None))
+
+    def play(cur):
+        auth = cur["authoritative"]
+        start = auth["round"]["starts_at_ms"]
+        engine.resolve_due(auth, KEYS, start, "TEST")
+        answer(auth, "u0", True, start + 400)
+        answer(auth, "u1", False, start + 600)
+        engine.resolve_due(auth, KEYS, auth["round"]["ends_at_ms"] + engine.GRACE_MS, "TEST")
+        return engine.project(auth, KEYS), auth["state"]
+
+    assert await live.transaction("live-03", path, play) == "ROUND_RESOLVE"
+
+    def advance(cur):
+        auth = cur["authoritative"]
+        engine.resolve_due(auth, KEYS, auth["round"]["reveal_ends_at_ms"], "TEST")
+        return engine.project(auth, KEYS), auth["state"]
+
+    assert await live.transaction("live-03", path, advance) in ("ROUND_LOADING", "FINISHED_PENDING_SETTLEMENT")
+    await live.delete("live-03", path)
