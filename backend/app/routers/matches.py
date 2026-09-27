@@ -12,6 +12,11 @@ from app.common.idempotency import resolve_key
 from app.container import Container
 from app.matches.model import Mode
 from app.moderation.question_reports import QuestionReportReason
+from app.moderation.risk import RiskSignal, watch
+
+# Stale/forged answer submissions and answer flooding feed the risk score (spec §28.4).
+MALFORMED_ANSWER = {ErrorCode.RATE_LIMITED, ErrorCode.INVALID_OPTION, ErrorCode.ROUND_EXPIRED,
+                    ErrorCode.ROUND_NOT_ACTIVE, ErrorCode.NOT_MATCH_PARTICIPANT}
 
 router = APIRouter(prefix="/v1")
 
@@ -51,7 +56,8 @@ def _mode(mode: str) -> Mode:
 async def join_queue(mode: str, body: JoinRequest, request: Request, caller: Caller = Depends(player),
                      c: Container = Depends(get_container)) -> dict:
     queue_mode = _mode(mode)
-    await c.rate_limiter.hit(rate_limit.QUEUE_JOIN, caller.uid)
+    async with watch(c, caller.uid, RiskSignal.QUEUE_MANIPULATION, codes={ErrorCode.RATE_LIMITED}):
+        await c.rate_limiter.hit(rate_limit.QUEUE_JOIN, caller.uid)
 
     async def handler() -> dict:
         return await c.matchmaking.join(caller.uid, caller.user, queue_mode, body.median_rtt_ms, body.request_id)
@@ -63,7 +69,8 @@ async def join_queue(mode: str, body: JoinRequest, request: Request, caller: Cal
 async def leave_queue(mode: str, body: MutationBody, request: Request, caller: Caller = Depends(player),
                       c: Container = Depends(get_container)) -> dict:
     queue_mode = _mode(mode)
-    await c.rate_limiter.hit(rate_limit.QUEUE_LEAVE, caller.uid)
+    async with watch(c, caller.uid, RiskSignal.QUEUE_MANIPULATION, codes={ErrorCode.RATE_LIMITED}):
+        await c.rate_limiter.hit(rate_limit.QUEUE_LEAVE, caller.uid)
 
     async def handler() -> dict:
         return await c.matchmaking.leave(caller.uid, queue_mode)
@@ -89,10 +96,12 @@ async def answer(match_id: str, body: AnswerRequest, request: Request, caller: C
     # Server receipt time is recorded first; nothing the client sends affects ordering (spec §22.3).
     received_at = c.clock.now_ms()
     request_id = resolve_key(request.headers.get("x-idempotency-key"), body.request_id)
-    await c.rate_limiter.hit(rate_limit.ANSWER, caller.uid)
-    # Idempotency lives in the canonical match transaction (the stored answer is the replay record).
-    return await c.matches.answer(caller.uid, match_id, body.round_id, body.option_id, request_id, received_at,
-                                  body.rtdb_shard_id)
+    async with watch(c, caller.uid, RiskSignal.MALFORMED_REQUEST, codes=MALFORMED_ANSWER,
+                     evidence={"match_id": match_id}):
+        await c.rate_limiter.hit(rate_limit.ANSWER, caller.uid)
+        # Idempotency lives in the canonical match transaction (the stored answer is the replay record).
+        return await c.matches.answer(caller.uid, match_id, body.round_id, body.option_id, request_id, received_at,
+                                      body.rtdb_shard_id)
 
 
 @router.post("/matches/{match_id}/sync")

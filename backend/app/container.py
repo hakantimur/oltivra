@@ -220,6 +220,18 @@ class Container:
         return SafetyService(self.store, self.clock)
 
     @cached_property
+    def sanctions(self):
+        from app.moderation.sanctions import SanctionService
+
+        return SanctionService(self)
+
+    @cached_property
+    def risk(self):
+        from app.moderation.risk import RiskService
+
+        return RiskService(self)
+
+    @cached_property
     def deletion(self):
         from app.accounts.deletion import DeletionService
 

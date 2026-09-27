@@ -18,6 +18,7 @@ from app.common.store.docstore import Query
 from app.matches.factory import ROSTER_SIZE, HumanSeat, PreparedMatch
 from app.matches.model import Mode
 from app.moderation.safety import SafetyService
+from app.moderation.sanctions import ensure_can_play
 from app.questions.selector import InsufficientInventory
 
 log = logging.getLogger("oltivra.matchmaking")
@@ -56,6 +57,7 @@ class MatchmakingService:
         if language not in config.features.competitive_languages:
             raise ApiError(ErrorCode.FEATURE_DISABLED, detail={"feature": "question_language", "language": language})
         now = c.clock.now_ms()
+        ensure_can_play(user, now)
         fill_ms = config.quick.bot_fill_ms if mode == Mode.QUICK else config.survival.bot_fill_ms
         ticket = {
             "schema_version": 1,

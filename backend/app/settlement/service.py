@@ -139,6 +139,12 @@ class SettlementService:
         shown = [int(q) for q in state.get("shown_qids") or []]
         hooks = getattr(c, "progression", None)
         config = await c.config.get()
+        from app.moderation.risk import match_signals
+
+        uid_by_pid = {pid: p["uid"] for pid, p in humans(state).items()}
+        risk = {uid: [[signal.value, evidence] for signal, evidence in found]
+                for uid, found in match_signals(state, uid_by_pid, config.moderation.risk_fast_correct_ms,
+                                                config.moderation.risk_fast_correct_min_rounds).items()}
 
         def txn_fn(txn) -> dict[str, Any]:
             ledger = txn.get(ledger_path(match_id)) or {}
@@ -167,7 +173,7 @@ class SettlementService:
                     txn.set(runtime_path(uid), transition(runtime, RuntimeState.IDLE, now))
             done = {**ledger, "schema_version": 1, "match_id": match_id, "rtdb_shard_id": shard_id,
                     "status": final_status, "idempotency_key": f"settlement:{match_id}",
-                    "participant_results": results, "completed_at_ms": now,
+                    "participant_results": results, "completed_at_ms": now, "risk_signals": risk,
                     "deletion_uids": [u for u, d in zip(human_uids, runtimes, strict=True)
                                       if d and d.get("deletion_requested")]}
             txn.set(ledger_path(match_id), done)
@@ -229,6 +235,13 @@ class SettlementService:
         if hooks and ledger["status"] == "SETTLED":
             await hooks.after_commit(match_id)
             await self._notify_league_changes(ledger)
+        if ledger.get("risk_signals") and not ledger.get("risk_recorded"):
+            from app.moderation.risk import RiskSignal
+
+            for uid, found in ledger["risk_signals"].items():
+                for signal, evidence in found:
+                    await c.risk.record(uid, RiskSignal(signal), evidence=evidence)
+            await c.store.update(ledger_path(ledger["match_id"]), {"risk_recorded": True})
         for uid in ledger.get("deletion_uids") or []:
             await c.deletion.complete(uid)
 

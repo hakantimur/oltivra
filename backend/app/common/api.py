@@ -42,7 +42,10 @@ async def authenticated(request: Request, c: Container = Depends(get_container))
     if not header.startswith("Bearer "):
         raise ApiError(ErrorCode.UNAUTHENTICATED)
     token = await c.token_verifier.verify(header.removeprefix("Bearer ").strip())
-    await c.app_check.verify(request.headers.get("x-firebase-appcheck"))
+    from app.moderation.risk import RiskSignal, watch
+
+    async with watch(c, token.uid, RiskSignal.APP_CHECK_FAILURE, codes={ErrorCode.APP_CHECK_FAILED}):
+        await c.app_check.verify(request.headers.get("x-firebase-appcheck"))
     return Caller(token.uid, token)
 
 

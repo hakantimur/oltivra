@@ -14,6 +14,7 @@ from app.common.clock import iso_week_id, ms_to_datetime
 from app.common.ids import sha256_hex
 from app.matches.model import Mode, humans, participants
 from app.missions.service import apply_metrics, generate, mission_path, period_ids
+from app.moderation.sanctions import ranked_restricted
 from app.profiles.service import user_path
 from app.progression.xp import completed_survival_rounds, quick_base_xp, survival_base_xp
 from app.questions.stats import StatIntent
@@ -126,6 +127,8 @@ class ProgressionHooks:
         deltas = self._mmr_deltas(state, results, prepared["users"], ranked_cfg) if ranked else {}
         for uid, extra in prepared["by_uid"].items():
             user = dict(prepared["users"][uid])
+            # A ranked-restricted player still plays, but the result never moves their rating (spec §28.4).
+            user_ranked = ranked and not ranked_restricted(user, now)
             result = results[uid]
             pid = result["pid"]
             participant = participants(state)[pid]
@@ -146,7 +149,7 @@ class ProgressionHooks:
             if mode == Mode.QUICK and won:
                 user["quick_wins_lifetime"] = int(user.get("quick_wins_lifetime", 0)) + 1
             delta = 0
-            if ranked:
+            if user_ranked:
                 delta = deltas.get(uid, 0)
                 user["mmr"] = int(user.get("mmr", 1000)) + delta
                 user["ranked_matches_completed"] = int(user.get("ranked_matches_completed", 0)) + 1
@@ -190,8 +193,8 @@ class ProgressionHooks:
                 "quick_played": int(mode == Mode.QUICK), "survival_played": int(mode == Mode.SURVIVAL),
                 "quick_question_wins": int(participant.get("wins", 0)) if mode == Mode.QUICK else 0,
                 "quick_points": max(int(participant.get("score", 0)), 0) if mode == Mode.QUICK else 0,
-                "quick_ranked_wins": int(ranked and mode == Mode.QUICK and won),
-                "survival_ranked_top3": int(ranked and mode == Mode.SURVIVAL and place is not None and place <= 3
+                "quick_ranked_wins": int(user_ranked and mode == Mode.QUICK and won),
+                "survival_ranked_top3": int(user_ranked and mode == Mode.SURVIVAL and place is not None and place <= 3
                                             and not left),
                 "survival_rounds": rounds,
             }
@@ -217,7 +220,7 @@ class ProgressionHooks:
                 "progression_sequence") if k in user}
             txn.update(user_path(uid), fields)
             txn.set(f"public_profiles/{user['public_id']}", c.profiles.public_profile(user))
-            if ranked:
+            if user_ranked:
                 weekly = dict(extra["weekly"] or {"schema_version": 1, "uid": uid, "week_id": prepared["week"],
                                                   "ranked_weekly_xp": 0, "quick_ranked_wins": 0,
                                                   "survival_ranked_crowns": 0,
