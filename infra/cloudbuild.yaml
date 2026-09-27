@@ -14,12 +14,12 @@ steps:
     args: ["-c", "pip install -q -e '.[dev]' && ruff check app tests && pytest -q"]
 
   - id: rules-tests
-    name: node:22-bookworm
+    name: node:22-trixie
     entrypoint: bash
     args:
       - -c
       - |
-        apt-get update -qq && apt-get install -y -qq openjdk-17-jre-headless >/dev/null
+        apt-get update -qq && apt-get install -y -qq openjdk-21-jre-headless >/dev/null
         cd firebase/tests && npm ci
         cd ../.. && npx -y firebase-tools@15 emulators:exec --project demo-oltivra \
           --only firestore,database,storage "cd firebase/tests && npm test"
@@ -33,7 +33,7 @@ steps:
     args: ["push", "${_REGION}-docker.pkg.dev/$PROJECT_ID/${_AR_REPO}/${_SERVICE}:$SHORT_SHA"]
 
   - id: deploy-rules
-    name: node:22-bookworm
+    name: node:22-trixie
     entrypoint: bash
     args: ["-c", "npx -y firebase-tools@15 deploy --project $PROJECT_ID --only firestore,database,storage --non-interactive"]
 

@@ -1,8 +1,8 @@
 # Firebase Emulator Suite image (Java is not required on the host).
-FROM node:22-bookworm-slim
+FROM node:22-trixie-slim
 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends openjdk-17-jre-headless curl \
+    && apt-get install -y --no-install-recommends openjdk-21-jre-headless curl \
     && rm -rf /var/lib/apt/lists/*
 
 RUN npm install -g firebase-tools@15 \
