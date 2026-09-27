@@ -25378,5 +25378,3605 @@
   ],
   "correct": "himanshu_rai",
   "source": "https://en.wikipedia.org/wiki/Himanshu_Rai"
+ },
+ {
+  "key": "movies_tv_q0701",
+  "category_id": "movies_tv",
+  "subcategory_id": "characters_franchises",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the name of the fairy who helps Peter Pan?",
+   "tr": "Peter Pan'e yardım eden perinin adı nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "tinker_bell",
+    "en": "Tinker Bell",
+    "tr": "Tinker Bell"
+   },
+   {
+    "concept_id": "wendy",
+    "en": "Wendy",
+    "tr": "Wendy"
+   },
+   {
+    "concept_id": "tiger_lily",
+    "en": "Tiger Lily",
+    "tr": "Tiger Lily"
+   },
+   {
+    "concept_id": "fauna",
+    "en": "Fauna",
+    "tr": "Fauna"
+   }
+  ],
+  "correct": "tinker_bell",
+  "source": "https://en.wikipedia.org/wiki/Tinker_Bell"
+ },
+ {
+  "key": "movies_tv_q0702",
+  "category_id": "movies_tv",
+  "subcategory_id": "characters_franchises",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In The Lion King, what kind of animal is Pumbaa?",
+   "tr": "Aslan Kral'da Pumbaa nasıl bir hayvandır?"
+  },
+  "options": [
+   {
+    "concept_id": "a_warthog",
+    "en": "A warthog",
+    "tr": "Yaban domuzu"
+   },
+   {
+    "concept_id": "a_hippo",
+    "en": "A hippo",
+    "tr": "Su aygırı"
+   },
+   {
+    "concept_id": "a_hyena",
+    "en": "A hyena",
+    "tr": "Sırtlan"
+   },
+   {
+    "concept_id": "a_meerkat",
+    "en": "A meerkat",
+    "tr": "Mirket"
+   }
+  ],
+  "correct": "a_warthog",
+  "source": "https://en.wikipedia.org/wiki/Timon_and_Pumbaa"
+ },
+ {
+  "key": "movies_tv_q0703",
+  "category_id": "movies_tv",
+  "subcategory_id": "characters_franchises",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "At Hogwarts, a new student puts on the Sorting Hat. What does it do?",
+   "tr": "Hogwarts'ta yeni bir öğrenci Seçmen Şapka'yı takar. Şapka ne yapar?"
+  },
+  "options": [
+   {
+    "concept_id": "chooses_their_house",
+    "en": "Chooses their house",
+    "tr": "Binasını seçer"
+   },
+   {
+    "concept_id": "gives_them_a_wand",
+    "en": "Gives them a wand",
+    "tr": "Asa verir"
+   },
+   {
+    "concept_id": "reads_their_future",
+    "en": "Reads their future",
+    "tr": "Geleceğini okur"
+   },
+   {
+    "concept_id": "makes_them_invisible",
+    "en": "Makes them invisible",
+    "tr": "Görünmez yapar"
+   }
+  ],
+  "correct": "chooses_their_house",
+  "source": "https://en.wikipedia.org/wiki/Magical_objects_in_Harry_Potter"
+ },
+ {
+  "key": "movies_tv_q0704",
+  "category_id": "movies_tv",
+  "subcategory_id": "characters_franchises",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these is NOT the name of a Teenage Mutant Ninja Turtle?",
+   "tr": "Bunlardan hangisi bir Ninja Kaplumbağa'nın adı DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "picasso",
+    "en": "Picasso",
+    "tr": "Picasso"
+   },
+   {
+    "concept_id": "donatello",
+    "en": "Donatello",
+    "tr": "Donatello"
+   },
+   {
+    "concept_id": "raphael",
+    "en": "Raphael",
+    "tr": "Raphael"
+   },
+   {
+    "concept_id": "leonardo",
+    "en": "Leonardo",
+    "tr": "Leonardo"
+   }
+  ],
+  "correct": "picasso",
+  "source": "https://en.wikipedia.org/wiki/Teenage_Mutant_Ninja_Turtles"
+ },
+ {
+  "key": "movies_tv_q0705",
+  "category_id": "movies_tv",
+  "subcategory_id": "characters_franchises",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Disney film came out first: Frozen or Moana?",
+   "tr": "Hangi Disney filmi önce çıktı: Karlar Ülkesi mi, Moana mı?"
+  },
+  "options": [
+   {
+    "concept_id": "the_arendelle_one",
+    "en": "The Arendelle one",
+    "tr": "Arendelle'de geçen"
+   },
+   {
+    "concept_id": "the_pacific_island_one",
+    "en": "The Pacific island one",
+    "tr": "Pasifik adasında geçen"
+   },
+   {
+    "concept_id": "same_year",
+    "en": "Same year",
+    "tr": "Aynı yıl"
+   },
+   {
+    "concept_id": "neither_is_by_disney",
+    "en": "Neither is by Disney",
+    "tr": "İkisi de Disney değil"
+   }
+  ],
+  "correct": "the_arendelle_one",
+  "source": "https://en.wikipedia.org/wiki/Frozen_(2013_film)"
+ },
+ {
+  "key": "movies_tv_q0706",
+  "category_id": "movies_tv",
+  "subcategory_id": "characters_franchises",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many dwarves join Bilbo on his journey in The Hobbit?",
+   "tr": "Hobbit'te Bilbo'nun yolculuğuna kaç cüce katılır?"
+  },
+  "options": [
+   {
+    "concept_id": "n_13",
+    "en": "13",
+    "tr": "13"
+   },
+   {
+    "concept_id": "n_7",
+    "en": "7",
+    "tr": "7"
+   },
+   {
+    "concept_id": "n_9",
+    "en": "9",
+    "tr": "9"
+   },
+   {
+    "concept_id": "n_12",
+    "en": "12",
+    "tr": "12"
+   }
+  ],
+  "correct": "n_13",
+  "source": "https://en.wikipedia.org/wiki/The_Hobbit"
+ },
+ {
+  "key": "movies_tv_q0707",
+  "category_id": "movies_tv",
+  "subcategory_id": "directors",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who directed Black Panther (2018)?",
+   "tr": "Black Panther'i (2018) kim yönetti?"
+  },
+  "options": [
+   {
+    "concept_id": "ryan_coogler",
+    "en": "Ryan Coogler",
+    "tr": "Ryan Coogler"
+   },
+   {
+    "concept_id": "jordan_peele",
+    "en": "Jordan Peele",
+    "tr": "Jordan Peele"
+   },
+   {
+    "concept_id": "spike_lee",
+    "en": "Spike Lee",
+    "tr": "Spike Lee"
+   },
+   {
+    "concept_id": "barry_jenkins",
+    "en": "Barry Jenkins",
+    "tr": "Barry Jenkins"
+   }
+  ],
+  "correct": "ryan_coogler",
+  "source": "https://en.wikipedia.org/wiki/Ryan_Coogler"
+ },
+ {
+  "key": "movies_tv_q0708",
+  "category_id": "movies_tv",
+  "subcategory_id": "directors",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is a version of a film edited the way its director wanted called?",
+   "tr": "Bir filmin yönetmeninin istediği gibi kurgulanmış versiyonuna ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "the_director_s_cut",
+    "en": "The director's cut",
+    "tr": "Yönetmen versiyonu (director's cut)"
+   },
+   {
+    "concept_id": "the_final_draft",
+    "en": "The final draft",
+    "tr": "Son taslak"
+   },
+   {
+    "concept_id": "the_rough_mix",
+    "en": "The rough mix",
+    "tr": "Kaba miks"
+   },
+   {
+    "concept_id": "the_studio_edition",
+    "en": "The studio edition",
+    "tr": "Stüdyo baskısı"
+   }
+  ],
+  "correct": "the_director_s_cut",
+  "source": "https://en.wikipedia.org/wiki/Director's_cut"
+ },
+ {
+  "key": "movies_tv_q0709",
+  "category_id": "movies_tv",
+  "subcategory_id": "directors",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Iron Man (2008) and The Lion King (2019) were directed by whom?",
+   "tr": "Demir Adam (2008) ve Aslan Kral'ı (2019) kim yönetti?"
+  },
+  "options": [
+   {
+    "concept_id": "jon_favreau",
+    "en": "Jon Favreau",
+    "tr": "Jon Favreau"
+   },
+   {
+    "concept_id": "jon_watts",
+    "en": "Jon Watts",
+    "tr": "Jon Watts"
+   },
+   {
+    "concept_id": "joss_whedon",
+    "en": "Joss Whedon",
+    "tr": "Joss Whedon"
+   },
+   {
+    "concept_id": "james_gunn",
+    "en": "James Gunn",
+    "tr": "James Gunn"
+   }
+  ],
+  "correct": "jon_favreau",
+  "source": "https://en.wikipedia.org/wiki/Jon_Favreau"
+ },
+ {
+  "key": "movies_tv_q0710",
+  "category_id": "movies_tv",
+  "subcategory_id": "directors",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Saw, The Conjuring and Aquaman were all directed by whom?",
+   "tr": "Testere, Korku Seansı ve Aquaman'ı kim yönetti?"
+  },
+  "options": [
+   {
+    "concept_id": "james_wan",
+    "en": "James Wan",
+    "tr": "James Wan"
+   },
+   {
+    "concept_id": "wes_craven",
+    "en": "Wes Craven",
+    "tr": "Wes Craven"
+   },
+   {
+    "concept_id": "jordan_peele",
+    "en": "Jordan Peele",
+    "tr": "Jordan Peele"
+   },
+   {
+    "concept_id": "guillermo_del_toro",
+    "en": "Guillermo del Toro",
+    "tr": "Guillermo del Toro"
+   }
+  ],
+  "correct": "james_wan",
+  "source": "https://en.wikipedia.org/wiki/James_Wan"
+ },
+ {
+  "key": "movies_tv_q0711",
+  "category_id": "movies_tv",
+  "subcategory_id": "directors",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who is older: Steven Spielberg or George Lucas?",
+   "tr": "Kim daha yaşlıdır: Steven Spielberg mi, George Lucas mı?"
+  },
+  "options": [
+   {
+    "concept_id": "the_star_wars_creator",
+    "en": "The Star Wars creator",
+    "tr": "Star Wars'un yaratıcısı"
+   },
+   {
+    "concept_id": "the_jaws_director",
+    "en": "The Jaws director",
+    "tr": "Jaws'un yönetmeni"
+   },
+   {
+    "concept_id": "they_are_twins",
+    "en": "They are twins",
+    "tr": "İkizler"
+   },
+   {
+    "concept_id": "exactly_the_same_age",
+    "en": "Exactly the same age",
+    "tr": "Tam olarak aynı yaşta"
+   }
+  ],
+  "correct": "the_star_wars_creator",
+  "source": "https://en.wikipedia.org/wiki/George_Lucas"
+ },
+ {
+  "key": "movies_tv_q0712",
+  "category_id": "movies_tv",
+  "subcategory_id": "directors",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many Batman films are in Christopher Nolan's Dark Knight trilogy?",
+   "tr": "Christopher Nolan'ın Kara Şövalye üçlemesinde kaç Batman filmi vardır?"
+  },
+  "options": [
+   {
+    "concept_id": "n_3",
+    "en": "3",
+    "tr": "3"
+   },
+   {
+    "concept_id": "n_2",
+    "en": "2",
+    "tr": "2"
+   },
+   {
+    "concept_id": "n_4",
+    "en": "4",
+    "tr": "4"
+   },
+   {
+    "concept_id": "n_5",
+    "en": "5",
+    "tr": "5"
+   }
+  ],
+  "correct": "n_3",
+  "source": "https://en.wikipedia.org/wiki/The_Dark_Knight_Trilogy"
+ },
+ {
+  "key": "movies_tv_q0713",
+  "category_id": "movies_tv",
+  "subcategory_id": "tv_streaming",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Netflix series sends the Addams family's gloomy daughter to Nevermore Academy?",
+   "tr": "Hangi Netflix dizisi Addams ailesinin somurtkan kızını Nevermore Akademisi'ne gönderir?"
+  },
+  "options": [
+   {
+    "concept_id": "wednesday",
+    "en": "Wednesday",
+    "tr": "Wednesday"
+   },
+   {
+    "concept_id": "sabrina",
+    "en": "Sabrina",
+    "tr": "Sabrina"
+   },
+   {
+    "concept_id": "riverdale",
+    "en": "Riverdale",
+    "tr": "Riverdale"
+   },
+   {
+    "concept_id": "locke_key",
+    "en": "Locke & Key",
+    "tr": "Locke & Key"
+   }
+  ],
+  "correct": "wednesday",
+  "source": "https://en.wikipedia.org/wiki/Wednesday_(TV_series)"
+ },
+ {
+  "key": "movies_tv_q0714",
+  "category_id": "movies_tv",
+  "subcategory_id": "tv_streaming",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these is NOT one of Homer and Marge Simpson's children?",
+   "tr": "Bunlardan hangisi Homer ve Marge Simpson'ın çocuklarından biri DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "milhouse",
+    "en": "Milhouse",
+    "tr": "Milhouse"
+   },
+   {
+    "concept_id": "bart",
+    "en": "Bart",
+    "tr": "Bart"
+   },
+   {
+    "concept_id": "lisa",
+    "en": "Lisa",
+    "tr": "Lisa"
+   },
+   {
+    "concept_id": "maggie",
+    "en": "Maggie",
+    "tr": "Maggie"
+   }
+  ],
+  "correct": "milhouse",
+  "source": "https://en.wikipedia.org/wiki/Simpson_family"
+ },
+ {
+  "key": "movies_tv_q0715",
+  "category_id": "movies_tv",
+  "subcategory_id": "tv_streaming",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the recorded laughter added to many sitcoms called?",
+   "tr": "Birçok sitkoma eklenen kayıtlı kahkahaya ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "a_laugh_track",
+    "en": "A laugh track",
+    "tr": "Kahkaha efekti (laugh track)"
+   },
+   {
+    "concept_id": "a_gag_reel",
+    "en": "A gag reel",
+    "tr": "Gaf derlemesi"
+   },
+   {
+    "concept_id": "a_punchline",
+    "en": "A punchline",
+    "tr": "Espri sonu"
+   },
+   {
+    "concept_id": "a_blooper",
+    "en": "A blooper",
+    "tr": "Hatalı çekim"
+   }
+  ],
+  "correct": "a_laugh_track",
+  "source": "https://en.wikipedia.org/wiki/Laugh_track"
+ },
+ {
+  "key": "movies_tv_q0716",
+  "category_id": "movies_tv",
+  "subcategory_id": "tv_streaming",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which cartoon series started first: Looney Tunes or Tom and Jerry?",
+   "tr": "Hangi çizgi film serisi önce başladı: Looney Tunes mu, Tom ve Jerry mi?"
+  },
+  "options": [
+   {
+    "concept_id": "the_bugs_bunny_series",
+    "en": "The Bugs Bunny series",
+    "tr": "Bugs Bunny'nin serisi"
+   },
+   {
+    "concept_id": "the_cat_and_mouse_series",
+    "en": "The cat-and-mouse series",
+    "tr": "Kedi-fare serisi"
+   },
+   {
+    "concept_id": "same_year",
+    "en": "Same year",
+    "tr": "Aynı yıl"
+   },
+   {
+    "concept_id": "neither_is_a_cartoon",
+    "en": "Neither is a cartoon",
+    "tr": "İkisi de çizgi film değil"
+   }
+  ],
+  "correct": "the_bugs_bunny_series",
+  "source": "https://en.wikipedia.org/wiki/Looney_Tunes"
+ },
+ {
+  "key": "movies_tv_q0717",
+  "category_id": "movies_tv",
+  "subcategory_id": "tv_streaming",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Susam Sokağı, loved by Turkish children, is the local version of which show?",
+   "tr": "Türk çocuklarının sevdiği Susam Sokağı hangi programın yerel versiyonudur?"
+  },
+  "options": [
+   {
+    "concept_id": "sesame_street",
+    "en": "Sesame Street",
+    "tr": "Sesame Street"
+   },
+   {
+    "concept_id": "the_muppet_show",
+    "en": "The Muppet Show",
+    "tr": "The Muppet Show"
+   },
+   {
+    "concept_id": "teletubbies",
+    "en": "Teletubbies",
+    "tr": "Teletubbies"
+   },
+   {
+    "concept_id": "barney_friends",
+    "en": "Barney & Friends",
+    "tr": "Barney ve Arkadaşları"
+   }
+  ],
+  "correct": "sesame_street",
+  "source": "https://en.wikipedia.org/wiki/Susam_Sokağı"
+ },
+ {
+  "key": "movies_tv_q0718",
+  "category_id": "movies_tv",
+  "subcategory_id": "tv_streaming",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many Teletubbies are there?",
+   "tr": "Kaç tane Teletubby vardır?"
+  },
+  "options": [
+   {
+    "concept_id": "n_4",
+    "en": "4",
+    "tr": "4"
+   },
+   {
+    "concept_id": "n_3",
+    "en": "3",
+    "tr": "3"
+   },
+   {
+    "concept_id": "n_5",
+    "en": "5",
+    "tr": "5"
+   },
+   {
+    "concept_id": "n_6",
+    "en": "6",
+    "tr": "6"
+   }
+  ],
+  "correct": "n_4",
+  "source": "https://en.wikipedia.org/wiki/Teletubbies"
+ },
+ {
+  "key": "movies_tv_q0719",
+  "category_id": "movies_tv",
+  "subcategory_id": "global_films",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Chinese martial arts star led Hero (2002) and Fearless (2006)?",
+   "tr": "Kahraman (2002) ve Fearless (2006) filmlerinin başrolündeki Çinli dövüş sanatları yıldızı kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "jet_li",
+    "en": "Jet Li",
+    "tr": "Jet Li"
+   },
+   {
+    "concept_id": "jackie_chan",
+    "en": "Jackie Chan",
+    "tr": "Jackie Chan"
+   },
+   {
+    "concept_id": "donnie_yen",
+    "en": "Donnie Yen",
+    "tr": "Donnie Yen"
+   },
+   {
+    "concept_id": "chow_yun_fat",
+    "en": "Chow Yun-fat",
+    "tr": "Chow Yun-fat"
+   }
+  ],
+  "correct": "jet_li",
+  "source": "https://en.wikipedia.org/wiki/Jet_Li"
+ },
+ {
+  "key": "movies_tv_q0720",
+  "category_id": "movies_tv",
+  "subcategory_id": "global_films",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Italian classic Cinema Paradiso is set on which island?",
+   "tr": "İtalyan klasiği Cennet Sineması hangi adada geçer?"
+  },
+  "options": [
+   {
+    "concept_id": "sicily",
+    "en": "Sicily",
+    "tr": "Sicilya"
+   },
+   {
+    "concept_id": "sardinia",
+    "en": "Sardinia",
+    "tr": "Sardunya"
+   },
+   {
+    "concept_id": "capri",
+    "en": "Capri",
+    "tr": "Capri"
+   },
+   {
+    "concept_id": "corsica",
+    "en": "Corsica",
+    "tr": "Korsika"
+   }
+  ],
+  "correct": "sicily",
+  "source": "https://en.wikipedia.org/wiki/Cinema_Paradiso"
+ },
+ {
+  "key": "movies_tv_q0721",
+  "category_id": "movies_tv",
+  "subcategory_id": "global_films",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "A French film shows on Turkish TV with Turkish voices replacing the actors'. What is this called?",
+   "tr": "Bir Fransız filmi Türk televizyonunda oyuncuların sesleri yerine Türkçe seslerle yayınlanır. Buna ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "dubbing",
+    "en": "Dubbing",
+    "tr": "Dublaj"
+   },
+   {
+    "concept_id": "subtitling",
+    "en": "Subtitling",
+    "tr": "Altyazı"
+   },
+   {
+    "concept_id": "remaking",
+    "en": "Remaking",
+    "tr": "Yeniden çevrim"
+   },
+   {
+    "concept_id": "narrating",
+    "en": "Narrating",
+    "tr": "Anlatım"
+   }
+  ],
+  "correct": "dubbing",
+  "source": "https://en.wikipedia.org/wiki/Dubbing"
+ },
+ {
+  "key": "movies_tv_q0722",
+  "category_id": "movies_tv",
+  "subcategory_id": "global_films",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In which year did the very first Godzilla film roar into Japanese cinemas?",
+   "tr": "İlk Godzilla filmi Japon sinemalarına hangi yıl geldi?"
+  },
+  "options": [
+   {
+    "concept_id": "n_1954",
+    "en": "1954",
+    "tr": "1954"
+   },
+   {
+    "concept_id": "n_1933",
+    "en": "1933",
+    "tr": "1933"
+   },
+   {
+    "concept_id": "n_1968",
+    "en": "1968",
+    "tr": "1968"
+   },
+   {
+    "concept_id": "n_1977",
+    "en": "1977",
+    "tr": "1977"
+   }
+  ],
+  "correct": "n_1954",
+  "source": "https://en.wikipedia.org/wiki/Godzilla_(1954_film)"
+ },
+ {
+  "key": "movies_tv_q0723",
+  "category_id": "movies_tv",
+  "subcategory_id": "global_films",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which French actress played the shy waitress Amélie Poulain?",
+   "tr": "Utangaç garson Amélie Poulain'i hangi Fransız oyuncu canlandırdı?"
+  },
+  "options": [
+   {
+    "concept_id": "audrey_tautou",
+    "en": "Audrey Tautou",
+    "tr": "Audrey Tautou"
+   },
+   {
+    "concept_id": "marion_cotillard",
+    "en": "Marion Cotillard",
+    "tr": "Marion Cotillard"
+   },
+   {
+    "concept_id": "juliette_binoche",
+    "en": "Juliette Binoche",
+    "tr": "Juliette Binoche"
+   },
+   {
+    "concept_id": "lea_seydoux",
+    "en": "Léa Seydoux",
+    "tr": "Léa Seydoux"
+   }
+  ],
+  "correct": "audrey_tautou",
+  "source": "https://en.wikipedia.org/wiki/Audrey_Tautou"
+ },
+ {
+  "key": "movies_tv_q0724",
+  "category_id": "movies_tv",
+  "subcategory_id": "global_films",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which British actor played Jamal, the quiz-show hero of Slumdog Millionaire?",
+   "tr": "Milyoner'in yarışma kahramanı Jamal'i hangi İngiliz oyuncu canlandırdı?"
+  },
+  "options": [
+   {
+    "concept_id": "dev_patel",
+    "en": "Dev Patel",
+    "tr": "Dev Patel"
+   },
+   {
+    "concept_id": "riz_ahmed",
+    "en": "Riz Ahmed",
+    "tr": "Riz Ahmed"
+   },
+   {
+    "concept_id": "kunal_nayyar",
+    "en": "Kunal Nayyar",
+    "tr": "Kunal Nayyar"
+   },
+   {
+    "concept_id": "himesh_patel",
+    "en": "Himesh Patel",
+    "tr": "Himesh Patel"
+   }
+  ],
+  "correct": "dev_patel",
+  "source": "https://en.wikipedia.org/wiki/Dev_Patel"
+ },
+ {
+  "key": "movies_tv_q0725",
+  "category_id": "movies_tv",
+  "subcategory_id": "hollywood",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Sound of Music follows the von Trapp family in which country?",
+   "tr": "Neşeli Günler (The Sound of Music) von Trapp ailesini hangi ülkede anlatır?"
+  },
+  "options": [
+   {
+    "concept_id": "austria",
+    "en": "Austria",
+    "tr": "Avusturya"
+   },
+   {
+    "concept_id": "switzerland",
+    "en": "Switzerland",
+    "tr": "İsviçre"
+   },
+   {
+    "concept_id": "germany",
+    "en": "Germany",
+    "tr": "Almanya"
+   },
+   {
+    "concept_id": "czechoslovakia",
+    "en": "Czechoslovakia",
+    "tr": "Çekoslovakya"
+   }
+  ],
+  "correct": "austria",
+  "source": "https://en.wikipedia.org/wiki/The_Sound_of_Music_(film)"
+ },
+ {
+  "key": "movies_tv_q0726",
+  "category_id": "movies_tv",
+  "subcategory_id": "hollywood",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which actress played new girl Cady Heron in Mean Girls (2004)?",
+   "tr": "Kötü Kızlar'da (2004) okulun yeni kızı Cady Heron'ı kim oynadı?"
+  },
+  "options": [
+   {
+    "concept_id": "lindsay_lohan",
+    "en": "Lindsay Lohan",
+    "tr": "Lindsay Lohan"
+   },
+   {
+    "concept_id": "rachel_mcadams",
+    "en": "Rachel McAdams",
+    "tr": "Rachel McAdams"
+   },
+   {
+    "concept_id": "amanda_seyfried",
+    "en": "Amanda Seyfried",
+    "tr": "Amanda Seyfried"
+   },
+   {
+    "concept_id": "hilary_duff",
+    "en": "Hilary Duff",
+    "tr": "Hilary Duff"
+   }
+  ],
+  "correct": "lindsay_lohan",
+  "source": "https://en.wikipedia.org/wiki/Lindsay_Lohan"
+ },
+ {
+  "key": "movies_tv_q0727",
+  "category_id": "movies_tv",
+  "subcategory_id": "hollywood",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Saturday Night Fever, Grease and Pulp Fiction all starred which actor?",
+   "tr": "Saturday Night Fever, Grease ve Ucuz Roman'ın ortak yıldızı kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "john_travolta",
+    "en": "John Travolta",
+    "tr": "John Travolta"
+   },
+   {
+    "concept_id": "patrick_swayze",
+    "en": "Patrick Swayze",
+    "tr": "Patrick Swayze"
+   },
+   {
+    "concept_id": "richard_gere",
+    "en": "Richard Gere",
+    "tr": "Richard Gere"
+   },
+   {
+    "concept_id": "kevin_bacon",
+    "en": "Kevin Bacon",
+    "tr": "Kevin Bacon"
+   }
+  ],
+  "correct": "john_travolta",
+  "source": "https://en.wikipedia.org/wiki/John_Travolta"
+ },
+ {
+  "key": "movies_tv_q0728",
+  "category_id": "movies_tv",
+  "subcategory_id": "hollywood",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many Die Hard films starring Bruce Willis are there?",
+   "tr": "Bruce Willis'in oynadığı kaç Zor Ölüm filmi vardır?"
+  },
+  "options": [
+   {
+    "concept_id": "n_5",
+    "en": "5",
+    "tr": "5"
+   },
+   {
+    "concept_id": "n_3",
+    "en": "3",
+    "tr": "3"
+   },
+   {
+    "concept_id": "n_4",
+    "en": "4",
+    "tr": "4"
+   },
+   {
+    "concept_id": "n_6",
+    "en": "6",
+    "tr": "6"
+   }
+  ],
+  "correct": "n_5",
+  "source": "https://en.wikipedia.org/wiki/Die_Hard"
+ },
+ {
+  "key": "movies_tv_q0729",
+  "category_id": "movies_tv",
+  "subcategory_id": "hollywood",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which came out first: The Wizard of Oz or Gone with the Wind?",
+   "tr": "Hangisi önce çıktı: Oz Büyücüsü mü, Rüzgâr Gibi Geçti mi?"
+  },
+  "options": [
+   {
+    "concept_id": "both_came_out_in_1939",
+    "en": "Both came out in 1939",
+    "tr": "İkisi de 1939'da çıktı"
+   },
+   {
+    "concept_id": "the_wizard_of_oz_by_a_decade",
+    "en": "The Wizard of Oz, by a decade",
+    "tr": "Oz Büyücüsü, on yıl önce"
+   },
+   {
+    "concept_id": "gone_with_the_wind_by_a_decade",
+    "en": "Gone with the Wind, by a decade",
+    "tr": "Rüzgâr Gibi Geçti, on yıl önce"
+   },
+   {
+    "concept_id": "neither_was_released",
+    "en": "Neither was released",
+    "tr": "İkisi de vizyona girmedi"
+   }
+  ],
+  "correct": "both_came_out_in_1939",
+  "source": "https://en.wikipedia.org/wiki/1939_in_film"
+ },
+ {
+  "key": "movies_tv_q0730",
+  "category_id": "movies_tv",
+  "subcategory_id": "hollywood",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The last shot of a film is done. What does the director announce?",
+   "tr": "Filmin son çekimi bitti. Yönetmen ne diye ilan eder?"
+  },
+  "options": [
+   {
+    "concept_id": "that_s_a_wrap",
+    "en": "\"That's a wrap!\"",
+    "tr": "\"Paket!\""
+   },
+   {
+    "concept_id": "action",
+    "en": "\"Action!\"",
+    "tr": "\"Motor!\""
+   },
+   {
+    "concept_id": "roll_camera",
+    "en": "\"Roll camera!\"",
+    "tr": "\"Kamera!\""
+   },
+   {
+    "concept_id": "places",
+    "en": "\"Places!\"",
+    "tr": "\"Yerlerinize!\""
+   }
+  ],
+  "correct": "that_s_a_wrap",
+  "source": "https://en.wikipedia.org/wiki/Wrap_(filmmaking)"
+ },
+ {
+  "key": "movies_tv_q0731",
+  "category_id": "movies_tv",
+  "subcategory_id": "awards",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What shape is the trophy at the MTV Movie Awards?",
+   "tr": "MTV Film Ödülleri'nin kupası hangi biçimdedir?"
+  },
+  "options": [
+   {
+    "concept_id": "a_golden_bucket_of_popcorn",
+    "en": "A golden bucket of popcorn",
+    "tr": "Altın bir patlamış mısır kovası"
+   },
+   {
+    "concept_id": "a_silver_camera",
+    "en": "A silver camera",
+    "tr": "Gümüş bir kamera"
+   },
+   {
+    "concept_id": "a_golden_microphone",
+    "en": "A golden microphone",
+    "tr": "Altın bir mikrofon"
+   },
+   {
+    "concept_id": "a_film_ticket",
+    "en": "A film ticket",
+    "tr": "Bir sinema bileti"
+   }
+  ],
+  "correct": "a_golden_bucket_of_popcorn",
+  "source": "https://en.wikipedia.org/wiki/MTV_Movie_%26_TV_Awards"
+ },
+ {
+  "key": "movies_tv_q0732",
+  "category_id": "movies_tv",
+  "subcategory_id": "awards",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these is NOT an Oscar category?",
+   "tr": "Bunlardan hangisi bir Oscar dalı DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "best_villain",
+    "en": "Best Villain",
+    "tr": "En İyi Kötü Karakter"
+   },
+   {
+    "concept_id": "best_original_score",
+    "en": "Best Original Score",
+    "tr": "En İyi Film Müziği"
+   },
+   {
+    "concept_id": "best_film_editing",
+    "en": "Best Film Editing",
+    "tr": "En İyi Kurgu"
+   },
+   {
+    "concept_id": "best_costume_design",
+    "en": "Best Costume Design",
+    "tr": "En İyi Kostüm Tasarımı"
+   }
+  ],
+  "correct": "best_villain",
+  "source": "https://en.wikipedia.org/wiki/Academy_Awards"
+ },
+ {
+  "key": "movies_tv_q0733",
+  "category_id": "movies_tv",
+  "subcategory_id": "awards",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which award is usually presented last at the Oscars?",
+   "tr": "Oscar töreninde genellikle en son hangi ödül verilir?"
+  },
+  "options": [
+   {
+    "concept_id": "best_picture",
+    "en": "Best Picture",
+    "tr": "En İyi Film"
+   },
+   {
+    "concept_id": "best_actor",
+    "en": "Best Actor",
+    "tr": "En İyi Erkek Oyuncu"
+   },
+   {
+    "concept_id": "best_director",
+    "en": "Best Director",
+    "tr": "En İyi Yönetmen"
+   },
+   {
+    "concept_id": "best_actress",
+    "en": "Best Actress",
+    "tr": "En İyi Kadın Oyuncu"
+   }
+  ],
+  "correct": "best_picture",
+  "source": "https://en.wikipedia.org/wiki/Academy_Award_for_Best_Picture"
+ },
+ {
+  "key": "movies_tv_q0734",
+  "category_id": "movies_tv",
+  "subcategory_id": "awards",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many acting Oscars are handed out each year?",
+   "tr": "Her yıl kaç oyunculuk Oscar'ı verilir?"
+  },
+  "options": [
+   {
+    "concept_id": "n_4",
+    "en": "4",
+    "tr": "4"
+   },
+   {
+    "concept_id": "n_2",
+    "en": "2",
+    "tr": "2"
+   },
+   {
+    "concept_id": "n_6",
+    "en": "6",
+    "tr": "6"
+   },
+   {
+    "concept_id": "n_8",
+    "en": "8",
+    "tr": "8"
+   }
+  ],
+  "correct": "n_4",
+  "source": "https://en.wikipedia.org/wiki/Academy_Awards"
+ },
+ {
+  "key": "movies_tv_q0735",
+  "category_id": "movies_tv",
+  "subcategory_id": "awards",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What does \"Palme d'Or\" mean in English?",
+   "tr": "\"Palme d'Or\" Türkçede ne demektir?"
+  },
+  "options": [
+   {
+    "concept_id": "golden_palm",
+    "en": "Golden Palm",
+    "tr": "Altın Palmiye"
+   },
+   {
+    "concept_id": "golden_lion",
+    "en": "Golden Lion",
+    "tr": "Altın Aslan"
+   },
+   {
+    "concept_id": "palm_of_honour",
+    "en": "Palm of Honour",
+    "tr": "Onur Palmiyesi"
+   },
+   {
+    "concept_id": "grand_prize",
+    "en": "Grand Prize",
+    "tr": "Büyük Ödül"
+   }
+  ],
+  "correct": "golden_palm",
+  "source": "https://en.wikipedia.org/wiki/Palme_d'Or"
+ },
+ {
+  "key": "movies_tv_q0736",
+  "category_id": "movies_tv",
+  "subcategory_id": "awards",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who goes on stage to collect the Oscar for Best Picture?",
+   "tr": "En İyi Film Oscar'ını almak için sahneye kim çıkar?"
+  },
+  "options": [
+   {
+    "concept_id": "the_film_s_producers",
+    "en": "The film's producers",
+    "tr": "Filmin yapımcıları"
+   },
+   {
+    "concept_id": "the_lead_actor",
+    "en": "The lead actor",
+    "tr": "Başrol oyuncusu"
+   },
+   {
+    "concept_id": "the_screenwriter",
+    "en": "The screenwriter",
+    "tr": "Senarist"
+   },
+   {
+    "concept_id": "the_studio_s_lawyer",
+    "en": "The studio's lawyer",
+    "tr": "Stüdyonun avukatı"
+   }
+  ],
+  "correct": "the_film_s_producers",
+  "source": "https://en.wikipedia.org/wiki/Academy_Award_for_Best_Picture"
+ },
+ {
+  "key": "movies_tv_q0737",
+  "category_id": "movies_tv",
+  "subcategory_id": "bollywood",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which actor plays tough cop Bajirao Singham in the Singham films?",
+   "tr": "Singham filmlerinde sert polis Bajirao Singham'ı hangi oyuncu oynar?"
+  },
+  "options": [
+   {
+    "concept_id": "ajay_devgn",
+    "en": "Ajay Devgn",
+    "tr": "Ajay Devgn"
+   },
+   {
+    "concept_id": "salman_khan",
+    "en": "Salman Khan",
+    "tr": "Salman Khan"
+   },
+   {
+    "concept_id": "akshay_kumar",
+    "en": "Akshay Kumar",
+    "tr": "Akshay Kumar"
+   },
+   {
+    "concept_id": "ranveer_singh",
+    "en": "Ranveer Singh",
+    "tr": "Ranveer Singh"
+   }
+  ],
+  "correct": "ajay_devgn",
+  "source": "https://en.wikipedia.org/wiki/Singham"
+ },
+ {
+  "key": "movies_tv_q0738",
+  "category_id": "movies_tv",
+  "subcategory_id": "bollywood",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these films is NOT from Bollywood?",
+   "tr": "Bu filmlerden hangisi Bollywood yapımı DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "amores_perros",
+    "en": "Amores Perros",
+    "tr": "Amores Perros"
+   },
+   {
+    "concept_id": "sholay",
+    "en": "Sholay",
+    "tr": "Sholay"
+   },
+   {
+    "concept_id": "n_3_idiots",
+    "en": "3 Idiots",
+    "tr": "3 Idiots"
+   },
+   {
+    "concept_id": "dangal",
+    "en": "Dangal",
+    "tr": "Dangal"
+   }
+  ],
+  "correct": "amores_perros",
+  "source": "https://en.wikipedia.org/wiki/Bollywood"
+ },
+ {
+  "key": "movies_tv_q0739",
+  "category_id": "movies_tv",
+  "subcategory_id": "bollywood",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Old Bollywood films rarely showed kisses. What did they often cut to instead?",
+   "tr": "Eski Bollywood filmlerinde öpüşme nadiren gösterilirdi. Onun yerine sıkça neye geçilirdi?"
+  },
+  "options": [
+   {
+    "concept_id": "two_flowers_touching",
+    "en": "Two flowers touching",
+    "tr": "Birbirine değen iki çiçeğe"
+   },
+   {
+    "concept_id": "a_train_entering_a_tunnel",
+    "en": "A train entering a tunnel",
+    "tr": "Tünele giren trene"
+   },
+   {
+    "concept_id": "fireworks",
+    "en": "Fireworks",
+    "tr": "Havai fişeklere"
+   },
+   {
+    "concept_id": "a_closing_door",
+    "en": "A closing door",
+    "tr": "Kapanan bir kapıya"
+   }
+  ],
+  "correct": "two_flowers_touching",
+  "source": "https://en.wikipedia.org/wiki/Bollywood"
+ },
+ {
+  "key": "movies_tv_q0740",
+  "category_id": "movies_tv",
+  "subcategory_id": "bollywood",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "An Indian film gets a \"U\" certificate. What does that mean?",
+   "tr": "Bir Hint filmi \"U\" sertifikası alır. Bu ne anlama gelir?"
+  },
+  "options": [
+   {
+    "concept_id": "suitable_for_all_ages",
+    "en": "Suitable for all ages",
+    "tr": "Her yaşa uygun"
+   },
+   {
+    "concept_id": "adults_only",
+    "en": "Adults only",
+    "tr": "Yalnızca yetişkinler"
+   },
+   {
+    "concept_id": "unfinished",
+    "en": "Unfinished",
+    "tr": "Bitmemiş"
+   },
+   {
+    "concept_id": "banned",
+    "en": "Banned",
+    "tr": "Yasaklı"
+   }
+  ],
+  "correct": "suitable_for_all_ages",
+  "source": "https://en.wikipedia.org/wiki/Central_Board_of_Film_Certification"
+ },
+ {
+  "key": "movies_tv_q0741",
+  "category_id": "movies_tv",
+  "subcategory_id": "characters_franchises",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In Pixar's Up, what is the name of the talking golden retriever?",
+   "tr": "Pixar'ın Yukarı Bak filminde konuşan golden retriever'ın adı nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "dug",
+    "en": "Dug",
+    "tr": "Dug"
+   },
+   {
+    "concept_id": "doug",
+    "en": "Doug",
+    "tr": "Doug"
+   },
+   {
+    "concept_id": "buddy",
+    "en": "Buddy",
+    "tr": "Buddy"
+   },
+   {
+    "concept_id": "alpha",
+    "en": "Alpha",
+    "tr": "Alpha"
+   }
+  ],
+  "correct": "dug",
+  "source": "https://en.wikipedia.org/wiki/Up_(2009_film)"
+ },
+ {
+  "key": "movies_tv_q0742",
+  "category_id": "movies_tv",
+  "subcategory_id": "characters_franchises",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Suzanne Collins drew on which Greek myth for the tributes of The Hunger Games?",
+   "tr": "Suzanne Collins, Açlık Oyunları'ndaki haraç gençler fikrini hangi Yunan mitinden aldı?"
+  },
+  "options": [
+   {
+    "concept_id": "theseus_and_the_minotaur",
+    "en": "Theseus and the Minotaur",
+    "tr": "Theseus ve Minotor"
+   },
+   {
+    "concept_id": "jason_and_the_argonauts",
+    "en": "Jason and the Argonauts",
+    "tr": "Jason ve Argonotlar"
+   },
+   {
+    "concept_id": "perseus_and_medusa",
+    "en": "Perseus and Medusa",
+    "tr": "Perseus ve Medusa"
+   },
+   {
+    "concept_id": "orpheus_in_the_underworld",
+    "en": "Orpheus in the underworld",
+    "tr": "Orpheus yeraltında"
+   }
+  ],
+  "correct": "theseus_and_the_minotaur",
+  "source": "https://en.wikipedia.org/wiki/The_Hunger_Games"
+ },
+ {
+  "key": "movies_tv_q0743",
+  "category_id": "movies_tv",
+  "subcategory_id": "characters_franchises",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Gollum, Caesar in Planet of the Apes and King Kong (2005) were performed by whom?",
+   "tr": "Gollum, Maymunlar Cehennemi'ndeki Caesar ve King Kong'u (2005) kim canlandırdı?"
+  },
+  "options": [
+   {
+    "concept_id": "andy_serkis",
+    "en": "Andy Serkis",
+    "tr": "Andy Serkis"
+   },
+   {
+    "concept_id": "doug_jones",
+    "en": "Doug Jones",
+    "tr": "Doug Jones"
+   },
+   {
+    "concept_id": "bill_nighy",
+    "en": "Bill Nighy",
+    "tr": "Bill Nighy"
+   },
+   {
+    "concept_id": "toby_kebbell",
+    "en": "Toby Kebbell",
+    "tr": "Toby Kebbell"
+   }
+  ],
+  "correct": "andy_serkis",
+  "source": "https://en.wikipedia.org/wiki/Andy_Serkis"
+ },
+ {
+  "key": "movies_tv_q0744",
+  "category_id": "movies_tv",
+  "subcategory_id": "characters_franchises",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these is NOT a James Bond villain?",
+   "tr": "Bunlardan hangisi bir James Bond kötüsü DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "moriarty",
+    "en": "Moriarty",
+    "tr": "Moriarty"
+   },
+   {
+    "concept_id": "blofeld",
+    "en": "Blofeld",
+    "tr": "Blofeld"
+   },
+   {
+    "concept_id": "goldfinger",
+    "en": "Goldfinger",
+    "tr": "Goldfinger"
+   },
+   {
+    "concept_id": "le_chiffre",
+    "en": "Le Chiffre",
+    "tr": "Le Chiffre"
+   }
+  ],
+  "correct": "moriarty",
+  "source": "https://en.wikipedia.org/wiki/List_of_James_Bond_villains"
+ },
+ {
+  "key": "movies_tv_q0745",
+  "category_id": "movies_tv",
+  "subcategory_id": "characters_franchises",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In Back to the Future, to which year does Marty McFly first travel back?",
+   "tr": "Geleceğe Dönüş'te Marty McFly ilk olarak hangi yıla geri gider?"
+  },
+  "options": [
+   {
+    "concept_id": "n_1955",
+    "en": "1955",
+    "tr": "1955"
+   },
+   {
+    "concept_id": "n_1945",
+    "en": "1945",
+    "tr": "1945"
+   },
+   {
+    "concept_id": "n_1965",
+    "en": "1965",
+    "tr": "1965"
+   },
+   {
+    "concept_id": "n_1885",
+    "en": "1885",
+    "tr": "1885"
+   }
+  ],
+  "correct": "n_1955",
+  "source": "https://en.wikipedia.org/wiki/Back_to_the_Future"
+ },
+ {
+  "key": "movies_tv_q0746",
+  "category_id": "movies_tv",
+  "subcategory_id": "characters_franchises",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In Star Wars, who is older: Luke Skywalker or Princess Leia?",
+   "tr": "Star Wars'ta kim daha büyüktür: Luke Skywalker mı, Prenses Leia mı?"
+  },
+  "options": [
+   {
+    "concept_id": "neither_they_re_twins",
+    "en": "Neither: they're twins",
+    "tr": "İkizler, yaşıtlar"
+   },
+   {
+    "concept_id": "luke_by_two_years",
+    "en": "Luke, by two years",
+    "tr": "Luke, iki yaş"
+   },
+   {
+    "concept_id": "leia_by_five_years",
+    "en": "Leia, by five years",
+    "tr": "Leia, beş yaş"
+   },
+   {
+    "concept_id": "luke_by_ten_years",
+    "en": "Luke, by ten years",
+    "tr": "Luke, on yaş"
+   }
+  ],
+  "correct": "neither_they_re_twins",
+  "source": "https://en.wikipedia.org/wiki/Luke_Skywalker"
+ },
+ {
+  "key": "movies_tv_q0747",
+  "category_id": "movies_tv",
+  "subcategory_id": "directors",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Men in Black, The Addams Family and Get Shorty were directed by whom?",
+   "tr": "Siyah Giyen Adamlar, Addams Ailesi ve Get Shorty'yi kim yönetti?"
+  },
+  "options": [
+   {
+    "concept_id": "barry_sonnenfeld",
+    "en": "Barry Sonnenfeld",
+    "tr": "Barry Sonnenfeld"
+   },
+   {
+    "concept_id": "tim_burton",
+    "en": "Tim Burton",
+    "tr": "Tim Burton"
+   },
+   {
+    "concept_id": "ivan_reitman",
+    "en": "Ivan Reitman",
+    "tr": "Ivan Reitman"
+   },
+   {
+    "concept_id": "chris_columbus",
+    "en": "Chris Columbus",
+    "tr": "Chris Columbus"
+   }
+  ],
+  "correct": "barry_sonnenfeld",
+  "source": "https://en.wikipedia.org/wiki/Barry_Sonnenfeld"
+ },
+ {
+  "key": "movies_tv_q0748",
+  "category_id": "movies_tv",
+  "subcategory_id": "directors",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The first three Pirates of the Caribbean films, The Ring and Rango: which director?",
+   "tr": "İlk üç Karayip Korsanları filmi, Halka ve Rango: hangi yönetmen?"
+  },
+  "options": [
+   {
+    "concept_id": "gore_verbinski",
+    "en": "Gore Verbinski",
+    "tr": "Gore Verbinski"
+   },
+   {
+    "concept_id": "rob_marshall",
+    "en": "Rob Marshall",
+    "tr": "Rob Marshall"
+   },
+   {
+    "concept_id": "jerry_bruckheimer",
+    "en": "Jerry Bruckheimer",
+    "tr": "Jerry Bruckheimer"
+   },
+   {
+    "concept_id": "brad_bird",
+    "en": "Brad Bird",
+    "tr": "Brad Bird"
+   }
+  ],
+  "correct": "gore_verbinski",
+  "source": "https://en.wikipedia.org/wiki/Gore_Verbinski"
+ },
+ {
+  "key": "movies_tv_q0749",
+  "category_id": "movies_tv",
+  "subcategory_id": "directors",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who directed Ayla: The Daughter of War (2017), Turkey's Oscar submission?",
+   "tr": "Türkiye'nin Oscar adayı olan Ayla'yı (2017) kim yönetti?"
+  },
+  "options": [
+   {
+    "concept_id": "can_ulkay",
+    "en": "Can Ulkay",
+    "tr": "Can Ulkay"
+   },
+   {
+    "concept_id": "nuri_bilge_ceylan",
+    "en": "Nuri Bilge Ceylan",
+    "tr": "Nuri Bilge Ceylan"
+   },
+   {
+    "concept_id": "dervis_zaim",
+    "en": "Derviş Zaim",
+    "tr": "Derviş Zaim"
+   },
+   {
+    "concept_id": "kutlug_ataman",
+    "en": "Kutluğ Ataman",
+    "tr": "Kutluğ Ataman"
+   }
+  ],
+  "correct": "can_ulkay",
+  "source": "https://en.wikipedia.org/wiki/Ayla:_The_Daughter_of_War"
+ },
+ {
+  "key": "movies_tv_q0750",
+  "category_id": "movies_tv",
+  "subcategory_id": "directors",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Before The Lord of the Rings, Peter Jackson was known for what kind of films?",
+   "tr": "Yüzüklerin Efendisi'nden önce Peter Jackson ne tür filmlerle tanınırdı?"
+  },
+  "options": [
+   {
+    "concept_id": "gory_low_budget_horror_comedies",
+    "en": "Gory low-budget horror comedies",
+    "tr": "Kanlı, düşük bütçeli korku komedileri"
+   },
+   {
+    "concept_id": "nature_documentaries",
+    "en": "Nature documentaries",
+    "tr": "Doğa belgeselleri"
+   },
+   {
+    "concept_id": "musicals",
+    "en": "Musicals",
+    "tr": "Müzikaller"
+   },
+   {
+    "concept_id": "children_s_cartoons",
+    "en": "Children's cartoons",
+    "tr": "Çocuk çizgi filmleri"
+   }
+  ],
+  "correct": "gory_low_budget_horror_comedies",
+  "source": "https://en.wikipedia.org/wiki/Peter_Jackson"
+ },
+ {
+  "key": "movies_tv_q0751",
+  "category_id": "movies_tv",
+  "subcategory_id": "directors",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many times was Alfred Hitchcock nominated for Best Director?",
+   "tr": "Alfred Hitchcock kaç kez En İyi Yönetmen dalında aday gösterildi?"
+  },
+  "options": [
+   {
+    "concept_id": "n_5",
+    "en": "5",
+    "tr": "5"
+   },
+   {
+    "concept_id": "n_1",
+    "en": "1",
+    "tr": "1"
+   },
+   {
+    "concept_id": "n_3",
+    "en": "3",
+    "tr": "3"
+   },
+   {
+    "concept_id": "n_9",
+    "en": "9",
+    "tr": "9"
+   }
+  ],
+  "correct": "n_5",
+  "source": "https://en.wikipedia.org/wiki/Alfred_Hitchcock"
+ },
+ {
+  "key": "movies_tv_q0752",
+  "category_id": "movies_tv",
+  "subcategory_id": "directors",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these films was NOT made by the Coen brothers?",
+   "tr": "Bu filmlerden hangisi Coen kardeşlerin DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "magnolia",
+    "en": "Magnolia",
+    "tr": "Manolya"
+   },
+   {
+    "concept_id": "fargo",
+    "en": "Fargo",
+    "tr": "Fargo"
+   },
+   {
+    "concept_id": "no_country_for_old_men",
+    "en": "No Country for Old Men",
+    "tr": "İhtiyarlara Yer Yok"
+   },
+   {
+    "concept_id": "the_big_lebowski",
+    "en": "The Big Lebowski",
+    "tr": "Büyük Lebowski"
+   }
+  ],
+  "correct": "magnolia",
+  "source": "https://en.wikipedia.org/wiki/Coen_brothers"
+ },
+ {
+  "key": "movies_tv_q0753",
+  "category_id": "movies_tv",
+  "subcategory_id": "tv_streaming",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which actor hosted Kim 500 Milyar İster?, Turkey's first Who Wants to Be a Millionaire?",
+   "tr": "Türkiye'nin ilk \"Kim Milyoner Olmak İster?\" versiyonu Kim 500 Milyar İster?'i kim sundu?"
+  },
+  "options": [
+   {
+    "concept_id": "kenan_isk",
+    "en": "Kenan Işık",
+    "tr": "Kenan Işık"
+   },
+   {
+    "concept_id": "selcuk_yontem",
+    "en": "Selçuk Yöntem",
+    "tr": "Selçuk Yöntem"
+   },
+   {
+    "concept_id": "kenan_imirzaloglu",
+    "en": "Kenan İmirzalıoğlu",
+    "tr": "Kenan İmirzalıoğlu"
+   },
+   {
+    "concept_id": "haluk_bilginer",
+    "en": "Haluk Bilginer",
+    "tr": "Haluk Bilginer"
+   }
+  ],
+  "correct": "kenan_isk",
+  "source": "https://en.wikipedia.org/wiki/Who_Wants_to_Be_a_Millionaire?"
+ },
+ {
+  "key": "movies_tv_q0754",
+  "category_id": "movies_tv",
+  "subcategory_id": "tv_streaming",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Mad Men, Breaking Bad and The Walking Dead all aired on which channel?",
+   "tr": "Mad Men, Breaking Bad ve The Walking Dead hangi kanalda yayınlandı?"
+  },
+  "options": [
+   {
+    "concept_id": "amc",
+    "en": "AMC",
+    "tr": "AMC"
+   },
+   {
+    "concept_id": "hbo",
+    "en": "HBO",
+    "tr": "HBO"
+   },
+   {
+    "concept_id": "fx",
+    "en": "FX",
+    "tr": "FX"
+   },
+   {
+    "concept_id": "showtime",
+    "en": "Showtime",
+    "tr": "Showtime"
+   }
+  ],
+  "correct": "amc",
+  "source": "https://en.wikipedia.org/wiki/AMC_(TV_channel)"
+ },
+ {
+  "key": "movies_tv_q0755",
+  "category_id": "movies_tv",
+  "subcategory_id": "tv_streaming",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In The Office (US), what crop is grown on Dwight's family farm?",
+   "tr": "The Office'te (ABD) Dwight'ın aile çiftliğinde ne yetiştirilir?"
+  },
+  "options": [
+   {
+    "concept_id": "beets",
+    "en": "Beets",
+    "tr": "Pancar"
+   },
+   {
+    "concept_id": "potatoes",
+    "en": "Potatoes",
+    "tr": "Patates"
+   },
+   {
+    "concept_id": "corn",
+    "en": "Corn",
+    "tr": "Mısır"
+   },
+   {
+    "concept_id": "pumpkins",
+    "en": "Pumpkins",
+    "tr": "Balkabağı"
+   }
+  ],
+  "correct": "beets",
+  "source": "https://en.wikipedia.org/wiki/Dwight_Schrute"
+ },
+ {
+  "key": "movies_tv_q0756",
+  "category_id": "movies_tv",
+  "subcategory_id": "tv_streaming",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What was the character Ted Lasso first created for, years before the series?",
+   "tr": "Ted Lasso karakteri, diziden yıllar önce ilk olarak ne için yaratıldı?"
+  },
+  "options": [
+   {
+    "concept_id": "tv_adverts_for_premier_league_coverage",
+    "en": "TV adverts for Premier League coverage",
+    "tr": "Premier Lig yayını reklamları için"
+   },
+   {
+    "concept_id": "a_children_s_book",
+    "en": "A children's book",
+    "tr": "Bir çocuk kitabı için"
+   },
+   {
+    "concept_id": "a_video_game",
+    "en": "A video game",
+    "tr": "Bir video oyunu için"
+   },
+   {
+    "concept_id": "a_stand_up_show",
+    "en": "A stand-up show",
+    "tr": "Bir stand-up gösterisi için"
+   }
+  ],
+  "correct": "tv_adverts_for_premier_league_coverage",
+  "source": "https://en.wikipedia.org/wiki/Ted_Lasso"
+ },
+ {
+  "key": "movies_tv_q0757",
+  "category_id": "movies_tv",
+  "subcategory_id": "tv_streaming",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which medical drama premiered first: House or Grey's Anatomy?",
+   "tr": "Hangi tıp draması önce yayınlandı: House mu, Grey's Anatomy mi?"
+  },
+  "options": [
+   {
+    "concept_id": "the_one_with_hugh_laurie",
+    "en": "The one with Hugh Laurie",
+    "tr": "Hugh Laurie'li olan"
+   },
+   {
+    "concept_id": "the_one_set_in_seattle",
+    "en": "The one set in Seattle",
+    "tr": "Seattle'da geçen"
+   },
+   {
+    "concept_id": "same_night",
+    "en": "Same night",
+    "tr": "Aynı gece"
+   },
+   {
+    "concept_id": "neither_is_medical",
+    "en": "Neither is medical",
+    "tr": "İkisi de tıp dizisi değil"
+   }
+  ],
+  "correct": "the_one_with_hugh_laurie",
+  "source": "https://en.wikipedia.org/wiki/House_(TV_series)"
+ },
+ {
+  "key": "movies_tv_q0758",
+  "category_id": "movies_tv",
+  "subcategory_id": "tv_streaming",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these animated series was NOT created by Matt Groening?",
+   "tr": "Bu animasyon dizilerinden hangisini Matt Groening YARATMAMIŞTIR?"
+  },
+  "options": [
+   {
+    "concept_id": "family_guy",
+    "en": "Family Guy",
+    "tr": "Family Guy"
+   },
+   {
+    "concept_id": "the_simpsons",
+    "en": "The Simpsons",
+    "tr": "The Simpsons"
+   },
+   {
+    "concept_id": "futurama",
+    "en": "Futurama",
+    "tr": "Futurama"
+   },
+   {
+    "concept_id": "disenchantment",
+    "en": "Disenchantment",
+    "tr": "Disenchantment"
+   }
+  ],
+  "correct": "family_guy",
+  "source": "https://en.wikipedia.org/wiki/Matt_Groening"
+ },
+ {
+  "key": "movies_tv_q0759",
+  "category_id": "movies_tv",
+  "subcategory_id": "global_films",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Children of Heaven and The Color of Paradise were made by which Iranian director?",
+   "tr": "Cennetin Çocukları ve Cennetin Rengi'ni hangi İranlı yönetmen çekti?"
+  },
+  "options": [
+   {
+    "concept_id": "majid_majidi",
+    "en": "Majid Majidi",
+    "tr": "Majid Majidi"
+   },
+   {
+    "concept_id": "jafar_panahi",
+    "en": "Jafar Panahi",
+    "tr": "Jafar Panahi"
+   },
+   {
+    "concept_id": "abbas_kiarostami",
+    "en": "Abbas Kiarostami",
+    "tr": "Abbas Kiarostami"
+   },
+   {
+    "concept_id": "asghar_farhadi",
+    "en": "Asghar Farhadi",
+    "tr": "Asghar Farhadi"
+   }
+  ],
+  "correct": "majid_majidi",
+  "source": "https://en.wikipedia.org/wiki/Majid_Majidi"
+ },
+ {
+  "key": "movies_tv_q0760",
+  "category_id": "movies_tv",
+  "subcategory_id": "global_films",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Swedish hit A Man Called Ove was remade in Hollywood starring whom?",
+   "tr": "İsveç hiti Ove Adında Bir Adam, Hollywood'da kimin başrolüyle yeniden çekildi?"
+  },
+  "options": [
+   {
+    "concept_id": "tom_hanks",
+    "en": "Tom Hanks",
+    "tr": "Tom Hanks"
+   },
+   {
+    "concept_id": "clint_eastwood",
+    "en": "Clint Eastwood",
+    "tr": "Clint Eastwood"
+   },
+   {
+    "concept_id": "robert_de_niro",
+    "en": "Robert De Niro",
+    "tr": "Robert De Niro"
+   },
+   {
+    "concept_id": "michael_keaton",
+    "en": "Michael Keaton",
+    "tr": "Michael Keaton"
+   }
+  ],
+  "correct": "tom_hanks",
+  "source": "https://en.wikipedia.org/wiki/A_Man_Called_Otto"
+ },
+ {
+  "key": "movies_tv_q0761",
+  "category_id": "movies_tv",
+  "subcategory_id": "global_films",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which studio is older: Japan's Toho, home of Godzilla, or Disney?",
+   "tr": "Hangi stüdyo daha eskidir: Godzilla'nın evi Japon Toho mu, Disney mi?"
+  },
+  "options": [
+   {
+    "concept_id": "the_american_one",
+    "en": "The American one",
+    "tr": "Amerikan olan"
+   },
+   {
+    "concept_id": "the_japanese_one",
+    "en": "The Japanese one",
+    "tr": "Japon olan"
+   },
+   {
+    "concept_id": "founded_the_same_year",
+    "en": "Founded the same year",
+    "tr": "Aynı yıl kuruldular"
+   },
+   {
+    "concept_id": "neither_still_exists",
+    "en": "Neither still exists",
+    "tr": "İkisi de artık yok"
+   }
+  ],
+  "correct": "the_american_one",
+  "source": "https://en.wikipedia.org/wiki/Toho"
+ },
+ {
+  "key": "movies_tv_q0762",
+  "category_id": "movies_tv",
+  "subcategory_id": "global_films",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What did Werner Herzog eat on camera in 1980 after losing a bet?",
+   "tr": "Werner Herzog 1980'de bir iddiayı kaybedince kamera önünde ne yedi?"
+  },
+  "options": [
+   {
+    "concept_id": "his_own_shoe",
+    "en": "His own shoe",
+    "tr": "Kendi ayakkabısını"
+   },
+   {
+    "concept_id": "a_live_insect",
+    "en": "A live insect",
+    "tr": "Canlı bir böcek"
+   },
+   {
+    "concept_id": "a_raw_onion",
+    "en": "A raw onion",
+    "tr": "Çiğ bir soğan"
+   },
+   {
+    "concept_id": "a_film_reel",
+    "en": "A film reel",
+    "tr": "Bir film makarası"
+   }
+  ],
+  "correct": "his_own_shoe",
+  "source": "https://en.wikipedia.org/wiki/Werner_Herzog_Eats_His_Shoe"
+ },
+ {
+  "key": "movies_tv_q0763",
+  "category_id": "movies_tv",
+  "subcategory_id": "global_films",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many Oscars did Amélie win from its five nominations?",
+   "tr": "Amelie beş adaylığından kaç Oscar kazandı?"
+  },
+  "options": [
+   {
+    "concept_id": "n_0",
+    "en": "0",
+    "tr": "0"
+   },
+   {
+    "concept_id": "n_1",
+    "en": "1",
+    "tr": "1"
+   },
+   {
+    "concept_id": "n_2",
+    "en": "2",
+    "tr": "2"
+   },
+   {
+    "concept_id": "n_5",
+    "en": "5",
+    "tr": "5"
+   }
+  ],
+  "correct": "n_0",
+  "source": "https://en.wikipedia.org/wiki/Amélie"
+ },
+ {
+  "key": "movies_tv_q0764",
+  "category_id": "movies_tv",
+  "subcategory_id": "global_films",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these classics was NOT directed by Akira Kurosawa?",
+   "tr": "Bu klasiklerden hangisini Akira Kurosawa YÖNETMEMİŞTİR?"
+  },
+  "options": [
+   {
+    "concept_id": "ugetsu",
+    "en": "Ugetsu",
+    "tr": "Ugetsu"
+   },
+   {
+    "concept_id": "rashomon",
+    "en": "Rashomon",
+    "tr": "Rashomon"
+   },
+   {
+    "concept_id": "ikiru",
+    "en": "Ikiru",
+    "tr": "Yaşamak (Ikiru)"
+   },
+   {
+    "concept_id": "ran",
+    "en": "Ran",
+    "tr": "Ran"
+   }
+  ],
+  "correct": "ugetsu",
+  "source": "https://en.wikipedia.org/wiki/Ugetsu"
+ },
+ {
+  "key": "movies_tv_q0765",
+  "category_id": "movies_tv",
+  "subcategory_id": "hollywood",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Kramer vs. Kramer, Tootsie and Rain Man all starred which actor?",
+   "tr": "Kramer Kramer'e Karşı, Tootsie ve Yağmur Adam'ın ortak yıldızı kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "dustin_hoffman",
+    "en": "Dustin Hoffman",
+    "tr": "Dustin Hoffman"
+   },
+   {
+    "concept_id": "al_pacino",
+    "en": "Al Pacino",
+    "tr": "Al Pacino"
+   },
+   {
+    "concept_id": "robert_redford",
+    "en": "Robert Redford",
+    "tr": "Robert Redford"
+   },
+   {
+    "concept_id": "jack_nicholson",
+    "en": "Jack Nicholson",
+    "tr": "Jack Nicholson"
+   }
+  ],
+  "correct": "dustin_hoffman",
+  "source": "https://en.wikipedia.org/wiki/Dustin_Hoffman"
+ },
+ {
+  "key": "movies_tv_q0766",
+  "category_id": "movies_tv",
+  "subcategory_id": "hollywood",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the \"Wilhelm scream\"?",
+   "tr": "\"Wilhelm çığlığı\" nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "a_stock_scream_heard_in_hundreds_of_films",
+    "en": "A stock scream heard in hundreds of films",
+    "tr": "Yüzlerce filmde kullanılan hazır bir çığlık sesi"
+   },
+   {
+    "concept_id": "an_actor_s_famous_audition",
+    "en": "An actor's famous audition",
+    "tr": "Bir oyuncunun ünlü seçmesi"
+   },
+   {
+    "concept_id": "a_horror_film_award",
+    "en": "A horror film award",
+    "tr": "Bir korku filmi ödülü"
+   },
+   {
+    "concept_id": "a_camera_technique",
+    "en": "A camera technique",
+    "tr": "Bir kamera tekniği"
+   }
+  ],
+  "correct": "a_stock_scream_heard_in_hundreds_of_films",
+  "source": "https://en.wikipedia.org/wiki/Wilhelm_scream"
+ },
+ {
+  "key": "movies_tv_q0767",
+  "category_id": "movies_tv",
+  "subcategory_id": "hollywood",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who won an Oscar first: Denzel Washington or Tom Hanks?",
+   "tr": "Kim Oscar'ı önce kazandı: Denzel Washington mı, Tom Hanks mi?"
+  },
+  "options": [
+   {
+    "concept_id": "the_glory_actor",
+    "en": "The Glory actor",
+    "tr": "Glory'nin oyuncusu"
+   },
+   {
+    "concept_id": "the_philadelphia_actor",
+    "en": "The Philadelphia actor",
+    "tr": "Philadelphia'nın oyuncusu"
+   },
+   {
+    "concept_id": "same_night",
+    "en": "Same night",
+    "tr": "Aynı gece"
+   },
+   {
+    "concept_id": "neither_has_won",
+    "en": "Neither has won",
+    "tr": "İkisi de kazanmadı"
+   }
+  ],
+  "correct": "the_glory_actor",
+  "source": "https://en.wikipedia.org/wiki/Denzel_Washington"
+ },
+ {
+  "key": "movies_tv_q0768",
+  "category_id": "movies_tv",
+  "subcategory_id": "hollywood",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these films is NOT set in Los Angeles?",
+   "tr": "Bu filmlerden hangisi Los Angeles'ta GEÇMEZ?"
+  },
+  "options": [
+   {
+    "concept_id": "taxi_driver",
+    "en": "Taxi Driver",
+    "tr": "Taksi Şoförü"
+   },
+   {
+    "concept_id": "chinatown",
+    "en": "Chinatown",
+    "tr": "Çin Mahallesi"
+   },
+   {
+    "concept_id": "la_la_land",
+    "en": "La La Land",
+    "tr": "Aşıklar Şehri (La La Land)"
+   },
+   {
+    "concept_id": "heat",
+    "en": "Heat",
+    "tr": "Büyük Hesaplaşma (Heat)"
+   }
+  ],
+  "correct": "taxi_driver",
+  "source": "https://en.wikipedia.org/wiki/Taxi_Driver"
+ },
+ {
+  "key": "movies_tv_q0769",
+  "category_id": "movies_tv",
+  "subcategory_id": "hollywood",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Roughly how much did The Blair Witch Project cost to shoot?",
+   "tr": "The Blair Witch Project'in çekimi yaklaşık kaça mal oldu?"
+  },
+  "options": [
+   {
+    "concept_id": "about_60_000",
+    "en": "About $60,000",
+    "tr": "Yaklaşık 60.000 $"
+   },
+   {
+    "concept_id": "about_6_million",
+    "en": "About $6 million",
+    "tr": "Yaklaşık 6 milyon $"
+   },
+   {
+    "concept_id": "about_600_000",
+    "en": "About $600,000",
+    "tr": "Yaklaşık 600.000 $"
+   },
+   {
+    "concept_id": "about_60_million",
+    "en": "About $60 million",
+    "tr": "Yaklaşık 60 milyon $"
+   }
+  ],
+  "correct": "about_60_000",
+  "source": "https://en.wikipedia.org/wiki/The_Blair_Witch_Project"
+ },
+ {
+  "key": "movies_tv_q0770",
+  "category_id": "movies_tv",
+  "subcategory_id": "hollywood",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which novelist adapted her own book into the screenplay for Gone Girl (2014)?",
+   "tr": "Hangi romancı kendi kitabını Kayıp Kız (2014) filminin senaryosuna uyarladı?"
+  },
+  "options": [
+   {
+    "concept_id": "gillian_flynn",
+    "en": "Gillian Flynn",
+    "tr": "Gillian Flynn"
+   },
+   {
+    "concept_id": "paula_hawkins",
+    "en": "Paula Hawkins",
+    "tr": "Paula Hawkins"
+   },
+   {
+    "concept_id": "donna_tartt",
+    "en": "Donna Tartt",
+    "tr": "Donna Tartt"
+   },
+   {
+    "concept_id": "liane_moriarty",
+    "en": "Liane Moriarty",
+    "tr": "Liane Moriarty"
+   }
+  ],
+  "correct": "gillian_flynn",
+  "source": "https://en.wikipedia.org/wiki/Gillian_Flynn"
+ },
+ {
+  "key": "movies_tv_q0771",
+  "category_id": "movies_tv",
+  "subcategory_id": "awards",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which statuette is taller: the Oscar or the Emmy?",
+   "tr": "Hangi heykelcik daha uzundur: Oscar mı, Emmy mi?"
+  },
+  "options": [
+   {
+    "concept_id": "the_tv_award",
+    "en": "The TV award",
+    "tr": "Televizyon ödülü"
+   },
+   {
+    "concept_id": "the_film_award",
+    "en": "The film award",
+    "tr": "Sinema ödülü"
+   },
+   {
+    "concept_id": "exactly_the_same",
+    "en": "Exactly the same",
+    "tr": "Tamamen aynı"
+   },
+   {
+    "concept_id": "neither_is_a_statuette",
+    "en": "Neither is a statuette",
+    "tr": "İkisi de heykelcik değil"
+   }
+  ],
+  "correct": "the_tv_award",
+  "source": "https://en.wikipedia.org/wiki/Emmy_Awards"
+ },
+ {
+  "key": "movies_tv_q0772",
+  "category_id": "movies_tv",
+  "subcategory_id": "awards",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these stars had NOT won a competitive Oscar by 2025?",
+   "tr": "Bu yıldızlardan hangisi 2025'e kadar yarışmalı bir Oscar KAZANMAMIŞTI?"
+  },
+  "options": [
+   {
+    "concept_id": "tom_cruise",
+    "en": "Tom Cruise",
+    "tr": "Tom Cruise"
+   },
+   {
+    "concept_id": "brad_pitt",
+    "en": "Brad Pitt",
+    "tr": "Brad Pitt"
+   },
+   {
+    "concept_id": "leonardo_dicaprio",
+    "en": "Leonardo DiCaprio",
+    "tr": "Leonardo DiCaprio"
+   },
+   {
+    "concept_id": "matthew_mcconaughey",
+    "en": "Matthew McConaughey",
+    "tr": "Matthew McConaughey"
+   }
+  ],
+  "correct": "tom_cruise",
+  "source": "https://en.wikipedia.org/wiki/Tom_Cruise"
+ },
+ {
+  "key": "movies_tv_q0773",
+  "category_id": "movies_tv",
+  "subcategory_id": "awards",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What happened to the \"Best Popular Film\" Oscar announced in 2018?",
+   "tr": "2018'de duyurulan \"En Popüler Film\" Oscar'ına ne oldu?"
+  },
+  "options": [
+   {
+    "concept_id": "it_was_dropped_before_ever_being_awarded",
+    "en": "It was dropped before ever being awarded",
+    "tr": "Hiç verilmeden iptal edildi"
+   },
+   {
+    "concept_id": "it_went_to_black_panther",
+    "en": "It went to Black Panther",
+    "tr": "Black Panther'e verildi"
+   },
+   {
+    "concept_id": "it_replaced_best_picture",
+    "en": "It replaced Best Picture",
+    "tr": "En İyi Film'in yerini aldı"
+   },
+   {
+    "concept_id": "fans_voted_it_online",
+    "en": "Fans voted it online",
+    "tr": "Hayranlar internetten oyladı"
+   }
+  ],
+  "correct": "it_was_dropped_before_ever_being_awarded",
+  "source": "https://en.wikipedia.org/wiki/Academy_Awards"
+ },
+ {
+  "key": "movies_tv_q0774",
+  "category_id": "movies_tv",
+  "subcategory_id": "awards",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many Oscars did Schindler's List win?",
+   "tr": "Schindler'in Listesi kaç Oscar kazandı?"
+  },
+  "options": [
+   {
+    "concept_id": "n_7",
+    "en": "7",
+    "tr": "7"
+   },
+   {
+    "concept_id": "n_3",
+    "en": "3",
+    "tr": "3"
+   },
+   {
+    "concept_id": "n_5",
+    "en": "5",
+    "tr": "5"
+   },
+   {
+    "concept_id": "n_11",
+    "en": "11",
+    "tr": "11"
+   }
+  ],
+  "correct": "n_7",
+  "source": "https://en.wikipedia.org/wiki/Schindler's_List"
+ },
+ {
+  "key": "movies_tv_q0775",
+  "category_id": "movies_tv",
+  "subcategory_id": "awards",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Bob Dylan won an Oscar for \"Things Have Changed\" from which film?",
+   "tr": "Bob Dylan hangi filmdeki \"Things Have Changed\" şarkısıyla Oscar kazandı?"
+  },
+  "options": [
+   {
+    "concept_id": "wonder_boys",
+    "en": "Wonder Boys",
+    "tr": "Wonder Boys"
+   },
+   {
+    "concept_id": "pat_garrett_and_billy_the_kid",
+    "en": "Pat Garrett and Billy the Kid",
+    "tr": "Pat Garrett and Billy the Kid"
+   },
+   {
+    "concept_id": "i_m_not_there",
+    "en": "I'm Not There",
+    "tr": "I'm Not There"
+   },
+   {
+    "concept_id": "forrest_gump",
+    "en": "Forrest Gump",
+    "tr": "Forrest Gump"
+   }
+  ],
+  "correct": "wonder_boys",
+  "source": "https://en.wikipedia.org/wiki/Things_Have_Changed"
+ },
+ {
+  "key": "movies_tv_q0776",
+  "category_id": "movies_tv",
+  "subcategory_id": "awards",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which 2016 musical tied the record of 14 Oscar nominations?",
+   "tr": "Hangi 2016 müzikali 14 Oscar adaylığı rekoruna ortak oldu?"
+  },
+  "options": [
+   {
+    "concept_id": "la_la_land",
+    "en": "La La Land",
+    "tr": "Aşıklar Şehri (La La Land)"
+   },
+   {
+    "concept_id": "the_greatest_showman",
+    "en": "The Greatest Showman",
+    "tr": "The Greatest Showman"
+   },
+   {
+    "concept_id": "moana",
+    "en": "Moana",
+    "tr": "Moana"
+   },
+   {
+    "concept_id": "sing_street",
+    "en": "Sing Street",
+    "tr": "Sing Street"
+   }
+  ],
+  "correct": "la_la_land",
+  "source": "https://en.wikipedia.org/wiki/La_La_Land"
+ },
+ {
+  "key": "movies_tv_q0777",
+  "category_id": "movies_tv",
+  "subcategory_id": "bollywood",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Aamir Khan's Ghajini (2008) borrowed its memory-loss plot from which Nolan film?",
+   "tr": "Aamir Khan'ın Ghajini'si (2008) hafıza kaybı konusunu hangi Nolan filminden aldı?"
+  },
+  "options": [
+   {
+    "concept_id": "memento",
+    "en": "Memento",
+    "tr": "Memento"
+   },
+   {
+    "concept_id": "inception",
+    "en": "Inception",
+    "tr": "Başlangıç"
+   },
+   {
+    "concept_id": "the_prestige",
+    "en": "The Prestige",
+    "tr": "Prestij"
+   },
+   {
+    "concept_id": "insomnia",
+    "en": "Insomnia",
+    "tr": "Uykusuz"
+   }
+  ],
+  "correct": "memento",
+  "source": "https://en.wikipedia.org/wiki/Ghajini_(2008_film)"
+ },
+ {
+  "key": "movies_tv_q0778",
+  "category_id": "movies_tv",
+  "subcategory_id": "bollywood",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Queen, Tanu Weds Manu and Manikarnika star which actress?",
+   "tr": "Queen, Tanu Weds Manu ve Manikarnika'nın başrol oyuncusu kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "kangana_ranaut",
+    "en": "Kangana Ranaut",
+    "tr": "Kangana Ranaut"
+   },
+   {
+    "concept_id": "vidya_balan",
+    "en": "Vidya Balan",
+    "tr": "Vidya Balan"
+   },
+   {
+    "concept_id": "taapsee_pannu",
+    "en": "Taapsee Pannu",
+    "tr": "Taapsee Pannu"
+   },
+   {
+    "concept_id": "alia_bhatt",
+    "en": "Alia Bhatt",
+    "tr": "Alia Bhatt"
+   }
+  ],
+  "correct": "kangana_ranaut",
+  "source": "https://en.wikipedia.org/wiki/Kangana_Ranaut"
+ },
+ {
+  "key": "movies_tv_q0779",
+  "category_id": "movies_tv",
+  "subcategory_id": "bollywood",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Why was Mughal-e-Azam back in cinemas in 2004?",
+   "tr": "Mughal-e-Azam 2004'te neden yeniden sinemalara geldi?"
+  },
+  "options": [
+   {
+    "concept_id": "it_was_re_released_in_colour",
+    "en": "It was re-released in colour",
+    "tr": "Renklendirilmiş olarak yeniden gösterildi"
+   },
+   {
+    "concept_id": "it_was_banned_until_then",
+    "en": "It was banned until then",
+    "tr": "O zamana kadar yasaklıydı"
+   },
+   {
+    "concept_id": "it_was_dubbed_into_english",
+    "en": "It was dubbed into English",
+    "tr": "İngilizceye dublajlandı"
+   },
+   {
+    "concept_id": "its_lost_ending_was_found",
+    "en": "Its lost ending was found",
+    "tr": "Kayıp sonu bulundu"
+   }
+  ],
+  "correct": "it_was_re_released_in_colour",
+  "source": "https://en.wikipedia.org/wiki/Mughal-e-Azam"
+ },
+ {
+  "key": "movies_tv_q0780",
+  "category_id": "movies_tv",
+  "subcategory_id": "bollywood",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Whose film debut came first: Amitabh Bachchan's or Shah Rukh Khan's?",
+   "tr": "Kimin sinema ilk filmi önce geldi: Amitabh Bachchan'ın mı, Shah Rukh Khan'ın mı?"
+  },
+  "options": [
+   {
+    "concept_id": "the_sholay_star_s",
+    "en": "The Sholay star's",
+    "tr": "Sholay yıldızınınki"
+   },
+   {
+    "concept_id": "the_ddlj_star_s",
+    "en": "The DDLJ star's",
+    "tr": "DDLJ yıldızınınki"
+   },
+   {
+    "concept_id": "same_year",
+    "en": "Same year",
+    "tr": "Aynı yıl"
+   },
+   {
+    "concept_id": "neither_has_acted_in_films",
+    "en": "Neither has acted in films",
+    "tr": "İkisi de filmde oynamadı"
+   }
+  ],
+  "correct": "the_sholay_star_s",
+  "source": "https://en.wikipedia.org/wiki/Amitabh_Bachchan"
+ },
+ {
+  "key": "movies_tv_q0781",
+  "category_id": "movies_tv",
+  "subcategory_id": "characters_franchises",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "In Star Wars (1977), which cell number holds Princess Leia on the Death Star?",
+   "tr": "Star Wars'ta (1977) Prenses Leia Ölüm Yıldızı'nda hangi numaralı hücrede tutulur?"
+  },
+  "options": [
+   {
+    "concept_id": "n_2187",
+    "en": "2187",
+    "tr": "2187"
+   },
+   {
+    "concept_id": "n_1138",
+    "en": "1138",
+    "tr": "1138"
+   },
+   {
+    "concept_id": "n_3263",
+    "en": "3263",
+    "tr": "3263"
+   },
+   {
+    "concept_id": "n_0451",
+    "en": "0451",
+    "tr": "0451"
+   }
+  ],
+  "correct": "n_2187",
+  "source": "https://en.wikipedia.org/wiki/Princess_Leia"
+ },
+ {
+  "key": "movies_tv_q0782",
+  "category_id": "movies_tv",
+  "subcategory_id": "characters_franchises",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "In 2001: A Space Odyssey, what is the ship bound for Jupiter called?",
+   "tr": "2001: Bir Uzay Destanı'nda Jüpiter'e giden geminin adı nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "discovery_one",
+    "en": "Discovery One",
+    "tr": "Discovery One"
+   },
+   {
+    "concept_id": "nostromo",
+    "en": "Nostromo",
+    "tr": "Nostromo"
+   },
+   {
+    "concept_id": "endurance",
+    "en": "Endurance",
+    "tr": "Endurance"
+   },
+   {
+    "concept_id": "sulaco",
+    "en": "Sulaco",
+    "tr": "Sulaco"
+   }
+  ],
+  "correct": "discovery_one",
+  "source": "https://en.wikipedia.org/wiki/Discovery_One"
+ },
+ {
+  "key": "movies_tv_q0783",
+  "category_id": "movies_tv",
+  "subcategory_id": "characters_franchises",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "In The Shawshank Redemption, whose poster finally hides Andy's tunnel?",
+   "tr": "Esaretin Bedeli'nde Andy'nin tünelini en son kimin posteri gizler?"
+  },
+  "options": [
+   {
+    "concept_id": "raquel_welch_s",
+    "en": "Raquel Welch's",
+    "tr": "Raquel Welch'in"
+   },
+   {
+    "concept_id": "marilyn_monroe_s",
+    "en": "Marilyn Monroe's",
+    "tr": "Marilyn Monroe'nun"
+   },
+   {
+    "concept_id": "rita_hayworth_s",
+    "en": "Rita Hayworth's",
+    "tr": "Rita Hayworth'ün"
+   },
+   {
+    "concept_id": "brigitte_bardot_s",
+    "en": "Brigitte Bardot's",
+    "tr": "Brigitte Bardot'nun"
+   }
+  ],
+  "correct": "raquel_welch_s",
+  "source": "https://en.wikipedia.org/wiki/The_Shawshank_Redemption"
+ },
+ {
+  "key": "movies_tv_q0784",
+  "category_id": "movies_tv",
+  "subcategory_id": "directors",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many feature films did French director Jean Vigo complete?",
+   "tr": "Fransız yönetmen Jean Vigo kaç uzun metraj film tamamladı?"
+  },
+  "options": [
+   {
+    "concept_id": "n_1",
+    "en": "1",
+    "tr": "1"
+   },
+   {
+    "concept_id": "n_3",
+    "en": "3",
+    "tr": "3"
+   },
+   {
+    "concept_id": "n_5",
+    "en": "5",
+    "tr": "5"
+   },
+   {
+    "concept_id": "n_8",
+    "en": "8",
+    "tr": "8"
+   }
+  ],
+  "correct": "n_1",
+  "source": "https://en.wikipedia.org/wiki/Jean_Vigo"
+ },
+ {
+  "key": "movies_tv_q0785",
+  "category_id": "movies_tv",
+  "subcategory_id": "directors",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who directed Yol (1982), which shared the Palme d'Or, following Yılmaz Güney's notes?",
+   "tr": "Altın Palmiye'yi paylaşan Yol'u (1982) Yılmaz Güney'in notlarıyla kim yönetti?"
+  },
+  "options": [
+   {
+    "concept_id": "serif_goren",
+    "en": "Şerif Gören",
+    "tr": "Şerif Gören"
+   },
+   {
+    "concept_id": "zeki_okten",
+    "en": "Zeki Ökten",
+    "tr": "Zeki Ökten"
+   },
+   {
+    "concept_id": "ali_ozgenturk",
+    "en": "Ali Özgentürk",
+    "tr": "Ali Özgentürk"
+   },
+   {
+    "concept_id": "erden_kral",
+    "en": "Erden Kıral",
+    "tr": "Erden Kıral"
+   }
+  ],
+  "correct": "serif_goren",
+  "source": "https://en.wikipedia.org/wiki/Yol_(film)"
+ },
+ {
+  "key": "movies_tv_q0786",
+  "category_id": "movies_tv",
+  "subcategory_id": "directors",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who won the very first Oscar for Best Director (Dramatic Picture), for 7th Heaven?",
+   "tr": "7th Heaven ile ilk En İyi Yönetmen (Dram) Oscar'ını kim kazandı?"
+  },
+  "options": [
+   {
+    "concept_id": "frank_borzage",
+    "en": "Frank Borzage",
+    "tr": "Frank Borzage"
+   },
+   {
+    "concept_id": "lewis_milestone",
+    "en": "Lewis Milestone",
+    "tr": "Lewis Milestone"
+   },
+   {
+    "concept_id": "king_vidor",
+    "en": "King Vidor",
+    "tr": "King Vidor"
+   },
+   {
+    "concept_id": "f_w_murnau",
+    "en": "F. W. Murnau",
+    "tr": "F. W. Murnau"
+   }
+  ],
+  "correct": "frank_borzage",
+  "source": "https://en.wikipedia.org/wiki/Frank_Borzage"
+ },
+ {
+  "key": "movies_tv_q0787",
+  "category_id": "movies_tv",
+  "subcategory_id": "tv_streaming",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who created and narrated The Twilight Zone?",
+   "tr": "The Twilight Zone'u kim yarattı ve anlattı?"
+  },
+  "options": [
+   {
+    "concept_id": "rod_serling",
+    "en": "Rod Serling",
+    "tr": "Rod Serling"
+   },
+   {
+    "concept_id": "alfred_hitchcock",
+    "en": "Alfred Hitchcock",
+    "tr": "Alfred Hitchcock"
+   },
+   {
+    "concept_id": "gene_roddenberry",
+    "en": "Gene Roddenberry",
+    "tr": "Gene Roddenberry"
+   },
+   {
+    "concept_id": "orson_welles",
+    "en": "Orson Welles",
+    "tr": "Orson Welles"
+   }
+  ],
+  "correct": "rod_serling",
+  "source": "https://en.wikipedia.org/wiki/Rod_Serling"
+ },
+ {
+  "key": "movies_tv_q0788",
+  "category_id": "movies_tv",
+  "subcategory_id": "tv_streaming",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "In Twin Peaks, what does Agent Cooper famously praise as \"damn fine\"?",
+   "tr": "Twin Peaks'te Ajan Cooper neyi \"lanet olası güzel\" diye överek ünlenir?"
+  },
+  "options": [
+   {
+    "concept_id": "a_cup_of_coffee",
+    "en": "A cup of coffee",
+    "tr": "Bir fincan kahveyi"
+   },
+   {
+    "concept_id": "a_slice_of_cake",
+    "en": "A slice of cake",
+    "tr": "Bir dilim pastayı"
+   },
+   {
+    "concept_id": "a_glass_of_milk",
+    "en": "A glass of milk",
+    "tr": "Bir bardak sütü"
+   },
+   {
+    "concept_id": "a_cheeseburger",
+    "en": "A cheeseburger",
+    "tr": "Bir çizburgeri"
+   }
+  ],
+  "correct": "a_cup_of_coffee",
+  "source": "https://en.wikipedia.org/wiki/Dale_Cooper"
+ },
+ {
+  "key": "movies_tv_q0789",
+  "category_id": "movies_tv",
+  "subcategory_id": "tv_streaming",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which actress played the title role in the Turkish sitcom Perihan Abla?",
+   "tr": "Türk sitkomu Perihan Abla'da başrolü hangi oyuncu oynadı?"
+  },
+  "options": [
+   {
+    "concept_id": "perran_kutman",
+    "en": "Perran Kutman",
+    "tr": "Perran Kutman"
+   },
+   {
+    "concept_id": "aysen_gruda",
+    "en": "Ayşen Gruda",
+    "tr": "Ayşen Gruda"
+   },
+   {
+    "concept_id": "adile_nasit",
+    "en": "Adile Naşit",
+    "tr": "Adile Naşit"
+   },
+   {
+    "concept_id": "nevra_serezli",
+    "en": "Nevra Serezli",
+    "tr": "Nevra Serezli"
+   }
+  ],
+  "correct": "perran_kutman",
+  "source": "https://en.wikipedia.org/wiki/Perran_Kutman"
+ },
+ {
+  "key": "movies_tv_q0790",
+  "category_id": "movies_tv",
+  "subcategory_id": "global_films",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Filipino director is known for films running eight hours or more?",
+   "tr": "Sekiz saat ve üzeri süren filmleriyle bilinen Filipinli yönetmen kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "lav_diaz",
+    "en": "Lav Diaz",
+    "tr": "Lav Diaz"
+   },
+   {
+    "concept_id": "lino_brocka",
+    "en": "Lino Brocka",
+    "tr": "Lino Brocka"
+   },
+   {
+    "concept_id": "brillante_mendoza",
+    "en": "Brillante Mendoza",
+    "tr": "Brillante Mendoza"
+   },
+   {
+    "concept_id": "kidlat_tahimik",
+    "en": "Kidlat Tahimik",
+    "tr": "Kidlat Tahimik"
+   }
+  ],
+  "correct": "lav_diaz",
+  "source": "https://en.wikipedia.org/wiki/Lav_Diaz"
+ },
+ {
+  "key": "movies_tv_q0791",
+  "category_id": "movies_tv",
+  "subcategory_id": "global_films",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Spanish-born director made Los Olvidados (1950) in Mexico?",
+   "tr": "Los Olvidados'u (1950) Meksika'da çeken İspanya doğumlu yönetmen kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "luis_bunuel",
+    "en": "Luis Buñuel",
+    "tr": "Luis Buñuel"
+   },
+   {
+    "concept_id": "carlos_saura",
+    "en": "Carlos Saura",
+    "tr": "Carlos Saura"
+   },
+   {
+    "concept_id": "emilio_fernandez",
+    "en": "Emilio Fernández",
+    "tr": "Emilio Fernández"
+   },
+   {
+    "concept_id": "arturo_ripstein",
+    "en": "Arturo Ripstein",
+    "tr": "Arturo Ripstein"
+   }
+  ],
+  "correct": "luis_bunuel",
+  "source": "https://en.wikipedia.org/wiki/Luis_Buñuel"
+ },
+ {
+  "key": "movies_tv_q0792",
+  "category_id": "movies_tv",
+  "subcategory_id": "global_films",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Brazilian director led the Cinema Novo movement with Black God, White Devil?",
+   "tr": "Black God, White Devil ile Cinema Novo akımına öncülük eden Brezilyalı yönetmen kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "glauber_rocha",
+    "en": "Glauber Rocha",
+    "tr": "Glauber Rocha"
+   },
+   {
+    "concept_id": "nelson_pereira_dos_santos",
+    "en": "Nelson Pereira dos Santos",
+    "tr": "Nelson Pereira dos Santos"
+   },
+   {
+    "concept_id": "walter_salles",
+    "en": "Walter Salles",
+    "tr": "Walter Salles"
+   },
+   {
+    "concept_id": "hector_babenco",
+    "en": "Héctor Babenco",
+    "tr": "Héctor Babenco"
+   }
+  ],
+  "correct": "glauber_rocha",
+  "source": "https://en.wikipedia.org/wiki/Glauber_Rocha"
+ },
+ {
+  "key": "movies_tv_q0793",
+  "category_id": "movies_tv",
+  "subcategory_id": "hollywood",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Kubrick shot one staircase scene in The Shining a record number of times. How many?",
+   "tr": "Kubrick, Cinnet'teki bir merdiven sahnesini rekor sayıda çekti. Kaç kez?"
+  },
+  "options": [
+   {
+    "concept_id": "n_127",
+    "en": "127",
+    "tr": "127"
+   },
+   {
+    "concept_id": "n_37",
+    "en": "37",
+    "tr": "37"
+   },
+   {
+    "concept_id": "n_57",
+    "en": "57",
+    "tr": "57"
+   },
+   {
+    "concept_id": "n_250",
+    "en": "250",
+    "tr": "250"
+   }
+  ],
+  "correct": "n_127",
+  "source": "https://en.wikipedia.org/wiki/The_Shining_(film)"
+ },
+ {
+  "key": "movies_tv_q0794",
+  "category_id": "movies_tv",
+  "subcategory_id": "hollywood",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which German immigrant founded Universal Pictures in 1912?",
+   "tr": "Universal Pictures'ı 1912'de kuran Alman göçmen kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "carl_laemmle",
+    "en": "Carl Laemmle",
+    "tr": "Carl Laemmle"
+   },
+   {
+    "concept_id": "adolph_zukor",
+    "en": "Adolph Zukor",
+    "tr": "Adolph Zukor"
+   },
+   {
+    "concept_id": "william_fox",
+    "en": "William Fox",
+    "tr": "William Fox"
+   },
+   {
+    "concept_id": "louis_b_mayer",
+    "en": "Louis B. Mayer",
+    "tr": "Louis B. Mayer"
+   }
+  ],
+  "correct": "carl_laemmle",
+  "source": "https://en.wikipedia.org/wiki/Carl_Laemmle"
+ },
+ {
+  "key": "movies_tv_q0795",
+  "category_id": "movies_tv",
+  "subcategory_id": "hollywood",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the name given to MGM's roaring lion mascot?",
+   "tr": "MGM'in kükreyen aslan maskotuna verilen ad nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "leo",
+    "en": "Leo",
+    "tr": "Leo"
+   },
+   {
+    "concept_id": "rex",
+    "en": "Rex",
+    "tr": "Rex"
+   },
+   {
+    "concept_id": "simba",
+    "en": "Simba",
+    "tr": "Simba"
+   },
+   {
+    "concept_id": "max",
+    "en": "Max",
+    "tr": "Max"
+   }
+  ],
+  "correct": "leo",
+  "source": "https://en.wikipedia.org/wiki/Leo_the_Lion_(MGM)"
+ },
+ {
+  "key": "movies_tv_q0796",
+  "category_id": "movies_tv",
+  "subcategory_id": "awards",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Nobel-winning playwright also won an Oscar, for Pygmalion's screenplay?",
+   "tr": "Hangi Nobel ödüllü oyun yazarı Pygmalion senaryosuyla Oscar da kazandı?"
+  },
+  "options": [
+   {
+    "concept_id": "george_bernard_shaw",
+    "en": "George Bernard Shaw",
+    "tr": "George Bernard Shaw"
+   },
+   {
+    "concept_id": "eugene_o_neill",
+    "en": "Eugene O'Neill",
+    "tr": "Eugene O'Neill"
+   },
+   {
+    "concept_id": "harold_pinter",
+    "en": "Harold Pinter",
+    "tr": "Harold Pinter"
+   },
+   {
+    "concept_id": "samuel_beckett",
+    "en": "Samuel Beckett",
+    "tr": "Samuel Beckett"
+   }
+  ],
+  "correct": "george_bernard_shaw",
+  "source": "https://en.wikipedia.org/wiki/George_Bernard_Shaw"
+ },
+ {
+  "key": "movies_tv_q0797",
+  "category_id": "movies_tv",
+  "subcategory_id": "awards",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who in 1936 became the first person to refuse an Oscar, for The Informer's screenplay?",
+   "tr": "1936'da The Informer senaryosu için Oscar'ı reddeden ilk kişi kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "dudley_nichols",
+    "en": "Dudley Nichols",
+    "tr": "Dudley Nichols"
+   },
+   {
+    "concept_id": "ben_hecht",
+    "en": "Ben Hecht",
+    "tr": "Ben Hecht"
+   },
+   {
+    "concept_id": "dalton_trumbo",
+    "en": "Dalton Trumbo",
+    "tr": "Dalton Trumbo"
+   },
+   {
+    "concept_id": "john_ford",
+    "en": "John Ford",
+    "tr": "John Ford"
+   }
+  ],
+  "correct": "dudley_nichols",
+  "source": "https://en.wikipedia.org/wiki/Dudley_Nichols"
+ },
+ {
+  "key": "movies_tv_q0798",
+  "category_id": "movies_tv",
+  "subcategory_id": "awards",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which actor received eight acting Oscar nominations but never won one competitively?",
+   "tr": "Hangi oyuncu sekiz oyunculuk Oscar adaylığı alıp hiç yarışmalı ödül kazanamadı?"
+  },
+  "options": [
+   {
+    "concept_id": "peter_o_toole",
+    "en": "Peter O'Toole",
+    "tr": "Peter O'Toole"
+   },
+   {
+    "concept_id": "richard_burton",
+    "en": "Richard Burton",
+    "tr": "Richard Burton"
+   },
+   {
+    "concept_id": "albert_finney",
+    "en": "Albert Finney",
+    "tr": "Albert Finney"
+   },
+   {
+    "concept_id": "kirk_douglas",
+    "en": "Kirk Douglas",
+    "tr": "Kirk Douglas"
+   }
+  ],
+  "correct": "peter_o_toole",
+  "source": "https://en.wikipedia.org/wiki/Peter_O'Toole"
+ },
+ {
+  "key": "movies_tv_q0799",
+  "category_id": "movies_tv",
+  "subcategory_id": "bollywood",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which 1943 Hindi film ran for over three years at Calcutta's Roxy cinema?",
+   "tr": "1943 yapımı hangi Hint filmi Kalküta'daki Roxy sinemasında üç yılı aşkın süre gösterildi?"
+  },
+  "options": [
+   {
+    "concept_id": "kismet",
+    "en": "Kismet",
+    "tr": "Kismet"
+   },
+   {
+    "concept_id": "achhut_kanya",
+    "en": "Achhut Kanya",
+    "tr": "Achhut Kanya"
+   },
+   {
+    "concept_id": "ratan",
+    "en": "Ratan",
+    "tr": "Ratan"
+   },
+   {
+    "concept_id": "barsaat",
+    "en": "Barsaat",
+    "tr": "Barsaat"
+   }
+  ],
+  "correct": "kismet",
+  "source": "https://en.wikipedia.org/wiki/Kismet_(1943_film)"
+ },
+ {
+  "key": "movies_tv_q0800",
+  "category_id": "movies_tv",
+  "subcategory_id": "bollywood",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who composed the songs of Pakeezah (1972), dying before its release?",
+   "tr": "Pakeezah'ın (1972) şarkılarını besteleyip film çıkmadan ölen besteci kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "ghulam_mohammed",
+    "en": "Ghulam Mohammed",
+    "tr": "Ghulam Mohammed"
+   },
+   {
+    "concept_id": "naushad",
+    "en": "Naushad",
+    "tr": "Naushad"
+   },
+   {
+    "concept_id": "s_d_burman",
+    "en": "S. D. Burman",
+    "tr": "S. D. Burman"
+   },
+   {
+    "concept_id": "madan_mohan",
+    "en": "Madan Mohan",
+    "tr": "Madan Mohan"
+   }
+  ],
+  "correct": "ghulam_mohammed",
+  "source": "https://en.wikipedia.org/wiki/Pakeezah"
  }
 ]
