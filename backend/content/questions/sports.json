@@ -28978,5 +28978,3605 @@
   ],
   "correct": "dhyan_chand",
   "source": "https://en.wikipedia.org/wiki/Dhyan_Chand"
+ },
+ {
+  "key": "sports_q0801",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In which Winter Olympic sport do athletes race down an icy track lying feet-first on a sled?",
+   "tr": "Hangi Kış Olimpiyatı sporunda sporcular kızakta ayakları önde uzanarak buzlu pistten iner?"
+  },
+  "options": [
+   {
+    "concept_id": "luge",
+    "en": "Luge",
+    "tr": "Kızak (luge)"
+   },
+   {
+    "concept_id": "skeleton",
+    "en": "Skeleton",
+    "tr": "Skeleton"
+   },
+   {
+    "concept_id": "bobsleigh",
+    "en": "Bobsleigh",
+    "tr": "Bobsled"
+   },
+   {
+    "concept_id": "curling",
+    "en": "Curling",
+    "tr": "Curling"
+   }
+  ],
+  "correct": "luge",
+  "source": "https://en.wikipedia.org/wiki/Luge"
+ },
+ {
+  "key": "sports_q0802",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many players per team are on the ice in ice hockey, including the goalie?",
+   "tr": "Buz hokeyinde kaleci dahil her takımdan buzda kaç oyuncu bulunur?"
+  },
+  "options": [
+   {
+    "concept_id": "n_6",
+    "en": "6",
+    "tr": "6"
+   },
+   {
+    "concept_id": "n_5",
+    "en": "5",
+    "tr": "5"
+   },
+   {
+    "concept_id": "n_7",
+    "en": "7",
+    "tr": "7"
+   },
+   {
+    "concept_id": "n_11",
+    "en": "11",
+    "tr": "11"
+   }
+  ],
+  "correct": "n_6",
+  "source": "https://en.wikipedia.org/wiki/Ice_hockey"
+ },
+ {
+  "key": "sports_q0803",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In judo, a player throws the opponent hard, flat onto their back. What is the result?",
+   "tr": "Judoda bir sporcu rakibini güçlüce sırtüstü yere atarsa sonuç ne olur?"
+  },
+  "options": [
+   {
+    "concept_id": "ippon_the_match_is_won",
+    "en": "Ippon: the match is won",
+    "tr": "İppon: maç kazanılır"
+   },
+   {
+    "concept_id": "a_warning",
+    "en": "A warning",
+    "tr": "Uyarı"
+   },
+   {
+    "concept_id": "a_restart",
+    "en": "A restart",
+    "tr": "Yeniden başlama"
+   },
+   {
+    "concept_id": "half_a_point_for_the_loser",
+    "en": "Half a point for the loser",
+    "tr": "Kaybedene yarım puan"
+   }
+  ],
+  "correct": "ippon_the_match_is_won",
+  "source": "https://en.wikipedia.org/wiki/Judo"
+ },
+ {
+  "key": "sports_q0804",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the \"Olympic truce\"?",
+   "tr": "\"Olimpiyat ateşkesi\" nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "a_call_to_stop_wars_during_the_games",
+    "en": "A call to stop wars during the Games",
+    "tr": "Oyunlar süresince savaşları durdurma çağrısı"
+   },
+   {
+    "concept_id": "a_rule_against_doping",
+    "en": "A rule against doping",
+    "tr": "Doping karşıtı kural"
+   },
+   {
+    "concept_id": "a_tie_in_a_final",
+    "en": "A tie in a final",
+    "tr": "Finalde beraberlik"
+   },
+   {
+    "concept_id": "a_break_between_events",
+    "en": "A break between events",
+    "tr": "Yarışmalar arası mola"
+   }
+  ],
+  "correct": "a_call_to_stop_wars_during_the_games",
+  "source": "https://en.wikipedia.org/wiki/Olympic_Truce"
+ },
+ {
+  "key": "sports_q0805",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which takes longer to finish: the Olympic marathon or the 20 km race walk?",
+   "tr": "Hangisini bitirmek daha uzun sürer: Olimpik maraton mu, 20 km yürüyüş mü?"
+  },
+  "options": [
+   {
+    "concept_id": "the_marathon_race",
+    "en": "The marathon race",
+    "tr": "Maraton koşusu"
+   },
+   {
+    "concept_id": "the_20_km_walk",
+    "en": "The 20 km walk",
+    "tr": "20 km yürüyüş"
+   },
+   {
+    "concept_id": "they_take_the_same_time",
+    "en": "They take the same time",
+    "tr": "Aynı süre"
+   },
+   {
+    "concept_id": "it_depends_on_the_weather",
+    "en": "It depends on the weather",
+    "tr": "Havaya bağlı"
+   }
+  ],
+  "correct": "the_marathon_race",
+  "source": "https://en.wikipedia.org/wiki/Marathon"
+ },
+ {
+  "key": "sports_q0806",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which country's national team is nicknamed \"El Tri\"?",
+   "tr": "\"El Tri\" lakaplı milli takım hangi ülkenindir?"
+  },
+  "options": [
+   {
+    "concept_id": "mexico",
+    "en": "Mexico",
+    "tr": "Meksika"
+   },
+   {
+    "concept_id": "colombia",
+    "en": "Colombia",
+    "tr": "Kolombiya"
+   },
+   {
+    "concept_id": "peru",
+    "en": "Peru",
+    "tr": "Peru"
+   },
+   {
+    "concept_id": "ecuador",
+    "en": "Ecuador",
+    "tr": "Ekvador"
+   }
+  ],
+  "correct": "mexico",
+  "source": "https://en.wikipedia.org/wiki/Mexico_national_football_team"
+ },
+ {
+  "key": "sports_q0807",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which singer performed \"Waka Waka\", the song of the 2010 World Cup?",
+   "tr": "2010 Dünya Kupası şarkısı \"Waka Waka\"yı hangi şarkıcı seslendirdi?"
+  },
+  "options": [
+   {
+    "concept_id": "shakira",
+    "en": "Shakira",
+    "tr": "Shakira"
+   },
+   {
+    "concept_id": "beyonce",
+    "en": "Beyoncé",
+    "tr": "Beyoncé"
+   },
+   {
+    "concept_id": "rihanna",
+    "en": "Rihanna",
+    "tr": "Rihanna"
+   },
+   {
+    "concept_id": "jennifer_lopez",
+    "en": "Jennifer Lopez",
+    "tr": "Jennifer Lopez"
+   }
+  ],
+  "correct": "shakira",
+  "source": "https://en.wikipedia.org/wiki/Waka_Waka_(This_Time_for_Africa)"
+ },
+ {
+  "key": "sports_q0808",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Up to 2022, how many men's World Cup finals had been decided on penalties?",
+   "tr": "2022'ye kadar kaç erkekler Dünya Kupası finali penaltılarla sonuçlanmıştı?"
+  },
+  "options": [
+   {
+    "concept_id": "n_3",
+    "en": "3",
+    "tr": "3"
+   },
+   {
+    "concept_id": "n_1",
+    "en": "1",
+    "tr": "1"
+   },
+   {
+    "concept_id": "n_5",
+    "en": "5",
+    "tr": "5"
+   },
+   {
+    "concept_id": "n_7",
+    "en": "7",
+    "tr": "7"
+   }
+  ],
+  "correct": "n_3",
+  "source": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals"
+ },
+ {
+  "key": "sports_q0809",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "A World Cup group match is level after 90 minutes. What happens?",
+   "tr": "Bir Dünya Kupası grup maçı 90 dakika sonunda berabereyse ne olur?"
+  },
+  "options": [
+   {
+    "concept_id": "it_ends_as_a_draw",
+    "en": "It ends as a draw",
+    "tr": "Beraberlikle biter"
+   },
+   {
+    "concept_id": "extra_time_is_played",
+    "en": "Extra time is played",
+    "tr": "Uzatmaya gidilir"
+   },
+   {
+    "concept_id": "penalties_decide_it",
+    "en": "Penalties decide it",
+    "tr": "Penaltılarla belirlenir"
+   },
+   {
+    "concept_id": "it_is_replayed",
+    "en": "It is replayed",
+    "tr": "Tekrar oynanır"
+   }
+  ],
+  "correct": "it_ends_as_a_draw",
+  "source": "https://en.wikipedia.org/wiki/FIFA_World_Cup"
+ },
+ {
+  "key": "sports_q0810",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Fuleco, mascot of the 2014 World Cup, was which animal?",
+   "tr": "2014 Dünya Kupası maskotu Fuleco hangi hayvandı?"
+  },
+  "options": [
+   {
+    "concept_id": "an_armadillo",
+    "en": "An armadillo",
+    "tr": "Armadillo"
+   },
+   {
+    "concept_id": "a_parrot",
+    "en": "A parrot",
+    "tr": "Papağan"
+   },
+   {
+    "concept_id": "a_jaguar",
+    "en": "A jaguar",
+    "tr": "Jaguar"
+   },
+   {
+    "concept_id": "a_monkey",
+    "en": "A monkey",
+    "tr": "Maymun"
+   }
+  ],
+  "correct": "an_armadillo",
+  "source": "https://en.wikipedia.org/wiki/Fuleco"
+ },
+ {
+  "key": "sports_q0811",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Portuguese club plays at the Estádio da Luz?",
+   "tr": "Estádio da Luz'da oynayan Portekiz kulübü hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "benfica",
+    "en": "Benfica",
+    "tr": "Benfica"
+   },
+   {
+    "concept_id": "porto",
+    "en": "Porto",
+    "tr": "Porto"
+   },
+   {
+    "concept_id": "sporting_cp",
+    "en": "Sporting CP",
+    "tr": "Sporting"
+   },
+   {
+    "concept_id": "braga",
+    "en": "Braga",
+    "tr": "Braga"
+   }
+  ],
+  "correct": "benfica",
+  "source": "https://en.wikipedia.org/wiki/Estádio_da_Luz"
+ },
+ {
+  "key": "sports_q0812",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What does \"parking the bus\" mean in football?",
+   "tr": "Futbolda \"otobüsü park etmek\" ne demektir?"
+  },
+  "options": [
+   {
+    "concept_id": "defending_with_almost_every_player",
+    "en": "Defending with almost every player",
+    "tr": "Neredeyse tüm oyuncularla savunmak"
+   },
+   {
+    "concept_id": "arriving_late_to_a_match",
+    "en": "Arriving late to a match",
+    "tr": "Maça geç gelmek"
+   },
+   {
+    "concept_id": "scoring_from_a_corner",
+    "en": "Scoring from a corner",
+    "tr": "Kornerden gol atmak"
+   },
+   {
+    "concept_id": "wasting_time_at_a_throw_in",
+    "en": "Wasting time at a throw-in",
+    "tr": "Taç atışında zaman geçirmek"
+   }
+  ],
+  "correct": "defending_with_almost_every_player",
+  "source": "https://en.wikipedia.org/wiki/Glossary_of_association_football_terms"
+ },
+ {
+  "key": "sports_q0813",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the minimum number of players a team needs on the pitch for a match to continue?",
+   "tr": "Bir maçın sürmesi için takımın sahada en az kaç oyuncusu olmalıdır?"
+  },
+  "options": [
+   {
+    "concept_id": "n_7",
+    "en": "7",
+    "tr": "7"
+   },
+   {
+    "concept_id": "n_5",
+    "en": "5",
+    "tr": "5"
+   },
+   {
+    "concept_id": "n_8",
+    "en": "8",
+    "tr": "8"
+   },
+   {
+    "concept_id": "n_9",
+    "en": "9",
+    "tr": "9"
+   }
+  ],
+  "correct": "n_7",
+  "source": "https://en.wikipedia.org/wiki/Laws_of_the_Game_(association_football)"
+ },
+ {
+  "key": "sports_q0814",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "A defender stops a certain goal by handling the ball on the line. What happens?",
+   "tr": "Bir savunmacı kesin golü çizgide elle engellerse ne olur?"
+  },
+  "options": [
+   {
+    "concept_id": "penalty_and_a_red_card",
+    "en": "Penalty and a red card",
+    "tr": "Penaltı ve kırmızı kart"
+   },
+   {
+    "concept_id": "a_corner",
+    "en": "A corner",
+    "tr": "Korner"
+   },
+   {
+    "concept_id": "a_free_kick_outside_the_box",
+    "en": "A free kick outside the box",
+    "tr": "Ceza sahası dışından serbest vuruş"
+   },
+   {
+    "concept_id": "a_yellow_card_only",
+    "en": "A yellow card only",
+    "tr": "Sadece sarı kart"
+   }
+  ],
+  "correct": "penalty_and_a_red_card",
+  "source": "https://en.wikipedia.org/wiki/Handball_(association_football)"
+ },
+ {
+  "key": "sports_q0815",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Göztepe is a football club from which Turkish city?",
+   "tr": "Göztepe hangi şehrin futbol kulübüdür?"
+  },
+  "options": [
+   {
+    "concept_id": "izmir",
+    "en": "İzmir",
+    "tr": "İzmir"
+   },
+   {
+    "concept_id": "bursa",
+    "en": "Bursa",
+    "tr": "Bursa"
+   },
+   {
+    "concept_id": "antalya",
+    "en": "Antalya",
+    "tr": "Antalya"
+   },
+   {
+    "concept_id": "adana",
+    "en": "Adana",
+    "tr": "Adana"
+   }
+  ],
+  "correct": "izmir",
+  "source": "https://en.wikipedia.org/wiki/Göztepe_S.K."
+ },
+ {
+  "key": "sports_q0816",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which NBA team is based in Philadelphia?",
+   "tr": "Philadelphia merkezli NBA takımı hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "n_76ers",
+    "en": "76ers",
+    "tr": "76ers"
+   },
+   {
+    "concept_id": "knicks",
+    "en": "Knicks",
+    "tr": "Knicks"
+   },
+   {
+    "concept_id": "wizards",
+    "en": "Wizards",
+    "tr": "Wizards"
+   },
+   {
+    "concept_id": "pistons",
+    "en": "Pistons",
+    "tr": "Pistons"
+   }
+  ],
+  "correct": "n_76ers",
+  "source": "https://en.wikipedia.org/wiki/Philadelphia_76ers"
+ },
+ {
+  "key": "sports_q0817",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the \"pick and roll\" in basketball?",
+   "tr": "Basketbolda \"pick and roll\" nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "a_screen_followed_by_a_cut_to_the_basket",
+    "en": "A screen followed by a cut to the basket",
+    "tr": "Perdeleme ardından potaya kesme"
+   },
+   {
+    "concept_id": "a_backwards_pass",
+    "en": "A backwards pass",
+    "tr": "Geriye pas"
+   },
+   {
+    "concept_id": "a_jump_ball_trick",
+    "en": "A jump ball trick",
+    "tr": "Hava atışı hilesi"
+   },
+   {
+    "concept_id": "a_free_throw_routine",
+    "en": "A free-throw routine",
+    "tr": "Serbest atış rutini"
+   }
+  ],
+  "correct": "a_screen_followed_by_a_cut_to_the_basket",
+  "source": "https://en.wikipedia.org/wiki/Pick_and_roll"
+ },
+ {
+  "key": "sports_q0818",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How long is an NBA overtime period?",
+   "tr": "NBA'de bir uzatma periyodu kaç dakikadır?"
+  },
+  "options": [
+   {
+    "concept_id": "n_5_minutes",
+    "en": "5 minutes",
+    "tr": "5 dakika"
+   },
+   {
+    "concept_id": "n_3_minutes",
+    "en": "3 minutes",
+    "tr": "3 dakika"
+   },
+   {
+    "concept_id": "n_10_minutes",
+    "en": "10 minutes",
+    "tr": "10 dakika"
+   },
+   {
+    "concept_id": "n_12_minutes",
+    "en": "12 minutes",
+    "tr": "12 dakika"
+   }
+  ],
+  "correct": "n_5_minutes",
+  "source": "https://en.wikipedia.org/wiki/Overtime_(sports)"
+ },
+ {
+  "key": "sports_q0819",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "A player is fouled while shooting, and the shot still goes in. What happens?",
+   "tr": "Şut atarken faule uğrayan oyuncunun atışı yine de girerse ne olur?"
+  },
+  "options": [
+   {
+    "concept_id": "the_basket_counts_plus_one_free_throw",
+    "en": "The basket counts plus one free throw",
+    "tr": "Sayı geçerli ve bir serbest atış"
+   },
+   {
+    "concept_id": "no_basket_two_free_throws",
+    "en": "No basket, two free throws",
+    "tr": "Sayı yok, iki serbest atış"
+   },
+   {
+    "concept_id": "the_basket_is_cancelled",
+    "en": "The basket is cancelled",
+    "tr": "Sayı iptal"
+   },
+   {
+    "concept_id": "the_team_gets_the_ball_back",
+    "en": "The team gets the ball back",
+    "tr": "Top takımda kalır"
+   }
+  ],
+  "correct": "the_basket_counts_plus_one_free_throw",
+  "source": "https://en.wikipedia.org/wiki/Free_throw"
+ },
+ {
+  "key": "sports_q0820",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which is longer: an NBA court or an NHL ice hockey rink?",
+   "tr": "Hangisi daha uzundur: NBA sahası mı, NHL buz hokeyi pisti mi?"
+  },
+  "options": [
+   {
+    "concept_id": "the_hockey_rink",
+    "en": "The hockey rink",
+    "tr": "Hokey pisti daha uzun"
+   },
+   {
+    "concept_id": "the_nba_court",
+    "en": "The NBA court",
+    "tr": "NBA sahası daha uzun"
+   },
+   {
+    "concept_id": "they_are_equal",
+    "en": "They are equal",
+    "tr": "Eşittir"
+   },
+   {
+    "concept_id": "it_depends_on_the_arena",
+    "en": "It depends on the arena",
+    "tr": "Salona göre değişir"
+   }
+  ],
+  "correct": "the_hockey_rink",
+  "source": "https://en.wikipedia.org/wiki/Ice_hockey_rink"
+ },
+ {
+  "key": "sports_q0821",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which famous marathon starts in the town of Hopkinton?",
+   "tr": "Hangi ünlü maraton Hopkinton kasabasında başlar?"
+  },
+  "options": [
+   {
+    "concept_id": "boston_marathon",
+    "en": "Boston Marathon",
+    "tr": "Boston Maratonu"
+   },
+   {
+    "concept_id": "new_york_city_marathon",
+    "en": "New York City Marathon",
+    "tr": "New York Maratonu"
+   },
+   {
+    "concept_id": "chicago_marathon",
+    "en": "Chicago Marathon",
+    "tr": "Chicago Maratonu"
+   },
+   {
+    "concept_id": "london_marathon",
+    "en": "London Marathon",
+    "tr": "Londra Maratonu"
+   }
+  ],
+  "correct": "boston_marathon",
+  "source": "https://en.wikipedia.org/wiki/Boston_Marathon"
+ },
+ {
+  "key": "sports_q0822",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In a sprint final, which lanes do the fastest qualifiers usually get?",
+   "tr": "Sürat finalinde en hızlı gelen sporculara genellikle hangi kulvarlar verilir?"
+  },
+  "options": [
+   {
+    "concept_id": "the_middle_lanes",
+    "en": "The middle lanes",
+    "tr": "Orta kulvarlar"
+   },
+   {
+    "concept_id": "lane_1",
+    "en": "Lane 1",
+    "tr": "1. kulvar"
+   },
+   {
+    "concept_id": "lane_8",
+    "en": "Lane 8",
+    "tr": "8. kulvar"
+   },
+   {
+    "concept_id": "chosen_by_lottery_only",
+    "en": "Chosen by lottery only",
+    "tr": "Sadece kura ile"
+   }
+  ],
+  "correct": "the_middle_lanes",
+  "source": "https://en.wikipedia.org/wiki/Running_track"
+ },
+ {
+  "key": "sports_q0823",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is it called when two runners cannot be separated at the finish?",
+   "tr": "Bitişte iki koşucu birbirinden ayrılamazsa buna ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "a_dead_heat",
+    "en": "A dead heat",
+    "tr": "Ölü yarış"
+   },
+   {
+    "concept_id": "a_photo_draw",
+    "en": "A photo draw",
+    "tr": "Fotoğraf beraberliği"
+   },
+   {
+    "concept_id": "a_split_finish",
+    "en": "A split finish",
+    "tr": "Bölünmüş bitiş"
+   },
+   {
+    "concept_id": "a_double_win",
+    "en": "A double win",
+    "tr": "Çift galibiyet"
+   }
+  ],
+  "correct": "a_dead_heat",
+  "source": "https://en.wikipedia.org/wiki/Dead_heat"
+ },
+ {
+  "key": "sports_q0824",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In a relay, the baton is passed outside the changeover zone. What happens?",
+   "tr": "Bayrak yarışında bayrak değişim alanının dışında verilirse ne olur?"
+  },
+  "options": [
+   {
+    "concept_id": "the_team_is_disqualified",
+    "en": "The team is disqualified",
+    "tr": "Takım diskalifiye edilir"
+   },
+   {
+    "concept_id": "they_lose_one_second",
+    "en": "They lose one second",
+    "tr": "Bir saniye kaybeder"
+   },
+   {
+    "concept_id": "the_pass_is_repeated",
+    "en": "The pass is repeated",
+    "tr": "Değişim tekrarlanır"
+   },
+   {
+    "concept_id": "nothing",
+    "en": "Nothing",
+    "tr": "Hiçbir şey"
+   }
+  ],
+  "correct": "the_team_is_disqualified",
+  "source": "https://en.wikipedia.org/wiki/Relay_race"
+ },
+ {
+  "key": "sports_q0825",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these is NOT a jumping event?",
+   "tr": "Hangisi bir atlama branşı DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "hammer",
+    "en": "Hammer",
+    "tr": "Çekiç atma"
+   },
+   {
+    "concept_id": "long_jump",
+    "en": "Long jump",
+    "tr": "Uzun atlama"
+   },
+   {
+    "concept_id": "triple_jump",
+    "en": "Triple jump",
+    "tr": "Üç adım atlama"
+   },
+   {
+    "concept_id": "high_jump",
+    "en": "High jump",
+    "tr": "Yüksek atlama"
+   }
+  ],
+  "correct": "hammer",
+  "source": "https://en.wikipedia.org/wiki/Track_and_field"
+ },
+ {
+  "key": "sports_q0826",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What does a line judge traditionally shout when a ball lands beyond the line?",
+   "tr": "Çizgi hakemi top çizginin dışına düşünce geleneksel olarak ne diye bağırır?"
+  },
+  "options": [
+   {
+    "concept_id": "out",
+    "en": "\"Out!\"",
+    "tr": "\"Out!\""
+   },
+   {
+    "concept_id": "fault",
+    "en": "\"Fault!\"",
+    "tr": "\"Fault!\""
+   },
+   {
+    "concept_id": "let",
+    "en": "\"Let!\"",
+    "tr": "\"Let!\""
+   },
+   {
+    "concept_id": "deuce",
+    "en": "\"Deuce!\"",
+    "tr": "\"Deuce!\""
+   }
+  ],
+  "correct": "out",
+  "source": "https://en.wikipedia.org/wiki/Line_judge"
+ },
+ {
+  "key": "sports_q0827",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Roughly how high is a tennis net at its centre?",
+   "tr": "Tenis filesi ortada yaklaşık ne kadar yüksektir?"
+  },
+  "options": [
+   {
+    "concept_id": "about_91_cm",
+    "en": "About 91 cm",
+    "tr": "Yaklaşık 91 cm"
+   },
+   {
+    "concept_id": "about_50_cm",
+    "en": "About 50 cm",
+    "tr": "Yaklaşık 50 cm"
+   },
+   {
+    "concept_id": "about_1_5_m",
+    "en": "About 1.5 m",
+    "tr": "Yaklaşık 1,5 m"
+   },
+   {
+    "concept_id": "about_2_m",
+    "en": "About 2 m",
+    "tr": "Yaklaşık 2 m"
+   }
+  ],
+  "correct": "about_91_cm",
+  "source": "https://en.wikipedia.org/wiki/Tennis_court"
+ },
+ {
+  "key": "sports_q0828",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "A player's racket touches the net while the ball is in play. What happens?",
+   "tr": "Top oyundayken bir oyuncunun raketi fileye değerse ne olur?"
+  },
+  "options": [
+   {
+    "concept_id": "they_lose_the_point",
+    "en": "They lose the point",
+    "tr": "Sayıyı kaybeder"
+   },
+   {
+    "concept_id": "play_continues",
+    "en": "Play continues",
+    "tr": "Oyun devam eder"
+   },
+   {
+    "concept_id": "the_point_is_replayed",
+    "en": "The point is replayed",
+    "tr": "Sayı tekrarlanır"
+   },
+   {
+    "concept_id": "they_get_a_warning",
+    "en": "They get a warning",
+    "tr": "Uyarı alır"
+   }
+  ],
+  "correct": "they_lose_the_point",
+  "source": "https://en.wikipedia.org/wiki/Tennis"
+ },
+ {
+  "key": "sports_q0829",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "At Wimbledon, what did players traditionally do towards the Royal Box when certain royals were present?",
+   "tr": "Wimbledon'da belirli kraliyet üyeleri varken oyuncular geleneksel olarak Kraliyet Locası'na ne yapardı?"
+  },
+  "options": [
+   {
+    "concept_id": "bow_or_curtsy",
+    "en": "Bow or curtsy",
+    "tr": "Reverans yapardı"
+   },
+   {
+    "concept_id": "wave_their_rackets",
+    "en": "Wave their rackets",
+    "tr": "Raket sallardı"
+   },
+   {
+    "concept_id": "throw_a_ball",
+    "en": "Throw a ball",
+    "tr": "Top atardı"
+   },
+   {
+    "concept_id": "kneel",
+    "en": "Kneel",
+    "tr": "Diz çökerdi"
+   }
+  ],
+  "correct": "bow_or_curtsy",
+  "source": "https://en.wikipedia.org/wiki/Wimbledon_Championships"
+ },
+ {
+  "key": "sports_q0830",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which is faster: the fastest recorded tennis serve or a cheetah at full sprint?",
+   "tr": "Hangisi daha hızlıdır: kaydedilen en hızlı tenis servisi mi, tam hızdaki çita mı?"
+  },
+  "options": [
+   {
+    "concept_id": "the_serve",
+    "en": "The serve",
+    "tr": "Servis"
+   },
+   {
+    "concept_id": "the_cheetah",
+    "en": "The cheetah",
+    "tr": "Çita"
+   },
+   {
+    "concept_id": "they_are_equal",
+    "en": "They are equal",
+    "tr": "Eşittir"
+   },
+   {
+    "concept_id": "depends_on_the_court",
+    "en": "Depends on the court",
+    "tr": "Korta bağlı"
+   }
+  ],
+  "correct": "the_serve",
+  "source": "https://en.wikipedia.org/wiki/Tennis"
+ },
+ {
+  "key": "sports_q0831",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Circuit of the Americas in Austin hosts which Grand Prix?",
+   "tr": "Austin'deki Amerika Pisti (COTA) hangi Grand Prix'ye ev sahipliği yapar?"
+  },
+  "options": [
+   {
+    "concept_id": "united_states",
+    "en": "United States",
+    "tr": "ABD"
+   },
+   {
+    "concept_id": "mexico_city",
+    "en": "Mexico City",
+    "tr": "Meksika"
+   },
+   {
+    "concept_id": "canadian",
+    "en": "Canadian",
+    "tr": "Kanada"
+   },
+   {
+    "concept_id": "las_vegas",
+    "en": "Las Vegas",
+    "tr": "Las Vegas"
+   }
+  ],
+  "correct": "united_states",
+  "source": "https://en.wikipedia.org/wiki/Circuit_of_the_Americas"
+ },
+ {
+  "key": "sports_q0832",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is it called when a driver follows closely behind another car to reduce drag?",
+   "tr": "Bir pilotun sürtünmeyi azaltmak için önündeki aracı yakından izlemesine ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "slipstreaming",
+    "en": "Slipstreaming",
+    "tr": "Rüzgâr tünelinden yararlanma (slipstream)"
+   },
+   {
+    "concept_id": "undercutting",
+    "en": "Undercutting",
+    "tr": "Undercut"
+   },
+   {
+    "concept_id": "lapping",
+    "en": "Lapping",
+    "tr": "Tur bindirme"
+   },
+   {
+    "concept_id": "drifting",
+    "en": "Drifting",
+    "tr": "Drift"
+   }
+  ],
+  "correct": "slipstreaming",
+  "source": "https://en.wikipedia.org/wiki/Slipstream"
+ },
+ {
+  "key": "sports_q0833",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many drivers score points in a Formula 1 race?",
+   "tr": "Bir Formula 1 yarışında kaç pilot puan alır?"
+  },
+  "options": [
+   {
+    "concept_id": "n_10",
+    "en": "10",
+    "tr": "10"
+   },
+   {
+    "concept_id": "n_3",
+    "en": "3",
+    "tr": "3"
+   },
+   {
+    "concept_id": "n_6",
+    "en": "6",
+    "tr": "6"
+   },
+   {
+    "concept_id": "n_20",
+    "en": "20",
+    "tr": "20"
+   }
+  ],
+  "correct": "n_10",
+  "source": "https://en.wikipedia.org/wiki/List_of_Formula_One_World_Championship_points_scoring_systems"
+ },
+ {
+  "key": "sports_q0834",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "A driver cuts a chicane and gains places. What usually follows?",
+   "tr": "Bir pilot şikaneyi kesip pozisyon kazanırsa genellikle ne olur?"
+  },
+  "options": [
+   {
+    "concept_id": "a_penalty_or_giving_the_places_back",
+    "en": "A penalty or giving the places back",
+    "tr": "Ceza alır ya da pozisyonları geri verir"
+   },
+   {
+    "concept_id": "nothing_at_all",
+    "en": "Nothing at all",
+    "tr": "Hiçbir şey"
+   },
+   {
+    "concept_id": "bonus_points",
+    "en": "Bonus points",
+    "tr": "Bonus puan"
+   },
+   {
+    "concept_id": "a_race_restart",
+    "en": "A race restart",
+    "tr": "Yarış yeniden başlar"
+   }
+  ],
+  "correct": "a_penalty_or_giving_the_places_back",
+  "source": "https://en.wikipedia.org/wiki/Chicane"
+ },
+ {
+  "key": "sports_q0835",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Why do sparks fly from under F1 cars on straights?",
+   "tr": "Düzlüklerde F1 araçlarının altından neden kıvılcım çıkar?"
+  },
+  "options": [
+   {
+    "concept_id": "titanium_skid_blocks_scrape_the_track",
+    "en": "Titanium skid blocks scrape the track",
+    "tr": "Titanyum kızaklar piste sürtünür"
+   },
+   {
+    "concept_id": "the_engine_overheats",
+    "en": "The engine overheats",
+    "tr": "Motor aşırı ısınır"
+   },
+   {
+    "concept_id": "brake_discs_break",
+    "en": "Brake discs break",
+    "tr": "Fren diskleri kırılır"
+   },
+   {
+    "concept_id": "fireworks_for_tv",
+    "en": "Fireworks for TV",
+    "tr": "TV için havai fişek"
+   }
+  ],
+  "correct": "titanium_skid_blocks_scrape_the_track",
+  "source": "https://en.wikipedia.org/wiki/Formula_One_car"
+ },
+ {
+  "key": "sports_q0836",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In which sport do riders on horseback hit a ball with long mallets?",
+   "tr": "Hangi sporda atlılar uzun tokmaklarla topa vurur?"
+  },
+  "options": [
+   {
+    "concept_id": "polo",
+    "en": "Polo",
+    "tr": "Polo"
+   },
+   {
+    "concept_id": "cricket",
+    "en": "Cricket",
+    "tr": "Kriket"
+   },
+   {
+    "concept_id": "croquet",
+    "en": "Croquet",
+    "tr": "Kroket"
+   },
+   {
+    "concept_id": "hurling",
+    "en": "Hurling",
+    "tr": "Hurling"
+   }
+  ],
+  "correct": "polo",
+  "source": "https://en.wikipedia.org/wiki/Polo"
+ },
+ {
+  "key": "sports_q0837",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many pins stand at the end of a ten-pin bowling lane?",
+   "tr": "Bowling pistinin sonunda kaç lobut bulunur?"
+  },
+  "options": [
+   {
+    "concept_id": "n_10",
+    "en": "10",
+    "tr": "10"
+   },
+   {
+    "concept_id": "n_9",
+    "en": "9",
+    "tr": "9"
+   },
+   {
+    "concept_id": "n_12",
+    "en": "12",
+    "tr": "12"
+   },
+   {
+    "concept_id": "n_6",
+    "en": "6",
+    "tr": "6"
+   }
+  ],
+  "correct": "n_10",
+  "source": "https://en.wikipedia.org/wiki/Ten-pin_bowling"
+ },
+ {
+  "key": "sports_q0838",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In boxing, what is a left-handed fighter called?",
+   "tr": "Boksta solak dövüşçüye ne ad verilir?"
+  },
+  "options": [
+   {
+    "concept_id": "a_southpaw",
+    "en": "A southpaw",
+    "tr": "Southpaw"
+   },
+   {
+    "concept_id": "a_leftie_jab",
+    "en": "A leftie jab",
+    "tr": "Sol direkt"
+   },
+   {
+    "concept_id": "a_mirror_man",
+    "en": "A mirror man",
+    "tr": "Ayna adam"
+   },
+   {
+    "concept_id": "a_counter_puncher",
+    "en": "A counter-puncher",
+    "tr": "Kontra boksör"
+   }
+  ],
+  "correct": "a_southpaw",
+  "source": "https://en.wikipedia.org/wiki/Southpaw_stance"
+ },
+ {
+  "key": "sports_q0839",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What does the Japanese word \"judo\" mean?",
+   "tr": "Japonca \"judo\" kelimesi ne anlama gelir?"
+  },
+  "options": [
+   {
+    "concept_id": "the_gentle_way",
+    "en": "The gentle way",
+    "tr": "Nazik yol"
+   },
+   {
+    "concept_id": "the_empty_hand",
+    "en": "The empty hand",
+    "tr": "Boş el"
+   },
+   {
+    "concept_id": "the_way_of_the_sword",
+    "en": "The way of the sword",
+    "tr": "Kılıç yolu"
+   },
+   {
+    "concept_id": "the_strong_fist",
+    "en": "The strong fist",
+    "tr": "Güçlü yumruk"
+   }
+  ],
+  "correct": "the_gentle_way",
+  "source": "https://en.wikipedia.org/wiki/Judo"
+ },
+ {
+  "key": "sports_q0840",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these is NOT a swimming stroke?",
+   "tr": "Hangisi bir yüzme stili DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "sidewinder",
+    "en": "Sidewinder",
+    "tr": "Yan kıvrım"
+   },
+   {
+    "concept_id": "butterfly",
+    "en": "Butterfly",
+    "tr": "Kelebek"
+   },
+   {
+    "concept_id": "breaststroke",
+    "en": "Breaststroke",
+    "tr": "Kurbağalama"
+   },
+   {
+    "concept_id": "backstroke",
+    "en": "Backstroke",
+    "tr": "Sırtüstü"
+   }
+  ],
+  "correct": "sidewinder",
+  "source": "https://en.wikipedia.org/wiki/Swimming_stroke"
+ },
+ {
+  "key": "sports_q0841",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Hungarian swimmer is nicknamed \"the Iron Lady\"?",
+   "tr": "\"Demir Leydi\" lakaplı Macar yüzücü kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "katinka_hosszu",
+    "en": "Katinka Hosszú",
+    "tr": "Katinka Hosszú"
+   },
+   {
+    "concept_id": "krisztina_egerszegi",
+    "en": "Krisztina Egerszegi",
+    "tr": "Krisztina Egerszegi"
+   },
+   {
+    "concept_id": "agnes_kovacs",
+    "en": "Ágnes Kovács",
+    "tr": "Ágnes Kovács"
+   },
+   {
+    "concept_id": "zsuzsanna_jakabos",
+    "en": "Zsuzsanna Jakabos",
+    "tr": "Zsuzsanna Jakabos"
+   }
+  ],
+  "correct": "katinka_hosszu",
+  "source": "https://en.wikipedia.org/wiki/Katinka_Hosszú"
+ },
+ {
+  "key": "sports_q0842",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many Olympic medals of all colours did Michael Phelps win?",
+   "tr": "Michael Phelps toplam kaç Olimpiyat madalyası kazandı?"
+  },
+  "options": [
+   {
+    "concept_id": "n_28",
+    "en": "28",
+    "tr": "28"
+   },
+   {
+    "concept_id": "n_22",
+    "en": "22",
+    "tr": "22"
+   },
+   {
+    "concept_id": "n_18",
+    "en": "18",
+    "tr": "18"
+   },
+   {
+    "concept_id": "n_32",
+    "en": "32",
+    "tr": "32"
+   }
+  ],
+  "correct": "n_28",
+  "source": "https://en.wikipedia.org/wiki/Michael_Phelps"
+ },
+ {
+  "key": "sports_q0843",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Why were the equestrian events of the 1956 Melbourne Olympics held in Stockholm?",
+   "tr": "1956 Melbourne Olimpiyatlarının binicilik yarışmaları neden Stockholm'de yapıldı?"
+  },
+  "options": [
+   {
+    "concept_id": "australia_s_horse_quarantine_rules",
+    "en": "Australia's horse quarantine rules",
+    "tr": "Avustralya'nın at karantina kuralları"
+   },
+   {
+    "concept_id": "a_drought_in_melbourne",
+    "en": "A drought in Melbourne",
+    "tr": "Melbourne'de kuraklık"
+   },
+   {
+    "concept_id": "a_boycott_by_riders",
+    "en": "A boycott by riders",
+    "tr": "Binicilerin boykotu"
+   },
+   {
+    "concept_id": "stockholm_had_better_stables",
+    "en": "Stockholm had better stables",
+    "tr": "Stockholm'ün ahırları daha iyiydi"
+   }
+  ],
+  "correct": "australia_s_horse_quarantine_rules",
+  "source": "https://en.wikipedia.org/wiki/Equestrian_at_the_1956_Summer_Olympics"
+ },
+ {
+  "key": "sports_q0844",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which city hosted the first Youth Olympic Games, in 2010?",
+   "tr": "İlk Gençlik Olimpiyat Oyunlarına 2010'da hangi şehir ev sahipliği yaptı?"
+  },
+  "options": [
+   {
+    "concept_id": "singapore",
+    "en": "Singapore",
+    "tr": "Singapur"
+   },
+   {
+    "concept_id": "nanjing",
+    "en": "Nanjing",
+    "tr": "Nanjing"
+   },
+   {
+    "concept_id": "buenos_aires",
+    "en": "Buenos Aires",
+    "tr": "Buenos Aires"
+   },
+   {
+    "concept_id": "innsbruck",
+    "en": "Innsbruck",
+    "tr": "Innsbruck"
+   }
+  ],
+  "correct": "singapore",
+  "source": "https://en.wikipedia.org/wiki/2010_Summer_Youth_Olympics"
+ },
+ {
+  "key": "sports_q0845",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Summer Olympics came first: Mexico City or Montreal?",
+   "tr": "Hangi Yaz Olimpiyatı önce düzenlendi: Mexico City mi, Montreal mi?"
+  },
+  "options": [
+   {
+    "concept_id": "mexico_city_1968",
+    "en": "Mexico City (1968)",
+    "tr": "Mexico City (1968)"
+   },
+   {
+    "concept_id": "montreal_1976",
+    "en": "Montreal (1976)",
+    "tr": "Montreal (1976)"
+   },
+   {
+    "concept_id": "same_year",
+    "en": "Same year",
+    "tr": "Aynı yıl"
+   },
+   {
+    "concept_id": "neither_hosted",
+    "en": "Neither hosted",
+    "tr": "İkisi de yapmadı"
+   }
+  ],
+  "correct": "mexico_city_1968",
+  "source": "https://en.wikipedia.org/wiki/1968_Summer_Olympics"
+ },
+ {
+  "key": "sports_q0846",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Italian captain lifted the 2006 World Cup and won that year's Ballon d'Or?",
+   "tr": "2006 Dünya Kupası'nı kaldırıp o yılın Ballon d'Or'unu kazanan İtalyan kaptan kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "fabio_cannavaro",
+    "en": "Fabio Cannavaro",
+    "tr": "Fabio Cannavaro"
+   },
+   {
+    "concept_id": "gianluigi_buffon",
+    "en": "Gianluigi Buffon",
+    "tr": "Gianluigi Buffon"
+   },
+   {
+    "concept_id": "andrea_pirlo",
+    "en": "Andrea Pirlo",
+    "tr": "Andrea Pirlo"
+   },
+   {
+    "concept_id": "alessandro_del_piero",
+    "en": "Alessandro Del Piero",
+    "tr": "Alessandro Del Piero"
+   }
+  ],
+  "correct": "fabio_cannavaro",
+  "source": "https://en.wikipedia.org/wiki/Fabio_Cannavaro"
+ },
+ {
+  "key": "sports_q0847",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many World Cups did Miroslav Klose play in?",
+   "tr": "Miroslav Klose kaç Dünya Kupası'nda oynadı?"
+  },
+  "options": [
+   {
+    "concept_id": "n_4",
+    "en": "4",
+    "tr": "4"
+   },
+   {
+    "concept_id": "n_3",
+    "en": "3",
+    "tr": "3"
+   },
+   {
+    "concept_id": "n_5",
+    "en": "5",
+    "tr": "5"
+   },
+   {
+    "concept_id": "n_2",
+    "en": "2",
+    "tr": "2"
+   }
+  ],
+  "correct": "n_4",
+  "source": "https://en.wikipedia.org/wiki/Miroslav_Klose"
+ },
+ {
+  "key": "sports_q0848",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The 1969 \"Football War\" broke out after World Cup qualifiers between which countries?",
+   "tr": "1969'daki \"Futbol Savaşı\" hangi ülkeler arasındaki Dünya Kupası elemelerinden sonra çıktı?"
+  },
+  "options": [
+   {
+    "concept_id": "honduras_and_el_salvador",
+    "en": "Honduras and El Salvador",
+    "tr": "Honduras ve El Salvador"
+   },
+   {
+    "concept_id": "iran_and_iraq",
+    "en": "Iran and Iraq",
+    "tr": "İran ve Irak"
+   },
+   {
+    "concept_id": "peru_and_ecuador",
+    "en": "Peru and Ecuador",
+    "tr": "Peru ve Ekvador"
+   },
+   {
+    "concept_id": "greece_and_turkey",
+    "en": "Greece and Turkey",
+    "tr": "Yunanistan ve Türkiye"
+   }
+  ],
+  "correct": "honduras_and_el_salvador",
+  "source": "https://en.wikipedia.org/wiki/Football_War"
+ },
+ {
+  "key": "sports_q0849",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The first-ever World Cup penalty shoot-out, in 1982, was West Germany against whom?",
+   "tr": "Dünya Kupası tarihindeki ilk penaltı atışları 1982'de Batı Almanya ile hangi takım arasındaydı?"
+  },
+  "options": [
+   {
+    "concept_id": "france",
+    "en": "France",
+    "tr": "Fransa"
+   },
+   {
+    "concept_id": "england",
+    "en": "England",
+    "tr": "İngiltere"
+   },
+   {
+    "concept_id": "italy",
+    "en": "Italy",
+    "tr": "İtalya"
+   },
+   {
+    "concept_id": "spain",
+    "en": "Spain",
+    "tr": "İspanya"
+   }
+  ],
+  "correct": "france",
+  "source": "https://en.wikipedia.org/wiki/1982_FIFA_World_Cup"
+ },
+ {
+  "key": "sports_q0850",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Turkey qualified for the 1950 World Cup. What happened next?",
+   "tr": "Türkiye 1950 Dünya Kupası'na katılma hakkı kazandı. Sonra ne oldu?"
+  },
+  "options": [
+   {
+    "concept_id": "they_withdrew_before_playing",
+    "en": "They withdrew before playing",
+    "tr": "Oynamadan çekildi"
+   },
+   {
+    "concept_id": "they_reached_the_final",
+    "en": "They reached the final",
+    "tr": "Finale kadar çıktı"
+   },
+   {
+    "concept_id": "they_were_expelled_for_fighting",
+    "en": "They were expelled for fighting",
+    "tr": "Kavga nedeniyle ihraç edildi"
+   },
+   {
+    "concept_id": "they_played_in_europe_instead",
+    "en": "They played in Europe instead",
+    "tr": "Avrupa'da oynadı"
+   }
+  ],
+  "correct": "they_withdrew_before_playing",
+  "source": "https://en.wikipedia.org/wiki/Turkey_at_the_FIFA_World_Cup"
+ },
+ {
+  "key": "sports_q0851",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Brazilian won the 2005 Ballon d'Or while at Barcelona?",
+   "tr": "2005'te Barcelona'dayken Ballon d'Or kazanan Brezilyalı kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "ronaldinho",
+    "en": "Ronaldinho",
+    "tr": "Ronaldinho"
+   },
+   {
+    "concept_id": "deco",
+    "en": "Deco",
+    "tr": "Deco"
+   },
+   {
+    "concept_id": "rivaldo",
+    "en": "Rivaldo",
+    "tr": "Rivaldo"
+   },
+   {
+    "concept_id": "neymar",
+    "en": "Neymar",
+    "tr": "Neymar"
+   }
+  ],
+  "correct": "ronaldinho",
+  "source": "https://en.wikipedia.org/wiki/Ronaldinho"
+ },
+ {
+  "key": "sports_q0852",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How far does the penalty area extend from the goal line?",
+   "tr": "Ceza sahası kale çizgisinden kaç metre ileri uzanır?"
+  },
+  "options": [
+   {
+    "concept_id": "n_16_5_m",
+    "en": "16.5 m",
+    "tr": "16,5 m"
+   },
+   {
+    "concept_id": "n_11_m",
+    "en": "11 m",
+    "tr": "11 m"
+   },
+   {
+    "concept_id": "n_20_m",
+    "en": "20 m",
+    "tr": "20 m"
+   },
+   {
+    "concept_id": "n_9_15_m",
+    "en": "9.15 m",
+    "tr": "9,15 m"
+   }
+  ],
+  "correct": "n_16_5_m",
+  "source": "https://en.wikipedia.org/wiki/Penalty_area"
+ },
+ {
+  "key": "sports_q0853",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Why was Eric Cantona banned for eight months in 1995?",
+   "tr": "Eric Cantona 1995'te neden sekiz ay men cezası aldı?"
+  },
+  "options": [
+   {
+    "concept_id": "he_kung_fu_kicked_a_fan",
+    "en": "He kung-fu kicked a fan",
+    "tr": "Bir taraftara kung-fu tekmesi attı"
+   },
+   {
+    "concept_id": "he_punched_a_referee",
+    "en": "He punched a referee",
+    "tr": "Hakeme yumruk attı"
+   },
+   {
+    "concept_id": "he_failed_a_drug_test",
+    "en": "He failed a drug test",
+    "tr": "Doping testinden kaldı"
+   },
+   {
+    "concept_id": "he_fixed_a_match",
+    "en": "He fixed a match",
+    "tr": "Şike yaptı"
+   }
+  ],
+  "correct": "he_kung_fu_kicked_a_fan",
+  "source": "https://en.wikipedia.org/wiki/Eric_Cantona"
+ },
+ {
+  "key": "sports_q0854",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Italian club won a treble in 2010 under José Mourinho?",
+   "tr": "2010'da José Mourinho yönetiminde üçleme yapan İtalyan kulübü hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "inter_milan",
+    "en": "Inter Milan",
+    "tr": "Inter"
+   },
+   {
+    "concept_id": "ac_milan",
+    "en": "AC Milan",
+    "tr": "AC Milan"
+   },
+   {
+    "concept_id": "juventus",
+    "en": "Juventus",
+    "tr": "Juventus"
+   },
+   {
+    "concept_id": "roma",
+    "en": "Roma",
+    "tr": "Roma"
+   }
+  ],
+  "correct": "inter_milan",
+  "source": "https://en.wikipedia.org/wiki/2009–10_Inter_Milan_season"
+ },
+ {
+  "key": "sports_q0855",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How far did Turkey go at Euro 2008?",
+   "tr": "Türkiye Euro 2008'de hangi tura kadar yükseldi?"
+  },
+  "options": [
+   {
+    "concept_id": "semi_finals",
+    "en": "Semi-finals",
+    "tr": "Yarı final"
+   },
+   {
+    "concept_id": "quarter_finals",
+    "en": "Quarter-finals",
+    "tr": "Çeyrek final"
+   },
+   {
+    "concept_id": "final",
+    "en": "Final",
+    "tr": "Final"
+   },
+   {
+    "concept_id": "group_stage",
+    "en": "Group stage",
+    "tr": "Grup aşaması"
+   }
+  ],
+  "correct": "semi_finals",
+  "source": "https://en.wikipedia.org/wiki/UEFA_Euro_2008"
+ },
+ {
+  "key": "sports_q0856",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which French centre was the first pick of the 2023 NBA draft?",
+   "tr": "2023 NBA draftında ilk sıradan seçilen Fransız pivot kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "victor_wembanyama",
+    "en": "Victor Wembanyama",
+    "tr": "Victor Wembanyama"
+   },
+   {
+    "concept_id": "rudy_gobert",
+    "en": "Rudy Gobert",
+    "tr": "Rudy Gobert"
+   },
+   {
+    "concept_id": "tony_parker",
+    "en": "Tony Parker",
+    "tr": "Tony Parker"
+   },
+   {
+    "concept_id": "evan_fournier",
+    "en": "Evan Fournier",
+    "tr": "Evan Fournier"
+   }
+  ],
+  "correct": "victor_wembanyama",
+  "source": "https://en.wikipedia.org/wiki/Victor_Wembanyama"
+ },
+ {
+  "key": "sports_q0857",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Under FIBA rules, how many personal fouls does it take to foul out?",
+   "tr": "FIBA kurallarına göre bir oyuncu kaç kişisel faulde oyun dışı kalır?"
+  },
+  "options": [
+   {
+    "concept_id": "n_5",
+    "en": "5",
+    "tr": "5"
+   },
+   {
+    "concept_id": "n_4",
+    "en": "4",
+    "tr": "4"
+   },
+   {
+    "concept_id": "n_6",
+    "en": "6",
+    "tr": "6"
+   },
+   {
+    "concept_id": "n_7",
+    "en": "7",
+    "tr": "7"
+   }
+  ],
+  "correct": "n_5",
+  "source": "https://en.wikipedia.org/wiki/Personal_foul_(basketball)"
+ },
+ {
+  "key": "sports_q0858",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who has won the most NBA Finals MVP awards, with six?",
+   "tr": "Altı kez ile en çok NBA Finalleri MVP ödülünü kazanan oyuncu kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "michael_jordan",
+    "en": "Michael Jordan",
+    "tr": "Michael Jordan"
+   },
+   {
+    "concept_id": "lebron_james",
+    "en": "LeBron James",
+    "tr": "LeBron James"
+   },
+   {
+    "concept_id": "magic_johnson",
+    "en": "Magic Johnson",
+    "tr": "Magic Johnson"
+   },
+   {
+    "concept_id": "tim_duncan",
+    "en": "Tim Duncan",
+    "tr": "Tim Duncan"
+   }
+  ],
+  "correct": "michael_jordan",
+  "source": "https://en.wikipedia.org/wiki/Bill_Russell_NBA_Finals_Most_Valuable_Player_Award"
+ },
+ {
+  "key": "sports_q0859",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Why was the 1998–99 NBA regular season cut to 50 games?",
+   "tr": "1998-99 NBA normal sezonu neden 50 maça indirildi?"
+  },
+  "options": [
+   {
+    "concept_id": "a_lockout",
+    "en": "A lockout",
+    "tr": "Lokavt (grev)"
+   },
+   {
+    "concept_id": "a_pandemic",
+    "en": "A pandemic",
+    "tr": "Salgın"
+   },
+   {
+    "concept_id": "an_arena_fire",
+    "en": "An arena fire",
+    "tr": "Salon yangını"
+   },
+   {
+    "concept_id": "the_olympics",
+    "en": "The Olympics",
+    "tr": "Olimpiyatlar"
+   }
+  ],
+  "correct": "a_lockout",
+  "source": "https://en.wikipedia.org/wiki/1998–99_NBA_lockout"
+ },
+ {
+  "key": "sports_q0860",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Turkish centre played for the Bulls, Rockets and Pelicans in the NBA?",
+   "tr": "NBA'de Bulls, Rockets ve Pelicans formalarını giyen Türk pivot kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "omer_ask",
+    "en": "Ömer Aşık",
+    "tr": "Ömer Aşık"
+   },
+   {
+    "concept_id": "semih_erden",
+    "en": "Semih Erden",
+    "tr": "Semih Erden"
+   },
+   {
+    "concept_id": "enes_kanter",
+    "en": "Enes Kanter",
+    "tr": "Enes Kanter"
+   },
+   {
+    "concept_id": "mehmet_okur",
+    "en": "Mehmet Okur",
+    "tr": "Mehmet Okur"
+   }
+  ],
+  "correct": "omer_ask",
+  "source": "https://en.wikipedia.org/wiki/Ömer_Aşık"
+ },
+ {
+  "key": "sports_q0861",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Jamaican-born British sprinter won the 100 m at Barcelona 1992?",
+   "tr": "Barselona 1992'de 100 m'yi kazanan Jamaika doğumlu İngiliz sprinter kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "linford_christie",
+    "en": "Linford Christie",
+    "tr": "Linford Christie"
+   },
+   {
+    "concept_id": "colin_jackson",
+    "en": "Colin Jackson",
+    "tr": "Colin Jackson"
+   },
+   {
+    "concept_id": "allan_wells",
+    "en": "Allan Wells",
+    "tr": "Allan Wells"
+   },
+   {
+    "concept_id": "darren_campbell",
+    "en": "Darren Campbell",
+    "tr": "Darren Campbell"
+   }
+  ],
+  "correct": "linford_christie",
+  "source": "https://en.wikipedia.org/wiki/Linford_Christie"
+ },
+ {
+  "key": "sports_q0862",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How far does a 4 × 400 m relay team run in total?",
+   "tr": "4 × 400 m bayrak takımı toplamda kaç metre koşar?"
+  },
+  "options": [
+   {
+    "concept_id": "n_1_600_m",
+    "en": "1,600 m",
+    "tr": "1.600 m"
+   },
+   {
+    "concept_id": "n_1_000_m",
+    "en": "1,000 m",
+    "tr": "1.000 m"
+   },
+   {
+    "concept_id": "n_800_m",
+    "en": "800 m",
+    "tr": "800 m"
+   },
+   {
+    "concept_id": "n_4_000_m",
+    "en": "4,000 m",
+    "tr": "4.000 m"
+   }
+  ],
+  "correct": "n_1_600_m",
+  "source": "https://en.wikipedia.org/wiki/4_×_400_metres_relay"
+ },
+ {
+  "key": "sports_q0863",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Why can't a world record be set on the Boston Marathon course?",
+   "tr": "Boston Maratonu parkurunda neden dünya rekoru kırılamaz?"
+  },
+  "options": [
+   {
+    "concept_id": "it_is_point_to_point_and_runs_downhill_overall",
+    "en": "It is point-to-point and runs downhill overall",
+    "tr": "Başlangıç-bitiş ayrı ve genel olarak yokuş aşağı"
+   },
+   {
+    "concept_id": "it_is_too_short",
+    "en": "It is too short",
+    "tr": "Çok kısa"
+   },
+   {
+    "concept_id": "it_has_no_timing_mats",
+    "en": "It has no timing mats",
+    "tr": "Zamanlama halısı yok"
+   },
+   {
+    "concept_id": "it_crosses_a_state_line",
+    "en": "It crosses a state line",
+    "tr": "Eyalet sınırını geçiyor"
+   }
+  ],
+  "correct": "it_is_point_to_point_and_runs_downhill_overall",
+  "source": "https://en.wikipedia.org/wiki/Boston_Marathon"
+ },
+ {
+  "key": "sports_q0864",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Kenyan won the Olympic women's 1,500 m three times in a row, from 2016 to 2024?",
+   "tr": "2016'dan 2024'e Olimpiyat kadınlar 1.500 m'sini üst üste üç kez kazanan Kenyalı kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "faith_kipyegon",
+    "en": "Faith Kipyegon",
+    "tr": "Faith Kipyegon"
+   },
+   {
+    "concept_id": "vivian_cheruiyot",
+    "en": "Vivian Cheruiyot",
+    "tr": "Vivian Cheruiyot"
+   },
+   {
+    "concept_id": "hellen_obiri",
+    "en": "Hellen Obiri",
+    "tr": "Hellen Obiri"
+   },
+   {
+    "concept_id": "beatrice_chepkoech",
+    "en": "Beatrice Chepkoech",
+    "tr": "Beatrice Chepkoech"
+   }
+  ],
+  "correct": "faith_kipyegon",
+  "source": "https://en.wikipedia.org/wiki/Faith_Kipyegon"
+ },
+ {
+  "key": "sports_q0865",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Sebastian Coe, Steve Ovett and Steve Cram: what links them?",
+   "tr": "Sebastian Coe, Steve Ovett ve Steve Cram'i ne birleştirir?"
+  },
+  "options": [
+   {
+    "concept_id": "british_middle_distance_rivals_of_the_1980s",
+    "en": "British middle-distance rivals of the 1980s",
+    "tr": "1980'lerin İngiliz orta mesafe rakipleri"
+   },
+   {
+    "concept_id": "olympic_sprint_relay_team",
+    "en": "Olympic sprint relay team",
+    "tr": "Olimpik sürat bayrak takımı"
+   },
+   {
+    "concept_id": "marathon_world_record_holders",
+    "en": "Marathon world record holders",
+    "tr": "Maraton rekortmenleri"
+   },
+   {
+    "concept_id": "decathlon_champions",
+    "en": "Decathlon champions",
+    "tr": "Dekatlon şampiyonları"
+   }
+  ],
+  "correct": "british_middle_distance_rivals_of_the_1980s",
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Coe"
+ },
+ {
+  "key": "sports_q0866",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Kazakh player won Wimbledon in 2022?",
+   "tr": "2022'de Wimbledon'ı kazanan Kazak oyuncu kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "elena_rybakina",
+    "en": "Elena Rybakina",
+    "tr": "Elena Rybakina"
+   },
+   {
+    "concept_id": "yulia_putintseva",
+    "en": "Yulia Putintseva",
+    "tr": "Yulia Putintseva"
+   },
+   {
+    "concept_id": "zarina_diyas",
+    "en": "Zarina Diyas",
+    "tr": "Zarina Diyas"
+   },
+   {
+    "concept_id": "yaroslava_shvedova",
+    "en": "Yaroslava Shvedova",
+    "tr": "Yaroslava Shvedova"
+   }
+  ],
+  "correct": "elena_rybakina",
+  "source": "https://en.wikipedia.org/wiki/Elena_Rybakina"
+ },
+ {
+  "key": "sports_q0867",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Brazilian, nicknamed \"Guga\", won the French Open three times?",
+   "tr": "\"Guga\" lakaplı, Fransa Açık'ı üç kez kazanan Brezilyalı kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "gustavo_kuerten",
+    "en": "Gustavo Kuerten",
+    "tr": "Gustavo Kuerten"
+   },
+   {
+    "concept_id": "fernando_meligeni",
+    "en": "Fernando Meligeni",
+    "tr": "Fernando Meligeni"
+   },
+   {
+    "concept_id": "thomaz_bellucci",
+    "en": "Thomaz Bellucci",
+    "tr": "Thomaz Bellucci"
+   },
+   {
+    "concept_id": "joao_fonseca",
+    "en": "João Fonseca",
+    "tr": "João Fonseca"
+   }
+  ],
+  "correct": "gustavo_kuerten",
+  "source": "https://en.wikipedia.org/wiki/Gustavo_Kuerten"
+ },
+ {
+  "key": "sports_q0868",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many Grand Slam singles titles did Serena Williams win?",
+   "tr": "Serena Williams kaç Grand Slam tekler şampiyonluğu kazandı?"
+  },
+  "options": [
+   {
+    "concept_id": "n_23",
+    "en": "23",
+    "tr": "23"
+   },
+   {
+    "concept_id": "n_19",
+    "en": "19",
+    "tr": "19"
+   },
+   {
+    "concept_id": "n_21",
+    "en": "21",
+    "tr": "21"
+   },
+   {
+    "concept_id": "n_25",
+    "en": "25",
+    "tr": "25"
+   }
+  ],
+  "correct": "n_23",
+  "source": "https://en.wikipedia.org/wiki/Serena_Williams"
+ },
+ {
+  "key": "sports_q0869",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In the Laver Cup, Team Europe plays against which team?",
+   "tr": "Laver Kupası'nda Avrupa Takımı hangi takıma karşı oynar?"
+  },
+  "options": [
+   {
+    "concept_id": "team_world",
+    "en": "Team World",
+    "tr": "Dünya Takımı"
+   },
+   {
+    "concept_id": "team_america",
+    "en": "Team America",
+    "tr": "Amerika Takımı"
+   },
+   {
+    "concept_id": "team_asia",
+    "en": "Team Asia",
+    "tr": "Asya Takımı"
+   },
+   {
+    "concept_id": "team_legends",
+    "en": "Team Legends",
+    "tr": "Efsaneler Takımı"
+   }
+  ],
+  "correct": "team_world",
+  "source": "https://en.wikipedia.org/wiki/Laver_Cup"
+ },
+ {
+  "key": "sports_q0870",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Istanbul arena hosted the WTA Finals from 2011 to 2013?",
+   "tr": "2011-2013 arasında WTA Finalleri'ne ev sahipliği yapan İstanbul salonu hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "sinan_erdem_dome",
+    "en": "Sinan Erdem Dome",
+    "tr": "Sinan Erdem Spor Salonu"
+   },
+   {
+    "concept_id": "ulker_sports_arena",
+    "en": "Ülker Sports Arena",
+    "tr": "Ülker Spor Arena"
+   },
+   {
+    "concept_id": "abdi_ipekci_arena",
+    "en": "Abdi İpekçi Arena",
+    "tr": "Abdi İpekçi"
+   },
+   {
+    "concept_id": "volkswagen_arena",
+    "en": "Volkswagen Arena",
+    "tr": "Volkswagen Arena"
+   }
+  ],
+  "correct": "sinan_erdem_dome",
+  "source": "https://en.wikipedia.org/wiki/Sinan_Erdem_Dome"
+ },
+ {
+  "key": "sports_q0871",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which British driver won his first Grand Prix in Miami in 2024?",
+   "tr": "İlk Grand Prix galibiyetini 2024'te Miami'de alan İngiliz pilot kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "lando_norris",
+    "en": "Lando Norris",
+    "tr": "Lando Norris"
+   },
+   {
+    "concept_id": "george_russell",
+    "en": "George Russell",
+    "tr": "George Russell"
+   },
+   {
+    "concept_id": "oliver_bearman",
+    "en": "Oliver Bearman",
+    "tr": "Oliver Bearman"
+   },
+   {
+    "concept_id": "alexander_albon",
+    "en": "Alexander Albon",
+    "tr": "Alexander Albon"
+   }
+  ],
+  "correct": "lando_norris",
+  "source": "https://en.wikipedia.org/wiki/Lando_Norris"
+ },
+ {
+  "key": "sports_q0872",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who became the youngest F1 world champion, at 23, in 2010?",
+   "tr": "2010'da 23 yaşında en genç F1 dünya şampiyonu olan kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "sebastian_vettel",
+    "en": "Sebastian Vettel",
+    "tr": "Sebastian Vettel"
+   },
+   {
+    "concept_id": "lewis_hamilton",
+    "en": "Lewis Hamilton",
+    "tr": "Lewis Hamilton"
+   },
+   {
+    "concept_id": "fernando_alonso",
+    "en": "Fernando Alonso",
+    "tr": "Fernando Alonso"
+   },
+   {
+    "concept_id": "max_verstappen",
+    "en": "Max Verstappen",
+    "tr": "Max Verstappen"
+   }
+  ],
+  "correct": "sebastian_vettel",
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel"
+ },
+ {
+  "key": "sports_q0873",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many F1 world titles did Alain Prost win?",
+   "tr": "Alain Prost kaç F1 dünya şampiyonluğu kazandı?"
+  },
+  "options": [
+   {
+    "concept_id": "n_4",
+    "en": "4",
+    "tr": "4"
+   },
+   {
+    "concept_id": "n_2",
+    "en": "2",
+    "tr": "2"
+   },
+   {
+    "concept_id": "n_3",
+    "en": "3",
+    "tr": "3"
+   },
+   {
+    "concept_id": "n_5",
+    "en": "5",
+    "tr": "5"
+   }
+  ],
+  "correct": "n_4",
+  "source": "https://en.wikipedia.org/wiki/Alain_Prost"
+ },
+ {
+  "key": "sports_q0874",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Why is Jenson Button's win at the 2011 Canadian Grand Prix so famous?",
+   "tr": "Jenson Button'ın 2011 Kanada Grand Prix zaferi neden bu kadar ünlüdür?"
+  },
+  "options": [
+   {
+    "concept_id": "he_won_from_last_in_the_longest_race_ever",
+    "en": "He won from last in the longest race ever",
+    "tr": "En uzun yarışta sonuncu durumdan kazandı"
+   },
+   {
+    "concept_id": "he_won_with_three_wheels",
+    "en": "He won with three wheels",
+    "tr": "Üç tekerle kazandı"
+   },
+   {
+    "concept_id": "he_won_without_a_pit_stop",
+    "en": "He won without a pit stop",
+    "tr": "Pit stop yapmadan kazandı"
+   },
+   {
+    "concept_id": "he_started_from_the_pit_lane_on_foot",
+    "en": "He started from the pit lane on foot",
+    "tr": "Pit yolundan yayan başladı"
+   }
+  ],
+  "correct": "he_won_from_last_in_the_longest_race_ever",
+  "source": "https://en.wikipedia.org/wiki/2011_Canadian_Grand_Prix"
+ },
+ {
+  "key": "sports_q0875",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which lap is longer: Monaco's or Spa-Francorchamps'?",
+   "tr": "Hangi tur daha uzundur: Monako mu, Spa-Francorchamps mı?"
+  },
+  "options": [
+   {
+    "concept_id": "the_belgian_lap",
+    "en": "The Belgian lap",
+    "tr": "Belçika'daki tur"
+   },
+   {
+    "concept_id": "the_monaco_lap",
+    "en": "The Monaco lap",
+    "tr": "Monako turu"
+   },
+   {
+    "concept_id": "they_are_equal",
+    "en": "They are equal",
+    "tr": "Eşittir"
+   },
+   {
+    "concept_id": "it_changes_yearly",
+    "en": "It changes yearly",
+    "tr": "Yıldan yıla değişir"
+   }
+  ],
+  "correct": "the_belgian_lap",
+  "source": "https://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps"
+ },
+ {
+  "key": "sports_q0876",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Jamaican batter calls himself \"the Universe Boss\"?",
+   "tr": "Kendine \"Evrenin Patronu\" diyen Jamaikalı kriket oyuncusu kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "chris_gayle",
+    "en": "Chris Gayle",
+    "tr": "Chris Gayle"
+   },
+   {
+    "concept_id": "brian_lara",
+    "en": "Brian Lara",
+    "tr": "Brian Lara"
+   },
+   {
+    "concept_id": "viv_richards",
+    "en": "Viv Richards",
+    "tr": "Viv Richards"
+   },
+   {
+    "concept_id": "andre_russell",
+    "en": "Andre Russell",
+    "tr": "Andre Russell"
+   }
+  ],
+  "correct": "chris_gayle",
+  "source": "https://en.wikipedia.org/wiki/Chris_Gayle"
+ },
+ {
+  "key": "sports_q0877",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which horse won the 1973 US Triple Crown, taking the Belmont by 31 lengths?",
+   "tr": "1973'te ABD Triple Crown'ını kazanıp Belmont'u 31 boy farkla alan at hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "secretariat",
+    "en": "Secretariat",
+    "tr": "Secretariat"
+   },
+   {
+    "concept_id": "seattle_slew",
+    "en": "Seattle Slew",
+    "tr": "Seattle Slew"
+   },
+   {
+    "concept_id": "affirmed",
+    "en": "Affirmed",
+    "tr": "Affirmed"
+   },
+   {
+    "concept_id": "american_pharoah",
+    "en": "American Pharoah",
+    "tr": "American Pharoah"
+   }
+  ],
+  "correct": "secretariat",
+  "source": "https://en.wikipedia.org/wiki/Secretariat_(horse)"
+ },
+ {
+  "key": "sports_q0878",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many furlongs make up one mile in horse racing?",
+   "tr": "At yarışında bir mil kaç furlongtan oluşur?"
+  },
+  "options": [
+   {
+    "concept_id": "n_8",
+    "en": "8",
+    "tr": "8"
+   },
+   {
+    "concept_id": "n_4",
+    "en": "4",
+    "tr": "4"
+   },
+   {
+    "concept_id": "n_10",
+    "en": "10",
+    "tr": "10"
+   },
+   {
+    "concept_id": "n_12",
+    "en": "12",
+    "tr": "12"
+   }
+  ],
+  "correct": "n_8",
+  "source": "https://en.wikipedia.org/wiki/Furlong"
+ },
+ {
+  "key": "sports_q0879",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which cocktail is the traditional drink of the Kentucky Derby?",
+   "tr": "Kentucky Derbisi'nin geleneksel içkisi hangi kokteyldir?"
+  },
+  "options": [
+   {
+    "concept_id": "mint_julep",
+    "en": "Mint julep",
+    "tr": "Mint julep"
+   },
+   {
+    "concept_id": "mojito",
+    "en": "Mojito",
+    "tr": "Mojito"
+   },
+   {
+    "concept_id": "margarita",
+    "en": "Margarita",
+    "tr": "Margarita"
+   },
+   {
+    "concept_id": "pimm_s_cup",
+    "en": "Pimm's cup",
+    "tr": "Pimm's"
+   }
+  ],
+  "correct": "mint_julep",
+  "source": "https://en.wikipedia.org/wiki/Mint_julep"
+ },
+ {
+  "key": "sports_q0880",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these is NOT a type of bowling delivery in cricket?",
+   "tr": "Hangisi kriketteki bir atış türü DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "slam_dunk",
+    "en": "Slam dunk",
+    "tr": "Smaç"
+   },
+   {
+    "concept_id": "googly",
+    "en": "Googly",
+    "tr": "Googly"
+   },
+   {
+    "concept_id": "yorker",
+    "en": "Yorker",
+    "tr": "Yorker"
+   },
+   {
+    "concept_id": "bouncer",
+    "en": "Bouncer",
+    "tr": "Bouncer"
+   }
+  ],
+  "correct": "slam_dunk",
+  "source": "https://en.wikipedia.org/wiki/Glossary_of_cricket_terms"
+ },
+ {
+  "key": "sports_q0881",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which German canoeist won Olympic golds 24 years apart, from 1980 to 2004?",
+   "tr": "1980'den 2004'e, 24 yıl arayla Olimpiyat altını kazanan Alman kanocu kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "birgit_fischer",
+    "en": "Birgit Fischer",
+    "tr": "Birgit Fischer"
+   },
+   {
+    "concept_id": "katrin_wagner",
+    "en": "Katrin Wagner",
+    "tr": "Katrin Wagner"
+   },
+   {
+    "concept_id": "josefa_idem",
+    "en": "Josefa Idem",
+    "tr": "Josefa Idem"
+   },
+   {
+    "concept_id": "anett_schuck",
+    "en": "Anett Schuck",
+    "tr": "Anett Schuck"
+   }
+  ],
+  "correct": "birgit_fischer",
+  "source": "https://en.wikipedia.org/wiki/Birgit_Fischer"
+ },
+ {
+  "key": "sports_q0882",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Olympic tradition was introduced at Antwerp 1920?",
+   "tr": "Antwerp 1920'de hangi Olimpiyat geleneği başladı?"
+  },
+  "options": [
+   {
+    "concept_id": "the_athletes_oath",
+    "en": "The athletes' oath",
+    "tr": "Sporcu yemini"
+   },
+   {
+    "concept_id": "the_torch_relay",
+    "en": "The torch relay",
+    "tr": "Meşale koşusu"
+   },
+   {
+    "concept_id": "the_closing_parade",
+    "en": "The closing parade",
+    "tr": "Kapanış geçidi"
+   },
+   {
+    "concept_id": "the_medal_podium",
+    "en": "The medal podium",
+    "tr": "Madalya kürsüsü"
+   }
+  ],
+  "correct": "the_athletes_oath",
+  "source": "https://en.wikipedia.org/wiki/1920_Summer_Olympics"
+ },
+ {
+  "key": "sports_q0883",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which five-time Olympic swimming champion later became famous playing Tarzan?",
+   "tr": "Beş kez Olimpiyat yüzme şampiyonu olup sonra Tarzan rolüyle ünlenen kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "johnny_weissmuller",
+    "en": "Johnny Weissmuller",
+    "tr": "Johnny Weissmuller"
+   },
+   {
+    "concept_id": "buster_crabbe",
+    "en": "Buster Crabbe",
+    "tr": "Buster Crabbe"
+   },
+   {
+    "concept_id": "duke_kahanamoku",
+    "en": "Duke Kahanamoku",
+    "tr": "Duke Kahanamoku"
+   },
+   {
+    "concept_id": "mark_spitz",
+    "en": "Mark Spitz",
+    "tr": "Mark Spitz"
+   }
+  ],
+  "correct": "johnny_weissmuller",
+  "source": "https://en.wikipedia.org/wiki/Johnny_Weissmuller"
+ },
+ {
+  "key": "sports_q0884",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Frenchman scored the first goal in World Cup history, in 1930?",
+   "tr": "Dünya Kupası tarihinin ilk golünü 1930'da atan Fransız kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "lucien_laurent",
+    "en": "Lucien Laurent",
+    "tr": "Lucien Laurent"
+   },
+   {
+    "concept_id": "just_fontaine",
+    "en": "Just Fontaine",
+    "tr": "Just Fontaine"
+   },
+   {
+    "concept_id": "raymond_kopa",
+    "en": "Raymond Kopa",
+    "tr": "Raymond Kopa"
+   },
+   {
+    "concept_id": "marcel_langiller",
+    "en": "Marcel Langiller",
+    "tr": "Marcel Langiller"
+   }
+  ],
+  "correct": "lucien_laurent",
+  "source": "https://en.wikipedia.org/wiki/Lucien_Laurent"
+ },
+ {
+  "key": "sports_q0885",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which bald Italian referee took charge of the 2002 World Cup final?",
+   "tr": "2002 Dünya Kupası finalini yöneten kel İtalyan hakem kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "pierluigi_collina",
+    "en": "Pierluigi Collina",
+    "tr": "Pierluigi Collina"
+   },
+   {
+    "concept_id": "nicola_rizzoli",
+    "en": "Nicola Rizzoli",
+    "tr": "Nicola Rizzoli"
+   },
+   {
+    "concept_id": "roberto_rosetti",
+    "en": "Roberto Rosetti",
+    "tr": "Roberto Rosetti"
+   },
+   {
+    "concept_id": "paolo_casarin",
+    "en": "Paolo Casarin",
+    "tr": "Paolo Casarin"
+   }
+  ],
+  "correct": "pierluigi_collina",
+  "source": "https://en.wikipedia.org/wiki/Pierluigi_Collina"
+ },
+ {
+  "key": "sports_q0886",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Why did Austria, having qualified, not play at the 1938 World Cup?",
+   "tr": "Katılım hakkı kazanan Avusturya 1938 Dünya Kupası'nda neden oynamadı?"
+  },
+  "options": [
+   {
+    "concept_id": "it_had_been_annexed_by_germany",
+    "en": "It had been annexed by Germany",
+    "tr": "Almanya tarafından ilhak edilmişti"
+   },
+   {
+    "concept_id": "it_refused_to_travel_to_france",
+    "en": "It refused to travel to France",
+    "tr": "Fransa'ya gitmeyi reddetti"
+   },
+   {
+    "concept_id": "its_players_went_on_strike",
+    "en": "Its players went on strike",
+    "tr": "Oyuncular greve gitti"
+   },
+   {
+    "concept_id": "it_was_banned_by_fifa",
+    "en": "It was banned by FIFA",
+    "tr": "FIFA ceza verdi"
+   }
+  ],
+  "correct": "it_had_been_annexed_by_germany",
+  "source": "https://en.wikipedia.org/wiki/1938_FIFA_World_Cup"
+ },
+ {
+  "key": "sports_q0887",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Yugoslav club won the European Cup in 1991?",
+   "tr": "1991'de Avrupa Kupası'nı kazanan Yugoslav kulübü hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "red_star_belgrade",
+    "en": "Red Star Belgrade",
+    "tr": "Kızılyıldız"
+   },
+   {
+    "concept_id": "partizan",
+    "en": "Partizan",
+    "tr": "Partizan"
+   },
+   {
+    "concept_id": "dinamo_zagreb",
+    "en": "Dinamo Zagreb",
+    "tr": "Dinamo Zagreb"
+   },
+   {
+    "concept_id": "hajduk_split",
+    "en": "Hajduk Split",
+    "tr": "Hajduk Split"
+   }
+  ],
+  "correct": "red_star_belgrade",
+  "source": "https://en.wikipedia.org/wiki/1991_European_Cup_final"
+ },
+ {
+  "key": "sports_q0888",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What did Galatasaray fans' famous banner say to Manchester United in 1993?",
+   "tr": "Galatasaray taraftarlarının 1993'te Manchester United'a açtığı ünlü pankartta ne yazıyordu?"
+  },
+  "options": [
+   {
+    "concept_id": "welcome_to_hell",
+    "en": "Welcome to Hell",
+    "tr": "Cehenneme hoş geldiniz"
+   },
+   {
+    "concept_id": "welcome_to_istanbul",
+    "en": "Welcome to Istanbul",
+    "tr": "İstanbul'a hoş geldiniz"
+   },
+   {
+    "concept_id": "no_mercy",
+    "en": "No Mercy",
+    "tr": "Merhamet yok"
+   },
+   {
+    "concept_id": "lions_never_sleep",
+    "en": "Lions Never Sleep",
+    "tr": "Aslanlar uyumaz"
+   }
+  ],
+  "correct": "welcome_to_hell",
+  "source": "https://en.wikipedia.org/wiki/Galatasaray_S.K._(football)"
+ },
+ {
+  "key": "sports_q0889",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who scored 61 points in a 1962 NBA Finals game, a long-standing Finals record?",
+   "tr": "1962 NBA Finalleri'ndeki bir maçta 61 sayı atarak uzun süre kırılamayan final rekorunu kuran kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "elgin_baylor",
+    "en": "Elgin Baylor",
+    "tr": "Elgin Baylor"
+   },
+   {
+    "concept_id": "jerry_west",
+    "en": "Jerry West",
+    "tr": "Jerry West"
+   },
+   {
+    "concept_id": "wilt_chamberlain",
+    "en": "Wilt Chamberlain",
+    "tr": "Wilt Chamberlain"
+   },
+   {
+    "concept_id": "bob_cousy",
+    "en": "Bob Cousy",
+    "tr": "Bob Cousy"
+   }
+  ],
+  "correct": "elgin_baylor",
+  "source": "https://en.wikipedia.org/wiki/Elgin_Baylor"
+ },
+ {
+  "key": "sports_q0890",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Lithuanian was among the first Soviet players to join the NBA, in 1989?",
+   "tr": "1989'da NBA'e katılan ilk Sovyet oyunculardan biri olan Litvanyalı kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "sarunas_marciulionis",
+    "en": "Šarūnas Marčiulionis",
+    "tr": "Šarūnas Marčiulionis"
+   },
+   {
+    "concept_id": "arvydas_sabonis",
+    "en": "Arvydas Sabonis",
+    "tr": "Arvydas Sabonis"
+   },
+   {
+    "concept_id": "rimas_kurtinaitis",
+    "en": "Rimas Kurtinaitis",
+    "tr": "Rimas Kurtinaitis"
+   },
+   {
+    "concept_id": "zydrunas_ilgauskas",
+    "en": "Žydrūnas Ilgauskas",
+    "tr": "Žydrūnas Ilgauskas"
+   }
+  ],
+  "correct": "sarunas_marciulionis",
+  "source": "https://en.wikipedia.org/wiki/Šarūnas_Marčiulionis"
+ },
+ {
+  "key": "sports_q0891",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who ran the first electronically timed 100 m under 10 seconds, in 1968?",
+   "tr": "1968'de elektronik zamanlamayla 100 m'yi ilk kez 10 saniyenin altında koşan kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "jim_hines",
+    "en": "Jim Hines",
+    "tr": "Jim Hines"
+   },
+   {
+    "concept_id": "bob_hayes",
+    "en": "Bob Hayes",
+    "tr": "Bob Hayes"
+   },
+   {
+    "concept_id": "carl_lewis",
+    "en": "Carl Lewis",
+    "tr": "Carl Lewis"
+   },
+   {
+    "concept_id": "charlie_greene",
+    "en": "Charlie Greene",
+    "tr": "Charlie Greene"
+   }
+  ],
+  "correct": "jim_hines",
+  "source": "https://en.wikipedia.org/wiki/Jim_Hines"
+ },
+ {
+  "key": "sports_q0892",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What did Tommie Smith and John Carlos do on the 1968 Olympic podium?",
+   "tr": "Tommie Smith ve John Carlos 1968 Olimpiyat kürsüsünde ne yaptı?"
+  },
+  "options": [
+   {
+    "concept_id": "raised_gloved_fists_in_protest",
+    "en": "Raised gloved fists in protest",
+    "tr": "Protesto için eldivenli yumruk kaldırdı"
+   },
+   {
+    "concept_id": "refused_their_medals",
+    "en": "Refused their medals",
+    "tr": "Madalyalarını reddetti"
+   },
+   {
+    "concept_id": "swapped_medals",
+    "en": "Swapped medals",
+    "tr": "Madalya değiştirdi"
+   },
+   {
+    "concept_id": "sang_a_protest_song",
+    "en": "Sang a protest song",
+    "tr": "Protesto şarkısı söyledi"
+   }
+  ],
+  "correct": "raised_gloved_fists_in_protest",
+  "source": "https://en.wikipedia.org/wiki/1968_Olympics_Black_Power_salute"
+ },
+ {
+  "key": "sports_q0893",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who won the first Wimbledon women's singles title, in 1884?",
+   "tr": "1884'teki ilk Wimbledon kadınlar teklerini kim kazandı?"
+  },
+  "options": [
+   {
+    "concept_id": "maud_watson",
+    "en": "Maud Watson",
+    "tr": "Maud Watson"
+   },
+   {
+    "concept_id": "lottie_dod",
+    "en": "Lottie Dod",
+    "tr": "Lottie Dod"
+   },
+   {
+    "concept_id": "blanche_bingley",
+    "en": "Blanche Bingley",
+    "tr": "Blanche Bingley"
+   },
+   {
+    "concept_id": "charlotte_cooper",
+    "en": "Charlotte Cooper",
+    "tr": "Charlotte Cooper"
+   }
+  ],
+  "correct": "maud_watson",
+  "source": "https://en.wikipedia.org/wiki/Maud_Watson"
+ },
+ {
+  "key": "sports_q0894",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which French champion's nickname, \"the Crocodile\", became a famous clothing logo?",
+   "tr": "Hangi Fransız şampiyonun \"Timsah\" lakabı ünlü bir giyim logosuna dönüştü?"
+  },
+  "options": [
+   {
+    "concept_id": "rene_lacoste",
+    "en": "René Lacoste",
+    "tr": "René Lacoste"
+   },
+   {
+    "concept_id": "henri_cochet",
+    "en": "Henri Cochet",
+    "tr": "Henri Cochet"
+   },
+   {
+    "concept_id": "jean_borotra",
+    "en": "Jean Borotra",
+    "tr": "Jean Borotra"
+   },
+   {
+    "concept_id": "yannick_noah",
+    "en": "Yannick Noah",
+    "tr": "Yannick Noah"
+   }
+  ],
+  "correct": "rene_lacoste",
+  "source": "https://en.wikipedia.org/wiki/René_Lacoste"
+ },
+ {
+  "key": "sports_q0895",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who became the first woman to score points in a Formula 1 race, in 1975?",
+   "tr": "1975'te bir Formula 1 yarışında puan alan ilk kadın kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "lella_lombardi",
+    "en": "Lella Lombardi",
+    "tr": "Lella Lombardi"
+   },
+   {
+    "concept_id": "maria_teresa_de_filippis",
+    "en": "Maria Teresa de Filippis",
+    "tr": "Maria Teresa de Filippis"
+   },
+   {
+    "concept_id": "divina_galica",
+    "en": "Divina Galica",
+    "tr": "Divina Galica"
+   },
+   {
+    "concept_id": "desire_wilson",
+    "en": "Desiré Wilson",
+    "tr": "Desiré Wilson"
+   }
+  ],
+  "correct": "lella_lombardi",
+  "source": "https://en.wikipedia.org/wiki/Lella_Lombardi"
+ },
+ {
+  "key": "sports_q0896",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Canadian won the 1997 world title with Williams?",
+   "tr": "1997'de Williams ile dünya şampiyonu olan Kanadalı kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "jacques_villeneuve",
+    "en": "Jacques Villeneuve",
+    "tr": "Jacques Villeneuve"
+   },
+   {
+    "concept_id": "gilles_villeneuve",
+    "en": "Gilles Villeneuve",
+    "tr": "Gilles Villeneuve"
+   },
+   {
+    "concept_id": "lance_stroll",
+    "en": "Lance Stroll",
+    "tr": "Lance Stroll"
+   },
+   {
+    "concept_id": "nicholas_latifi",
+    "en": "Nicholas Latifi",
+    "tr": "Nicholas Latifi"
+   }
+  ],
+  "correct": "jacques_villeneuve",
+  "source": "https://en.wikipedia.org/wiki/Jacques_Villeneuve"
+ },
+ {
+  "key": "sports_q0897",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "In 2001, which Swedish golfer became the first woman to shoot 59 on the LPGA Tour?",
+   "tr": "2001'de LPGA Turu'nda 59 vuruşluk tur atan ilk kadın olan İsveçli golfçü kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "annika_sorenstam",
+    "en": "Annika Sörenstam",
+    "tr": "Annika Sörenstam"
+   },
+   {
+    "concept_id": "liselotte_neumann",
+    "en": "Liselotte Neumann",
+    "tr": "Liselotte Neumann"
+   },
+   {
+    "concept_id": "helen_alfredsson",
+    "en": "Helen Alfredsson",
+    "tr": "Helen Alfredsson"
+   },
+   {
+    "concept_id": "anna_nordqvist",
+    "en": "Anna Nordqvist",
+    "tr": "Anna Nordqvist"
+   }
+  ],
+  "correct": "annika_sorenstam",
+  "source": "https://en.wikipedia.org/wiki/Annika_Sörenstam"
+ },
+ {
+  "key": "sports_q0898",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the Palio di Siena?",
+   "tr": "Palio di Siena nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "a_bareback_horse_race_in_the_town_square",
+    "en": "A bareback horse race in the town square",
+    "tr": "Kent meydanında eyersiz at yarışı"
+   },
+   {
+    "concept_id": "a_cycling_hill_climb",
+    "en": "A cycling hill climb",
+    "tr": "Bisiklet tırmanış yarışı"
+   },
+   {
+    "concept_id": "a_rowing_regatta",
+    "en": "A rowing regatta",
+    "tr": "Kürek yarışı"
+   },
+   {
+    "concept_id": "a_medieval_jousting_contest",
+    "en": "A medieval jousting contest",
+    "tr": "Orta Çağ mızrak turnuvası"
+   }
+  ],
+  "correct": "a_bareback_horse_race_in_the_town_square",
+  "source": "https://en.wikipedia.org/wiki/Palio_di_Siena"
+ },
+ {
+  "key": "sports_q0899",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many players are on a polo team?",
+   "tr": "Bir polo takımında kaç oyuncu bulunur?"
+  },
+  "options": [
+   {
+    "concept_id": "n_4",
+    "en": "4",
+    "tr": "4"
+   },
+   {
+    "concept_id": "n_5",
+    "en": "5",
+    "tr": "5"
+   },
+   {
+    "concept_id": "n_6",
+    "en": "6",
+    "tr": "6"
+   },
+   {
+    "concept_id": "n_7",
+    "en": "7",
+    "tr": "7"
+   }
+  ],
+  "correct": "n_4",
+  "source": "https://en.wikipedia.org/wiki/Polo"
+ },
+ {
+  "key": "sports_q0900",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Pakistani squash great won ten British Open titles in a row, from 1982?",
+   "tr": "1982'den itibaren üst üste on Britanya Açık şampiyonluğu kazanan Pakistanlı squash efsanesi kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "jahangir_khan",
+    "en": "Jahangir Khan",
+    "tr": "Jahangir Khan"
+   },
+   {
+    "concept_id": "jansher_khan",
+    "en": "Jansher Khan",
+    "tr": "Jansher Khan"
+   },
+   {
+    "concept_id": "hashim_khan",
+    "en": "Hashim Khan",
+    "tr": "Hashim Khan"
+   },
+   {
+    "concept_id": "qamar_zaman",
+    "en": "Qamar Zaman",
+    "tr": "Qamar Zaman"
+   }
+  ],
+  "correct": "jahangir_khan",
+  "source": "https://en.wikipedia.org/wiki/Jahangir_Khan"
  }
 ]
