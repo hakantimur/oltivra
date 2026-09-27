@@ -253,6 +253,38 @@
       ]
     },
     {
+      "collectionGroup": "weekly_user_stats",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "week_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "ranked_weekly_xp",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "weekly_user_stats",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "league",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "week_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "ranked_weekly_xp",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
       "collectionGroup": "username_registry",
       "queryScope": "COLLECTION",
       "fields": [
