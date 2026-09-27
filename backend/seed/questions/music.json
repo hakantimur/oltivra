@@ -1,0 +1,1442 @@
+[
+  {
+    "key": "music_001",
+    "category_id": "music",
+    "subcategory_id": "bands",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "How many members were in The Beatles' famous line-up?",
+      "tr": "The Beatles'ın ünlü kadrosunda kaç üye vardı?"
+    },
+    "options": [
+      {
+        "concept_id": "three",
+        "en": "Three",
+        "tr": "Üç"
+      },
+      {
+        "concept_id": "four",
+        "en": "Four",
+        "tr": "Dört"
+      },
+      {
+        "concept_id": "five",
+        "en": "Five",
+        "tr": "Beş"
+      },
+      {
+        "concept_id": "six",
+        "en": "Six",
+        "tr": "Altı"
+      }
+    ],
+    "correct": "four",
+    "source": "https://en.wikipedia.org/wiki/The_Beatles"
+  },
+  {
+    "key": "music_002",
+    "category_id": "music",
+    "subcategory_id": "bands",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Freddie Mercury was the lead singer of which band?",
+      "tr": "Freddie Mercury hangi grubun solistiydi?"
+    },
+    "options": [
+      {
+        "concept_id": "queen",
+        "en": "Queen",
+        "tr": "Queen"
+      },
+      {
+        "concept_id": "the_who",
+        "en": "The Who",
+        "tr": "The Who"
+      },
+      {
+        "concept_id": "led_zeppelin",
+        "en": "Led Zeppelin",
+        "tr": "Led Zeppelin"
+      },
+      {
+        "concept_id": "pink_floyd",
+        "en": "Pink Floyd",
+        "tr": "Pink Floyd"
+      }
+    ],
+    "correct": "queen",
+    "source": "https://en.wikipedia.org/wiki/Freddie_Mercury"
+  },
+  {
+    "key": "music_003",
+    "category_id": "music",
+    "subcategory_id": "artists",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which singer is known as the \"King of Pop\"?",
+      "tr": "\"Pop'un Kralı\" olarak bilinen şarkıcı kimdir?"
+    },
+    "options": [
+      {
+        "concept_id": "prince",
+        "en": "Prince",
+        "tr": "Prince"
+      },
+      {
+        "concept_id": "elvis",
+        "en": "Elvis Presley",
+        "tr": "Elvis Presley"
+      },
+      {
+        "concept_id": "stevie",
+        "en": "Stevie Wonder",
+        "tr": "Stevie Wonder"
+      },
+      {
+        "concept_id": "mj",
+        "en": "Michael Jackson",
+        "tr": "Michael Jackson"
+      }
+    ],
+    "correct": "mj",
+    "source": "https://en.wikipedia.org/wiki/Michael_Jackson"
+  },
+  {
+    "key": "music_004",
+    "category_id": "music",
+    "subcategory_id": "artists",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which singer is known as the \"King of Rock and Roll\"?",
+      "tr": "\"Rock and Roll'un Kralı\" olarak bilinen şarkıcı kimdir?"
+    },
+    "options": [
+      {
+        "concept_id": "chuck_berry",
+        "en": "Chuck Berry",
+        "tr": "Chuck Berry"
+      },
+      {
+        "concept_id": "little_richard",
+        "en": "Little Richard",
+        "tr": "Little Richard"
+      },
+      {
+        "concept_id": "elvis",
+        "en": "Elvis Presley",
+        "tr": "Elvis Presley"
+      },
+      {
+        "concept_id": "buddy_holly",
+        "en": "Buddy Holly",
+        "tr": "Buddy Holly"
+      }
+    ],
+    "correct": "elvis",
+    "source": "https://en.wikipedia.org/wiki/Elvis_Presley"
+  },
+  {
+    "key": "music_005",
+    "category_id": "music",
+    "subcategory_id": "instruments",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "How many strings does a standard guitar have?",
+      "tr": "Standart bir gitarın kaç teli vardır?"
+    },
+    "options": [
+      {
+        "concept_id": "four",
+        "en": "Four",
+        "tr": "Dört"
+      },
+      {
+        "concept_id": "six",
+        "en": "Six",
+        "tr": "Altı"
+      },
+      {
+        "concept_id": "five",
+        "en": "Five",
+        "tr": "Beş"
+      },
+      {
+        "concept_id": "eight",
+        "en": "Eight",
+        "tr": "Sekiz"
+      }
+    ],
+    "correct": "six",
+    "source": "https://en.wikipedia.org/wiki/Guitar"
+  },
+  {
+    "key": "music_006",
+    "category_id": "music",
+    "subcategory_id": "instruments",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "How many keys does a standard modern piano have?",
+      "tr": "Standart modern bir piyanonun kaç tuşu vardır?"
+    },
+    "options": [
+      {
+        "concept_id": "k88",
+        "en": "88",
+        "tr": "88"
+      },
+      {
+        "concept_id": "k76",
+        "en": "76",
+        "tr": "76"
+      },
+      {
+        "concept_id": "k92",
+        "en": "92",
+        "tr": "92"
+      },
+      {
+        "concept_id": "k64",
+        "en": "64",
+        "tr": "64"
+      }
+    ],
+    "correct": "k88",
+    "source": "https://en.wikipedia.org/wiki/Piano"
+  },
+  {
+    "key": "music_007",
+    "category_id": "music",
+    "subcategory_id": "instruments",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "The trumpet belongs to which family of instruments?",
+      "tr": "Trompet hangi çalgı ailesine aittir?"
+    },
+    "options": [
+      {
+        "concept_id": "woodwind",
+        "en": "Woodwind",
+        "tr": "Tahta nefesli"
+      },
+      {
+        "concept_id": "strings",
+        "en": "Strings",
+        "tr": "Yaylı"
+      },
+      {
+        "concept_id": "percussion",
+        "en": "Percussion",
+        "tr": "Vurmalı"
+      },
+      {
+        "concept_id": "brass",
+        "en": "Brass",
+        "tr": "Bakır nefesli"
+      }
+    ],
+    "correct": "brass",
+    "source": "https://en.wikipedia.org/wiki/Trumpet"
+  },
+  {
+    "key": "music_008",
+    "category_id": "music",
+    "subcategory_id": "albums",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which band released the album Abbey Road (1969)?",
+      "tr": "Abbey Road (1969) albümünü hangi grup yayımladı?"
+    },
+    "options": [
+      {
+        "concept_id": "rolling_stones",
+        "en": "The Rolling Stones",
+        "tr": "The Rolling Stones"
+      },
+      {
+        "concept_id": "the_who",
+        "en": "The Who",
+        "tr": "The Who"
+      },
+      {
+        "concept_id": "beatles",
+        "en": "The Beatles",
+        "tr": "The Beatles"
+      },
+      {
+        "concept_id": "the_kinks",
+        "en": "The Kinks",
+        "tr": "The Kinks"
+      }
+    ],
+    "correct": "beatles",
+    "source": "https://en.wikipedia.org/wiki/Abbey_Road"
+  },
+  {
+    "key": "music_009",
+    "category_id": "music",
+    "subcategory_id": "music_history",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which famous composer kept composing after losing his hearing?",
+      "tr": "Hangi ünlü besteci işitme duyusunu kaybettikten sonra da beste yapmaya devam etti?"
+    },
+    "options": [
+      {
+        "concept_id": "mozart",
+        "en": "Mozart",
+        "tr": "Mozart"
+      },
+      {
+        "concept_id": "beethoven",
+        "en": "Beethoven",
+        "tr": "Beethoven"
+      },
+      {
+        "concept_id": "chopin",
+        "en": "Chopin",
+        "tr": "Chopin"
+      },
+      {
+        "concept_id": "vivaldi",
+        "en": "Vivaldi",
+        "tr": "Vivaldi"
+      }
+    ],
+    "correct": "beethoven",
+    "source": "https://en.wikipedia.org/wiki/Ludwig_van_Beethoven"
+  },
+  {
+    "key": "music_010",
+    "category_id": "music",
+    "subcategory_id": "music_awards",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In which country are the Grammy Awards presented?",
+      "tr": "Grammy Ödülleri hangi ülkede verilir?"
+    },
+    "options": [
+      {
+        "concept_id": "usa",
+        "en": "United States",
+        "tr": "Amerika Birleşik Devletleri"
+      },
+      {
+        "concept_id": "uk",
+        "en": "United Kingdom",
+        "tr": "Birleşik Krallık"
+      },
+      {
+        "concept_id": "canada",
+        "en": "Canada",
+        "tr": "Kanada"
+      },
+      {
+        "concept_id": "france",
+        "en": "France",
+        "tr": "Fransa"
+      }
+    ],
+    "correct": "usa",
+    "source": "https://en.wikipedia.org/wiki/Grammy_Awards"
+  },
+  {
+    "key": "music_011",
+    "category_id": "music",
+    "subcategory_id": "music_awards",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "ABBA won which international song contest in 1974?",
+      "tr": "ABBA 1974'te hangi uluslararası şarkı yarışmasını kazandı?"
+    },
+    "options": [
+      {
+        "concept_id": "sanremo",
+        "en": "Sanremo Festival",
+        "tr": "Sanremo Festivali"
+      },
+      {
+        "concept_id": "grammy",
+        "en": "Grammy Awards",
+        "tr": "Grammy Ödülleri"
+      },
+      {
+        "concept_id": "brit",
+        "en": "Brit Awards",
+        "tr": "Brit Ödülleri"
+      },
+      {
+        "concept_id": "eurovision",
+        "en": "Eurovision",
+        "tr": "Eurovision"
+      }
+    ],
+    "correct": "eurovision",
+    "source": "https://en.wikipedia.org/wiki/Eurovision_Song_Contest_1974"
+  },
+  {
+    "key": "music_012",
+    "category_id": "music",
+    "subcategory_id": "artists",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Bob Marley is most famous for which music genre?",
+      "tr": "Bob Marley en çok hangi müzik türüyle tanınır?"
+    },
+    "options": [
+      {
+        "concept_id": "jazz",
+        "en": "Jazz",
+        "tr": "Caz"
+      },
+      {
+        "concept_id": "blues",
+        "en": "Blues",
+        "tr": "Blues"
+      },
+      {
+        "concept_id": "reggae",
+        "en": "Reggae",
+        "tr": "Reggae"
+      },
+      {
+        "concept_id": "country",
+        "en": "Country",
+        "tr": "Country"
+      }
+    ],
+    "correct": "reggae",
+    "source": "https://en.wikipedia.org/wiki/Bob_Marley"
+  },
+  {
+    "key": "music_013",
+    "category_id": "music",
+    "subcategory_id": "bands",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who is the lead singer of The Rolling Stones?",
+      "tr": "The Rolling Stones'un solisti kimdir?"
+    },
+    "options": [
+      {
+        "concept_id": "richards",
+        "en": "Keith Richards",
+        "tr": "Keith Richards"
+      },
+      {
+        "concept_id": "jagger",
+        "en": "Mick Jagger",
+        "tr": "Mick Jagger"
+      },
+      {
+        "concept_id": "bowie",
+        "en": "David Bowie",
+        "tr": "David Bowie"
+      },
+      {
+        "concept_id": "plant",
+        "en": "Robert Plant",
+        "tr": "Robert Plant"
+      }
+    ],
+    "correct": "jagger",
+    "source": "https://en.wikipedia.org/wiki/Mick_Jagger"
+  },
+  {
+    "key": "music_014",
+    "category_id": "music",
+    "subcategory_id": "instruments",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "How many strings does a violin usually have?",
+      "tr": "Bir kemanın genellikle kaç teli vardır?"
+    },
+    "options": [
+      {
+        "concept_id": "four",
+        "en": "Four",
+        "tr": "Dört"
+      },
+      {
+        "concept_id": "three",
+        "en": "Three",
+        "tr": "Üç"
+      },
+      {
+        "concept_id": "five",
+        "en": "Five",
+        "tr": "Beş"
+      },
+      {
+        "concept_id": "six",
+        "en": "Six",
+        "tr": "Altı"
+      }
+    ],
+    "correct": "four",
+    "source": "https://en.wikipedia.org/wiki/Violin"
+  },
+  {
+    "key": "music_015",
+    "category_id": "music",
+    "subcategory_id": "albums",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Adele's album titles 19, 21, 25 and 30 refer to what?",
+      "tr": "Adele'in 19, 21, 25 ve 30 adlı albümleri neyi ifade eder?"
+    },
+    "options": [
+      {
+        "concept_id": "track_count",
+        "en": "Number of tracks",
+        "tr": "Şarkı sayısını"
+      },
+      {
+        "concept_id": "release_day",
+        "en": "Release day",
+        "tr": "Çıkış gününü"
+      },
+      {
+        "concept_id": "chart_rank",
+        "en": "Chart positions",
+        "tr": "Liste sıralarını"
+      },
+      {
+        "concept_id": "her_age",
+        "en": "Her age",
+        "tr": "Yaşını"
+      }
+    ],
+    "correct": "her_age",
+    "source": "https://en.wikipedia.org/wiki/Adele"
+  },
+  {
+    "key": "music_016",
+    "category_id": "music",
+    "subcategory_id": "albums",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which band released The Dark Side of the Moon (1973)?",
+      "tr": "The Dark Side of the Moon (1973) albümünü hangi grup yayımladı?"
+    },
+    "options": [
+      {
+        "concept_id": "led_zeppelin",
+        "en": "Led Zeppelin",
+        "tr": "Led Zeppelin"
+      },
+      {
+        "concept_id": "genesis",
+        "en": "Genesis",
+        "tr": "Genesis"
+      },
+      {
+        "concept_id": "pink_floyd",
+        "en": "Pink Floyd",
+        "tr": "Pink Floyd"
+      },
+      {
+        "concept_id": "yes",
+        "en": "Yes",
+        "tr": "Yes"
+      }
+    ],
+    "correct": "pink_floyd",
+    "source": "https://en.wikipedia.org/wiki/The_Dark_Side_of_the_Moon"
+  },
+  {
+    "key": "music_017",
+    "category_id": "music",
+    "subcategory_id": "albums",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which Nirvana album has a baby swimming towards a dollar bill on its cover?",
+      "tr": "Hangi Nirvana albümünün kapağında bir dolara doğru yüzen bebek vardır?"
+    },
+    "options": [
+      {
+        "concept_id": "in_utero",
+        "en": "In Utero",
+        "tr": "In Utero"
+      },
+      {
+        "concept_id": "nevermind",
+        "en": "Nevermind",
+        "tr": "Nevermind"
+      },
+      {
+        "concept_id": "bleach",
+        "en": "Bleach",
+        "tr": "Bleach"
+      },
+      {
+        "concept_id": "unplugged",
+        "en": "MTV Unplugged",
+        "tr": "MTV Unplugged"
+      }
+    ],
+    "correct": "nevermind",
+    "source": "https://en.wikipedia.org/wiki/Nevermind"
+  },
+  {
+    "key": "music_018",
+    "category_id": "music",
+    "subcategory_id": "albums",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which band released the 1980 album Back in Black?",
+      "tr": "1980 çıkışlı Back in Black albümünü hangi grup yayımladı?"
+    },
+    "options": [
+      {
+        "concept_id": "acdc",
+        "en": "AC/DC",
+        "tr": "AC/DC"
+      },
+      {
+        "concept_id": "metallica",
+        "en": "Metallica",
+        "tr": "Metallica"
+      },
+      {
+        "concept_id": "iron_maiden",
+        "en": "Iron Maiden",
+        "tr": "Iron Maiden"
+      },
+      {
+        "concept_id": "kiss",
+        "en": "Kiss",
+        "tr": "Kiss"
+      }
+    ],
+    "correct": "acdc",
+    "source": "https://en.wikipedia.org/wiki/Back_in_Black"
+  },
+  {
+    "key": "music_019",
+    "category_id": "music",
+    "subcategory_id": "music_history",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Wolfgang Amadeus Mozart was born in Salzburg, in which present-day country?",
+      "tr": "Wolfgang Amadeus Mozart, günümüzde hangi ülkede bulunan Salzburg'da doğdu?"
+    },
+    "options": [
+      {
+        "concept_id": "germany",
+        "en": "Germany",
+        "tr": "Almanya"
+      },
+      {
+        "concept_id": "switzerland",
+        "en": "Switzerland",
+        "tr": "İsviçre"
+      },
+      {
+        "concept_id": "czechia",
+        "en": "Czech Republic",
+        "tr": "Çekya"
+      },
+      {
+        "concept_id": "austria",
+        "en": "Austria",
+        "tr": "Avusturya"
+      }
+    ],
+    "correct": "austria",
+    "source": "https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart"
+  },
+  {
+    "key": "music_020",
+    "category_id": "music",
+    "subcategory_id": "music_history",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In which year was the Woodstock music festival held?",
+      "tr": "Woodstock müzik festivali hangi yıl düzenlendi?"
+    },
+    "options": [
+      {
+        "concept_id": "y1965",
+        "en": "1965",
+        "tr": "1965"
+      },
+      {
+        "concept_id": "y1972",
+        "en": "1972",
+        "tr": "1972"
+      },
+      {
+        "concept_id": "y1969",
+        "en": "1969",
+        "tr": "1969"
+      },
+      {
+        "concept_id": "y1975",
+        "en": "1975",
+        "tr": "1975"
+      }
+    ],
+    "correct": "y1969",
+    "source": "https://en.wikipedia.org/wiki/Woodstock"
+  },
+  {
+    "key": "music_021",
+    "category_id": "music",
+    "subcategory_id": "music_history",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which composer wrote The Four Seasons?",
+      "tr": "Dört Mevsim'i hangi besteci yazdı?"
+    },
+    "options": [
+      {
+        "concept_id": "bach",
+        "en": "J. S. Bach",
+        "tr": "J. S. Bach"
+      },
+      {
+        "concept_id": "vivaldi",
+        "en": "Antonio Vivaldi",
+        "tr": "Antonio Vivaldi"
+      },
+      {
+        "concept_id": "handel",
+        "en": "George F. Handel",
+        "tr": "George F. Händel"
+      },
+      {
+        "concept_id": "haydn",
+        "en": "Joseph Haydn",
+        "tr": "Joseph Haydn"
+      }
+    ],
+    "correct": "vivaldi",
+    "source": "https://en.wikipedia.org/wiki/The_Four_Seasons_(Vivaldi)"
+  },
+  {
+    "key": "music_022",
+    "category_id": "music",
+    "subcategory_id": "artists",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which singer is widely known as the \"Queen of Pop\"?",
+      "tr": "Yaygın olarak \"Pop'un Kraliçesi\" diye bilinen şarkıcı kimdir?"
+    },
+    "options": [
+      {
+        "concept_id": "madonna",
+        "en": "Madonna",
+        "tr": "Madonna"
+      },
+      {
+        "concept_id": "whitney",
+        "en": "Whitney Houston",
+        "tr": "Whitney Houston"
+      },
+      {
+        "concept_id": "cher",
+        "en": "Cher",
+        "tr": "Cher"
+      },
+      {
+        "concept_id": "tina",
+        "en": "Tina Turner",
+        "tr": "Tina Turner"
+      }
+    ],
+    "correct": "madonna",
+    "source": "https://en.wikipedia.org/wiki/Madonna"
+  },
+  {
+    "key": "music_023",
+    "category_id": "music",
+    "subcategory_id": "artists",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which pop star was born Stefani Germanotta?",
+      "tr": "Asıl adı Stefani Germanotta olan pop yıldızı kimdir?"
+    },
+    "options": [
+      {
+        "concept_id": "katy_perry",
+        "en": "Katy Perry",
+        "tr": "Katy Perry"
+      },
+      {
+        "concept_id": "gwen_stefani",
+        "en": "Gwen Stefani",
+        "tr": "Gwen Stefani"
+      },
+      {
+        "concept_id": "pink",
+        "en": "Pink",
+        "tr": "Pink"
+      },
+      {
+        "concept_id": "lady_gaga",
+        "en": "Lady Gaga",
+        "tr": "Lady Gaga"
+      }
+    ],
+    "correct": "lady_gaga",
+    "source": "https://en.wikipedia.org/wiki/Lady_Gaga"
+  },
+  {
+    "key": "music_024",
+    "category_id": "music",
+    "subcategory_id": "artists",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which country is the singer Shakira from?",
+      "tr": "Şarkıcı Shakira hangi ülkelidir?"
+    },
+    "options": [
+      {
+        "concept_id": "mexico",
+        "en": "Mexico",
+        "tr": "Meksika"
+      },
+      {
+        "concept_id": "spain",
+        "en": "Spain",
+        "tr": "İspanya"
+      },
+      {
+        "concept_id": "colombia",
+        "en": "Colombia",
+        "tr": "Kolombiya"
+      },
+      {
+        "concept_id": "argentina",
+        "en": "Argentina",
+        "tr": "Arjantin"
+      }
+    ],
+    "correct": "colombia",
+    "source": "https://en.wikipedia.org/wiki/Shakira"
+  },
+  {
+    "key": "music_025",
+    "category_id": "music",
+    "subcategory_id": "bands",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which K-pop group released the 2020 hit \"Dynamite\"?",
+      "tr": "2020'nin hit şarkısı \"Dynamite\"ı hangi K-pop grubu yayımladı?"
+    },
+    "options": [
+      {
+        "concept_id": "blackpink",
+        "en": "Blackpink",
+        "tr": "Blackpink"
+      },
+      {
+        "concept_id": "bts",
+        "en": "BTS",
+        "tr": "BTS"
+      },
+      {
+        "concept_id": "exo",
+        "en": "EXO",
+        "tr": "EXO"
+      },
+      {
+        "concept_id": "twice",
+        "en": "Twice",
+        "tr": "Twice"
+      }
+    ],
+    "correct": "bts",
+    "source": "https://en.wikipedia.org/wiki/Dynamite_(BTS_song)"
+  },
+  {
+    "key": "music_026",
+    "category_id": "music",
+    "subcategory_id": "bands",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "The rock band U2 comes from which country?",
+      "tr": "Rock grubu U2 hangi ülkedendir?"
+    },
+    "options": [
+      {
+        "concept_id": "ireland",
+        "en": "Ireland",
+        "tr": "İrlanda"
+      },
+      {
+        "concept_id": "england",
+        "en": "England",
+        "tr": "İngiltere"
+      },
+      {
+        "concept_id": "scotland",
+        "en": "Scotland",
+        "tr": "İskoçya"
+      },
+      {
+        "concept_id": "australia",
+        "en": "Australia",
+        "tr": "Avustralya"
+      }
+    ],
+    "correct": "ireland",
+    "source": "https://en.wikipedia.org/wiki/U2"
+  },
+  {
+    "key": "music_027",
+    "category_id": "music",
+    "subcategory_id": "bands",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Chris Martin is the lead singer of which band?",
+      "tr": "Chris Martin hangi grubun solistidir?"
+    },
+    "options": [
+      {
+        "concept_id": "oasis",
+        "en": "Oasis",
+        "tr": "Oasis"
+      },
+      {
+        "concept_id": "radiohead",
+        "en": "Radiohead",
+        "tr": "Radiohead"
+      },
+      {
+        "concept_id": "keane",
+        "en": "Keane",
+        "tr": "Keane"
+      },
+      {
+        "concept_id": "coldplay",
+        "en": "Coldplay",
+        "tr": "Coldplay"
+      }
+    ],
+    "correct": "coldplay",
+    "source": "https://en.wikipedia.org/wiki/Chris_Martin"
+  },
+  {
+    "key": "music_028",
+    "category_id": "music",
+    "subcategory_id": "instruments",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which orchestral instrument typically has 47 strings and seven pedals?",
+      "tr": "Hangi orkestra çalgısının genellikle 47 teli ve yedi pedalı vardır?"
+    },
+    "options": [
+      {
+        "concept_id": "piano",
+        "en": "Piano",
+        "tr": "Piyano"
+      },
+      {
+        "concept_id": "cello",
+        "en": "Cello",
+        "tr": "Çello"
+      },
+      {
+        "concept_id": "harp",
+        "en": "Harp",
+        "tr": "Arp"
+      },
+      {
+        "concept_id": "harpsichord",
+        "en": "Harpsichord",
+        "tr": "Klavsen"
+      }
+    ],
+    "correct": "harp",
+    "source": "https://en.wikipedia.org/wiki/Pedal_harp"
+  },
+  {
+    "key": "music_029",
+    "category_id": "music",
+    "subcategory_id": "instruments",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "The didgeridoo is a traditional wind instrument from which country?",
+      "tr": "Didgeridoo hangi ülkenin geleneksel nefesli çalgısıdır?"
+    },
+    "options": [
+      {
+        "concept_id": "new_zealand",
+        "en": "New Zealand",
+        "tr": "Yeni Zelanda"
+      },
+      {
+        "concept_id": "australia",
+        "en": "Australia",
+        "tr": "Avustralya"
+      },
+      {
+        "concept_id": "peru",
+        "en": "Peru",
+        "tr": "Peru"
+      },
+      {
+        "concept_id": "south_africa",
+        "en": "South Africa",
+        "tr": "Güney Afrika"
+      }
+    ],
+    "correct": "australia",
+    "source": "https://en.wikipedia.org/wiki/Didgeridoo"
+  },
+  {
+    "key": "music_030",
+    "category_id": "music",
+    "subcategory_id": "music_awards",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which music awards show hands out a trophy of an astronaut on the Moon?",
+      "tr": "Hangi müzik ödül töreni Ay'daki bir astronot şeklinde ödül verir?"
+    },
+    "options": [
+      {
+        "concept_id": "mtv_vma",
+        "en": "MTV Video Music Awards",
+        "tr": "MTV Video Müzik Ödülleri"
+      },
+      {
+        "concept_id": "grammys",
+        "en": "Grammy Awards",
+        "tr": "Grammy Ödülleri"
+      },
+      {
+        "concept_id": "brits",
+        "en": "Brit Awards",
+        "tr": "Brit Ödülleri"
+      },
+      {
+        "concept_id": "billboard",
+        "en": "Billboard Music Awards",
+        "tr": "Billboard Müzik Ödülleri"
+      }
+    ],
+    "correct": "mtv_vma",
+    "source": "https://en.wikipedia.org/wiki/MTV_Video_Music_Awards"
+  },
+  {
+    "key": "music_031",
+    "category_id": "music",
+    "subcategory_id": "music_history",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which composer wrote the ballet Swan Lake?",
+      "tr": "Kuğu Gölü balesini hangi besteci yazdı?"
+    },
+    "options": [
+      {
+        "concept_id": "stravinsky",
+        "en": "Stravinsky",
+        "tr": "Stravinski"
+      },
+      {
+        "concept_id": "prokofiev",
+        "en": "Prokofiev",
+        "tr": "Prokofyev"
+      },
+      {
+        "concept_id": "rachmaninoff",
+        "en": "Rachmaninoff",
+        "tr": "Rahmaninov"
+      },
+      {
+        "concept_id": "tchaikovsky",
+        "en": "Tchaikovsky",
+        "tr": "Çaykovski"
+      }
+    ],
+    "correct": "tchaikovsky",
+    "source": "https://en.wikipedia.org/wiki/Swan_Lake"
+  },
+  {
+    "key": "music_032",
+    "category_id": "music",
+    "subcategory_id": "music_history",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which Baroque composer wrote the Brandenburg Concertos?",
+      "tr": "Brandenburg Konçertolarını hangi Barok besteci yazdı?"
+    },
+    "options": [
+      {
+        "concept_id": "vivaldi",
+        "en": "Antonio Vivaldi",
+        "tr": "Antonio Vivaldi"
+      },
+      {
+        "concept_id": "handel",
+        "en": "George F. Handel",
+        "tr": "George F. Händel"
+      },
+      {
+        "concept_id": "bach",
+        "en": "J. S. Bach",
+        "tr": "J. S. Bach"
+      },
+      {
+        "concept_id": "telemann",
+        "en": "Telemann",
+        "tr": "Telemann"
+      }
+    ],
+    "correct": "bach",
+    "source": "https://en.wikipedia.org/wiki/Brandenburg_Concertos"
+  },
+  {
+    "key": "music_033",
+    "category_id": "music",
+    "subcategory_id": "instruments",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who invented the saxophone?",
+      "tr": "Saksafonu kim icat etti?"
+    },
+    "options": [
+      {
+        "concept_id": "theobald_bohm",
+        "en": "Theobald Böhm",
+        "tr": "Theobald Böhm"
+      },
+      {
+        "concept_id": "adolphe_sax",
+        "en": "Adolphe Sax",
+        "tr": "Adolphe Sax"
+      },
+      {
+        "concept_id": "cristofori",
+        "en": "Bartolomeo Cristofori",
+        "tr": "Bartolomeo Cristofori"
+      },
+      {
+        "concept_id": "denner",
+        "en": "Johann Denner",
+        "tr": "Johann Denner"
+      }
+    ],
+    "correct": "adolphe_sax",
+    "source": "https://en.wikipedia.org/wiki/Adolphe_Sax"
+  },
+  {
+    "key": "music_034",
+    "category_id": "music",
+    "subcategory_id": "instruments",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Ravi Shankar was a world-famous master of which instrument?",
+      "tr": "Ravi Shankar hangi çalgının dünyaca ünlü ustasıydı?"
+    },
+    "options": [
+      {
+        "concept_id": "sitar",
+        "en": "Sitar",
+        "tr": "Sitar"
+      },
+      {
+        "concept_id": "tabla",
+        "en": "Tabla",
+        "tr": "Tabla"
+      },
+      {
+        "concept_id": "veena",
+        "en": "Veena",
+        "tr": "Veena"
+      },
+      {
+        "concept_id": "sarod",
+        "en": "Sarod",
+        "tr": "Sarod"
+      }
+    ],
+    "correct": "sitar",
+    "source": "https://en.wikipedia.org/wiki/Ravi_Shankar"
+  },
+  {
+    "key": "music_035",
+    "category_id": "music",
+    "subcategory_id": "albums",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which Fleetwood Mac album from 1977 includes the song \"Dreams\"?",
+      "tr": "Fleetwood Mac'in \"Dreams\" şarkısını içeren 1977 albümü hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "tusk",
+        "en": "Tusk",
+        "tr": "Tusk"
+      },
+      {
+        "concept_id": "mirage",
+        "en": "Mirage",
+        "tr": "Mirage"
+      },
+      {
+        "concept_id": "tango",
+        "en": "Tango in the Night",
+        "tr": "Tango in the Night"
+      },
+      {
+        "concept_id": "rumours",
+        "en": "Rumours",
+        "tr": "Rumours"
+      }
+    ],
+    "correct": "rumours",
+    "source": "https://en.wikipedia.org/wiki/Rumours_(album)"
+  },
+  {
+    "key": "music_036",
+    "category_id": "music",
+    "subcategory_id": "albums",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In which year was Michael Jackson's album Thriller released?",
+      "tr": "Michael Jackson'ın Thriller albümü hangi yıl yayımlandı?"
+    },
+    "options": [
+      {
+        "concept_id": "y1979",
+        "en": "1979",
+        "tr": "1979"
+      },
+      {
+        "concept_id": "y1985",
+        "en": "1985",
+        "tr": "1985"
+      },
+      {
+        "concept_id": "y1982",
+        "en": "1982",
+        "tr": "1982"
+      },
+      {
+        "concept_id": "y1987",
+        "en": "1987",
+        "tr": "1987"
+      }
+    ],
+    "correct": "y1982",
+    "source": "https://en.wikipedia.org/wiki/Thriller_(album)"
+  },
+  {
+    "key": "music_037",
+    "category_id": "music",
+    "subcategory_id": "artists",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "What was Freddie Mercury's birth name?",
+      "tr": "Freddie Mercury'nin doğumdaki adı neydi?"
+    },
+    "options": [
+      {
+        "concept_id": "dwight",
+        "en": "Reginald Dwight",
+        "tr": "Reginald Dwight"
+      },
+      {
+        "concept_id": "bulsara",
+        "en": "Farrokh Bulsara",
+        "tr": "Farrokh Bulsara"
+      },
+      {
+        "concept_id": "jones",
+        "en": "David Jones",
+        "tr": "David Jones"
+      },
+      {
+        "concept_id": "sumner",
+        "en": "Gordon Sumner",
+        "tr": "Gordon Sumner"
+      }
+    ],
+    "correct": "bulsara",
+    "source": "https://en.wikipedia.org/wiki/Freddie_Mercury"
+  },
+  {
+    "key": "music_038",
+    "category_id": "music",
+    "subcategory_id": "music_awards",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Bob Dylan received which Nobel Prize in 2016?",
+      "tr": "Bob Dylan 2016'da hangi Nobel Ödülü'nü aldı?"
+    },
+    "options": [
+      {
+        "concept_id": "literature",
+        "en": "Literature",
+        "tr": "Edebiyat"
+      },
+      {
+        "concept_id": "peace",
+        "en": "Peace",
+        "tr": "Barış"
+      },
+      {
+        "concept_id": "physics",
+        "en": "Physics",
+        "tr": "Fizik"
+      },
+      {
+        "concept_id": "economics",
+        "en": "Economics",
+        "tr": "Ekonomi"
+      }
+    ],
+    "correct": "literature",
+    "source": "https://en.wikipedia.org/wiki/Bob_Dylan"
+  },
+  {
+    "key": "music_039",
+    "category_id": "music",
+    "subcategory_id": "bands",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who was the lead guitarist of Led Zeppelin?",
+      "tr": "Led Zeppelin'in solo gitaristi kimdi?"
+    },
+    "options": [
+      {
+        "concept_id": "clapton",
+        "en": "Eric Clapton",
+        "tr": "Eric Clapton"
+      },
+      {
+        "concept_id": "beck",
+        "en": "Jeff Beck",
+        "tr": "Jeff Beck"
+      },
+      {
+        "concept_id": "blackmore",
+        "en": "Ritchie Blackmore",
+        "tr": "Ritchie Blackmore"
+      },
+      {
+        "concept_id": "page",
+        "en": "Jimmy Page",
+        "tr": "Jimmy Page"
+      }
+    ],
+    "correct": "page",
+    "source": "https://en.wikipedia.org/wiki/Jimmy_Page"
+  },
+  {
+    "key": "music_040",
+    "category_id": "music",
+    "subcategory_id": "bands",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which famous band grew out of a group called The Quarrymen?",
+      "tr": "Hangi ünlü grup The Quarrymen adlı bir gruptan doğdu?"
+    },
+    "options": [
+      {
+        "concept_id": "rolling_stones",
+        "en": "The Rolling Stones",
+        "tr": "The Rolling Stones"
+      },
+      {
+        "concept_id": "the_who",
+        "en": "The Who",
+        "tr": "The Who"
+      },
+      {
+        "concept_id": "beatles",
+        "en": "The Beatles",
+        "tr": "The Beatles"
+      },
+      {
+        "concept_id": "the_animals",
+        "en": "The Animals",
+        "tr": "The Animals"
+      }
+    ],
+    "correct": "beatles",
+    "source": "https://en.wikipedia.org/wiki/The_Quarrymen"
+  }
+]

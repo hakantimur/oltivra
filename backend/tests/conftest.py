@@ -9,10 +9,10 @@ from fastapi.testclient import TestClient
 from app.common.clock import FakeClock
 from app.common.settings import Settings
 from app.common.store.livestore import MemoryLiveStore
-from app.common.store.memory_docstore import MemoryDocStore
 from app.common.tasks import RecordingScheduler
 from app.container import Container
 from app.main import create_app
+from tests.helpers import seeded_store
 
 
 def make_settings(**overrides: Any) -> Settings:
@@ -30,7 +30,7 @@ def clock() -> FakeClock:
 @pytest.fixture
 def container(clock: FakeClock) -> Container:
     settings = make_settings()
-    return Container(settings, clock=clock, store=MemoryDocStore(), live=MemoryLiveStore(settings.shard_ids),
+    return Container(settings, clock=clock, store=seeded_store(), live=MemoryLiveStore(settings.shard_ids),
                      tasks=RecordingScheduler())
 
 
