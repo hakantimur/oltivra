@@ -91,8 +91,10 @@ class _RemoveAdsScreenState extends ConsumerState<RemoveAdsScreen> {
     try {
       final res = p.store == 'apple'
           ? await api.post('/v1/purchases/verify/apple', {'signed_transaction': p.verificationData})
-          : await api.post('/v1/purchases/verify/google',
-              {'product_id': removeAdsProductId, 'purchase_token': p.verificationData});
+          : await api.post('/v1/purchases/verify/google', {
+              'product_id': removeAdsProductId,
+              'purchase_token': p.verificationData,
+            });
       // Finish the store transaction only after the server recorded it.
       await ref.read(purchaseGatewayProvider).complete(p);
       await _afterVerify(res);
@@ -131,9 +133,9 @@ class _RemoveAdsScreenState extends ConsumerState<RemoveAdsScreen> {
   Future<void> _devBuy() async {
     setState(() => _buying = true);
     try {
-      final res = await ref
-          .read(apiClientProvider)
-          .post('/v1/purchases/verify/apple', {'signed_transaction': devAppleSignedTransaction()});
+      final res = await ref.read(apiClientProvider).post('/v1/purchases/verify/apple', {
+        'signed_transaction': devAppleSignedTransaction(),
+      });
       await _afterVerify(res);
     } catch (e) {
       if (mounted) showError(context, e);
@@ -223,15 +225,30 @@ class _RemoveAdsScreenState extends ConsumerState<RemoveAdsScreen> {
               const SizedBox(height: OSpace.md),
               Text(context.t('store.remove_ads.heading'), style: OText.headlineLg, textAlign: TextAlign.center),
               const SizedBox(height: OSpace.sm),
-              Text(context.t('store.remove_ads.body'),
-                  style: OText.bodyMd.copyWith(color: OColors.onSurfaceVariant), textAlign: TextAlign.center),
+              Text(
+                context.t('store.remove_ads.body'),
+                style: OText.bodyMd.copyWith(color: OColors.onSurfaceVariant),
+                textAlign: TextAlign.center,
+              ),
             ],
           ),
         ),
         const SizedBox(height: OSpace.lg),
-        _Benefit(icon: Icons.check_circle_outline_rounded, titleKey: 'store.remove_ads.b1', bodyKey: 'store.remove_ads.b1.sub'),
-        _Benefit(icon: Icons.sports_esports_outlined, titleKey: 'store.remove_ads.b2', bodyKey: 'store.remove_ads.b2.sub'),
-        _Benefit(icon: Icons.verified_user_outlined, titleKey: 'store.remove_ads.b3', bodyKey: 'store.remove_ads.b3.sub'),
+        _Benefit(
+          icon: Icons.check_circle_outline_rounded,
+          titleKey: 'store.remove_ads.b1',
+          bodyKey: 'store.remove_ads.b1.sub',
+        ),
+        _Benefit(
+          icon: Icons.sports_esports_outlined,
+          titleKey: 'store.remove_ads.b2',
+          bodyKey: 'store.remove_ads.b2.sub',
+        ),
+        _Benefit(
+          icon: Icons.verified_user_outlined,
+          titleKey: 'store.remove_ads.b3',
+          bodyKey: 'store.remove_ads.b3.sub',
+        ),
         const SizedBox(height: OSpace.sm),
         Container(
           padding: const EdgeInsets.all(OSpace.lg),
@@ -247,13 +264,20 @@ class _RemoveAdsScreenState extends ConsumerState<RemoveAdsScreen> {
         ),
         if (_pending) ...[
           const SizedBox(height: OSpace.md),
-          OPill(context.t('store.remove_ads.pending'), icon: Icons.schedule_rounded,
-              background: OColors.sun, foreground: OColors.tertiary),
+          OPill(
+            context.t('store.remove_ads.pending'),
+            icon: Icons.schedule_rounded,
+            background: OColors.sun,
+            foreground: OColors.tertiary,
+          ),
         ],
         if (Env.fakeAuth) ...[
           const SizedBox(height: OSpace.md),
-          Text(context.t('store.remove_ads.dev_note'),
-              style: OText.bodySm.copyWith(color: OColors.inkSubtle), textAlign: TextAlign.center),
+          Text(
+            context.t('store.remove_ads.dev_note'),
+            style: OText.bodySm.copyWith(color: OColors.inkSubtle),
+            textAlign: TextAlign.center,
+          ),
         ],
       ],
     );
@@ -269,30 +293,30 @@ class _Benefit extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Padding(
-        padding: const EdgeInsets.only(bottom: OSpace.md),
-        child: OCard(
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
-                width: 40,
-                height: 40,
-                decoration: const BoxDecoration(color: OColors.mint, shape: BoxShape.circle),
-                child: Icon(icon, size: 22, color: OColors.primary),
-              ),
-              const SizedBox(width: OSpace.lg),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(context.t(titleKey), style: OText.labelLg),
-                    const SizedBox(height: 2),
-                    Text(context.t(bodyKey), style: OText.bodySm.copyWith(color: OColors.inkSubtle)),
-                  ],
-                ),
-              ),
-            ],
+    padding: const EdgeInsets.only(bottom: OSpace.md),
+    child: OCard(
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            width: 40,
+            height: 40,
+            decoration: const BoxDecoration(color: OColors.mint, shape: BoxShape.circle),
+            child: Icon(icon, size: 22, color: OColors.primary),
           ),
-        ),
-      );
+          const SizedBox(width: OSpace.lg),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(context.t(titleKey), style: OText.labelLg),
+                const SizedBox(height: 2),
+                Text(context.t(bodyKey), style: OText.bodySm.copyWith(color: OColors.inkSubtle)),
+              ],
+            ),
+          ),
+        ],
+      ),
+    ),
+  );
 }

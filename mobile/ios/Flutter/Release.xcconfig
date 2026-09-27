@@ -1,1 +1,3 @@
 #include "Generated.xcconfig"
+// AdMob app ID; override with the real one for release (Google's sample ID by default).
+GAD_APPLICATION_ID = ca-app-pub-3940256099942544~1458002511

@@ -18,8 +18,15 @@ import '../../core/providers.dart';
 const removeAdsProductId = 'remove_ads_forever';
 
 /// Google's public sample rewarded units — safe for development; replace per platform before release.
-const rewardedAdUnitAndroid = 'ca-app-pub-3940256099942544/5224354917';
-const rewardedAdUnitIos = 'ca-app-pub-3940256099942544/1712485313';
+/// Real AdMob units are passed with `--dart-define`; Google's public sample units are the development default.
+const rewardedAdUnitAndroid = String.fromEnvironment(
+  'ADMOB_REWARDED_ANDROID',
+  defaultValue: 'ca-app-pub-3940256099942544/5224354917',
+);
+const rewardedAdUnitIos = String.fromEnvironment(
+  'ADMOB_REWARDED_IOS',
+  defaultValue: 'ca-app-pub-3940256099942544/1712485313',
+);
 
 /// Local preference used when no UMP privacy-options form applies (outside EEA/UK/CH): `false` requests
 /// non-personalised ads.
@@ -84,9 +91,11 @@ class GoogleRewardedAdGateway implements RewardedAdGateway {
   }
 }
 
-final rewardedAdGatewayProvider = Provider<RewardedAdGateway>((ref) => GoogleRewardedAdGateway(
-      personalized: () => ref.read(sharedPrefsProvider).getBool(personalizedAdsPrefKey) ?? true,
-    ));
+final rewardedAdGatewayProvider = Provider<RewardedAdGateway>(
+  (ref) => GoogleRewardedAdGateway(
+    personalized: () => ref.read(sharedPrefsProvider).getBool(personalizedAdsPrefKey) ?? true,
+  ),
+);
 
 // ------------------------------------------------------------------------------------------ consent (UMP)
 
@@ -100,6 +109,11 @@ class AdConsentState {
 
 abstract interface class AdConsentGateway {
   Future<AdConsentState> refresh();
+
+  /// Startup flow (spec §31): refresh consent info and show the UMP consent form when the region requires it.
+  /// Returns whether ads may be requested.
+  Future<bool> gather();
+
   Future<void> showPrivacyOptions();
 }
 
@@ -122,6 +136,15 @@ class UmpConsentGateway implements AdConsentGateway {
   }
 
   @override
+  Future<bool> gather() async {
+    await refresh();
+    final done = Completer<void>();
+    ConsentForm.loadAndShowConsentFormIfRequired((error) => done.complete());
+    await done.future;
+    return ConsentInformation.instance.canRequestAds();
+  }
+
+  @override
   Future<void> showPrivacyOptions() async {
     final done = Completer<void>();
     await ConsentForm.showPrivacyOptionsForm((error) {
@@ -136,6 +159,15 @@ class UmpConsentGateway implements AdConsentGateway {
 }
 
 final adConsentGatewayProvider = Provider<AdConsentGateway>((ref) => UmpConsentGateway());
+
+/// Gathered once per app run from the main shell; ad loads wait for it and are skipped without consent.
+final adConsentProvider = FutureProvider<bool>((ref) async {
+  try {
+    return await ref.read(adConsentGatewayProvider).gather();
+  } catch (_) {
+    return false;
+  }
+});
 
 // ------------------------------------------------------------------------------------------ purchases
 
@@ -187,22 +219,24 @@ class IapPurchaseGateway implements PurchaseGateway {
   ProductDetails? _product;
 
   @override
-  Stream<List<StorePurchase>> get purchases => _iap.purchaseStream.map((list) => [
-        for (final p in list)
-          StorePurchase(
-            productId: p.productID,
-            status: switch (p.status) {
-              PurchaseStatus.pending => StorePurchaseStatus.pending,
-              PurchaseStatus.purchased => StorePurchaseStatus.purchased,
-              PurchaseStatus.restored => StorePurchaseStatus.restored,
-              PurchaseStatus.error => StorePurchaseStatus.error,
-              PurchaseStatus.canceled => StorePurchaseStatus.canceled,
-            },
-            store: p.verificationData.source == 'app_store' ? 'apple' : 'google',
-            verificationData: p.verificationData.serverVerificationData,
-            handle: p,
-          ),
-      ]);
+  Stream<List<StorePurchase>> get purchases => _iap.purchaseStream.map(
+    (list) => [
+      for (final p in list)
+        StorePurchase(
+          productId: p.productID,
+          status: switch (p.status) {
+            PurchaseStatus.pending => StorePurchaseStatus.pending,
+            PurchaseStatus.purchased => StorePurchaseStatus.purchased,
+            PurchaseStatus.restored => StorePurchaseStatus.restored,
+            PurchaseStatus.error => StorePurchaseStatus.error,
+            PurchaseStatus.canceled => StorePurchaseStatus.canceled,
+          },
+          store: p.verificationData.source == 'app_store' ? 'apple' : 'google',
+          verificationData: p.verificationData.serverVerificationData,
+          handle: p,
+        ),
+    ],
+  );
 
   @override
   Future<StoreProduct?> loadProduct() async {
@@ -245,14 +279,18 @@ String devAppleSignedTransaction({String secret = devInternalSecret, String? tra
   final id = transactionId ?? _randomId('dev');
   final key = utf8.encode(sha256.convert(utf8.encode('apple-dev:$secret')).toString());
   final header = _b64url(utf8.encode(jsonEncode({'alg': 'HS256', 'typ': 'JWT'})));
-  final payload = _b64url(utf8.encode(jsonEncode({
-    'bundleId': devAppleBundleId,
-    'productId': removeAdsProductId,
-    'transactionId': id,
-    'originalTransactionId': id,
-    'inAppOwnershipType': 'PURCHASED',
-    'environment': 'Xcode',
-  })));
+  final payload = _b64url(
+    utf8.encode(
+      jsonEncode({
+        'bundleId': devAppleBundleId,
+        'productId': removeAdsProductId,
+        'transactionId': id,
+        'originalTransactionId': id,
+        'inAppOwnershipType': 'PURCHASED',
+        'environment': 'Xcode',
+      }),
+    ),
+  );
   final signature = _b64url(Hmac(sha256, key).convert(utf8.encode('$header.$payload')).bytes);
   return '$header.$payload.$signature';
 }

@@ -77,6 +77,9 @@ class _FakeConsent implements AdConsentGateway {
       AdConsentState(privacyOptionsRequired: required, canRequestAds: true);
 
   @override
+  Future<bool> gather() async => true;
+
+  @override
   Future<void> showPrivacyOptions() async => opened++;
 }
 

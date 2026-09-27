@@ -121,7 +121,10 @@ class _RewardedOfferScreenState extends ConsumerState<RewardedOfferScreen> {
     if (!mounted) return;
     if (outcome != RewardedAdOutcome.earned) {
       setState(() => _phase = _Phase.ready);
-      showMessage(context, context.t(outcome == RewardedAdOutcome.failed ? 'store.reward.ad_failed' : 'store.reward.not_completed'));
+      showMessage(
+        context,
+        context.t(outcome == RewardedAdOutcome.failed ? 'store.reward.ad_failed' : 'store.reward.not_completed'),
+      );
       return;
     }
     // Google's sample ad units never call our SSV endpoint; the dev backend accepts a locally signed one.
@@ -140,8 +143,12 @@ class _RewardedOfferScreenState extends ConsumerState<RewardedOfferScreen> {
 
   Future<void> _devCallback(Json view) async {
     try {
-      await ref.read(apiClientProvider).get('/internal/ads/admob-ssv',
-          query: devSsvQuery(userId: view['ssv_user_id'] as String, customData: view['custom_data'] as String));
+      await ref
+          .read(apiClientProvider)
+          .get(
+            '/internal/ads/admob-ssv',
+            query: devSsvQuery(userId: view['ssv_user_id'] as String, customData: view['custom_data'] as String),
+          );
     } catch (e) {
       if (mounted) showError(context, e);
     }
@@ -176,40 +183,58 @@ class _RewardedOfferScreenState extends ConsumerState<RewardedOfferScreen> {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-        backgroundColor: OColors.scrim,
-        body: SafeArea(
-          child: Column(
-            children: [
-              Expanded(child: GestureDetector(onTap: _phase == _Phase.watching ? null : _close)),
-              Container(
-                width: double.infinity,
-                constraints: const BoxConstraints(maxWidth: 560),
-                margin: const EdgeInsets.all(OSpace.lg),
-                padding: const EdgeInsets.fromLTRB(OSpace.xl, OSpace.xl, OSpace.xl, OSpace.lg),
-                decoration: BoxDecoration(
-                  color: OColors.white,
-                  borderRadius: BorderRadius.circular(ORadius.lg),
-                  boxShadow: OShadow.floating,
-                ),
-                child: AnimatedSize(duration: ODuration.medium, child: _sheet(context)),
-              ),
-            ],
+    backgroundColor: OColors.scrim,
+    body: SafeArea(
+      child: Column(
+        children: [
+          Expanded(child: GestureDetector(onTap: _phase == _Phase.watching ? null : _close)),
+          Container(
+            width: double.infinity,
+            constraints: const BoxConstraints(maxWidth: 560),
+            margin: const EdgeInsets.all(OSpace.lg),
+            padding: const EdgeInsets.fromLTRB(OSpace.xl, OSpace.xl, OSpace.xl, OSpace.lg),
+            decoration: BoxDecoration(
+              color: OColors.white,
+              borderRadius: BorderRadius.circular(ORadius.lg),
+              boxShadow: OShadow.floating,
+            ),
+            child: AnimatedSize(duration: ODuration.medium, child: _sheet(context)),
           ),
-        ),
-      );
+        ],
+      ),
+    ),
+  );
 
   Widget _sheet(BuildContext context) => switch (_phase) {
-        _Phase.loading => const OLoading(),
-        _Phase.ready || _Phase.watching => _offer(context),
-        _Phase.verifying => _status(context, icon: Icons.hourglass_top_rounded, titleKey: 'store.reward.verifying',
-            bodyKey: 'store.reward.verifying.body', busy: true),
-        _Phase.granted => _status(context, icon: Icons.bolt_rounded, titleKey: 'store.reward.granted',
-            bodyKey: 'store.reward.granted.body', args: {'xp': _bonusXp}),
-        _Phase.pending => _status(context, icon: Icons.schedule_rounded, titleKey: 'store.reward.pending',
-            bodyKey: 'store.reward.pending.body'),
-        _Phase.unavailable => _status(context, icon: Icons.info_outline_rounded, titleKey: 'store.reward.unavailable.title',
-            bodyKey: _unavailableKey),
-      };
+    _Phase.loading => const OLoading(),
+    _Phase.ready || _Phase.watching => _offer(context),
+    _Phase.verifying => _status(
+      context,
+      icon: Icons.hourglass_top_rounded,
+      titleKey: 'store.reward.verifying',
+      bodyKey: 'store.reward.verifying.body',
+      busy: true,
+    ),
+    _Phase.granted => _status(
+      context,
+      icon: Icons.bolt_rounded,
+      titleKey: 'store.reward.granted',
+      bodyKey: 'store.reward.granted.body',
+      args: {'xp': _bonusXp},
+    ),
+    _Phase.pending => _status(
+      context,
+      icon: Icons.schedule_rounded,
+      titleKey: 'store.reward.pending',
+      bodyKey: 'store.reward.pending.body',
+    ),
+    _Phase.unavailable => _status(
+      context,
+      icon: Icons.info_outline_rounded,
+      titleKey: 'store.reward.unavailable.title',
+      bodyKey: _unavailableKey,
+    ),
+  };
 
   Widget _offer(BuildContext context) {
     final busy = _phase == _Phase.watching;
@@ -225,8 +250,11 @@ class _RewardedOfferScreenState extends ConsumerState<RewardedOfferScreen> {
         const SizedBox(height: OSpace.lg),
         Text(context.t('store.reward.title'), style: OText.headlineLg, textAlign: TextAlign.center),
         const SizedBox(height: OSpace.sm),
-        Text(context.t('store.reward.body', {'xp': _bonusXp}),
-            style: OText.bodyMd.copyWith(color: OColors.onSurfaceVariant), textAlign: TextAlign.center),
+        Text(
+          context.t('store.reward.body', {'xp': _bonusXp}),
+          style: OText.bodyMd.copyWith(color: OColors.onSurfaceVariant),
+          textAlign: TextAlign.center,
+        ),
         const SizedBox(height: OSpace.lg),
         Container(
           padding: const EdgeInsets.symmetric(vertical: OSpace.lg, horizontal: OSpace.md),
@@ -242,7 +270,10 @@ class _RewardedOfferScreenState extends ConsumerState<RewardedOfferScreen> {
         const SizedBox(height: OSpace.md),
         Container(
           padding: const EdgeInsets.all(OSpace.md),
-          decoration: BoxDecoration(color: OColors.surfaceContainerHigh, borderRadius: BorderRadius.circular(ORadius.sm)),
+          decoration: BoxDecoration(
+            color: OColors.surfaceContainerHigh,
+            borderRadius: BorderRadius.circular(ORadius.sm),
+          ),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -280,42 +311,46 @@ class _RewardedOfferScreenState extends ConsumerState<RewardedOfferScreen> {
   }
 
   Widget _xpColumn(String label, String value, Color color) => Column(
-        children: [
-          Text(label.toUpperCase(), style: OText.labelSm.copyWith(color: OColors.onSurfaceVariant)),
-          const SizedBox(height: OSpace.xs),
-          Text(value, style: OText.tabular(OText.headlineMd).copyWith(color: color)),
-        ],
-      );
+    children: [
+      Text(label.toUpperCase(), style: OText.labelSm.copyWith(color: OColors.onSurfaceVariant)),
+      const SizedBox(height: OSpace.xs),
+      Text(value, style: OText.tabular(OText.headlineMd).copyWith(color: color)),
+    ],
+  );
 
-  Widget _status(BuildContext context,
-          {required IconData icon,
-          required String titleKey,
-          required String bodyKey,
-          Map<String, Object?>? args,
-          bool busy = false}) =>
-      Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Container(
-            width: 72,
-            height: 72,
-            decoration: const BoxDecoration(color: OColors.mint, shape: BoxShape.circle),
-            child: busy
-                ? const Padding(padding: EdgeInsets.all(22), child: CircularProgressIndicator(strokeWidth: 3))
-                : Icon(icon, size: 36, color: OColors.primary),
-          ),
-          const SizedBox(height: OSpace.lg),
-          Text(context.t(titleKey, args), style: OText.headlineMd, textAlign: TextAlign.center),
-          const SizedBox(height: OSpace.sm),
-          Text(context.t(bodyKey, args),
-              style: OText.bodyMd.copyWith(color: OColors.onSurfaceVariant), textAlign: TextAlign.center),
-          const SizedBox(height: OSpace.xl),
-          OButton(
-            key: const ValueKey('reward_close'),
-            label: context.t(busy ? 'store.reward.not_now' : 'action.done'),
-            style: busy ? OButtonStyle.ghost : OButtonStyle.primary,
-            onPressed: _close,
-          ),
-        ],
-      );
+  Widget _status(
+    BuildContext context, {
+    required IconData icon,
+    required String titleKey,
+    required String bodyKey,
+    Map<String, Object?>? args,
+    bool busy = false,
+  }) => Column(
+    mainAxisSize: MainAxisSize.min,
+    children: [
+      Container(
+        width: 72,
+        height: 72,
+        decoration: const BoxDecoration(color: OColors.mint, shape: BoxShape.circle),
+        child: busy
+            ? const Padding(padding: EdgeInsets.all(22), child: CircularProgressIndicator(strokeWidth: 3))
+            : Icon(icon, size: 36, color: OColors.primary),
+      ),
+      const SizedBox(height: OSpace.lg),
+      Text(context.t(titleKey, args), style: OText.headlineMd, textAlign: TextAlign.center),
+      const SizedBox(height: OSpace.sm),
+      Text(
+        context.t(bodyKey, args),
+        style: OText.bodyMd.copyWith(color: OColors.onSurfaceVariant),
+        textAlign: TextAlign.center,
+      ),
+      const SizedBox(height: OSpace.xl),
+      OButton(
+        key: const ValueKey('reward_close'),
+        label: context.t(busy ? 'store.reward.not_now' : 'action.done'),
+        style: busy ? OButtonStyle.ghost : OButtonStyle.primary,
+        onPressed: _close,
+      ),
+    ],
+  );
 }

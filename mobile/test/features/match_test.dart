@@ -6,6 +6,8 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/testing.dart';
+import 'package:oltivra/features/store/interstitials.dart';
+import 'package:oltivra/features/store/store_services.dart';
 import 'package:oltivra/api/api_client.dart';
 import 'package:oltivra/core/providers.dart';
 import 'package:oltivra/features/match/match_screen.dart';
@@ -23,6 +25,16 @@ class _Tokens implements TokenSource {
 
   @override
   Future<String?> idToken({bool forceRefresh = false}) async => 'test:u1';
+}
+
+class _NoInterstitials implements InterstitialAdGateway {
+  int preloads = 0;
+
+  @override
+  void preload() => preloads++;
+
+  @override
+  Future<bool> showIfReady() async => false;
 }
 
 class _FixedSession extends SessionController {
@@ -111,6 +123,8 @@ class _Harness {
               'quick': {'wrong_penalty': -4},
             }),
         sessionProvider.overrideWith(_FixedSession.new),
+        interstitialAdGatewayProvider.overrideWithValue(_NoInterstitials()),
+        adConsentProvider.overrideWith((ref) async => true),
       ],
       child: MaterialApp(theme: buildTheme(), home: const MatchScreen(matchId: matchId)),
     ));

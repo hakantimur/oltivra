@@ -88,8 +88,10 @@ class _PrivacyAdsScreenState extends ConsumerState<PrivacyAdsScreen> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(context.t('store.privacy.kicker').toUpperCase(),
-                            style: OText.labelSm.copyWith(color: OColors.primary)),
+                        Text(
+                          context.t('store.privacy.kicker').toUpperCase(),
+                          style: OText.labelSm.copyWith(color: OColors.primary),
+                        ),
                         const SizedBox(height: 2),
                         Text(context.t('store.privacy.heading'), style: OText.headlineSm),
                       ],
@@ -103,38 +105,39 @@ class _PrivacyAdsScreenState extends ConsumerState<PrivacyAdsScreen> {
           ),
         ),
         SettingsCaption(context.t('store.privacy.section.choices')),
-        SettingsGroup(children: [
-          if (_checking)
-            const Padding(padding: EdgeInsets.all(OSpace.lg), child: LinearProgressIndicator())
-          else if (usesForm)
-            SettingsTile(
-              key: const ValueKey('privacy_manage'),
-              icon: Icons.tune_rounded,
-              iconBackground: OColors.rose,
-              iconColor: OColors.secondary,
-              title: context.t('store.privacy.manage'),
-              subtitle: context.t('store.privacy.manage.sub'),
-              onTap: _opening ? null : _manage,
-              trailing: _opening
-                  ? const SizedBox.square(dimension: 20, child: CircularProgressIndicator(strokeWidth: 2))
-                  : null,
-            )
-          else
-            SettingsTile(
-              key: const ValueKey('privacy_personalized'),
-              icon: Icons.tune_rounded,
-              iconBackground: OColors.rose,
-              iconColor: OColors.secondary,
-              title: context.t('store.privacy.personalized'),
-              subtitle: context.t('store.privacy.personalized.sub'),
-              trailing: Switch(value: personalized, onChanged: _setPersonalized),
-            ),
-        ]),
+        SettingsGroup(
+          children: [
+            if (_checking)
+              const Padding(padding: EdgeInsets.all(OSpace.lg), child: LinearProgressIndicator())
+            else if (usesForm)
+              SettingsTile(
+                key: const ValueKey('privacy_manage'),
+                icon: Icons.tune_rounded,
+                iconBackground: OColors.rose,
+                iconColor: OColors.secondary,
+                title: context.t('store.privacy.manage'),
+                subtitle: context.t('store.privacy.manage.sub'),
+                onTap: _opening ? null : _manage,
+                trailing: _opening
+                    ? const SizedBox.square(dimension: 20, child: CircularProgressIndicator(strokeWidth: 2))
+                    : null,
+              )
+            else
+              SettingsTile(
+                key: const ValueKey('privacy_personalized'),
+                icon: Icons.tune_rounded,
+                iconBackground: OColors.rose,
+                iconColor: OColors.secondary,
+                title: context.t('store.privacy.personalized'),
+                subtitle: context.t('store.privacy.personalized.sub'),
+                trailing: Switch(value: personalized, onChanged: _setPersonalized),
+              ),
+          ],
+        ),
         if (!_checking && !usesForm)
           Padding(
             padding: const EdgeInsets.fromLTRB(OSpace.xs, OSpace.sm, OSpace.xs, 0),
-            child: Text(context.t('store.privacy.local_note'),
-                style: OText.bodySm.copyWith(color: OColors.inkSubtle)),
+            child: Text(context.t('store.privacy.local_note'), style: OText.bodySm.copyWith(color: OColors.inkSubtle)),
           ),
         SettingsCaption(context.t('store.privacy.section.how')),
         _ExplainCard(
@@ -175,8 +178,13 @@ class _PrivacyAdsScreenState extends ConsumerState<PrivacyAdsScreen> {
 }
 
 class _ExplainCard extends StatelessWidget {
-  const _ExplainCard({required this.icon, required this.color, required this.iconColor, required this.title,
-      required this.body});
+  const _ExplainCard({
+    required this.icon,
+    required this.color,
+    required this.iconColor,
+    required this.title,
+    required this.body,
+  });
 
   final IconData icon;
   final Color color;
@@ -186,24 +194,24 @@ class _ExplainCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => OCard(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
           children: [
-            Row(
-              children: [
-                Container(
-                  width: 36,
-                  height: 36,
-                  decoration: BoxDecoration(color: color, shape: BoxShape.circle),
-                  child: Icon(icon, size: 20, color: iconColor),
-                ),
-                const SizedBox(width: OSpace.md),
-                Expanded(child: Text(title, style: OText.labelLg)),
-              ],
+            Container(
+              width: 36,
+              height: 36,
+              decoration: BoxDecoration(color: color, shape: BoxShape.circle),
+              child: Icon(icon, size: 20, color: iconColor),
             ),
-            const SizedBox(height: OSpace.md),
-            Text(body, style: OText.bodyMd.copyWith(color: OColors.onSurfaceVariant)),
+            const SizedBox(width: OSpace.md),
+            Expanded(child: Text(title, style: OText.labelLg)),
           ],
         ),
-      );
+        const SizedBox(height: OSpace.md),
+        Text(body, style: OText.bodyMd.copyWith(color: OColors.onSurfaceVariant)),
+      ],
+    ),
+  );
 }
