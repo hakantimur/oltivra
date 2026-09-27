@@ -231,11 +231,24 @@ void main() {
       expect(find.text('route:${Routes.signIn}'), findsOneWidget);
     });
 
-    testWidgets('document rows open the summary sheet', (tester) async {
-      await _pump(tester, const TermsScreen());
+    testWidgets('document rows open the full policy served by the backend', (tester) async {
+      final h = await _pump(tester, const TermsScreen(), api: (req) async {
+        if (req.url.path == '/v1/legal/privacy') {
+          return _json({
+            'version': '2026-09',
+            'title': 'Privacy Policy',
+            'sections': [
+              {'heading': '2. Data we collect', 'paragraphs': ['We do not collect your date of birth.']},
+            ],
+          });
+        }
+        return _json({'error': {'code': 'NOT_FOUND'}}, 404);
+      });
       await tester.tap(find.text('Privacy Policy'));
       await tester.pumpAndSettle();
-      expect(find.textContaining('We do not ask for your birthday'), findsOneWidget);
+      expect(find.text('2. Data we collect'), findsOneWidget);
+      expect(find.text('We do not collect your date of birth.'), findsOneWidget);
+      expect(h.requests.single.url.queryParameters['lang'], 'en');
     });
   });
 

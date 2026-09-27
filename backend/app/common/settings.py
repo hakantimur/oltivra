@@ -34,6 +34,13 @@ class Settings(BaseSettings):
     firebase_web_api_key: str = "demo-api-key"
     firebase_auth_domain: str = ""
     auth_emulator_host: str = "127.0.0.1:9099"
+
+    # Legal identity shown in the Terms and Privacy Policy (app/legal). Required outside dev/test.
+    legal_operator_name: str = ""
+    legal_contact_email: str = ""
+    legal_address: str = ""
+    legal_governing_law: str = ""
+    legal_effective_date: str = "2026-09-27"
     storage_bucket: str = "demo-oltivra.appspot.com"
 
     cloud_tasks_project: str = ""
@@ -78,6 +85,8 @@ class Settings(BaseSettings):
                 raise ValueError("memory store is forbidden outside dev/test")
             if self.admob_ssv_mode != "google" or self.purchase_verify_mode != "store":
                 raise ValueError("fake reward/purchase verification is forbidden outside dev/test")
+            if not (self.legal_operator_name and self.legal_contact_email and self.legal_governing_law):
+                raise ValueError("legal operator name, contact email and governing law must be configured")
         if self.env == "prod":
             if self.app_check_mode != "enforce":
                 raise ValueError("App Check must be enforced in prod")

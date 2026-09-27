@@ -4,14 +4,12 @@ const Map<String, Map<String, String>> onboardingStrings = {
     // Shared
     'onboarding.step': 'Step {n} of {total} · Account setup',
     'onboarding.progress_label': 'Account setup progress',
-
     // Launch
     'onboarding.launch.tagline': 'Think fast. Rise higher.',
     'onboarding.launch.footer': 'LIVE TRIVIA DUELS',
     'onboarding.launch.get_started': 'Get started',
     'onboarding.launch.have_account': 'I already have an account',
     'onboarding.launch.sign_out': 'Sign out',
-
     // Age gate
     'onboarding.age.title': 'Age Gate',
     'onboarding.age.badge': 'FAIR PLAY',
@@ -28,7 +26,6 @@ const Map<String, Map<String, String>> onboardingStrings = {
         'Oltivra is made for players aged 13 and over, so we can’t create an account for you right now. '
             'Thanks for your interest — we’d love to see you when you’re older!',
     'onboarding.age.blocked_back': 'Go back',
-
     // Terms
     'onboarding.terms.title': 'Legal Consent',
     'onboarding.terms.heading': 'A quick agreement',
@@ -43,26 +40,6 @@ const Map<String, Map<String, String>> onboardingStrings = {
     'onboarding.terms.read': 'Read {doc}',
     'onboarding.terms.continue': 'Agree and continue',
     'onboarding.terms.footer': 'No marketing emails. Ads never block your games.',
-    'onboarding.terms.version': 'Version {v}',
-    'onboarding.terms.tos_text':
-        'Summary\n\n'
-            '• Oltivra is a live trivia game for players aged 13 and over.\n'
-            '• Play fair: no cheating, automation, collusion or exploiting bugs.\n'
-            '• Choose a respectful player name. Offensive or impersonating names may be changed.\n'
-            '• Be kind to other players. Harassment, hate and spam lead to restrictions.\n'
-            '• Scores, rankings and rewards are decided by our servers and may be corrected if something goes wrong.\n'
-            '• Purchases such as removing ads follow your app store’s terms.\n'
-            '• You can delete your account at any time from Settings.',
-    'onboarding.terms.privacy_text':
-        'Summary\n\n'
-            '• We store your account ID, player name, avatar, language preferences and game progress.\n'
-            '• We do not ask for your birthday, phone number, address or photos.\n'
-            '• We record that you confirmed you are 13+ and accepted these documents, with the date and version.\n'
-            '• Match data is used to run fair games, calculate rankings and keep questions fresh.\n'
-            '• Ads, if shown, follow the choices in Privacy & ads settings.\n'
-            '• You can request deletion of your account and personal data at any time.',
-
-    // Sign in
     'onboarding.signin.title': 'Sign In',
     'onboarding.signin.heading': 'Ready to play?',
     'onboarding.signin.body': 'Sign in to join live battles and keep your progress.',
@@ -87,7 +64,6 @@ const Map<String, Map<String, String>> onboardingStrings = {
     'onboarding.email.error.in_use': 'An account with this email already exists. Try signing in.',
     'onboarding.email.error.weak_password': 'Choose a stronger password.',
     'onboarding.email.error.too_many': 'Too many attempts. Please wait a moment and try again.',
-
     // Choose name
     'onboarding.name.title': 'Player Name',
     'onboarding.name.heading': 'Choose your player name',
@@ -109,7 +85,6 @@ const Map<String, Map<String, String>> onboardingStrings = {
     'onboarding.name.roll_body': 'Tap to roll a fun random name',
     'onboarding.name.roll': 'Roll',
     'onboarding.name.change_rule': 'You can change this once every 30 days',
-
     // Avatar
     'onboarding.avatar.title': 'Avatar Selection',
     'onboarding.avatar.badge': 'EXPRESS YOUR VIBE',
@@ -120,7 +95,6 @@ const Map<String, Map<String, String>> onboardingStrings = {
     'onboarding.avatar.save': 'Save avatar',
     'onboarding.avatar.option': 'Avatar {n}',
     'onboarding.avatar.empty': 'No avatars available right now',
-
     // Guide
     'onboarding.guide.title': 'Game Guide',
     'onboarding.guide.eyebrow': 'HOW IT WORKS',
@@ -136,7 +110,8 @@ const Map<String, Map<String, String>> onboardingStrings = {
     'onboarding.guide.survival_summary': '{players} players · a wrong or missing answer eliminates you.',
     'onboarding.guide.survival_timer': '{seconds} seconds per question. Last player standing wins.',
     'onboarding.guide.survival_note': 'High stakes, pure endurance',
-    'onboarding.guide.footer': 'Everyone in a match gets the same question at the same moment.',
+    'onboarding.guide.footer':
+        'Everyone in a match gets the same question at the same moment. To keep waits short, some seats in public matches may be filled by computer-controlled players.',
     'onboarding.guide.play': 'Let’s play',
     'onboarding.guide.close': 'Close guide',
   },
@@ -144,14 +119,12 @@ const Map<String, Map<String, String>> onboardingStrings = {
     // Shared
     'onboarding.step': 'Adım {n}/{total} · Hesap kurulumu',
     'onboarding.progress_label': 'Hesap kurulumu ilerlemesi',
-
     // Launch
     'onboarding.launch.tagline': 'Hızlı düşün. Yükseğe çık.',
     'onboarding.launch.footer': 'CANLI BİLGİ DÜELLOLARI',
     'onboarding.launch.get_started': 'Hadi başlayalım',
     'onboarding.launch.have_account': 'Zaten bir hesabım var',
     'onboarding.launch.sign_out': 'Çıkış yap',
-
     // Age gate
     'onboarding.age.title': 'Yaş Onayı',
     'onboarding.age.badge': 'ADİL OYUN',
@@ -168,7 +141,6 @@ const Map<String, Map<String, String>> onboardingStrings = {
         'Oltivra 13 yaş ve üzeri oyuncular için tasarlandı, bu yüzden şu an senin için hesap oluşturamıyoruz. '
             'İlgin için teşekkürler — biraz büyüdüğünde seni aramızda görmek isteriz!',
     'onboarding.age.blocked_back': 'Geri dön',
-
     // Terms
     'onboarding.terms.title': 'Yasal Onay',
     'onboarding.terms.heading': 'Kısa bir anlaşma',
@@ -183,26 +155,6 @@ const Map<String, Map<String, String>> onboardingStrings = {
     'onboarding.terms.read': '{doc} metnini oku',
     'onboarding.terms.continue': 'Kabul et ve devam et',
     'onboarding.terms.footer': 'Pazarlama e-postası yok. Reklamlar oyununu asla engellemez.',
-    'onboarding.terms.version': 'Sürüm {v}',
-    'onboarding.terms.tos_text':
-        'Özet\n\n'
-            '• Oltivra, 13 yaş ve üzeri oyuncular için canlı bir bilgi yarışması oyunudur.\n'
-            '• Adil oyna: hile, otomasyon, iş birliği ya da hata istismarı yasaktır.\n'
-            '• Saygılı bir oyuncu adı seç. Saldırgan veya başkasını taklit eden adlar değiştirilebilir.\n'
-            '• Diğer oyunculara nazik ol. Taciz, nefret söylemi ve spam kısıtlamaya yol açar.\n'
-            '• Puanlar, sıralamalar ve ödüller sunucularımız tarafından belirlenir; bir hata olursa düzeltilebilir.\n'
-            '• Reklamları kaldırma gibi satın almalar uygulama mağazanın koşullarına tabidir.\n'
-            '• Hesabını istediğin zaman Ayarlar’dan silebilirsin.',
-    'onboarding.terms.privacy_text':
-        'Özet\n\n'
-            '• Hesap kimliğini, oyuncu adını, avatarını, dil tercihlerini ve oyun ilerlemeni saklarız.\n'
-            '• Doğum tarihi, telefon numarası, adres ya da fotoğraf istemeyiz.\n'
-            '• 13 yaş onayını ve bu belgeleri kabul ettiğini tarih ve sürümüyle kaydederiz.\n'
-            '• Maç verileri adil oyunlar yürütmek, sıralamaları hesaplamak ve soruları taze tutmak için kullanılır.\n'
-            '• Reklam gösterilirse Gizlilik ve reklam ayarlarındaki seçimlerine uyulur.\n'
-            '• Hesabının ve kişisel verilerinin silinmesini istediğin zaman talep edebilirsin.',
-
-    // Sign in
     'onboarding.signin.title': 'Giriş Yap',
     'onboarding.signin.heading': 'Oynamaya hazır mısın?',
     'onboarding.signin.body': 'Canlı düellolara katılmak ve ilerlemeni korumak için giriş yap.',
@@ -228,7 +180,6 @@ const Map<String, Map<String, String>> onboardingStrings = {
     'onboarding.email.error.in_use': 'Bu e-postayla zaten bir hesap var. Giriş yapmayı dene.',
     'onboarding.email.error.weak_password': 'Daha güçlü bir şifre seç.',
     'onboarding.email.error.too_many': 'Çok fazla deneme yapıldı. Biraz bekleyip tekrar dene.',
-
     // Choose name
     'onboarding.name.title': 'Oyuncu Adı',
     'onboarding.name.heading': 'Oyuncu adını seç',
@@ -250,7 +201,6 @@ const Map<String, Map<String, String>> onboardingStrings = {
     'onboarding.name.roll_body': 'Rastgele eğlenceli bir ad için dokun',
     'onboarding.name.roll': 'Zar at',
     'onboarding.name.change_rule': 'Bunu 30 günde bir değiştirebilirsin',
-
     // Avatar
     'onboarding.avatar.title': 'Avatar Seçimi',
     'onboarding.avatar.badge': 'TARZINI GÖSTER',
@@ -261,7 +211,6 @@ const Map<String, Map<String, String>> onboardingStrings = {
     'onboarding.avatar.save': 'Avatarı kaydet',
     'onboarding.avatar.option': 'Avatar {n}',
     'onboarding.avatar.empty': 'Şu anda kullanılabilir avatar yok',
-
     // Guide
     'onboarding.guide.title': 'Oyun Rehberi',
     'onboarding.guide.eyebrow': 'NASIL OYNANIR',
@@ -277,7 +226,8 @@ const Map<String, Map<String, String>> onboardingStrings = {
     'onboarding.guide.survival_summary': '{players} oyuncu · yanlış ya da boş cevap seni eler.',
     'onboarding.guide.survival_timer': 'Soru başına {seconds} saniye. Ayakta kalan son oyuncu kazanır.',
     'onboarding.guide.survival_note': 'Yüksek risk, saf dayanıklılık',
-    'onboarding.guide.footer': 'Bir maçtaki herkes aynı soruyu aynı anda alır.',
+    'onboarding.guide.footer':
+        'Bir maçtaki herkes aynı soruyu aynı anda alır. Beklemeyi kısa tutmak için herkese açık maçlarda bazı koltuklar bilgisayar kontrollü oyuncularla doldurulabilir.',
     'onboarding.guide.play': 'Hadi oynayalım',
     'onboarding.guide.close': 'Rehberi kapat',
   },
