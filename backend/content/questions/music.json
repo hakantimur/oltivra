@@ -21598,5 +21598,3605 @@
   ],
   "correct": "secret_garden",
   "source": "https://en.wikipedia.org/wiki/Secret_Garden_(duo)"
+ },
+ {
+  "key": "music_q0601",
+  "category_id": "music",
+  "subcategory_id": "artists",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which pop star released \"Like a Virgin\" and \"Material Girl\" in the 1980s?",
+   "tr": "1980'lerde \"Like a Virgin\" ve \"Material Girl\"ü hangi pop yıldızı çıkardı?"
+  },
+  "options": [
+   {
+    "concept_id": "madonna",
+    "en": "Madonna",
+    "tr": "Madonna"
+   },
+   {
+    "concept_id": "cyndi_lauper",
+    "en": "Cyndi Lauper",
+    "tr": "Cyndi Lauper"
+   },
+   {
+    "concept_id": "whitney_houston",
+    "en": "Whitney Houston",
+    "tr": "Whitney Houston"
+   },
+   {
+    "concept_id": "janet_jackson",
+    "en": "Janet Jackson",
+    "tr": "Janet Jackson"
+   }
+  ],
+  "correct": "madonna",
+  "source": "https://en.wikipedia.org/wiki/Material_Girl"
+ },
+ {
+  "key": "music_q0602",
+  "category_id": "music",
+  "subcategory_id": "artists",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which singer, famous for \"I Got You (I Feel Good)\", was called \"the Godfather of Soul\"?",
+   "tr": "\"I Got You (I Feel Good)\" ile ünlü hangi şarkıcıya \"Soul'un Babası\" denirdi?"
+  },
+  "options": [
+   {
+    "concept_id": "james_brown",
+    "en": "James Brown",
+    "tr": "James Brown"
+   },
+   {
+    "concept_id": "ray_charles",
+    "en": "Ray Charles",
+    "tr": "Ray Charles"
+   },
+   {
+    "concept_id": "otis_redding",
+    "en": "Otis Redding",
+    "tr": "Otis Redding"
+   },
+   {
+    "concept_id": "sam_cooke",
+    "en": "Sam Cooke",
+    "tr": "Sam Cooke"
+   }
+  ],
+  "correct": "james_brown",
+  "source": "https://en.wikipedia.org/wiki/James_Brown"
+ },
+ {
+  "key": "music_q0603",
+  "category_id": "music",
+  "subcategory_id": "artists",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Kylie Minogue, the \"Princess of Pop\", comes from which country?",
+   "tr": "\"Pop Prensesi\" Kylie Minogue hangi ülkedendir?"
+  },
+  "options": [
+   {
+    "concept_id": "australia",
+    "en": "Australia",
+    "tr": "Avustralya"
+   },
+   {
+    "concept_id": "england",
+    "en": "England",
+    "tr": "İngiltere"
+   },
+   {
+    "concept_id": "canada",
+    "en": "Canada",
+    "tr": "Kanada"
+   },
+   {
+    "concept_id": "ireland",
+    "en": "Ireland",
+    "tr": "İrlanda"
+   }
+  ],
+  "correct": "australia",
+  "source": "https://en.wikipedia.org/wiki/Kylie_Minogue"
+ },
+ {
+  "key": "music_q0604",
+  "category_id": "music",
+  "subcategory_id": "artists",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which singer wore a dress made of raw meat at the 2010 MTV Video Music Awards?",
+   "tr": "2010 MTV Video Müzik Ödülleri'nde çiğ etten yapılmış bir elbise giyen şarkıcı kimdi?"
+  },
+  "options": [
+   {
+    "concept_id": "lady_gaga",
+    "en": "Lady Gaga",
+    "tr": "Lady Gaga"
+   },
+   {
+    "concept_id": "katy_perry",
+    "en": "Katy Perry",
+    "tr": "Katy Perry"
+   },
+   {
+    "concept_id": "nicki_minaj",
+    "en": "Nicki Minaj",
+    "tr": "Nicki Minaj"
+   },
+   {
+    "concept_id": "miley_cyrus",
+    "en": "Miley Cyrus",
+    "tr": "Miley Cyrus"
+   }
+  ],
+  "correct": "lady_gaga",
+  "source": "https://en.wikipedia.org/wiki/Meat_dress_of_Lady_Gaga"
+ },
+ {
+  "key": "music_q0605",
+  "category_id": "music",
+  "subcategory_id": "artists",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "About how old was Taylor Swift when her first album came out in 2006?",
+   "tr": "Taylor Swift'in ilk albümü 2006'da çıktığında kaç yaşlarındaydı?"
+  },
+  "options": [
+   {
+    "concept_id": "n_16",
+    "en": "16",
+    "tr": "16"
+   },
+   {
+    "concept_id": "n_12",
+    "en": "12",
+    "tr": "12"
+   },
+   {
+    "concept_id": "n_21",
+    "en": "21",
+    "tr": "21"
+   },
+   {
+    "concept_id": "n_25",
+    "en": "25",
+    "tr": "25"
+   }
+  ],
+  "correct": "n_16",
+  "source": "https://en.wikipedia.org/wiki/Taylor_Swift_(album)"
+ },
+ {
+  "key": "music_q0606",
+  "category_id": "music",
+  "subcategory_id": "artists",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these stars is NOT a rapper?",
+   "tr": "Bu yıldızlardan hangisi bir rapçi DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "norah_jones",
+    "en": "Norah Jones",
+    "tr": "Norah Jones"
+   },
+   {
+    "concept_id": "drake",
+    "en": "Drake",
+    "tr": "Drake"
+   },
+   {
+    "concept_id": "kendrick_lamar",
+    "en": "Kendrick Lamar",
+    "tr": "Kendrick Lamar"
+   },
+   {
+    "concept_id": "nicki_minaj",
+    "en": "Nicki Minaj",
+    "tr": "Nicki Minaj"
+   }
+  ],
+  "correct": "norah_jones",
+  "source": "https://en.wikipedia.org/wiki/Norah_Jones"
+ },
+ {
+  "key": "music_q0607",
+  "category_id": "music",
+  "subcategory_id": "artists",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who is older: Britney Spears or Christina Aguilera?",
+   "tr": "Kim daha yaşlı: Britney Spears mı, Christina Aguilera mı?"
+  },
+  "options": [
+   {
+    "concept_id": "the_genie_in_a_bottle_singer",
+    "en": "The \"Genie in a Bottle\" singer",
+    "tr": "\"Genie in a Bottle\"ın şarkıcısı"
+   },
+   {
+    "concept_id": "the_toxic_singer",
+    "en": "The \"Toxic\" singer",
+    "tr": "\"Toxic\"in şarkıcısı"
+   },
+   {
+    "concept_id": "same_birthday",
+    "en": "Same birthday",
+    "tr": "Aynı gün doğdular"
+   },
+   {
+    "concept_id": "they_are_twins",
+    "en": "They are twins",
+    "tr": "İkizler"
+   }
+  ],
+  "correct": "the_genie_in_a_bottle_singer",
+  "source": "https://en.wikipedia.org/wiki/Christina_Aguilera"
+ },
+ {
+  "key": "music_q0608",
+  "category_id": "music",
+  "subcategory_id": "bands",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "George Michael rose to fame in which 1980s duo, famous for \"Wake Me Up Before You Go-Go\"?",
+   "tr": "George Michael, \"Wake Me Up Before You Go-Go\" ile ünlü hangi 1980'ler ikilisiyle ünlendi?"
+  },
+  "options": [
+   {
+    "concept_id": "wham",
+    "en": "Wham!",
+    "tr": "Wham!"
+   },
+   {
+    "concept_id": "tears_for_fears",
+    "en": "Tears for Fears",
+    "tr": "Tears for Fears"
+   },
+   {
+    "concept_id": "pet_shop_boys",
+    "en": "Pet Shop Boys",
+    "tr": "Pet Shop Boys"
+   },
+   {
+    "concept_id": "eurythmics",
+    "en": "Eurythmics",
+    "tr": "Eurythmics"
+   }
+  ],
+  "correct": "wham",
+  "source": "https://en.wikipedia.org/wiki/Wham!"
+ },
+ {
+  "key": "music_q0609",
+  "category_id": "music",
+  "subcategory_id": "bands",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "\"Wind of Change\", the whistled anthem of the Cold War's end, is by which German band?",
+   "tr": "Soğuk Savaş'ın sonunun ıslıklı marşı \"Wind of Change\" hangi Alman grubundur?"
+  },
+  "options": [
+   {
+    "concept_id": "scorpions",
+    "en": "Scorpions",
+    "tr": "Scorpions"
+   },
+   {
+    "concept_id": "rammstein",
+    "en": "Rammstein",
+    "tr": "Rammstein"
+   },
+   {
+    "concept_id": "kraftwerk",
+    "en": "Kraftwerk",
+    "tr": "Kraftwerk"
+   },
+   {
+    "concept_id": "accept",
+    "en": "Accept",
+    "tr": "Accept"
+   }
+  ],
+  "correct": "scorpions",
+  "source": "https://en.wikipedia.org/wiki/Wind_of_Change_(Scorpions_song)"
+ },
+ {
+  "key": "music_q0610",
+  "category_id": "music",
+  "subcategory_id": "bands",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The members of which New York punk band all took the same fake surname?",
+   "tr": "Hangi New York punk grubunun üyelerinin hepsi aynı takma soyadını kullandı?"
+  },
+  "options": [
+   {
+    "concept_id": "ramones",
+    "en": "Ramones",
+    "tr": "Ramones"
+   },
+   {
+    "concept_id": "blondie",
+    "en": "Blondie",
+    "tr": "Blondie"
+   },
+   {
+    "concept_id": "talking_heads",
+    "en": "Talking Heads",
+    "tr": "Talking Heads"
+   },
+   {
+    "concept_id": "the_strokes",
+    "en": "The Strokes",
+    "tr": "The Strokes"
+   }
+  ],
+  "correct": "ramones",
+  "source": "https://en.wikipedia.org/wiki/Ramones"
+ },
+ {
+  "key": "music_q0611",
+  "category_id": "music",
+  "subcategory_id": "bands",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "\"Hey Jude\" and \"Let It Be\" are songs by which band?",
+   "tr": "\"Hey Jude\" ve \"Let It Be\" hangi grubun şarkılarıdır?"
+  },
+  "options": [
+   {
+    "concept_id": "the_beatles",
+    "en": "The Beatles",
+    "tr": "The Beatles"
+   },
+   {
+    "concept_id": "the_rolling_stones",
+    "en": "The Rolling Stones",
+    "tr": "The Rolling Stones"
+   },
+   {
+    "concept_id": "the_kinks",
+    "en": "The Kinks",
+    "tr": "The Kinks"
+   },
+   {
+    "concept_id": "the_who",
+    "en": "The Who",
+    "tr": "The Who"
+   }
+  ],
+  "correct": "the_beatles",
+  "source": "https://en.wikipedia.org/wiki/Hey_Jude"
+ },
+ {
+  "key": "music_q0612",
+  "category_id": "music",
+  "subcategory_id": "bands",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is a band's main singer, often the centre of attention, usually called?",
+   "tr": "Bir grubun ilgi odağı olan ana şarkıcısına genellikle ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "the_frontman_or_frontwoman",
+    "en": "The frontman or frontwoman",
+    "tr": "Solist"
+   },
+   {
+    "concept_id": "the_roadie",
+    "en": "The roadie",
+    "tr": "Roadie"
+   },
+   {
+    "concept_id": "the_session_player",
+    "en": "The session player",
+    "tr": "Stüdyo müzisyeni"
+   },
+   {
+    "concept_id": "the_producer",
+    "en": "The producer",
+    "tr": "Yapımcı"
+   }
+  ],
+  "correct": "the_frontman_or_frontwoman",
+  "source": "https://en.wikipedia.org/wiki/Lead_vocalist"
+ },
+ {
+  "key": "music_q0613",
+  "category_id": "music",
+  "subcategory_id": "bands",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these bands is NOT Swedish?",
+   "tr": "Bu gruplardan hangisi İsveçli DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "a_ha",
+    "en": "a-ha",
+    "tr": "a-ha"
+   },
+   {
+    "concept_id": "abba",
+    "en": "ABBA",
+    "tr": "ABBA"
+   },
+   {
+    "concept_id": "roxette",
+    "en": "Roxette",
+    "tr": "Roxette"
+   },
+   {
+    "concept_id": "europe",
+    "en": "Europe",
+    "tr": "Europe"
+   }
+  ],
+  "correct": "a_ha",
+  "source": "https://en.wikipedia.org/wiki/Music_of_Sweden"
+ },
+ {
+  "key": "music_q0614",
+  "category_id": "music",
+  "subcategory_id": "bands",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which band came first: Queen or Coldplay?",
+   "tr": "Hangi grup önce kuruldu: Queen mi, Coldplay mi?"
+  },
+  "options": [
+   {
+    "concept_id": "the_freddie_mercury_band",
+    "en": "The Freddie Mercury band",
+    "tr": "Freddie Mercury'nin grubu"
+   },
+   {
+    "concept_id": "the_chris_martin_band",
+    "en": "The Chris Martin band",
+    "tr": "Chris Martin'in grubu"
+   },
+   {
+    "concept_id": "same_year",
+    "en": "Same year",
+    "tr": "Aynı yıl"
+   },
+   {
+    "concept_id": "neither_is_a_band",
+    "en": "Neither is a band",
+    "tr": "İkisi de grup değil"
+   }
+  ],
+  "correct": "the_freddie_mercury_band",
+  "source": "https://en.wikipedia.org/wiki/Queen_(band)"
+ },
+ {
+  "key": "music_q0615",
+  "category_id": "music",
+  "subcategory_id": "instruments",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Jimi Hendrix is famous as a master of which instrument?",
+   "tr": "Jimi Hendrix hangi çalgının ustası olarak ünlüdür?"
+  },
+  "options": [
+   {
+    "concept_id": "electric_guitar",
+    "en": "Electric guitar",
+    "tr": "Elektro gitar"
+   },
+   {
+    "concept_id": "drums",
+    "en": "Drums",
+    "tr": "Davul"
+   },
+   {
+    "concept_id": "piano",
+    "en": "Piano",
+    "tr": "Piyano"
+   },
+   {
+    "concept_id": "saxophone",
+    "en": "Saxophone",
+    "tr": "Saksafon"
+   }
+  ],
+  "correct": "electric_guitar",
+  "source": "https://en.wikipedia.org/wiki/Jimi_Hendrix"
+ },
+ {
+  "key": "music_q0616",
+  "category_id": "music",
+  "subcategory_id": "instruments",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Pan flutes made of bamboo tubes are a signature sound of which mountain region?",
+   "tr": "Bambu borulardan yapılan pan flütleri hangi dağ bölgesinin simge sesidir?"
+  },
+  "options": [
+   {
+    "concept_id": "the_andes",
+    "en": "The Andes",
+    "tr": "And Dağları"
+   },
+   {
+    "concept_id": "the_alps",
+    "en": "The Alps",
+    "tr": "Alpler"
+   },
+   {
+    "concept_id": "the_urals",
+    "en": "The Urals",
+    "tr": "Ural Dağları"
+   },
+   {
+    "concept_id": "the_atlas",
+    "en": "The Atlas",
+    "tr": "Atlas Dağları"
+   }
+  ],
+  "correct": "the_andes",
+  "source": "https://en.wikipedia.org/wiki/Pan_flute"
+ },
+ {
+  "key": "music_q0617",
+  "category_id": "music",
+  "subcategory_id": "instruments",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What are the thin metal strips across a guitar's neck called?",
+   "tr": "Gitar sapı boyunca uzanan ince metal şeritlere ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "frets",
+    "en": "Frets",
+    "tr": "Perde"
+   },
+   {
+    "concept_id": "pegs",
+    "en": "Pegs",
+    "tr": "Burgu"
+   },
+   {
+    "concept_id": "bridges",
+    "en": "Bridges",
+    "tr": "Köprü"
+   },
+   {
+    "concept_id": "reeds",
+    "en": "Reeds",
+    "tr": "Kamış"
+   }
+  ],
+  "correct": "frets",
+  "source": "https://en.wikipedia.org/wiki/Fret"
+ },
+ {
+  "key": "music_q0618",
+  "category_id": "music",
+  "subcategory_id": "instruments",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Roughly how many musicians play in a full symphony orchestra?",
+   "tr": "Tam kadro bir senfoni orkestrasında yaklaşık kaç müzisyen çalar?"
+  },
+  "options": [
+   {
+    "concept_id": "n_80_to_100",
+    "en": "80 to 100",
+    "tr": "80–100"
+   },
+   {
+    "concept_id": "n_10_to_15",
+    "en": "10 to 15",
+    "tr": "10–15"
+   },
+   {
+    "concept_id": "n_25_to_30",
+    "en": "25 to 30",
+    "tr": "25–30"
+   },
+   {
+    "concept_id": "n_300_to_400",
+    "en": "300 to 400",
+    "tr": "300–400"
+   }
+  ],
+  "correct": "n_80_to_100",
+  "source": "https://en.wikipedia.org/wiki/Symphony_orchestra"
+ },
+ {
+  "key": "music_q0619",
+  "category_id": "music",
+  "subcategory_id": "instruments",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What makes a maraca rattle when you shake it?",
+   "tr": "Marakası salladığınızda şıkırdamasını sağlayan nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "seeds_or_beads_inside",
+    "en": "Seeds or beads inside",
+    "tr": "İçindeki tohum ya da boncuklar"
+   },
+   {
+    "concept_id": "a_spring",
+    "en": "A spring",
+    "tr": "Bir yay"
+   },
+   {
+    "concept_id": "a_tiny_bell",
+    "en": "A tiny bell",
+    "tr": "Minik bir zil"
+   },
+   {
+    "concept_id": "water",
+    "en": "Water",
+    "tr": "Su"
+   }
+  ],
+  "correct": "seeds_or_beads_inside",
+  "source": "https://en.wikipedia.org/wiki/Maraca"
+ },
+ {
+  "key": "music_q0620",
+  "category_id": "music",
+  "subcategory_id": "instruments",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these instruments has NO strings?",
+   "tr": "Bu çalgılardan hangisinin teli YOKTUR?"
+  },
+  "options": [
+   {
+    "concept_id": "trumpet",
+    "en": "Trumpet",
+    "tr": "Trompet"
+   },
+   {
+    "concept_id": "harp",
+    "en": "Harp",
+    "tr": "Arp"
+   },
+   {
+    "concept_id": "guitar",
+    "en": "Guitar",
+    "tr": "Gitar"
+   },
+   {
+    "concept_id": "violin",
+    "en": "Violin",
+    "tr": "Keman"
+   }
+  ],
+  "correct": "trumpet",
+  "source": "https://en.wikipedia.org/wiki/Trumpet"
+ },
+ {
+  "key": "music_q0621",
+  "category_id": "music",
+  "subcategory_id": "instruments",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which normally has more strings: a guitar or a violin?",
+   "tr": "Hangisinde normalde daha çok tel vardır: gitarda mı, kemanda mı?"
+  },
+  "options": [
+   {
+    "concept_id": "the_guitar",
+    "en": "The guitar",
+    "tr": "Gitarda"
+   },
+   {
+    "concept_id": "the_violin",
+    "en": "The violin",
+    "tr": "Kemanda"
+   },
+   {
+    "concept_id": "same_number",
+    "en": "Same number",
+    "tr": "Aynı sayıda"
+   },
+   {
+    "concept_id": "neither_has_strings",
+    "en": "Neither has strings",
+    "tr": "İkisinde de tel yok"
+   }
+  ],
+  "correct": "the_guitar",
+  "source": "https://en.wikipedia.org/wiki/Guitar"
+ },
+ {
+  "key": "music_q0622",
+  "category_id": "music",
+  "subcategory_id": "albums",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "\"As It Was\" comes from which Harry Styles album?",
+   "tr": "\"As It Was\" Harry Styles'ın hangi albümünden çıktı?"
+  },
+  "options": [
+   {
+    "concept_id": "harry_s_house",
+    "en": "Harry's House",
+    "tr": "Harry's House"
+   },
+   {
+    "concept_id": "fine_line",
+    "en": "Fine Line",
+    "tr": "Fine Line"
+   },
+   {
+    "concept_id": "midnights",
+    "en": "Midnights",
+    "tr": "Midnights"
+   },
+   {
+    "concept_id": "future_nostalgia",
+    "en": "Future Nostalgia",
+    "tr": "Future Nostalgia"
+   }
+  ],
+  "correct": "harry_s_house",
+  "source": "https://en.wikipedia.org/wiki/Harry's_House"
+ },
+ {
+  "key": "music_q0623",
+  "category_id": "music",
+  "subcategory_id": "albums",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Before vinyl, old 78 rpm records were mostly made of what?",
+   "tr": "Vinilden önce eski 78 devirli plaklar çoğunlukla neden yapılırdı?"
+  },
+  "options": [
+   {
+    "concept_id": "shellac",
+    "en": "Shellac",
+    "tr": "Gomalak (şellak)"
+   },
+   {
+    "concept_id": "glass",
+    "en": "Glass",
+    "tr": "Cam"
+   },
+   {
+    "concept_id": "aluminium",
+    "en": "Aluminium",
+    "tr": "Alüminyum"
+   },
+   {
+    "concept_id": "rubber",
+    "en": "Rubber",
+    "tr": "Kauçuk"
+   }
+  ],
+  "correct": "shellac",
+  "source": "https://en.wikipedia.org/wiki/Shellac"
+ },
+ {
+  "key": "music_q0624",
+  "category_id": "music",
+  "subcategory_id": "albums",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "An album that gathers songs by many different artists is called what?",
+   "tr": "Birçok farklı sanatçının şarkılarını bir araya getiren albüme ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "a_compilation",
+    "en": "A compilation",
+    "tr": "Derleme (toplama)"
+   },
+   {
+    "concept_id": "a_solo_album",
+    "en": "A solo album",
+    "tr": "Solo albüm"
+   },
+   {
+    "concept_id": "a_demo",
+    "en": "A demo",
+    "tr": "Demo"
+   },
+   {
+    "concept_id": "a_remaster",
+    "en": "A remaster",
+    "tr": "Remaster"
+   }
+  ],
+  "correct": "a_compilation",
+  "source": "https://en.wikipedia.org/wiki/Compilation_album"
+ },
+ {
+  "key": "music_q0625",
+  "category_id": "music",
+  "subcategory_id": "albums",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In which decade did the compact disc (CD) go on sale?",
+   "tr": "CD (kompakt disk) hangi on yılda satışa çıktı?"
+  },
+  "options": [
+   {
+    "concept_id": "n_1980s",
+    "en": "1980s",
+    "tr": "1980'ler"
+   },
+   {
+    "concept_id": "n_1960s",
+    "en": "1960s",
+    "tr": "1960'lar"
+   },
+   {
+    "concept_id": "n_1970s",
+    "en": "1970s",
+    "tr": "1970'ler"
+   },
+   {
+    "concept_id": "n_1990s",
+    "en": "1990s",
+    "tr": "1990'lar"
+   }
+  ],
+  "correct": "n_1980s",
+  "source": "https://en.wikipedia.org/wiki/Compact_disc"
+ },
+ {
+  "key": "music_q0626",
+  "category_id": "music",
+  "subcategory_id": "albums",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Weeks before an album comes out, the artist releases one song to build hype. What is it called?",
+   "tr": "Albüm çıkmadan haftalar önce sanatçı heyecan yaratmak için bir şarkı yayınlar. Buna ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "the_lead_single",
+    "en": "The lead single",
+    "tr": "İlk single (öncü şarkı)"
+   },
+   {
+    "concept_id": "the_encore",
+    "en": "The encore",
+    "tr": "Bis"
+   },
+   {
+    "concept_id": "the_outro",
+    "en": "The outro",
+    "tr": "Kapanış"
+   },
+   {
+    "concept_id": "the_bonus_track",
+    "en": "The bonus track",
+    "tr": "Bonus şarkı"
+   }
+  ],
+  "correct": "the_lead_single",
+  "source": "https://en.wikipedia.org/wiki/Lead_single"
+ },
+ {
+  "key": "music_q0627",
+  "category_id": "music",
+  "subcategory_id": "albums",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Map of the Soul: 7 (2020) is an album by which South Korean group?",
+   "tr": "Map of the Soul: 7 (2020) hangi Güney Koreli grubun albümüdür?"
+  },
+  "options": [
+   {
+    "concept_id": "bts",
+    "en": "BTS",
+    "tr": "BTS"
+   },
+   {
+    "concept_id": "blackpink",
+    "en": "Blackpink",
+    "tr": "Blackpink"
+   },
+   {
+    "concept_id": "exo",
+    "en": "EXO",
+    "tr": "EXO"
+   },
+   {
+    "concept_id": "stray_kids",
+    "en": "Stray Kids",
+    "tr": "Stray Kids"
+   }
+  ],
+  "correct": "bts",
+  "source": "https://en.wikipedia.org/wiki/Map_of_the_Soul:_7"
+ },
+ {
+  "key": "music_q0628",
+  "category_id": "music",
+  "subcategory_id": "music_history",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Motown record label was founded in which US city?",
+   "tr": "Motown plak şirketi hangi ABD şehrinde kuruldu?"
+  },
+  "options": [
+   {
+    "concept_id": "detroit",
+    "en": "Detroit",
+    "tr": "Detroit"
+   },
+   {
+    "concept_id": "chicago",
+    "en": "Chicago",
+    "tr": "Chicago"
+   },
+   {
+    "concept_id": "memphis",
+    "en": "Memphis",
+    "tr": "Memphis"
+   },
+   {
+    "concept_id": "new_york",
+    "en": "New York",
+    "tr": "New York"
+   }
+  ],
+  "correct": "detroit",
+  "source": "https://en.wikipedia.org/wiki/Motown"
+ },
+ {
+  "key": "music_q0629",
+  "category_id": "music",
+  "subcategory_id": "music_history",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Mariachi bands, with trumpets, violins and big hats, come from which country?",
+   "tr": "Trompetleri, kemanları ve büyük şapkalarıyla mariachi grupları hangi ülkedendir?"
+  },
+  "options": [
+   {
+    "concept_id": "mexico",
+    "en": "Mexico",
+    "tr": "Meksika"
+   },
+   {
+    "concept_id": "spain",
+    "en": "Spain",
+    "tr": "İspanya"
+   },
+   {
+    "concept_id": "peru",
+    "en": "Peru",
+    "tr": "Peru"
+   },
+   {
+    "concept_id": "cuba",
+    "en": "Cuba",
+    "tr": "Küba"
+   }
+  ],
+  "correct": "mexico",
+  "source": "https://en.wikipedia.org/wiki/Mariachi"
+ },
+ {
+  "key": "music_q0630",
+  "category_id": "music",
+  "subcategory_id": "music_history",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many beats are in one bar of 4/4 time?",
+   "tr": "4/4'lük ölçünün bir ölçüsünde kaç vuruş vardır?"
+  },
+  "options": [
+   {
+    "concept_id": "n_4",
+    "en": "4",
+    "tr": "4"
+   },
+   {
+    "concept_id": "n_2",
+    "en": "2",
+    "tr": "2"
+   },
+   {
+    "concept_id": "n_3",
+    "en": "3",
+    "tr": "3"
+   },
+   {
+    "concept_id": "n_8",
+    "en": "8",
+    "tr": "8"
+   }
+  ],
+  "correct": "n_4",
+  "source": "https://en.wikipedia.org/wiki/Time_signature"
+ },
+ {
+  "key": "music_q0631",
+  "category_id": "music",
+  "subcategory_id": "music_history",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "\"Twinkle, Twinkle, Little Star\" shares its tune with which other children's song?",
+   "tr": "\"Twinkle, Twinkle, Little Star\" hangi çocuk şarkısıyla aynı melodiyi paylaşır?"
+  },
+  "options": [
+   {
+    "concept_id": "the_alphabet_song",
+    "en": "The Alphabet Song",
+    "tr": "Alfabe Şarkısı"
+   },
+   {
+    "concept_id": "happy_birthday",
+    "en": "Happy Birthday",
+    "tr": "İyi ki Doğdun"
+   },
+   {
+    "concept_id": "jingle_bells",
+    "en": "Jingle Bells",
+    "tr": "Jingle Bells"
+   },
+   {
+    "concept_id": "old_macdonald",
+    "en": "Old MacDonald",
+    "tr": "Old MacDonald"
+   }
+  ],
+  "correct": "the_alphabet_song",
+  "source": "https://en.wikipedia.org/wiki/Twinkle,_Twinkle,_Little_Star"
+ },
+ {
+  "key": "music_q0632",
+  "category_id": "music",
+  "subcategory_id": "music_history",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the word for the speed at which a piece of music is played?",
+   "tr": "Bir müzik parçasının çalınma hızına ne ad verilir?"
+  },
+  "options": [
+   {
+    "concept_id": "tempo",
+    "en": "Tempo",
+    "tr": "Tempo"
+   },
+   {
+    "concept_id": "pitch",
+    "en": "Pitch",
+    "tr": "Perde"
+   },
+   {
+    "concept_id": "timbre",
+    "en": "Timbre",
+    "tr": "Tını"
+   },
+   {
+    "concept_id": "harmony",
+    "en": "Harmony",
+    "tr": "Armoni"
+   }
+  ],
+  "correct": "tempo",
+  "source": "https://en.wikipedia.org/wiki/Tempo"
+ },
+ {
+  "key": "music_q0633",
+  "category_id": "music",
+  "subcategory_id": "music_history",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "A guitarist repeats a short, catchy pattern all through a rock song. What is that pattern called?",
+   "tr": "Bir gitarist rock şarkısı boyunca kısa, akılda kalıcı bir kalıbı tekrarlar. Bu kalıba ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "a_riff",
+    "en": "A riff",
+    "tr": "Riff"
+   },
+   {
+    "concept_id": "a_cadenza",
+    "en": "A cadenza",
+    "tr": "Kadans"
+   },
+   {
+    "concept_id": "a_coda",
+    "en": "A coda",
+    "tr": "Koda"
+   },
+   {
+    "concept_id": "an_overture",
+    "en": "An overture",
+    "tr": "Uvertür"
+   }
+  ],
+  "correct": "a_riff",
+  "source": "https://en.wikipedia.org/wiki/Riff"
+ },
+ {
+  "key": "music_q0634",
+  "category_id": "music",
+  "subcategory_id": "music_history",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these is NOT a type of singing voice?",
+   "tr": "Bunlardan hangisi bir ses türü (ses aralığı) DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "allegro",
+    "en": "Allegro",
+    "tr": "Allegro"
+   },
+   {
+    "concept_id": "soprano",
+    "en": "Soprano",
+    "tr": "Soprano"
+   },
+   {
+    "concept_id": "alto",
+    "en": "Alto",
+    "tr": "Alto"
+   },
+   {
+    "concept_id": "tenor",
+    "en": "Tenor",
+    "tr": "Tenor"
+   }
+  ],
+  "correct": "allegro",
+  "source": "https://en.wikipedia.org/wiki/Voice_type"
+ },
+ {
+  "key": "music_q0635",
+  "category_id": "music",
+  "subcategory_id": "music_awards",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which UK talent show, judged by Simon Cowell, brought One Direction together?",
+   "tr": "Simon Cowell'ın jüri olduğu hangi İngiliz yetenek yarışması One Direction'ı bir araya getirdi?"
+  },
+  "options": [
+   {
+    "concept_id": "the_x_factor",
+    "en": "The X Factor",
+    "tr": "The X Factor"
+   },
+   {
+    "concept_id": "britain_s_got_talent",
+    "en": "Britain's Got Talent",
+    "tr": "Britain's Got Talent"
+   },
+   {
+    "concept_id": "pop_idol",
+    "en": "Pop Idol",
+    "tr": "Pop Idol"
+   },
+   {
+    "concept_id": "the_voice_uk",
+    "en": "The Voice UK",
+    "tr": "The Voice UK"
+   }
+  ],
+  "correct": "the_x_factor",
+  "source": "https://en.wikipedia.org/wiki/The_X_Factor_(British_TV_series)"
+ },
+ {
+  "key": "music_q0636",
+  "category_id": "music",
+  "subcategory_id": "music_awards",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In the Eurovision Song Contest logo, what replaces the letter \"v\"?",
+   "tr": "Eurovision Şarkı Yarışması logosunda \"v\" harfinin yerinde ne vardır?"
+  },
+  "options": [
+   {
+    "concept_id": "a_heart",
+    "en": "A heart",
+    "tr": "Bir kalp"
+   },
+   {
+    "concept_id": "a_star",
+    "en": "A star",
+    "tr": "Bir yıldız"
+   },
+   {
+    "concept_id": "a_microphone",
+    "en": "A microphone",
+    "tr": "Bir mikrofon"
+   },
+   {
+    "concept_id": "a_flag",
+    "en": "A flag",
+    "tr": "Bir bayrak"
+   }
+  ],
+  "correct": "a_heart",
+  "source": "https://en.wikipedia.org/wiki/Eurovision_Song_Contest"
+ },
+ {
+  "key": "music_q0637",
+  "category_id": "music",
+  "subcategory_id": "music_awards",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many songs may each country enter in a single Eurovision contest?",
+   "tr": "Her ülke tek bir Eurovision yarışmasına kaç şarkıyla katılabilir?"
+  },
+  "options": [
+   {
+    "concept_id": "n_1",
+    "en": "1",
+    "tr": "1"
+   },
+   {
+    "concept_id": "n_2",
+    "en": "2",
+    "tr": "2"
+   },
+   {
+    "concept_id": "n_3",
+    "en": "3",
+    "tr": "3"
+   },
+   {
+    "concept_id": "n_5",
+    "en": "5",
+    "tr": "5"
+   }
+  ],
+  "correct": "n_1",
+  "source": "https://en.wikipedia.org/wiki/Rules_of_the_Eurovision_Song_Contest"
+ },
+ {
+  "key": "music_q0638",
+  "category_id": "music",
+  "subcategory_id": "music_awards",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What do you call the star act that plays last on a festival's main stage?",
+   "tr": "Bir festivalin ana sahnesinde en son çıkan yıldız sanatçıya ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "the_headliner",
+    "en": "The headliner",
+    "tr": "Headliner (baş sanatçı)"
+   },
+   {
+    "concept_id": "the_opener",
+    "en": "The opener",
+    "tr": "Açılış grubu"
+   },
+   {
+    "concept_id": "the_roadie",
+    "en": "The roadie",
+    "tr": "Roadie"
+   },
+   {
+    "concept_id": "the_understudy",
+    "en": "The understudy",
+    "tr": "Yedek sanatçı"
+   }
+  ],
+  "correct": "the_headliner",
+  "source": "https://en.wikipedia.org/wiki/Headliner"
+ },
+ {
+  "key": "music_q0639",
+  "category_id": "music",
+  "subcategory_id": "music_awards",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "By tradition, which country hosts the next year's Eurovision?",
+   "tr": "Geleneğe göre bir sonraki yılın Eurovision'ına hangi ülke ev sahipliği yapar?"
+  },
+  "options": [
+   {
+    "concept_id": "the_previous_year_s_winner",
+    "en": "The previous year's winner",
+    "tr": "Önceki yılın kazananı"
+   },
+   {
+    "concept_id": "the_runner_up",
+    "en": "The runner-up",
+    "tr": "İkinci olan"
+   },
+   {
+    "concept_id": "switzerland_always",
+    "en": "Switzerland, always",
+    "tr": "Her zaman İsviçre"
+   },
+   {
+    "concept_id": "the_country_with_the_most_entries",
+    "en": "The country with the most entries",
+    "tr": "En çok katılan ülke"
+   }
+  ],
+  "correct": "the_previous_year_s_winner",
+  "source": "https://en.wikipedia.org/wiki/Eurovision_Song_Contest"
+ },
+ {
+  "key": "music_q0640",
+  "category_id": "music",
+  "subcategory_id": "music_awards",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Melodifestivalen, the hugely popular TV contest to pick a Eurovision entry, belongs to which country?",
+   "tr": "Eurovision temsilcisini seçen çok popüler TV yarışması Melodifestivalen hangi ülkeye aittir?"
+  },
+  "options": [
+   {
+    "concept_id": "sweden",
+    "en": "Sweden",
+    "tr": "İsveç"
+   },
+   {
+    "concept_id": "italy",
+    "en": "Italy",
+    "tr": "İtalya"
+   },
+   {
+    "concept_id": "norway",
+    "en": "Norway",
+    "tr": "Norveç"
+   },
+   {
+    "concept_id": "germany",
+    "en": "Germany",
+    "tr": "Almanya"
+   }
+  ],
+  "correct": "sweden",
+  "source": "https://en.wikipedia.org/wiki/Melodifestivalen"
+ },
+ {
+  "key": "music_q0641",
+  "category_id": "music",
+  "subcategory_id": "artists",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "\"Crazy in Love\", \"Halo\" and \"Single Ladies\" are hits by which singer?",
+   "tr": "\"Crazy in Love\", \"Halo\" ve \"Single Ladies\" hangi şarkıcının hitleridir?"
+  },
+  "options": [
+   {
+    "concept_id": "beyonce",
+    "en": "Beyoncé",
+    "tr": "Beyoncé"
+   },
+   {
+    "concept_id": "rihanna",
+    "en": "Rihanna",
+    "tr": "Rihanna"
+   },
+   {
+    "concept_id": "alicia_keys",
+    "en": "Alicia Keys",
+    "tr": "Alicia Keys"
+   },
+   {
+    "concept_id": "kelly_rowland",
+    "en": "Kelly Rowland",
+    "tr": "Kelly Rowland"
+   }
+  ],
+  "correct": "beyonce",
+  "source": "https://en.wikipedia.org/wiki/Beyoncé"
+ },
+ {
+  "key": "music_q0642",
+  "category_id": "music",
+  "subcategory_id": "artists",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Trinidad-born rapper, famous for \"Super Bass\", was born Onika Maraj?",
+   "tr": "\"Super Bass\" ile ünlü, Trinidad doğumlu, asıl adı Onika Maraj olan rapçi kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "nicki_minaj",
+    "en": "Nicki Minaj",
+    "tr": "Nicki Minaj"
+   },
+   {
+    "concept_id": "cardi_b",
+    "en": "Cardi B",
+    "tr": "Cardi B"
+   },
+   {
+    "concept_id": "megan_thee_stallion",
+    "en": "Megan Thee Stallion",
+    "tr": "Megan Thee Stallion"
+   },
+   {
+    "concept_id": "missy_elliott",
+    "en": "Missy Elliott",
+    "tr": "Missy Elliott"
+   }
+  ],
+  "correct": "nicki_minaj",
+  "source": "https://en.wikipedia.org/wiki/Nicki_Minaj"
+ },
+ {
+  "key": "music_q0643",
+  "category_id": "music",
+  "subcategory_id": "artists",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which singer, known for \"Kum Gibi\" and \"Başım Belada\", died in exile in Paris in 2000?",
+   "tr": "\"Kum Gibi\" ve \"Başım Belada\" ile tanınan hangi şarkıcı 2000'de Paris'te sürgünde öldü?"
+  },
+  "options": [
+   {
+    "concept_id": "ahmet_kaya",
+    "en": "Ahmet Kaya",
+    "tr": "Ahmet Kaya"
+   },
+   {
+    "concept_id": "cem_karaca",
+    "en": "Cem Karaca",
+    "tr": "Cem Karaca"
+   },
+   {
+    "concept_id": "ferdi_tayfur",
+    "en": "Ferdi Tayfur",
+    "tr": "Ferdi Tayfur"
+   },
+   {
+    "concept_id": "bulent_ersoy",
+    "en": "Bülent Ersoy",
+    "tr": "Bülent Ersoy"
+   }
+  ],
+  "correct": "ahmet_kaya",
+  "source": "https://en.wikipedia.org/wiki/Ahmet_Kaya"
+ },
+ {
+  "key": "music_q0644",
+  "category_id": "music",
+  "subcategory_id": "artists",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which rapper announced a run for US president in 2020?",
+   "tr": "Hangi rapçi 2020'de ABD başkanlığına aday olduğunu açıkladı?"
+  },
+  "options": [
+   {
+    "concept_id": "kanye_west",
+    "en": "Kanye West",
+    "tr": "Kanye West"
+   },
+   {
+    "concept_id": "jay_z",
+    "en": "Jay-Z",
+    "tr": "Jay-Z"
+   },
+   {
+    "concept_id": "snoop_dogg",
+    "en": "Snoop Dogg",
+    "tr": "Snoop Dogg"
+   },
+   {
+    "concept_id": "pitbull",
+    "en": "Pitbull",
+    "tr": "Pitbull"
+   }
+  ],
+  "correct": "kanye_west",
+  "source": "https://en.wikipedia.org/wiki/Kanye_West_2020_presidential_campaign"
+ },
+ {
+  "key": "music_q0645",
+  "category_id": "music",
+  "subcategory_id": "artists",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In which year did Michael Jackson die?",
+   "tr": "Michael Jackson hangi yıl öldü?"
+  },
+  "options": [
+   {
+    "concept_id": "n_2009",
+    "en": "2009",
+    "tr": "2009"
+   },
+   {
+    "concept_id": "n_2001",
+    "en": "2001",
+    "tr": "2001"
+   },
+   {
+    "concept_id": "n_2005",
+    "en": "2005",
+    "tr": "2005"
+   },
+   {
+    "concept_id": "n_2012",
+    "en": "2012",
+    "tr": "2012"
+   }
+  ],
+  "correct": "n_2009",
+  "source": "https://en.wikipedia.org/wiki/Death_of_Michael_Jackson"
+ },
+ {
+  "key": "music_q0646",
+  "category_id": "music",
+  "subcategory_id": "artists",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these singers is NOT Australian?",
+   "tr": "Bu şarkıcılardan hangisi Avustralyalı DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "lorde",
+    "en": "Lorde",
+    "tr": "Lorde"
+   },
+   {
+    "concept_id": "sia",
+    "en": "Sia",
+    "tr": "Sia"
+   },
+   {
+    "concept_id": "kylie_minogue",
+    "en": "Kylie Minogue",
+    "tr": "Kylie Minogue"
+   },
+   {
+    "concept_id": "tones_and_i",
+    "en": "Tones and I",
+    "tr": "Tones and I"
+   }
+  ],
+  "correct": "lorde",
+  "source": "https://en.wikipedia.org/wiki/Lorde"
+ },
+ {
+  "key": "music_q0647",
+  "category_id": "music",
+  "subcategory_id": "artists",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who was born first: Johnny Cash or Elvis Presley?",
+   "tr": "Kim önce doğdu: Johnny Cash mi, Elvis Presley mi?"
+  },
+  "options": [
+   {
+    "concept_id": "the_man_in_black",
+    "en": "The \"Man in Black\"",
+    "tr": "\"Siyahlı Adam\""
+   },
+   {
+    "concept_id": "the_king_of_rock_and_roll",
+    "en": "The \"King of Rock and Roll\"",
+    "tr": "\"Rock and Roll'un Kralı\""
+   },
+   {
+    "concept_id": "same_year",
+    "en": "Same year",
+    "tr": "Aynı yıl"
+   },
+   {
+    "concept_id": "they_were_twins",
+    "en": "They were twins",
+    "tr": "İkizlerdi"
+   }
+  ],
+  "correct": "the_man_in_black",
+  "source": "https://en.wikipedia.org/wiki/Johnny_Cash"
+ },
+ {
+  "key": "music_q0648",
+  "category_id": "music",
+  "subcategory_id": "bands",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "\"Hysteria\", \"Supermassive Black Hole\" and \"Starlight\" are songs by which band?",
+   "tr": "\"Hysteria\", \"Supermassive Black Hole\" ve \"Starlight\" hangi grubun şarkılarıdır?"
+  },
+  "options": [
+   {
+    "concept_id": "muse",
+    "en": "Muse",
+    "tr": "Muse"
+   },
+   {
+    "concept_id": "placebo",
+    "en": "Placebo",
+    "tr": "Placebo"
+   },
+   {
+    "concept_id": "keane",
+    "en": "Keane",
+    "tr": "Keane"
+   },
+   {
+    "concept_id": "snow_patrol",
+    "en": "Snow Patrol",
+    "tr": "Snow Patrol"
+   }
+  ],
+  "correct": "muse",
+  "source": "https://en.wikipedia.org/wiki/Muse_(band)"
+ },
+ {
+  "key": "music_q0649",
+  "category_id": "music",
+  "subcategory_id": "bands",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Doors took their name from a book by which writer?",
+   "tr": "The Doors adını hangi yazarın bir kitabından aldı?"
+  },
+  "options": [
+   {
+    "concept_id": "aldous_huxley",
+    "en": "Aldous Huxley",
+    "tr": "Aldous Huxley"
+   },
+   {
+    "concept_id": "jack_kerouac",
+    "en": "Jack Kerouac",
+    "tr": "Jack Kerouac"
+   },
+   {
+    "concept_id": "allen_ginsberg",
+    "en": "Allen Ginsberg",
+    "tr": "Allen Ginsberg"
+   },
+   {
+    "concept_id": "hunter_s_thompson",
+    "en": "Hunter S. Thompson",
+    "tr": "Hunter S. Thompson"
+   }
+  ],
+  "correct": "aldous_huxley",
+  "source": "https://en.wikipedia.org/wiki/The_Doors_of_Perception"
+ },
+ {
+  "key": "music_q0650",
+  "category_id": "music",
+  "subcategory_id": "bands",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Scottish band is named after the archduke whose murder sparked World War I?",
+   "tr": "Hangi İskoç grubu, suikastı Birinci Dünya Savaşı'nı başlatan arşidükün adını taşır?"
+  },
+  "options": [
+   {
+    "concept_id": "franz_ferdinand",
+    "en": "Franz Ferdinand",
+    "tr": "Franz Ferdinand"
+   },
+   {
+    "concept_id": "biffy_clyro",
+    "en": "Biffy Clyro",
+    "tr": "Biffy Clyro"
+   },
+   {
+    "concept_id": "travis",
+    "en": "Travis",
+    "tr": "Travis"
+   },
+   {
+    "concept_id": "belle_and_sebastian",
+    "en": "Belle and Sebastian",
+    "tr": "Belle and Sebastian"
+   }
+  ],
+  "correct": "franz_ferdinand",
+  "source": "https://en.wikipedia.org/wiki/Franz_Ferdinand_(band)"
+ },
+ {
+  "key": "music_q0651",
+  "category_id": "music",
+  "subcategory_id": "bands",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many rappers made up the original Wu-Tang Clan?",
+   "tr": "Orijinal Wu-Tang Clan kaç rapçiden oluşuyordu?"
+  },
+  "options": [
+   {
+    "concept_id": "n_9",
+    "en": "9",
+    "tr": "9"
+   },
+   {
+    "concept_id": "n_3",
+    "en": "3",
+    "tr": "3"
+   },
+   {
+    "concept_id": "n_5",
+    "en": "5",
+    "tr": "5"
+   },
+   {
+    "concept_id": "n_12",
+    "en": "12",
+    "tr": "12"
+   }
+  ],
+  "correct": "n_9",
+  "source": "https://en.wikipedia.org/wiki/Wu-Tang_Clan"
+ },
+ {
+  "key": "music_q0652",
+  "category_id": "music",
+  "subcategory_id": "bands",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which band became famous for a one-take music video danced on moving treadmills?",
+   "tr": "Hangi grup hareketli koşu bantlarında tek çekimde dans edilen klibiyle ünlendi?"
+  },
+  "options": [
+   {
+    "concept_id": "ok_go",
+    "en": "OK Go",
+    "tr": "OK Go"
+   },
+   {
+    "concept_id": "the_killers",
+    "en": "The Killers",
+    "tr": "The Killers"
+   },
+   {
+    "concept_id": "vampire_weekend",
+    "en": "Vampire Weekend",
+    "tr": "Vampire Weekend"
+   },
+   {
+    "concept_id": "mgmt",
+    "en": "MGMT",
+    "tr": "MGMT"
+   }
+  ],
+  "correct": "ok_go",
+  "source": "https://en.wikipedia.org/wiki/OK_Go"
+ },
+ {
+  "key": "music_q0653",
+  "category_id": "music",
+  "subcategory_id": "bands",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these bands is NOT from Manchester?",
+   "tr": "Bu gruplardan hangisi Manchester'dan DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "arctic_monkeys",
+    "en": "Arctic Monkeys",
+    "tr": "Arctic Monkeys"
+   },
+   {
+    "concept_id": "oasis",
+    "en": "Oasis",
+    "tr": "Oasis"
+   },
+   {
+    "concept_id": "the_smiths",
+    "en": "The Smiths",
+    "tr": "The Smiths"
+   },
+   {
+    "concept_id": "joy_division",
+    "en": "Joy Division",
+    "tr": "Joy Division"
+   }
+  ],
+  "correct": "arctic_monkeys",
+  "source": "https://en.wikipedia.org/wiki/Arctic_Monkeys"
+ },
+ {
+  "key": "music_q0654",
+  "category_id": "music",
+  "subcategory_id": "bands",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which band had more members in its classic line-up: The Police or Queen?",
+   "tr": "Klasik kadrosunda hangi grubun daha çok üyesi vardı: The Police mi, Queen mi?"
+  },
+  "options": [
+   {
+    "concept_id": "the_freddie_mercury_band",
+    "en": "The Freddie Mercury band",
+    "tr": "Freddie Mercury'nin grubu"
+   },
+   {
+    "concept_id": "sting_s_band",
+    "en": "Sting's band",
+    "tr": "Sting'in grubu"
+   },
+   {
+    "concept_id": "same_number",
+    "en": "Same number",
+    "tr": "Aynı sayıda"
+   },
+   {
+    "concept_id": "neither_had_members",
+    "en": "Neither had members",
+    "tr": "İkisinin de üyesi yoktu"
+   }
+  ],
+  "correct": "the_freddie_mercury_band",
+  "source": "https://en.wikipedia.org/wiki/The_Police"
+ },
+ {
+  "key": "music_q0655",
+  "category_id": "music",
+  "subcategory_id": "instruments",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What are the huge Japanese drums played in thunderous, athletic ensembles called?",
+   "tr": "Gürleyen, atletik topluluklarda çalınan dev Japon davullarına ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "taiko",
+    "en": "Taiko",
+    "tr": "Taiko"
+   },
+   {
+    "concept_id": "tabla",
+    "en": "Tabla",
+    "tr": "Tabla"
+   },
+   {
+    "concept_id": "djembe",
+    "en": "Djembe",
+    "tr": "Cembe"
+   },
+   {
+    "concept_id": "bodhran",
+    "en": "Bodhrán",
+    "tr": "Bodhrán"
+   }
+  ],
+  "correct": "taiko",
+  "source": "https://en.wikipedia.org/wiki/Taiko"
+ },
+ {
+  "key": "music_q0656",
+  "category_id": "music",
+  "subcategory_id": "instruments",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the small wooden piece that holds a violin's strings up off its body?",
+   "tr": "Kemanın tellerini gövdeden yukarıda tutan küçük tahta parçaya ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "the_bridge",
+    "en": "The bridge",
+    "tr": "Köprü (eşik)"
+   },
+   {
+    "concept_id": "the_scroll",
+    "en": "The scroll",
+    "tr": "Kıvrım (salyangoz)"
+   },
+   {
+    "concept_id": "the_chinrest",
+    "en": "The chinrest",
+    "tr": "Çenelik"
+   },
+   {
+    "concept_id": "the_nut",
+    "en": "The nut",
+    "tr": "Üst eşik"
+   }
+  ],
+  "correct": "the_bridge",
+  "source": "https://en.wikipedia.org/wiki/Bridge_(instrument)"
+ },
+ {
+  "key": "music_q0657",
+  "category_id": "music",
+  "subcategory_id": "instruments",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Antonio Stradivari made his celebrated violins mainly in which centuries?",
+   "tr": "Antonio Stradivari ünlü kemanlarını ağırlıklı olarak hangi yüzyıllarda yaptı?"
+  },
+  "options": [
+   {
+    "concept_id": "n_17th_and_18th",
+    "en": "17th and 18th",
+    "tr": "17. ve 18."
+   },
+   {
+    "concept_id": "n_15th_and_16th",
+    "en": "15th and 16th",
+    "tr": "15. ve 16."
+   },
+   {
+    "concept_id": "n_19th_and_20th",
+    "en": "19th and 20th",
+    "tr": "19. ve 20."
+   },
+   {
+    "concept_id": "n_13th_and_14th",
+    "en": "13th and 14th",
+    "tr": "13. ve 14."
+   }
+  ],
+  "correct": "n_17th_and_18th",
+  "source": "https://en.wikipedia.org/wiki/Stradivarius"
+ },
+ {
+  "key": "music_q0658",
+  "category_id": "music",
+  "subcategory_id": "instruments",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which instrument did Albert Einstein love to play, even naming it \"Lina\"?",
+   "tr": "Albert Einstein hangi çalgıyı çalmayı çok severdi, hatta ona \"Lina\" adını verdi?"
+  },
+  "options": [
+   {
+    "concept_id": "violin",
+    "en": "Violin",
+    "tr": "Keman"
+   },
+   {
+    "concept_id": "piano",
+    "en": "Piano",
+    "tr": "Piyano"
+   },
+   {
+    "concept_id": "cello",
+    "en": "Cello",
+    "tr": "Çello"
+   },
+   {
+    "concept_id": "flute",
+    "en": "Flute",
+    "tr": "Flüt"
+   }
+  ],
+  "correct": "violin",
+  "source": "https://en.wikipedia.org/wiki/Albert_Einstein"
+ },
+ {
+  "key": "music_q0659",
+  "category_id": "music",
+  "subcategory_id": "instruments",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these is NOT a member of the saxophone family?",
+   "tr": "Bunlardan hangisi saksafon ailesinin bir üyesi DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "piccolo",
+    "en": "Piccolo",
+    "tr": "Pikolo"
+   },
+   {
+    "concept_id": "soprano",
+    "en": "Soprano",
+    "tr": "Soprano"
+   },
+   {
+    "concept_id": "alto",
+    "en": "Alto",
+    "tr": "Alto"
+   },
+   {
+    "concept_id": "baritone",
+    "en": "Baritone",
+    "tr": "Bariton"
+   }
+  ],
+  "correct": "piccolo",
+  "source": "https://en.wikipedia.org/wiki/Saxophone"
+ },
+ {
+  "key": "music_q0660",
+  "category_id": "music",
+  "subcategory_id": "instruments",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which keyboard instrument is older: the harpsichord or the piano?",
+   "tr": "Hangi klavyeli çalgı daha eskidir: klavsen mi, piyano mu?"
+  },
+  "options": [
+   {
+    "concept_id": "the_plucking_one",
+    "en": "The plucking one",
+    "tr": "Telleri çekerek çalan"
+   },
+   {
+    "concept_id": "the_hammering_one",
+    "en": "The hammering one",
+    "tr": "Telleri çekiçle vuran"
+   },
+   {
+    "concept_id": "same_age",
+    "en": "Same age",
+    "tr": "Aynı yaşta"
+   },
+   {
+    "concept_id": "neither_has_keys",
+    "en": "Neither has keys",
+    "tr": "İkisinin de tuşu yok"
+   }
+  ],
+  "correct": "the_plucking_one",
+  "source": "https://en.wikipedia.org/wiki/Harpsichord"
+ },
+ {
+  "key": "music_q0661",
+  "category_id": "music",
+  "subcategory_id": "instruments",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Jaco Pastorius, who revolutionised jazz with a fretless model, played which instrument?",
+   "tr": "Perdesiz bir modelle cazda devrim yapan Jaco Pastorius hangi çalgıyı çalardı?"
+  },
+  "options": [
+   {
+    "concept_id": "bass_guitar",
+    "en": "Bass guitar",
+    "tr": "Bas gitar"
+   },
+   {
+    "concept_id": "trumpet",
+    "en": "Trumpet",
+    "tr": "Trompet"
+   },
+   {
+    "concept_id": "drums",
+    "en": "Drums",
+    "tr": "Davul"
+   },
+   {
+    "concept_id": "vibraphone",
+    "en": "Vibraphone",
+    "tr": "Vibrafon"
+   }
+  ],
+  "correct": "bass_guitar",
+  "source": "https://en.wikipedia.org/wiki/Jaco_Pastorius"
+ },
+ {
+  "key": "music_q0662",
+  "category_id": "music",
+  "subcategory_id": "albums",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which 2010 Kanye West album includes \"Runaway\" and \"Power\"?",
+   "tr": "Kanye West'in \"Runaway\" ve \"Power\"ı içeren 2010 albümü hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "my_beautiful_dark_twisted_fantasy",
+    "en": "My Beautiful Dark Twisted Fantasy",
+    "tr": "My Beautiful Dark Twisted Fantasy"
+   },
+   {
+    "concept_id": "graduation",
+    "en": "Graduation",
+    "tr": "Graduation"
+   },
+   {
+    "concept_id": "yeezus",
+    "en": "Yeezus",
+    "tr": "Yeezus"
+   },
+   {
+    "concept_id": "the_college_dropout",
+    "en": "The College Dropout",
+    "tr": "The College Dropout"
+   }
+  ],
+  "correct": "my_beautiful_dark_twisted_fantasy",
+  "source": "https://en.wikipedia.org/wiki/My_Beautiful_Dark_Twisted_Fantasy"
+ },
+ {
+  "key": "music_q0663",
+  "category_id": "music",
+  "subcategory_id": "albums",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Irish singer's 1988 album Watermark included \"Orinoco Flow\"?",
+   "tr": "Hangi İrlandalı şarkıcının 1988 albümü Watermark \"Orinoco Flow\"u içeriyordu?"
+  },
+  "options": [
+   {
+    "concept_id": "enya",
+    "en": "Enya",
+    "tr": "Enya"
+   },
+   {
+    "concept_id": "sinead_o_connor",
+    "en": "Sinéad O'Connor",
+    "tr": "Sinéad O'Connor"
+   },
+   {
+    "concept_id": "clannad_s_moya_brennan",
+    "en": "Clannad's Moya Brennan",
+    "tr": "Clannad'dan Moya Brennan"
+   },
+   {
+    "concept_id": "mary_black",
+    "en": "Mary Black",
+    "tr": "Mary Black"
+   }
+  ],
+  "correct": "enya",
+  "source": "https://en.wikipedia.org/wiki/Watermark_(Enya_album)"
+ },
+ {
+  "key": "music_q0664",
+  "category_id": "music",
+  "subcategory_id": "albums",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many of Thriller's nine songs became US top-10 singles?",
+   "tr": "Thriller'ın dokuz şarkısından kaçı ABD'de ilk 10'a giren single oldu?"
+  },
+  "options": [
+   {
+    "concept_id": "n_7",
+    "en": "7",
+    "tr": "7"
+   },
+   {
+    "concept_id": "n_2",
+    "en": "2",
+    "tr": "2"
+   },
+   {
+    "concept_id": "n_4",
+    "en": "4",
+    "tr": "4"
+   },
+   {
+    "concept_id": "n_9",
+    "en": "9",
+    "tr": "9"
+   }
+  ],
+  "correct": "n_7",
+  "source": "https://en.wikipedia.org/wiki/Thriller_(album)"
+ },
+ {
+  "key": "music_q0665",
+  "category_id": "music",
+  "subcategory_id": "albums",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Chuck Berry song is on the Golden Record carried into space by the Voyager probes?",
+   "tr": "Voyager sondalarıyla uzaya giden Altın Plak'ta Chuck Berry'nin hangi şarkısı vardır?"
+  },
+  "options": [
+   {
+    "concept_id": "johnny_b_goode",
+    "en": "Johnny B. Goode",
+    "tr": "Johnny B. Goode"
+   },
+   {
+    "concept_id": "maybellene",
+    "en": "Maybellene",
+    "tr": "Maybellene"
+   },
+   {
+    "concept_id": "roll_over_beethoven",
+    "en": "Roll Over Beethoven",
+    "tr": "Roll Over Beethoven"
+   },
+   {
+    "concept_id": "sweet_little_sixteen",
+    "en": "Sweet Little Sixteen",
+    "tr": "Sweet Little Sixteen"
+   }
+  ],
+  "correct": "johnny_b_goode",
+  "source": "https://en.wikipedia.org/wiki/Voyager_Golden_Record"
+ },
+ {
+  "key": "music_q0666",
+  "category_id": "music",
+  "subcategory_id": "albums",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Pink Floyd album spent over 900 weeks on the US Billboard 200?",
+   "tr": "Hangi Pink Floyd albümü ABD Billboard 200 listesinde 900 haftadan fazla kaldı?"
+  },
+  "options": [
+   {
+    "concept_id": "the_dark_side_of_the_moon",
+    "en": "The Dark Side of the Moon",
+    "tr": "The Dark Side of the Moon"
+   },
+   {
+    "concept_id": "the_wall",
+    "en": "The Wall",
+    "tr": "The Wall"
+   },
+   {
+    "concept_id": "wish_you_were_here",
+    "en": "Wish You Were Here",
+    "tr": "Wish You Were Here"
+   },
+   {
+    "concept_id": "animals",
+    "en": "Animals",
+    "tr": "Animals"
+   }
+  ],
+  "correct": "the_dark_side_of_the_moon",
+  "source": "https://en.wikipedia.org/wiki/The_Dark_Side_of_the_Moon"
+ },
+ {
+  "key": "music_q0667",
+  "category_id": "music",
+  "subcategory_id": "albums",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which 1991 grunge landmark came out first: Pearl Jam's Ten or Nirvana's Nevermind?",
+   "tr": "Hangi 1991 grunge klasiği önce çıktı: Pearl Jam'in Ten'i mi, Nirvana'nın Nevermind'ı mı?"
+  },
+  "options": [
+   {
+    "concept_id": "ten_by_about_a_month",
+    "en": "Ten, by about a month",
+    "tr": "Ten, yaklaşık bir ay önce"
+   },
+   {
+    "concept_id": "nevermind",
+    "en": "Nevermind",
+    "tr": "Nevermind"
+   },
+   {
+    "concept_id": "same_day",
+    "en": "Same day",
+    "tr": "Aynı gün"
+   },
+   {
+    "concept_id": "neither_came_out_in_1991",
+    "en": "Neither came out in 1991",
+    "tr": "İkisi de 1991'de çıkmadı"
+   }
+  ],
+  "correct": "ten_by_about_a_month",
+  "source": "https://en.wikipedia.org/wiki/Ten_(Pearl_Jam_album)"
+ },
+ {
+  "key": "music_q0668",
+  "category_id": "music",
+  "subcategory_id": "music_history",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which French composer wrote the dreamy piano piece \"Clair de lune\"?",
+   "tr": "Rüya gibi piyano parçası \"Clair de lune\"u hangi Fransız besteci yazdı?"
+  },
+  "options": [
+   {
+    "concept_id": "claude_debussy",
+    "en": "Claude Debussy",
+    "tr": "Claude Debussy"
+   },
+   {
+    "concept_id": "maurice_ravel",
+    "en": "Maurice Ravel",
+    "tr": "Maurice Ravel"
+   },
+   {
+    "concept_id": "erik_satie",
+    "en": "Erik Satie",
+    "tr": "Erik Satie"
+   },
+   {
+    "concept_id": "gabriel_faure",
+    "en": "Gabriel Fauré",
+    "tr": "Gabriel Fauré"
+   }
+  ],
+  "correct": "claude_debussy",
+  "source": "https://en.wikipedia.org/wiki/Clair_de_lune_(Debussy)"
+ },
+ {
+  "key": "music_q0669",
+  "category_id": "music",
+  "subcategory_id": "music_history",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The \"Radetzky March\" traditionally closes which city's famous New Year's Concert?",
+   "tr": "\"Radetzky Marşı\" geleneksel olarak hangi şehrin ünlü Yeni Yıl Konseri'ni kapatır?"
+  },
+  "options": [
+   {
+    "concept_id": "vienna",
+    "en": "Vienna",
+    "tr": "Viyana"
+   },
+   {
+    "concept_id": "berlin",
+    "en": "Berlin",
+    "tr": "Berlin"
+   },
+   {
+    "concept_id": "prague",
+    "en": "Prague",
+    "tr": "Prag"
+   },
+   {
+    "concept_id": "salzburg",
+    "en": "Salzburg",
+    "tr": "Salzburg"
+   }
+  ],
+  "correct": "vienna",
+  "source": "https://en.wikipedia.org/wiki/Radetzky_March"
+ },
+ {
+  "key": "music_q0670",
+  "category_id": "music",
+  "subcategory_id": "music_history",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "About how many symphonies did Mozart write?",
+   "tr": "Mozart yaklaşık kaç senfoni yazdı?"
+  },
+  "options": [
+   {
+    "concept_id": "n_41",
+    "en": "41",
+    "tr": "41"
+   },
+   {
+    "concept_id": "n_9",
+    "en": "9",
+    "tr": "9"
+   },
+   {
+    "concept_id": "n_15",
+    "en": "15",
+    "tr": "15"
+   },
+   {
+    "concept_id": "n_104",
+    "en": "104",
+    "tr": "104"
+   }
+  ],
+  "correct": "n_41",
+  "source": "https://en.wikipedia.org/wiki/List_of_symphonies_by_Wolfgang_Amadeus_Mozart"
+ },
+ {
+  "key": "music_q0671",
+  "category_id": "music",
+  "subcategory_id": "music_history",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How did Beethoven's \"Moonlight\" Sonata get its nickname?",
+   "tr": "Beethoven'ın \"Ay Işığı\" Sonatı bu lakabı nasıl aldı?"
+  },
+  "options": [
+   {
+    "concept_id": "a_critic_coined_it_after_beethoven_s_death",
+    "en": "A critic coined it after Beethoven's death",
+    "tr": "Ölümünden sonra bir eleştirmen taktı"
+   },
+   {
+    "concept_id": "beethoven_wrote_it_at_midnight",
+    "en": "Beethoven wrote it at midnight",
+    "tr": "Beethoven onu gece yarısı yazdı"
+   },
+   {
+    "concept_id": "it_premiered_during_an_eclipse",
+    "en": "It premiered during an eclipse",
+    "tr": "Bir tutulma sırasında prömiyer yaptı"
+   },
+   {
+    "concept_id": "a_king_requested_it",
+    "en": "A king requested it",
+    "tr": "Bir kral istedi"
+   }
+  ],
+  "correct": "a_critic_coined_it_after_beethoven_s_death",
+  "source": "https://en.wikipedia.org/wiki/Piano_Sonata_No._14_(Beethoven)"
+ },
+ {
+  "key": "music_q0672",
+  "category_id": "music",
+  "subcategory_id": "music_history",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is a piece for a solo instrument accompanied by an orchestra called?",
+   "tr": "Bir solo çalgı ve ona eşlik eden orkestra için yazılmış esere ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "a_concerto",
+    "en": "A concerto",
+    "tr": "Konçerto"
+   },
+   {
+    "concept_id": "a_sonata",
+    "en": "A sonata",
+    "tr": "Sonat"
+   },
+   {
+    "concept_id": "an_etude",
+    "en": "An étude",
+    "tr": "Etüt"
+   },
+   {
+    "concept_id": "a_nocturne",
+    "en": "A nocturne",
+    "tr": "Noktürn"
+   }
+  ],
+  "correct": "a_concerto",
+  "source": "https://en.wikipedia.org/wiki/Concerto"
+ },
+ {
+  "key": "music_q0673",
+  "category_id": "music",
+  "subcategory_id": "music_history",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The hymn \"Amazing Grace\" was written by a man who had earlier worked as what?",
+   "tr": "\"Amazing Grace\" ilahisini yazan adam daha önce ne iş yapmıştı?"
+  },
+  "options": [
+   {
+    "concept_id": "a_slave_ship_captain",
+    "en": "A slave-ship captain",
+    "tr": "Köle gemisi kaptanlığı"
+   },
+   {
+    "concept_id": "a_royal_chef",
+    "en": "A royal chef",
+    "tr": "Saray aşçılığı"
+   },
+   {
+    "concept_id": "a_lighthouse_keeper",
+    "en": "A lighthouse keeper",
+    "tr": "Deniz feneri bekçiliği"
+   },
+   {
+    "concept_id": "a_circus_acrobat",
+    "en": "A circus acrobat",
+    "tr": "Sirk akrobatlığı"
+   }
+  ],
+  "correct": "a_slave_ship_captain",
+  "source": "https://en.wikipedia.org/wiki/Amazing_Grace"
+ },
+ {
+  "key": "music_q0674",
+  "category_id": "music",
+  "subcategory_id": "music_history",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these operas is NOT by Puccini?",
+   "tr": "Bu operalardan hangisi Puccini'ye AİT DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "la_traviata",
+    "en": "La traviata",
+    "tr": "La traviata"
+   },
+   {
+    "concept_id": "la_boheme",
+    "en": "La bohème",
+    "tr": "La bohème"
+   },
+   {
+    "concept_id": "tosca",
+    "en": "Tosca",
+    "tr": "Tosca"
+   },
+   {
+    "concept_id": "madama_butterfly",
+    "en": "Madama Butterfly",
+    "tr": "Madama Butterfly"
+   }
+  ],
+  "correct": "la_traviata",
+  "source": "https://en.wikipedia.org/wiki/Giacomo_Puccini"
+ },
+ {
+  "key": "music_q0675",
+  "category_id": "music",
+  "subcategory_id": "music_awards",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Brazil's Rock in Rio festival has also been staged many times in which European capital?",
+   "tr": "Brezilya'nın Rock in Rio festivali hangi Avrupa başkentinde de defalarca düzenlendi?"
+  },
+  "options": [
+   {
+    "concept_id": "lisbon",
+    "en": "Lisbon",
+    "tr": "Lizbon"
+   },
+   {
+    "concept_id": "madrid",
+    "en": "Madrid",
+    "tr": "Madrid"
+   },
+   {
+    "concept_id": "rome",
+    "en": "Rome",
+    "tr": "Roma"
+   },
+   {
+    "concept_id": "paris",
+    "en": "Paris",
+    "tr": "Paris"
+   }
+  ],
+  "correct": "lisbon",
+  "source": "https://en.wikipedia.org/wiki/Rock_in_Rio"
+ },
+ {
+  "key": "music_q0676",
+  "category_id": "music",
+  "subcategory_id": "music_awards",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which country won Eurovision 2024 with Nemo's \"The Code\"?",
+   "tr": "Eurovision 2024'ü Nemo'nun \"The Code\" şarkısıyla hangi ülke kazandı?"
+  },
+  "options": [
+   {
+    "concept_id": "switzerland",
+    "en": "Switzerland",
+    "tr": "İsviçre"
+   },
+   {
+    "concept_id": "croatia",
+    "en": "Croatia",
+    "tr": "Hırvatistan"
+   },
+   {
+    "concept_id": "ukraine",
+    "en": "Ukraine",
+    "tr": "Ukrayna"
+   },
+   {
+    "concept_id": "france",
+    "en": "France",
+    "tr": "Fransa"
+   }
+  ],
+  "correct": "switzerland",
+  "source": "https://en.wikipedia.org/wiki/Nemo_(singer)"
+ },
+ {
+  "key": "music_q0677",
+  "category_id": "music",
+  "subcategory_id": "music_awards",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the minimum age for performers on the Eurovision stage?",
+   "tr": "Eurovision sahnesinde performans sergilemek için alt yaş sınırı kaçtır?"
+  },
+  "options": [
+   {
+    "concept_id": "n_16",
+    "en": "16",
+    "tr": "16"
+   },
+   {
+    "concept_id": "n_12",
+    "en": "12",
+    "tr": "12"
+   },
+   {
+    "concept_id": "n_18",
+    "en": "18",
+    "tr": "18"
+   },
+   {
+    "concept_id": "n_21",
+    "en": "21",
+    "tr": "21"
+   }
+  ],
+  "correct": "n_16",
+  "source": "https://en.wikipedia.org/wiki/Rules_of_the_Eurovision_Song_Contest"
+ },
+ {
+  "key": "music_q0678",
+  "category_id": "music",
+  "subcategory_id": "music_awards",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Grammy goes to the songwriters of the year's best composition?",
+   "tr": "Yılın en iyi bestesinin söz yazarlarına hangi Grammy verilir?"
+  },
+  "options": [
+   {
+    "concept_id": "song_of_the_year",
+    "en": "Song of the Year",
+    "tr": "Yılın Şarkısı"
+   },
+   {
+    "concept_id": "record_of_the_year",
+    "en": "Record of the Year",
+    "tr": "Yılın Kaydı"
+   },
+   {
+    "concept_id": "album_of_the_year",
+    "en": "Album of the Year",
+    "tr": "Yılın Albümü"
+   },
+   {
+    "concept_id": "best_new_artist",
+    "en": "Best New Artist",
+    "tr": "En İyi Yeni Sanatçı"
+   }
+  ],
+  "correct": "song_of_the_year",
+  "source": "https://en.wikipedia.org/wiki/Grammy_Award_for_Song_of_the_Year"
+ },
+ {
+  "key": "music_q0679",
+  "category_id": "music",
+  "subcategory_id": "music_awards",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Why was the 2020 Eurovision Song Contest in Rotterdam cancelled?",
+   "tr": "Rotterdam'daki 2020 Eurovision Şarkı Yarışması neden iptal edildi?"
+  },
+  "options": [
+   {
+    "concept_id": "the_covid_19_pandemic",
+    "en": "The COVID-19 pandemic",
+    "tr": "COVID-19 salgını"
+   },
+   {
+    "concept_id": "a_boycott_by_juries",
+    "en": "A boycott by juries",
+    "tr": "Jürilerin boykotu"
+   },
+   {
+    "concept_id": "a_stage_fire",
+    "en": "A stage fire",
+    "tr": "Sahne yangını"
+   },
+   {
+    "concept_id": "a_hosting_fee_dispute",
+    "en": "A hosting fee dispute",
+    "tr": "Ev sahipliği ücreti anlaşmazlığı"
+   }
+  ],
+  "correct": "the_covid_19_pandemic",
+  "source": "https://en.wikipedia.org/wiki/Eurovision_Song_Contest_2020"
+ },
+ {
+  "key": "music_q0680",
+  "category_id": "music",
+  "subcategory_id": "music_awards",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Speakerboxxx/The Love Below (2004) made which duo the first rap act to win Album of the Year?",
+   "tr": "Speakerboxxx/The Love Below (2004) hangi ikiliyi Yılın Albümü'nü kazanan ilk rap grubu yaptı?"
+  },
+  "options": [
+   {
+    "concept_id": "outkast",
+    "en": "OutKast",
+    "tr": "OutKast"
+   },
+   {
+    "concept_id": "run_dmc",
+    "en": "Run-DMC",
+    "tr": "Run-DMC"
+   },
+   {
+    "concept_id": "mobb_deep",
+    "en": "Mobb Deep",
+    "tr": "Mobb Deep"
+   },
+   {
+    "concept_id": "eric_b_rakim",
+    "en": "Eric B. & Rakim",
+    "tr": "Eric B. & Rakim"
+   }
+  ],
+  "correct": "outkast",
+  "source": "https://en.wikipedia.org/wiki/Speakerboxxx/The_Love_Below"
+ },
+ {
+  "key": "music_q0681",
+  "category_id": "music",
+  "subcategory_id": "artists",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Malian guitarist was dubbed \"the African John Lee Hooker\"?",
+   "tr": "Hangi Malili gitaristin lakabı \"Afrika'nın John Lee Hooker'ı\"ydı?"
+  },
+  "options": [
+   {
+    "concept_id": "ali_farka_toure",
+    "en": "Ali Farka Touré",
+    "tr": "Ali Farka Touré"
+   },
+   {
+    "concept_id": "salif_keita",
+    "en": "Salif Keita",
+    "tr": "Salif Keita"
+   },
+   {
+    "concept_id": "toumani_diabate",
+    "en": "Toumani Diabaté",
+    "tr": "Toumani Diabaté"
+   },
+   {
+    "concept_id": "youssou_n_dour",
+    "en": "Youssou N'Dour",
+    "tr": "Youssou N'Dour"
+   }
+  ],
+  "correct": "ali_farka_toure",
+  "source": "https://en.wikipedia.org/wiki/Ali_Farka_Touré"
+ },
+ {
+  "key": "music_q0682",
+  "category_id": "music",
+  "subcategory_id": "artists",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which opera-trained bass became a legend of Turkish folk song, famous for \"Seferberlik Türküsü\"?",
+   "tr": "Opera eğitimli hangi bas, \"Seferberlik Türküsü\" ile ünlü bir Türk halk müziği efsanesi oldu?"
+  },
+  "options": [
+   {
+    "concept_id": "ruhi_su",
+    "en": "Ruhi Su",
+    "tr": "Ruhi Su"
+   },
+   {
+    "concept_id": "ask_mahzuni_serif",
+    "en": "Âşık Mahzuni Şerif",
+    "tr": "Âşık Mahzuni Şerif"
+   },
+   {
+    "concept_id": "cahit_berkay",
+    "en": "Cahit Berkay",
+    "tr": "Cahit Berkay"
+   },
+   {
+    "concept_id": "tulay_german",
+    "en": "Tülay German",
+    "tr": "Tülay German"
+   }
+  ],
+  "correct": "ruhi_su",
+  "source": "https://en.wikipedia.org/wiki/Ruhi_Su"
+ },
+ {
+  "key": "music_q0683",
+  "category_id": "music",
+  "subcategory_id": "artists",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Canadian pianist hummed audibly on his Bach recordings and played on a very low chair?",
+   "tr": "Hangi Kanadalı piyanist Bach kayıtlarında duyulacak şekilde mırıldanır ve çok alçak bir sandalyede çalardı?"
+  },
+  "options": [
+   {
+    "concept_id": "glenn_gould",
+    "en": "Glenn Gould",
+    "tr": "Glenn Gould"
+   },
+   {
+    "concept_id": "oscar_peterson",
+    "en": "Oscar Peterson",
+    "tr": "Oscar Peterson"
+   },
+   {
+    "concept_id": "marc_andre_hamelin",
+    "en": "Marc-André Hamelin",
+    "tr": "Marc-André Hamelin"
+   },
+   {
+    "concept_id": "angela_hewitt",
+    "en": "Angela Hewitt",
+    "tr": "Angela Hewitt"
+   }
+  ],
+  "correct": "glenn_gould",
+  "source": "https://en.wikipedia.org/wiki/Glenn_Gould"
+ },
+ {
+  "key": "music_q0684",
+  "category_id": "music",
+  "subcategory_id": "artists",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who, in 1987, became the first woman inducted into the Rock and Roll Hall of Fame?",
+   "tr": "1987'de Rock and Roll Şöhretler Müzesi'ne alınan ilk kadın kim oldu?"
+  },
+  "options": [
+   {
+    "concept_id": "aretha_franklin",
+    "en": "Aretha Franklin",
+    "tr": "Aretha Franklin"
+   },
+   {
+    "concept_id": "tina_turner",
+    "en": "Tina Turner",
+    "tr": "Tina Turner"
+   },
+   {
+    "concept_id": "janis_joplin",
+    "en": "Janis Joplin",
+    "tr": "Janis Joplin"
+   },
+   {
+    "concept_id": "ella_fitzgerald",
+    "en": "Ella Fitzgerald",
+    "tr": "Ella Fitzgerald"
+   }
+  ],
+  "correct": "aretha_franklin",
+  "source": "https://en.wikipedia.org/wiki/Aretha_Franklin"
+ },
+ {
+  "key": "music_q0685",
+  "category_id": "music",
+  "subcategory_id": "bands",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Cologne band recorded the krautrock landmark Tago Mago (1971)?",
+   "tr": "Krautrock'un dönüm noktası Tago Mago'yu (1971) hangi Köln grubu kaydetti?"
+  },
+  "options": [
+   {
+    "concept_id": "can",
+    "en": "Can",
+    "tr": "Can"
+   },
+   {
+    "concept_id": "neu",
+    "en": "Neu!",
+    "tr": "Neu!"
+   },
+   {
+    "concept_id": "faust",
+    "en": "Faust",
+    "tr": "Faust"
+   },
+   {
+    "concept_id": "amon_duul_ii",
+    "en": "Amon Düül II",
+    "tr": "Amon Düül II"
+   }
+  ],
+  "correct": "can",
+  "source": "https://en.wikipedia.org/wiki/Tago_Mago"
+ },
+ {
+  "key": "music_q0686",
+  "category_id": "music",
+  "subcategory_id": "bands",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Turkish group is known for singing in many Anatolian languages, including Kurdish, Armenian and Laz?",
+   "tr": "Hangi Türk grubu Kürtçe, Ermenice ve Lazca dahil birçok Anadolu dilinde söylemesiyle bilinir?"
+  },
+  "options": [
+   {
+    "concept_id": "kardes_turkuler",
+    "en": "Kardeş Türküler",
+    "tr": "Kardeş Türküler"
+   },
+   {
+    "concept_id": "yeni_turku",
+    "en": "Yeni Türkü",
+    "tr": "Yeni Türkü"
+   },
+   {
+    "concept_id": "grup_yorum",
+    "en": "Grup Yorum",
+    "tr": "Grup Yorum"
+   },
+   {
+    "concept_id": "bulutsuzluk_ozlemi",
+    "en": "Bulutsuzluk Özlemi",
+    "tr": "Bulutsuzluk Özlemi"
+   }
+  ],
+  "correct": "kardes_turkuler",
+  "source": "https://en.wikipedia.org/wiki/Kardeş_Türküler"
+ },
+ {
+  "key": "music_q0687",
+  "category_id": "music",
+  "subcategory_id": "bands",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which band's drummer lost an arm in a 1984 car crash and kept playing with a custom kit?",
+   "tr": "Hangi grubun davulcusu 1984'teki bir trafik kazasında kolunu kaybetti ve özel bir setle çalmaya devam etti?"
+  },
+  "options": [
+   {
+    "concept_id": "def_leppard",
+    "en": "Def Leppard",
+    "tr": "Def Leppard"
+   },
+   {
+    "concept_id": "iron_maiden",
+    "en": "Iron Maiden",
+    "tr": "Iron Maiden"
+   },
+   {
+    "concept_id": "judas_priest",
+    "en": "Judas Priest",
+    "tr": "Judas Priest"
+   },
+   {
+    "concept_id": "whitesnake",
+    "en": "Whitesnake",
+    "tr": "Whitesnake"
+   }
+  ],
+  "correct": "def_leppard",
+  "source": "https://en.wikipedia.org/wiki/Rick_Allen_(drummer)"
+ },
+ {
+  "key": "music_q0688",
+  "category_id": "music",
+  "subcategory_id": "instruments",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the pear-shaped Chinese lute with four strings called?",
+   "tr": "Dört telli, armut biçimli Çin lavtasına ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "pipa",
+    "en": "Pipa",
+    "tr": "Pipa"
+   },
+   {
+    "concept_id": "guzheng",
+    "en": "Guzheng",
+    "tr": "Guzheng"
+   },
+   {
+    "concept_id": "sanxian",
+    "en": "Sanxian",
+    "tr": "Sanxian"
+   },
+   {
+    "concept_id": "dizi",
+    "en": "Dizi",
+    "tr": "Dizi"
+   }
+  ],
+  "correct": "pipa",
+  "source": "https://en.wikipedia.org/wiki/Pipa"
+ },
+ {
+  "key": "music_q0689",
+  "category_id": "music",
+  "subcategory_id": "instruments",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Anatolian \"mey\", with its mournful tone, belongs to which instrument type?",
+   "tr": "Hüzünlü sesiyle Anadolu'nun \"mey\"i hangi çalgı türüne girer?"
+  },
+  "options": [
+   {
+    "concept_id": "double_reed_wind",
+    "en": "Double-reed wind",
+    "tr": "Çift kamışlı nefesli"
+   },
+   {
+    "concept_id": "bowed_string",
+    "en": "Bowed string",
+    "tr": "Yaylı telli"
+   },
+   {
+    "concept_id": "frame_drum",
+    "en": "Frame drum",
+    "tr": "Çerçeve davul"
+   },
+   {
+    "concept_id": "plucked_lute",
+    "en": "Plucked lute",
+    "tr": "Mızraplı telli"
+   }
+  ],
+  "correct": "double_reed_wind",
+  "source": "https://en.wikipedia.org/wiki/Mey"
+ },
+ {
+  "key": "music_q0690",
+  "category_id": "music",
+  "subcategory_id": "instruments",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "The octobass, a giant string bass from 1850, is so tall that the player must use what?",
+   "tr": "1850'den kalma dev yaylı bas octobass o kadar uzundur ki çalan kişi ne kullanmak zorundadır?"
+  },
+  "options": [
+   {
+    "concept_id": "levers_and_pedals_to_stop_the_strings",
+    "en": "Levers and pedals to stop the strings",
+    "tr": "Telleri basmak için kollar ve pedallar"
+   },
+   {
+    "concept_id": "two_bows_at_once",
+    "en": "Two bows at once",
+    "tr": "Aynı anda iki yay"
+   },
+   {
+    "concept_id": "a_robotic_arm",
+    "en": "A robotic arm",
+    "tr": "Robotik bir kol"
+   },
+   {
+    "concept_id": "a_trained_assistant_for_each_string",
+    "en": "A trained assistant for each string",
+    "tr": "Her tel için bir yardımcı"
+   }
+  ],
+  "correct": "levers_and_pedals_to_stop_the_strings",
+  "source": "https://en.wikipedia.org/wiki/Octobass"
+ },
+ {
+  "key": "music_q0691",
+  "category_id": "music",
+  "subcategory_id": "albums",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which 1969 Captain Beefheart double album is famous for its chaotic, jagged sound?",
+   "tr": "Kaotik, sivri sesiyle ünlü 1969 tarihli Captain Beefheart çift albümü hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "trout_mask_replica",
+    "en": "Trout Mask Replica",
+    "tr": "Trout Mask Replica"
+   },
+   {
+    "concept_id": "safe_as_milk",
+    "en": "Safe as Milk",
+    "tr": "Safe as Milk"
+   },
+   {
+    "concept_id": "lick_my_decals_off_baby",
+    "en": "Lick My Decals Off, Baby",
+    "tr": "Lick My Decals Off, Baby"
+   },
+   {
+    "concept_id": "clear_spot",
+    "en": "Clear Spot",
+    "tr": "Clear Spot"
+   }
+  ],
+  "correct": "trout_mask_replica",
+  "source": "https://en.wikipedia.org/wiki/Trout_Mask_Replica"
+ },
+ {
+  "key": "music_q0692",
+  "category_id": "music",
+  "subcategory_id": "albums",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which band's 1977 debut Marquee Moon became a pillar of New York's CBGB scene?",
+   "tr": "Hangi grubun 1977 tarihli ilk albümü Marquee Moon, New York'un CBGB sahnesinin temel taşlarından oldu?"
+  },
+  "options": [
+   {
+    "concept_id": "television",
+    "en": "Television",
+    "tr": "Television"
+   },
+   {
+    "concept_id": "patti_smith_group",
+    "en": "Patti Smith Group",
+    "tr": "Patti Smith Group"
+   },
+   {
+    "concept_id": "ramones",
+    "en": "Ramones",
+    "tr": "Ramones"
+   },
+   {
+    "concept_id": "suicide",
+    "en": "Suicide",
+    "tr": "Suicide"
+   }
+  ],
+  "correct": "television",
+  "source": "https://en.wikipedia.org/wiki/Marquee_Moon"
+ },
+ {
+  "key": "music_q0693",
+  "category_id": "music",
+  "subcategory_id": "albums",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which 1968 Brazilian album served as the manifesto of the Tropicália movement?",
+   "tr": "Hangi 1968 Brezilya albümü Tropicália akımının manifestosu oldu?"
+  },
+  "options": [
+   {
+    "concept_id": "tropicalia_ou_panis_et_circencis",
+    "en": "Tropicália ou Panis et Circencis",
+    "tr": "Tropicália ou Panis et Circencis"
+   },
+   {
+    "concept_id": "construcao",
+    "en": "Construção",
+    "tr": "Construção"
+   },
+   {
+    "concept_id": "clube_da_esquina",
+    "en": "Clube da Esquina",
+    "tr": "Clube da Esquina"
+   },
+   {
+    "concept_id": "elis_tom",
+    "en": "Elis & Tom",
+    "tr": "Elis & Tom"
+   }
+  ],
+  "correct": "tropicalia_ou_panis_et_circencis",
+  "source": "https://en.wikipedia.org/wiki/Tropicália:_ou_Panis_et_Circencis"
+ },
+ {
+  "key": "music_q0694",
+  "category_id": "music",
+  "subcategory_id": "albums",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which 1966 Beatles album was recalled because its cover showed them with raw meat and broken dolls?",
+   "tr": "Hangi 1966 Beatles albümü, kapağında grubu çiğ et ve kırık oyuncak bebeklerle gösterdiği için toplatıldı?"
+  },
+  "options": [
+   {
+    "concept_id": "yesterday_and_today",
+    "en": "Yesterday and Today",
+    "tr": "Yesterday and Today"
+   },
+   {
+    "concept_id": "beatles_for_sale",
+    "en": "Beatles for Sale",
+    "tr": "Beatles for Sale"
+   },
+   {
+    "concept_id": "rubber_soul",
+    "en": "Rubber Soul",
+    "tr": "Rubber Soul"
+   },
+   {
+    "concept_id": "magical_mystery_tour",
+    "en": "Magical Mystery Tour",
+    "tr": "Magical Mystery Tour"
+   }
+  ],
+  "correct": "yesterday_and_today",
+  "source": "https://en.wikipedia.org/wiki/Yesterday_and_Today"
+ },
+ {
+  "key": "music_q0695",
+  "category_id": "music",
+  "subcategory_id": "music_history",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which 14th-century French poet-composer was a master of the \"Ars nova\" style?",
+   "tr": "Hangi 14. yüzyıl Fransız şair-bestecisi \"Ars nova\" üslubunun ustasıydı?"
+  },
+  "options": [
+   {
+    "concept_id": "guillaume_de_machaut",
+    "en": "Guillaume de Machaut",
+    "tr": "Guillaume de Machaut"
+   },
+   {
+    "concept_id": "josquin_des_prez",
+    "en": "Josquin des Prez",
+    "tr": "Josquin des Prez"
+   },
+   {
+    "concept_id": "perotin",
+    "en": "Pérotin",
+    "tr": "Pérotin"
+   },
+   {
+    "concept_id": "guillaume_du_fay",
+    "en": "Guillaume Du Fay",
+    "tr": "Guillaume Du Fay"
+   }
+  ],
+  "correct": "guillaume_de_machaut",
+  "source": "https://en.wikipedia.org/wiki/Guillaume_de_Machaut"
+ },
+ {
+  "key": "music_q0696",
+  "category_id": "music",
+  "subcategory_id": "music_history",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which notation system, devised around 1813 by an Armenian musician, was used to write down Ottoman music?",
+   "tr": "1813 civarında Ermeni bir müzisyenin geliştirdiği hangi notasyon sistemi Osmanlı müziğini yazmak için kullanıldı?"
+  },
+  "options": [
+   {
+    "concept_id": "hamparsum_notation",
+    "en": "Hamparsum notation",
+    "tr": "Hamparsum notası"
+   },
+   {
+    "concept_id": "ebced_notation",
+    "en": "Ebced notation",
+    "tr": "Ebced notası"
+   },
+   {
+    "concept_id": "byzantine_neumes",
+    "en": "Byzantine neumes",
+    "tr": "Bizans nevmaları"
+   },
+   {
+    "concept_id": "tonic_sol_fa",
+    "en": "Tonic sol-fa",
+    "tr": "Tonik sol-fa"
+   }
+  ],
+  "correct": "hamparsum_notation",
+  "source": "https://en.wikipedia.org/wiki/Hamparsum_Limonciyan"
+ },
+ {
+  "key": "music_q0697",
+  "category_id": "music",
+  "subcategory_id": "music_history",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "A performance of which John Cage organ piece in Halberstadt, Germany, is scheduled to last 639 years?",
+   "tr": "John Cage'in hangi org eserinin Almanya'nın Halberstadt kentindeki icrasının 639 yıl sürmesi planlanıyor?"
+  },
+  "options": [
+   {
+    "concept_id": "organ2_aslsp",
+    "en": "Organ²/ASLSP",
+    "tr": "Organ²/ASLSP"
+   },
+   {
+    "concept_id": "n_433",
+    "en": "4′33″",
+    "tr": "4′33″"
+   },
+   {
+    "concept_id": "sonatas_and_interludes",
+    "en": "Sonatas and Interludes",
+    "tr": "Sonatas and Interludes"
+   },
+   {
+    "concept_id": "music_of_changes",
+    "en": "Music of Changes",
+    "tr": "Music of Changes"
+   }
+  ],
+  "correct": "organ2_aslsp",
+  "source": "https://en.wikipedia.org/wiki/As_Slow_as_Possible"
+ },
+ {
+  "key": "music_q0698",
+  "category_id": "music",
+  "subcategory_id": "music_awards",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Whose \"Fairytale\" (2009) set a Eurovision points record under the old scoring system?",
+   "tr": "Kimin \"Fairytale\" (2009) şarkısı eski puanlama sisteminde Eurovision puan rekoru kırdı?"
+  },
+  "options": [
+   {
+    "concept_id": "alexander_rybak",
+    "en": "Alexander Rybak",
+    "tr": "Alexander Rybak"
+   },
+   {
+    "concept_id": "lena",
+    "en": "Lena",
+    "tr": "Lena"
+   },
+   {
+    "concept_id": "loreen",
+    "en": "Loreen",
+    "tr": "Loreen"
+   },
+   {
+    "concept_id": "dima_bilan",
+    "en": "Dima Bilan",
+    "tr": "Dima Bilan"
+   }
+  ],
+  "correct": "alexander_rybak",
+  "source": "https://en.wikipedia.org/wiki/Alexander_Rybak"
+ },
+ {
+  "key": "music_q0699",
+  "category_id": "music",
+  "subcategory_id": "music_awards",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "In 2006, which jazz pianist received a posthumous Pulitzer Prize special citation?",
+   "tr": "2006'da hangi caz piyanistine ölümünden sonra Pulitzer özel mansiyonu verildi?"
+  },
+  "options": [
+   {
+    "concept_id": "thelonious_monk",
+    "en": "Thelonious Monk",
+    "tr": "Thelonious Monk"
+   },
+   {
+    "concept_id": "bill_evans",
+    "en": "Bill Evans",
+    "tr": "Bill Evans"
+   },
+   {
+    "concept_id": "bud_powell",
+    "en": "Bud Powell",
+    "tr": "Bud Powell"
+   },
+   {
+    "concept_id": "art_tatum",
+    "en": "Art Tatum",
+    "tr": "Art Tatum"
+   }
+  ],
+  "correct": "thelonious_monk",
+  "source": "https://en.wikipedia.org/wiki/Thelonious_Monk"
+ },
+ {
+  "key": "music_q0700",
+  "category_id": "music",
+  "subcategory_id": "music_awards",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which 1973 Stevie Wonder album won him his first Album of the Year Grammy?",
+   "tr": "Stevie Wonder'a ilk Yılın Albümü Grammy'sini kazandıran 1973 albümü hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "innervisions",
+    "en": "Innervisions",
+    "tr": "Innervisions"
+   },
+   {
+    "concept_id": "talking_book",
+    "en": "Talking Book",
+    "tr": "Talking Book"
+   },
+   {
+    "concept_id": "fulfillingness_first_finale",
+    "en": "Fulfillingness' First Finale",
+    "tr": "Fulfillingness' First Finale"
+   },
+   {
+    "concept_id": "music_of_my_mind",
+    "en": "Music of My Mind",
+    "tr": "Music of My Mind"
+   }
+  ],
+  "correct": "innervisions",
+  "source": "https://en.wikipedia.org/wiki/Innervisions"
  }
 ]
