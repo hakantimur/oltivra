@@ -25198,5 +25198,3605 @@
   ],
   "correct": "a_family_crest",
   "source": "https://en.wikipedia.org/wiki/Mon_(emblem)"
+ },
+ {
+  "key": "food_culture_q0701",
+  "category_id": "food_culture",
+  "subcategory_id": "cuisines",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The croque monsieur, a toasted ham and cheese sandwich, is a café classic of which country?",
+   "tr": "Kızarmış jambonlu peynirli sandviç croque monsieur hangi ülkenin kafe klasiğidir?"
+  },
+  "options": [
+   {
+    "concept_id": "france",
+    "en": "France",
+    "tr": "Fransa"
+   },
+   {
+    "concept_id": "belgium",
+    "en": "Belgium",
+    "tr": "Belçika"
+   },
+   {
+    "concept_id": "switzerland",
+    "en": "Switzerland",
+    "tr": "İsviçre"
+   },
+   {
+    "concept_id": "canada",
+    "en": "Canada",
+    "tr": "Kanada"
+   }
+  ],
+  "correct": "france",
+  "source": "https://en.wikipedia.org/wiki/Croque_monsieur"
+ },
+ {
+  "key": "food_culture_q0702",
+  "category_id": "food_culture",
+  "subcategory_id": "cuisines",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Turkish mantı is traditionally topped with what?",
+   "tr": "Türk mantısının üzerine geleneksel olarak ne konur?"
+  },
+  "options": [
+   {
+    "concept_id": "garlic_yogurt_and_chilli_butter",
+    "en": "Garlic yogurt and chilli butter",
+    "tr": "Sarımsaklı yoğurt ve biberli tereyağı"
+   },
+   {
+    "concept_id": "maple_syrup",
+    "en": "Maple syrup",
+    "tr": "Akçaağaç şurubu"
+   },
+   {
+    "concept_id": "tomato_ketchup",
+    "en": "Tomato ketchup",
+    "tr": "Ketçap"
+   },
+   {
+    "concept_id": "melted_chocolate",
+    "en": "Melted chocolate",
+    "tr": "Eritilmiş çikolata"
+   }
+  ],
+  "correct": "garlic_yogurt_and_chilli_butter",
+  "source": "https://en.wikipedia.org/wiki/Manti_(food)"
+ },
+ {
+  "key": "food_culture_q0703",
+  "category_id": "food_culture",
+  "subcategory_id": "cuisines",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In Bologna itself, locals usually serve their meat ragù with which pasta instead of spaghetti?",
+   "tr": "Bologna'nın kendisinde yerliler etli ragu sosunu spagetti yerine genellikle hangi makarnayla servis eder?"
+  },
+  "options": [
+   {
+    "concept_id": "tagliatelle",
+    "en": "Tagliatelle",
+    "tr": "Tagliatelle"
+   },
+   {
+    "concept_id": "macaroni",
+    "en": "Macaroni",
+    "tr": "Makarna (macaroni)"
+   },
+   {
+    "concept_id": "ravioli",
+    "en": "Ravioli",
+    "tr": "Ravioli"
+   },
+   {
+    "concept_id": "farfalle",
+    "en": "Farfalle",
+    "tr": "Farfalle"
+   }
+  ],
+  "correct": "tagliatelle",
+  "source": "https://en.wikipedia.org/wiki/Bolognese_sauce"
+ },
+ {
+  "key": "food_culture_q0704",
+  "category_id": "food_culture",
+  "subcategory_id": "cuisines",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the Japanese packed lunch in a sectioned box called?",
+   "tr": "Bölmeli bir kutuda hazırlanan Japon öğle yemeğine ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "bento",
+    "en": "Bento",
+    "tr": "Bento"
+   },
+   {
+    "concept_id": "ramen",
+    "en": "Ramen",
+    "tr": "Ramen"
+   },
+   {
+    "concept_id": "sushi",
+    "en": "Sushi",
+    "tr": "Suşi"
+   },
+   {
+    "concept_id": "gyoza",
+    "en": "Gyoza",
+    "tr": "Gyoza"
+   }
+  ],
+  "correct": "bento",
+  "source": "https://en.wikipedia.org/wiki/Bento"
+ },
+ {
+  "key": "food_culture_q0705",
+  "category_id": "food_culture",
+  "subcategory_id": "cuisines",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Italy's regional cooking varies across how many official regions?",
+   "tr": "İtalya'nın bölgesel mutfağı kaç resmî bölgeye göre değişir?"
+  },
+  "options": [
+   {
+    "concept_id": "n_20",
+    "en": "20",
+    "tr": "20"
+   },
+   {
+    "concept_id": "n_5",
+    "en": "5",
+    "tr": "5"
+   },
+   {
+    "concept_id": "n_12",
+    "en": "12",
+    "tr": "12"
+   },
+   {
+    "concept_id": "n_50",
+    "en": "50",
+    "tr": "50"
+   }
+  ],
+  "correct": "n_20",
+  "source": "https://en.wikipedia.org/wiki/Regions_of_Italy"
+ },
+ {
+  "key": "food_culture_q0706",
+  "category_id": "food_culture",
+  "subcategory_id": "cuisines",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these is NOT a German food?",
+   "tr": "Bunlardan hangisi bir Alman yiyeceği DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "gyoza",
+    "en": "Gyoza",
+    "tr": "Gyoza"
+   },
+   {
+    "concept_id": "bratwurst",
+    "en": "Bratwurst",
+    "tr": "Bratwurst"
+   },
+   {
+    "concept_id": "sauerkraut",
+    "en": "Sauerkraut",
+    "tr": "Lahana turşusu (sauerkraut)"
+   },
+   {
+    "concept_id": "spatzle",
+    "en": "Spätzle",
+    "tr": "Spätzle"
+   }
+  ],
+  "correct": "gyoza",
+  "source": "https://en.wikipedia.org/wiki/German_cuisine"
+ },
+ {
+  "key": "food_culture_q0707",
+  "category_id": "food_culture",
+  "subcategory_id": "cuisines",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In an American diner you order your eggs \"sunny side up\". How do they arrive?",
+   "tr": "Bir Amerikan lokantasında yumurtanızı \"sunny side up\" istiyorsunuz. Nasıl gelir?"
+  },
+  "options": [
+   {
+    "concept_id": "fried_on_one_side_yolk_up_and_runny",
+    "en": "Fried on one side, yolk up and runny",
+    "tr": "Tek tarafı kızarmış, sarısı üstte ve akışkan"
+   },
+   {
+    "concept_id": "scrambled_with_cheese",
+    "en": "Scrambled with cheese",
+    "tr": "Peynirli çırpılmış"
+   },
+   {
+    "concept_id": "boiled_in_the_shell",
+    "en": "Boiled in the shell",
+    "tr": "Kabuğunda haşlanmış"
+   },
+   {
+    "concept_id": "poached_in_vinegar",
+    "en": "Poached in vinegar",
+    "tr": "Sirkeli suda poşe"
+   }
+  ],
+  "correct": "fried_on_one_side_yolk_up_and_runny",
+  "source": "https://en.wikipedia.org/wiki/Fried_egg"
+ },
+ {
+  "key": "food_culture_q0708",
+  "category_id": "food_culture",
+  "subcategory_id": "dishes",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the American comfort dish of pasta baked in a cheese sauce called?",
+   "tr": "Peynir sosunda fırınlanan makarnadan oluşan Amerikan yemeğine ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "mac_and_cheese",
+    "en": "Mac and cheese",
+    "tr": "Mac and cheese"
+   },
+   {
+    "concept_id": "lasagna",
+    "en": "Lasagna",
+    "tr": "Lazanya"
+   },
+   {
+    "concept_id": "pasta_primavera",
+    "en": "Pasta primavera",
+    "tr": "Pasta primavera"
+   },
+   {
+    "concept_id": "fettuccine_alfredo",
+    "en": "Fettuccine Alfredo",
+    "tr": "Fettuccine Alfredo"
+   }
+  ],
+  "correct": "mac_and_cheese",
+  "source": "https://en.wikipedia.org/wiki/Macaroni_and_cheese"
+ },
+ {
+  "key": "food_culture_q0709",
+  "category_id": "food_culture",
+  "subcategory_id": "dishes",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is pişmaniye, the famous sweet of Kocaeli?",
+   "tr": "Kocaeli'nin ünlü tatlısı pişmaniye nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "fine_fluffy_threads_of_sugar_and_flour",
+    "en": "Fine, fluffy threads of sugar and flour",
+    "tr": "Şeker ve undan ince, pamuksu iplikler"
+   },
+   {
+    "concept_id": "a_walnut_filled_pastry",
+    "en": "A walnut-filled pastry",
+    "tr": "Cevizli bir hamur işi"
+   },
+   {
+    "concept_id": "a_milk_pudding",
+    "en": "A milk pudding",
+    "tr": "Sütlü bir tatlı"
+   },
+   {
+    "concept_id": "a_candied_fruit",
+    "en": "A candied fruit",
+    "tr": "Şekerlenmiş bir meyve"
+   }
+  ],
+  "correct": "fine_fluffy_threads_of_sugar_and_flour",
+  "source": "https://en.wikipedia.org/wiki/Pişmaniye"
+ },
+ {
+  "key": "food_culture_q0710",
+  "category_id": "food_culture",
+  "subcategory_id": "dishes",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the British dish \"toad in the hole\" really made of?",
+   "tr": "İngiliz yemeği \"toad in the hole\" (delikteki kurbağa) aslında nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "sausages_baked_in_batter",
+    "en": "Sausages baked in batter",
+    "tr": "Hamur içinde fırınlanmış sosis"
+   },
+   {
+    "concept_id": "a_stuffed_frog",
+    "en": "A stuffed frog",
+    "tr": "İçi doldurulmuş kurbağa"
+   },
+   {
+    "concept_id": "fish_in_a_pie",
+    "en": "Fish in a pie",
+    "tr": "Turtada balık"
+   },
+   {
+    "concept_id": "eggs_in_toast",
+    "en": "Eggs in toast",
+    "tr": "Tostta yumurta"
+   }
+  ],
+  "correct": "sausages_baked_in_batter",
+  "source": "https://en.wikipedia.org/wiki/Toad_in_the_hole"
+ },
+ {
+  "key": "food_culture_q0711",
+  "category_id": "food_culture",
+  "subcategory_id": "dishes",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In a \"BLT\" sandwich, what do the letters stand for?",
+   "tr": "\"BLT\" sandviçinde harfler neyi temsil eder?"
+  },
+  "options": [
+   {
+    "concept_id": "bacon_lettuce_tomato",
+    "en": "Bacon, lettuce, tomato",
+    "tr": "Pastırma (bacon), marul, domates"
+   },
+   {
+    "concept_id": "beef_leek_tuna",
+    "en": "Beef, leek, tuna",
+    "tr": "Dana, pırasa, ton balığı"
+   },
+   {
+    "concept_id": "bread_lemon_turkey",
+    "en": "Bread, lemon, turkey",
+    "tr": "Ekmek, limon, hindi"
+   },
+   {
+    "concept_id": "butter_lamb_thyme",
+    "en": "Butter, lamb, thyme",
+    "tr": "Tereyağı, kuzu, kekik"
+   }
+  ],
+  "correct": "bacon_lettuce_tomato",
+  "source": "https://en.wikipedia.org/wiki/BLT"
+ },
+ {
+  "key": "food_culture_q0712",
+  "category_id": "food_culture",
+  "subcategory_id": "dishes",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The name of the French pastry \"mille-feuille\" means how many leaves?",
+   "tr": "Fransız pastası \"mille-feuille\"in adı kaç yaprak anlamına gelir?"
+  },
+  "options": [
+   {
+    "concept_id": "a_thousand",
+    "en": "A thousand",
+    "tr": "Bin"
+   },
+   {
+    "concept_id": "ten",
+    "en": "Ten",
+    "tr": "On"
+   },
+   {
+    "concept_id": "a_hundred",
+    "en": "A hundred",
+    "tr": "Yüz"
+   },
+   {
+    "concept_id": "a_million",
+    "en": "A million",
+    "tr": "Bir milyon"
+   }
+  ],
+  "correct": "a_thousand",
+  "source": "https://en.wikipedia.org/wiki/Mille-feuille"
+ },
+ {
+  "key": "food_culture_q0713",
+  "category_id": "food_culture",
+  "subcategory_id": "dishes",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these is NOT a kind of pie?",
+   "tr": "Bunlardan hangisi bir turta türü DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "omelette",
+    "en": "Omelette",
+    "tr": "Omlet"
+   },
+   {
+    "concept_id": "apple_pie",
+    "en": "Apple pie",
+    "tr": "Elmalı turta"
+   },
+   {
+    "concept_id": "pumpkin_pie",
+    "en": "Pumpkin pie",
+    "tr": "Balkabaklı turta"
+   },
+   {
+    "concept_id": "key_lime_pie",
+    "en": "Key lime pie",
+    "tr": "Key lime turtası"
+   }
+  ],
+  "correct": "omelette",
+  "source": "https://en.wikipedia.org/wiki/Pie"
+ },
+ {
+  "key": "food_culture_q0714",
+  "category_id": "food_culture",
+  "subcategory_id": "dishes",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "At a bar in Italy you ask for \"un caffè\". What will you be given?",
+   "tr": "İtalya'da bir barda \"un caffè\" istiyorsunuz. Size ne verilir?"
+  },
+  "options": [
+   {
+    "concept_id": "an_espresso",
+    "en": "An espresso",
+    "tr": "Bir espresso"
+   },
+   {
+    "concept_id": "a_large_filter_coffee",
+    "en": "A large filter coffee",
+    "tr": "Büyük bir filtre kahve"
+   },
+   {
+    "concept_id": "an_iced_coffee",
+    "en": "An iced coffee",
+    "tr": "Buzlu kahve"
+   },
+   {
+    "concept_id": "a_latte",
+    "en": "A latte",
+    "tr": "Latte"
+   }
+  ],
+  "correct": "an_espresso",
+  "source": "https://en.wikipedia.org/wiki/Espresso"
+ },
+ {
+  "key": "food_culture_q0715",
+  "category_id": "food_culture",
+  "subcategory_id": "ingredients",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Butter is made by churning what?",
+   "tr": "Tereyağı neyin çalkalanmasıyla yapılır?"
+  },
+  "options": [
+   {
+    "concept_id": "cream",
+    "en": "Cream",
+    "tr": "Kaymak (krema)"
+   },
+   {
+    "concept_id": "olive_oil",
+    "en": "Olive oil",
+    "tr": "Zeytinyağı"
+   },
+   {
+    "concept_id": "egg_yolks",
+    "en": "Egg yolks",
+    "tr": "Yumurta sarısı"
+   },
+   {
+    "concept_id": "coconut_water",
+    "en": "Coconut water",
+    "tr": "Hindistan cevizi suyu"
+   }
+  ],
+  "correct": "cream",
+  "source": "https://en.wikipedia.org/wiki/Butter"
+ },
+ {
+  "key": "food_culture_q0716",
+  "category_id": "food_culture",
+  "subcategory_id": "ingredients",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Aegean province of Turkey is famous for its dried figs?",
+   "tr": "Türkiye'nin hangi Ege ili kuru inciriyle ünlüdür?"
+  },
+  "options": [
+   {
+    "concept_id": "aydn",
+    "en": "Aydın",
+    "tr": "Aydın"
+   },
+   {
+    "concept_id": "rize",
+    "en": "Rize",
+    "tr": "Rize"
+   },
+   {
+    "concept_id": "kars",
+    "en": "Kars",
+    "tr": "Kars"
+   },
+   {
+    "concept_id": "van",
+    "en": "Van",
+    "tr": "Van"
+   }
+  ],
+  "correct": "aydn",
+  "source": "https://en.wikipedia.org/wiki/Aydın_Province"
+ },
+ {
+  "key": "food_culture_q0717",
+  "category_id": "food_culture",
+  "subcategory_id": "ingredients",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Chickpeas are also known by which Spanish-derived name?",
+   "tr": "Nohut, İspanyolcadan gelen hangi adla da bilinir?"
+  },
+  "options": [
+   {
+    "concept_id": "garbanzo_beans",
+    "en": "Garbanzo beans",
+    "tr": "Garbanzo"
+   },
+   {
+    "concept_id": "lima_beans",
+    "en": "Lima beans",
+    "tr": "Lima fasulyesi"
+   },
+   {
+    "concept_id": "pinto_beans",
+    "en": "Pinto beans",
+    "tr": "Barbunya (pinto)"
+   },
+   {
+    "concept_id": "fava_beans",
+    "en": "Fava beans",
+    "tr": "Bakla (fava)"
+   }
+  ],
+  "correct": "garbanzo_beans",
+  "source": "https://en.wikipedia.org/wiki/Chickpea"
+ },
+ {
+  "key": "food_culture_q0718",
+  "category_id": "food_culture",
+  "subcategory_id": "ingredients",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Cornflakes were first created in the 1890s at what kind of place?",
+   "tr": "Mısır gevreği ilk kez 1890'larda nasıl bir yerde yaratıldı?"
+  },
+  "options": [
+   {
+    "concept_id": "a_health_sanatorium",
+    "en": "A health sanatorium",
+    "tr": "Bir sağlık sanatoryumunda"
+   },
+   {
+    "concept_id": "a_royal_palace",
+    "en": "A royal palace",
+    "tr": "Bir kraliyet sarayında"
+   },
+   {
+    "concept_id": "an_army_camp",
+    "en": "An army camp",
+    "tr": "Bir ordu kampında"
+   },
+   {
+    "concept_id": "a_space_centre",
+    "en": "A space centre",
+    "tr": "Bir uzay merkezinde"
+   }
+  ],
+  "correct": "a_health_sanatorium",
+  "source": "https://en.wikipedia.org/wiki/Corn_flakes"
+ },
+ {
+  "key": "food_culture_q0719",
+  "category_id": "food_culture",
+  "subcategory_id": "ingredients",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "About how many teaspoons of sugar are in a regular 330 ml can of cola?",
+   "tr": "330 ml'lik normal bir kutu kolada yaklaşık kaç çay kaşığı şeker vardır?"
+  },
+  "options": [
+   {
+    "concept_id": "about_9",
+    "en": "About 9",
+    "tr": "Yaklaşık 9"
+   },
+   {
+    "concept_id": "about_1",
+    "en": "About 1",
+    "tr": "Yaklaşık 1"
+   },
+   {
+    "concept_id": "about_3",
+    "en": "About 3",
+    "tr": "Yaklaşık 3"
+   },
+   {
+    "concept_id": "about_30",
+    "en": "About 30",
+    "tr": "Yaklaşık 30"
+   }
+  ],
+  "correct": "about_9",
+  "source": "https://en.wikipedia.org/wiki/Coca-Cola"
+ },
+ {
+  "key": "food_culture_q0720",
+  "category_id": "food_culture",
+  "subcategory_id": "ingredients",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these is NOT a green vegetable?",
+   "tr": "Bunlardan hangisi yeşil bir sebze DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "carrot",
+    "en": "Carrot",
+    "tr": "Havuç"
+   },
+   {
+    "concept_id": "broccoli",
+    "en": "Broccoli",
+    "tr": "Brokoli"
+   },
+   {
+    "concept_id": "spinach",
+    "en": "Spinach",
+    "tr": "Ispanak"
+   },
+   {
+    "concept_id": "peas",
+    "en": "Peas",
+    "tr": "Bezelye"
+   }
+  ],
+  "correct": "carrot",
+  "source": "https://en.wikipedia.org/wiki/Vegetable"
+ },
+ {
+  "key": "food_culture_q0721",
+  "category_id": "food_culture",
+  "subcategory_id": "ingredients",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which has more fibre: brown rice or white rice?",
+   "tr": "Hangisinde daha çok lif vardır: esmer pirinçte mi, beyaz pirinçte mi?"
+  },
+  "options": [
+   {
+    "concept_id": "the_brown_one",
+    "en": "The brown one",
+    "tr": "Esmer olanda"
+   },
+   {
+    "concept_id": "white_rice",
+    "en": "White rice",
+    "tr": "Beyaz pirinçte"
+   },
+   {
+    "concept_id": "exactly_the_same",
+    "en": "Exactly the same",
+    "tr": "Tamamen aynı"
+   },
+   {
+    "concept_id": "neither_has_fibre",
+    "en": "Neither has fibre",
+    "tr": "İkisinde de lif yok"
+   }
+  ],
+  "correct": "the_brown_one",
+  "source": "https://en.wikipedia.org/wiki/Brown_rice"
+ },
+ {
+  "key": "food_culture_q0722",
+  "category_id": "food_culture",
+  "subcategory_id": "traditions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is traditionally smashed against a ship's hull when it is launched?",
+   "tr": "Bir gemi denize indirilirken gövdesine geleneksel olarak ne çarpılıp kırılır?"
+  },
+  "options": [
+   {
+    "concept_id": "a_bottle_of_champagne",
+    "en": "A bottle of champagne",
+    "tr": "Bir şişe şampanya"
+   },
+   {
+    "concept_id": "a_clay_pot",
+    "en": "A clay pot",
+    "tr": "Bir toprak çömlek"
+   },
+   {
+    "concept_id": "a_coconut",
+    "en": "A coconut",
+    "tr": "Bir hindistan cevizi"
+   },
+   {
+    "concept_id": "a_mirror",
+    "en": "A mirror",
+    "tr": "Bir ayna"
+   }
+  ],
+  "correct": "a_bottle_of_champagne",
+  "source": "https://en.wikipedia.org/wiki/Ship_naming_and_launching"
+ },
+ {
+  "key": "food_culture_q0723",
+  "category_id": "food_culture",
+  "subcategory_id": "traditions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What do people in Turkey say to someone at work, wishing their task goes easily?",
+   "tr": "Türkiye'de çalışan birine işinin kolay geçmesini dilemek için ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "kolay_gelsin",
+    "en": "Kolay gelsin",
+    "tr": "Kolay gelsin"
+   },
+   {
+    "concept_id": "afiyet_olsun",
+    "en": "Afiyet olsun",
+    "tr": "Afiyet olsun"
+   },
+   {
+    "concept_id": "gecmis_olsun",
+    "en": "Geçmiş olsun",
+    "tr": "Geçmiş olsun"
+   },
+   {
+    "concept_id": "gule_gule",
+    "en": "Güle güle",
+    "tr": "Güle güle"
+   }
+  ],
+  "correct": "kolay_gelsin",
+  "source": "https://en.wikipedia.org/wiki/Turkish_culture"
+ },
+ {
+  "key": "food_culture_q0724",
+  "category_id": "food_culture",
+  "subcategory_id": "traditions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is a Japanese hot-spring bath called?",
+   "tr": "Japon kaplıca banyosuna ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "onsen",
+    "en": "Onsen",
+    "tr": "Onsen"
+   },
+   {
+    "concept_id": "futon",
+    "en": "Futon",
+    "tr": "Futon"
+   },
+   {
+    "concept_id": "tatami",
+    "en": "Tatami",
+    "tr": "Tatami"
+   },
+   {
+    "concept_id": "sento",
+    "en": "Sento",
+    "tr": "Sento"
+   }
+  ],
+  "correct": "onsen",
+  "source": "https://en.wikipedia.org/wiki/Onsen"
+ },
+ {
+  "key": "food_culture_q0725",
+  "category_id": "food_culture",
+  "subcategory_id": "traditions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What do many people in Spain and Italy wear on New Year's Eve for luck?",
+   "tr": "İspanya ve İtalya'da pek çok kişi yılbaşı gecesi şans için ne giyer?"
+  },
+  "options": [
+   {
+    "concept_id": "red_underwear",
+    "en": "Red underwear",
+    "tr": "Kırmızı iç çamaşırı"
+   },
+   {
+    "concept_id": "odd_socks",
+    "en": "Odd socks",
+    "tr": "Tek tük çorap"
+   },
+   {
+    "concept_id": "a_paper_crown",
+    "en": "A paper crown",
+    "tr": "Kâğıttan taç"
+   },
+   {
+    "concept_id": "green_shoes",
+    "en": "Green shoes",
+    "tr": "Yeşil ayakkabı"
+   }
+  ],
+  "correct": "red_underwear",
+  "source": "https://en.wikipedia.org/wiki/New_Year's_Eve"
+ },
+ {
+  "key": "food_culture_q0726",
+  "category_id": "food_culture",
+  "subcategory_id": "traditions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Roughly how many cups of tea do people in the UK drink per day in total?",
+   "tr": "Birleşik Krallık'ta insanlar günde toplam yaklaşık kaç fincan çay içer?"
+  },
+  "options": [
+   {
+    "concept_id": "about_100_million",
+    "en": "About 100 million",
+    "tr": "Yaklaşık 100 milyon"
+   },
+   {
+    "concept_id": "about_1_million",
+    "en": "About 1 million",
+    "tr": "Yaklaşık 1 milyon"
+   },
+   {
+    "concept_id": "about_10_million",
+    "en": "About 10 million",
+    "tr": "Yaklaşık 10 milyon"
+   },
+   {
+    "concept_id": "about_1_billion",
+    "en": "About 1 billion",
+    "tr": "Yaklaşık 1 milyar"
+   }
+  ],
+  "correct": "about_100_million",
+  "source": "https://en.wikipedia.org/wiki/Tea_in_the_United_Kingdom"
+ },
+ {
+  "key": "food_culture_q0727",
+  "category_id": "food_culture",
+  "subcategory_id": "traditions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "At a dinner in coastal China, why shouldn't you flip a whole fish over?",
+   "tr": "Çin kıyılarında bir akşam yemeğinde bütün balığı neden ters çevirmemelisiniz?"
+  },
+  "options": [
+   {
+    "concept_id": "it_suggests_a_fishing_boat_capsizing",
+    "en": "It suggests a fishing boat capsizing",
+    "tr": "Balıkçı teknesinin alabora olmasını anımsatır"
+   },
+   {
+    "concept_id": "it_cools_the_fish",
+    "en": "It cools the fish",
+    "tr": "Balığı soğutur"
+   },
+   {
+    "concept_id": "it_is_the_host_s_job",
+    "en": "It is the host's job",
+    "tr": "Bu ev sahibinin işidir"
+   },
+   {
+    "concept_id": "it_spoils_the_sauce",
+    "en": "It spoils the sauce",
+    "tr": "Sosu bozar"
+   }
+  ],
+  "correct": "it_suggests_a_fishing_boat_capsizing",
+  "source": "https://en.wikipedia.org/wiki/Chinese_table_manners"
+ },
+ {
+  "key": "food_culture_q0728",
+  "category_id": "food_culture",
+  "subcategory_id": "traditions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these is NOT a traditional wedding anniversary gift?",
+   "tr": "Bunlardan hangisi geleneksel bir evlilik yıldönümü hediyesi DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "plastic",
+    "en": "Plastic",
+    "tr": "Plastik"
+   },
+   {
+    "concept_id": "paper",
+    "en": "Paper",
+    "tr": "Kâğıt"
+   },
+   {
+    "concept_id": "silver",
+    "en": "Silver",
+    "tr": "Gümüş"
+   },
+   {
+    "concept_id": "gold",
+    "en": "Gold",
+    "tr": "Altın"
+   }
+  ],
+  "correct": "plastic",
+  "source": "https://en.wikipedia.org/wiki/Wedding_anniversary"
+ },
+ {
+  "key": "food_culture_q0729",
+  "category_id": "food_culture",
+  "subcategory_id": "festivals",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Tết, the Lunar New Year, is the biggest holiday of which country?",
+   "tr": "Ay Takvimi Yeni Yılı Tết hangi ülkenin en büyük bayramıdır?"
+  },
+  "options": [
+   {
+    "concept_id": "vietnam",
+    "en": "Vietnam",
+    "tr": "Vietnam"
+   },
+   {
+    "concept_id": "japan",
+    "en": "Japan",
+    "tr": "Japonya"
+   },
+   {
+    "concept_id": "indonesia",
+    "en": "Indonesia",
+    "tr": "Endonezya"
+   },
+   {
+    "concept_id": "mongolia",
+    "en": "Mongolia",
+    "tr": "Moğolistan"
+   }
+  ],
+  "correct": "vietnam",
+  "source": "https://en.wikipedia.org/wiki/Tết"
+ },
+ {
+  "key": "food_culture_q0730",
+  "category_id": "food_culture",
+  "subcategory_id": "festivals",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "During Kurban Bayramı, how is the sacrificial meat traditionally divided?",
+   "tr": "Kurban Bayramı'nda kurban eti geleneksel olarak nasıl paylaştırılır?"
+  },
+  "options": [
+   {
+    "concept_id": "among_family_neighbours_and_the_poor",
+    "en": "Among family, neighbours and the poor",
+    "tr": "Aile, komşular ve yoksullar arasında"
+   },
+   {
+    "concept_id": "all_is_sold_at_the_market",
+    "en": "All is sold at the market",
+    "tr": "Tamamı pazarda satılır"
+   },
+   {
+    "concept_id": "it_goes_to_the_mosque_only",
+    "en": "It goes to the mosque only",
+    "tr": "Yalnızca camiye gider"
+   },
+   {
+    "concept_id": "it_is_kept_frozen_for_a_year",
+    "en": "It is kept frozen for a year",
+    "tr": "Bir yıl dondurulup saklanır"
+   }
+  ],
+  "correct": "among_family_neighbours_and_the_poor",
+  "source": "https://en.wikipedia.org/wiki/Eid_al-Adha"
+ },
+ {
+  "key": "food_culture_q0731",
+  "category_id": "food_culture",
+  "subcategory_id": "festivals",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What are Brazil's June festivals, with bonfires, corn dishes and square dancing, called?",
+   "tr": "Brezilya'nın şenlik ateşleri, mısır yemekleri ve kare danslarıyla haziran şenliklerine ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "festas_juninas",
+    "en": "Festas Juninas",
+    "tr": "Festas Juninas"
+   },
+   {
+    "concept_id": "carnaval",
+    "en": "Carnaval",
+    "tr": "Karnaval"
+   },
+   {
+    "concept_id": "reveillon",
+    "en": "Réveillon",
+    "tr": "Réveillon"
+   },
+   {
+    "concept_id": "oktoberfest",
+    "en": "Oktoberfest",
+    "tr": "Oktoberfest"
+   }
+  ],
+  "correct": "festas_juninas",
+  "source": "https://en.wikipedia.org/wiki/Festa_Junina"
+ },
+ {
+  "key": "food_culture_q0732",
+  "category_id": "food_culture",
+  "subcategory_id": "festivals",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "On St Lucia's Day in Sweden, what does the girl playing Lucia wear on her head?",
+   "tr": "İsveç'te Aziz Lucia Günü'nde Lucia'yı canlandıran kız başına ne takar?"
+  },
+  "options": [
+   {
+    "concept_id": "a_crown_of_candles",
+    "en": "A crown of candles",
+    "tr": "Mumlardan bir taç"
+   },
+   {
+    "concept_id": "a_pumpkin",
+    "en": "A pumpkin",
+    "tr": "Bir balkabağı"
+   },
+   {
+    "concept_id": "reindeer_antlers",
+    "en": "Reindeer antlers",
+    "tr": "Ren geyiği boynuzları"
+   },
+   {
+    "concept_id": "a_fish",
+    "en": "A fish",
+    "tr": "Bir balık"
+   }
+  ],
+  "correct": "a_crown_of_candles",
+  "source": "https://en.wikipedia.org/wiki/Saint_Lucy's_Day"
+ },
+ {
+  "key": "food_culture_q0733",
+  "category_id": "food_culture",
+  "subcategory_id": "festivals",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Kwanzaa, the African-American cultural festival, begins on which date?",
+   "tr": "Afrikalı-Amerikalıların kültürel festivali Kwanzaa hangi tarihte başlar?"
+  },
+  "options": [
+   {
+    "concept_id": "n_26_december",
+    "en": "26 December",
+    "tr": "26 Aralık"
+   },
+   {
+    "concept_id": "n_1_february",
+    "en": "1 February",
+    "tr": "1 Şubat"
+   },
+   {
+    "concept_id": "n_4_july",
+    "en": "4 July",
+    "tr": "4 Temmuz"
+   },
+   {
+    "concept_id": "n_31_october",
+    "en": "31 October",
+    "tr": "31 Ekim"
+   }
+  ],
+  "correct": "n_26_december",
+  "source": "https://en.wikipedia.org/wiki/Kwanzaa"
+ },
+ {
+  "key": "food_culture_q0734",
+  "category_id": "food_culture",
+  "subcategory_id": "festivals",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these is NOT a New Year's Eve tradition?",
+   "tr": "Bunlardan hangisi bir yılbaşı gecesi geleneği DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "hunting_for_easter_eggs",
+    "en": "Hunting for Easter eggs",
+    "tr": "Paskalya yumurtası aramak"
+   },
+   {
+    "concept_id": "fireworks",
+    "en": "Fireworks",
+    "tr": "Havai fişek"
+   },
+   {
+    "concept_id": "a_midnight_countdown",
+    "en": "A midnight countdown",
+    "tr": "Gece yarısı geri sayım"
+   },
+   {
+    "concept_id": "making_resolutions",
+    "en": "Making resolutions",
+    "tr": "Yeni yıl kararları almak"
+   }
+  ],
+  "correct": "hunting_for_easter_eggs",
+  "source": "https://en.wikipedia.org/wiki/New_Year's_Eve"
+ },
+ {
+  "key": "food_culture_q0735",
+  "category_id": "food_culture",
+  "subcategory_id": "cultural_symbols",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In European folklore, which bird delivers new babies to their parents?",
+   "tr": "Avrupa folklorunda yeni doğan bebekleri ailelerine hangi kuş getirir?"
+  },
+  "options": [
+   {
+    "concept_id": "the_stork",
+    "en": "The stork",
+    "tr": "Leylek"
+   },
+   {
+    "concept_id": "the_owl",
+    "en": "The owl",
+    "tr": "Baykuş"
+   },
+   {
+    "concept_id": "the_swan",
+    "en": "The swan",
+    "tr": "Kuğu"
+   },
+   {
+    "concept_id": "the_crow",
+    "en": "The crow",
+    "tr": "Karga"
+   }
+  ],
+  "correct": "the_stork",
+  "source": "https://en.wikipedia.org/wiki/White_stork"
+ },
+ {
+  "key": "food_culture_q0736",
+  "category_id": "food_culture",
+  "subcategory_id": "cultural_symbols",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In Turkey and many Muslim countries, the Red Cross emblem appears as what?",
+   "tr": "Türkiye'de ve birçok Müslüman ülkede Kızılhaç amblemi hangi biçimde görünür?"
+  },
+  "options": [
+   {
+    "concept_id": "a_red_crescent",
+    "en": "A red crescent",
+    "tr": "Kızılay (kırmızı hilal)"
+   },
+   {
+    "concept_id": "a_red_star",
+    "en": "A red star",
+    "tr": "Kırmızı yıldız"
+   },
+   {
+    "concept_id": "a_green_cross",
+    "en": "A green cross",
+    "tr": "Yeşil haç"
+   },
+   {
+    "concept_id": "a_red_circle",
+    "en": "A red circle",
+    "tr": "Kırmızı daire"
+   }
+  ],
+  "correct": "a_red_crescent",
+  "source": "https://en.wikipedia.org/wiki/Turkish_Red_Crescent"
+ },
+ {
+  "key": "food_culture_q0737",
+  "category_id": "food_culture",
+  "subcategory_id": "cultural_symbols",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the decorative dot many Hindu women wear on the forehead called?",
+   "tr": "Pek çok Hindu kadının alnına taktığı süs noktasına ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "bindi",
+    "en": "Bindi",
+    "tr": "Bindi"
+   },
+   {
+    "concept_id": "henna",
+    "en": "Henna",
+    "tr": "Kına"
+   },
+   {
+    "concept_id": "tilak",
+    "en": "Tilak",
+    "tr": "Tilak"
+   },
+   {
+    "concept_id": "sari",
+    "en": "Sari",
+    "tr": "Sari"
+   }
+  ],
+  "correct": "bindi",
+  "source": "https://en.wikipedia.org/wiki/Bindi"
+ },
+ {
+  "key": "food_culture_q0738",
+  "category_id": "food_culture",
+  "subcategory_id": "cultural_symbols",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Why is the number 9 sometimes avoided in Japan?",
+   "tr": "Japonya'da 9 sayısından neden bazen kaçınılır?"
+  },
+  "options": [
+   {
+    "concept_id": "it_can_sound_like_the_word_for_suffering",
+    "en": "It can sound like the word for suffering",
+    "tr": "\"Acı\" kelimesine benzer okunabilir"
+   },
+   {
+    "concept_id": "it_is_the_emperor_s_number",
+    "en": "It is the emperor's number",
+    "tr": "İmparatorun sayısıdır"
+   },
+   {
+    "concept_id": "it_looks_like_a_snake",
+    "en": "It looks like a snake",
+    "tr": "Yılana benzer"
+   },
+   {
+    "concept_id": "it_means_goodbye",
+    "en": "It means goodbye",
+    "tr": "Elveda anlamına gelir"
+   }
+  ],
+  "correct": "it_can_sound_like_the_word_for_suffering",
+  "source": "https://en.wikipedia.org/wiki/Japanese_numerals"
+ },
+ {
+  "key": "food_culture_q0739",
+  "category_id": "food_culture",
+  "subcategory_id": "cultural_symbols",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Buddhist Dharma wheel usually has how many spokes?",
+   "tr": "Budist Dharma çarkında genellikle kaç parmak (kol) bulunur?"
+  },
+  "options": [
+   {
+    "concept_id": "n_8",
+    "en": "8",
+    "tr": "8"
+   },
+   {
+    "concept_id": "n_4",
+    "en": "4",
+    "tr": "4"
+   },
+   {
+    "concept_id": "n_12",
+    "en": "12",
+    "tr": "12"
+   },
+   {
+    "concept_id": "n_24",
+    "en": "24",
+    "tr": "24"
+   }
+  ],
+  "correct": "n_8",
+  "source": "https://en.wikipedia.org/wiki/Dharmachakra"
+ },
+ {
+  "key": "food_culture_q0740",
+  "category_id": "food_culture",
+  "subcategory_id": "cultural_symbols",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these is NOT an ancient Egyptian symbol?",
+   "tr": "Bunlardan hangisi bir Eski Mısır simgesi DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "shamrock",
+    "en": "Shamrock",
+    "tr": "Yonca (shamrock)"
+   },
+   {
+    "concept_id": "ankh",
+    "en": "Ankh",
+    "tr": "Ankh"
+   },
+   {
+    "concept_id": "scarab",
+    "en": "Scarab",
+    "tr": "Skarabe"
+   },
+   {
+    "concept_id": "djed_pillar",
+    "en": "Djed pillar",
+    "tr": "Djed sütunu"
+   }
+  ],
+  "correct": "shamrock",
+  "source": "https://en.wikipedia.org/wiki/Ancient_Egyptian_religion"
+ },
+ {
+  "key": "food_culture_q0741",
+  "category_id": "food_culture",
+  "subcategory_id": "cuisines",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Larb, sticky rice and green papaya salad are staples of which landlocked country?",
+   "tr": "Larb, yapışkan pirinç ve yeşil papaya salatası hangi denize kıyısı olmayan ülkenin temel yemekleridir?"
+  },
+  "options": [
+   {
+    "concept_id": "laos",
+    "en": "Laos",
+    "tr": "Laos"
+   },
+   {
+    "concept_id": "nepal",
+    "en": "Nepal",
+    "tr": "Nepal"
+   },
+   {
+    "concept_id": "mongolia",
+    "en": "Mongolia",
+    "tr": "Moğolistan"
+   },
+   {
+    "concept_id": "bhutan",
+    "en": "Bhutan",
+    "tr": "Butan"
+   }
+  ],
+  "correct": "laos",
+  "source": "https://en.wikipedia.org/wiki/Lao_cuisine"
+ },
+ {
+  "key": "food_culture_q0742",
+  "category_id": "food_culture",
+  "subcategory_id": "cuisines",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Lavash, the thin flatbread also used for Turkish dürüm, was first added to UNESCO's list in 2014 for which country?",
+   "tr": "Türk dürümünde de kullanılan ince lavaş, UNESCO listesine ilk kez 2014'te hangi ülke adına eklendi?"
+  },
+  "options": [
+   {
+    "concept_id": "armenia",
+    "en": "Armenia",
+    "tr": "Ermenistan"
+   },
+   {
+    "concept_id": "iran",
+    "en": "Iran",
+    "tr": "İran"
+   },
+   {
+    "concept_id": "greece",
+    "en": "Greece",
+    "tr": "Yunanistan"
+   },
+   {
+    "concept_id": "egypt",
+    "en": "Egypt",
+    "tr": "Mısır"
+   }
+  ],
+  "correct": "armenia",
+  "source": "https://en.wikipedia.org/wiki/Lavash"
+ },
+ {
+  "key": "food_culture_q0743",
+  "category_id": "food_culture",
+  "subcategory_id": "cuisines",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "India's fiery vindaloo curry traces its name to a dish brought to Goa by whom?",
+   "tr": "Hindistan'ın yakıcı vindaloo körisi adını Goa'ya kimlerin getirdiği bir yemekten alır?"
+  },
+  "options": [
+   {
+    "concept_id": "the_portuguese",
+    "en": "The Portuguese",
+    "tr": "Portekizliler"
+   },
+   {
+    "concept_id": "the_british",
+    "en": "The British",
+    "tr": "İngilizler"
+   },
+   {
+    "concept_id": "the_mongols",
+    "en": "The Mongols",
+    "tr": "Moğollar"
+   },
+   {
+    "concept_id": "the_dutch",
+    "en": "The Dutch",
+    "tr": "Hollandalılar"
+   }
+  ],
+  "correct": "the_portuguese",
+  "source": "https://en.wikipedia.org/wiki/Vindaloo"
+ },
+ {
+  "key": "food_culture_q0744",
+  "category_id": "food_culture",
+  "subcategory_id": "cuisines",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the Israeli pita sandwich of fried aubergine and hard-boiled egg called?",
+   "tr": "Kızarmış patlıcan ve haşlanmış yumurtalı İsrail pita sandviçine ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "sabich",
+    "en": "Sabich",
+    "tr": "Sabich"
+   },
+   {
+    "concept_id": "shakshuka",
+    "en": "Shakshuka",
+    "tr": "Şakşuka"
+   },
+   {
+    "concept_id": "falafel",
+    "en": "Falafel",
+    "tr": "Falafel"
+   },
+   {
+    "concept_id": "shawarma",
+    "en": "Shawarma",
+    "tr": "Şavurma"
+   }
+  ],
+  "correct": "sabich",
+  "source": "https://en.wikipedia.org/wiki/Sabich"
+ },
+ {
+  "key": "food_culture_q0745",
+  "category_id": "food_culture",
+  "subcategory_id": "cuisines",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "A Korean royal court meal, surasang, traditionally featured how many side dishes?",
+   "tr": "Kore saray sofrası surasang geleneksel olarak kaç yan yemek içerirdi?"
+  },
+  "options": [
+   {
+    "concept_id": "n_12",
+    "en": "12",
+    "tr": "12"
+   },
+   {
+    "concept_id": "n_3",
+    "en": "3",
+    "tr": "3"
+   },
+   {
+    "concept_id": "n_40",
+    "en": "40",
+    "tr": "40"
+   },
+   {
+    "concept_id": "n_100",
+    "en": "100",
+    "tr": "100"
+   }
+  ],
+  "correct": "n_12",
+  "source": "https://en.wikipedia.org/wiki/Korean_royal_court_cuisine"
+ },
+ {
+  "key": "food_culture_q0746",
+  "category_id": "food_culture",
+  "subcategory_id": "cuisines",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these is NOT an Ethiopian dish?",
+   "tr": "Bunlardan hangisi bir Etiyopya yemeği DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "tamale",
+    "en": "Tamale",
+    "tr": "Tamal"
+   },
+   {
+    "concept_id": "doro_wat",
+    "en": "Doro wat",
+    "tr": "Doro wat"
+   },
+   {
+    "concept_id": "kitfo",
+    "en": "Kitfo",
+    "tr": "Kitfo"
+   },
+   {
+    "concept_id": "shiro",
+    "en": "Shiro",
+    "tr": "Shiro"
+   }
+  ],
+  "correct": "tamale",
+  "source": "https://en.wikipedia.org/wiki/Ethiopian_cuisine"
+ },
+ {
+  "key": "food_culture_q0747",
+  "category_id": "food_culture",
+  "subcategory_id": "cuisines",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who eats more pasta per person each year: Italians or Americans?",
+   "tr": "Kişi başına yılda kim daha çok makarna yer: İtalyanlar mı, Amerikalılar mı?"
+  },
+  "options": [
+   {
+    "concept_id": "italians_by_far",
+    "en": "Italians, by far",
+    "tr": "İtalyanlar, açık ara"
+   },
+   {
+    "concept_id": "americans",
+    "en": "Americans",
+    "tr": "Amerikalılar"
+   },
+   {
+    "concept_id": "exactly_the_same",
+    "en": "Exactly the same",
+    "tr": "Tamamen aynı"
+   },
+   {
+    "concept_id": "neither_eats_pasta",
+    "en": "Neither eats pasta",
+    "tr": "İkisi de yemez"
+   }
+  ],
+  "correct": "italians_by_far",
+  "source": "https://en.wikipedia.org/wiki/Pasta"
+ },
+ {
+  "key": "food_culture_q0748",
+  "category_id": "food_culture",
+  "subcategory_id": "dishes",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Bigos hunter's stew, żurek sour soup and pierogi are classics of which country?",
+   "tr": "Bigos avcı yahnisi, żurek ekşi çorbası ve pierogi hangi ülkenin klasikleridir?"
+  },
+  "options": [
+   {
+    "concept_id": "poland",
+    "en": "Poland",
+    "tr": "Polonya"
+   },
+   {
+    "concept_id": "czech_republic",
+    "en": "Czech Republic",
+    "tr": "Çekya"
+   },
+   {
+    "concept_id": "lithuania",
+    "en": "Lithuania",
+    "tr": "Litvanya"
+   },
+   {
+    "concept_id": "hungary",
+    "en": "Hungary",
+    "tr": "Macaristan"
+   }
+  ],
+  "correct": "poland",
+  "source": "https://en.wikipedia.org/wiki/Polish_cuisine"
+ },
+ {
+  "key": "food_culture_q0749",
+  "category_id": "food_culture",
+  "subcategory_id": "dishes",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What does the name of the Turkish meatball \"kadınbudu köfte\" literally mean?",
+   "tr": "Türk köftesi \"kadınbudu\"nun adı kelimesi kelimesine ne anlama gelir?"
+  },
+  "options": [
+   {
+    "concept_id": "lady_s_thigh",
+    "en": "Lady's thigh",
+    "tr": "Kadın budu (kalçası)"
+   },
+   {
+    "concept_id": "sultan_s_finger",
+    "en": "Sultan's finger",
+    "tr": "Sultan parmağı"
+   },
+   {
+    "concept_id": "bride_s_cheek",
+    "en": "Bride's cheek",
+    "tr": "Gelin yanağı"
+   },
+   {
+    "concept_id": "vizier_s_ear",
+    "en": "Vizier's ear",
+    "tr": "Vezir kulağı"
+   }
+  ],
+  "correct": "lady_s_thigh",
+  "source": "https://en.wikipedia.org/wiki/Köfte"
+ },
+ {
+  "key": "food_culture_q0750",
+  "category_id": "food_culture",
+  "subcategory_id": "dishes",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "A popular legend says Southern \"hush puppies\" got their name how?",
+   "tr": "Popüler bir efsaneye göre Güney ABD'nin \"hush puppies\" topları adını nasıl aldı?"
+  },
+  "options": [
+   {
+    "concept_id": "cooks_threw_them_to_quiet_barking_dogs",
+    "en": "Cooks threw them to quiet barking dogs",
+    "tr": "Aşçılar havlayan köpekleri susturmak için atardı"
+   },
+   {
+    "concept_id": "they_were_made_for_puppies",
+    "en": "They were made for puppies",
+    "tr": "Yavru köpekler için yapıldı"
+   },
+   {
+    "concept_id": "a_chef_named_hush_invented_them",
+    "en": "A chef named Hush invented them",
+    "tr": "Hush adlı bir şef icat etti"
+   },
+   {
+    "concept_id": "they_were_eaten_in_secret",
+    "en": "They were eaten in secret",
+    "tr": "Gizlice yenirdi"
+   }
+  ],
+  "correct": "cooks_threw_them_to_quiet_barking_dogs",
+  "source": "https://en.wikipedia.org/wiki/Hushpuppy"
+ },
+ {
+  "key": "food_culture_q0751",
+  "category_id": "food_culture",
+  "subcategory_id": "dishes",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What are Brazil's chewy little cheese breads called?",
+   "tr": "Brezilya'nın çiğnemesi keyifli küçük peynirli ekmeklerine ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "pao_de_queijo",
+    "en": "Pão de queijo",
+    "tr": "Pão de queijo"
+   },
+   {
+    "concept_id": "brigadeiro",
+    "en": "Brigadeiro",
+    "tr": "Brigadeiro"
+   },
+   {
+    "concept_id": "coxinha",
+    "en": "Coxinha",
+    "tr": "Coxinha"
+   },
+   {
+    "concept_id": "pastel",
+    "en": "Pastel",
+    "tr": "Pastel"
+   }
+  ],
+  "correct": "pao_de_queijo",
+  "source": "https://en.wikipedia.org/wiki/Pão_de_queijo"
+ },
+ {
+  "key": "food_culture_q0752",
+  "category_id": "food_culture",
+  "subcategory_id": "dishes",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In which decade did Thailand's government promote pad thai as a national dish?",
+   "tr": "Tayland hükümeti pad thai'yi hangi on yılda ulusal yemek olarak tanıttı?"
+  },
+  "options": [
+   {
+    "concept_id": "n_1930s40s",
+    "en": "1930s–40s",
+    "tr": "1930'lar–40'lar"
+   },
+   {
+    "concept_id": "n_1800s",
+    "en": "1800s",
+    "tr": "1800'ler"
+   },
+   {
+    "concept_id": "n_1600s",
+    "en": "1600s",
+    "tr": "1600'ler"
+   },
+   {
+    "concept_id": "n_1990s",
+    "en": "1990s",
+    "tr": "1990'lar"
+   }
+  ],
+  "correct": "n_1930s40s",
+  "source": "https://en.wikipedia.org/wiki/Pad_thai"
+ },
+ {
+  "key": "food_culture_q0753",
+  "category_id": "food_culture",
+  "subcategory_id": "dishes",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these is NOT a kind of Turkish köfte?",
+   "tr": "Bunlardan hangisi bir Türk köftesi türü DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "gozleme",
+    "en": "Gözleme",
+    "tr": "Gözleme"
+   },
+   {
+    "concept_id": "inegol_kofte",
+    "en": "İnegöl köfte",
+    "tr": "İnegöl köfte"
+   },
+   {
+    "concept_id": "izmir_kofte",
+    "en": "İzmir köfte",
+    "tr": "İzmir köfte"
+   },
+   {
+    "concept_id": "akcaabat_kofte",
+    "en": "Akçaabat köfte",
+    "tr": "Akçaabat köfte"
+   }
+  ],
+  "correct": "gozleme",
+  "source": "https://en.wikipedia.org/wiki/Köfte"
+ },
+ {
+  "key": "food_culture_q0754",
+  "category_id": "food_culture",
+  "subcategory_id": "dishes",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "At a Belgian frites stand, which topping will you most likely be offered?",
+   "tr": "Bir Belçika patates kızartması büfesinde size büyük olasılıkla hangi sos önerilir?"
+  },
+  "options": [
+   {
+    "concept_id": "mayonnaise",
+    "en": "Mayonnaise",
+    "tr": "Mayonez"
+   },
+   {
+    "concept_id": "custard",
+    "en": "Custard",
+    "tr": "Muhallebi"
+   },
+   {
+    "concept_id": "honey",
+    "en": "Honey",
+    "tr": "Bal"
+   },
+   {
+    "concept_id": "soy_sauce",
+    "en": "Soy sauce",
+    "tr": "Soya sosu"
+   }
+  ],
+  "correct": "mayonnaise",
+  "source": "https://en.wikipedia.org/wiki/Belgian_fries"
+ },
+ {
+  "key": "food_culture_q0755",
+  "category_id": "food_culture",
+  "subcategory_id": "ingredients",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Seville oranges are famous for making which British breakfast spread?",
+   "tr": "Sevilla portakalları hangi İngiliz kahvaltılık sürülebilir ürünüyle ünlüdür?"
+  },
+  "options": [
+   {
+    "concept_id": "marmalade",
+    "en": "Marmalade",
+    "tr": "Marmelat"
+   },
+   {
+    "concept_id": "lemon_curd",
+    "en": "Lemon curd",
+    "tr": "Limon kremi"
+   },
+   {
+    "concept_id": "peanut_butter",
+    "en": "Peanut butter",
+    "tr": "Fıstık ezmesi"
+   },
+   {
+    "concept_id": "marmite",
+    "en": "Marmite",
+    "tr": "Marmite"
+   }
+  ],
+  "correct": "marmalade",
+  "source": "https://en.wikipedia.org/wiki/Marmalade"
+ },
+ {
+  "key": "food_culture_q0756",
+  "category_id": "food_culture",
+  "subcategory_id": "ingredients",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Bursa's famous \"kestane şekeri\" is a candied version of what?",
+   "tr": "Bursa'nın ünlü \"kestane şekeri\" neyin şekerlemesidir?"
+  },
+  "options": [
+   {
+    "concept_id": "chestnuts",
+    "en": "Chestnuts",
+    "tr": "Kestane"
+   },
+   {
+    "concept_id": "walnuts",
+    "en": "Walnuts",
+    "tr": "Ceviz"
+   },
+   {
+    "concept_id": "figs",
+    "en": "Figs",
+    "tr": "İncir"
+   },
+   {
+    "concept_id": "apricots",
+    "en": "Apricots",
+    "tr": "Kayısı"
+   }
+  ],
+  "correct": "chestnuts",
+  "source": "https://en.wikipedia.org/wiki/Marron_glacé"
+ },
+ {
+  "key": "food_culture_q0757",
+  "category_id": "food_culture",
+  "subcategory_id": "ingredients",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which common kitchen spice can be toxic if eaten by the spoonful?",
+   "tr": "Hangi yaygın mutfak baharatı kaşıkla yenirse zehirleyici olabilir?"
+  },
+  "options": [
+   {
+    "concept_id": "nutmeg",
+    "en": "Nutmeg",
+    "tr": "Muskat"
+   },
+   {
+    "concept_id": "cinnamon_sticks",
+    "en": "Cinnamon sticks",
+    "tr": "Çubuk tarçın"
+   },
+   {
+    "concept_id": "paprika",
+    "en": "Paprika",
+    "tr": "Kırmızı toz biber"
+   },
+   {
+    "concept_id": "oregano",
+    "en": "Oregano",
+    "tr": "Kekik"
+   }
+  ],
+  "correct": "nutmeg",
+  "source": "https://en.wikipedia.org/wiki/Nutmeg"
+ },
+ {
+  "key": "food_culture_q0758",
+  "category_id": "food_culture",
+  "subcategory_id": "ingredients",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the sweet red bean paste found in many Japanese sweets called?",
+   "tr": "Pek çok Japon tatlısında bulunan tatlı kırmızı fasulye ezmesine ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "anko",
+    "en": "Anko",
+    "tr": "Anko"
+   },
+   {
+    "concept_id": "mochi",
+    "en": "Mochi",
+    "tr": "Mochi"
+   },
+   {
+    "concept_id": "matcha",
+    "en": "Matcha",
+    "tr": "Matcha"
+   },
+   {
+    "concept_id": "wasabi",
+    "en": "Wasabi",
+    "tr": "Vasabi"
+   }
+  ],
+  "correct": "anko",
+  "source": "https://en.wikipedia.org/wiki/Red_bean_paste"
+ },
+ {
+  "key": "food_culture_q0759",
+  "category_id": "food_culture",
+  "subcategory_id": "ingredients",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "About how many honeybees does it take, over their whole lives, to make one teaspoon of honey?",
+   "tr": "Bir çay kaşığı bal yapmak için tüm ömürleri boyunca yaklaşık kaç bal arısı gerekir?"
+  },
+  "options": [
+   {
+    "concept_id": "about_12",
+    "en": "About 12",
+    "tr": "Yaklaşık 12"
+   },
+   {
+    "concept_id": "about_1",
+    "en": "About 1",
+    "tr": "Yaklaşık 1"
+   },
+   {
+    "concept_id": "about_500",
+    "en": "About 500",
+    "tr": "Yaklaşık 500"
+   },
+   {
+    "concept_id": "about_10_000",
+    "en": "About 10,000",
+    "tr": "Yaklaşık 10.000"
+   }
+  ],
+  "correct": "about_12",
+  "source": "https://en.wikipedia.org/wiki/Honey"
+ },
+ {
+  "key": "food_culture_q0760",
+  "category_id": "food_culture",
+  "subcategory_id": "ingredients",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these is NOT a type of sugar?",
+   "tr": "Bunlardan hangisi bir şeker türü DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "gelatine",
+    "en": "Gelatine",
+    "tr": "Jelatin"
+   },
+   {
+    "concept_id": "muscovado",
+    "en": "Muscovado",
+    "tr": "Muscovado"
+   },
+   {
+    "concept_id": "demerara",
+    "en": "Demerara",
+    "tr": "Demerara"
+   },
+   {
+    "concept_id": "caster",
+    "en": "Caster",
+    "tr": "Pudra şekeri (caster)"
+   }
+  ],
+  "correct": "gelatine",
+  "source": "https://en.wikipedia.org/wiki/Sugar"
+ },
+ {
+  "key": "food_culture_q0761",
+  "category_id": "food_culture",
+  "subcategory_id": "ingredients",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Gram for gram, which has more calories: almonds or chicken breast?",
+   "tr": "Gram başına hangisinde daha çok kalori vardır: bademde mi, tavuk göğsünde mi?"
+  },
+  "options": [
+   {
+    "concept_id": "almonds_by_far",
+    "en": "Almonds, by far",
+    "tr": "Bademde, açık ara"
+   },
+   {
+    "concept_id": "chicken_breast",
+    "en": "Chicken breast",
+    "tr": "Tavuk göğsünde"
+   },
+   {
+    "concept_id": "exactly_the_same",
+    "en": "Exactly the same",
+    "tr": "Tamamen aynı"
+   },
+   {
+    "concept_id": "neither_has_calories",
+    "en": "Neither has calories",
+    "tr": "İkisinde de yok"
+   }
+  ],
+  "correct": "almonds_by_far",
+  "source": "https://en.wikipedia.org/wiki/Almond"
+ },
+ {
+  "key": "food_culture_q0762",
+  "category_id": "food_culture",
+  "subcategory_id": "traditions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Fado music, azulejo tiles and the feeling of \"saudade\" are all part of which country's culture?",
+   "tr": "Fado müziği, azulejo çinileri ve \"saudade\" duygusu hangi ülkenin kültürünün parçasıdır?"
+  },
+  "options": [
+   {
+    "concept_id": "portugal",
+    "en": "Portugal",
+    "tr": "Portekiz"
+   },
+   {
+    "concept_id": "spain",
+    "en": "Spain",
+    "tr": "İspanya"
+   },
+   {
+    "concept_id": "brazil",
+    "en": "Brazil",
+    "tr": "Brezilya"
+   },
+   {
+    "concept_id": "italy",
+    "en": "Italy",
+    "tr": "İtalya"
+   }
+  ],
+  "correct": "portugal",
+  "source": "https://en.wikipedia.org/wiki/Culture_of_Portugal"
+ },
+ {
+  "key": "food_culture_q0763",
+  "category_id": "food_culture",
+  "subcategory_id": "traditions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "During bayram visits in Turkey, what do elders traditionally give children?",
+   "tr": "Türkiye'de bayram ziyaretlerinde büyükler çocuklara geleneksel olarak ne verir?"
+  },
+  "options": [
+   {
+    "concept_id": "pocket_money_bayram_harclg",
+    "en": "Pocket money (bayram harçlığı)",
+    "tr": "Bayram harçlığı"
+   },
+   {
+    "concept_id": "a_new_school_bag",
+    "en": "A new school bag",
+    "tr": "Yeni okul çantası"
+   },
+   {
+    "concept_id": "a_live_lamb",
+    "en": "A live lamb",
+    "tr": "Canlı kuzu"
+   },
+   {
+    "concept_id": "a_handwritten_poem",
+    "en": "A handwritten poem",
+    "tr": "El yazısı şiir"
+   }
+  ],
+  "correct": "pocket_money_bayram_harclg",
+  "source": "https://en.wikipedia.org/wiki/Turkish_culture"
+ },
+ {
+  "key": "food_culture_q0764",
+  "category_id": "food_culture",
+  "subcategory_id": "traditions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In Ghana, \"fantasy coffins\" are often shaped like what?",
+   "tr": "Gana'da \"fantezi tabutlar\" çoğu zaman neye benzetilir?"
+  },
+  "options": [
+   {
+    "concept_id": "something_from_their_life_e_g_a_fish",
+    "en": "Something from their life, e.g. a fish",
+    "tr": "Hayatından bir şeye, örneğin balığa"
+   },
+   {
+    "concept_id": "a_perfect_cube",
+    "en": "A perfect cube",
+    "tr": "Kusursuz bir küpe"
+   },
+   {
+    "concept_id": "an_upside_down_boat",
+    "en": "An upside-down boat",
+    "tr": "Ters bir tekneye"
+   },
+   {
+    "concept_id": "a_giant_egg",
+    "en": "A giant egg",
+    "tr": "Dev bir yumurtaya"
+   }
+  ],
+  "correct": "something_from_their_life_e_g_a_fish",
+  "source": "https://en.wikipedia.org/wiki/Fantasy_coffin"
+ },
+ {
+  "key": "food_culture_q0765",
+  "category_id": "food_culture",
+  "subcategory_id": "traditions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Swedish word means \"not too much, not too little, just right\"?",
+   "tr": "Hangi İsveççe kelime \"ne az ne çok, tam kararında\" anlamına gelir?"
+  },
+  "options": [
+   {
+    "concept_id": "lagom",
+    "en": "Lagom",
+    "tr": "Lagom"
+   },
+   {
+    "concept_id": "hygge",
+    "en": "Hygge",
+    "tr": "Hygge"
+   },
+   {
+    "concept_id": "sisu",
+    "en": "Sisu",
+    "tr": "Sisu"
+   },
+   {
+    "concept_id": "fika",
+    "en": "Fika",
+    "tr": "Fika"
+   }
+  ],
+  "correct": "lagom",
+  "source": "https://en.wikipedia.org/wiki/Lagom"
+ },
+ {
+  "key": "food_culture_q0766",
+  "category_id": "food_culture",
+  "subcategory_id": "traditions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In a Hindu wedding, the couple take how many steps or circles around the sacred fire?",
+   "tr": "Bir Hindu düğününde çift kutsal ateşin etrafında kaç adım ya da tur atar?"
+  },
+  "options": [
+   {
+    "concept_id": "n_7",
+    "en": "7",
+    "tr": "7"
+   },
+   {
+    "concept_id": "n_3",
+    "en": "3",
+    "tr": "3"
+   },
+   {
+    "concept_id": "n_9",
+    "en": "9",
+    "tr": "9"
+   },
+   {
+    "concept_id": "n_12",
+    "en": "12",
+    "tr": "12"
+   }
+  ],
+  "correct": "n_7",
+  "source": "https://en.wikipedia.org/wiki/Saptapadi"
+ },
+ {
+  "key": "food_culture_q0767",
+  "category_id": "food_culture",
+  "subcategory_id": "traditions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these is NOT something people say before starting a meal?",
+   "tr": "Bunlardan hangisi yemeğe başlamadan önce söylenen bir söz DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "gesundheit",
+    "en": "Gesundheit",
+    "tr": "Gesundheit (Çok yaşa)"
+   },
+   {
+    "concept_id": "bon_appetit",
+    "en": "Bon appétit",
+    "tr": "Bon appétit"
+   },
+   {
+    "concept_id": "itadakimasu",
+    "en": "Itadakimasu",
+    "tr": "Itadakimasu"
+   },
+   {
+    "concept_id": "guten_appetit",
+    "en": "Guten Appetit",
+    "tr": "Guten Appetit"
+   }
+  ],
+  "correct": "gesundheit",
+  "source": "https://en.wikipedia.org/wiki/Grace_(prayer)"
+ },
+ {
+  "key": "food_culture_q0768",
+  "category_id": "food_culture",
+  "subcategory_id": "traditions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "You're eating with a Korean family. Who should lift their spoon first?",
+   "tr": "Koreli bir aileyle yemek yiyorsunuz. Kaşığını ilk kim kaldırmalı?"
+  },
+  "options": [
+   {
+    "concept_id": "the_eldest_person_at_the_table",
+    "en": "The eldest person at the table",
+    "tr": "Sofradaki en yaşlı kişi"
+   },
+   {
+    "concept_id": "the_youngest_child",
+    "en": "The youngest child",
+    "tr": "En küçük çocuk"
+   },
+   {
+    "concept_id": "the_guest_of_honour_always",
+    "en": "The guest of honour, always",
+    "tr": "Her zaman onur konuğu"
+   },
+   {
+    "concept_id": "whoever_is_hungriest",
+    "en": "Whoever is hungriest",
+    "tr": "En aç olan"
+   }
+  ],
+  "correct": "the_eldest_person_at_the_table",
+  "source": "https://en.wikipedia.org/wiki/Korean_cuisine"
+ },
+ {
+  "key": "food_culture_q0769",
+  "category_id": "food_culture",
+  "subcategory_id": "festivals",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Turkish province hosts an opera and ballet festival in the ancient Aspendos theatre?",
+   "tr": "Hangi Türk ili antik Aspendos tiyatrosunda bir opera ve bale festivaline ev sahipliği yapar?"
+  },
+  "options": [
+   {
+    "concept_id": "antalya",
+    "en": "Antalya",
+    "tr": "Antalya"
+   },
+   {
+    "concept_id": "izmir",
+    "en": "İzmir",
+    "tr": "İzmir"
+   },
+   {
+    "concept_id": "mugla",
+    "en": "Muğla",
+    "tr": "Muğla"
+   },
+   {
+    "concept_id": "mersin",
+    "en": "Mersin",
+    "tr": "Mersin"
+   }
+  ],
+  "correct": "antalya",
+  "source": "https://en.wikipedia.org/wiki/Aspendos"
+ },
+ {
+  "key": "food_culture_q0770",
+  "category_id": "food_culture",
+  "subcategory_id": "festivals",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "At Oaxaca's \"Night of the Radishes\" each December, what are the sculptures carved from?",
+   "tr": "Oaxaca'da her aralık yapılan \"Turp Gecesi\"nde heykeller neyden oyulur?"
+  },
+  "options": [
+   {
+    "concept_id": "giant_radishes",
+    "en": "Giant radishes",
+    "tr": "Dev turplardan"
+   },
+   {
+    "concept_id": "ice",
+    "en": "Ice",
+    "tr": "Buzdan"
+   },
+   {
+    "concept_id": "chocolate",
+    "en": "Chocolate",
+    "tr": "Çikolatadan"
+   },
+   {
+    "concept_id": "soap",
+    "en": "Soap",
+    "tr": "Sabundan"
+   }
+  ],
+  "correct": "giant_radishes",
+  "source": "https://en.wikipedia.org/wiki/Night_of_the_Radishes"
+ },
+ {
+  "key": "food_culture_q0771",
+  "category_id": "food_culture",
+  "subcategory_id": "festivals",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Hindu festival ends with statues of the elephant-headed god being immersed in water?",
+   "tr": "Hangi Hindu festivali fil başlı tanrının heykellerinin suya bırakılmasıyla sona erer?"
+  },
+  "options": [
+   {
+    "concept_id": "ganesh_chaturthi",
+    "en": "Ganesh Chaturthi",
+    "tr": "Ganesh Chaturthi"
+   },
+   {
+    "concept_id": "holi",
+    "en": "Holi",
+    "tr": "Holi"
+   },
+   {
+    "concept_id": "onam",
+    "en": "Onam",
+    "tr": "Onam"
+   },
+   {
+    "concept_id": "pongal",
+    "en": "Pongal",
+    "tr": "Pongal"
+   }
+  ],
+  "correct": "ganesh_chaturthi",
+  "source": "https://en.wikipedia.org/wiki/Ganesh_Chaturthi"
+ },
+ {
+  "key": "food_culture_q0772",
+  "category_id": "food_culture",
+  "subcategory_id": "festivals",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Many Orthodox Christians, such as in Russia and Serbia, celebrate Christmas on which date?",
+   "tr": "Rusya ve Sırbistan gibi yerlerdeki pek çok Ortodoks Hristiyan Noel'i hangi tarihte kutlar?"
+  },
+  "options": [
+   {
+    "concept_id": "n_7_january",
+    "en": "7 January",
+    "tr": "7 Ocak"
+   },
+   {
+    "concept_id": "n_25_december",
+    "en": "25 December",
+    "tr": "25 Aralık"
+   },
+   {
+    "concept_id": "n_6_december",
+    "en": "6 December",
+    "tr": "6 Aralık"
+   },
+   {
+    "concept_id": "n_1_january",
+    "en": "1 January",
+    "tr": "1 Ocak"
+   }
+  ],
+  "correct": "n_7_january",
+  "source": "https://en.wikipedia.org/wiki/Christmas_in_Russia"
+ },
+ {
+  "key": "food_culture_q0773",
+  "category_id": "food_culture",
+  "subcategory_id": "festivals",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Waitangi Day, marking an 1840 treaty with Māori chiefs, is the national day of which country?",
+   "tr": "Maori şefleriyle yapılan 1840 antlaşmasını anan Waitangi Günü hangi ülkenin ulusal günüdür?"
+  },
+  "options": [
+   {
+    "concept_id": "new_zealand",
+    "en": "New Zealand",
+    "tr": "Yeni Zelanda"
+   },
+   {
+    "concept_id": "australia",
+    "en": "Australia",
+    "tr": "Avustralya"
+   },
+   {
+    "concept_id": "fiji",
+    "en": "Fiji",
+    "tr": "Fiji"
+   },
+   {
+    "concept_id": "samoa",
+    "en": "Samoa",
+    "tr": "Samoa"
+   }
+  ],
+  "correct": "new_zealand",
+  "source": "https://en.wikipedia.org/wiki/Waitangi_Day"
+ },
+ {
+  "key": "food_culture_q0774",
+  "category_id": "food_culture",
+  "subcategory_id": "festivals",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these is NOT a Chinese festival?",
+   "tr": "Bunlardan hangisi bir Çin festivali DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "obon",
+    "en": "Obon",
+    "tr": "Obon"
+   },
+   {
+    "concept_id": "qingming",
+    "en": "Qingming",
+    "tr": "Qingming"
+   },
+   {
+    "concept_id": "dragon_boat_festival",
+    "en": "Dragon Boat Festival",
+    "tr": "Ejderha Teknesi Festivali"
+   },
+   {
+    "concept_id": "lantern_festival",
+    "en": "Lantern Festival",
+    "tr": "Fener Festivali"
+   }
+  ],
+  "correct": "obon",
+  "source": "https://en.wikipedia.org/wiki/Festivals_in_China"
+ },
+ {
+  "key": "food_culture_q0775",
+  "category_id": "food_culture",
+  "subcategory_id": "cultural_symbols",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The bronze Hittite sun disc is a well-known symbol of which Turkish city?",
+   "tr": "Bronz Hitit güneş kursu hangi Türk şehrinin tanınmış simgesidir?"
+  },
+  "options": [
+   {
+    "concept_id": "ankara",
+    "en": "Ankara",
+    "tr": "Ankara"
+   },
+   {
+    "concept_id": "konya",
+    "en": "Konya",
+    "tr": "Konya"
+   },
+   {
+    "concept_id": "izmir",
+    "en": "İzmir",
+    "tr": "İzmir"
+   },
+   {
+    "concept_id": "bursa",
+    "en": "Bursa",
+    "tr": "Bursa"
+   }
+  ],
+  "correct": "ankara",
+  "source": "https://en.wikipedia.org/wiki/Hittites"
+ },
+ {
+  "key": "food_culture_q0776",
+  "category_id": "food_culture",
+  "subcategory_id": "cultural_symbols",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Pairs of stone lions guarding Chinese temples and palaces are called what in English?",
+   "tr": "Çin tapınaklarını ve saraylarını bekleyen taş aslan çiftlerine İngilizcede ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "foo_dogs",
+    "en": "Foo dogs",
+    "tr": "Foo köpekleri"
+   },
+   {
+    "concept_id": "sphinxes",
+    "en": "Sphinxes",
+    "tr": "Sfenksler"
+   },
+   {
+    "concept_id": "griffins",
+    "en": "Griffins",
+    "tr": "Grifonlar"
+   },
+   {
+    "concept_id": "gargoyles",
+    "en": "Gargoyles",
+    "tr": "Gargoyller"
+   }
+  ],
+  "correct": "foo_dogs",
+  "source": "https://en.wikipedia.org/wiki/Chinese_guardian_lions"
+ },
+ {
+  "key": "food_culture_q0777",
+  "category_id": "food_culture",
+  "subcategory_id": "cultural_symbols",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Why do many Italians carry a small red horn charm, the cornicello?",
+   "tr": "Pek çok İtalyan neden küçük kırmızı boynuz tılsımı cornicello taşır?"
+  },
+  "options": [
+   {
+    "concept_id": "to_ward_off_the_evil_eye",
+    "en": "To ward off the evil eye",
+    "tr": "Nazardan korunmak için"
+   },
+   {
+    "concept_id": "to_show_they_are_married",
+    "en": "To show they are married",
+    "tr": "Evli olduklarını göstermek için"
+   },
+   {
+    "concept_id": "to_call_for_rain",
+    "en": "To call for rain",
+    "tr": "Yağmur çağırmak için"
+   },
+   {
+    "concept_id": "to_support_a_football_club",
+    "en": "To support a football club",
+    "tr": "Bir futbol kulübünü desteklemek için"
+   }
+  ],
+  "correct": "to_ward_off_the_evil_eye",
+  "source": "https://en.wikipedia.org/wiki/Cornicello"
+ },
+ {
+  "key": "food_culture_q0778",
+  "category_id": "food_culture",
+  "subcategory_id": "cultural_symbols",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "A traditional Buddhist mala, or prayer bead string, has how many beads?",
+   "tr": "Geleneksel bir Budist mala (tespih) kaç taneden oluşur?"
+  },
+  "options": [
+   {
+    "concept_id": "n_108",
+    "en": "108",
+    "tr": "108"
+   },
+   {
+    "concept_id": "n_33",
+    "en": "33",
+    "tr": "33"
+   },
+   {
+    "concept_id": "n_50",
+    "en": "50",
+    "tr": "50"
+   },
+   {
+    "concept_id": "n_99",
+    "en": "99",
+    "tr": "99"
+   }
+  ],
+  "correct": "n_108",
+  "source": "https://en.wikipedia.org/wiki/Japamala"
+ },
+ {
+  "key": "food_culture_q0779",
+  "category_id": "food_culture",
+  "subcategory_id": "cultural_symbols",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The kangaroo, the emu and the golden wattle flower are symbols of which country?",
+   "tr": "Kanguru, emu ve altın akasya çiçeği hangi ülkenin simgeleridir?"
+  },
+  "options": [
+   {
+    "concept_id": "australia",
+    "en": "Australia",
+    "tr": "Avustralya"
+   },
+   {
+    "concept_id": "new_zealand",
+    "en": "New Zealand",
+    "tr": "Yeni Zelanda"
+   },
+   {
+    "concept_id": "south_africa",
+    "en": "South Africa",
+    "tr": "Güney Afrika"
+   },
+   {
+    "concept_id": "papua_new_guinea",
+    "en": "Papua New Guinea",
+    "tr": "Papua Yeni Gine"
+   }
+  ],
+  "correct": "australia",
+  "source": "https://en.wikipedia.org/wiki/National_symbols_of_Australia"
+ },
+ {
+  "key": "food_culture_q0780",
+  "category_id": "food_culture",
+  "subcategory_id": "cultural_symbols",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these is NOT one of the traditional symbols of the four Gospel writers?",
+   "tr": "Bunlardan hangisi dört İncil yazarının geleneksel simgelerinden biri DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "a_dove",
+    "en": "A dove",
+    "tr": "Güvercin"
+   },
+   {
+    "concept_id": "a_lion",
+    "en": "A lion",
+    "tr": "Aslan"
+   },
+   {
+    "concept_id": "an_ox",
+    "en": "An ox",
+    "tr": "Öküz"
+   },
+   {
+    "concept_id": "an_eagle",
+    "en": "An eagle",
+    "tr": "Kartal"
+   }
+  ],
+  "correct": "a_dove",
+  "source": "https://en.wikipedia.org/wiki/Four_Evangelists"
+ },
+ {
+  "key": "food_culture_q0781",
+  "category_id": "food_culture",
+  "subcategory_id": "cuisines",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "In Cajun and Creole cooking, which three vegetables form the \"holy trinity\"?",
+   "tr": "Cajun ve Kreol mutfağında hangi üç sebze \"kutsal üçlü\"yü oluşturur?"
+  },
+  "options": [
+   {
+    "concept_id": "onion_celery_and_bell_pepper",
+    "en": "Onion, celery and bell pepper",
+    "tr": "Soğan, kereviz ve dolmalık biber"
+   },
+   {
+    "concept_id": "tomato_garlic_and_chilli",
+    "en": "Tomato, garlic and chilli",
+    "tr": "Domates, sarımsak ve acı biber"
+   },
+   {
+    "concept_id": "carrot_leek_and_potato",
+    "en": "Carrot, leek and potato",
+    "tr": "Havuç, pırasa ve patates"
+   },
+   {
+    "concept_id": "okra_corn_and_beans",
+    "en": "Okra, corn and beans",
+    "tr": "Bamya, mısır ve fasulye"
+   }
+  ],
+  "correct": "onion_celery_and_bell_pepper",
+  "source": "https://en.wikipedia.org/wiki/Holy_trinity_(cuisine)"
+ },
+ {
+  "key": "food_culture_q0782",
+  "category_id": "food_culture",
+  "subcategory_id": "cuisines",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "In the Ottoman palace kitchens, what did the \"Helvahane\" department make?",
+   "tr": "Osmanlı saray mutfaklarında \"Helvahane\" bölümü ne üretirdi?"
+  },
+  "options": [
+   {
+    "concept_id": "sweets_sherbets_and_remedies",
+    "en": "Sweets, sherbets and remedies",
+    "tr": "Tatlılar, şerbetler ve macunlar"
+   },
+   {
+    "concept_id": "bread_only",
+    "en": "Bread only",
+    "tr": "Yalnızca ekmek"
+   },
+   {
+    "concept_id": "kebabs_for_soldiers",
+    "en": "Kebabs for soldiers",
+    "tr": "Askerlere kebap"
+   },
+   {
+    "concept_id": "coffee_for_the_sultan",
+    "en": "Coffee for the sultan",
+    "tr": "Padişaha kahve"
+   }
+  ],
+  "correct": "sweets_sherbets_and_remedies",
+  "source": "https://en.wikipedia.org/wiki/Topkapı_Palace"
+ },
+ {
+  "key": "food_culture_q0783",
+  "category_id": "food_culture",
+  "subcategory_id": "cuisines",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Peru and which other country both claim pisco brandy as their national spirit?",
+   "tr": "Peru ve hangi ülke pisco brendisini ulusal içkisi olarak sahiplenir?"
+  },
+  "options": [
+   {
+    "concept_id": "chile",
+    "en": "Chile",
+    "tr": "Şili"
+   },
+   {
+    "concept_id": "bolivia",
+    "en": "Bolivia",
+    "tr": "Bolivya"
+   },
+   {
+    "concept_id": "argentina",
+    "en": "Argentina",
+    "tr": "Arjantin"
+   },
+   {
+    "concept_id": "ecuador",
+    "en": "Ecuador",
+    "tr": "Ekvador"
+   }
+  ],
+  "correct": "chile",
+  "source": "https://en.wikipedia.org/wiki/Pisco"
+ },
+ {
+  "key": "food_culture_q0784",
+  "category_id": "food_culture",
+  "subcategory_id": "cuisines",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Machboos, spiced rice with meat, is the national dish of which Gulf island kingdom?",
+   "tr": "Etli baharatlı pilav machboos hangi Körfez ada krallığının ulusal yemeğidir?"
+  },
+  "options": [
+   {
+    "concept_id": "bahrain",
+    "en": "Bahrain",
+    "tr": "Bahreyn"
+   },
+   {
+    "concept_id": "oman",
+    "en": "Oman",
+    "tr": "Umman"
+   },
+   {
+    "concept_id": "qatar",
+    "en": "Qatar",
+    "tr": "Katar"
+   },
+   {
+    "concept_id": "kuwait",
+    "en": "Kuwait",
+    "tr": "Kuveyt"
+   }
+  ],
+  "correct": "bahrain",
+  "source": "https://en.wikipedia.org/wiki/Machboos"
+ },
+ {
+  "key": "food_culture_q0785",
+  "category_id": "food_culture",
+  "subcategory_id": "dishes",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Siirt's \"perde pilavı\" hides rice and chicken under what?",
+   "tr": "Siirt'in \"perde pilavı\"nda pirinç ve tavuk neyin altında saklanır?"
+  },
+  "options": [
+   {
+    "concept_id": "a_thin_pastry_crust",
+    "en": "A thin pastry crust",
+    "tr": "İnce bir hamur kabuğu"
+   },
+   {
+    "concept_id": "a_layer_of_yogurt",
+    "en": "A layer of yogurt",
+    "tr": "Bir kat yoğurt"
+   },
+   {
+    "concept_id": "grape_leaves",
+    "en": "Grape leaves",
+    "tr": "Asma yaprakları"
+   },
+   {
+    "concept_id": "a_clay_lid_sealed_with_dough",
+    "en": "A clay lid sealed with dough",
+    "tr": "Hamurla mühürlenmiş toprak kapak"
+   }
+  ],
+  "correct": "a_thin_pastry_crust",
+  "source": "https://en.wikipedia.org/wiki/Perde_pilavı"
+ },
+ {
+  "key": "food_culture_q0786",
+  "category_id": "food_culture",
+  "subcategory_id": "dishes",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Sarmale, cabbage rolls served with polenta and sour cream, are the national dish of which country?",
+   "tr": "Mamaliga (polenta) ve ekşi kremayla servis edilen lahana sarması sarmale hangi ülkenin ulusal yemeğidir?"
+  },
+  "options": [
+   {
+    "concept_id": "romania",
+    "en": "Romania",
+    "tr": "Romanya"
+   },
+   {
+    "concept_id": "bulgaria",
+    "en": "Bulgaria",
+    "tr": "Bulgaristan"
+   },
+   {
+    "concept_id": "ukraine",
+    "en": "Ukraine",
+    "tr": "Ukrayna"
+   },
+   {
+    "concept_id": "serbia",
+    "en": "Serbia",
+    "tr": "Sırbistan"
+   }
+  ],
+  "correct": "romania",
+  "source": "https://en.wikipedia.org/wiki/Sarma_(food)"
+ },
+ {
+  "key": "food_culture_q0787",
+  "category_id": "food_culture",
+  "subcategory_id": "dishes",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Nordic Christmas dish is dried fish soaked in lye until it turns jelly-like?",
+   "tr": "Hangi İskandinav Noel yemeği, jöle kıvamına gelene dek kostikte bekletilen kuru balıktır?"
+  },
+  "options": [
+   {
+    "concept_id": "lutefisk",
+    "en": "Lutefisk",
+    "tr": "Lutefisk"
+   },
+   {
+    "concept_id": "gravlax",
+    "en": "Gravlax",
+    "tr": "Gravlaks"
+   },
+   {
+    "concept_id": "rakfisk",
+    "en": "Rakfisk",
+    "tr": "Rakfisk"
+   },
+   {
+    "concept_id": "kalakukko",
+    "en": "Kalakukko",
+    "tr": "Kalakukko"
+   }
+  ],
+  "correct": "lutefisk",
+  "source": "https://en.wikipedia.org/wiki/Lutefisk"
+ },
+ {
+  "key": "food_culture_q0788",
+  "category_id": "food_culture",
+  "subcategory_id": "ingredients",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "How is black garlic made?",
+   "tr": "Siyah sarımsak nasıl yapılır?"
+  },
+  "options": [
+   {
+    "concept_id": "aged_in_warm_humid_heat_for_weeks",
+    "en": "Aged in warm, humid heat for weeks",
+    "tr": "Haftalarca ılık, nemli ısıda bekletilerek"
+   },
+   {
+    "concept_id": "grown_in_total_darkness",
+    "en": "Grown in total darkness",
+    "tr": "Tamamen karanlıkta yetiştirilerek"
+   },
+   {
+    "concept_id": "soaked_in_squid_ink",
+    "en": "Soaked in squid ink",
+    "tr": "Mürekkep balığı mürekkebine batırılarak"
+   },
+   {
+    "concept_id": "smoked_over_coal",
+    "en": "Smoked over coal",
+    "tr": "Kömürde tütsülenerek"
+   }
+  ],
+  "correct": "aged_in_warm_humid_heat_for_weeks",
+  "source": "https://en.wikipedia.org/wiki/Black_garlic"
+ },
+ {
+  "key": "food_culture_q0789",
+  "category_id": "food_culture",
+  "subcategory_id": "ingredients",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Verjuice, known in Turkey as \"koruk suyu\", is pressed from what?",
+   "tr": "Türkiye'de \"koruk suyu\" olarak bilinen verjus neyden sıkılır?"
+  },
+  "options": [
+   {
+    "concept_id": "unripe_grapes",
+    "en": "Unripe grapes",
+    "tr": "Olgunlaşmamış üzüm"
+   },
+   {
+    "concept_id": "green_olives",
+    "en": "Green olives",
+    "tr": "Yeşil zeytin"
+   },
+   {
+    "concept_id": "sour_cherries",
+    "en": "Sour cherries",
+    "tr": "Vişne"
+   },
+   {
+    "concept_id": "young_walnuts",
+    "en": "Young walnuts",
+    "tr": "Taze ceviz"
+   }
+  ],
+  "correct": "unripe_grapes",
+  "source": "https://en.wikipedia.org/wiki/Verjuice"
+ },
+ {
+  "key": "food_culture_q0790",
+  "category_id": "food_culture",
+  "subcategory_id": "ingredients",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Istanbul's prized autumn fish \"lüfer\" is known in English as what?",
+   "tr": "İstanbul'un değerli sonbahar balığı \"lüfer\" İngilizcede ne olarak bilinir?"
+  },
+  "options": [
+   {
+    "concept_id": "bluefish",
+    "en": "Bluefish",
+    "tr": "Bluefish"
+   },
+   {
+    "concept_id": "sea_bream",
+    "en": "Sea bream",
+    "tr": "Çipura"
+   },
+   {
+    "concept_id": "turbot",
+    "en": "Turbot",
+    "tr": "Kalkan"
+   },
+   {
+    "concept_id": "red_mullet",
+    "en": "Red mullet",
+    "tr": "Barbunya"
+   }
+  ],
+  "correct": "bluefish",
+  "source": "https://en.wikipedia.org/wiki/Bluefish"
+ },
+ {
+  "key": "food_culture_q0791",
+  "category_id": "food_culture",
+  "subcategory_id": "traditions",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "In Korea, what is \"nunchi\"?",
+   "tr": "Kore'de \"nunchi\" nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "the_art_of_reading_the_mood_of_others",
+    "en": "The art of reading the mood of others",
+    "tr": "Başkalarının ruh hâlini okuma becerisi"
+   },
+   {
+    "concept_id": "a_new_year_bow",
+    "en": "A New Year bow",
+    "tr": "Yeni Yıl reveransı"
+   },
+   {
+    "concept_id": "a_spicy_side_dish",
+    "en": "A spicy side dish",
+    "tr": "Acı bir yan yemek"
+   },
+   {
+    "concept_id": "a_wedding_gift",
+    "en": "A wedding gift",
+    "tr": "Bir düğün hediyesi"
+   }
+  ],
+  "correct": "the_art_of_reading_the_mood_of_others",
+  "source": "https://en.wikipedia.org/wiki/Nunchi"
+ },
+ {
+  "key": "food_culture_q0792",
+  "category_id": "food_culture",
+  "subcategory_id": "traditions",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "In Italy, what does \"fare la scarpetta\" mean at the table?",
+   "tr": "İtalya'da sofrada \"fare la scarpetta\" ne anlama gelir?"
+  },
+  "options": [
+   {
+    "concept_id": "mopping_up_leftover_sauce_with_bread",
+    "en": "Mopping up leftover sauce with bread",
+    "tr": "Kalan sosu ekmekle sıyırmak"
+   },
+   {
+    "concept_id": "leaving_a_tip_under_the_plate",
+    "en": "Leaving a tip under the plate",
+    "tr": "Tabağın altına bahşiş bırakmak"
+   },
+   {
+    "concept_id": "toasting_with_your_shoe",
+    "en": "Toasting with your shoe",
+    "tr": "Ayakkabıyla kadeh kaldırmak"
+   },
+   {
+    "concept_id": "eating_standing_up",
+    "en": "Eating standing up",
+    "tr": "Ayakta yemek"
+   }
+  ],
+  "correct": "mopping_up_leftover_sauce_with_bread",
+  "source": "https://en.wikipedia.org/wiki/Italian_cuisine"
+ },
+ {
+  "key": "food_culture_q0793",
+  "category_id": "food_culture",
+  "subcategory_id": "traditions",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "In Turkish custom, mevlit prayers and helva are often offered on which days after a death?",
+   "tr": "Türk geleneğinde mevlit ve helva, bir ölümden sonra çoğunlukla hangi günlerde okutulur ve dağıtılır?"
+  },
+  "options": [
+   {
+    "concept_id": "the_7th_and_40th",
+    "en": "The 7th and 40th",
+    "tr": "7. ve 40."
+   },
+   {
+    "concept_id": "the_3rd_and_30th",
+    "en": "The 3rd and 30th",
+    "tr": "3. ve 30."
+   },
+   {
+    "concept_id": "the_10th_and_100th",
+    "en": "The 10th and 100th",
+    "tr": "10. ve 100."
+   },
+   {
+    "concept_id": "the_1st_and_365th",
+    "en": "The 1st and 365th",
+    "tr": "1. ve 365."
+   }
+  ],
+  "correct": "the_7th_and_40th",
+  "source": "https://en.wikipedia.org/wiki/Mawlid"
+ },
+ {
+  "key": "food_culture_q0794",
+  "category_id": "food_culture",
+  "subcategory_id": "traditions",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is a Scottish \"quaich\"?",
+   "tr": "İskoç \"quaich\" nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "a_shallow_two_handled_cup_of_friendship",
+    "en": "A shallow two-handled cup of friendship",
+    "tr": "Dostluğun iki kulplu sığ kupası"
+   },
+   {
+    "concept_id": "a_wedding_kilt_pin",
+    "en": "A wedding kilt pin",
+    "tr": "Düğün eteği iğnesi"
+   },
+   {
+    "concept_id": "a_new_year_cake",
+    "en": "A New Year cake",
+    "tr": "Yılbaşı keki"
+   },
+   {
+    "concept_id": "a_bagpipe_drone",
+    "en": "A bagpipe drone",
+    "tr": "Gayda borusu"
+   }
+  ],
+  "correct": "a_shallow_two_handled_cup_of_friendship",
+  "source": "https://en.wikipedia.org/wiki/Quaich"
+ },
+ {
+  "key": "food_culture_q0795",
+  "category_id": "food_culture",
+  "subcategory_id": "festivals",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Thingyan, a water festival marking the new year, is celebrated in which country?",
+   "tr": "Yeni yılı karşılayan su festivali Thingyan hangi ülkede kutlanır?"
+  },
+  "options": [
+   {
+    "concept_id": "myanmar",
+    "en": "Myanmar",
+    "tr": "Myanmar"
+   },
+   {
+    "concept_id": "nepal",
+    "en": "Nepal",
+    "tr": "Nepal"
+   },
+   {
+    "concept_id": "sri_lanka",
+    "en": "Sri Lanka",
+    "tr": "Sri Lanka"
+   },
+   {
+    "concept_id": "indonesia",
+    "en": "Indonesia",
+    "tr": "Endonezya"
+   }
+  ],
+  "correct": "myanmar",
+  "source": "https://en.wikipedia.org/wiki/Thingyan"
+ },
+ {
+  "key": "food_culture_q0796",
+  "category_id": "food_culture",
+  "subcategory_id": "festivals",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "The annual Ahilik festival, honouring the craft-guild founder Ahi Evran, is held in which province?",
+   "tr": "Esnaf teşkilatının kurucusu Ahi Evran'ı onurlandıran yıllık Ahilik festivali hangi ilde yapılır?"
+  },
+  "options": [
+   {
+    "concept_id": "krsehir",
+    "en": "Kırşehir",
+    "tr": "Kırşehir"
+   },
+   {
+    "concept_id": "kayseri",
+    "en": "Kayseri",
+    "tr": "Kayseri"
+   },
+   {
+    "concept_id": "denizli",
+    "en": "Denizli",
+    "tr": "Denizli"
+   },
+   {
+    "concept_id": "eskisehir",
+    "en": "Eskişehir",
+    "tr": "Eskişehir"
+   }
+  ],
+  "correct": "krsehir",
+  "source": "https://en.wikipedia.org/wiki/Ahi_Evran"
+ },
+ {
+  "key": "food_culture_q0797",
+  "category_id": "food_culture",
+  "subcategory_id": "festivals",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Timkat, with colourful processions to water, is Ethiopia's celebration of what?",
+   "tr": "Suya doğru renkli alaylarla kutlanan Timkat, Etiyopya'da neyin kutlamasıdır?"
+  },
+  "options": [
+   {
+    "concept_id": "epiphany_the_baptism_of_jesus",
+    "en": "Epiphany, the baptism of Jesus",
+    "tr": "Epifani, İsa'nın vaftizi"
+   },
+   {
+    "concept_id": "the_harvest",
+    "en": "The harvest",
+    "tr": "Hasat"
+   },
+   {
+    "concept_id": "the_new_year",
+    "en": "The New Year",
+    "tr": "Yeni Yıl"
+   },
+   {
+    "concept_id": "a_royal_wedding",
+    "en": "A royal wedding",
+    "tr": "Bir kraliyet düğünü"
+   }
+  ],
+  "correct": "epiphany_the_baptism_of_jesus",
+  "source": "https://en.wikipedia.org/wiki/Timkat"
+ },
+ {
+  "key": "food_culture_q0798",
+  "category_id": "food_culture",
+  "subcategory_id": "cultural_symbols",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Kukulcán, whose shadow slides down the Chichén Itzá pyramid at the equinox, is what?",
+   "tr": "Ekinokste gölgesi Chichén Itzá piramidinden aşağı süzülen Kukulcán nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "a_feathered_serpent_god",
+    "en": "A feathered serpent god",
+    "tr": "Tüylü yılan tanrı"
+   },
+   {
+    "concept_id": "a_jaguar_king",
+    "en": "A jaguar king",
+    "tr": "Jaguar kral"
+   },
+   {
+    "concept_id": "a_rain_frog",
+    "en": "A rain frog",
+    "tr": "Yağmur kurbağası"
+   },
+   {
+    "concept_id": "a_sun_eagle",
+    "en": "A sun eagle",
+    "tr": "Güneş kartalı"
+   }
+  ],
+  "correct": "a_feathered_serpent_god",
+  "source": "https://en.wikipedia.org/wiki/Kukulcan"
+ },
+ {
+  "key": "food_culture_q0799",
+  "category_id": "food_culture",
+  "subcategory_id": "cultural_symbols",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "The paisley pattern grew from which teardrop-shaped motif of Persian origin?",
+   "tr": "Paisley deseni Pers kökenli hangi gözyaşı biçimli motiften doğdu?"
+  },
+  "options": [
+   {
+    "concept_id": "boteh",
+    "en": "Boteh",
+    "tr": "Boteh (buta)"
+   },
+   {
+    "concept_id": "arabesque",
+    "en": "Arabesque",
+    "tr": "Arabesk"
+   },
+   {
+    "concept_id": "rumi",
+    "en": "Rumi",
+    "tr": "Rumi"
+   },
+   {
+    "concept_id": "guilloche",
+    "en": "Guilloche",
+    "tr": "Giyoş"
+   }
+  ],
+  "correct": "boteh",
+  "source": "https://en.wikipedia.org/wiki/Paisley_(design)"
+ },
+ {
+  "key": "food_culture_q0800",
+  "category_id": "food_culture",
+  "subcategory_id": "cultural_symbols",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Why is the Chinese Pixiu, a winged lion-like beast, a symbol of wealth?",
+   "tr": "Kanatlı aslanımsı bir yaratık olan Çin Pixiu'su neden zenginlik simgesidir?"
+  },
+  "options": [
+   {
+    "concept_id": "legend_says_it_eats_gold_but_cannot_excrete_it",
+    "en": "Legend says it eats gold but cannot excrete it",
+    "tr": "Efsaneye göre altın yer ama dışarı atamaz"
+   },
+   {
+    "concept_id": "it_guards_the_emperor_s_treasury",
+    "en": "It guards the emperor's treasury",
+    "tr": "İmparatorun hazinesini korur"
+   },
+   {
+    "concept_id": "it_was_born_from_a_coin",
+    "en": "It was born from a coin",
+    "tr": "Bir sikkeden doğmuştur"
+   },
+   {
+    "concept_id": "its_roar_calls_rain_on_crops",
+    "en": "Its roar calls rain on crops",
+    "tr": "Kükremesi ekinlere yağmur çağırır"
+   }
+  ],
+  "correct": "legend_says_it_eats_gold_but_cannot_excrete_it",
+  "source": "https://en.wikipedia.org/wiki/Pixiu"
  }
 ]
