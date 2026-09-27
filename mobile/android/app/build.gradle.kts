@@ -27,6 +27,9 @@ android {
         // flag during build.
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+        // Real AdMob app ID: `-PadmobAppId=ca-app-pub-...~...` or `admobAppId=` in android/gradle.properties.
+        manifestPlaceholders["admobAppId"] =
+            (project.findProperty("admobAppId") as String?) ?: "ca-app-pub-3940256099942544~3347511713"
     }
 
     buildTypes {
