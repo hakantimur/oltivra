@@ -253,17 +253,17 @@ void main() {
   });
 
   group('SignInScreen', () {
-    testWidgets('offers Google, Apple and email and ignores cancellation', (tester) async {
+    testWidgets('offers Google and email (no Apple) and ignores cancellation', (tester) async {
       final auth = _FakeAuth()..failWith = const AuthCancelled();
       await _pump(tester, const SignInScreen(), auth: auth);
       expect(find.text('Continue with Google'), findsOneWidget);
-      expect(find.text('Continue with Apple'), findsOneWidget);
+      expect(find.text('Continue with Apple'), findsNothing);
       expect(find.text('Continue with email'), findsOneWidget);
       expect(find.textContaining('ONLINE'), findsNothing);
 
-      await tester.tap(find.byKey(const Key('signin-apple')));
+      await tester.tap(find.byKey(const Key('signin-google')));
       await tester.pumpAndSettle();
-      expect(auth.calls, ['apple']);
+      expect(auth.calls, ['google']);
       expect(find.byType(SnackBar), findsNothing);
     });
 
