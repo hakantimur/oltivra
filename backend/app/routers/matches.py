@@ -11,6 +11,7 @@ from app.common.errors import ApiError, ErrorCode
 from app.common.idempotency import resolve_key
 from app.container import Container
 from app.matches.model import Mode
+from app.moderation.question_reports import QuestionReportReason
 
 router = APIRouter(prefix="/v1")
 
@@ -107,3 +108,35 @@ async def leave_match(match_id: str, body: MutationBody, request: Request, calle
         return await c.matches.leave(caller.uid, match_id)
 
     return await run_mutation(c, request, caller, f"matches.leave.{match_id}", body.model_dump(), handler)
+
+
+class ReactionRequest(BaseModel):
+    request_id: str
+    round_id: str = Field(max_length=64)
+    reaction_id: str = Field(max_length=32)  # catalog ID only; free text is never accepted (spec §5)
+
+
+class QuestionReportRequest(BaseModel):
+    request_id: str
+    round_id: str = Field(max_length=64)
+    reason: QuestionReportReason
+
+
+@router.post("/matches/{match_id}/reaction")
+async def react(match_id: str, body: ReactionRequest, caller: Caller = Depends(player),
+                c: Container = Depends(get_container)) -> dict:
+    await c.rate_limiter.hit(rate_limit.REACTION, caller.uid)
+    return await c.matches.react(caller.uid, match_id, body.round_id, body.reaction_id)
+
+
+@router.post("/matches/{match_id}/question-report")
+async def report_question(match_id: str, body: QuestionReportRequest, request: Request,
+                          caller: Caller = Depends(player), c: Container = Depends(get_container)) -> dict:
+    async def handler() -> dict:
+        await c.rate_limiter.hit(rate_limit.QUESTION_REPORT, caller.uid)
+        shown = await c.matches.shown_question(caller.uid, match_id, body.round_id)
+        return await c.question_reports.report(caller.uid, gid=shown["gid"], version=int(shown["v"]),
+                                               language=shown["language"], mode=shown["mode"], reason=body.reason,
+                                               match_id=match_id)
+
+    return await run_mutation(c, request, caller, f"matches.question_report.{match_id}", body.model_dump(), handler)

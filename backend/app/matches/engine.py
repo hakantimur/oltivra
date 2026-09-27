@@ -237,11 +237,27 @@ def close_round(state: dict[str, Any], now_ms: int, result: StepResult, source: 
     rnd["reveal_ends_at_ms"] = reveal_ends
     state["state"] = (MatchState.ROUND_REVEAL if state["mode"] == Mode.QUICK else MatchState.ROUND_RESOLVE).value
     state["next_server_event_at_ms"] = reveal_ends
+    _bot_reactions(state, now_ms)
     _log_round(state)
     bump(state, now_ms, "CLOSE_ROUND", source)
     result.effects.append(Effect(TaskKind.ROUND_ADVANCE.value, reveal_ends + ADVANCE_DELAY_MS,
                                  {"round_id": rnd["round_id"], "dedupe": (state["match_id"], rnd["round_id"],
                                                                           "advance")}))
+
+
+def _bot_reactions(state: dict[str, Any], now_ms: int) -> None:
+    """Precommitted optional bot reactions surface at reveal, like a human reacting to the result."""
+    rnd = current_round(state)
+    reactions = dict(rnd.get("reactions") or {})
+    for pid, plan in sorted((state.get("bot_plans") or {}).items()):
+        reaction = plan.get("optional_reaction_id")
+        if plan.get("round_id") != rnd.get("round_id") or not reaction or pid in reactions:
+            continue
+        if reaction not in (state.get("reaction_ids") or []):
+            continue
+        reactions[pid] = reaction
+        append_event(state, now_ms, EventType.REACTION, pid, reaction)
+    rnd["reactions"] = reactions
 
 
 def _log_round(state: dict[str, Any]) -> None:
@@ -256,6 +272,8 @@ def _log_round(state: dict[str, Any]) -> None:
         "difficulty": rnd["difficulty"], "category_id": rnd["category_id"], "eligible": rnd.get("eligible") or [],
         "answers": answers, "winner": rnd.get("winner_pid"), "closed_at_ms": rnd.get("closed_at_ms"),
         "starts_at_ms": rnd["starts_at_ms"],
+        "resolution": (rnd.get("outcome") or {}).get("resolution"),
+        "eliminated": (rnd.get("outcome") or {}).get("eliminated") or [],
     })
     state["round_log"] = log
 
@@ -438,6 +456,45 @@ def mark_settled(state: dict[str, Any], now_ms: int, status: str, by_uid: dict[s
     return result
 
 
+REACTABLE_STATES = (MatchState.ROUND_LOADING, MatchState.ROUND_ACTIVE, MatchState.ROUND_REVEAL,
+                    MatchState.ROUND_RESOLVE)
+
+
+def apply_reaction(state: dict[str, Any], keys: Keyring, *, uid: str, round_id: str, reaction_id: str, now_ms: int,
+                   mutes: dict[str, list[str]] | None = None) -> StepResult:
+    """One curated reaction per player (or spectator) per round (spec §5). Never affects scoring or timing."""
+    result = resolve_due(state, keys, now_ms, "REACTION")
+    if mutes is not None and mutes != (state.get("mutes") or {}):
+        state["mutes"] = mutes
+        result.changed = True
+    pid = pid_for_uid(state, uid)
+    if pid is None:
+        return _reject(result, ErrorCode.NOT_MATCH_PARTICIPANT)
+    participant = participants(state)[pid]
+    if participant.get("left"):
+        return _reject(result, ErrorCode.FORBIDDEN, reason="left_match")
+    rnd = current_round(state)
+    if state.get("state") not in REACTABLE_STATES or rnd.get("round_id") != round_id:
+        return _reject(result, ErrorCode.ROUND_NOT_ACTIVE)
+    if reaction_id not in (state.get("reaction_ids") or []):
+        return _reject(result, ErrorCode.INVALID_REQUEST, reason="reaction_not_allowed")
+    reactions = dict(rnd.get("reactions") or {})
+    if pid in reactions:
+        if reactions[pid] == reaction_id:
+            result.outcome = {"accepted": True, "replay": True, "reaction_id": reaction_id}
+            return result
+        return _reject(result, ErrorCode.REACTION_ALREADY_USED)
+    reactions[pid] = reaction_id
+    rnd["reactions"] = reactions
+    participant["reactions_sent"] = int(participant.get("reactions_sent", 0)) + 1
+    append_event(state, now_ms, EventType.REACTION, pid, reaction_id)
+    bump(state, now_ms, "REACTION", "REACTION")
+    result.changed = True
+    result.outcome = {"accepted": True, "replay": False, "reaction_id": reaction_id,
+                      "state_version": state["state_version"]}
+    return result
+
+
 # ---------------------------------------------------------------------------------------------- projections
 
 
@@ -530,6 +587,9 @@ def project(state: dict[str, Any], keys: Keyring) -> dict[str, Any]:
                 if "score_delta" in answer:
                     entry["score_delta"] = answer["score_delta"]
             entry["reaction_used"] = pid in (rnd.get("reactions") or {})
+        muted = (state.get("mutes") or {}).get(uid)
+        if muted:
+            entry["muted_pids"] = muted  # reactions from these players are hidden for this viewer only
         settled = ((state.get("settlement") or {}).get("by_uid") or {}).get(uid)
         if settled:
             entry["settlement"] = settled

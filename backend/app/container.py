@@ -229,6 +229,30 @@ class Container:
         return SurvivalRefill(self)
 
     @cached_property
+    def progression(self):
+        from app.progression.service import ProgressionHooks
+
+        return ProgressionHooks(self)
+
+    @cached_property
+    def missions(self):
+        from app.missions.service import MissionService
+
+        return MissionService(self)
+
+    @cached_property
+    def question_reports(self):
+        from app.moderation.question_reports import QuestionReportService
+
+        return QuestionReportService(self)
+
+    @cached_property
+    def leaderboard(self):
+        from app.progression.leaderboard import LeaderboardService
+
+        return LeaderboardService(self)
+
+    @cached_property
     def settlement(self):
         from app.settlement.service import SettlementService
 

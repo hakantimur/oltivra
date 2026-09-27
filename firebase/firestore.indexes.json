@@ -213,6 +213,62 @@
           "order": "ASCENDING"
         }
       ]
+    },
+    {
+      "collectionGroup": "weekly_user_stats",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "week_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "ranked_weekly_xp",
+          "order": "DESCENDING"
+        },
+        {
+          "fieldPath": "quick_ranked_wins",
+          "order": "DESCENDING"
+        },
+        {
+          "fieldPath": "survival_ranked_crowns",
+          "order": "DESCENDING"
+        },
+        {
+          "fieldPath": "tie_break_hash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "weekly_user_stats",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "week_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "league",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "ranked_weekly_xp",
+          "order": "DESCENDING"
+        },
+        {
+          "fieldPath": "quick_ranked_wins",
+          "order": "DESCENDING"
+        },
+        {
+          "fieldPath": "survival_ranked_crowns",
+          "order": "DESCENDING"
+        },
+        {
+          "fieldPath": "tie_break_hash",
+          "order": "ASCENDING"
+        }
+      ]
     }
   ],
   "fieldOverrides": [
@@ -248,6 +304,12 @@
     },
     {
       "collectionGroup": "presence",
+      "fieldPath": "expires_at",
+      "ttl": true,
+      "indexes": []
+    },
+    {
+      "collectionGroup": "weekly_user_stats",
       "fieldPath": "expires_at",
       "ttl": true,
       "indexes": []

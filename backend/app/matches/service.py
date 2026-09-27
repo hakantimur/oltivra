@@ -178,6 +178,54 @@ class MatchService:
 
         await self._c.store.run_transaction(txn_fn)
 
+    def _identity_pid(self, identity: str) -> str:
+        if identity.startswith("bot:"):
+            return self._c.bots.public_id(identity.removeprefix("bot:"))
+        return self._c.profiles.public_id(identity)
+
+    async def react(self, uid: str, match_id: str, round_id: str, reaction_id: str) -> dict[str, Any]:
+        """Reaction IDs only, never free text; blocked pairs never see each other's reactions (spec §5, §21.6)."""
+        idx = await self.index(match_id)
+        self._require_viewer(uid, idx)
+        if not await self._c.catalog.is_active_reaction(reaction_id):
+            raise ApiError(ErrorCode.INVALID_REQUEST, detail={"reason": "reaction_not_allowed"})
+        block_pids = {}
+        for human in idx.get("participant_uids") or []:
+            blocked = await self._c.safety.block_set(human)
+            if blocked:
+                block_pids[human] = {self._identity_pid(identity) for identity in blocked}
+        now = self._c.clock.now_ms()
+
+        def step(state: dict[str, Any]) -> StepResult:
+            present = set(state.get("participants") or {})
+            mutes = {u: sorted(pids & present) for u, pids in block_pids.items() if pids & present}
+            return engine.apply_reaction(state, self._keys, uid=uid, round_id=round_id, reaction_id=reaction_id,
+                                         now_ms=now, mutes=mutes)
+
+        result, state = await self.mutate(match_id, idx["rtdb_shard_id"], step)
+        error = result.outcome.get("error")
+        if error:
+            raise ApiError(ErrorCode(error), detail={k: v for k, v in result.outcome.items() if k == "reason"})
+        return {"schema_version": 1, **result.outcome}
+
+    async def shown_question(self, uid: str, match_id: str, round_id: str) -> dict[str, Any]:
+        """A question the caller actually saw in this match (live state, or history after cleanup)."""
+        idx = await self.index(match_id)
+        self._require_viewer(uid, idx)
+        state = await self._c.live.get(idx["rtdb_shard_id"], f"{root_path(match_id)}/authoritative")
+        rounds = list((state or {}).get("round_log") or [])
+        if state and (state.get("round") or {}).get("round_id") == round_id:
+            rnd = state["round"]
+            rounds.append({"round_id": round_id, "qid": rnd["qid"], "gid": rnd["gid"], "v": rnd["v"]})
+        if not state:
+            history = await self._c.store.get(f"match_history/{match_id}") or {}
+            rounds = history.get("round_log") or []
+        for entry in rounds:
+            if entry.get("round_id") == round_id:
+                return {"gid": entry["gid"], "v": entry["v"], "qid": entry.get("qid"), "mode": idx["mode"],
+                        "language": idx.get("language", "en")}
+        raise ApiError(ErrorCode.NOT_FOUND, detail={"reason": "round_not_in_match"})
+
     async def sync(self, uid: str, match_id: str) -> dict[str, Any]:
         idx = await self.index(match_id)
         self._require_viewer(uid, idx)
