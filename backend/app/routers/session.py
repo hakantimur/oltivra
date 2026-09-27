@@ -65,6 +65,7 @@ async def client_config(caller: Caller = Depends(authenticated), c: Container = 
         "schema_version": 1,
         "config_version": config.config_version,
         "quick": {"questions": config.quick.normal_questions, "seconds": config.quick.seconds,
+                  "max_points": config.quick.seconds,
                   "wrong_penalty": config.quick.wrong_penalty, "no_answer_penalty": config.quick.no_answer_penalty,
                   "rematch_window_ms": config.quick.rematch_window_ms},
         "survival": {"seconds": config.survival.seconds, "rescue_seconds": config.survival.rescue_seconds},

@@ -227,7 +227,7 @@ async def test_rate_limiter_window():
 def test_ranked_config_cannot_be_weakened():
     with pytest.raises(ValidationError):
         RankedConfig(quick_min_total_humans=2)
-    assert GameConfig().quick.wrong_penalty == -4
+    assert GameConfig().quick.wrong_penalty == -6
 
 
 def test_task_names_are_unique_and_queue_by_shard():

@@ -62,15 +62,15 @@ def user(container, uid):
 def test_reward_offer_and_ssv_grant_once(players, container, ssv_key, client):
     match_id = settled_match(players, container)
     offer = players.post(f"/v1/rewards/offers/{match_id}/start", "u1").json()
-    assert offer["state"] == "OFFERED" and offer["bonus_xp"] == 150 and offer["custom_data"].startswith("v1.")
+    assert offer["state"] == "OFFERED" and offer["bonus_xp"] == 200 and offer["custom_data"].startswith("v1.")
     assert players.post(f"/v1/rewards/offers/{match_id}/start", "u1").json()["offer_id"] == offer["offer_id"]
     res = client.get(f"/internal/ads/admob-ssv?{ssv_query(ssv_key, offer)}")
     assert res.status_code == 200 and res.json()["granted"] is True
-    assert user(container, "u1")["total_xp"] == 300
+    assert user(container, "u1")["total_xp"] == 400
     dup = client.get(f"/internal/ads/admob-ssv?{ssv_query(ssv_key, offer)}")
-    assert dup.json()["duplicate"] is True and user(container, "u1")["total_xp"] == 300
+    assert dup.json()["duplicate"] is True and user(container, "u1")["total_xp"] == 400
     replay = client.get(f"/internal/ads/admob-ssv?{ssv_query(ssv_key, offer, transaction_id='tx-2')}")
-    assert replay.status_code == 402 and user(container, "u1")["total_xp"] == 300
+    assert replay.status_code == 402 and user(container, "u1")["total_xp"] == 400
     assert players.get(f"/v1/rewards/offers/{match_id}", "u1").json()["state"] == "GRANTED"
     # Reward XP never touches ranked weekly XP or MMR.
     week = iso_week_id(container.clock.now_ms())
@@ -89,7 +89,7 @@ def test_ssv_rejects_bad_signature_tampering_and_binding(players, container, ssv
     assert client.get(f"/internal/ads/admob-ssv?{ssv_query(ssv_key, offer, user_id='x' * 24)}").status_code == 402
     unsigned = ssv_query(ssv_key, offer).split("&signature=")[0]
     assert client.get(f"/internal/ads/admob-ssv?{unsigned}").status_code == 402
-    assert user(container, "u1")["total_xp"] == 150
+    assert user(container, "u1")["total_xp"] == 200
 
 
 def test_ssv_after_offer_expiry_is_rejected(players, container, ssv_key, client):

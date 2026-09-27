@@ -11,16 +11,16 @@ import '../../theme/app_theme.dart';
 import '../../theme/tokens.dart';
 import '../../widgets/o_widgets.dart';
 
-/// Rule numbers from the spec (§3.1, §3.2, §4.1), used only when `/v1/client-config` does not provide them.
+/// Rule numbers (spec §3.1, §3.2, §4.1 as changed by the 2026-09-27 playtest), used only when
+/// `/v1/client-config` does not provide them.
 abstract final class _SpecDefaults {
   static const quickPlayers = 4;
   static const quickQuestions = 10;
-  static const quickSeconds = 11;
-  static const quickMaxPoints = 10;
-  static const quickWrongPenalty = -4;
+  static const quickSeconds = 15;
+  static const quickWrongPenalty = -6;
   static const quickNoAnswerPenalty = 0;
   static const survivalPlayers = 10;
-  static const survivalSeconds = 11;
+  static const survivalSeconds = 15;
 }
 
 /// P01 · Game guide "Two ways to rise": Quick Battle and Survival explained with server-configured numbers.
@@ -41,6 +41,7 @@ class GameGuideScreen extends ConsumerWidget {
 
     final questions = read(quick, 'questions', _SpecDefaults.quickQuestions);
     final quickSeconds = read(quick, 'seconds', _SpecDefaults.quickSeconds);
+    final maxPoints = read(quick, 'max_points', quickSeconds);
     final wrong = read(quick, 'wrong_penalty', _SpecDefaults.quickWrongPenalty).abs();
     final skip = read(quick, 'no_answer_penalty', _SpecDefaults.quickNoAnswerPenalty).abs();
     final survivalSeconds = read(survival, 'seconds', _SpecDefaults.survivalSeconds);
@@ -90,7 +91,7 @@ class GameGuideScreen extends ConsumerWidget {
               art: const _BarsArt(),
               facts: [
                 (Icons.speed_rounded, context.t('onboarding.guide.quick_speed',
-                    {'max': _SpecDefaults.quickMaxPoints, 'seconds': quickSeconds})),
+                    {'max': maxPoints, 'seconds': quickSeconds})),
                 (Icons.remove_circle_outline_rounded, context.t('onboarding.guide.quick_wrong', {'wrong': wrong})),
                 (Icons.do_not_disturb_on_outlined, skip == 0
                     ? context.t('onboarding.guide.quick_skip_free')

@@ -173,44 +173,18 @@ void main() {
     expect(_option(tester, 'Troposphere').onTap, isNull);
   });
 
-  const imageQuestion = {
-    'text': 'Which country uses this flag?',
-    'options': _options,
-    'signed_image_url': 'http://img.test/questions/g/v1/main.webp?exp=1',
-    'image_aspect': 1.5,
-    'image_attribution': 'Jane Doe / Wikimedia Commons, CC BY 4.0',
-  };
-
   Future<void> expectAllAnswersOnScreen(WidgetTester tester) async {
-    expect(find.byType(Image), findsOneWidget);
     final screenHeight = tester.view.physicalSize.height / tester.view.devicePixelRatio;
     for (final t in ['Troposphere', 'Stratosphere', 'Mesosphere', 'Thermosphere']) {
       expect(tester.getBottomLeft(find.widgetWithText(AnswerOption, t)).dy, lessThanOrEqualTo(screenHeight), reason: t);
     }
   }
 
-  testWidgets('image question keeps all four answers on screen while answering', (tester) async {
-    await _Harness().pump(
-      tester,
-      _snap(_quickPublic('ROUND_ACTIVE', extra: {'current_question': imageQuestion}), {
-        'pid': 'p1',
-        'round_id': 'r3',
-        'eligible_to_answer': true,
-        'option_order': _order,
-        'own_answer_status': 'NOT_ANSWERED',
-      }),
-    );
-    // The credit is withheld while answering: an author's name or place could hint at the answer.
-    expect(find.byKey(const ValueKey('image-attribution')), findsNothing);
-    await expectAllAnswersOnScreen(tester);
-  });
-
-  testWidgets('image question keeps all four answers on screen with the result banner', (tester) async {
+  testWidgets("another player's win is celebrated in the centre and answers stay on screen", (tester) async {
     await _Harness().pump(
       tester,
       _snap(
         _quickPublic('ROUND_REVEAL', extra: {
-          'current_question': imageQuestion,
           'correct_answer_reveal': {'concept_id': 'c1', 'text': 'Stratosphere', 'winner_pid': 'p2', 'points': 7},
         }),
         {
@@ -224,9 +198,50 @@ void main() {
         },
       ),
     );
-    expect(find.text('kevin_q wins +7'), findsOneWidget);
-    expect(find.text('Image: Jane Doe / Wikimedia Commons, CC BY 4.0'), findsOneWidget);
+    await tester.pump(const Duration(milliseconds: 400));
+    expect(find.byKey(const ValueKey('round-flash-otherWon')), findsOneWidget);
+    expect(find.text('kevin_q got it!'), findsOneWidget);
     await expectAllAnswersOnScreen(tester);
+    await tester.pump(const Duration(seconds: 4)); // the card fades out on its own
+    expect(find.byKey(const ValueKey('round-flash-otherWon')), findsNothing);
+  });
+
+  testWidgets('own win shows the confetti card with the points', (tester) async {
+    await _Harness().pump(
+      tester,
+      _snap(
+        _quickPublic('ROUND_REVEAL', extra: {
+          'correct_answer_reveal': {'concept_id': 'c1', 'text': 'Stratosphere', 'winner_pid': 'p1', 'points': 12},
+        }),
+        {'pid': 'p1', 'round_id': 'r3', 'option_order': _order, 'own_answer_status': 'ANSWERED_CORRECT',
+          'selected_concept_id': 'c1', 'score_delta': 12},
+      ),
+    );
+    await tester.pump(const Duration(milliseconds: 400));
+    expect(find.byKey(const ValueKey('round-flash-youWon')), findsOneWidget);
+    expect(find.text('You got it!'), findsOneWidget);
+    await tester.pump(const Duration(seconds: 4));
+  });
+
+  testWidgets('own wrong answer shows a private card with the penalty', (tester) async {
+    await _Harness().pump(
+      tester,
+      _snap(_quickPublic('ROUND_ACTIVE'), {
+        'pid': 'p1',
+        'round_id': 'r3',
+        'eligible_to_answer': false,
+        'option_order': _order,
+        'own_answer_status': 'ANSWERED_WRONG',
+        'selected_concept_id': 'c3',
+        'score_delta': -6,
+      }),
+    );
+    await tester.pump(const Duration(milliseconds: 400));
+    expect(find.byKey(const ValueKey('round-flash-youWrong')), findsOneWidget);
+    expect(find.text('Wrong answer'), findsOneWidget);
+    await expectAllAnswersOnScreen(tester);
+    await tester.pump(const Duration(seconds: 3));
+    expect(find.byKey(const ValueKey('round-flash-youWrong')), findsNothing);
   });
 
   testWidgets('revealed state highlights the correct option and keeps the own wrong trace', (tester) async {
@@ -291,6 +306,8 @@ void main() {
     expect(find.text('Which city is carved from rose-red stone?'), findsOneWidget);
     expect(find.text('You were eliminated · Watching only'), findsOneWidget);
     expect(_option(tester, 'Stratosphere').onTap, isNull);
+    // Eliminated players carry a clear red X in the roster.
+    expect(find.byKey(const ValueKey('eliminated-mark')), findsOneWidget);
   });
 
   testWidgets('final result lists standings with settled XP and rematch', (tester) async {

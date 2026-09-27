@@ -88,6 +88,63 @@ String quickSummary(BuildContext context, Json? config) {
 String modeRules(BuildContext context, String mode, Json? config) =>
     mode == 'SURVIVAL' ? context.t('home.play.survival.summary') : quickSummary(context, config);
 
+/// "How it works" bullets for a mode, shown while matchmaking and on the ready countdown (playtest 2026-09-27:
+/// players must see the rules before the first question). Numbers come from `/v1/client-config`.
+class MatchRulesCard extends StatelessWidget {
+  const MatchRulesCard({super.key, required this.mode, this.config});
+
+  final String mode;
+  final Json? config;
+
+  @override
+  Widget build(BuildContext context) {
+    final quick = (config?['quick'] as Map?) ?? const {};
+    final survival = (config?['survival'] as Map?) ?? const {};
+    int? read(Map m, String key) => (m[key] as num?)?.toInt();
+    final List<(IconData, String)> rules;
+    if (mode == 'SURVIVAL') {
+      final seconds = read(survival, 'seconds');
+      rules = [
+        (Icons.close_rounded, context.t('home.rules.survival.out')),
+        if (seconds != null) (Icons.timer_outlined, context.t('home.rules.survival.timer', {'s': seconds})),
+        (Icons.emoji_events_outlined, context.t('home.rules.survival.win')),
+      ];
+    } else {
+      final seconds = read(quick, 'seconds');
+      final max = read(quick, 'max_points') ?? seconds;
+      final wrong = read(quick, 'wrong_penalty');
+      rules = [
+        (Icons.bolt_rounded, context.t('home.rules.quick.first')),
+        if (max != null) (Icons.speed_rounded, context.t('home.rules.quick.speed', {'max': max})),
+        if (wrong != null) (Icons.remove_circle_outline_rounded,
+            context.t('home.rules.quick.wrong', {'wrong': wrong.abs()})),
+      ];
+    }
+    return Container(
+      key: const Key('match-rules'),
+      padding: const EdgeInsets.all(OSpace.lg),
+      decoration: BoxDecoration(color: OColors.surfaceContainer, borderRadius: BorderRadius.circular(ORadius.card)),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(context.t('home.rules.title'), style: OText.labelSm.copyWith(color: OColors.primary)),
+          for (final (icon, text) in rules) ...[
+            const SizedBox(height: OSpace.sm),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Icon(icon, size: 18, color: OColors.primary),
+                const SizedBox(width: OSpace.sm),
+                Expanded(child: Text(text, style: OText.bodyMd)),
+              ],
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
 /// Pill button in an arbitrary accent (the shared OButton palette has no pink/secondary style).
 class HomeAccentButton extends StatelessWidget {
   const HomeAccentButton({super.key, required this.label, required this.onPressed, required this.color,

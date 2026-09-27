@@ -81,8 +81,8 @@ class _RosterMark extends StatelessWidget {
                 ? context.t('match.answer_locked')
                 : null;
     Widget? badge;
-    if (outNow || (out && !survived)) {
-      badge = _badge(Icons.close_rounded, OColors.inkSubtle);
+    if (out || outNow) {
+      badge = null; // the large X over the avatar marks elimination
     } else if (survived) {
       badge = _badge(Icons.check_rounded, OColors.primary);
     } else if (p.answerLocked) {
@@ -98,24 +98,30 @@ class _RosterMark extends StatelessWidget {
           children: [
             Column(
               children: [
-                Opacity(
-                  opacity: out ? 0.35 : 1,
-                  child: Container(
-                    padding: const EdgeInsets.all(2),
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      border: Border.all(color: isMe ? OColors.turquoise : Colors.transparent, width: 2),
+                Stack(
+                  alignment: Alignment.center,
+                  children: [
+                    Opacity(
+                      opacity: out || outNow ? 0.4 : 1,
+                      child: Container(
+                        padding: const EdgeInsets.all(2),
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          border: Border.all(color: isMe ? OColors.turquoise : Colors.transparent, width: 2),
+                        ),
+                        child: OAvatar(avatarId: p.avatarId, frameId: p.frameId, size: 40, badge: badge),
+                      ),
                     ),
-                    child: OAvatar(avatarId: p.avatarId, frameId: p.frameId, size: 40, badge: badge),
-                  ),
+                    // Clear but gentle elimination mark (playtest 2026-09-27): a red X across the avatar.
+                    if (out || outNow)
+                      const Icon(Icons.close_rounded, key: ValueKey('eliminated-mark'), size: 40,
+                          color: OColors.coral, shadows: [Shadow(color: OColors.white, blurRadius: 4)]),
+                  ],
                 ),
                 const SizedBox(height: 2),
                 Text(
                   isMe ? context.t('match.you') : p.name,
-                  style: OText.labelSm.copyWith(
-                    color: out ? OColors.inkSubtle : OColors.ink,
-                    decoration: out ? TextDecoration.lineThrough : null,
-                  ),
+                  style: OText.labelSm.copyWith(color: out || outNow ? OColors.coral : OColors.ink),
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                 ),

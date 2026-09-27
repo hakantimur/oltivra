@@ -22,8 +22,6 @@ const Map<String, Map<String, String>> matchStrings = {
     'match.status_survived': 'Survived',
 
     // Question & answers
-    'match.question_image': 'Question image',
-    'match.image_credit': 'Image: {credit}',
     'match.option_semantics': 'Option {letter}, {text}',
     'match.correct_answer': 'Correct answer',
     'match.wrong_answer': 'Incorrect',
@@ -41,6 +39,11 @@ const Map<String, Map<String, String>> matchStrings = {
     'match.round_winner': '{name} wins +{points}',
     'match.round_winner_you': 'You win +{points}',
     'match.no_winner': 'No one got it this round',
+    'match.flash_you_won': 'You got it!',
+    'match.flash_other_won': '{name} got it!',
+    'match.flash_wrong': 'Wrong answer',
+    'match.flash_survived': 'You survived!',
+    'match.flash_eliminated': 'You’re out',
     'match.round_closed': 'Round closed · Next question shortly',
     'match.sd_banner': 'Sudden Death · First correct answer wins',
     'match.sd_spectating': 'You’re spectating the Sudden Death',
@@ -158,8 +161,6 @@ const Map<String, Map<String, String>> matchStrings = {
     'match.status_survived': 'Hayatta kaldı',
 
     // Question & answers
-    'match.question_image': 'Soru görseli',
-    'match.image_credit': 'Görsel: {credit}',
     'match.option_semantics': 'Seçenek {letter}, {text}',
     'match.correct_answer': 'Doğru cevap',
     'match.wrong_answer': 'Yanlış',
@@ -177,6 +178,11 @@ const Map<String, Map<String, String>> matchStrings = {
     'match.round_winner': '{name} kazandı +{points}',
     'match.round_winner_you': 'Sen kazandın +{points}',
     'match.no_winner': 'Bu turu kimse bilemedi',
+    'match.flash_you_won': 'Sen bildin!',
+    'match.flash_other_won': '{name} doğru bildi!',
+    'match.flash_wrong': 'Yanlış cevap',
+    'match.flash_survived': 'Hayattasın!',
+    'match.flash_eliminated': 'Elendin',
     'match.round_closed': 'Tur kapandı · Sıradaki soru birazdan',
     'match.sd_banner': 'Ani Ölüm · İlk doğru cevap kazanır',
     'match.sd_spectating': 'Ani Ölüm’ü izliyorsun',

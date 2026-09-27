@@ -107,7 +107,7 @@ async def test_manifests_built_per_language_mode_difficulty_without_answers(cont
     for lang in SEED_LANGUAGES:
         for mode in ("QUICK", "SURVIVAL"):
             counts = {d: len(await container.manifest_cache.get(lang, mode, d.value)) for d in Difficulty}
-            assert counts == {Difficulty.EASY: 126, Difficulty.MEDIUM: 144, Difficulty.HARD: 90}
+            assert counts == {Difficulty.EASY: 136, Difficulty.MEDIUM: 154, Difficulty.HARD: 95}  # seed + curated
     blobs = [doc for path, doc in store.dump("pool_manifest_chunks").items()]
     raw = json.dumps(await container.manifest_cache.get("en", "QUICK", "EASY"), default=vars)
     private = next(iter(store.dump("question_private").values()))
@@ -169,7 +169,7 @@ def test_quick_selection_order_diversity_and_no_repeats():
     for seed in range(30):
         normal, reserves = select_quick(pools, ExposureUnion(((),)), random.Random(seed))
         assert [Difficulty(e.d) for e in normal] == list(QUICK_NORMAL_ORDER)
-        assert [e.d for e in reserves] == ["MEDIUM", "HARD", "HARD", "HARD", "HARD"]
+        assert [e.d for e in reserves] == ["MEDIUM", "MEDIUM", "MEDIUM", "HARD", "HARD"]
         gids = [e.gid for e in normal + reserves]
         assert len(gids) == len(set(gids))
         cats = Counter(e.cat for e in normal)
@@ -248,7 +248,7 @@ async def test_turkish_plan_uses_verified_turkish_text(container):
 
 async def test_language_gate_reports_not_ready_for_seed(container):
     report = await language_gate_report(container.manifest_cache, "en", trials=20)
-    assert report.total_groups == 360
+    assert report.total_groups == 385
     assert report.categories_represented == 9
     assert report.soft_launch_ready is False
 

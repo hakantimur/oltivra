@@ -6,6 +6,7 @@ import '../../../theme/tokens.dart';
 import '../../../widgets/o_widgets.dart';
 import '../match_view_data.dart';
 import '../widgets/match_widgets.dart';
+import '../widgets/round_flash.dart';
 import 'survival_roster.dart';
 
 /// Survival live question (P04 screens 1, 2, 3 and 5): active question, answer locked with the outcome hidden,
@@ -128,7 +129,17 @@ class SurvivalQuestionView extends StatelessWidget {
       );
     }
 
-    return Column(
+    // Centred own-outcome card (playtest 2026-09-27): survived or eliminated, only for this player.
+    FlashContent? flash;
+    if (revealed && !readOnly && myPid != null) {
+      if (survivedIds.contains(myPid)) {
+        flash = FlashContent(kind: FlashKind.youWon, title: context.t('match.flash_survived'));
+      } else if (eliminatedIds.contains(myPid)) {
+        flash = FlashContent(kind: FlashKind.youWrong, title: context.t('match.flash_eliminated'));
+      }
+    }
+
+    final body = Column(
       children: [
         MatchTopBar(
           overline: context.t(readOnly ? 'match.watching_battle' : 'match.live_match'),
@@ -188,6 +199,14 @@ class SurvivalQuestionView extends StatelessWidget {
               ?footer,
             ],
           ),
+        ),
+      ],
+    );
+    return Stack(
+      children: [
+        body,
+        Positioned.fill(
+          child: RoundFlash(eventKey: flash == null ? null : '${flash.kind.name}:${s.roundId}', content: flash),
         ),
       ],
     );
