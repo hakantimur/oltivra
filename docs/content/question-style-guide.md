@@ -49,6 +49,9 @@ thinks "huh, I didn't know that".
   - no two questions share the same correct answer;
   - every subcategory is represented;
   - answers come from every inhabited continent.
+- **Calibration (approved 2026-09-27):** EASY is a fact most people know, or can guess at once, plus a small
+  hook. Examples: pandas live wild only in China; Hawaii is the only all-island US state; Washington, D.C. belongs to
+  no state. Name origins, lesser-known animals and number sense are MEDIUM. When in doubt, label MEDIUM.
 - Difficulty is 40% EASY, 40% MEDIUM and 20% HARD. **Difficulty means how many players can know *or reason* it,
   not how obscure it is.** A HARD question must still be fair and interesting. It must never be "name this
   random small town".
