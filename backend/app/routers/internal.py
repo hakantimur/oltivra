@@ -42,3 +42,18 @@ async def google_rtdn(request: Request, c: Container = Depends(get_container)) -
 async def apple_notifications(request: Request, c: Container = Depends(get_container)) -> dict:
     """App Store Server Notifications V2: JWS verified against the pinned Apple root (spec §31.5)."""
     return {"ok": True, "result": await c.purchases.handle_apple_notification(await request.json())}
+
+
+# Cloud Scheduler targets (OIDC-authenticated in prod, spec §20.6).
+maintenance_router = APIRouter(prefix="/internal/maintenance", include_in_schema=False)
+
+
+@maintenance_router.post("/{job}", dependencies=[Depends(_service_auth)])
+async def run_maintenance(job: str, c: Container = Depends(get_container)) -> dict:
+    from app.common.errors import ApiError, ErrorCode
+    from app.maintenance.service import JOBS
+
+    fn = JOBS.get(job)
+    if fn is None:
+        raise ApiError(ErrorCode.NOT_FOUND, detail={"reason": "unknown_job"})
+    return {"ok": True, "job": job, "result": await fn(c.maintenance)}

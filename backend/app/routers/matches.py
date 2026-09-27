@@ -14,9 +14,14 @@ from app.matches.model import Mode
 from app.moderation.question_reports import QuestionReportReason
 from app.moderation.risk import RiskSignal, watch
 
-# Stale/forged answer submissions and answer flooding feed the risk score (spec §28.4).
-MALFORMED_ANSWER = {ErrorCode.RATE_LIMITED, ErrorCode.INVALID_OPTION, ErrorCode.ROUND_EXPIRED,
-                    ErrorCode.ROUND_NOT_ACTIVE, ErrorCode.NOT_MATCH_PARTICIPANT}
+# Forged/stale answer submissions and answer flooding feed the risk score (spec §28.4). An answer that simply
+# arrives after the round closed (early Quick winner, network lag) is normal play and is never counted.
+MALFORMED_ANSWER = {ErrorCode.RATE_LIMITED, ErrorCode.INVALID_OPTION, ErrorCode.NOT_MATCH_PARTICIPANT}
+
+
+def _malformed_answer(exc: ApiError) -> bool:
+    return exc.code in MALFORMED_ANSWER or exc.detail.get("reason") == "stale_round"
+
 
 router = APIRouter(prefix="/v1")
 
@@ -96,7 +101,7 @@ async def answer(match_id: str, body: AnswerRequest, request: Request, caller: C
     # Server receipt time is recorded first; nothing the client sends affects ordering (spec §22.3).
     received_at = c.clock.now_ms()
     request_id = resolve_key(request.headers.get("x-idempotency-key"), body.request_id)
-    async with watch(c, caller.uid, RiskSignal.MALFORMED_REQUEST, codes=MALFORMED_ANSWER,
+    async with watch(c, caller.uid, RiskSignal.MALFORMED_REQUEST, when=_malformed_answer,
                      evidence={"match_id": match_id}):
         await c.rate_limiter.hit(rate_limit.ANSWER, caller.uid)
         # Idempotency lives in the canonical match transaction (the stored answer is the replay record).

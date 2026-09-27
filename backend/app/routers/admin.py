@@ -510,3 +510,52 @@ async def rebuild_manifests(caller: Caller = Depends(admin_caller), c: Container
 async def audit(subject: str | None = None, actor: str | None = None, limit: int = Query(default=50, ge=1, le=200),
                 caller: Caller = Depends(admin_caller), c: Container = Depends(get_container)) -> dict:
     return {"schema_version": 1, "entries": await c.audit.list(subject=subject, actor=actor, limit=limit)}
+
+
+# ---------------------------------------------------------------------------------------------- AI generation
+
+
+class AiJobIn(BaseModel):
+    category_id: str
+    subcategory_id: str
+    difficulty: Literal["EASY", "MEDIUM", "HARD"]
+    canonical_language: str = "en"
+    required_languages: list[str] = Field(default_factory=list, max_length=12)
+    count: int = Field(ge=1, le=100)
+    min_global_relevance: int = Field(default=4, ge=1, le=5)
+    media_required: bool = False
+
+
+@router.post("/ai-jobs")
+async def create_ai_job(body: AiJobIn, caller: Caller = Depends(admin_caller),
+                        c: Container = Depends(get_container)) -> dict:
+    from app.admin.ai_generation import GenerationSpec
+
+    job = await c.ai_generation.create_job(caller.uid, GenerationSpec(**body.model_dump()))
+    return {"schema_version": 1, "job": job}
+
+
+@router.get("/ai-jobs")
+async def list_ai_jobs(limit: int = Query(default=50, ge=1, le=200), caller: Caller = Depends(admin_caller),
+                       c: Container = Depends(get_container)) -> dict:
+    rows = await c.store.query(DocQuery("ai_generation_jobs").order("created_at_ms", "desc").take(limit))
+    return {"schema_version": 1, "items": [
+        {k: r.data.get(k) for k in ("job_id", "status", "spec", "provider", "model", "prompt_version",
+                                    "created_by", "created_at_ms", "completed_at_ms", "attempts", "error")}
+        | {"accepted": len(r.data.get("accepted") or []), "rejected": len(r.data.get("rejected") or [])}
+        for r in rows]}
+
+
+@router.get("/ai-jobs/{job_id}")
+async def get_ai_job(job_id: str, caller: Caller = Depends(admin_caller), c: Container = Depends(get_container)
+                     ) -> dict:
+    job = await c.store.get(f"ai_generation_jobs/{job_id}")
+    if not job:
+        raise ApiError(ErrorCode.NOT_FOUND)
+    return {"schema_version": 1, "job": job}
+
+
+@router.post("/ai-jobs/{job_id}/retry")
+async def retry_ai_job(job_id: str, caller: Caller = Depends(admin_caller), c: Container = Depends(get_container)
+                       ) -> dict:
+    return {"schema_version": 1, "job": await c.ai_generation.retry(job_id, caller.uid)}

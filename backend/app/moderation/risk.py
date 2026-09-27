@@ -9,7 +9,7 @@ from __future__ import annotations
 
 import logging
 import math
-from collections.abc import AsyncIterator
+from collections.abc import AsyncIterator, Callable
 from contextlib import asynccontextmanager
 from enum import StrEnum
 from typing import Any
@@ -86,13 +86,18 @@ def match_signals(state: dict[str, Any], uid_by_pid: dict[str, str], fast_ms: in
 
 @asynccontextmanager
 async def watch(container, uid: str | None, signal: RiskSignal, *, codes: set[ErrorCode] | None = None,
-                reasons: set[str] | None = None, evidence: dict[str, Any] | None = None) -> AsyncIterator[None]:
-    """Record ``signal`` when the wrapped call fails with a matching error, then re-raise unchanged."""
+                reasons: set[str] | None = None, evidence: dict[str, Any] | None = None,
+                when: Callable[[ApiError], bool] | None = None) -> AsyncIterator[None]:
+    """Record ``signal`` when the wrapped call fails with a matching error, then re-raise unchanged.
+
+    ``codes`` and ``reasons`` must both match; ``when`` replaces them with a custom predicate."""
     try:
         yield
     except ApiError as exc:
         reason = (exc.detail or {}).get("reason") if isinstance(exc.detail, dict) else None
-        if uid and (codes is None or exc.code in codes) and (reasons is None or reason in reasons):
+        matched = when(exc) if when else ((codes is None or exc.code in codes)
+                                          and (reasons is None or reason in reasons))
+        if uid and matched:
             try:
                 await container.risk.record(uid, signal, evidence={**(evidence or {}), "code": exc.code.value})
             except Exception:  # noqa: BLE001 - risk bookkeeping never changes the caller's outcome
