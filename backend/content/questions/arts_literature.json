@@ -14398,5 +14398,3605 @@
   ],
   "correct": "new_objectivity",
   "source": "https://en.wikipedia.org/wiki/New_Objectivity"
+ },
+ {
+  "key": "arts_literature_q0401",
+  "category_id": "arts_literature",
+  "subcategory_id": "painters",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which American painter is famous for giant close-up flowers and New Mexico desert scenes?",
+   "tr": "Hangi Amerikalı ressam dev yakın plan çiçekleri ve New Mexico çölü manzaralarıyla ünlüdür?"
+  },
+  "options": [
+   {
+    "concept_id": "georgia_o_keeffe",
+    "en": "Georgia O'Keeffe",
+    "tr": "Georgia O'Keeffe"
+   },
+   {
+    "concept_id": "mary_cassatt",
+    "en": "Mary Cassatt",
+    "tr": "Mary Cassatt"
+   },
+   {
+    "concept_id": "frida_kahlo",
+    "en": "Frida Kahlo",
+    "tr": "Frida Kahlo"
+   },
+   {
+    "concept_id": "grandma_moses",
+    "en": "Grandma Moses",
+    "tr": "Grandma Moses"
+   }
+  ],
+  "correct": "georgia_o_keeffe",
+  "source": "https://en.wikipedia.org/wiki/Georgia_O'Keeffe"
+ },
+ {
+  "key": "arts_literature_q0402",
+  "category_id": "arts_literature",
+  "subcategory_id": "painters",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Henri Rousseau painted lush jungles but never left France. What was his day job?",
+   "tr": "Henri Rousseau gür ormanlar resmetti ama Fransa'dan hiç çıkmadı. Asıl işi neydi?"
+  },
+  "options": [
+   {
+    "concept_id": "a_toll_and_customs_clerk",
+    "en": "A toll and customs clerk",
+    "tr": "Gümrük ve harç memuru"
+   },
+   {
+    "concept_id": "a_zookeeper",
+    "en": "A zookeeper",
+    "tr": "Hayvanat bahçesi bakıcısı"
+   },
+   {
+    "concept_id": "a_ship_s_cook",
+    "en": "A ship's cook",
+    "tr": "Gemi aşçısı"
+   },
+   {
+    "concept_id": "a_botanist",
+    "en": "A botanist",
+    "tr": "Botanikçi"
+   }
+  ],
+  "correct": "a_toll_and_customs_clerk",
+  "source": "https://en.wikipedia.org/wiki/Henri_Rousseau"
+ },
+ {
+  "key": "arts_literature_q0403",
+  "category_id": "arts_literature",
+  "subcategory_id": "painters",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Vincent van Gogh's whole painting career lasted roughly how long?",
+   "tr": "Vincent van Gogh'un bütün ressamlık kariyeri yaklaşık ne kadar sürdü?"
+  },
+  "options": [
+   {
+    "concept_id": "about_10_years",
+    "en": "About 10 years",
+    "tr": "Yaklaşık 10 yıl"
+   },
+   {
+    "concept_id": "about_2_years",
+    "en": "About 2 years",
+    "tr": "Yaklaşık 2 yıl"
+   },
+   {
+    "concept_id": "about_30_years",
+    "en": "About 30 years",
+    "tr": "Yaklaşık 30 yıl"
+   },
+   {
+    "concept_id": "about_50_years",
+    "en": "About 50 years",
+    "tr": "Yaklaşık 50 yıl"
+   }
+  ],
+  "correct": "about_10_years",
+  "source": "https://en.wikipedia.org/wiki/Vincent_van_Gogh"
+ },
+ {
+  "key": "arts_literature_q0404",
+  "category_id": "arts_literature",
+  "subcategory_id": "painters",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Spanish artist designed the colourful official poster of the 1982 World Cup?",
+   "tr": "1982 Dünya Kupası'nın renkli resmî afişini hangi İspanyol sanatçı tasarladı?"
+  },
+  "options": [
+   {
+    "concept_id": "joan_miro",
+    "en": "Joan Miró",
+    "tr": "Joan Miró"
+   },
+   {
+    "concept_id": "salvador_dali",
+    "en": "Salvador Dalí",
+    "tr": "Salvador Dalí"
+   },
+   {
+    "concept_id": "pablo_picasso",
+    "en": "Pablo Picasso",
+    "tr": "Pablo Picasso"
+   },
+   {
+    "concept_id": "antoni_tapies",
+    "en": "Antoni Tàpies",
+    "tr": "Antoni Tàpies"
+   }
+  ],
+  "correct": "joan_miro",
+  "source": "https://en.wikipedia.org/wiki/Joan_Miró"
+ },
+ {
+  "key": "arts_literature_q0405",
+  "category_id": "arts_literature",
+  "subcategory_id": "painters",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these painters did NOT live in the 20th century?",
+   "tr": "Bu ressamlardan hangisi 20. yüzyılda YAŞAMAMIŞTIR?"
+  },
+  "options": [
+   {
+    "concept_id": "rembrandt",
+    "en": "Rembrandt",
+    "tr": "Rembrandt"
+   },
+   {
+    "concept_id": "pablo_picasso",
+    "en": "Pablo Picasso",
+    "tr": "Pablo Picasso"
+   },
+   {
+    "concept_id": "frida_kahlo",
+    "en": "Frida Kahlo",
+    "tr": "Frida Kahlo"
+   },
+   {
+    "concept_id": "salvador_dali",
+    "en": "Salvador Dalí",
+    "tr": "Salvador Dalí"
+   }
+  ],
+  "correct": "rembrandt",
+  "source": "https://en.wikipedia.org/wiki/Rembrandt"
+ },
+ {
+  "key": "arts_literature_q0406",
+  "category_id": "arts_literature",
+  "subcategory_id": "famous_works",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Dutch artist drew \"Relativity\", with staircases going in impossible directions?",
+   "tr": "İmkânsız yönlere giden merdivenlerle dolu \"Görelilik\"i hangi Hollandalı sanatçı çizdi?"
+  },
+  "options": [
+   {
+    "concept_id": "m_c_escher",
+    "en": "M. C. Escher",
+    "tr": "M. C. Escher"
+   },
+   {
+    "concept_id": "piet_mondrian",
+    "en": "Piet Mondrian",
+    "tr": "Piet Mondrian"
+   },
+   {
+    "concept_id": "vincent_van_gogh",
+    "en": "Vincent van Gogh",
+    "tr": "Vincent van Gogh"
+   },
+   {
+    "concept_id": "johannes_vermeer",
+    "en": "Johannes Vermeer",
+    "tr": "Johannes Vermeer"
+   }
+  ],
+  "correct": "m_c_escher",
+  "source": "https://en.wikipedia.org/wiki/Relativity_(M._C._Escher)"
+ },
+ {
+  "key": "arts_literature_q0407",
+  "category_id": "arts_literature",
+  "subcategory_id": "famous_works",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Salvador Dalí made a telephone whose receiver is shaped like which animal?",
+   "tr": "Salvador Dalí, ahizesi hangi hayvan biçiminde olan bir telefon yaptı?"
+  },
+  "options": [
+   {
+    "concept_id": "a_lobster",
+    "en": "A lobster",
+    "tr": "Istakoz"
+   },
+   {
+    "concept_id": "a_snake",
+    "en": "A snake",
+    "tr": "Yılan"
+   },
+   {
+    "concept_id": "a_fish",
+    "en": "A fish",
+    "tr": "Balık"
+   },
+   {
+    "concept_id": "a_cat",
+    "en": "A cat",
+    "tr": "Kedi"
+   }
+  ],
+  "correct": "a_lobster",
+  "source": "https://en.wikipedia.org/wiki/Lobster_Telephone"
+ },
+ {
+  "key": "arts_literature_q0408",
+  "category_id": "arts_literature",
+  "subcategory_id": "famous_works",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many arms does the famous ancient statue of the Venus de Milo have today?",
+   "tr": "Ünlü antik Milo Venüsü heykelinin bugün kaç kolu vardır?"
+  },
+  "options": [
+   {
+    "concept_id": "none",
+    "en": "None",
+    "tr": "Hiç yok"
+   },
+   {
+    "concept_id": "one",
+    "en": "One",
+    "tr": "Bir"
+   },
+   {
+    "concept_id": "two",
+    "en": "Two",
+    "tr": "İki"
+   },
+   {
+    "concept_id": "four",
+    "en": "Four",
+    "tr": "Dört"
+   }
+  ],
+  "correct": "none",
+  "source": "https://en.wikipedia.org/wiki/Venus_de_Milo"
+ },
+ {
+  "key": "arts_literature_q0409",
+  "category_id": "arts_literature",
+  "subcategory_id": "famous_works",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the big bronze bull statue near New York's Wall Street called?",
+   "tr": "New York'ta Wall Street yakınındaki büyük bronz boğa heykelinin adı nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "charging_bull",
+    "en": "Charging Bull",
+    "tr": "Saldıran Boğa (Charging Bull)"
+   },
+   {
+    "concept_id": "raging_bull",
+    "en": "Raging Bull",
+    "tr": "Öfkeli Boğa"
+   },
+   {
+    "concept_id": "golden_calf",
+    "en": "Golden Calf",
+    "tr": "Altın Buzağı"
+   },
+   {
+    "concept_id": "iron_ox",
+    "en": "Iron Ox",
+    "tr": "Demir Öküz"
+   }
+  ],
+  "correct": "charging_bull",
+  "source": "https://en.wikipedia.org/wiki/Charging_Bull"
+ },
+ {
+  "key": "arts_literature_q0410",
+  "category_id": "arts_literature",
+  "subcategory_id": "famous_works",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these is NOT a painting by Leonardo da Vinci?",
+   "tr": "Bunlardan hangisi Leonardo da Vinci'nin tablosu DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "the_night_cafe",
+    "en": "The Night Café",
+    "tr": "Gece Kafesi"
+   },
+   {
+    "concept_id": "the_annunciation",
+    "en": "The Annunciation",
+    "tr": "Müjde"
+   },
+   {
+    "concept_id": "the_last_supper",
+    "en": "The Last Supper",
+    "tr": "Son Akşam Yemeği"
+   },
+   {
+    "concept_id": "mona_lisa",
+    "en": "Mona Lisa",
+    "tr": "Mona Lisa"
+   }
+  ],
+  "correct": "the_night_cafe",
+  "source": "https://en.wikipedia.org/wiki/List_of_works_by_Leonardo_da_Vinci"
+ },
+ {
+  "key": "arts_literature_q0411",
+  "category_id": "arts_literature",
+  "subcategory_id": "public_domain_art",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is a sculpture showing only a person's head and shoulders called?",
+   "tr": "Bir kişinin yalnızca başını ve omuzlarını gösteren heykele ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "a_bust",
+    "en": "A bust",
+    "tr": "Büst"
+   },
+   {
+    "concept_id": "a_torso",
+    "en": "A torso",
+    "tr": "Tors"
+   },
+   {
+    "concept_id": "a_relief",
+    "en": "A relief",
+    "tr": "Kabartma"
+   },
+   {
+    "concept_id": "a_statuette",
+    "en": "A statuette",
+    "tr": "Heykelcik"
+   }
+  ],
+  "correct": "a_bust",
+  "source": "https://en.wikipedia.org/wiki/Bust_(sculpture)"
+ },
+ {
+  "key": "arts_literature_q0412",
+  "category_id": "arts_literature",
+  "subcategory_id": "public_domain_art",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "To make tempera paint, medieval artists mixed their pigments with what?",
+   "tr": "Ortaçağ sanatçıları tempera boya yapmak için pigmentlerini neyle karıştırırdı?"
+  },
+  "options": [
+   {
+    "concept_id": "egg_yolk",
+    "en": "Egg yolk",
+    "tr": "Yumurta sarısı"
+   },
+   {
+    "concept_id": "olive_oil",
+    "en": "Olive oil",
+    "tr": "Zeytinyağı"
+   },
+   {
+    "concept_id": "seawater",
+    "en": "Seawater",
+    "tr": "Deniz suyu"
+   },
+   {
+    "concept_id": "honey",
+    "en": "Honey",
+    "tr": "Bal"
+   }
+  ],
+  "correct": "egg_yolk",
+  "source": "https://en.wikipedia.org/wiki/Tempera"
+ },
+ {
+  "key": "arts_literature_q0413",
+  "category_id": "arts_literature",
+  "subcategory_id": "public_domain_art",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is a carving whose figures stand out from a flat stone background called?",
+   "tr": "Figürleri düz bir taş zeminden dışarı çıkan oymaya ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "a_relief",
+    "en": "A relief",
+    "tr": "Kabartma (rölyef)"
+   },
+   {
+    "concept_id": "a_mosaic",
+    "en": "A mosaic",
+    "tr": "Mozaik"
+   },
+   {
+    "concept_id": "a_fresco",
+    "en": "A fresco",
+    "tr": "Fresk"
+   },
+   {
+    "concept_id": "a_statue_in_the_round",
+    "en": "A statue in the round",
+    "tr": "Çepeçevre heykel"
+   }
+  ],
+  "correct": "a_relief",
+  "source": "https://en.wikipedia.org/wiki/Relief"
+ },
+ {
+  "key": "arts_literature_q0414",
+  "category_id": "arts_literature",
+  "subcategory_id": "public_domain_art",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many stone lions stand above the ancient Lion Gate of Mycenae?",
+   "tr": "Antik Miken'deki Aslanlı Kapı'nın üzerinde kaç taş aslan bulunur?"
+  },
+  "options": [
+   {
+    "concept_id": "n_2",
+    "en": "2",
+    "tr": "2"
+   },
+   {
+    "concept_id": "n_1",
+    "en": "1",
+    "tr": "1"
+   },
+   {
+    "concept_id": "n_4",
+    "en": "4",
+    "tr": "4"
+   },
+   {
+    "concept_id": "n_8",
+    "en": "8",
+    "tr": "8"
+   }
+  ],
+  "correct": "n_2",
+  "source": "https://en.wikipedia.org/wiki/Lion_Gate"
+ },
+ {
+  "key": "arts_literature_q0415",
+  "category_id": "arts_literature",
+  "subcategory_id": "public_domain_art",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these is NOT a printmaking technique?",
+   "tr": "Bunlardan hangisi bir baskı resim tekniği DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "fresco",
+    "en": "Fresco",
+    "tr": "Fresk"
+   },
+   {
+    "concept_id": "woodcut",
+    "en": "Woodcut",
+    "tr": "Ağaç baskı"
+   },
+   {
+    "concept_id": "etching",
+    "en": "Etching",
+    "tr": "Gravür (asitle oyma)"
+   },
+   {
+    "concept_id": "lithography",
+    "en": "Lithography",
+    "tr": "Taş baskı (litografi)"
+   }
+  ],
+  "correct": "fresco",
+  "source": "https://en.wikipedia.org/wiki/Printmaking"
+ },
+ {
+  "key": "arts_literature_q0416",
+  "category_id": "arts_literature",
+  "subcategory_id": "world_literature",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What does Cinderella leave behind when she runs from the ball?",
+   "tr": "Külkedisi balodan kaçarken geride ne bırakır?"
+  },
+  "options": [
+   {
+    "concept_id": "a_glass_slipper",
+    "en": "A glass slipper",
+    "tr": "Cam bir ayakkabı"
+   },
+   {
+    "concept_id": "a_golden_ring",
+    "en": "A golden ring",
+    "tr": "Altın bir yüzük"
+   },
+   {
+    "concept_id": "her_crown",
+    "en": "Her crown",
+    "tr": "Tacını"
+   },
+   {
+    "concept_id": "a_silk_glove",
+    "en": "A silk glove",
+    "tr": "İpek bir eldiven"
+   }
+  ],
+  "correct": "a_glass_slipper",
+  "source": "https://en.wikipedia.org/wiki/Cinderella"
+ },
+ {
+  "key": "arts_literature_q0417",
+  "category_id": "arts_literature",
+  "subcategory_id": "world_literature",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In \"The Emperor's New Clothes\", who finally says the emperor is wearing nothing?",
+   "tr": "\"Kralın Yeni Giysileri\"nde sonunda kralın üstünde hiçbir şey olmadığını kim söyler?"
+  },
+  "options": [
+   {
+    "concept_id": "a_small_child",
+    "en": "A small child",
+    "tr": "Küçük bir çocuk"
+   },
+   {
+    "concept_id": "the_queen",
+    "en": "The queen",
+    "tr": "Kraliçe"
+   },
+   {
+    "concept_id": "his_tailor",
+    "en": "His tailor",
+    "tr": "Terzisi"
+   },
+   {
+    "concept_id": "a_court_jester",
+    "en": "A court jester",
+    "tr": "Bir saray soytarısı"
+   }
+  ],
+  "correct": "a_small_child",
+  "source": "https://en.wikipedia.org/wiki/The_Emperor's_New_Clothes"
+ },
+ {
+  "key": "arts_literature_q0418",
+  "category_id": "arts_literature",
+  "subcategory_id": "world_literature",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In the legends of Robin Hood, who is the woman he loves?",
+   "tr": "Robin Hood efsanelerinde sevdiği kadın kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "maid_marian",
+    "en": "Maid Marian",
+    "tr": "Leydi Marian"
+   },
+   {
+    "concept_id": "lady_guinevere",
+    "en": "Lady Guinevere",
+    "tr": "Leydi Guinevere"
+   },
+   {
+    "concept_id": "queen_isolde",
+    "en": "Queen Isolde",
+    "tr": "Kraliçe Isolde"
+   },
+   {
+    "concept_id": "lady_rowena",
+    "en": "Lady Rowena",
+    "tr": "Leydi Rowena"
+   }
+  ],
+  "correct": "maid_marian",
+  "source": "https://en.wikipedia.org/wiki/Maid_Marian"
+ },
+ {
+  "key": "arts_literature_q0419",
+  "category_id": "arts_literature",
+  "subcategory_id": "world_literature",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In the tale from the Arabian Nights, Ali Baba finds the treasure cave of how many thieves?",
+   "tr": "Binbir Gece masalında Ali Baba kaç haramiye ait hazine mağarasını bulur?"
+  },
+  "options": [
+   {
+    "concept_id": "n_40",
+    "en": "40",
+    "tr": "40"
+   },
+   {
+    "concept_id": "n_7",
+    "en": "7",
+    "tr": "7"
+   },
+   {
+    "concept_id": "n_12",
+    "en": "12",
+    "tr": "12"
+   },
+   {
+    "concept_id": "n_100",
+    "en": "100",
+    "tr": "100"
+   }
+  ],
+  "correct": "n_40",
+  "source": "https://en.wikipedia.org/wiki/Ali_Baba_and_the_Forty_Thieves"
+ },
+ {
+  "key": "arts_literature_q0420",
+  "category_id": "arts_literature",
+  "subcategory_id": "world_literature",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Sinbad, of the Arabian Nights stories, is famous for his voyages as what?",
+   "tr": "Binbir Gece Masalları'ndaki Sinbad hangi sıfatla yaptığı yolculuklarla ünlüdür?"
+  },
+  "options": [
+   {
+    "concept_id": "a_sailor",
+    "en": "A sailor",
+    "tr": "Denizci"
+   },
+   {
+    "concept_id": "a_pilot",
+    "en": "A pilot",
+    "tr": "Pilot"
+   },
+   {
+    "concept_id": "a_camel_driver",
+    "en": "A camel driver",
+    "tr": "Deve sürücüsü"
+   },
+   {
+    "concept_id": "a_wizard",
+    "en": "A wizard",
+    "tr": "Büyücü"
+   }
+  ],
+  "correct": "a_sailor",
+  "source": "https://en.wikipedia.org/wiki/Sinbad_the_Sailor"
+ },
+ {
+  "key": "arts_literature_q0421",
+  "category_id": "arts_literature",
+  "subcategory_id": "authors",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who wrote \"Anna Karenina\"?",
+   "tr": "\"Anna Karenina\"yı kim yazdı?"
+  },
+  "options": [
+   {
+    "concept_id": "leo_tolstoy",
+    "en": "Leo Tolstoy",
+    "tr": "Lev Tolstoy"
+   },
+   {
+    "concept_id": "anton_chekhov",
+    "en": "Anton Chekhov",
+    "tr": "Anton Çehov"
+   },
+   {
+    "concept_id": "ivan_turgenev",
+    "en": "Ivan Turgenev",
+    "tr": "İvan Turgenyev"
+   },
+   {
+    "concept_id": "nikolai_gogol",
+    "en": "Nikolai Gogol",
+    "tr": "Nikolay Gogol"
+   }
+  ],
+  "correct": "leo_tolstoy",
+  "source": "https://en.wikipedia.org/wiki/Anna_Karenina"
+ },
+ {
+  "key": "arts_literature_q0422",
+  "category_id": "arts_literature",
+  "subcategory_id": "authors",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Dr. Seuss wrote \"Green Eggs and Ham\" to win a bet. What was the challenge?",
+   "tr": "Dr. Seuss \"Yeşil Yumurta ve Jambon\"u bir iddiayı kazanmak için yazdı. Meydan okuma neydi?"
+  },
+  "options": [
+   {
+    "concept_id": "use_only_50_different_words",
+    "en": "Use only 50 different words",
+    "tr": "Yalnızca 50 farklı kelime kullanmak"
+   },
+   {
+    "concept_id": "write_it_in_one_night",
+    "en": "Write it in one night",
+    "tr": "Tek gecede yazmak"
+   },
+   {
+    "concept_id": "never_use_the_letter_e",
+    "en": "Never use the letter E",
+    "tr": "Hiç E harfi kullanmamak"
+   },
+   {
+    "concept_id": "make_every_line_rhyme_with_cat",
+    "en": "Make every line rhyme with 'cat'",
+    "tr": "Her satırı 'cat' ile kafiyelemek"
+   }
+  ],
+  "correct": "use_only_50_different_words",
+  "source": "https://en.wikipedia.org/wiki/Green_Eggs_and_Ham"
+ },
+ {
+  "key": "arts_literature_q0423",
+  "category_id": "arts_literature",
+  "subcategory_id": "authors",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Turkish novelist of \"The Forty Rules of Love\" writes in both Turkish and English?",
+   "tr": "\"Aşk\" romanının hangi Türk yazarı hem Türkçe hem İngilizce yazar?"
+  },
+  "options": [
+   {
+    "concept_id": "elif_safak",
+    "en": "Elif Şafak",
+    "tr": "Elif Şafak"
+   },
+   {
+    "concept_id": "orhan_pamuk",
+    "en": "Orhan Pamuk",
+    "tr": "Orhan Pamuk"
+   },
+   {
+    "concept_id": "ahmet_umit",
+    "en": "Ahmet Ümit",
+    "tr": "Ahmet Ümit"
+   },
+   {
+    "concept_id": "zulfu_livaneli",
+    "en": "Zülfü Livaneli",
+    "tr": "Zülfü Livaneli"
+   }
+  ],
+  "correct": "elif_safak",
+  "source": "https://en.wikipedia.org/wiki/Elif_Shafak"
+ },
+ {
+  "key": "arts_literature_q0424",
+  "category_id": "arts_literature",
+  "subcategory_id": "authors",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Science-fiction master Isaac Asimov wrote or edited roughly how many books?",
+   "tr": "Bilimkurgu ustası Isaac Asimov yaklaşık kaç kitap yazdı ya da derledi?"
+  },
+  "options": [
+   {
+    "concept_id": "over_500",
+    "en": "Over 500",
+    "tr": "500'den fazla"
+   },
+   {
+    "concept_id": "about_20",
+    "en": "About 20",
+    "tr": "Yaklaşık 20"
+   },
+   {
+    "concept_id": "about_80",
+    "en": "About 80",
+    "tr": "Yaklaşık 80"
+   },
+   {
+    "concept_id": "over_5_000",
+    "en": "Over 5,000",
+    "tr": "5.000'den fazla"
+   }
+  ],
+  "correct": "over_500",
+  "source": "https://en.wikipedia.org/wiki/Isaac_Asimov"
+ },
+ {
+  "key": "arts_literature_q0425",
+  "category_id": "arts_literature",
+  "subcategory_id": "authors",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which English author created Winnie-the-Pooh, inspired by his son's teddy bear?",
+   "tr": "Oğlunun oyuncak ayısından esinlenerek Winnie the Pooh'yu hangi İngiliz yazar yarattı?"
+  },
+  "options": [
+   {
+    "concept_id": "a_a_milne",
+    "en": "A. A. Milne",
+    "tr": "A. A. Milne"
+   },
+   {
+    "concept_id": "beatrix_potter",
+    "en": "Beatrix Potter",
+    "tr": "Beatrix Potter"
+   },
+   {
+    "concept_id": "kenneth_grahame",
+    "en": "Kenneth Grahame",
+    "tr": "Kenneth Grahame"
+   },
+   {
+    "concept_id": "roald_dahl",
+    "en": "Roald Dahl",
+    "tr": "Roald Dahl"
+   }
+  ],
+  "correct": "a_a_milne",
+  "source": "https://en.wikipedia.org/wiki/A._A._Milne"
+ },
+ {
+  "key": "arts_literature_q0426",
+  "category_id": "arts_literature",
+  "subcategory_id": "architecture",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What are the notched tops of castle walls, with gaps for archers, called?",
+   "tr": "Kale surlarının okçular için boşluklu, dişli üst kısmına ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "battlements",
+    "en": "Battlements",
+    "tr": "Mazgallı siper (burç dişleri)"
+   },
+   {
+    "concept_id": "buttresses",
+    "en": "Buttresses",
+    "tr": "Payanda"
+   },
+   {
+    "concept_id": "gargoyles",
+    "en": "Gargoyles",
+    "tr": "Gargoyl"
+   },
+   {
+    "concept_id": "arches",
+    "en": "Arches",
+    "tr": "Kemer"
+   }
+  ],
+  "correct": "battlements",
+  "source": "https://en.wikipedia.org/wiki/Battlement"
+ },
+ {
+  "key": "arts_literature_q0427",
+  "category_id": "arts_literature",
+  "subcategory_id": "architecture",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is unusual about Vienna's colourful Hundertwasser House?",
+   "tr": "Viyana'daki rengârenk Hundertwasser Evi'nin tuhaf yanı nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "trees_grow_from_it_and_its_floors_are_uneven",
+    "en": "Trees grow from it and its floors are uneven",
+    "tr": "İçinden ağaçlar çıkar, zeminleri engebelidir"
+   },
+   {
+    "concept_id": "it_is_built_entirely_of_glass",
+    "en": "It is built entirely of glass",
+    "tr": "Tamamen camdan yapılmıştır"
+   },
+   {
+    "concept_id": "it_rotates_every_hour",
+    "en": "It rotates every hour",
+    "tr": "Her saat döner"
+   },
+   {
+    "concept_id": "it_is_underground",
+    "en": "It is underground",
+    "tr": "Yeraltındadır"
+   }
+  ],
+  "correct": "trees_grow_from_it_and_its_floors_are_uneven",
+  "source": "https://en.wikipedia.org/wiki/Hundertwasserhaus"
+ },
+ {
+  "key": "arts_literature_q0428",
+  "category_id": "arts_literature",
+  "subcategory_id": "architecture",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is a tall, four-sided stone pillar with a pointed top, like those of ancient Egypt, called?",
+   "tr": "Antik Mısır'dakiler gibi, tepesi sivri, dört yüzlü uzun taş dikmeye ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "an_obelisk",
+    "en": "An obelisk",
+    "tr": "Dikilitaş (obelisk)"
+   },
+   {
+    "concept_id": "a_minaret",
+    "en": "A minaret",
+    "tr": "Minare"
+   },
+   {
+    "concept_id": "a_totem",
+    "en": "A totem",
+    "tr": "Totem"
+   },
+   {
+    "concept_id": "a_pagoda",
+    "en": "A pagoda",
+    "tr": "Pagoda"
+   }
+  ],
+  "correct": "an_obelisk",
+  "source": "https://en.wikipedia.org/wiki/Obelisk"
+ },
+ {
+  "key": "arts_literature_q0429",
+  "category_id": "arts_literature",
+  "subcategory_id": "architecture",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "New York's Empire State Building has how many floors?",
+   "tr": "New York'taki Empire State Binası kaç katlıdır?"
+  },
+  "options": [
+   {
+    "concept_id": "n_102",
+    "en": "102",
+    "tr": "102"
+   },
+   {
+    "concept_id": "n_52",
+    "en": "52",
+    "tr": "52"
+   },
+   {
+    "concept_id": "n_160",
+    "en": "160",
+    "tr": "160"
+   },
+   {
+    "concept_id": "n_250",
+    "en": "250",
+    "tr": "250"
+   }
+  ],
+  "correct": "n_102",
+  "source": "https://en.wikipedia.org/wiki/Empire_State_Building"
+ },
+ {
+  "key": "arts_literature_q0430",
+  "category_id": "arts_literature",
+  "subcategory_id": "architecture",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The English word \"kiosk\" comes from the Turkish \"köşk\". What was a köşk originally?",
+   "tr": "İngilizcedeki \"kiosk\" kelimesi Türkçe \"köşk\"ten gelir. Köşk aslında neydi?"
+  },
+  "options": [
+   {
+    "concept_id": "a_garden_pavilion",
+    "en": "A garden pavilion",
+    "tr": "Bahçe içindeki bir kasır"
+   },
+   {
+    "concept_id": "a_newspaper_stand",
+    "en": "A newspaper stand",
+    "tr": "Gazete bayisi"
+   },
+   {
+    "concept_id": "a_ticket_office",
+    "en": "A ticket office",
+    "tr": "Bilet gişesi"
+   },
+   {
+    "concept_id": "a_fishing_boat",
+    "en": "A fishing boat",
+    "tr": "Balıkçı teknesi"
+   }
+  ],
+  "correct": "a_garden_pavilion",
+  "source": "https://en.wikipedia.org/wiki/Kiosk"
+ },
+ {
+  "key": "arts_literature_q0431",
+  "category_id": "arts_literature",
+  "subcategory_id": "mythology",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who is the Greek god who rules the underworld?",
+   "tr": "Yunan mitolojisinde yeraltı dünyasını yöneten tanrı kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "hades",
+    "en": "Hades",
+    "tr": "Hades"
+   },
+   {
+    "concept_id": "ares",
+    "en": "Ares",
+    "tr": "Ares"
+   },
+   {
+    "concept_id": "apollo",
+    "en": "Apollo",
+    "tr": "Apollon"
+   },
+   {
+    "concept_id": "hermes",
+    "en": "Hermes",
+    "tr": "Hermes"
+   }
+  ],
+  "correct": "hades",
+  "source": "https://en.wikipedia.org/wiki/Hades"
+ },
+ {
+  "key": "arts_literature_q0432",
+  "category_id": "arts_literature",
+  "subcategory_id": "mythology",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What happens when you cut off one of the Hydra's heads?",
+   "tr": "Hydra'nın başlarından birini kesince ne olur?"
+  },
+  "options": [
+   {
+    "concept_id": "two_grow_back_in_its_place",
+    "en": "Two grow back in its place",
+    "tr": "Yerine iki baş çıkar"
+   },
+   {
+    "concept_id": "it_turns_to_stone",
+    "en": "It turns to stone",
+    "tr": "Taşa dönüşür"
+   },
+   {
+    "concept_id": "the_hydra_dies_at_once",
+    "en": "The Hydra dies at once",
+    "tr": "Hydra hemen ölür"
+   },
+   {
+    "concept_id": "it_turns_into_a_snake",
+    "en": "It turns into a snake",
+    "tr": "Yılana dönüşür"
+   }
+  ],
+  "correct": "two_grow_back_in_its_place",
+  "source": "https://en.wikipedia.org/wiki/Lernaean_Hydra"
+ },
+ {
+  "key": "arts_literature_q0433",
+  "category_id": "arts_literature",
+  "subcategory_id": "mythology",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which ancient Egyptian goddess was shown as a cat or with a cat's head?",
+   "tr": "Hangi eski Mısır tanrıçası kedi ya da kedi başlı olarak tasvir edilirdi?"
+  },
+  "options": [
+   {
+    "concept_id": "bastet",
+    "en": "Bastet",
+    "tr": "Bastet"
+   },
+   {
+    "concept_id": "isis",
+    "en": "Isis",
+    "tr": "İsis"
+   },
+   {
+    "concept_id": "hathor",
+    "en": "Hathor",
+    "tr": "Hathor"
+   },
+   {
+    "concept_id": "sekhmet",
+    "en": "Sekhmet",
+    "tr": "Sekhmet"
+   }
+  ],
+  "correct": "bastet",
+  "source": "https://en.wikipedia.org/wiki/Bastet"
+ },
+ {
+  "key": "arts_literature_q0434",
+  "category_id": "arts_literature",
+  "subcategory_id": "mythology",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many Fates spun, measured and cut the thread of every life in Greek myth?",
+   "tr": "Yunan mitolojisinde her hayatın ipliğini eğiren, ölçen ve kesen kaç Kader tanrıçası vardı?"
+  },
+  "options": [
+   {
+    "concept_id": "n_3",
+    "en": "3",
+    "tr": "3"
+   },
+   {
+    "concept_id": "n_1",
+    "en": "1",
+    "tr": "1"
+   },
+   {
+    "concept_id": "n_5",
+    "en": "5",
+    "tr": "5"
+   },
+   {
+    "concept_id": "n_9",
+    "en": "9",
+    "tr": "9"
+   }
+  ],
+  "correct": "n_3",
+  "source": "https://en.wikipedia.org/wiki/Moirai"
+ },
+ {
+  "key": "arts_literature_q0435",
+  "category_id": "arts_literature",
+  "subcategory_id": "mythology",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Amazon River was named after which figures of Greek myth?",
+   "tr": "Amazon Nehri, Yunan mitolojisindeki hangi figürlerin adını almıştır?"
+  },
+  "options": [
+   {
+    "concept_id": "a_tribe_of_warrior_women",
+    "en": "A tribe of warrior women",
+    "tr": "Savaşçı kadınlardan oluşan bir kabile"
+   },
+   {
+    "concept_id": "sea_nymphs",
+    "en": "Sea nymphs",
+    "tr": "Deniz perileri"
+   },
+   {
+    "concept_id": "river_gods",
+    "en": "River gods",
+    "tr": "Irmak tanrıları"
+   },
+   {
+    "concept_id": "giant_serpents",
+    "en": "Giant serpents",
+    "tr": "Dev yılanlar"
+   }
+  ],
+  "correct": "a_tribe_of_warrior_women",
+  "source": "https://en.wikipedia.org/wiki/Amazons"
+ },
+ {
+  "key": "arts_literature_q0436",
+  "category_id": "arts_literature",
+  "subcategory_id": "art_movements",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is art that shows no real objects, only shapes, lines and colours, called?",
+   "tr": "Gerçek nesneler göstermeyen, yalnızca biçim, çizgi ve renklerden oluşan sanata ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "abstract_art",
+    "en": "Abstract art",
+    "tr": "Soyut sanat"
+   },
+   {
+    "concept_id": "realism",
+    "en": "Realism",
+    "tr": "Gerçekçilik"
+   },
+   {
+    "concept_id": "portraiture",
+    "en": "Portraiture",
+    "tr": "Portre sanatı"
+   },
+   {
+    "concept_id": "still_life",
+    "en": "Still life",
+    "tr": "Natürmort"
+   }
+  ],
+  "correct": "abstract_art",
+  "source": "https://en.wikipedia.org/wiki/Abstract_art"
+ },
+ {
+  "key": "arts_literature_q0437",
+  "category_id": "arts_literature",
+  "subcategory_id": "art_movements",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which 19th-century invention helped the Impressionists paint outdoors?",
+   "tr": "Hangi 19. yüzyıl icadı izlenimcilerin açık havada resim yapmasına yardım etti?"
+  },
+  "options": [
+   {
+    "concept_id": "paint_in_metal_tubes",
+    "en": "Paint in metal tubes",
+    "tr": "Metal tüplerde boya"
+   },
+   {
+    "concept_id": "the_electric_light_bulb",
+    "en": "The electric light bulb",
+    "tr": "Elektrik ampulü"
+   },
+   {
+    "concept_id": "the_camera_flash",
+    "en": "The camera flash",
+    "tr": "Fotoğraf flaşı"
+   },
+   {
+    "concept_id": "plastic_brushes",
+    "en": "Plastic brushes",
+    "tr": "Plastik fırçalar"
+   }
+  ],
+  "correct": "paint_in_metal_tubes",
+  "source": "https://en.wikipedia.org/wiki/Impressionism"
+ },
+ {
+  "key": "arts_literature_q0438",
+  "category_id": "arts_literature",
+  "subcategory_id": "art_movements",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the upright stand that holds a painter's canvas called?",
+   "tr": "Ressamın tuvalini tutan dik sehpaya ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "an_easel",
+    "en": "An easel",
+    "tr": "Şövale"
+   },
+   {
+    "concept_id": "a_palette",
+    "en": "A palette",
+    "tr": "Palet"
+   },
+   {
+    "concept_id": "a_frame",
+    "en": "A frame",
+    "tr": "Çerçeve"
+   },
+   {
+    "concept_id": "a_tripod",
+    "en": "A tripod",
+    "tr": "Tripod"
+   }
+  ],
+  "correct": "an_easel",
+  "source": "https://en.wikipedia.org/wiki/Easel"
+ },
+ {
+  "key": "arts_literature_q0439",
+  "category_id": "arts_literature",
+  "subcategory_id": "art_movements",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "\"Pixel art\", popular in old video games, is built from what?",
+   "tr": "Eski video oyunlarında yaygın olan \"piksel sanatı\" neyden oluşur?"
+  },
+  "options": [
+   {
+    "concept_id": "tiny_square_dots_of_colour",
+    "en": "Tiny square dots of colour",
+    "tr": "Minik kare renk noktalarından"
+   },
+   {
+    "concept_id": "torn_newspaper",
+    "en": "Torn newspaper",
+    "tr": "Yırtılmış gazeteden"
+   },
+   {
+    "concept_id": "drops_of_ink",
+    "en": "Drops of ink",
+    "tr": "Mürekkep damlalarından"
+   },
+   {
+    "concept_id": "pieces_of_thread",
+    "en": "Pieces of thread",
+    "tr": "İplik parçalarından"
+   }
+  ],
+  "correct": "tiny_square_dots_of_colour",
+  "source": "https://en.wikipedia.org/wiki/Pixel_art"
+ },
+ {
+  "key": "arts_literature_q0440",
+  "category_id": "arts_literature",
+  "subcategory_id": "art_movements",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these is NOT a Japanese art form?",
+   "tr": "Bunlardan hangisi bir Japon sanatı DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "batik",
+    "en": "Batik",
+    "tr": "Batik"
+   },
+   {
+    "concept_id": "origami",
+    "en": "Origami",
+    "tr": "Origami"
+   },
+   {
+    "concept_id": "ikebana",
+    "en": "Ikebana",
+    "tr": "İkebana"
+   },
+   {
+    "concept_id": "ukiyo_e",
+    "en": "Ukiyo-e",
+    "tr": "Ukiyo-e"
+   }
+  ],
+  "correct": "batik",
+  "source": "https://en.wikipedia.org/wiki/Batik"
+ },
+ {
+  "key": "arts_literature_q0441",
+  "category_id": "arts_literature",
+  "subcategory_id": "painters",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "\"The Hay Wain\", Salisbury Cathedral and the Suffolk countryside point to which painter?",
+   "tr": "\"Saman Arabası\", Salisbury Katedrali ve Suffolk kırları hangi ressamı işaret eder?"
+  },
+  "options": [
+   {
+    "concept_id": "john_constable",
+    "en": "John Constable",
+    "tr": "John Constable"
+   },
+   {
+    "concept_id": "j_m_w_turner",
+    "en": "J. M. W. Turner",
+    "tr": "J. M. W. Turner"
+   },
+   {
+    "concept_id": "thomas_gainsborough",
+    "en": "Thomas Gainsborough",
+    "tr": "Thomas Gainsborough"
+   },
+   {
+    "concept_id": "william_blake",
+    "en": "William Blake",
+    "tr": "William Blake"
+   }
+  ],
+  "correct": "john_constable",
+  "source": "https://en.wikipedia.org/wiki/John_Constable"
+ },
+ {
+  "key": "arts_literature_q0442",
+  "category_id": "arts_literature",
+  "subcategory_id": "painters",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Turkish painter Nuri İyem is best known for portraits of whom?",
+   "tr": "Türk ressam Nuri İyem en çok kimlerin portreleriyle tanınır?"
+  },
+  "options": [
+   {
+    "concept_id": "anatolian_women_with_large_sad_eyes",
+    "en": "Anatolian women with large, sad eyes",
+    "tr": "İri, hüzünlü gözlü Anadolu kadınları"
+   },
+   {
+    "concept_id": "ottoman_sultans",
+    "en": "Ottoman sultans",
+    "tr": "Osmanlı padişahları"
+   },
+   {
+    "concept_id": "circus_clowns",
+    "en": "Circus clowns",
+    "tr": "Sirk palyaçoları"
+   },
+   {
+    "concept_id": "racehorses",
+    "en": "Racehorses",
+    "tr": "Yarış atları"
+   }
+  ],
+  "correct": "anatolian_women_with_large_sad_eyes",
+  "source": "https://en.wikipedia.org/wiki/Turkish_art"
+ },
+ {
+  "key": "arts_literature_q0443",
+  "category_id": "arts_literature",
+  "subcategory_id": "painters",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which wealthy Impressionist also bought his friends' paintings to keep them afloat?",
+   "tr": "Hangi varlıklı izlenimci, arkadaşlarını ayakta tutmak için onların tablolarını da satın aldı?"
+  },
+  "options": [
+   {
+    "concept_id": "gustave_caillebotte",
+    "en": "Gustave Caillebotte",
+    "tr": "Gustave Caillebotte"
+   },
+   {
+    "concept_id": "claude_monet",
+    "en": "Claude Monet",
+    "tr": "Claude Monet"
+   },
+   {
+    "concept_id": "camille_pissarro",
+    "en": "Camille Pissarro",
+    "tr": "Camille Pissarro"
+   },
+   {
+    "concept_id": "paul_cezanne",
+    "en": "Paul Cézanne",
+    "tr": "Paul Cézanne"
+   }
+  ],
+  "correct": "gustave_caillebotte",
+  "source": "https://en.wikipedia.org/wiki/Gustave_Caillebotte"
+ },
+ {
+  "key": "arts_literature_q0444",
+  "category_id": "arts_literature",
+  "subcategory_id": "painters",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "At about what age did the American folk artist Grandma Moses start painting seriously?",
+   "tr": "Amerikalı halk sanatçısı Grandma Moses yaklaşık kaç yaşında ciddi olarak resim yapmaya başladı?"
+  },
+  "options": [
+   {
+    "concept_id": "n_78",
+    "en": "78",
+    "tr": "78"
+   },
+   {
+    "concept_id": "n_8",
+    "en": "8",
+    "tr": "8"
+   },
+   {
+    "concept_id": "n_25",
+    "en": "25",
+    "tr": "25"
+   },
+   {
+    "concept_id": "n_50",
+    "en": "50",
+    "tr": "50"
+   }
+  ],
+  "correct": "n_78",
+  "source": "https://en.wikipedia.org/wiki/Grandma_Moses"
+ },
+ {
+  "key": "arts_literature_q0445",
+  "category_id": "arts_literature",
+  "subcategory_id": "painters",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who was born first: Rembrandt or Johannes Vermeer?",
+   "tr": "Kim önce doğdu: Rembrandt mı, Johannes Vermeer mi?"
+  },
+  "options": [
+   {
+    "concept_id": "rembrandt_by_26_years",
+    "en": "Rembrandt, by 26 years",
+    "tr": "Rembrandt, 26 yıl önce"
+   },
+   {
+    "concept_id": "vermeer",
+    "en": "Vermeer",
+    "tr": "Vermeer"
+   },
+   {
+    "concept_id": "born_the_same_year",
+    "en": "Born the same year",
+    "tr": "Aynı yıl doğdular"
+   },
+   {
+    "concept_id": "they_were_twins",
+    "en": "They were twins",
+    "tr": "İkizdiler"
+   }
+  ],
+  "correct": "rembrandt_by_26_years",
+  "source": "https://en.wikipedia.org/wiki/Rembrandt"
+ },
+ {
+  "key": "arts_literature_q0446",
+  "category_id": "arts_literature",
+  "subcategory_id": "famous_works",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who painted \"Wanderer above the Sea of Fog\", a lone man gazing over misty peaks?",
+   "tr": "Sisli dağ zirvelerine bakan yalnız bir adamı gösteren \"Sis Denizi Üzerindeki Gezgin\"i kim yaptı?"
+  },
+  "options": [
+   {
+    "concept_id": "caspar_david_friedrich",
+    "en": "Caspar David Friedrich",
+    "tr": "Caspar David Friedrich"
+   },
+   {
+    "concept_id": "john_constable",
+    "en": "John Constable",
+    "tr": "John Constable"
+   },
+   {
+    "concept_id": "arnold_bocklin",
+    "en": "Arnold Böcklin",
+    "tr": "Arnold Böcklin"
+   },
+   {
+    "concept_id": "albert_bierstadt",
+    "en": "Albert Bierstadt",
+    "tr": "Albert Bierstadt"
+   }
+  ],
+  "correct": "caspar_david_friedrich",
+  "source": "https://en.wikipedia.org/wiki/Wanderer_above_the_Sea_of_Fog"
+ },
+ {
+  "key": "arts_literature_q0447",
+  "category_id": "arts_literature",
+  "subcategory_id": "famous_works",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Rodin's marble \"The Kiss\" first showed which doomed lovers from Dante's Inferno?",
+   "tr": "Rodin'in mermer \"Öpücük\" heykeli ilk başta Dante'nin Cehennem'indeki hangi talihsiz âşıkları gösteriyordu?"
+  },
+  "options": [
+   {
+    "concept_id": "paolo_and_francesca",
+    "en": "Paolo and Francesca",
+    "tr": "Paolo ve Francesca"
+   },
+   {
+    "concept_id": "romeo_and_juliet",
+    "en": "Romeo and Juliet",
+    "tr": "Romeo ve Juliet"
+   },
+   {
+    "concept_id": "tristan_and_isolde",
+    "en": "Tristan and Isolde",
+    "tr": "Tristan ve İsolde"
+   },
+   {
+    "concept_id": "orpheus_and_eurydice",
+    "en": "Orpheus and Eurydice",
+    "tr": "Orfeus ve Eurydike"
+   }
+  ],
+  "correct": "paolo_and_francesca",
+  "source": "https://en.wikipedia.org/wiki/The_Kiss_(Rodin_sculpture)"
+ },
+ {
+  "key": "arts_literature_q0448",
+  "category_id": "arts_literature",
+  "subcategory_id": "famous_works",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Frida Kahlo painting shows two versions of herself sitting side by side, holding hands?",
+   "tr": "Frida Kahlo'nun hangi tablosu yan yana oturup el ele tutuşan iki Frida'yı gösterir?"
+  },
+  "options": [
+   {
+    "concept_id": "the_two_fridas",
+    "en": "The Two Fridas",
+    "tr": "İki Frida"
+   },
+   {
+    "concept_id": "the_broken_column",
+    "en": "The Broken Column",
+    "tr": "Kırık Sütun"
+   },
+   {
+    "concept_id": "self_portrait_with_monkey",
+    "en": "Self-Portrait with Monkey",
+    "tr": "Maymunlu Otoportre"
+   },
+   {
+    "concept_id": "diego_and_i",
+    "en": "Diego and I",
+    "tr": "Diego ve Ben"
+   }
+  ],
+  "correct": "the_two_fridas",
+  "source": "https://en.wikipedia.org/wiki/The_Two_Fridas"
+ },
+ {
+  "key": "arts_literature_q0449",
+  "category_id": "arts_literature",
+  "subcategory_id": "famous_works",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Andy Warhol's \"Campbell's Soup Cans\" is made up of how many canvases?",
+   "tr": "Andy Warhol'un \"Campbell Çorba Kutuları\" kaç tuvalden oluşur?"
+  },
+  "options": [
+   {
+    "concept_id": "n_32",
+    "en": "32",
+    "tr": "32"
+   },
+   {
+    "concept_id": "n_4",
+    "en": "4",
+    "tr": "4"
+   },
+   {
+    "concept_id": "n_12",
+    "en": "12",
+    "tr": "12"
+   },
+   {
+    "concept_id": "n_100",
+    "en": "100",
+    "tr": "100"
+   }
+  ],
+  "correct": "n_32",
+  "source": "https://en.wikipedia.org/wiki/Campbell's_Soup_Cans"
+ },
+ {
+  "key": "arts_literature_q0450",
+  "category_id": "arts_literature",
+  "subcategory_id": "famous_works",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Leonardo da Vinci once sketched a bridge over the Golden Horn for which Ottoman sultan?",
+   "tr": "Leonardo da Vinci bir zamanlar hangi Osmanlı padişahı için Haliç üzerine bir köprü tasarladı?"
+  },
+  "options": [
+   {
+    "concept_id": "bayezid_ii",
+    "en": "Bayezid II",
+    "tr": "II. Bayezid"
+   },
+   {
+    "concept_id": "mehmed_ii",
+    "en": "Mehmed II",
+    "tr": "Fatih Sultan Mehmed"
+   },
+   {
+    "concept_id": "suleiman_the_magnificent",
+    "en": "Suleiman the Magnificent",
+    "tr": "Kanuni Sultan Süleyman"
+   },
+   {
+    "concept_id": "selim_i",
+    "en": "Selim I",
+    "tr": "Yavuz Sultan Selim"
+   }
+  ],
+  "correct": "bayezid_ii",
+  "source": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci"
+ },
+ {
+  "key": "arts_literature_q0451",
+  "category_id": "arts_literature",
+  "subcategory_id": "public_domain_art",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who sculpted \"The Ecstasy of Saint Teresa\" in a Roman church?",
+   "tr": "Roma'daki bir kilisede bulunan \"Azize Teresa'nın Vecdi\"ni hangi heykeltıraş yaptı?"
+  },
+  "options": [
+   {
+    "concept_id": "gian_lorenzo_bernini",
+    "en": "Gian Lorenzo Bernini",
+    "tr": "Gian Lorenzo Bernini"
+   },
+   {
+    "concept_id": "michelangelo",
+    "en": "Michelangelo",
+    "tr": "Michelangelo"
+   },
+   {
+    "concept_id": "antonio_canova",
+    "en": "Antonio Canova",
+    "tr": "Antonio Canova"
+   },
+   {
+    "concept_id": "donatello",
+    "en": "Donatello",
+    "tr": "Donatello"
+   }
+  ],
+  "correct": "gian_lorenzo_bernini",
+  "source": "https://en.wikipedia.org/wiki/Ecstasy_of_Saint_Teresa"
+ },
+ {
+  "key": "arts_literature_q0452",
+  "category_id": "arts_literature",
+  "subcategory_id": "public_domain_art",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What did the Roman practice of \"damnatio memoriae\" do to art?",
+   "tr": "Roma'daki \"damnatio memoriae\" uygulaması sanat eserlerine ne yapardı?"
+  },
+  "options": [
+   {
+    "concept_id": "erased_disgraced_people_s_faces_from_it",
+    "en": "Erased disgraced people's faces from it",
+    "tr": "Gözden düşenlerin yüzlerini silerdi"
+   },
+   {
+    "concept_id": "covered_statues_in_gold",
+    "en": "Covered statues in gold",
+    "tr": "Heykelleri altınla kaplardı"
+   },
+   {
+    "concept_id": "banned_paintings_of_women",
+    "en": "Banned paintings of women",
+    "tr": "Kadın resimlerini yasaklardı"
+   },
+   {
+    "concept_id": "buried_art_with_emperors",
+    "en": "Buried art with emperors",
+    "tr": "Eserleri imparatorlarla gömerdi"
+   }
+  ],
+  "correct": "erased_disgraced_people_s_faces_from_it",
+  "source": "https://en.wikipedia.org/wiki/Damnatio_memoriae"
+ },
+ {
+  "key": "arts_literature_q0453",
+  "category_id": "arts_literature",
+  "subcategory_id": "public_domain_art",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the white chalky primer spread on wooden panels before painting?",
+   "tr": "Resim yapmadan önce ahşap panellere sürülen beyaz, tebeşirimsi astara ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "gesso",
+    "en": "Gesso",
+    "tr": "Gesso (alçı astar)"
+   },
+   {
+    "concept_id": "varnish",
+    "en": "Varnish",
+    "tr": "Vernik"
+   },
+   {
+    "concept_id": "impasto",
+    "en": "Impasto",
+    "tr": "Empasto"
+   },
+   {
+    "concept_id": "glaze",
+    "en": "Glaze",
+    "tr": "Sır"
+   }
+  ],
+  "correct": "gesso",
+  "source": "https://en.wikipedia.org/wiki/Gesso"
+ },
+ {
+  "key": "arts_literature_q0454",
+  "category_id": "arts_literature",
+  "subcategory_id": "public_domain_art",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Ghiberti's bronze \"Gates of Paradise\" doors in Florence took him roughly how many years?",
+   "tr": "Ghiberti'nin Floransa'daki bronz \"Cennet Kapıları\" onun yaklaşık kaç yılını aldı?"
+  },
+  "options": [
+   {
+    "concept_id": "about_27",
+    "en": "About 27",
+    "tr": "Yaklaşık 27"
+   },
+   {
+    "concept_id": "about_2",
+    "en": "About 2",
+    "tr": "Yaklaşık 2"
+   },
+   {
+    "concept_id": "about_8",
+    "en": "About 8",
+    "tr": "Yaklaşık 8"
+   },
+   {
+    "concept_id": "about_60",
+    "en": "About 60",
+    "tr": "Yaklaşık 60"
+   }
+  ],
+  "correct": "about_27",
+  "source": "https://en.wikipedia.org/wiki/Florence_Baptistery"
+ },
+ {
+  "key": "arts_literature_q0455",
+  "category_id": "arts_literature",
+  "subcategory_id": "public_domain_art",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Obelisk of Theodosius in Istanbul's Hippodrome was brought from where?",
+   "tr": "İstanbul Hipodromu'ndaki Theodosius Dikilitaşı nereden getirildi?"
+  },
+  "options": [
+   {
+    "concept_id": "egypt",
+    "en": "Egypt",
+    "tr": "Mısır"
+   },
+   {
+    "concept_id": "greece",
+    "en": "Greece",
+    "tr": "Yunanistan"
+   },
+   {
+    "concept_id": "persia",
+    "en": "Persia",
+    "tr": "İran"
+   },
+   {
+    "concept_id": "rome",
+    "en": "Rome",
+    "tr": "Roma"
+   }
+  ],
+  "correct": "egypt",
+  "source": "https://en.wikipedia.org/wiki/Obelisk_of_Theodosius"
+ },
+ {
+  "key": "arts_literature_q0456",
+  "category_id": "arts_literature",
+  "subcategory_id": "world_literature",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Raskolnikov, an axe and the poor streets of St Petersburg belong to which novel?",
+   "tr": "Raskolnikov, bir balta ve St. Petersburg'un yoksul sokakları hangi romana aittir?"
+  },
+  "options": [
+   {
+    "concept_id": "crime_and_punishment",
+    "en": "Crime and Punishment",
+    "tr": "Suç ve Ceza"
+   },
+   {
+    "concept_id": "the_idiot",
+    "en": "The Idiot",
+    "tr": "Budala"
+   },
+   {
+    "concept_id": "dead_souls",
+    "en": "Dead Souls",
+    "tr": "Ölü Canlar"
+   },
+   {
+    "concept_id": "fathers_and_sons",
+    "en": "Fathers and Sons",
+    "tr": "Babalar ve Oğullar"
+   }
+  ],
+  "correct": "crime_and_punishment",
+  "source": "https://en.wikipedia.org/wiki/Crime_and_Punishment"
+ },
+ {
+  "key": "arts_literature_q0457",
+  "category_id": "arts_literature",
+  "subcategory_id": "world_literature",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Halit Ziya Uşaklıgil novel tells of Bihter's forbidden love, later a hit TV series?",
+   "tr": "Halit Ziya Uşaklıgil'in hangi romanı Bihter'in yasak aşkını anlatır ve sonradan sevilen bir diziye dönüşür?"
+  },
+  "options": [
+   {
+    "concept_id": "ask_memnu",
+    "en": "Aşk-ı Memnu",
+    "tr": "Aşk-ı Memnu"
+   },
+   {
+    "concept_id": "mai_ve_siyah",
+    "en": "Mai ve Siyah",
+    "tr": "Mai ve Siyah"
+   },
+   {
+    "concept_id": "kiralk_konak",
+    "en": "Kiralık Konak",
+    "tr": "Kiralık Konak"
+   },
+   {
+    "concept_id": "sinekli_bakkal",
+    "en": "Sinekli Bakkal",
+    "tr": "Sinekli Bakkal"
+   }
+  ],
+  "correct": "ask_memnu",
+  "source": "https://en.wikipedia.org/wiki/Aşk-ı_Memnu"
+ },
+ {
+  "key": "arts_literature_q0458",
+  "category_id": "arts_literature",
+  "subcategory_id": "world_literature",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How is Bram Stoker's \"Dracula\" told?",
+   "tr": "Bram Stoker'ın \"Drakula\"sı nasıl anlatılır?"
+  },
+  "options": [
+   {
+    "concept_id": "through_letters_diaries_and_news_clippings",
+    "en": "Through letters, diaries and news clippings",
+    "tr": "Mektuplar, günlükler ve gazete kupürleriyle"
+   },
+   {
+    "concept_id": "by_dracula_himself",
+    "en": "By Dracula himself",
+    "tr": "Drakula'nın kendi ağzından"
+   },
+   {
+    "concept_id": "as_a_stage_play",
+    "en": "As a stage play",
+    "tr": "Tiyatro oyunu olarak"
+   },
+   {
+    "concept_id": "in_rhyming_verse",
+    "en": "In rhyming verse",
+    "tr": "Kafiyeli şiirle"
+   }
+  ],
+  "correct": "through_letters_diaries_and_news_clippings",
+  "source": "https://en.wikipedia.org/wiki/Dracula"
+ },
+ {
+  "key": "arts_literature_q0459",
+  "category_id": "arts_literature",
+  "subcategory_id": "world_literature",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the name of Don Quixote's bony old horse?",
+   "tr": "Don Kişot'un sıska yaşlı atının adı nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "rocinante",
+    "en": "Rocinante",
+    "tr": "Rocinante"
+   },
+   {
+    "concept_id": "bucephalus",
+    "en": "Bucephalus",
+    "tr": "Bukefalos"
+   },
+   {
+    "concept_id": "babieca",
+    "en": "Babieca",
+    "tr": "Babieca"
+   },
+   {
+    "concept_id": "marengo",
+    "en": "Marengo",
+    "tr": "Marengo"
+   }
+  ],
+  "correct": "rocinante",
+  "source": "https://en.wikipedia.org/wiki/Rocinante"
+ },
+ {
+  "key": "arts_literature_q0460",
+  "category_id": "arts_literature",
+  "subcategory_id": "world_literature",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Roughly how many pilgrims travel together in Chaucer's \"The Canterbury Tales\"?",
+   "tr": "Chaucer'ın \"Canterbury Hikâyeleri\"nde yaklaşık kaç hacı birlikte yolculuk eder?"
+  },
+  "options": [
+   {
+    "concept_id": "about_30",
+    "en": "About 30",
+    "tr": "Yaklaşık 30"
+   },
+   {
+    "concept_id": "n_3",
+    "en": "3",
+    "tr": "3"
+   },
+   {
+    "concept_id": "about_100",
+    "en": "About 100",
+    "tr": "Yaklaşık 100"
+   },
+   {
+    "concept_id": "n_12",
+    "en": "12",
+    "tr": "12"
+   }
+  ],
+  "correct": "about_30",
+  "source": "https://en.wikipedia.org/wiki/The_Canterbury_Tales"
+ },
+ {
+  "key": "arts_literature_q0461",
+  "category_id": "arts_literature",
+  "subcategory_id": "authors",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Turkish poet wrote the famous poem \"Otuz Beş Yaş\" (Thirty-Five Years)?",
+   "tr": "Ünlü \"Otuz Beş Yaş\" şiirini hangi Türk şair yazdı?"
+  },
+  "options": [
+   {
+    "concept_id": "cahit_stk_taranc",
+    "en": "Cahit Sıtkı Tarancı",
+    "tr": "Cahit Sıtkı Tarancı"
+   },
+   {
+    "concept_id": "orhan_veli_kank",
+    "en": "Orhan Veli Kanık",
+    "tr": "Orhan Veli Kanık"
+   },
+   {
+    "concept_id": "nazm_hikmet",
+    "en": "Nâzım Hikmet",
+    "tr": "Nâzım Hikmet"
+   },
+   {
+    "concept_id": "cemal_sureya",
+    "en": "Cemal Süreya",
+    "tr": "Cemal Süreya"
+   }
+  ],
+  "correct": "cahit_stk_taranc",
+  "source": "https://en.wikipedia.org/wiki/Cahit_Sıtkı_Tarancı"
+ },
+ {
+  "key": "arts_literature_q0462",
+  "category_id": "arts_literature",
+  "subcategory_id": "authors",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Russian novelist faced a firing squad in 1849, only to be spared at the last moment?",
+   "tr": "Hangi Rus romancı 1849'da idam mangasının karşısına çıkarılıp son anda affedildi?"
+  },
+  "options": [
+   {
+    "concept_id": "fyodor_dostoevsky",
+    "en": "Fyodor Dostoevsky",
+    "tr": "Fyodor Dostoyevski"
+   },
+   {
+    "concept_id": "leo_tolstoy",
+    "en": "Leo Tolstoy",
+    "tr": "Lev Tolstoy"
+   },
+   {
+    "concept_id": "ivan_turgenev",
+    "en": "Ivan Turgenev",
+    "tr": "İvan Turgenyev"
+   },
+   {
+    "concept_id": "anton_chekhov",
+    "en": "Anton Chekhov",
+    "tr": "Anton Çehov"
+   }
+  ],
+  "correct": "fyodor_dostoevsky",
+  "source": "https://en.wikipedia.org/wiki/Fyodor_Dostoevsky"
+ },
+ {
+  "key": "arts_literature_q0463",
+  "category_id": "arts_literature",
+  "subcategory_id": "authors",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Victorian novelist of \"Middlemarch\" published under the name George Eliot?",
+   "tr": "\"Middlemarch\"ın hangi Viktorya dönemi romancısı George Eliot adıyla yayımladı?"
+  },
+  "options": [
+   {
+    "concept_id": "mary_ann_evans",
+    "en": "Mary Ann Evans",
+    "tr": "Mary Ann Evans"
+   },
+   {
+    "concept_id": "charlotte_bronte",
+    "en": "Charlotte Brontë",
+    "tr": "Charlotte Brontë"
+   },
+   {
+    "concept_id": "elizabeth_gaskell",
+    "en": "Elizabeth Gaskell",
+    "tr": "Elizabeth Gaskell"
+   },
+   {
+    "concept_id": "mary_shelley",
+    "en": "Mary Shelley",
+    "tr": "Mary Shelley"
+   }
+  ],
+  "correct": "mary_ann_evans",
+  "source": "https://en.wikipedia.org/wiki/George_Eliot"
+ },
+ {
+  "key": "arts_literature_q0464",
+  "category_id": "arts_literature",
+  "subcategory_id": "authors",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Sophocles wrote over 120 plays. How many survive complete?",
+   "tr": "Sofokles 120'den fazla oyun yazdı. Bunlardan kaçı tam olarak günümüze ulaştı?"
+  },
+  "options": [
+   {
+    "concept_id": "n_7",
+    "en": "7",
+    "tr": "7"
+   },
+   {
+    "concept_id": "n_1",
+    "en": "1",
+    "tr": "1"
+   },
+   {
+    "concept_id": "n_40",
+    "en": "40",
+    "tr": "40"
+   },
+   {
+    "concept_id": "n_120",
+    "en": "120",
+    "tr": "120"
+   }
+  ],
+  "correct": "n_7",
+  "source": "https://en.wikipedia.org/wiki/Sophocles"
+ },
+ {
+  "key": "arts_literature_q0465",
+  "category_id": "arts_literature",
+  "subcategory_id": "authors",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these writers was NOT Russian?",
+   "tr": "Bu yazarlardan hangisi Rus DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "johann_wolfgang_von_goethe",
+    "en": "Johann Wolfgang von Goethe",
+    "tr": "Johann Wolfgang von Goethe"
+   },
+   {
+    "concept_id": "anton_chekhov",
+    "en": "Anton Chekhov",
+    "tr": "Anton Çehov"
+   },
+   {
+    "concept_id": "nikolai_gogol",
+    "en": "Nikolai Gogol",
+    "tr": "Nikolay Gogol"
+   },
+   {
+    "concept_id": "ivan_turgenev",
+    "en": "Ivan Turgenev",
+    "tr": "İvan Turgenyev"
+   }
+  ],
+  "correct": "johann_wolfgang_von_goethe",
+  "source": "https://en.wikipedia.org/wiki/Russian_literature"
+ },
+ {
+  "key": "arts_literature_q0466",
+  "category_id": "arts_literature",
+  "subcategory_id": "architecture",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which modernist architect of the Barcelona Pavilion is known for saying \"less is more\"?",
+   "tr": "Barselona Pavyonu'nun hangi modernist mimarı \"az çoktur\" sözüyle bilinir?"
+  },
+  "options": [
+   {
+    "concept_id": "ludwig_mies_van_der_rohe",
+    "en": "Ludwig Mies van der Rohe",
+    "tr": "Ludwig Mies van der Rohe"
+   },
+   {
+    "concept_id": "le_corbusier",
+    "en": "Le Corbusier",
+    "tr": "Le Corbusier"
+   },
+   {
+    "concept_id": "walter_gropius",
+    "en": "Walter Gropius",
+    "tr": "Walter Gropius"
+   },
+   {
+    "concept_id": "alvar_aalto",
+    "en": "Alvar Aalto",
+    "tr": "Alvar Aalto"
+   }
+  ],
+  "correct": "ludwig_mies_van_der_rohe",
+  "source": "https://en.wikipedia.org/wiki/Ludwig_Mies_van_der_Rohe"
+ },
+ {
+  "key": "arts_literature_q0467",
+  "category_id": "arts_literature",
+  "subcategory_id": "architecture",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Prague's curvy \"Dancing House\" is said to look like what?",
+   "tr": "Prag'daki kıvrımlı \"Dans Eden Ev\"in neye benzediği söylenir?"
+  },
+  "options": [
+   {
+    "concept_id": "a_couple_dancing_together",
+    "en": "A couple dancing together",
+    "tr": "Birlikte dans eden bir çifte"
+   },
+   {
+    "concept_id": "a_melting_candle",
+    "en": "A melting candle",
+    "tr": "Eriyen bir mum"
+   },
+   {
+    "concept_id": "a_stack_of_books",
+    "en": "A stack of books",
+    "tr": "Üst üste kitaplara"
+   },
+   {
+    "concept_id": "a_ship_s_sail",
+    "en": "A ship's sail",
+    "tr": "Bir gemi yelkenine"
+   }
+  ],
+  "correct": "a_couple_dancing_together",
+  "source": "https://en.wikipedia.org/wiki/Dancing_House"
+ },
+ {
+  "key": "arts_literature_q0468",
+  "category_id": "arts_literature",
+  "subcategory_id": "architecture",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Great Mosque of Córdoba is famous for a forest of roughly how many columns?",
+   "tr": "Kurtuba Ulu Camii yaklaşık kaç sütundan oluşan bir \"orman\"la ünlüdür?"
+  },
+  "options": [
+   {
+    "concept_id": "about_850",
+    "en": "About 850",
+    "tr": "Yaklaşık 850"
+   },
+   {
+    "concept_id": "about_40",
+    "en": "About 40",
+    "tr": "Yaklaşık 40"
+   },
+   {
+    "concept_id": "about_200",
+    "en": "About 200",
+    "tr": "Yaklaşık 200"
+   },
+   {
+    "concept_id": "about_5_000",
+    "en": "About 5,000",
+    "tr": "Yaklaşık 5.000"
+   }
+  ],
+  "correct": "about_850",
+  "source": "https://en.wikipedia.org/wiki/Mosque–Cathedral_of_Córdoba"
+ },
+ {
+  "key": "arts_literature_q0469",
+  "category_id": "arts_literature",
+  "subcategory_id": "architecture",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the open central hall of a Roman house, often with a pool, called?",
+   "tr": "Bir Roma evinin çoğu zaman havuzlu, üstü açık orta salonuna ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "the_atrium",
+    "en": "The atrium",
+    "tr": "Atriyum"
+   },
+   {
+    "concept_id": "the_forum",
+    "en": "The forum",
+    "tr": "Forum"
+   },
+   {
+    "concept_id": "the_apse",
+    "en": "The apse",
+    "tr": "Apsis"
+   },
+   {
+    "concept_id": "the_nave",
+    "en": "The nave",
+    "tr": "Nef"
+   }
+  ],
+  "correct": "the_atrium",
+  "source": "https://en.wikipedia.org/wiki/Atrium_(architecture)"
+ },
+ {
+  "key": "arts_literature_q0470",
+  "category_id": "arts_literature",
+  "subcategory_id": "architecture",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What was an Ottoman \"bedesten\"?",
+   "tr": "Osmanlı'da \"bedesten\" neydi?"
+  },
+  "options": [
+   {
+    "concept_id": "a_domed_hall_for_valuable_goods",
+    "en": "A domed hall for valuable goods",
+    "tr": "Değerli malların satıldığı kubbeli çarşı"
+   },
+   {
+    "concept_id": "a_bathhouse_for_women",
+    "en": "A bathhouse for women",
+    "tr": "Kadınlar hamamı"
+   },
+   {
+    "concept_id": "a_royal_stable",
+    "en": "A royal stable",
+    "tr": "Saray ahırı"
+   },
+   {
+    "concept_id": "a_school_for_pages",
+    "en": "A school for pages",
+    "tr": "İç oğlanları okulu"
+   }
+  ],
+  "correct": "a_domed_hall_for_valuable_goods",
+  "source": "https://en.wikipedia.org/wiki/Bedesten"
+ },
+ {
+  "key": "arts_literature_q0471",
+  "category_id": "arts_literature",
+  "subcategory_id": "mythology",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Egyptian goddess gathered the pieces of her murdered husband Osiris?",
+   "tr": "Hangi Mısır tanrıçası öldürülen kocası Osiris'in parçalarını topladı?"
+  },
+  "options": [
+   {
+    "concept_id": "isis",
+    "en": "Isis",
+    "tr": "İsis"
+   },
+   {
+    "concept_id": "bastet",
+    "en": "Bastet",
+    "tr": "Bastet"
+   },
+   {
+    "concept_id": "nut",
+    "en": "Nut",
+    "tr": "Nut"
+   },
+   {
+    "concept_id": "hathor",
+    "en": "Hathor",
+    "tr": "Hathor"
+   }
+  ],
+  "correct": "isis",
+  "source": "https://en.wikipedia.org/wiki/Isis"
+ },
+ {
+  "key": "arts_literature_q0472",
+  "category_id": "arts_literature",
+  "subcategory_id": "mythology",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Şahmeran, a legendary queen of Anatolian tales, is half woman and half what?",
+   "tr": "Anadolu masallarının efsanevi kraliçesi Şahmeran yarı kadın, yarı nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "snake",
+    "en": "Snake",
+    "tr": "Yılan"
+   },
+   {
+    "concept_id": "lion",
+    "en": "Lion",
+    "tr": "Aslan"
+   },
+   {
+    "concept_id": "fish",
+    "en": "Fish",
+    "tr": "Balık"
+   },
+   {
+    "concept_id": "eagle",
+    "en": "Eagle",
+    "tr": "Kartal"
+   }
+  ],
+  "correct": "snake",
+  "source": "https://en.wikipedia.org/wiki/Shahmaran"
+ },
+ {
+  "key": "arts_literature_q0473",
+  "category_id": "arts_literature",
+  "subcategory_id": "mythology",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How was the goddess Athena born, according to Greek myth?",
+   "tr": "Yunan mitolojisine göre tanrıça Athena nasıl doğdu?"
+  },
+  "options": [
+   {
+    "concept_id": "fully_armed_from_zeus_s_head",
+    "en": "Fully armed, from Zeus's head",
+    "tr": "Zeus'un başından, tam silahlı olarak"
+   },
+   {
+    "concept_id": "from_the_sea_foam",
+    "en": "From the sea foam",
+    "tr": "Deniz köpüğünden"
+   },
+   {
+    "concept_id": "from_a_golden_egg",
+    "en": "From a golden egg",
+    "tr": "Altın bir yumurtadan"
+   },
+   {
+    "concept_id": "from_an_olive_tree",
+    "en": "From an olive tree",
+    "tr": "Bir zeytin ağacından"
+   }
+  ],
+  "correct": "fully_armed_from_zeus_s_head",
+  "source": "https://en.wikipedia.org/wiki/Athena"
+ },
+ {
+  "key": "arts_literature_q0474",
+  "category_id": "arts_literature",
+  "subcategory_id": "mythology",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The giant Argus Panoptes, set to guard Io, had how many eyes?",
+   "tr": "Io'yu korumakla görevlendirilen dev Argus Panoptes'in kaç gözü vardı?"
+  },
+  "options": [
+   {
+    "concept_id": "n_100",
+    "en": "100",
+    "tr": "100"
+   },
+   {
+    "concept_id": "n_3",
+    "en": "3",
+    "tr": "3"
+   },
+   {
+    "concept_id": "n_12",
+    "en": "12",
+    "tr": "12"
+   },
+   {
+    "concept_id": "n_1_000",
+    "en": "1,000",
+    "tr": "1.000"
+   }
+  ],
+  "correct": "n_100",
+  "source": "https://en.wikipedia.org/wiki/Argus_Panoptes"
+ },
+ {
+  "key": "arts_literature_q0475",
+  "category_id": "arts_literature",
+  "subcategory_id": "mythology",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What was the name of the ship Jason sailed in search of the Golden Fleece?",
+   "tr": "Jason'ın Altın Post'u aramak için yelken açtığı geminin adı neydi?"
+  },
+  "options": [
+   {
+    "concept_id": "the_argo",
+    "en": "The Argo",
+    "tr": "Argo"
+   },
+   {
+    "concept_id": "the_nautilus",
+    "en": "The Nautilus",
+    "tr": "Nautilus"
+   },
+   {
+    "concept_id": "the_odyssey",
+    "en": "The Odyssey",
+    "tr": "Odysseia"
+   },
+   {
+    "concept_id": "the_pegasus",
+    "en": "The Pegasus",
+    "tr": "Pegasus"
+   }
+  ],
+  "correct": "the_argo",
+  "source": "https://en.wikipedia.org/wiki/Argo"
+ },
+ {
+  "key": "arts_literature_q0476",
+  "category_id": "arts_literature",
+  "subcategory_id": "art_movements",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Odilon Redon and Gustave Moreau, painters of dreams and myths, belong to which movement?",
+   "tr": "Rüyaların ve mitlerin ressamları Odilon Redon ile Gustave Moreau hangi akıma aittir?"
+  },
+  "options": [
+   {
+    "concept_id": "symbolism",
+    "en": "Symbolism",
+    "tr": "Sembolizm"
+   },
+   {
+    "concept_id": "realism",
+    "en": "Realism",
+    "tr": "Gerçekçilik"
+   },
+   {
+    "concept_id": "cubism",
+    "en": "Cubism",
+    "tr": "Kübizm"
+   },
+   {
+    "concept_id": "minimalism",
+    "en": "Minimalism",
+    "tr": "Minimalizm"
+   }
+  ],
+  "correct": "symbolism",
+  "source": "https://en.wikipedia.org/wiki/Symbolism_(arts)"
+ },
+ {
+  "key": "arts_literature_q0477",
+  "category_id": "arts_literature",
+  "subcategory_id": "art_movements",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What did America's early-1900s \"Ashcan School\" painters mostly show?",
+   "tr": "Amerika'daki 1900'lerin başındaki \"Ashcan Okulu\" ressamları çoğunlukla neyi resmetti?"
+  },
+  "options": [
+   {
+    "concept_id": "gritty_everyday_life_in_new_york",
+    "en": "Gritty everyday life in New York",
+    "tr": "New York'un sert gündelik hayatını"
+   },
+   {
+    "concept_id": "rubbish_bins_as_still_lifes",
+    "en": "Rubbish bins as still lifes",
+    "tr": "Natürmort olarak çöp kutularını"
+   },
+   {
+    "concept_id": "wild_western_landscapes",
+    "en": "Wild western landscapes",
+    "tr": "Vahşi Batı manzaralarını"
+   },
+   {
+    "concept_id": "religious_scenes",
+    "en": "Religious scenes",
+    "tr": "Dinî sahneleri"
+   }
+  ],
+  "correct": "gritty_everyday_life_in_new_york",
+  "source": "https://en.wikipedia.org/wiki/Ashcan_School"
+ },
+ {
+  "key": "arts_literature_q0478",
+  "category_id": "arts_literature",
+  "subcategory_id": "art_movements",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is 3D art made by combining found objects and scraps called?",
+   "tr": "Buluntu nesneler ve artıkların bir araya getirilmesiyle yapılan üç boyutlu sanata ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "assemblage",
+    "en": "Assemblage",
+    "tr": "Asamblaj"
+   },
+   {
+    "concept_id": "fresco",
+    "en": "Fresco",
+    "tr": "Fresk"
+   },
+   {
+    "concept_id": "pointillism",
+    "en": "Pointillism",
+    "tr": "Noktacılık"
+   },
+   {
+    "concept_id": "tempera",
+    "en": "Tempera",
+    "tr": "Tempera"
+   }
+  ],
+  "correct": "assemblage",
+  "source": "https://en.wikipedia.org/wiki/Assemblage_(art)"
+ },
+ {
+  "key": "arts_literature_q0479",
+  "category_id": "arts_literature",
+  "subcategory_id": "art_movements",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In which year was Dada born at the Cabaret Voltaire in Zurich?",
+   "tr": "Dada, Zürih'teki Cabaret Voltaire'de hangi yıl doğdu?"
+  },
+  "options": [
+   {
+    "concept_id": "n_1916",
+    "en": "1916",
+    "tr": "1916"
+   },
+   {
+    "concept_id": "n_1886",
+    "en": "1886",
+    "tr": "1886"
+   },
+   {
+    "concept_id": "n_1936",
+    "en": "1936",
+    "tr": "1936"
+   },
+   {
+    "concept_id": "n_1956",
+    "en": "1956",
+    "tr": "1956"
+   }
+  ],
+  "correct": "n_1916",
+  "source": "https://en.wikipedia.org/wiki/Cabaret_Voltaire_(Zurich)"
+ },
+ {
+  "key": "arts_literature_q0480",
+  "category_id": "arts_literature",
+  "subcategory_id": "art_movements",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In 1965, Yves Saint Laurent designed a famous dress inspired by which painter?",
+   "tr": "Yves Saint Laurent 1965'te hangi ressamdan esinlenen ünlü bir elbise tasarladı?"
+  },
+  "options": [
+   {
+    "concept_id": "piet_mondrian",
+    "en": "Piet Mondrian",
+    "tr": "Piet Mondrian"
+   },
+   {
+    "concept_id": "claude_monet",
+    "en": "Claude Monet",
+    "tr": "Claude Monet"
+   },
+   {
+    "concept_id": "jackson_pollock",
+    "en": "Jackson Pollock",
+    "tr": "Jackson Pollock"
+   },
+   {
+    "concept_id": "henri_matisse",
+    "en": "Henri Matisse",
+    "tr": "Henri Matisse"
+   }
+  ],
+  "correct": "piet_mondrian",
+  "source": "https://en.wikipedia.org/wiki/Mondrian_dress"
+ },
+ {
+  "key": "arts_literature_q0481",
+  "category_id": "arts_literature",
+  "subcategory_id": "painters",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which American painter was the only one from her country to show with the French Impressionists?",
+   "tr": "Fransız izlenimcilerle birlikte sergi açan tek Amerikalı ressam hangi kadındı?"
+  },
+  "options": [
+   {
+    "concept_id": "mary_cassatt",
+    "en": "Mary Cassatt",
+    "tr": "Mary Cassatt"
+   },
+   {
+    "concept_id": "georgia_o_keeffe",
+    "en": "Georgia O'Keeffe",
+    "tr": "Georgia O'Keeffe"
+   },
+   {
+    "concept_id": "berthe_morisot",
+    "en": "Berthe Morisot",
+    "tr": "Berthe Morisot"
+   },
+   {
+    "concept_id": "cecilia_beaux",
+    "en": "Cecilia Beaux",
+    "tr": "Cecilia Beaux"
+   }
+  ],
+  "correct": "mary_cassatt",
+  "source": "https://en.wikipedia.org/wiki/Mary_Cassatt"
+ },
+ {
+  "key": "arts_literature_q0482",
+  "category_id": "arts_literature",
+  "subcategory_id": "painters",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Ottoman soldier-painter is celebrated for his Istanbul landscapes and pencil sketches?",
+   "tr": "Hangi Osmanlı asker-ressam İstanbul manzaraları ve kurşun kalem eskizleriyle ünlüdür?"
+  },
+  "options": [
+   {
+    "concept_id": "hoca_ali_rza",
+    "en": "Hoca Ali Rıza",
+    "tr": "Hoca Ali Rıza"
+   },
+   {
+    "concept_id": "osman_hamdi_bey",
+    "en": "Osman Hamdi Bey",
+    "tr": "Osman Hamdi Bey"
+   },
+   {
+    "concept_id": "ibrahim_call",
+    "en": "İbrahim Çallı",
+    "tr": "İbrahim Çallı"
+   },
+   {
+    "concept_id": "halil_pasa",
+    "en": "Halil Paşa",
+    "tr": "Halil Paşa"
+   }
+  ],
+  "correct": "hoca_ali_rza",
+  "source": "https://en.wikipedia.org/wiki/Hoca_Ali_Rıza"
+ },
+ {
+  "key": "arts_literature_q0483",
+  "category_id": "arts_literature",
+  "subcategory_id": "painters",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Spanish Baroque painter, working in Naples, was nicknamed \"Lo Spagnoletto\"?",
+   "tr": "Napoli'de çalışan hangi İspanyol Barok ressama \"Lo Spagnoletto\" lakabı verildi?"
+  },
+  "options": [
+   {
+    "concept_id": "jusepe_de_ribera",
+    "en": "Jusepe de Ribera",
+    "tr": "Jusepe de Ribera"
+   },
+   {
+    "concept_id": "francisco_de_zurbaran",
+    "en": "Francisco de Zurbarán",
+    "tr": "Francisco de Zurbarán"
+   },
+   {
+    "concept_id": "bartolome_murillo",
+    "en": "Bartolomé Murillo",
+    "tr": "Bartolomé Murillo"
+   },
+   {
+    "concept_id": "el_greco",
+    "en": "El Greco",
+    "tr": "El Greco"
+   }
+  ],
+  "correct": "jusepe_de_ribera",
+  "source": "https://en.wikipedia.org/wiki/Jusepe_de_Ribera"
+ },
+ {
+  "key": "arts_literature_q0484",
+  "category_id": "arts_literature",
+  "subcategory_id": "famous_works",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Madrid museum is home to Velázquez's \"Las Meninas\"?",
+   "tr": "Velázquez'in \"Nedimeler\" (Las Meninas) tablosu Madrid'deki hangi müzededir?"
+  },
+  "options": [
+   {
+    "concept_id": "museo_del_prado",
+    "en": "Museo del Prado",
+    "tr": "Prado Müzesi"
+   },
+   {
+    "concept_id": "reina_sofia",
+    "en": "Reina Sofía",
+    "tr": "Reina Sofía"
+   },
+   {
+    "concept_id": "thyssen_bornemisza",
+    "en": "Thyssen-Bornemisza",
+    "tr": "Thyssen-Bornemisza"
+   },
+   {
+    "concept_id": "royal_palace",
+    "en": "Royal Palace",
+    "tr": "Kraliyet Sarayı"
+   }
+  ],
+  "correct": "museo_del_prado",
+  "source": "https://en.wikipedia.org/wiki/Las_Meninas"
+ },
+ {
+  "key": "arts_literature_q0485",
+  "category_id": "arts_literature",
+  "subcategory_id": "famous_works",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Where did Goya originally paint \"Saturn Devouring His Son\"?",
+   "tr": "Goya \"Oğlunu Yiyen Satürn\"ü ilk olarak nereye yaptı?"
+  },
+  "options": [
+   {
+    "concept_id": "directly_on_a_wall_of_his_own_house",
+    "en": "Directly on a wall of his own house",
+    "tr": "Doğrudan kendi evinin duvarına"
+   },
+   {
+    "concept_id": "on_a_church_ceiling",
+    "en": "On a church ceiling",
+    "tr": "Bir kilise tavanına"
+   },
+   {
+    "concept_id": "on_a_palace_door",
+    "en": "On a palace door",
+    "tr": "Bir saray kapısına"
+   },
+   {
+    "concept_id": "on_a_ship_s_sail",
+    "en": "On a ship's sail",
+    "tr": "Bir gemi yelkenine"
+   }
+  ],
+  "correct": "directly_on_a_wall_of_his_own_house",
+  "source": "https://en.wikipedia.org/wiki/Saturn_Devouring_His_Son"
+ },
+ {
+  "key": "arts_literature_q0486",
+  "category_id": "arts_literature",
+  "subcategory_id": "famous_works",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who painted \"Ophelia\" (1851–52), showing Hamlet's drowned beloved floating in a stream?",
+   "tr": "Hamlet'in boğulan sevgilisini derede süzülürken gösteren \"Ophelia\"yı (1851–52) kim yaptı?"
+  },
+  "options": [
+   {
+    "concept_id": "john_everett_millais",
+    "en": "John Everett Millais",
+    "tr": "John Everett Millais"
+   },
+   {
+    "concept_id": "dante_gabriel_rossetti",
+    "en": "Dante Gabriel Rossetti",
+    "tr": "Dante Gabriel Rossetti"
+   },
+   {
+    "concept_id": "john_william_waterhouse",
+    "en": "John William Waterhouse",
+    "tr": "John William Waterhouse"
+   },
+   {
+    "concept_id": "edward_burne_jones",
+    "en": "Edward Burne-Jones",
+    "tr": "Edward Burne-Jones"
+   }
+  ],
+  "correct": "john_everett_millais",
+  "source": "https://en.wikipedia.org/wiki/Ophelia_(painting)"
+ },
+ {
+  "key": "arts_literature_q0487",
+  "category_id": "arts_literature",
+  "subcategory_id": "public_domain_art",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Portland Vase, a Roman cameo-glass masterpiece, is kept in which museum?",
+   "tr": "Roma kameo camının başyapıtı Portland Vazosu hangi müzede saklanır?"
+  },
+  "options": [
+   {
+    "concept_id": "the_british_museum",
+    "en": "The British Museum",
+    "tr": "British Museum"
+   },
+   {
+    "concept_id": "the_louvre",
+    "en": "The Louvre",
+    "tr": "Louvre"
+   },
+   {
+    "concept_id": "the_vatican_museums",
+    "en": "The Vatican Museums",
+    "tr": "Vatikan Müzeleri"
+   },
+   {
+    "concept_id": "the_metropolitan_museum",
+    "en": "The Metropolitan Museum",
+    "tr": "Metropolitan Müzesi"
+   }
+  ],
+  "correct": "the_british_museum",
+  "source": "https://en.wikipedia.org/wiki/Portland_Vase"
+ },
+ {
+  "key": "arts_literature_q0488",
+  "category_id": "arts_literature",
+  "subcategory_id": "public_domain_art",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Whose bronze \"David\" is the first freestanding nude statue since antiquity?",
+   "tr": "Kimin bronz \"Davut\"u antik çağdan bu yana ilk bağımsız çıplak heykeldir?"
+  },
+  "options": [
+   {
+    "concept_id": "donatello",
+    "en": "Donatello",
+    "tr": "Donatello"
+   },
+   {
+    "concept_id": "verrocchio",
+    "en": "Verrocchio",
+    "tr": "Verrocchio"
+   },
+   {
+    "concept_id": "michelangelo",
+    "en": "Michelangelo",
+    "tr": "Michelangelo"
+   },
+   {
+    "concept_id": "cellini",
+    "en": "Cellini",
+    "tr": "Cellini"
+   }
+  ],
+  "correct": "donatello",
+  "source": "https://en.wikipedia.org/wiki/David_(Donatello)"
+ },
+ {
+  "key": "arts_literature_q0489",
+  "category_id": "arts_literature",
+  "subcategory_id": "public_domain_art",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which ancient Greek painter was said to paint grapes so real that birds pecked at them?",
+   "tr": "Hangi antik Yunan ressamının üzümleri o kadar gerçekçi çizdiği, kuşların onları gagaladığı anlatılır?"
+  },
+  "options": [
+   {
+    "concept_id": "zeuxis",
+    "en": "Zeuxis",
+    "tr": "Zeuksis"
+   },
+   {
+    "concept_id": "apelles",
+    "en": "Apelles",
+    "tr": "Apelles"
+   },
+   {
+    "concept_id": "polygnotus",
+    "en": "Polygnotus",
+    "tr": "Polygnotos"
+   },
+   {
+    "concept_id": "phidias",
+    "en": "Phidias",
+    "tr": "Fidias"
+   }
+  ],
+  "correct": "zeuxis",
+  "source": "https://en.wikipedia.org/wiki/Zeuxis"
+ },
+ {
+  "key": "arts_literature_q0490",
+  "category_id": "arts_literature",
+  "subcategory_id": "world_literature",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Italian writer's \"The Betrothed\" (I promessi sposi) helped shape modern Italian?",
+   "tr": "Hangi İtalyan yazarın \"Nişanlılar\"ı modern İtalyancanın biçimlenmesine yardım etti?"
+  },
+  "options": [
+   {
+    "concept_id": "alessandro_manzoni",
+    "en": "Alessandro Manzoni",
+    "tr": "Alessandro Manzoni"
+   },
+   {
+    "concept_id": "giovanni_verga",
+    "en": "Giovanni Verga",
+    "tr": "Giovanni Verga"
+   },
+   {
+    "concept_id": "italo_svevo",
+    "en": "Italo Svevo",
+    "tr": "Italo Svevo"
+   },
+   {
+    "concept_id": "ugo_foscolo",
+    "en": "Ugo Foscolo",
+    "tr": "Ugo Foscolo"
+   }
+  ],
+  "correct": "alessandro_manzoni",
+  "source": "https://en.wikipedia.org/wiki/The_Betrothed_(Manzoni_novel)"
+ },
+ {
+  "key": "arts_literature_q0491",
+  "category_id": "arts_literature",
+  "subcategory_id": "world_literature",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Persian poet wrote \"The Conference of the Birds\", about birds seeking the Simurgh?",
+   "tr": "Simurg'u arayan kuşları anlatan \"Mantıku't-Tayr\"ı (Kuşların Dili) hangi İranlı şair yazdı?"
+  },
+  "options": [
+   {
+    "concept_id": "attar_of_nishapur",
+    "en": "Attar of Nishapur",
+    "tr": "Feridüddin Attar"
+   },
+   {
+    "concept_id": "hafez",
+    "en": "Hafez",
+    "tr": "Hafız"
+   },
+   {
+    "concept_id": "saadi",
+    "en": "Saadi",
+    "tr": "Sadi"
+   },
+   {
+    "concept_id": "omar_khayyam",
+    "en": "Omar Khayyam",
+    "tr": "Ömer Hayyam"
+   }
+  ],
+  "correct": "attar_of_nishapur",
+  "source": "https://en.wikipedia.org/wiki/The_Conference_of_the_Birds"
+ },
+ {
+  "key": "arts_literature_q0492",
+  "category_id": "arts_literature",
+  "subcategory_id": "world_literature",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Polish novelist, author of \"Quo Vadis\", won the 1905 Nobel Prize?",
+   "tr": "\"Quo Vadis\"in hangi Polonyalı yazarı 1905'te Nobel Ödülü kazandı?"
+  },
+  "options": [
+   {
+    "concept_id": "henryk_sienkiewicz",
+    "en": "Henryk Sienkiewicz",
+    "tr": "Henryk Sienkiewicz"
+   },
+   {
+    "concept_id": "wadysaw_reymont",
+    "en": "Władysław Reymont",
+    "tr": "Władysław Reymont"
+   },
+   {
+    "concept_id": "czesaw_miosz",
+    "en": "Czesław Miłosz",
+    "tr": "Czesław Miłosz"
+   },
+   {
+    "concept_id": "bolesaw_prus",
+    "en": "Bolesław Prus",
+    "tr": "Bolesław Prus"
+   }
+  ],
+  "correct": "henryk_sienkiewicz",
+  "source": "https://en.wikipedia.org/wiki/Henryk_Sienkiewicz"
+ },
+ {
+  "key": "arts_literature_q0493",
+  "category_id": "arts_literature",
+  "subcategory_id": "authors",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Turkish poet became famous in 1928 with the poem \"Kaldırımlar\" (Pavements)?",
+   "tr": "Hangi Türk şair 1928'de \"Kaldırımlar\" şiiriyle ün kazandı?"
+  },
+  "options": [
+   {
+    "concept_id": "necip_fazl_ksakurek",
+    "en": "Necip Fazıl Kısakürek",
+    "tr": "Necip Fazıl Kısakürek"
+   },
+   {
+    "concept_id": "ahmet_hasim",
+    "en": "Ahmet Haşim",
+    "tr": "Ahmet Haşim"
+   },
+   {
+    "concept_id": "yahya_kemal_beyatl",
+    "en": "Yahya Kemal Beyatlı",
+    "tr": "Yahya Kemal Beyatlı"
+   },
+   {
+    "concept_id": "faruk_nafiz_camlbel",
+    "en": "Faruk Nafiz Çamlıbel",
+    "tr": "Faruk Nafiz Çamlıbel"
+   }
+  ],
+  "correct": "necip_fazl_ksakurek",
+  "source": "https://en.wikipedia.org/wiki/Necip_Fazıl_Kısakürek"
+ },
+ {
+  "key": "arts_literature_q0494",
+  "category_id": "arts_literature",
+  "subcategory_id": "authors",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "James Joyce's \"Ulysses\" takes place on 16 June 1904. What do fans call that day?",
+   "tr": "James Joyce'un \"Ulysses\"i 16 Haziran 1904'te geçer. Hayranlar bu güne ne ad verir?"
+  },
+  "options": [
+   {
+    "concept_id": "bloomsday",
+    "en": "Bloomsday",
+    "tr": "Bloomsday"
+   },
+   {
+    "concept_id": "dublin_day",
+    "en": "Dublin Day",
+    "tr": "Dublin Günü"
+   },
+   {
+    "concept_id": "ulysses_night",
+    "en": "Ulysses Night",
+    "tr": "Ulysses Gecesi"
+   },
+   {
+    "concept_id": "joyce_eve",
+    "en": "Joyce Eve",
+    "tr": "Joyce Arifesi"
+   }
+  ],
+  "correct": "bloomsday",
+  "source": "https://en.wikipedia.org/wiki/Bloomsday"
+ },
+ {
+  "key": "arts_literature_q0495",
+  "category_id": "arts_literature",
+  "subcategory_id": "architecture",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which gardener-architect designed the Crystal Palace for London's Great Exhibition of 1851?",
+   "tr": "Londra'daki 1851 Büyük Sergisi için Kristal Saray'ı hangi bahçıvan-mimar tasarladı?"
+  },
+  "options": [
+   {
+    "concept_id": "joseph_paxton",
+    "en": "Joseph Paxton",
+    "tr": "Joseph Paxton"
+   },
+   {
+    "concept_id": "christopher_wren",
+    "en": "Christopher Wren",
+    "tr": "Christopher Wren"
+   },
+   {
+    "concept_id": "augustus_pugin",
+    "en": "Augustus Pugin",
+    "tr": "Augustus Pugin"
+   },
+   {
+    "concept_id": "john_nash",
+    "en": "John Nash",
+    "tr": "John Nash"
+   }
+  ],
+  "correct": "joseph_paxton",
+  "source": "https://en.wikipedia.org/wiki/Joseph_Paxton"
+ },
+ {
+  "key": "arts_literature_q0496",
+  "category_id": "arts_literature",
+  "subcategory_id": "architecture",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which UNESCO-listed Seljuk-era mosque in Beyşehir is famed for its wooden columns?",
+   "tr": "Beyşehir'deki, UNESCO listesinde yer alan hangi Selçuklu dönemi camisi ahşap sütunlarıyla ünlüdür?"
+  },
+  "options": [
+   {
+    "concept_id": "esrefoglu_mosque",
+    "en": "Eşrefoğlu Mosque",
+    "tr": "Eşrefoğlu Camii"
+   },
+   {
+    "concept_id": "alaeddin_mosque",
+    "en": "Alâeddin Mosque",
+    "tr": "Alâeddin Camii"
+   },
+   {
+    "concept_id": "divrigi_great_mosque",
+    "en": "Divriği Great Mosque",
+    "tr": "Divriği Ulu Camii"
+   },
+   {
+    "concept_id": "selimiye_mosque",
+    "en": "Selimiye Mosque",
+    "tr": "Selimiye Camii"
+   }
+  ],
+  "correct": "esrefoglu_mosque",
+  "source": "https://en.wikipedia.org/wiki/Eşrefoğlu_Mosque"
+ },
+ {
+  "key": "arts_literature_q0497",
+  "category_id": "arts_literature",
+  "subcategory_id": "mythology",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "In the Babylonian creation myth, which god slays the sea-dragon Tiamat?",
+   "tr": "Babil yaratılış mitinde deniz ejderhası Tiamat'ı hangi tanrı öldürür?"
+  },
+  "options": [
+   {
+    "concept_id": "marduk",
+    "en": "Marduk",
+    "tr": "Marduk"
+   },
+   {
+    "concept_id": "enlil",
+    "en": "Enlil",
+    "tr": "Enlil"
+   },
+   {
+    "concept_id": "ea",
+    "en": "Ea",
+    "tr": "Ea"
+   },
+   {
+    "concept_id": "ashur",
+    "en": "Ashur",
+    "tr": "Assur"
+   }
+  ],
+  "correct": "marduk",
+  "source": "https://en.wikipedia.org/wiki/Marduk"
+ },
+ {
+  "key": "arts_literature_q0498",
+  "category_id": "arts_literature",
+  "subcategory_id": "mythology",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What was the feathered serpent god of the Aztecs called?",
+   "tr": "Aztek'lerin tüylü yılan tanrısının adı neydi?"
+  },
+  "options": [
+   {
+    "concept_id": "quetzalcoatl",
+    "en": "Quetzalcoatl",
+    "tr": "Quetzalcoatl"
+   },
+   {
+    "concept_id": "tezcatlipoca",
+    "en": "Tezcatlipoca",
+    "tr": "Tezcatlipoca"
+   },
+   {
+    "concept_id": "huitzilopochtli",
+    "en": "Huitzilopochtli",
+    "tr": "Huitzilopochtli"
+   },
+   {
+    "concept_id": "tlaloc",
+    "en": "Tlaloc",
+    "tr": "Tlaloc"
+   }
+  ],
+  "correct": "quetzalcoatl",
+  "source": "https://en.wikipedia.org/wiki/Quetzalcoatl"
+ },
+ {
+  "key": "arts_literature_q0499",
+  "category_id": "arts_literature",
+  "subcategory_id": "art_movements",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which 1950s Japanese avant-garde group took a name meaning \"concreteness\"?",
+   "tr": "Hangi 1950'ler Japon avangart grubu \"somutluk\" anlamına gelen bir ad aldı?"
+  },
+  "options": [
+   {
+    "concept_id": "gutai",
+    "en": "Gutai",
+    "tr": "Gutai"
+   },
+   {
+    "concept_id": "mono_ha",
+    "en": "Mono-ha",
+    "tr": "Mono-ha"
+   },
+   {
+    "concept_id": "superflat",
+    "en": "Superflat",
+    "tr": "Superflat"
+   },
+   {
+    "concept_id": "hi_red_center",
+    "en": "Hi-Red Center",
+    "tr": "Hi-Red Center"
+   }
+  ],
+  "correct": "gutai",
+  "source": "https://en.wikipedia.org/wiki/Gutai_group"
+ },
+ {
+  "key": "arts_literature_q0500",
+  "category_id": "arts_literature",
+  "subcategory_id": "art_movements",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Russia's 19th-century realist \"Peredvizhniki\" are known in English as what?",
+   "tr": "Rusya'nın 19. yüzyıl gerçekçi \"Peredvijniki\"leri İngilizcede hangi adla bilinir?"
+  },
+  "options": [
+   {
+    "concept_id": "the_wanderers",
+    "en": "The Wanderers",
+    "tr": "The Wanderers (Gezginler)"
+   },
+   {
+    "concept_id": "the_blue_riders",
+    "en": "The Blue Riders",
+    "tr": "The Blue Riders"
+   },
+   {
+    "concept_id": "the_travellers_guild",
+    "en": "The Travellers' Guild",
+    "tr": "The Travellers' Guild"
+   },
+   {
+    "concept_id": "the_northern_school",
+    "en": "The Northern School",
+    "tr": "The Northern School"
+   }
+  ],
+  "correct": "the_wanderers",
+  "source": "https://en.wikipedia.org/wiki/Peredvizhniki"
  }
 ]
