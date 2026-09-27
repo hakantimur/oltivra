@@ -73,4 +73,6 @@ async def client_config(caller: Caller = Depends(authenticated), c: Container = 
         "survival_enabled": config.features.survival_enabled,
         "question_languages": config.features.competitive_languages,
         "ui_languages": config.features.ui_languages,
+        # Client connects only to its current match shard, selected by match_index (spec §14.1).
+        "rtdb_shards": {sid: c.settings.shard_url(sid) for sid in c.settings.shard_ids},
     }

@@ -83,6 +83,9 @@ async def _main() -> None:
     from app.catalog.data import seed_catalogs
 
     await seed_catalogs(container.store)
+    from app.bots.catalog import seed_bots
+
+    await seed_bots(container.store, container.keys, container.clock.now_ms())
     result = await import_seed(container.question_repo, container.store, status)
     counts = await container.manifest_builder.build_all(list(SEED_LANGUAGES))
     print(json.dumps({"import": result, "manifests": counts}, indent=2))

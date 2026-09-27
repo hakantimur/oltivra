@@ -59,3 +59,29 @@ async def test_rtdb_shard_transaction(stores):
     assert await live.get("live-00", path) is None  # shards are isolated
     await live.delete("live-01", path)
     assert await live.get("live-01", path) is None
+
+
+async def test_quick_match_root_round_trips_through_rtdb(stores):
+    """The canonical root survives real RTDB normalisation and the engine keeps working on read-back."""
+    from app.matches import engine
+    from tests.engine_helpers import KEYS, T0, answer, new_match
+
+    _, live = stores
+    state, _ = new_match(humans=2, bots=2)
+    match_id = state["match_id"] = f"it-{uuid.uuid4().hex[:8]}"
+    path = f"matches/{match_id}"
+    await live.transaction("live-02", path, lambda cur: (engine.project(state, KEYS), None))
+
+    def step(cur):
+        auth = cur["authoritative"]
+        engine.resolve_due(auth, KEYS, auth["round"]["starts_at_ms"], "TEST")
+        result = answer(auth, "u0", True, auth["round"]["starts_at_ms"] + 400)
+        assert result.outcome.get("accepted"), result.outcome
+        return engine.project(auth, KEYS), auth["state"]
+
+    assert await live.transaction("live-02", path, step) == "ROUND_REVEAL"
+    public = await live.get("live-02", f"{path}/public")
+    assert public["correct_answer_reveal"]["points"] == 10
+    assert "is_bot" not in str(public)
+    assert T0 < public["reveal_ends_at_ms"]
+    await live.delete("live-02", path)
