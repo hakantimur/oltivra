@@ -10,6 +10,7 @@ def register_routers(app: FastAPI) -> None:
         catalog,
         internal,
         matches,
+        monetization,
         profile,
         progression,
         safety,
@@ -28,4 +29,6 @@ def register_routers(app: FastAPI) -> None:
     app.include_router(matches.router)
     app.include_router(progression.router)
     app.include_router(social.router)
+    app.include_router(monetization.router)
     app.include_router(internal.router)
+    app.include_router(internal.provider_router)

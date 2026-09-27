@@ -52,6 +52,8 @@ class Settings(BaseSettings):
     purchase_verify_mode: Literal["store", "fake"] = "fake"
     google_play_package: str = "com.oltivra.app"
     apple_bundle_id: str = "com.oltivra.app"
+    # Comma separated paths to pinned Apple root certificates (e.g. AppleRootCA-G3.cer), mounted from secrets.
+    apple_root_cert_paths: str = ""
     anthropic_api_key: str = Field(default="", repr=False)
     ai_model: str = "claude-sonnet-5"
 

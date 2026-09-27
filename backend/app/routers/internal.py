@@ -20,3 +20,25 @@ async def run_task(family: str, request: Request, c: Container = Depends(get_con
     body = await request.json()
     result = await dispatch_task(c, body)
     return {"ok": True, "result": result}
+
+
+# Provider callbacks authenticate by signature, not by our service identity.
+provider_router = APIRouter(prefix="/internal", include_in_schema=False)
+
+
+@provider_router.get("/ads/admob-ssv")
+async def admob_ssv(request: Request, c: Container = Depends(get_container)) -> dict:
+    """AdMob rewarded SSV callback: ECDSA-signed query string (spec §31.2)."""
+    return await c.rewards.handle_ssv(request.url.query)
+
+
+@provider_router.post("/purchases/google-rtdn", dependencies=[Depends(_service_auth)])
+async def google_rtdn(request: Request, c: Container = Depends(get_container)) -> dict:
+    """Pub/Sub push (OIDC-authenticated) carrying Google Play RTDN (spec §31.4)."""
+    return {"ok": True, "result": await c.purchases.handle_google_rtdn(await request.json())}
+
+
+@provider_router.post("/purchases/apple-notifications")
+async def apple_notifications(request: Request, c: Container = Depends(get_container)) -> dict:
+    """App Store Server Notifications V2: JWS verified against the pinned Apple root (spec §31.5)."""
+    return {"ok": True, "result": await c.purchases.handle_apple_notification(await request.json())}

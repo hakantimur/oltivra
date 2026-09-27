@@ -277,6 +277,27 @@ class Container:
         return PartyService(self)
 
     @cached_property
+    def rewards(self):
+        from app.ads.rewards import AdMobSsvVerifier, DevSsvVerifier, RewardService
+
+        if self.settings.admob_ssv_mode == "google":
+            verifier = AdMobSsvVerifier()
+        else:
+            verifier = DevSsvVerifier(self.settings.internal_shared_secret)
+        return RewardService(self, verifier)
+
+    @cached_property
+    def purchases(self):
+        from app.purchases.service import PurchaseService
+        from app.purchases.verifiers import AppleJwsVerifier, FakeAppleVerifier, FakeGooglePlay, GooglePlayApiClient
+
+        if self.settings.purchase_verify_mode == "store":
+            paths = [p.strip() for p in self.settings.apple_root_cert_paths.split(",") if p.strip()]
+            return PurchaseService(self, GooglePlayApiClient(self.settings.google_play_package, self.io_limiter),
+                                   AppleJwsVerifier.from_paths(paths))
+        return PurchaseService(self, FakeGooglePlay(), FakeAppleVerifier(self.settings.internal_shared_secret))
+
+    @cached_property
     def settlement(self):
         from app.settlement.service import SettlementService
 
