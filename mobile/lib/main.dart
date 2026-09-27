@@ -1,3 +1,4 @@
+import 'package:firebase_app_check/firebase_app_check.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_database/firebase_database.dart';
@@ -31,9 +32,34 @@ Future<void> main() async {
       await FirebaseAuth.instance.useAuthEmulator(Env.emulatorHost, 9099);
       FirebaseDatabase.instance.useDatabaseEmulator(Env.emulatorHost, 9000);
     }
-    if (!Env.fakeAuth) overrides.add(authServiceProvider.overrideWithValue(FirebaseAuthService()));
+    if (!Env.fakeAuth) {
+      final appCheck = await _activateAppCheck();
+      overrides.add(authServiceProvider.overrideWithValue(FirebaseAuthService(appCheck: appCheck)));
+    }
   }
   runApp(ProviderScope(overrides: overrides, child: const OltivraApp()));
+}
+
+/// Activates App Check and returns the token source for API calls. A missing token never blocks a request here;
+/// the backend decides (monitor on stage, enforce in prod).
+Future<Future<String?> Function()?> _activateAppCheck() async {
+  if (Env.useEmulators) return null;
+  try {
+    await FirebaseAppCheck.instance.activate(
+      providerAndroid: Env.appCheckDebugToken.isEmpty
+          ? const AndroidPlayIntegrityProvider()
+          : const AndroidDebugProvider(debugToken: Env.appCheckDebugToken),
+    );
+  } catch (_) {
+    return null;
+  }
+  return () async {
+    try {
+      return await FirebaseAppCheck.instance.getToken();
+    } catch (_) {
+      return null;
+    }
+  };
 }
 
 class OltivraApp extends ConsumerWidget {

@@ -1,9 +1,75 @@
 {
   "firestore": [
-    { "database": "oltivra", "rules": "firebase/firestore.rules", "indexes": "firebase/firestore.indexes.json" }
+    {
+      "database": "oltivra",
+      "rules": "firebase/firestore.rules",
+      "indexes": "firebase/firestore.indexes.json"
+    }
   ],
   "database": [
-    { "instance": "oltivra-live-00", "rules": "firebase/rtdb/live-shard.rules.json" },
-    { "instance": "oltivra-live-01", "rules": "firebase/rtdb/live-shard.rules.json" }
+    {
+      "instance": "oltivra-live-00",
+      "rules": "firebase/rtdb/live-shard.rules.json"
+    },
+    {
+      "instance": "oltivra-live-01",
+      "rules": "firebase/rtdb/live-shard.rules.json"
+    },
+    {
+      "instance": "oltivra-live-02",
+      "rules": "firebase/rtdb/live-shard.rules.json"
+    },
+    {
+      "instance": "oltivra-live-03",
+      "rules": "firebase/rtdb/live-shard.rules.json"
+    },
+    {
+      "instance": "oltivra-live-04",
+      "rules": "firebase/rtdb/live-shard.rules.json"
+    },
+    {
+      "instance": "oltivra-live-05",
+      "rules": "firebase/rtdb/live-shard.rules.json"
+    },
+    {
+      "instance": "oltivra-live-06",
+      "rules": "firebase/rtdb/live-shard.rules.json"
+    },
+    {
+      "instance": "oltivra-live-07",
+      "rules": "firebase/rtdb/live-shard.rules.json"
+    },
+    {
+      "instance": "oltivra-live-08",
+      "rules": "firebase/rtdb/live-shard.rules.json"
+    },
+    {
+      "instance": "oltivra-live-09",
+      "rules": "firebase/rtdb/live-shard.rules.json"
+    },
+    {
+      "instance": "oltivra-live-10",
+      "rules": "firebase/rtdb/live-shard.rules.json"
+    },
+    {
+      "instance": "oltivra-live-11",
+      "rules": "firebase/rtdb/live-shard.rules.json"
+    },
+    {
+      "instance": "oltivra-live-12",
+      "rules": "firebase/rtdb/live-shard.rules.json"
+    },
+    {
+      "instance": "oltivra-live-13",
+      "rules": "firebase/rtdb/live-shard.rules.json"
+    },
+    {
+      "instance": "oltivra-live-14",
+      "rules": "firebase/rtdb/live-shard.rules.json"
+    },
+    {
+      "instance": "oltivra-live-15",
+      "rules": "firebase/rtdb/live-shard.rules.json"
+    }
   ]
 }

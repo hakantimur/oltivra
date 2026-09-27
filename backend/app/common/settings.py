@@ -21,7 +21,8 @@ class Settings(BaseSettings):
 
     store_backend: Literal["memory", "firebase"] = "memory"
     auth_mode: Literal["firebase", "fake"] = "fake"
-    app_check_mode: Literal["enforce", "debug", "off"] = "off"
+    # ``monitor``: verify and log failures without rejecting (rollout while older clients lack App Check).
+    app_check_mode: Literal["enforce", "monitor", "debug", "off"] = "off"
     tasks_mode: Literal["local", "cloud", "recording"] = "local"
     internal_auth_mode: Literal["oidc", "shared_secret"] = "shared_secret"
 

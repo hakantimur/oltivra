@@ -3,7 +3,7 @@
 # Rates are conservative starting points; the combined sustained rate must stay under 50% of tested capacity.
 shard_counts:
   dev: 2
-  stage: 2
+  stage: 16
   prod: 16
 families:
   round-recovery:

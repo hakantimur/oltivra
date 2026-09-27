@@ -235,3 +235,14 @@ def test_task_names_are_unique_and_queue_by_shard():
     b = TaskRequest(TaskKind.ROUND_RECOVERY, "live-07", 0, {}, ("m1", "r2"))
     assert a.name != b.name and a.queue == "round-recovery-07"
     assert TaskRequest(TaskKind.ROUND_ADVANCE, "live-03", 0).queue == "round-recovery-03"
+
+
+def test_app_check_monitor_mode_logs_but_never_rejects():
+    import asyncio
+
+    from app.auth.verifiers import MonitorAppCheck, StaticAppCheck
+
+    monitor = MonitorAppCheck(StaticAppCheck())
+    asyncio.run(monitor.verify(None))
+    asyncio.run(monitor.verify("bad"))
+    asyncio.run(monitor.verify("valid-app-check"))
