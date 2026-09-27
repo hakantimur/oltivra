@@ -6,7 +6,18 @@ from fastapi import FastAPI
 
 
 def register_routers(app: FastAPI) -> None:
-    from app.routers import catalog, internal, matches, profile, progression, safety, session, synova, system
+    from app.routers import (
+        catalog,
+        internal,
+        matches,
+        profile,
+        progression,
+        safety,
+        session,
+        social,
+        synova,
+        system,
+    )
 
     app.include_router(system.router)
     app.include_router(session.router)
@@ -16,4 +27,5 @@ def register_routers(app: FastAPI) -> None:
     app.include_router(synova.router)
     app.include_router(matches.router)
     app.include_router(progression.router)
+    app.include_router(social.router)
     app.include_router(internal.router)

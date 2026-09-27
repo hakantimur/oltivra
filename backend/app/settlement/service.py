@@ -214,7 +214,8 @@ class SettlementService:
                   | {k: r[k] for k in r if k.startswith("progress_")}
                   for uid, r in (ledger.get("participant_results") or {}).items() if not r.get("is_bot")}
         try:
-            await c.matches.mutate(match_id, shard_id, lambda s: engine.mark_settled(s, now, ledger["status"],
+            settled_at = int(ledger.get("completed_at_ms") or now)  # the rematch window starts at commit
+            await c.matches.mutate(match_id, shard_id, lambda s: engine.mark_settled(s, settled_at, ledger["status"],
                                                                                       by_uid))
         except Exception:  # noqa: BLE001 - live root may already be cleaned
             log.info("settlement_live_mark_skipped", extra={"match_id": match_id})
@@ -227,8 +228,22 @@ class SettlementService:
         hooks = getattr(c, "progression", None)
         if hooks and ledger["status"] == "SETTLED":
             await hooks.after_commit(match_id)
+            await self._notify_league_changes(ledger)
         for uid in ledger.get("deletion_uids") or []:
             await c.deletion.complete(uid)
+
+    async def _notify_league_changes(self, ledger: dict[str, Any]) -> None:
+        from app.notifications.service import NotificationKind
+
+        if ledger.get("league_notified"):
+            return
+        for uid, result in (ledger.get("participant_results") or {}).items():
+            before, after = result.get("progress_league_before"), result.get("progress_league_after")
+            if result.get("is_bot") or not after or before == after or after == "UNRANKED":
+                continue
+            await self._c.notifications.notify(uid, NotificationKind.LEAGUE_RESULT, data={"league": after},
+                                               body_args=[after])
+        await self._c.store.update(ledger_path(ledger["match_id"]), {"league_notified": True})
 
     # ------------------------------------------------------------------------------------------ cleanup / abort
     async def cleanup(self, match_id: str, shard_id: str) -> dict[str, Any]:

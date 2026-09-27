@@ -70,6 +70,7 @@ async def seed_bots(store: DocStore, keys: Keyring, now_ms: int, config: GameCon
         await store.set(f"bot_profiles/{bot['bot_id']}", bot)
         await store.set(f"username_registry/{bot['username'].lower()}", {
             "schema_version": 1, "state": "ACTIVE", "uid": f"bot:{bot['bot_id']}", "is_bot": True,
+            "name": bot["username"].lower(),
             "updated_at_ms": now_ms,
         })
         profile = bot_public_profile(keys, bot, config)

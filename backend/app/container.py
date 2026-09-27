@@ -253,6 +253,30 @@ class Container:
         return LeaderboardService(self)
 
     @cached_property
+    def notifications(self):
+        from app.notifications.service import FcmPushSender, NotificationService, RecordingPushSender
+
+        if self.settings.auth_mode == "fake":
+            sender = RecordingPushSender()
+        else:
+            from app.common.firebase import default_app
+
+            sender = FcmPushSender(self.firebase_app or default_app(self.settings), self.io_limiter)
+        return NotificationService(self.store, self.clock, sender)
+
+    @cached_property
+    def friends(self):
+        from app.friends.service import FriendService
+
+        return FriendService(self)
+
+    @cached_property
+    def parties(self):
+        from app.parties.service import PartyService
+
+        return PartyService(self)
+
+    @cached_property
     def settlement(self):
         from app.settlement.service import SettlementService
 

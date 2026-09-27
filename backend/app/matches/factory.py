@@ -19,13 +19,15 @@ from app.matches.shards import shard_for
 
 ROSTER_SIZE = {Mode.QUICK: 4, Mode.SURVIVAL: 10}
 INDEX_TTL_MS = 7 * 86_400_000
+RANKED_SOURCES = ("PUBLIC", "REMATCH")
 
 
 def ranked_eligibility(mode: Mode, human_count: int, bot_count: int, ranked: RankedConfig,
                        source: str) -> dict[str, Any]:
     """Ranked only with enough human opponents (spec §7.5); config can only make it stricter."""
     minimum = ranked.quick_min_total_humans if mode == Mode.QUICK else ranked.survival_min_total_humans
-    if source != "PUBLIC":
+    if source not in RANKED_SOURCES:
+        # Friend challenges never move MMR (prevents arranged rating farming between friends).
         eligible, reason = False, "private_match"
     elif human_count < minimum:
         eligible, reason = False, "insufficient_human_opponents"
