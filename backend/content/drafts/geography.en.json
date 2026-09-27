@@ -3098,5 +3098,315 @@
   ],
   "correct": "n_11",
   "source": "https://en.wikipedia.org/wiki/Time_in_Russia"
+ },
+ {
+  "key": "geography_q0101",
+  "category_id": "geography",
+  "subcategory_id": "countries",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Giant pandas live in the wild in only one country. Which?"
+  },
+  "options": [
+   {
+    "concept_id": "china",
+    "en": "China"
+   },
+   {
+    "concept_id": "japan",
+    "en": "Japan"
+   },
+   {
+    "concept_id": "india",
+    "en": "India"
+   },
+   {
+    "concept_id": "thailand",
+    "en": "Thailand"
+   }
+  ],
+  "correct": "china",
+  "source": "https://en.wikipedia.org/wiki/Giant_panda"
+ },
+ {
+  "key": "geography_q0102",
+  "category_id": "geography",
+  "subcategory_id": "islands",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The kiwi, a bird that cannot fly, is a national symbol of which country?"
+  },
+  "options": [
+   {
+    "concept_id": "new_zealand",
+    "en": "New Zealand"
+   },
+   {
+    "concept_id": "australia",
+    "en": "Australia"
+   },
+   {
+    "concept_id": "ireland",
+    "en": "Ireland"
+   },
+   {
+    "concept_id": "south_africa",
+    "en": "South Africa"
+   }
+  ],
+  "correct": "new_zealand",
+  "source": "https://en.wikipedia.org/wiki/Kiwi_(bird)"
+ },
+ {
+  "key": "geography_q0103",
+  "category_id": "geography",
+  "subcategory_id": "maps",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which imaginary line divides Earth into northern and southern halves?"
+  },
+  "options": [
+   {
+    "concept_id": "equator",
+    "en": "Equator"
+   },
+   {
+    "concept_id": "prime_meridian",
+    "en": "Prime Meridian"
+   },
+   {
+    "concept_id": "tropic_of_cancer",
+    "en": "Tropic of Cancer"
+   },
+   {
+    "concept_id": "arctic_circle",
+    "en": "Arctic Circle"
+   }
+  ],
+  "correct": "equator",
+  "source": "https://en.wikipedia.org/wiki/Equator"
+ },
+ {
+  "key": "geography_q0104",
+  "category_id": "geography",
+  "subcategory_id": "oceans",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Flying from Europe to the Americas, which ocean do you cross?"
+  },
+  "options": [
+   {
+    "concept_id": "atlantic_ocean",
+    "en": "Atlantic Ocean"
+   },
+   {
+    "concept_id": "pacific_ocean",
+    "en": "Pacific Ocean"
+   },
+   {
+    "concept_id": "indian_ocean",
+    "en": "Indian Ocean"
+   },
+   {
+    "concept_id": "arctic_ocean",
+    "en": "Arctic Ocean"
+   }
+  ],
+  "correct": "atlantic_ocean",
+  "source": "https://en.wikipedia.org/wiki/Atlantic_Ocean"
+ },
+ {
+  "key": "geography_q0105",
+  "category_id": "geography",
+  "subcategory_id": "countries",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Chocolate, watches and the Alps are famous symbols of which country?"
+  },
+  "options": [
+   {
+    "concept_id": "switzerland",
+    "en": "Switzerland"
+   },
+   {
+    "concept_id": "austria",
+    "en": "Austria"
+   },
+   {
+    "concept_id": "belgium",
+    "en": "Belgium"
+   },
+   {
+    "concept_id": "sweden",
+    "en": "Sweden"
+   }
+  ],
+  "correct": "switzerland",
+  "source": "https://en.wikipedia.org/wiki/Switzerland"
+ },
+ {
+  "key": "geography_q0106",
+  "category_id": "geography",
+  "subcategory_id": "world_heritage",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In which country were the ancient kings called pharaohs?"
+  },
+  "options": [
+   {
+    "concept_id": "egypt",
+    "en": "Egypt"
+   },
+   {
+    "concept_id": "mexico",
+    "en": "Mexico"
+   },
+   {
+    "concept_id": "greece",
+    "en": "Greece"
+   },
+   {
+    "concept_id": "iraq",
+    "en": "Iraq"
+   }
+  ],
+  "correct": "egypt",
+  "source": "https://en.wikipedia.org/wiki/Pharaoh"
+ },
+ {
+  "key": "geography_q0107",
+  "category_id": "geography",
+  "subcategory_id": "islands",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which is the only US state made up entirely of islands?"
+  },
+  "options": [
+   {
+    "concept_id": "hawaii",
+    "en": "Hawaii"
+   },
+   {
+    "concept_id": "alaska",
+    "en": "Alaska"
+   },
+   {
+    "concept_id": "florida",
+    "en": "Florida"
+   },
+   {
+    "concept_id": "california",
+    "en": "California"
+   }
+  ],
+  "correct": "hawaii",
+  "source": "https://en.wikipedia.org/wiki/Hawaii"
+ },
+ {
+  "key": "geography_q0108",
+  "category_id": "geography",
+  "subcategory_id": "maps",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the largest hot desert on Earth?"
+  },
+  "options": [
+   {
+    "concept_id": "sahara",
+    "en": "Sahara"
+   },
+   {
+    "concept_id": "gobi",
+    "en": "Gobi"
+   },
+   {
+    "concept_id": "kalahari",
+    "en": "Kalahari"
+   },
+   {
+    "concept_id": "arabian_desert",
+    "en": "Arabian Desert"
+   }
+  ],
+  "correct": "sahara",
+  "source": "https://en.wikipedia.org/wiki/Sahara"
+ },
+ {
+  "key": "geography_q0109",
+  "category_id": "geography",
+  "subcategory_id": "capitals",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The US capital belongs to no state. Which city is it?"
+  },
+  "options": [
+   {
+    "concept_id": "washington_d_c",
+    "en": "Washington, D.C."
+   },
+   {
+    "concept_id": "new_york_city",
+    "en": "New York City"
+   },
+   {
+    "concept_id": "chicago",
+    "en": "Chicago"
+   },
+   {
+    "concept_id": "los_angeles",
+    "en": "Los Angeles"
+   }
+  ],
+  "correct": "washington_d_c",
+  "source": "https://en.wikipedia.org/wiki/Washington,_D.C."
+ },
+ {
+  "key": "geography_q0110",
+  "category_id": "geography",
+  "subcategory_id": "mountains",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Mount Everest, the highest mountain on Earth, is on which continent?"
+  },
+  "options": [
+   {
+    "concept_id": "asia",
+    "en": "Asia"
+   },
+   {
+    "concept_id": "europe",
+    "en": "Europe"
+   },
+   {
+    "concept_id": "africa",
+    "en": "Africa"
+   },
+   {
+    "concept_id": "south_america",
+    "en": "South America"
+   }
+  ],
+  "correct": "asia",
+  "source": "https://en.wikipedia.org/wiki/Mount_Everest"
  }
 ]
