@@ -173,6 +173,58 @@ void main() {
     expect(_option(tester, 'Troposphere').onTap, isNull);
   });
 
+  const imageQuestion = {
+    'text': 'Which country uses this flag?',
+    'options': _options,
+    'signed_image_url': 'http://img.test/questions/g/v1/main.webp?exp=1',
+    'image_aspect': 1.5,
+  };
+
+  Future<void> expectAllAnswersOnScreen(WidgetTester tester) async {
+    expect(find.byType(Image), findsOneWidget);
+    final screenHeight = tester.view.physicalSize.height / tester.view.devicePixelRatio;
+    for (final t in ['Troposphere', 'Stratosphere', 'Mesosphere', 'Thermosphere']) {
+      expect(tester.getBottomLeft(find.widgetWithText(AnswerOption, t)).dy, lessThanOrEqualTo(screenHeight), reason: t);
+    }
+  }
+
+  testWidgets('image question keeps all four answers on screen while answering', (tester) async {
+    await _Harness().pump(
+      tester,
+      _snap(_quickPublic('ROUND_ACTIVE', extra: {'current_question': imageQuestion}), {
+        'pid': 'p1',
+        'round_id': 'r3',
+        'eligible_to_answer': true,
+        'option_order': _order,
+        'own_answer_status': 'NOT_ANSWERED',
+      }),
+    );
+    await expectAllAnswersOnScreen(tester);
+  });
+
+  testWidgets('image question keeps all four answers on screen with the result banner', (tester) async {
+    await _Harness().pump(
+      tester,
+      _snap(
+        _quickPublic('ROUND_REVEAL', extra: {
+          'current_question': imageQuestion,
+          'correct_answer_reveal': {'concept_id': 'c1', 'text': 'Stratosphere', 'winner_pid': 'p2', 'points': 7},
+        }),
+        {
+          'pid': 'p1',
+          'round_id': 'r3',
+          'eligible_to_answer': false,
+          'option_order': _order,
+          'own_answer_status': 'ANSWERED_WRONG',
+          'selected_concept_id': 'c3',
+          'score_delta': -4,
+        },
+      ),
+    );
+    expect(find.text('kevin_q wins +7'), findsOneWidget);
+    await expectAllAnswersOnScreen(tester);
+  });
+
   testWidgets('revealed state highlights the correct option and keeps the own wrong trace', (tester) async {
     final h = _Harness();
     await h.pump(

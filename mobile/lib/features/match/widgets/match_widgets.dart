@@ -223,6 +223,8 @@ class CategoryChip extends StatelessWidget {
 
 /// Question card with the optional signed image. The image region keeps its aspect ratio while loading or
 /// after a failure so answer controls never move (spec §22.2).
+const imageMaxHeightFraction = 0.14;
+
 class QuestionCard extends StatelessWidget {
   const QuestionCard({super.key, required this.snapshot, this.header});
 
@@ -240,20 +242,34 @@ class QuestionCard extends StatelessWidget {
         children: [
           if (header != null) ...[header!, const SizedBox(height: OSpace.md)],
           if (url != null) ...[
-            ClipRRect(
-              borderRadius: BorderRadius.circular(ORadius.card),
-              child: AspectRatio(
-                aspectRatio: snapshot.imageAspect <= 0 ? 16 / 9 : snapshot.imageAspect,
-                child: Image.network(
-                  url,
-                  fit: BoxFit.cover,
-                  semanticLabel: context.t('match.question_image'),
-                  loadingBuilder: (context, child, progress) => progress == null ? child : const _ImageFallback(),
-                  errorBuilder: (context, error, stack) => const _ImageFallback(),
+            // Capped so all four answers stay visible without scrolling, even under the result banner.
+            Center(
+              child: ConstrainedBox(
+                constraints: BoxConstraints(maxHeight: MediaQuery.sizeOf(context).height * imageMaxHeightFraction),
+                child: AspectRatio(
+                  aspectRatio: snapshot.imageAspect <= 0 ? 16 / 9 : snapshot.imageAspect,
+                  child: DecoratedBox(
+                    position: DecorationPosition.foreground,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(ORadius.card),
+                      border: Border.all(color: OColors.outlineVariant),
+                    ),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(ORadius.card),
+                      child: Image.network(
+                        url,
+                        fit: BoxFit.cover,
+                        semanticLabel: context.t('match.question_image'),
+                        loadingBuilder: (context, child, progress) =>
+                            progress == null ? child : const _ImageFallback(),
+                        errorBuilder: (context, error, stack) => const _ImageFallback(),
+                      ),
+                    ),
+                  ),
                 ),
               ),
             ),
-            const SizedBox(height: OSpace.lg),
+            const SizedBox(height: OSpace.md),
           ],
           Text(snapshot.questionText, style: OText.headlineMd, textAlign: TextAlign.center),
         ],

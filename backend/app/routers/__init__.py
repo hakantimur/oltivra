@@ -10,6 +10,7 @@ def register_routers(app: FastAPI) -> None:
         admin,
         admin_moderation,
         catalog,
+        dev_media,
         internal,
         legal,
         matches,
@@ -36,6 +37,7 @@ def register_routers(app: FastAPI) -> None:
     app.include_router(monetization.router)
     app.include_router(admin.router)
     app.include_router(admin_moderation.router)
+    app.include_router(dev_media.router)
     app.include_router(internal.router)
     app.include_router(internal.provider_router)
     app.include_router(internal.maintenance_router)
