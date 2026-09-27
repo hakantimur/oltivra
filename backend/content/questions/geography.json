@@ -32938,5 +32938,1625 @@
   ],
   "correct": "ben_nevis",
   "source": "https://en.wikipedia.org/wiki/Ben_Nevis"
+ },
+ {
+  "key": "geography_q0911",
+  "category_id": "geography",
+  "subcategory_id": "countries",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Hollywood, the world's most famous film district, is in which country?",
+   "tr": "Dünyanın en ünlü film semti Hollywood hangi ülkededir?"
+  },
+  "options": [
+   {
+    "concept_id": "united_states",
+    "en": "United States",
+    "tr": "ABD"
+   },
+   {
+    "concept_id": "canada",
+    "en": "Canada",
+    "tr": "Kanada"
+   },
+   {
+    "concept_id": "united_kingdom",
+    "en": "United Kingdom",
+    "tr": "Birleşik Krallık"
+   },
+   {
+    "concept_id": "australia",
+    "en": "Australia",
+    "tr": "Avustralya"
+   }
+  ],
+  "correct": "united_states",
+  "source": "https://en.wikipedia.org/wiki/Hollywood"
+ },
+ {
+  "key": "geography_q0912",
+  "category_id": "geography",
+  "subcategory_id": "world_heritage",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which famous statue was a gift from France to the United States?",
+   "tr": "Hangi ünlü heykel Fransa'nın ABD'ye bir hediyesiydi?"
+  },
+  "options": [
+   {
+    "concept_id": "statue_of_liberty",
+    "en": "Statue of Liberty",
+    "tr": "Özgürlük Heykeli"
+   },
+   {
+    "concept_id": "lincoln_memorial",
+    "en": "Lincoln Memorial",
+    "tr": "Lincoln Anıtı"
+   },
+   {
+    "concept_id": "mount_rushmore",
+    "en": "Mount Rushmore",
+    "tr": "Rushmore Dağı"
+   },
+   {
+    "concept_id": "christ_the_redeemer",
+    "en": "Christ the Redeemer",
+    "tr": "Kurtarıcı İsa"
+   }
+  ],
+  "correct": "statue_of_liberty",
+  "source": "https://en.wikipedia.org/wiki/Statue_of_Liberty"
+ },
+ {
+  "key": "geography_q0913",
+  "category_id": "geography",
+  "subcategory_id": "maps",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which is the smallest of the seven continents?",
+   "tr": "Yedi kıtanın en küçüğü hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "australia",
+    "en": "Australia",
+    "tr": "Avustralya"
+   },
+   {
+    "concept_id": "europe",
+    "en": "Europe",
+    "tr": "Avrupa"
+   },
+   {
+    "concept_id": "antarctica",
+    "en": "Antarctica",
+    "tr": "Antarktika"
+   },
+   {
+    "concept_id": "south_america",
+    "en": "South America",
+    "tr": "Güney Amerika"
+   }
+  ],
+  "correct": "australia",
+  "source": "https://en.wikipedia.org/wiki/Continent"
+ },
+ {
+  "key": "geography_q0914",
+  "category_id": "geography",
+  "subcategory_id": "maps",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "On a map, what does the scale tell you?",
+   "tr": "Bir haritada ölçek sana neyi söyler?"
+  },
+  "options": [
+   {
+    "concept_id": "real_distances",
+    "en": "Real distances",
+    "tr": "Gerçek uzaklıkları"
+   },
+   {
+    "concept_id": "heights_of_mountains",
+    "en": "Heights of mountains",
+    "tr": "Dağların yüksekliğini"
+   },
+   {
+    "concept_id": "time_zones",
+    "en": "Time zones",
+    "tr": "Saat dilimlerini"
+   },
+   {
+    "concept_id": "population",
+    "en": "Population",
+    "tr": "Nüfusu"
+   }
+  ],
+  "correct": "real_distances",
+  "source": "https://en.wikipedia.org/wiki/Scale_(map)"
+ },
+ {
+  "key": "geography_q0915",
+  "category_id": "geography",
+  "subcategory_id": "rivers",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Where a river splits into many channels before reaching the sea, the land is called what?",
+   "tr": "Bir nehrin denize ulaşmadan önce birçok kola ayrıldığı yerdeki araziye ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "delta",
+    "en": "Delta",
+    "tr": "Delta"
+   },
+   {
+    "concept_id": "canyon",
+    "en": "Canyon",
+    "tr": "Kanyon"
+   },
+   {
+    "concept_id": "gorge",
+    "en": "Gorge",
+    "tr": "Boğaz"
+   },
+   {
+    "concept_id": "plateau",
+    "en": "Plateau",
+    "tr": "Plato"
+   }
+  ],
+  "correct": "delta",
+  "source": "https://en.wikipedia.org/wiki/River_delta"
+ },
+ {
+  "key": "geography_q0916",
+  "category_id": "geography",
+  "subcategory_id": "mountains",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "A sudden rush of snow sliding down a mountain is called what?",
+   "tr": "Bir dağdan aniden kayarak inen kar kütlesine ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "avalanche",
+    "en": "Avalanche",
+    "tr": "Çığ"
+   },
+   {
+    "concept_id": "landslide",
+    "en": "Landslide",
+    "tr": "Heyelan"
+   },
+   {
+    "concept_id": "blizzard",
+    "en": "Blizzard",
+    "tr": "Tipi"
+   },
+   {
+    "concept_id": "glacier",
+    "en": "Glacier",
+    "tr": "Buzul"
+   }
+  ],
+  "correct": "avalanche",
+  "source": "https://en.wikipedia.org/wiki/Avalanche"
+ },
+ {
+  "key": "geography_q0917",
+  "category_id": "geography",
+  "subcategory_id": "flags",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which two colours make up the flag of Poland?",
+   "tr": "Polonya bayrağı hangi iki renkten oluşur?"
+  },
+  "options": [
+   {
+    "concept_id": "white_and_red",
+    "en": "White and red",
+    "tr": "Beyaz ve kırmızı"
+   },
+   {
+    "concept_id": "blue_and_yellow",
+    "en": "Blue and yellow",
+    "tr": "Mavi ve sarı"
+   },
+   {
+    "concept_id": "green_and_white",
+    "en": "Green and white",
+    "tr": "Yeşil ve beyaz"
+   },
+   {
+    "concept_id": "black_and_red",
+    "en": "Black and red",
+    "tr": "Siyah ve kırmızı"
+   }
+  ],
+  "correct": "white_and_red",
+  "source": "https://en.wikipedia.org/wiki/Flag_of_Poland"
+ },
+ {
+  "key": "geography_q0918",
+  "category_id": "geography",
+  "subcategory_id": "flags",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "A yellow diamond on a green field is the design of which country's flag?",
+   "tr": "Yeşil zemin üzerinde sarı bir eşkenar dörtgen hangi ülkenin bayrağıdır?"
+  },
+  "options": [
+   {
+    "concept_id": "brazil",
+    "en": "Brazil",
+    "tr": "Brezilya"
+   },
+   {
+    "concept_id": "jamaica",
+    "en": "Jamaica",
+    "tr": "Jamaika"
+   },
+   {
+    "concept_id": "nigeria",
+    "en": "Nigeria",
+    "tr": "Nijerya"
+   },
+   {
+    "concept_id": "portugal",
+    "en": "Portugal",
+    "tr": "Portekiz"
+   }
+  ],
+  "correct": "brazil",
+  "source": "https://en.wikipedia.org/wiki/Flag_of_Brazil"
+ },
+ {
+  "key": "geography_q0919",
+  "category_id": "geography",
+  "subcategory_id": "oceans",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which ocean washes the shores of both India and East Africa?",
+   "tr": "Hem Hindistan'ın hem Doğu Afrika'nın kıyılarını hangi okyanus yıkar?"
+  },
+  "options": [
+   {
+    "concept_id": "indian_ocean",
+    "en": "Indian Ocean",
+    "tr": "Hint Okyanusu"
+   },
+   {
+    "concept_id": "pacific_ocean",
+    "en": "Pacific Ocean",
+    "tr": "Büyük Okyanus"
+   },
+   {
+    "concept_id": "atlantic_ocean",
+    "en": "Atlantic Ocean",
+    "tr": "Atlas Okyanusu"
+   },
+   {
+    "concept_id": "arctic_ocean",
+    "en": "Arctic Ocean",
+    "tr": "Arktik Okyanusu"
+   }
+  ],
+  "correct": "indian_ocean",
+  "source": "https://en.wikipedia.org/wiki/Indian_Ocean"
+ },
+ {
+  "key": "geography_q0920",
+  "category_id": "geography",
+  "subcategory_id": "countries",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which is the largest country in South Asia?",
+   "tr": "Güney Asya'nın en büyük ülkesi hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "india",
+    "en": "India",
+    "tr": "Hindistan"
+   },
+   {
+    "concept_id": "pakistan",
+    "en": "Pakistan",
+    "tr": "Pakistan"
+   },
+   {
+    "concept_id": "bangladesh",
+    "en": "Bangladesh",
+    "tr": "Bangladeş"
+   },
+   {
+    "concept_id": "nepal",
+    "en": "Nepal",
+    "tr": "Nepal"
+   }
+  ],
+  "correct": "india",
+  "source": "https://en.wikipedia.org/wiki/South_Asia"
+ },
+ {
+  "key": "geography_q0921",
+  "category_id": "geography",
+  "subcategory_id": "countries",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Pizza, pasta and gelato all come from which country?",
+   "tr": "Pizza, makarna ve gelato hangi ülkeden gelir?"
+  },
+  "options": [
+   {
+    "concept_id": "italy",
+    "en": "Italy",
+    "tr": "İtalya"
+   },
+   {
+    "concept_id": "france",
+    "en": "France",
+    "tr": "Fransa"
+   },
+   {
+    "concept_id": "greece",
+    "en": "Greece",
+    "tr": "Yunanistan"
+   },
+   {
+    "concept_id": "spain",
+    "en": "Spain",
+    "tr": "İspanya"
+   }
+  ],
+  "correct": "italy",
+  "source": "https://en.wikipedia.org/wiki/Italian_cuisine"
+ },
+ {
+  "key": "geography_q0922",
+  "category_id": "geography",
+  "subcategory_id": "cities",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which is the largest city in South America?",
+   "tr": "Güney Amerika'nın en büyük şehri hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "sao_paulo",
+    "en": "São Paulo",
+    "tr": "São Paulo"
+   },
+   {
+    "concept_id": "buenos_aires",
+    "en": "Buenos Aires",
+    "tr": "Buenos Aires"
+   },
+   {
+    "concept_id": "rio_de_janeiro",
+    "en": "Rio de Janeiro",
+    "tr": "Rio de Janeiro"
+   },
+   {
+    "concept_id": "lima",
+    "en": "Lima",
+    "tr": "Lima"
+   }
+  ],
+  "correct": "sao_paulo",
+  "source": "https://en.wikipedia.org/wiki/São_Paulo"
+ },
+ {
+  "key": "geography_q0923",
+  "category_id": "geography",
+  "subcategory_id": "cities",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Indian city was known as Bombay until 1995?",
+   "tr": "Hangi Hint şehrinin adı 1995'e kadar Bombay idi?"
+  },
+  "options": [
+   {
+    "concept_id": "mumbai",
+    "en": "Mumbai",
+    "tr": "Mumbai"
+   },
+   {
+    "concept_id": "chennai",
+    "en": "Chennai",
+    "tr": "Chennai"
+   },
+   {
+    "concept_id": "kolkata",
+    "en": "Kolkata",
+    "tr": "Kalküta"
+   },
+   {
+    "concept_id": "delhi",
+    "en": "Delhi",
+    "tr": "Delhi"
+   }
+  ],
+  "correct": "mumbai",
+  "source": "https://en.wikipedia.org/wiki/Mumbai"
+ },
+ {
+  "key": "geography_q0924",
+  "category_id": "geography",
+  "subcategory_id": "islands",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Colombo, its largest city, is on which island nation?",
+   "tr": "En büyük şehri Kolombo olan ada ülkesi hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "sri_lanka",
+    "en": "Sri Lanka",
+    "tr": "Sri Lanka"
+   },
+   {
+    "concept_id": "maldives",
+    "en": "Maldives",
+    "tr": "Maldivler"
+   },
+   {
+    "concept_id": "madagascar",
+    "en": "Madagascar",
+    "tr": "Madagaskar"
+   },
+   {
+    "concept_id": "mauritius",
+    "en": "Mauritius",
+    "tr": "Mauritius"
+   }
+  ],
+  "correct": "sri_lanka",
+  "source": "https://en.wikipedia.org/wiki/Colombo"
+ },
+ {
+  "key": "geography_q0925",
+  "category_id": "geography",
+  "subcategory_id": "world_heritage",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which ancient English stone circle lines up with the midsummer sunrise?",
+   "tr": "Hangi antik İngiliz taş çemberi yaz ortası gün doğumuyla aynı hizadadır?"
+  },
+  "options": [
+   {
+    "concept_id": "stonehenge",
+    "en": "Stonehenge",
+    "tr": "Stonehenge"
+   },
+   {
+    "concept_id": "hadrian_s_wall",
+    "en": "Hadrian's Wall",
+    "tr": "Hadrian Duvarı"
+   },
+   {
+    "concept_id": "tower_of_london",
+    "en": "Tower of London",
+    "tr": "Londra Kulesi"
+   },
+   {
+    "concept_id": "canterbury_cathedral",
+    "en": "Canterbury Cathedral",
+    "tr": "Canterbury Katedrali"
+   }
+  ],
+  "correct": "stonehenge",
+  "source": "https://en.wikipedia.org/wiki/Stonehenge"
+ },
+ {
+  "key": "geography_q0926",
+  "category_id": "geography",
+  "subcategory_id": "rivers",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What do we call a lake made by building a dam across a river?",
+   "tr": "Bir nehrin önüne baraj kurularak oluşturulan göle ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "reservoir",
+    "en": "Reservoir",
+    "tr": "Baraj gölü"
+   },
+   {
+    "concept_id": "lagoon",
+    "en": "Lagoon",
+    "tr": "Lagün"
+   },
+   {
+    "concept_id": "oasis",
+    "en": "Oasis",
+    "tr": "Vaha"
+   },
+   {
+    "concept_id": "fjord",
+    "en": "Fjord",
+    "tr": "Fiyort"
+   }
+  ],
+  "correct": "reservoir",
+  "source": "https://en.wikipedia.org/wiki/Reservoir"
+ },
+ {
+  "key": "geography_q0927",
+  "category_id": "geography",
+  "subcategory_id": "maps",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which is the largest continent?",
+   "tr": "En büyük kıta hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "asia",
+    "en": "Asia",
+    "tr": "Asya"
+   },
+   {
+    "concept_id": "africa",
+    "en": "Africa",
+    "tr": "Afrika"
+   },
+   {
+    "concept_id": "north_america",
+    "en": "North America",
+    "tr": "Kuzey Amerika"
+   },
+   {
+    "concept_id": "europe",
+    "en": "Europe",
+    "tr": "Avrupa"
+   }
+  ],
+  "correct": "asia",
+  "source": "https://en.wikipedia.org/wiki/Asia"
+ },
+ {
+  "key": "geography_q0928",
+  "category_id": "geography",
+  "subcategory_id": "countries",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which language do most people in Mexico speak?",
+   "tr": "Meksika'da insanların çoğu hangi dili konuşur?"
+  },
+  "options": [
+   {
+    "concept_id": "spanish",
+    "en": "Spanish",
+    "tr": "İspanyolca"
+   },
+   {
+    "concept_id": "portuguese",
+    "en": "Portuguese",
+    "tr": "Portekizce"
+   },
+   {
+    "concept_id": "english",
+    "en": "English",
+    "tr": "İngilizce"
+   },
+   {
+    "concept_id": "french",
+    "en": "French",
+    "tr": "Fransızca"
+   }
+  ],
+  "correct": "spanish",
+  "source": "https://en.wikipedia.org/wiki/Mexico"
+ },
+ {
+  "key": "geography_q0929",
+  "category_id": "geography",
+  "subcategory_id": "countries",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which language is the main language of Austria?",
+   "tr": "Avusturya'nın ana dili hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "german",
+    "en": "German",
+    "tr": "Almanca"
+   },
+   {
+    "concept_id": "french",
+    "en": "French",
+    "tr": "Fransızca"
+   },
+   {
+    "concept_id": "italian",
+    "en": "Italian",
+    "tr": "İtalyanca"
+   },
+   {
+    "concept_id": "hungarian",
+    "en": "Hungarian",
+    "tr": "Macarca"
+   }
+  ],
+  "correct": "german",
+  "source": "https://en.wikipedia.org/wiki/Austria"
+ },
+ {
+  "key": "geography_q0930",
+  "category_id": "geography",
+  "subcategory_id": "cities",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which is the largest city in the United States by population?",
+   "tr": "Nüfus bakımından ABD'nin en büyük şehri hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "new_york_city",
+    "en": "New York City",
+    "tr": "New York"
+   },
+   {
+    "concept_id": "los_angeles",
+    "en": "Los Angeles",
+    "tr": "Los Angeles"
+   },
+   {
+    "concept_id": "chicago",
+    "en": "Chicago",
+    "tr": "Chicago"
+   },
+   {
+    "concept_id": "houston",
+    "en": "Houston",
+    "tr": "Houston"
+   }
+  ],
+  "correct": "new_york_city",
+  "source": "https://en.wikipedia.org/wiki/New_York_City"
+ },
+ {
+  "key": "geography_q0931",
+  "category_id": "geography",
+  "subcategory_id": "oceans",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Fiji and Samoa are island nations in which ocean?",
+   "tr": "Fiji ve Samoa hangi okyanustaki ada ülkeleridir?"
+  },
+  "options": [
+   {
+    "concept_id": "pacific_ocean",
+    "en": "Pacific Ocean",
+    "tr": "Büyük Okyanus"
+   },
+   {
+    "concept_id": "indian_ocean",
+    "en": "Indian Ocean",
+    "tr": "Hint Okyanusu"
+   },
+   {
+    "concept_id": "atlantic_ocean",
+    "en": "Atlantic Ocean",
+    "tr": "Atlas Okyanusu"
+   },
+   {
+    "concept_id": "southern_ocean",
+    "en": "Southern Ocean",
+    "tr": "Güney Okyanusu"
+   }
+  ],
+  "correct": "pacific_ocean",
+  "source": "https://en.wikipedia.org/wiki/Pacific_Ocean"
+ },
+ {
+  "key": "geography_q0932",
+  "category_id": "geography",
+  "subcategory_id": "maps",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Earth spins around an imaginary line through the poles. What is it called?",
+   "tr": "Dünya, kutuplardan geçen hayali bir çizgi etrafında döner. Bu çizgiye ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "axis",
+    "en": "Axis",
+    "tr": "Eksen"
+   },
+   {
+    "concept_id": "equator",
+    "en": "Equator",
+    "tr": "Ekvator"
+   },
+   {
+    "concept_id": "orbit",
+    "en": "Orbit",
+    "tr": "Yörünge"
+   },
+   {
+    "concept_id": "meridian",
+    "en": "Meridian",
+    "tr": "Meridyen"
+   }
+  ],
+  "correct": "axis",
+  "source": "https://en.wikipedia.org/wiki/Earth's_rotation"
+ },
+ {
+  "key": "geography_q0933",
+  "category_id": "geography",
+  "subcategory_id": "flags",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which two colours make up the flag of Spain?",
+   "tr": "İspanya bayrağı hangi iki renkten oluşur?"
+  },
+  "options": [
+   {
+    "concept_id": "red_and_yellow",
+    "en": "Red and yellow",
+    "tr": "Kırmızı ve sarı"
+   },
+   {
+    "concept_id": "blue_and_white",
+    "en": "Blue and white",
+    "tr": "Mavi ve beyaz"
+   },
+   {
+    "concept_id": "green_and_red",
+    "en": "Green and red",
+    "tr": "Yeşil ve kırmızı"
+   },
+   {
+    "concept_id": "black_and_yellow",
+    "en": "Black and yellow",
+    "tr": "Siyah ve sarı"
+   }
+  ],
+  "correct": "red_and_yellow",
+  "source": "https://en.wikipedia.org/wiki/Flag_of_Spain"
+ },
+ {
+  "key": "geography_q0934",
+  "category_id": "geography",
+  "subcategory_id": "capitals",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Mexico's capital shares its name with the country. What is it called?",
+   "tr": "Meksika'nın başkenti ülkeyle aynı adı taşır. Adı nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "mexico_city",
+    "en": "Mexico City",
+    "tr": "Meksiko"
+   },
+   {
+    "concept_id": "guadalajara",
+    "en": "Guadalajara",
+    "tr": "Guadalajara"
+   },
+   {
+    "concept_id": "monterrey",
+    "en": "Monterrey",
+    "tr": "Monterrey"
+   },
+   {
+    "concept_id": "cancun",
+    "en": "Cancún",
+    "tr": "Cancún"
+   }
+  ],
+  "correct": "mexico_city",
+  "source": "https://en.wikipedia.org/wiki/Mexico_City"
+ },
+ {
+  "key": "geography_q0935",
+  "category_id": "geography",
+  "subcategory_id": "countries",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which is the largest of the three Scandinavian countries by area?",
+   "tr": "Üç İskandinav ülkesinden yüzölçümü en büyük olan hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "sweden",
+    "en": "Sweden",
+    "tr": "İsveç"
+   },
+   {
+    "concept_id": "norway",
+    "en": "Norway",
+    "tr": "Norveç"
+   },
+   {
+    "concept_id": "denmark",
+    "en": "Denmark",
+    "tr": "Danimarka"
+   },
+   {
+    "concept_id": "finland",
+    "en": "Finland",
+    "tr": "Finlandiya"
+   }
+  ],
+  "correct": "sweden",
+  "source": "https://en.wikipedia.org/wiki/Scandinavia"
+ },
+ {
+  "key": "geography_q0936",
+  "category_id": "geography",
+  "subcategory_id": "maps",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Tropic of Cancer lies at roughly which latitude?",
+   "tr": "Yengeç Dönencesi yaklaşık hangi enlemdedir?"
+  },
+  "options": [
+   {
+    "concept_id": "n_23_5_north",
+    "en": "23.5° north",
+    "tr": "23,5° kuzey"
+   },
+   {
+    "concept_id": "n_10_north",
+    "en": "10° north",
+    "tr": "10° kuzey"
+   },
+   {
+    "concept_id": "n_45_north",
+    "en": "45° north",
+    "tr": "45° kuzey"
+   },
+   {
+    "concept_id": "n_66_5_north",
+    "en": "66.5° north",
+    "tr": "66,5° kuzey"
+   }
+  ],
+  "correct": "n_23_5_north",
+  "source": "https://en.wikipedia.org/wiki/Tropic_of_Cancer"
+ },
+ {
+  "key": "geography_q0937",
+  "category_id": "geography",
+  "subcategory_id": "islands",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Scottish islands, far to the north, gave their name to a tiny breed of pony?",
+   "tr": "Kuzeyin uzağındaki hangi İskoç adaları, minik bir midilli cinsine adını verdi?"
+  },
+  "options": [
+   {
+    "concept_id": "shetland",
+    "en": "Shetland",
+    "tr": "Shetland"
+   },
+   {
+    "concept_id": "orkney",
+    "en": "Orkney",
+    "tr": "Orkney"
+   },
+   {
+    "concept_id": "hebrides",
+    "en": "Hebrides",
+    "tr": "Hebridler"
+   },
+   {
+    "concept_id": "skye",
+    "en": "Skye",
+    "tr": "Skye"
+   }
+  ],
+  "correct": "shetland",
+  "source": "https://en.wikipedia.org/wiki/Shetland"
+ },
+ {
+  "key": "geography_q0938",
+  "category_id": "geography",
+  "subcategory_id": "islands",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which country is made up of the islands of Gozo, Comino and its namesake main island?",
+   "tr": "Hangi ülke Gozo, Comino ve kendi adını taşıyan ana adadan oluşur?"
+  },
+  "options": [
+   {
+    "concept_id": "malta",
+    "en": "Malta",
+    "tr": "Malta"
+   },
+   {
+    "concept_id": "cyprus",
+    "en": "Cyprus",
+    "tr": "Kıbrıs"
+   },
+   {
+    "concept_id": "greece",
+    "en": "Greece",
+    "tr": "Yunanistan"
+   },
+   {
+    "concept_id": "croatia",
+    "en": "Croatia",
+    "tr": "Hırvatistan"
+   }
+  ],
+  "correct": "malta",
+  "source": "https://en.wikipedia.org/wiki/Malta"
+ },
+ {
+  "key": "geography_q0939",
+  "category_id": "geography",
+  "subcategory_id": "countries",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Gallic rooster is a national symbol of which country?",
+   "tr": "Gal horozu hangi ülkenin ulusal simgesidir?"
+  },
+  "options": [
+   {
+    "concept_id": "france",
+    "en": "France",
+    "tr": "Fransa"
+   },
+   {
+    "concept_id": "portugal",
+    "en": "Portugal",
+    "tr": "Portekiz"
+   },
+   {
+    "concept_id": "belgium",
+    "en": "Belgium",
+    "tr": "Belçika"
+   },
+   {
+    "concept_id": "ireland",
+    "en": "Ireland",
+    "tr": "İrlanda"
+   }
+  ],
+  "correct": "france",
+  "source": "https://en.wikipedia.org/wiki/Gallic_rooster"
+ },
+ {
+  "key": "geography_q0940",
+  "category_id": "geography",
+  "subcategory_id": "countries",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which country produces the most olive oil in the world?",
+   "tr": "Dünyada en çok zeytinyağını hangi ülke üretir?"
+  },
+  "options": [
+   {
+    "concept_id": "spain",
+    "en": "Spain",
+    "tr": "İspanya"
+   },
+   {
+    "concept_id": "italy",
+    "en": "Italy",
+    "tr": "İtalya"
+   },
+   {
+    "concept_id": "greece",
+    "en": "Greece",
+    "tr": "Yunanistan"
+   },
+   {
+    "concept_id": "tunisia",
+    "en": "Tunisia",
+    "tr": "Tunus"
+   }
+  ],
+  "correct": "spain",
+  "source": "https://en.wikipedia.org/wiki/Olive_oil"
+ },
+ {
+  "key": "geography_q0941",
+  "category_id": "geography",
+  "subcategory_id": "flags",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which country's flag is red with a green five-pointed star outline in the middle?",
+   "tr": "Hangi ülkenin bayrağı ortasında yeşil beş köşeli bir yıldız çizgisi olan kırmızı bir bayraktır?"
+  },
+  "options": [
+   {
+    "concept_id": "morocco",
+    "en": "Morocco",
+    "tr": "Fas"
+   },
+   {
+    "concept_id": "vietnam",
+    "en": "Vietnam",
+    "tr": "Vietnam"
+   },
+   {
+    "concept_id": "ghana",
+    "en": "Ghana",
+    "tr": "Gana"
+   },
+   {
+    "concept_id": "tunisia",
+    "en": "Tunisia",
+    "tr": "Tunus"
+   }
+  ],
+  "correct": "morocco",
+  "source": "https://en.wikipedia.org/wiki/Flag_of_Morocco"
+ },
+ {
+  "key": "geography_q0942",
+  "category_id": "geography",
+  "subcategory_id": "flags",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which flag looks like Australia's but has four red stars instead of white ones?",
+   "tr": "Hangi bayrak Avustralya bayrağına benzer ama beyaz yerine dört kırmızı yıldızı vardır?"
+  },
+  "options": [
+   {
+    "concept_id": "new_zealand",
+    "en": "New Zealand",
+    "tr": "Yeni Zelanda"
+   },
+   {
+    "concept_id": "fiji",
+    "en": "Fiji",
+    "tr": "Fiji"
+   },
+   {
+    "concept_id": "tuvalu",
+    "en": "Tuvalu",
+    "tr": "Tuvalu"
+   },
+   {
+    "concept_id": "cook_islands",
+    "en": "Cook Islands",
+    "tr": "Cook Adaları"
+   }
+  ],
+  "correct": "new_zealand",
+  "source": "https://en.wikipedia.org/wiki/Flag_of_New_Zealand"
+ },
+ {
+  "key": "geography_q0943",
+  "category_id": "geography",
+  "subcategory_id": "oceans",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "After the Pacific, which is the second-largest ocean?",
+   "tr": "Büyük Okyanus'tan sonra en büyük ikinci okyanus hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "atlantic_ocean",
+    "en": "Atlantic Ocean",
+    "tr": "Atlas Okyanusu"
+   },
+   {
+    "concept_id": "indian_ocean",
+    "en": "Indian Ocean",
+    "tr": "Hint Okyanusu"
+   },
+   {
+    "concept_id": "southern_ocean",
+    "en": "Southern Ocean",
+    "tr": "Güney Okyanusu"
+   },
+   {
+    "concept_id": "arctic_ocean",
+    "en": "Arctic Ocean",
+    "tr": "Arktik Okyanusu"
+   }
+  ],
+  "correct": "atlantic_ocean",
+  "source": "https://en.wikipedia.org/wiki/Atlantic_Ocean"
+ },
+ {
+  "key": "geography_q0944",
+  "category_id": "geography",
+  "subcategory_id": "oceans",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Sargasso Sea is named after what, which floats on its surface?",
+   "tr": "Sargasso Denizi, yüzeyinde yüzen neyin adını taşır?"
+  },
+  "options": [
+   {
+    "concept_id": "seaweed",
+    "en": "Seaweed",
+    "tr": "Deniz yosunu"
+   },
+   {
+    "concept_id": "ice",
+    "en": "Ice",
+    "tr": "Buz"
+   },
+   {
+    "concept_id": "volcanic_pumice",
+    "en": "Volcanic pumice",
+    "tr": "Volkanik süngertaşı"
+   },
+   {
+    "concept_id": "jellyfish",
+    "en": "Jellyfish",
+    "tr": "Denizanası"
+   }
+  ],
+  "correct": "seaweed",
+  "source": "https://en.wikipedia.org/wiki/Sargassum"
+ },
+ {
+  "key": "geography_q0945",
+  "category_id": "geography",
+  "subcategory_id": "rivers",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which river flows through Hamburg, Germany's great port city?",
+   "tr": "Almanya'nın büyük liman şehri Hamburg'un içinden hangi nehir geçer?"
+  },
+  "options": [
+   {
+    "concept_id": "elbe",
+    "en": "Elbe",
+    "tr": "Elbe"
+   },
+   {
+    "concept_id": "rhine",
+    "en": "Rhine",
+    "tr": "Ren"
+   },
+   {
+    "concept_id": "weser",
+    "en": "Weser",
+    "tr": "Weser"
+   },
+   {
+    "concept_id": "oder",
+    "en": "Oder",
+    "tr": "Oder"
+   }
+  ],
+  "correct": "elbe",
+  "source": "https://en.wikipedia.org/wiki/Elbe"
+ },
+ {
+  "key": "geography_q0946",
+  "category_id": "geography",
+  "subcategory_id": "capitals",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which capital lies mainly on the island of Zealand, not on its country's mainland?",
+   "tr": "Hangi başkent ülkesinin anakarasında değil, büyük ölçüde Zelanda adasında yer alır?"
+  },
+  "options": [
+   {
+    "concept_id": "copenhagen",
+    "en": "Copenhagen",
+    "tr": "Kopenhag"
+   },
+   {
+    "concept_id": "stockholm",
+    "en": "Stockholm",
+    "tr": "Stockholm"
+   },
+   {
+    "concept_id": "oslo",
+    "en": "Oslo",
+    "tr": "Oslo"
+   },
+   {
+    "concept_id": "helsinki",
+    "en": "Helsinki",
+    "tr": "Helsinki"
+   }
+  ],
+  "correct": "copenhagen",
+  "source": "https://en.wikipedia.org/wiki/Zealand"
+ },
+ {
+  "key": "geography_q0947",
+  "category_id": "geography",
+  "subcategory_id": "flags",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which country's flag bears a white double cross on three blue hills?",
+   "tr": "Hangi ülkenin bayrağında üç mavi tepe üzerinde beyaz bir çift haç vardır?"
+  },
+  "options": [
+   {
+    "concept_id": "slovakia",
+    "en": "Slovakia",
+    "tr": "Slovakya"
+   },
+   {
+    "concept_id": "slovenia",
+    "en": "Slovenia",
+    "tr": "Slovenya"
+   },
+   {
+    "concept_id": "serbia",
+    "en": "Serbia",
+    "tr": "Sırbistan"
+   },
+   {
+    "concept_id": "czech_republic",
+    "en": "Czech Republic",
+    "tr": "Çekya"
+   }
+  ],
+  "correct": "slovakia",
+  "source": "https://en.wikipedia.org/wiki/Flag_of_Slovakia"
+ },
+ {
+  "key": "geography_q0948",
+  "category_id": "geography",
+  "subcategory_id": "rivers",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which great American river is nicknamed \"the Big Muddy\"?",
+   "tr": "Hangi büyük Amerikan nehrinin lakabı \"Büyük Çamurlu\"dur?"
+  },
+  "options": [
+   {
+    "concept_id": "missouri",
+    "en": "Missouri",
+    "tr": "Missouri"
+   },
+   {
+    "concept_id": "mississippi",
+    "en": "Mississippi",
+    "tr": "Mississippi"
+   },
+   {
+    "concept_id": "colorado",
+    "en": "Colorado",
+    "tr": "Colorado"
+   },
+   {
+    "concept_id": "ohio",
+    "en": "Ohio",
+    "tr": "Ohio"
+   }
+  ],
+  "correct": "missouri",
+  "source": "https://en.wikipedia.org/wiki/Missouri_River"
+ },
+ {
+  "key": "geography_q0949",
+  "category_id": "geography",
+  "subcategory_id": "islands",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Cagliari is the capital of which Italian island?",
+   "tr": "Cagliari hangi İtalyan adasının başkentidir?"
+  },
+  "options": [
+   {
+    "concept_id": "sardinia",
+    "en": "Sardinia",
+    "tr": "Sardinya"
+   },
+   {
+    "concept_id": "sicily",
+    "en": "Sicily",
+    "tr": "Sicilya"
+   },
+   {
+    "concept_id": "elba",
+    "en": "Elba",
+    "tr": "Elba"
+   },
+   {
+    "concept_id": "ischia",
+    "en": "Ischia",
+    "tr": "Ischia"
+   }
+  ],
+  "correct": "sardinia",
+  "source": "https://en.wikipedia.org/wiki/Cagliari"
+ },
+ {
+  "key": "geography_q0950",
+  "category_id": "geography",
+  "subcategory_id": "oceans",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which narrow strait separates Sri Lanka from India?",
+   "tr": "Sri Lanka'yı Hindistan'dan hangi dar boğaz ayırır?"
+  },
+  "options": [
+   {
+    "concept_id": "palk_strait",
+    "en": "Palk Strait",
+    "tr": "Palk Boğazı"
+   },
+   {
+    "concept_id": "strait_of_malacca",
+    "en": "Strait of Malacca",
+    "tr": "Malakka Boğazı"
+   },
+   {
+    "concept_id": "sunda_strait",
+    "en": "Sunda Strait",
+    "tr": "Sunda Boğazı"
+   },
+   {
+    "concept_id": "bab_el_mandeb",
+    "en": "Bab-el-Mandeb",
+    "tr": "Babülmendep"
+   }
+  ],
+  "correct": "palk_strait",
+  "source": "https://en.wikipedia.org/wiki/Palk_Strait"
+ },
+ {
+  "key": "geography_q0951",
+  "category_id": "geography",
+  "subcategory_id": "oceans",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which cold current flows along Namibia's coast, bringing fog to the Namib Desert?",
+   "tr": "Namibya kıyısı boyunca akarak Namib Çölü'ne sis getiren soğuk akıntı hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "benguela_current",
+    "en": "Benguela Current",
+    "tr": "Benguela Akıntısı"
+   },
+   {
+    "concept_id": "agulhas_current",
+    "en": "Agulhas Current",
+    "tr": "Agulhas Akıntısı"
+   },
+   {
+    "concept_id": "canary_current",
+    "en": "Canary Current",
+    "tr": "Kanarya Akıntısı"
+   },
+   {
+    "concept_id": "humboldt_current",
+    "en": "Humboldt Current",
+    "tr": "Humboldt Akıntısı"
+   }
+  ],
+  "correct": "benguela_current",
+  "source": "https://en.wikipedia.org/wiki/Benguela_Current"
+ },
+ {
+  "key": "geography_q0952",
+  "category_id": "geography",
+  "subcategory_id": "flags",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which country's flag shows a bird of paradise?",
+   "tr": "Hangi ülkenin bayrağında bir cennet kuşu vardır?"
+  },
+  "options": [
+   {
+    "concept_id": "papua_new_guinea",
+    "en": "Papua New Guinea",
+    "tr": "Papua Yeni Gine"
+   },
+   {
+    "concept_id": "dominica",
+    "en": "Dominica",
+    "tr": "Dominika"
+   },
+   {
+    "concept_id": "uganda",
+    "en": "Uganda",
+    "tr": "Uganda"
+   },
+   {
+    "concept_id": "kiribati",
+    "en": "Kiribati",
+    "tr": "Kiribati"
+   }
+  ],
+  "correct": "papua_new_guinea",
+  "source": "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea"
+ },
+ {
+  "key": "geography_q0953",
+  "category_id": "geography",
+  "subcategory_id": "capitals",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Baltic capital is the largest city in the three Baltic states?",
+   "tr": "Üç Baltık ülkesinin en büyük şehri olan Baltık başkenti hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "riga",
+    "en": "Riga",
+    "tr": "Riga"
+   },
+   {
+    "concept_id": "vilnius",
+    "en": "Vilnius",
+    "tr": "Vilnius"
+   },
+   {
+    "concept_id": "tallinn",
+    "en": "Tallinn",
+    "tr": "Tallinn"
+   },
+   {
+    "concept_id": "kaunas",
+    "en": "Kaunas",
+    "tr": "Kaunas"
+   }
+  ],
+  "correct": "riga",
+  "source": "https://en.wikipedia.org/wiki/Riga"
+ },
+ {
+  "key": "geography_q0954",
+  "category_id": "geography",
+  "subcategory_id": "world_heritage",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Leshan Giant Buddha, the largest stone Buddha on Earth, is in which country?",
+   "tr": "Dünyanın en büyük taş Buda heykeli Leshan Dev Budası hangi ülkededir?"
+  },
+  "options": [
+   {
+    "concept_id": "china",
+    "en": "China",
+    "tr": "Çin"
+   },
+   {
+    "concept_id": "thailand",
+    "en": "Thailand",
+    "tr": "Tayland"
+   },
+   {
+    "concept_id": "japan",
+    "en": "Japan",
+    "tr": "Japonya"
+   },
+   {
+    "concept_id": "myanmar",
+    "en": "Myanmar",
+    "tr": "Myanmar"
+   }
+  ],
+  "correct": "china",
+  "source": "https://en.wikipedia.org/wiki/Leshan_Giant_Buddha"
+ },
+ {
+  "key": "geography_q0955",
+  "category_id": "geography",
+  "subcategory_id": "mountains",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which is the highest mountain in Canada?",
+   "tr": "Kanada'nın en yüksek dağı hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "mount_logan",
+    "en": "Mount Logan",
+    "tr": "Logan Dağı"
+   },
+   {
+    "concept_id": "mount_robson",
+    "en": "Mount Robson",
+    "tr": "Robson Dağı"
+   },
+   {
+    "concept_id": "mount_waddington",
+    "en": "Mount Waddington",
+    "tr": "Waddington Dağı"
+   },
+   {
+    "concept_id": "mount_columbia",
+    "en": "Mount Columbia",
+    "tr": "Columbia Dağı"
+   }
+  ],
+  "correct": "mount_logan",
+  "source": "https://en.wikipedia.org/wiki/Mount_Logan"
  }
 ]
