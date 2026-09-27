@@ -168,6 +168,52 @@ class FakeAppleVerifier:
             raise ApiError(ErrorCode.PURCHASE_NOT_VERIFIED, detail={"reason": "apple_signature"}) from exc
 
 
+class AppleStoreClient(Protocol):
+    async def transaction_info(self, transaction_id: str) -> str | None:
+        """Latest signed transaction (JWS) for ``transaction_id``; None when Apple has no record."""
+        ...
+
+
+class AppStoreServerApiClient:
+    """App Store Server API (``GET /inApps/v1/transactions/{id}``) authenticated with an ES256 JWT."""
+
+    HOSTS = {"Production": "https://api.storekit.itunes.apple.com",
+             "Sandbox": "https://api.storekit-sandbox.itunes.apple.com"}
+
+    def __init__(self, *, issuer_id: str, key_id: str, private_key_pem: str, bundle_id: str,
+                 environment: str = "Production", clock=None) -> None:
+        if not (issuer_id and key_id and private_key_pem):
+            raise ValueError("App Store Server API credentials are required")
+        self._issuer, self._key_id, self._key, self._bundle = issuer_id, key_id, private_key_pem, bundle_id
+        self._host = self.HOSTS[environment]
+        self._clock = clock or (lambda: int(dt.datetime.now(dt.UTC).timestamp()))
+
+    def token(self) -> str:
+        now = self._clock()
+        return jwt.encode({"iss": self._issuer, "iat": now, "exp": now + 1200, "aud": "appstoreconnect-v1",
+                           "bid": self._bundle}, self._key, algorithm="ES256",
+                          headers={"kid": self._key_id, "typ": "JWT"})
+
+    async def transaction_info(self, transaction_id: str) -> str | None:
+        async with httpx.AsyncClient(timeout=10.0) as client:
+            res = await client.get(f"{self._host}/inApps/v1/transactions/{transaction_id}",
+                                   headers={"authorization": f"Bearer {self.token()}"})
+        if res.status_code == 404:
+            return None
+        res.raise_for_status()
+        return res.json().get("signedTransactionInfo")
+
+
+class FakeAppleStore:
+    """Dev/test: latest signed transaction per original transaction ID."""
+
+    def __init__(self) -> None:
+        self.transactions: dict[str, str] = {}
+
+    async def transaction_info(self, transaction_id: str) -> str | None:
+        return self.transactions.get(transaction_id)
+
+
 def decode_pubsub_data(envelope: dict[str, Any]) -> dict[str, Any]:
     try:
         return json.loads(base64.b64decode(envelope["message"]["data"]).decode())

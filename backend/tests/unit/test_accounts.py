@@ -264,3 +264,31 @@ def test_deletion_waits_for_active_match(api, container):
     assert container.auth_admin.deleted == []
     # Queue/match entry is refused while deletion is pending.
     assert api.get("/v1/profile", "dm1").json()["error"]["code"] == "ACCOUNT_DELETION_PENDING"
+
+
+def test_deletion_leaves_no_raw_uid_in_personal_records(api, container):
+    import asyncio
+
+    from app.moderation.risk import RiskSignal
+    from app.moderation.sanctions import SanctionKind
+    from tests.unit.test_matchmaking import bot_fill_match, play_round_human_wins
+
+    me = api.onboard("gone1", "GoneSoon")
+    api.onboard("peer1", "PeerOne")
+    match_id = bot_fill_match(api, container, "gone1")
+    for _ in range(10):
+        play_round_human_wins(api, container, match_id, uid="gone1")
+    api.get("/v1/missions/daily", "gone1")
+    api.post("/v1/player-reports", "peer1", {"target_public_id": me["public_id"], "reason": "OFFENSIVE_USERNAME"})
+    asyncio.run(container.sanctions.apply("gone1", SanctionKind.RANKED_RESTRICTION, actor="admin",
+                                          reason_code="test", duration_ms=3_600_000))
+    asyncio.run(container.risk.record("gone1", RiskSignal.MALFORMED_REQUEST))
+    assert api.delete("/v1/account", "gone1", extra=":fresh").json()["status"] == "COMPLETED"
+    # Only operational, expiring records may still reference the raw UID (TTL-bound or the deletion receipt).
+    allowed_prefixes = ("deletion_requests/", "matchmaking_tickets/", "match_index/", "rate_limits/",
+                        "idempotency_records/")
+    leftovers = sorted(path for path, doc in container.store.dump().items()
+                       if "gone1" in str(doc) + path and not path.startswith(allowed_prefixes))
+    assert leftovers == []
+    ledger = container.store._docs[f"settlement_ledgers/{match_id}"]
+    assert "gone1" not in ledger["participant_results"]

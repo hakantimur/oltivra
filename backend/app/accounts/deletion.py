@@ -97,7 +97,11 @@ class DeletionService:
                                    ("device_tokens", ("uid",)),
                                    ("user_missions", ("uid",)),
                                    ("weekly_user_stats", ("uid",)),
-                                   ("synova_items", ("uid",))):
+                                   ("synova_items", ("uid",)),
+                                   ("progression_events", ("uid",)),
+                                   ("reward_offers", ("uid",)),
+                                   ("reward_daily", ("uid",)),
+                                   ("party_invites", ("uid",))):
             for field in fields:
                 for row in await self._store.query(Query(collection).filter(field, "==", uid)):
                     await self._store.delete(row.path)
@@ -111,17 +115,32 @@ class DeletionService:
                 "participant_uids": [anon if u == uid else u for u in row.data.get("participant_uids", [])],
                 "participants": participants,
             })
-        for row in await self._store.query(Query("purchase_transactions").filter("uid", "==", uid)):
-            await self._store.update(row.path, {"uid": anon})
-        for collection in ("player_reports", "question_reports", "question_reporters"):
-            for row in await self._store.query(Query(collection).filter("reporter_uid", "==", uid)):
-                await self._store.update(row.path, {"reporter_uid": anon})
+            # The settlement ledger is the audit record of the same match: re-key the deleted participant.
+            ledger_ref = f"settlement_ledgers/{row.id}"
+            ledger = await self._store.get(ledger_ref)
+            if ledger:
+                await self._store.update(ledger_ref, {
+                    "participant_results": {(anon if k == uid else k): v
+                                            for k, v in (ledger.get("participant_results") or {}).items()},
+                    "risk_signals": {(anon if k == uid else k): v
+                                     for k, v in (ledger.get("risk_signals") or {}).items()},
+                    "deletion_uids": [anon if u == uid else u for u in ledger.get("deletion_uids") or []],
+                })
+        # Financial, reward and moderation evidence is retained only under a pseudonym (spec §30.1 step 7).
+        for collection, field in (("purchase_transactions", "uid"), ("reward_transactions", "uid"),
+                                  ("user_sanctions", "uid"), ("moderation_actions", "target_uid"),
+                                  ("player_reports", "reporter_uid"), ("player_reports", "target_uid"),
+                                  ("question_reports", "reporter_uid"), ("question_reporters", "reporter_uid")):
+            for row in await self._store.query(Query(collection).filter(field, "==", uid)):
+                await self._store.update(row.path, {field: anon})
+        for row in await self._store.query(Query("audit_log").filter("subject", "==", f"user:{uid}")):
+            await self._store.update(row.path, {"subject": f"user:{anon}"})
         # 3. Personal profile, private settings, runtime, exposure, entitlements.
         public_id = user.get("public_id")
         for path in (f"public_profiles/{public_id}" if public_id else None,
                      f"public_ids/{public_id}" if public_id else None,
-                     f"user_recent_questions/{uid}", f"purchase_entitlements/{uid}", runtime_path(uid),
-                     user_path(uid)):
+                     f"user_recent_questions/{uid}", f"purchase_entitlements/{uid}", f"user_category_stats/{uid}",
+                     f"user_risk/{uid}", runtime_path(uid), user_path(uid)):
             if path:
                 await self._store.delete(path)
         # 4. Minimal hashed username reservation for 30 days (spec §30.1 step 8).

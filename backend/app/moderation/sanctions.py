@@ -123,6 +123,7 @@ class SanctionService:
                     "created_at_ms": now, "ends_at_ms": now + duration_ms if duration_ms else None,
                     "reversible": kind not in IRREVERSIBLE, "evidence": evidence or {}}
         await c.store.create(sanction_path(sanction["sanction_id"]), sanction)
+        await self._record_action(uid, f"APPLY_{kind.value}", actor, reason_code, sanction)
         summary = await self._recompute(uid)
         if kind in (SanctionKind.SUSPEND, SanctionKind.BAN, SanctionKind.QUEUE_RESTRICTION,
                     SanctionKind.RENAME_REQUIRED):
@@ -146,10 +147,27 @@ class SanctionService:
         now = c.clock.now_ms()
         await c.store.update(sanction_path(sanction_id), {"state": "LIFTED", "lifted_by": actor,
                                                           "lifted_at_ms": now, "lift_reason": reason_code})
+        await self._record_action(sanction["uid"], f"LIFT_{sanction['kind']}", actor, reason_code, sanction)
         summary = await self._recompute(sanction["uid"])
         await c.audit.record(actor=actor, action="SANCTION_LIFT", subject=f"user:{sanction['uid']}",
                              reason_code=reason_code, detail={"sanction_id": sanction_id, "kind": sanction["kind"]})
         return {**sanction, "state": "LIFTED", "summary": summary}
+
+    async def _record_action(self, uid: str, action: str, actor: str, reason_code: str,
+                             sanction: dict[str, Any]) -> None:
+        """User sanction history (spec §16.1 ``moderation_actions``; indexed by target_uid, created_at)."""
+        c = self._c
+        action_id = new_uuid()
+        await c.store.create(f"moderation_actions/{action_id}", {
+            "schema_version": 1, "action_id": action_id, "target_uid": uid, "action": action, "actor": actor,
+            "reason_code": reason_code, "sanction_id": sanction["sanction_id"], "source": sanction["source"],
+            "reversible": sanction["reversible"], "ends_at_ms": sanction.get("ends_at_ms"),
+            "created_at_ms": c.clock.now_ms()})
+
+    async def history(self, uid: str, limit: int = 50) -> list[dict[str, Any]]:
+        rows = await self._c.store.query(Query("moderation_actions").filter("target_uid", "==", uid)
+                                         .order("created_at_ms", "desc").take(limit))
+        return [r.data for r in rows]
 
     async def expire_due(self, limit: int = 500) -> int:
         """Scheduled: mark ended sanctions EXPIRED and refresh the enforcement summary."""

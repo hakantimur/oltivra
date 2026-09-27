@@ -13,7 +13,7 @@ from typing import Any
 from app.common.errors import ApiError, ErrorCode
 from app.common.ids import sha256_hex
 from app.common.store.docstore import Query
-from app.purchases.verifiers import AppleVerifier, GooglePlayClient, decode_pubsub_data
+from app.purchases.verifiers import AppleStoreClient, AppleVerifier, GooglePlayClient, decode_pubsub_data
 
 log = logging.getLogger("oltivra.purchases")
 
@@ -35,10 +35,12 @@ def apple_tx_path(original_transaction_id: str) -> str:
 
 
 class PurchaseService:
-    def __init__(self, container, google: GooglePlayClient, apple: AppleVerifier) -> None:
+    def __init__(self, container, google: GooglePlayClient, apple: AppleVerifier,
+                 apple_store: AppleStoreClient | None = None) -> None:
         self._c = container
         self.google = google
         self.apple = apple
+        self.apple_store = apple_store
 
     # ------------------------------------------------------------------------------------------ core
     async def _record(self, uid: str | None, tx_path: str, tx: dict[str, Any], active: bool | None) -> dict[str, Any]:
@@ -174,5 +176,32 @@ class PurchaseService:
             if purchase.state != row.data["state"]:
                 active = True if purchase.state == "PURCHASED" else (False if purchase.state == "CANCELLED" else None)
                 await self._record(None, row.path, {**row.data, "state": purchase.state}, active)
+                changed += 1
+        return changed
+
+    async def reconcile_apple(self, limit: int = 200) -> int:
+        """Scheduled recovery for missed App Store Server Notifications (spec §31.5)."""
+        if self.apple_store is None:
+            return 0
+        rows = await self._c.store.query(Query("purchase_transactions").filter("store", "==", "APP_STORE")
+                                         .filter("state", "==", "PURCHASED").take(limit))
+        changed = 0
+        for row in rows:
+            original = row.data.get("original_transaction_id")
+            if not original:
+                continue
+            try:
+                signed = await self.apple_store.transaction_info(original)
+            except Exception:  # noqa: BLE001 - transient Apple outage: retry on the next scheduled run
+                log.warning("apple_reconcile_lookup_failed")
+                continue
+            if signed is None:
+                continue
+            try:
+                tx = self._apple_tx(self.apple.decode(signed))
+            except ApiError:
+                continue
+            if tx["state"] != row.data["state"]:
+                await self._record(None, row.path, {**row.data, **tx}, tx["state"] == "PURCHASED")
                 changed += 1
         return changed

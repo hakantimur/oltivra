@@ -218,6 +218,7 @@ async def user_view(ref: str, caller: Caller = Depends(admin_caller), c: Contain
     return {"schema_version": 1, "user": safe,
             "runtime": await c.store.get(f"user_runtime/{uid}"),
             "risk": await c.risk.get(uid), "sanctions": await c.sanctions.list_for(uid),
+            "moderation_history": await c.sanctions.history(uid),
             "reports_against": [r.data for r in against],
             "reports_filed": len(by_user),
             "recent_matches": [{"match_id": h.id, "mode": h.data.get("mode"),

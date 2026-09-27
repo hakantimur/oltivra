@@ -43,7 +43,8 @@ class MaintenanceService:
         return {"manifests": len(counts), "entries": sum(counts.values())}
 
     async def reconcile_purchases(self) -> dict[str, Any]:
-        return {"changed": await self._c.purchases.reconcile_google()}
+        return {"google_changed": await self._c.purchases.reconcile_google(),
+                "apple_changed": await self._c.purchases.reconcile_apple()}
 
     async def release_usernames(self, limit: int = 500) -> dict[str, Any]:
         """Release expired username reservations (renames and deleted accounts after 30 days, spec §30.1)."""
