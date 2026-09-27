@@ -1,182 +1,3782 @@
 [
-  {
-    "key": "science_nature_t001",
-    "category_id": "science_nature",
-    "subcategory_id": "space",
-    "difficulty": "EASY",
-    "global_relevance_score": 5,
-    "time_sensitive": false,
-    "question": {
-      "en": "Roughly how long does the Moon take to orbit Earth once?",
-      "tr": "Ay, Dünya'nın çevresini bir kez yaklaşık ne kadar sürede dolanır?"
-    },
-    "options": [
-      {
-        "concept_id": "about_27_days",
-        "en": "About 27 days",
-        "tr": "Yaklaşık 27 gün"
-      },
-      {
-        "concept_id": "about_7_days",
-        "en": "About 7 days",
-        "tr": "Yaklaşık 7 gün"
-      },
-      {
-        "concept_id": "about_90_days",
-        "en": "About 90 days",
-        "tr": "Yaklaşık 90 gün"
-      },
-      {
-        "concept_id": "about_1_year",
-        "en": "About 1 year",
-        "tr": "Yaklaşık 1 yıl"
-      }
-    ],
-    "correct": "about_27_days",
-    "source": "https://en.wikipedia.org/wiki/Orbit_of_the_Moon"
+ {
+  "key": "science_nature_t001",
+  "category_id": "science_nature",
+  "subcategory_id": "space",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Roughly how long does the Moon take to orbit Earth once?",
+   "tr": "Ay, Dünya'nın çevresini bir kez yaklaşık ne kadar sürede dolanır?"
   },
-  {
-    "key": "science_nature_c002",
-    "category_id": "science_nature",
-    "subcategory_id": "earth_science",
-    "difficulty": "EASY",
-    "global_relevance_score": 5,
-    "time_sensitive": false,
-    "question": {
-      "en": "What is the hardest natural substance on Earth?",
-      "tr": "Dünya'daki en sert doğal madde hangisidir?"
-    },
-    "options": [
-      {
-        "concept_id": "diamond",
-        "en": "Diamond",
-        "tr": "Elmas"
-      },
-      {
-        "concept_id": "quartz",
-        "en": "Quartz",
-        "tr": "Kuvars"
-      },
-      {
-        "concept_id": "granite",
-        "en": "Granite",
-        "tr": "Granit"
-      },
-      {
-        "concept_id": "iron",
-        "en": "Iron",
-        "tr": "Demir"
-      }
-    ],
-    "correct": "diamond",
-    "source": "https://en.wikipedia.org/wiki/Diamond"
+  "options": [
+   {
+    "concept_id": "about_27_days",
+    "en": "About 27 days",
+    "tr": "Yaklaşık 27 gün"
+   },
+   {
+    "concept_id": "about_7_days",
+    "en": "About 7 days",
+    "tr": "Yaklaşık 7 gün"
+   },
+   {
+    "concept_id": "about_90_days",
+    "en": "About 90 days",
+    "tr": "Yaklaşık 90 gün"
+   },
+   {
+    "concept_id": "about_1_year",
+    "en": "About 1 year",
+    "tr": "Yaklaşık 1 yıl"
+   }
+  ],
+  "correct": "about_27_days",
+  "source": "https://en.wikipedia.org/wiki/Orbit_of_the_Moon"
+ },
+ {
+  "key": "science_nature_c002",
+  "category_id": "science_nature",
+  "subcategory_id": "earth_science",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the hardest natural substance on Earth?",
+   "tr": "Dünya'daki en sert doğal madde hangisidir?"
   },
-  {
-    "key": "science_nature_t003",
-    "category_id": "science_nature",
-    "subcategory_id": "animals",
-    "difficulty": "MEDIUM",
-    "global_relevance_score": 4,
-    "time_sensitive": false,
-    "question": {
-      "en": "The axolotl, a salamander that keeps its gills as an adult, is native to which country?",
-      "tr": "Yetişkinken de solungaçlarını koruyan semender aksolotl hangi ülkeye özgüdür?"
-    },
-    "options": [
-      {
-        "concept_id": "mexico",
-        "en": "Mexico",
-        "tr": "Meksika"
-      },
-      {
-        "concept_id": "brazil",
-        "en": "Brazil",
-        "tr": "Brezilya"
-      },
-      {
-        "concept_id": "japan",
-        "en": "Japan",
-        "tr": "Japonya"
-      },
-      {
-        "concept_id": "australia",
-        "en": "Australia",
-        "tr": "Avustralya"
-      }
-    ],
-    "correct": "mexico",
-    "source": "https://en.wikipedia.org/wiki/Axolotl"
+  "options": [
+   {
+    "concept_id": "diamond",
+    "en": "Diamond",
+    "tr": "Elmas"
+   },
+   {
+    "concept_id": "quartz",
+    "en": "Quartz",
+    "tr": "Kuvars"
+   },
+   {
+    "concept_id": "granite",
+    "en": "Granite",
+    "tr": "Granit"
+   },
+   {
+    "concept_id": "iron",
+    "en": "Iron",
+    "tr": "Demir"
+   }
+  ],
+  "correct": "diamond",
+  "source": "https://en.wikipedia.org/wiki/Diamond"
+ },
+ {
+  "key": "science_nature_t003",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "The axolotl, a salamander that keeps its gills as an adult, is native to which country?",
+   "tr": "Yetişkinken de solungaçlarını koruyan semender aksolotl hangi ülkeye özgüdür?"
   },
-  {
-    "key": "science_nature_t004",
-    "category_id": "science_nature",
-    "subcategory_id": "plants",
-    "difficulty": "MEDIUM",
-    "global_relevance_score": 4,
-    "time_sensitive": false,
-    "question": {
-      "en": "The Venus flytrap grows wild in only one country. Which one?",
-      "tr": "Venüs sinekkapan bitkisi doğada yalnızca tek bir ülkede yetişir. Hangisi?"
-    },
-    "options": [
-      {
-        "concept_id": "united_states",
-        "en": "United States",
-        "tr": "ABD"
-      },
-      {
-        "concept_id": "brazil",
-        "en": "Brazil",
-        "tr": "Brezilya"
-      },
-      {
-        "concept_id": "indonesia",
-        "en": "Indonesia",
-        "tr": "Endonezya"
-      },
-      {
-        "concept_id": "madagascar",
-        "en": "Madagascar",
-        "tr": "Madagaskar"
-      }
-    ],
-    "correct": "united_states",
-    "source": "https://en.wikipedia.org/wiki/Venus_flytrap"
+  "options": [
+   {
+    "concept_id": "mexico",
+    "en": "Mexico",
+    "tr": "Meksika"
+   },
+   {
+    "concept_id": "brazil",
+    "en": "Brazil",
+    "tr": "Brezilya"
+   },
+   {
+    "concept_id": "japan",
+    "en": "Japan",
+    "tr": "Japonya"
+   },
+   {
+    "concept_id": "australia",
+    "en": "Australia",
+    "tr": "Avustralya"
+   }
+  ],
+  "correct": "mexico",
+  "source": "https://en.wikipedia.org/wiki/Axolotl"
+ },
+ {
+  "key": "science_nature_t004",
+  "category_id": "science_nature",
+  "subcategory_id": "plants",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Venus flytrap grows wild in only one country. Which one?",
+   "tr": "Venüs sinekkapan bitkisi doğada yalnızca tek bir ülkede yetişir. Hangisi?"
   },
-  {
-    "key": "science_nature_t005",
-    "category_id": "science_nature",
-    "subcategory_id": "animals",
-    "difficulty": "HARD",
-    "global_relevance_score": 4,
-    "time_sensitive": false,
-    "question": {
-      "en": "Tardigrades, microscopic eight-legged animals, are commonly known as what?",
-      "tr": "Mikroskobik, sekiz bacaklı hayvanlar olan tardigradlara halk arasında ne ad verilir?"
-    },
-    "options": [
-      {
-        "concept_id": "water_bears",
-        "en": "Water bears",
-        "tr": "Su ayıları"
-      },
-      {
-        "concept_id": "moss_mice",
-        "en": "Moss mice",
-        "tr": "Yosun fareleri"
-      },
-      {
-        "concept_id": "sea_monkeys",
-        "en": "Sea monkeys",
-        "tr": "Deniz maymunları"
-      },
-      {
-        "concept_id": "glass_worms",
-        "en": "Glass worms",
-        "tr": "Cam solucanları"
-      }
-    ],
-    "correct": "water_bears",
-    "source": "https://en.wikipedia.org/wiki/Tardigrade"
-  }
+  "options": [
+   {
+    "concept_id": "united_states",
+    "en": "United States",
+    "tr": "ABD"
+   },
+   {
+    "concept_id": "brazil",
+    "en": "Brazil",
+    "tr": "Brezilya"
+   },
+   {
+    "concept_id": "indonesia",
+    "en": "Indonesia",
+    "tr": "Endonezya"
+   },
+   {
+    "concept_id": "madagascar",
+    "en": "Madagascar",
+    "tr": "Madagaskar"
+   }
+  ],
+  "correct": "united_states",
+  "source": "https://en.wikipedia.org/wiki/Venus_flytrap"
+ },
+ {
+  "key": "science_nature_t005",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Tardigrades, microscopic eight-legged animals, are commonly known as what?",
+   "tr": "Mikroskobik, sekiz bacaklı hayvanlar olan tardigradlara halk arasında ne ad verilir?"
+  },
+  "options": [
+   {
+    "concept_id": "water_bears",
+    "en": "Water bears",
+    "tr": "Su ayıları"
+   },
+   {
+    "concept_id": "moss_mice",
+    "en": "Moss mice",
+    "tr": "Yosun fareleri"
+   },
+   {
+    "concept_id": "sea_monkeys",
+    "en": "Sea monkeys",
+    "tr": "Deniz maymunları"
+   },
+   {
+    "concept_id": "glass_worms",
+    "en": "Glass worms",
+    "tr": "Cam solucanları"
+   }
+  ],
+  "correct": "water_bears",
+  "source": "https://en.wikipedia.org/wiki/Tardigrade"
+ },
+ {
+  "key": "science_nature_q0001",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which animal is the tallest in the world?",
+   "tr": "Dünyanın en uzun boylu hayvanı hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "giraffe",
+    "en": "Giraffe",
+    "tr": "Zürafa"
+   },
+   {
+    "concept_id": "elephant",
+    "en": "Elephant",
+    "tr": "Fil"
+   },
+   {
+    "concept_id": "camel",
+    "en": "Camel",
+    "tr": "Deve"
+   },
+   {
+    "concept_id": "ostrich",
+    "en": "Ostrich",
+    "tr": "Devekuşu"
+   }
+  ],
+  "correct": "giraffe",
+  "source": "https://en.wikipedia.org/wiki/Giraffe"
+ },
+ {
+  "key": "science_nature_q0002",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which bird is famous for copying human speech?",
+   "tr": "İnsan konuşmasını taklit etmesiyle ünlü kuş hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "parrot",
+    "en": "Parrot",
+    "tr": "Papağan"
+   },
+   {
+    "concept_id": "owl",
+    "en": "Owl",
+    "tr": "Baykuş"
+   },
+   {
+    "concept_id": "eagle",
+    "en": "Eagle",
+    "tr": "Kartal"
+   },
+   {
+    "concept_id": "pigeon",
+    "en": "Pigeon",
+    "tr": "Güvercin"
+   }
+  ],
+  "correct": "parrot",
+  "source": "https://en.wikipedia.org/wiki/Parrot"
+ },
+ {
+  "key": "science_nature_q0003",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "A caterpillar wraps itself in a chrysalis and comes out as what?",
+   "tr": "Tırtıl kendini bir krizalite sarar ve neye dönüşerek çıkar?"
+  },
+  "options": [
+   {
+    "concept_id": "butterfly",
+    "en": "Butterfly",
+    "tr": "Kelebek"
+   },
+   {
+    "concept_id": "beetle",
+    "en": "Beetle",
+    "tr": "Böcek"
+   },
+   {
+    "concept_id": "bee",
+    "en": "Bee",
+    "tr": "Arı"
+   },
+   {
+    "concept_id": "dragonfly",
+    "en": "Dragonfly",
+    "tr": "Yusufçuk"
+   }
+  ],
+  "correct": "butterfly",
+  "source": "https://en.wikipedia.org/wiki/Butterfly"
+ },
+ {
+  "key": "science_nature_q0004",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which animal is called \"the king of the jungle\", though it really lives on grassy savannas?",
+   "tr": "Aslında otlak savanlarda yaşadığı halde \"ormanlar kralı\" denen hayvan hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "lion",
+    "en": "Lion",
+    "tr": "Aslan"
+   },
+   {
+    "concept_id": "tiger",
+    "en": "Tiger",
+    "tr": "Kaplan"
+   },
+   {
+    "concept_id": "leopard",
+    "en": "Leopard",
+    "tr": "Leopar"
+   },
+   {
+    "concept_id": "gorilla",
+    "en": "Gorilla",
+    "tr": "Goril"
+   }
+  ],
+  "correct": "lion",
+  "source": "https://en.wikipedia.org/wiki/Lion"
+ },
+ {
+  "key": "science_nature_q0005",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What do bees make from the nectar of flowers?",
+   "tr": "Arılar çiçeklerin nektarından ne yapar?"
+  },
+  "options": [
+   {
+    "concept_id": "honey",
+    "en": "Honey",
+    "tr": "Bal"
+   },
+   {
+    "concept_id": "wax_only",
+    "en": "Wax only",
+    "tr": "Yalnızca balmumu"
+   },
+   {
+    "concept_id": "silk",
+    "en": "Silk",
+    "tr": "İpek"
+   },
+   {
+    "concept_id": "milk",
+    "en": "Milk",
+    "tr": "Süt"
+   }
+  ],
+  "correct": "honey",
+  "source": "https://en.wikipedia.org/wiki/Honey"
+ },
+ {
+  "key": "science_nature_q0006",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which black-and-white bird cannot fly but is a superb swimmer?",
+   "tr": "Uçamayan ama harika yüzen siyah-beyaz kuş hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "penguin",
+    "en": "Penguin",
+    "tr": "Penguen"
+   },
+   {
+    "concept_id": "puffin",
+    "en": "Puffin",
+    "tr": "Deniz papağanı"
+   },
+   {
+    "concept_id": "magpie",
+    "en": "Magpie",
+    "tr": "Saksağan"
+   },
+   {
+    "concept_id": "seagull",
+    "en": "Seagull",
+    "tr": "Martı"
+   }
+  ],
+  "correct": "penguin",
+  "source": "https://en.wikipedia.org/wiki/Penguin"
+ },
+ {
+  "key": "science_nature_q0007",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Like human fingerprints, which animal's stripe pattern is unique to each individual?",
+   "tr": "İnsan parmak izi gibi, hangi hayvanın çizgi deseni her birey için eşsizdir?"
+  },
+  "options": [
+   {
+    "concept_id": "zebra",
+    "en": "Zebra",
+    "tr": "Zebra"
+   },
+   {
+    "concept_id": "skunk",
+    "en": "Skunk",
+    "tr": "Kokarca"
+   },
+   {
+    "concept_id": "raccoon",
+    "en": "Raccoon",
+    "tr": "Rakun"
+   },
+   {
+    "concept_id": "badger",
+    "en": "Badger",
+    "tr": "Porsuk"
+   }
+  ],
+  "correct": "zebra",
+  "source": "https://en.wikipedia.org/wiki/Zebra"
+ },
+ {
+  "key": "science_nature_q0008",
+  "category_id": "science_nature",
+  "subcategory_id": "plants",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What gives leaves their green colour?",
+   "tr": "Yapraklara yeşil rengini ne verir?"
+  },
+  "options": [
+   {
+    "concept_id": "chlorophyll",
+    "en": "Chlorophyll",
+    "tr": "Klorofil"
+   },
+   {
+    "concept_id": "iron",
+    "en": "Iron",
+    "tr": "Demir"
+   },
+   {
+    "concept_id": "water",
+    "en": "Water",
+    "tr": "Su"
+   },
+   {
+    "concept_id": "sunlight",
+    "en": "Sunlight",
+    "tr": "Güneş ışığı"
+   }
+  ],
+  "correct": "chlorophyll",
+  "source": "https://en.wikipedia.org/wiki/Chlorophyll"
+ },
+ {
+  "key": "science_nature_q0009",
+  "category_id": "science_nature",
+  "subcategory_id": "plants",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which part of a plant usually grows underground and soaks up water?",
+   "tr": "Bitkinin hangi kısmı genellikle toprak altında büyür ve suyu emer?"
+  },
+  "options": [
+   {
+    "concept_id": "roots",
+    "en": "Roots",
+    "tr": "Kökler"
+   },
+   {
+    "concept_id": "leaves",
+    "en": "Leaves",
+    "tr": "Yapraklar"
+   },
+   {
+    "concept_id": "petals",
+    "en": "Petals",
+    "tr": "Taç yapraklar"
+   },
+   {
+    "concept_id": "seeds",
+    "en": "Seeds",
+    "tr": "Tohumlar"
+   }
+  ],
+  "correct": "roots",
+  "source": "https://en.wikipedia.org/wiki/Root"
+ },
+ {
+  "key": "science_nature_q0010",
+  "category_id": "science_nature",
+  "subcategory_id": "plants",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Bamboo, the giant panda's favourite food, is actually a kind of what?",
+   "tr": "Dev pandanın en sevdiği yiyecek bambu aslında ne türüdür?"
+  },
+  "options": [
+   {
+    "concept_id": "grass",
+    "en": "Grass",
+    "tr": "Çimen (ot)"
+   },
+   {
+    "concept_id": "tree",
+    "en": "Tree",
+    "tr": "Ağaç"
+   },
+   {
+    "concept_id": "fern",
+    "en": "Fern",
+    "tr": "Eğrelti"
+   },
+   {
+    "concept_id": "cactus",
+    "en": "Cactus",
+    "tr": "Kaktüs"
+   }
+  ],
+  "correct": "grass",
+  "source": "https://en.wikipedia.org/wiki/Bamboo"
+ },
+ {
+  "key": "science_nature_q0011",
+  "category_id": "science_nature",
+  "subcategory_id": "plants",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Chocolate is made from the seeds of which plant?",
+   "tr": "Çikolata hangi bitkinin tohumlarından yapılır?"
+  },
+  "options": [
+   {
+    "concept_id": "cacao",
+    "en": "Cacao",
+    "tr": "Kakao"
+   },
+   {
+    "concept_id": "coffee",
+    "en": "Coffee",
+    "tr": "Kahve"
+   },
+   {
+    "concept_id": "vanilla",
+    "en": "Vanilla",
+    "tr": "Vanilya"
+   },
+   {
+    "concept_id": "coconut",
+    "en": "Coconut",
+    "tr": "Hindistancevizi"
+   }
+  ],
+  "correct": "cacao",
+  "source": "https://en.wikipedia.org/wiki/Theobroma_cacao"
+ },
+ {
+  "key": "science_nature_q0012",
+  "category_id": "science_nature",
+  "subcategory_id": "plants",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Young sunflowers turn their heads through the day to follow what?",
+   "tr": "Genç ayçiçekleri gün boyunca başlarını neyi takip etmek için çevirir?"
+  },
+  "options": [
+   {
+    "concept_id": "the_sun",
+    "en": "The Sun",
+    "tr": "Güneş"
+   },
+   {
+    "concept_id": "the_wind",
+    "en": "The wind",
+    "tr": "Rüzgâr"
+   },
+   {
+    "concept_id": "water",
+    "en": "Water",
+    "tr": "Su"
+   },
+   {
+    "concept_id": "the_moon",
+    "en": "The Moon",
+    "tr": "Ay"
+   }
+  ],
+  "correct": "the_sun",
+  "source": "https://en.wikipedia.org/wiki/Common_sunflower"
+ },
+ {
+  "key": "science_nature_q0013",
+  "category_id": "science_nature",
+  "subcategory_id": "space",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many planets are there in our Solar System?",
+   "tr": "Güneş Sistemimizde kaç gezegen vardır?"
+  },
+  "options": [
+   {
+    "concept_id": "n_8",
+    "en": "8",
+    "tr": "8"
+   },
+   {
+    "concept_id": "n_7",
+    "en": "7",
+    "tr": "7"
+   },
+   {
+    "concept_id": "n_9",
+    "en": "9",
+    "tr": "9"
+   },
+   {
+    "concept_id": "n_10",
+    "en": "10",
+    "tr": "10"
+   }
+  ],
+  "correct": "n_8",
+  "source": "https://en.wikipedia.org/wiki/Solar_System"
+ },
+ {
+  "key": "science_nature_q0014",
+  "category_id": "science_nature",
+  "subcategory_id": "space",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which planet is famous for its bright, wide rings?",
+   "tr": "Parlak ve geniş halkalarıyla ünlü gezegen hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "saturn",
+    "en": "Saturn",
+    "tr": "Satürn"
+   },
+   {
+    "concept_id": "mars",
+    "en": "Mars",
+    "tr": "Mars"
+   },
+   {
+    "concept_id": "venus",
+    "en": "Venus",
+    "tr": "Venüs"
+   },
+   {
+    "concept_id": "mercury",
+    "en": "Mercury",
+    "tr": "Merkür"
+   }
+  ],
+  "correct": "saturn",
+  "source": "https://en.wikipedia.org/wiki/Saturn"
+ },
+ {
+  "key": "science_nature_q0015",
+  "category_id": "science_nature",
+  "subcategory_id": "space",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the curved path a planet follows around the Sun called?",
+   "tr": "Bir gezegenin Güneş çevresinde izlediği eğri yola ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "orbit",
+    "en": "Orbit",
+    "tr": "Yörünge"
+   },
+   {
+    "concept_id": "axis",
+    "en": "Axis",
+    "tr": "Eksen"
+   },
+   {
+    "concept_id": "eclipse",
+    "en": "Eclipse",
+    "tr": "Tutulma"
+   },
+   {
+    "concept_id": "equator",
+    "en": "Equator",
+    "tr": "Ekvator"
+   }
+  ],
+  "correct": "orbit",
+  "source": "https://en.wikipedia.org/wiki/Orbit"
+ },
+ {
+  "key": "science_nature_q0016",
+  "category_id": "science_nature",
+  "subcategory_id": "space",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "A \"shooting star\" is not a star at all. What is it really?",
+   "tr": "\"Kayan yıldız\" aslında hiç yıldız değildir. Gerçekte nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "a_meteor",
+    "en": "A meteor",
+    "tr": "Bir göktaşı (meteor)"
+   },
+   {
+    "concept_id": "a_comet",
+    "en": "A comet",
+    "tr": "Bir kuyruklu yıldız"
+   },
+   {
+    "concept_id": "a_planet",
+    "en": "A planet",
+    "tr": "Bir gezegen"
+   },
+   {
+    "concept_id": "a_satellite",
+    "en": "A satellite",
+    "tr": "Bir uydu"
+   }
+  ],
+  "correct": "a_meteor",
+  "source": "https://en.wikipedia.org/wiki/Meteoroid"
+ },
+ {
+  "key": "science_nature_q0017",
+  "category_id": "science_nature",
+  "subcategory_id": "space",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What do we call a group of stars that forms a pattern, like Orion?",
+   "tr": "Avcı (Orion) gibi bir desen oluşturan yıldız grubuna ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "constellation",
+    "en": "Constellation",
+    "tr": "Takımyıldız"
+   },
+   {
+    "concept_id": "galaxy",
+    "en": "Galaxy",
+    "tr": "Galaksi"
+   },
+   {
+    "concept_id": "nebula",
+    "en": "Nebula",
+    "tr": "Bulutsu"
+   },
+   {
+    "concept_id": "orbit",
+    "en": "Orbit",
+    "tr": "Yörünge"
+   }
+  ],
+  "correct": "constellation",
+  "source": "https://en.wikipedia.org/wiki/Constellation"
+ },
+ {
+  "key": "science_nature_q0018",
+  "category_id": "science_nature",
+  "subcategory_id": "human_body",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Including wisdom teeth, how many teeth does an adult usually have?",
+   "tr": "Yirmi yaş dişleri dahil, bir yetişkinin genellikle kaç dişi vardır?"
+  },
+  "options": [
+   {
+    "concept_id": "n_32",
+    "en": "32",
+    "tr": "32"
+   },
+   {
+    "concept_id": "n_28",
+    "en": "28",
+    "tr": "28"
+   },
+   {
+    "concept_id": "n_24",
+    "en": "24",
+    "tr": "24"
+   },
+   {
+    "concept_id": "n_36",
+    "en": "36",
+    "tr": "36"
+   }
+  ],
+  "correct": "n_32",
+  "source": "https://en.wikipedia.org/wiki/Human_tooth"
+ },
+ {
+  "key": "science_nature_q0019",
+  "category_id": "science_nature",
+  "subcategory_id": "human_body",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Besides the heart, which organs does the rib cage protect?",
+   "tr": "Kalbin yanı sıra göğüs kafesi hangi organları korur?"
+  },
+  "options": [
+   {
+    "concept_id": "lungs",
+    "en": "Lungs",
+    "tr": "Akciğerler"
+   },
+   {
+    "concept_id": "kidneys",
+    "en": "Kidneys",
+    "tr": "Böbrekler"
+   },
+   {
+    "concept_id": "stomach",
+    "en": "Stomach",
+    "tr": "Mide"
+   },
+   {
+    "concept_id": "brain",
+    "en": "Brain",
+    "tr": "Beyin"
+   }
+  ],
+  "correct": "lungs",
+  "source": "https://en.wikipedia.org/wiki/Rib_cage"
+ },
+ {
+  "key": "science_nature_q0020",
+  "category_id": "science_nature",
+  "subcategory_id": "human_body",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The femur, the longest bone in the body, is in which part?",
+   "tr": "Vücudun en uzun kemiği uyluk kemiği (femur) hangi bölgededir?"
+  },
+  "options": [
+   {
+    "concept_id": "thigh",
+    "en": "Thigh",
+    "tr": "Uyluk"
+   },
+   {
+    "concept_id": "arm",
+    "en": "Arm",
+    "tr": "Kol"
+   },
+   {
+    "concept_id": "back",
+    "en": "Back",
+    "tr": "Sırt"
+   },
+   {
+    "concept_id": "chest",
+    "en": "Chest",
+    "tr": "Göğüs"
+   }
+  ],
+  "correct": "thigh",
+  "source": "https://en.wikipedia.org/wiki/Femur"
+ },
+ {
+  "key": "science_nature_q0021",
+  "category_id": "science_nature",
+  "subcategory_id": "human_body",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Veins can look blue through the skin, but what colour is human blood really?",
+   "tr": "Damarlar deriden mavi görünebilir, ama insan kanı gerçekte ne renktir?"
+  },
+  "options": [
+   {
+    "concept_id": "red",
+    "en": "Red",
+    "tr": "Kırmızı"
+   },
+   {
+    "concept_id": "blue",
+    "en": "Blue",
+    "tr": "Mavi"
+   },
+   {
+    "concept_id": "purple",
+    "en": "Purple",
+    "tr": "Mor"
+   },
+   {
+    "concept_id": "green",
+    "en": "Green",
+    "tr": "Yeşil"
+   }
+  ],
+  "correct": "red",
+  "source": "https://en.wikipedia.org/wiki/Blood"
+ },
+ {
+  "key": "science_nature_q0022",
+  "category_id": "science_nature",
+  "subcategory_id": "biology",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What do we call animals that eat only plants?",
+   "tr": "Yalnızca bitki yiyen hayvanlara ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "herbivores",
+    "en": "Herbivores",
+    "tr": "Otçullar"
+   },
+   {
+    "concept_id": "carnivores",
+    "en": "Carnivores",
+    "tr": "Etçiller"
+   },
+   {
+    "concept_id": "omnivores",
+    "en": "Omnivores",
+    "tr": "Hepçiller"
+   },
+   {
+    "concept_id": "scavengers",
+    "en": "Scavengers",
+    "tr": "Leşçiller"
+   }
+  ],
+  "correct": "herbivores",
+  "source": "https://en.wikipedia.org/wiki/Herbivore"
+ },
+ {
+  "key": "science_nature_q0023",
+  "category_id": "science_nature",
+  "subcategory_id": "biology",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the process by which plants use sunlight to make their own food?",
+   "tr": "Bitkilerin güneş ışığını kullanarak kendi besinlerini yaptığı sürece ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "photosynthesis",
+    "en": "Photosynthesis",
+    "tr": "Fotosentez"
+   },
+   {
+    "concept_id": "digestion",
+    "en": "Digestion",
+    "tr": "Sindirim"
+   },
+   {
+    "concept_id": "respiration",
+    "en": "Respiration",
+    "tr": "Solunum"
+   },
+   {
+    "concept_id": "evaporation",
+    "en": "Evaporation",
+    "tr": "Buharlaşma"
+   }
+  ],
+  "correct": "photosynthesis",
+  "source": "https://en.wikipedia.org/wiki/Photosynthesis"
+ },
+ {
+  "key": "science_nature_q0024",
+  "category_id": "science_nature",
+  "subcategory_id": "biology",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is a baby frog called?",
+   "tr": "Yavru kurbağaya ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "tadpole",
+    "en": "Tadpole",
+    "tr": "İribaş"
+   },
+   {
+    "concept_id": "larva",
+    "en": "Larva",
+    "tr": "Larva"
+   },
+   {
+    "concept_id": "cub",
+    "en": "Cub",
+    "tr": "Yavru ayı"
+   },
+   {
+    "concept_id": "fry",
+    "en": "Fry",
+    "tr": "Yavru balık"
+   }
+  ],
+  "correct": "tadpole",
+  "source": "https://en.wikipedia.org/wiki/Tadpole"
+ },
+ {
+  "key": "science_nature_q0025",
+  "category_id": "science_nature",
+  "subcategory_id": "biology",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Owls and bats are active at night. What is the word for such animals?",
+   "tr": "Baykuşlar ve yarasalar geceleri etkindir. Böyle hayvanlara ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "nocturnal",
+    "en": "Nocturnal",
+    "tr": "Gece hayvanı"
+   },
+   {
+    "concept_id": "diurnal",
+    "en": "Diurnal",
+    "tr": "Gündüz hayvanı"
+   },
+   {
+    "concept_id": "migratory",
+    "en": "Migratory",
+    "tr": "Göçmen"
+   },
+   {
+    "concept_id": "aquatic",
+    "en": "Aquatic",
+    "tr": "Suda yaşayan"
+   }
+  ],
+  "correct": "nocturnal",
+  "source": "https://en.wikipedia.org/wiki/Nocturnality"
+ },
+ {
+  "key": "science_nature_q0026",
+  "category_id": "science_nature",
+  "subcategory_id": "biology",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What do we call a scientist who studies plants?",
+   "tr": "Bitkileri inceleyen bilim insanına ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "botanist",
+    "en": "Botanist",
+    "tr": "Botanikçi"
+   },
+   {
+    "concept_id": "zoologist",
+    "en": "Zoologist",
+    "tr": "Zoolog"
+   },
+   {
+    "concept_id": "geologist",
+    "en": "Geologist",
+    "tr": "Jeolog"
+   },
+   {
+    "concept_id": "astronomer",
+    "en": "Astronomer",
+    "tr": "Gökbilimci"
+   }
+  ],
+  "correct": "botanist",
+  "source": "https://en.wikipedia.org/wiki/Botany"
+ },
+ {
+  "key": "science_nature_q0027",
+  "category_id": "science_nature",
+  "subcategory_id": "physics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In a storm you see lightning before you hear thunder. Why?",
+   "tr": "Fırtınada şimşeği gök gürültüsünden önce görürsün. Neden?"
+  },
+  "options": [
+   {
+    "concept_id": "light_travels_faster",
+    "en": "Light travels faster",
+    "tr": "Işık daha hızlı yol alır"
+   },
+   {
+    "concept_id": "thunder_starts_later",
+    "en": "Thunder starts later",
+    "tr": "Gök gürültüsü daha geç başlar"
+   },
+   {
+    "concept_id": "sound_goes_upward",
+    "en": "Sound goes upward",
+    "tr": "Ses yukarı gider"
+   },
+   {
+    "concept_id": "eyes_react_faster",
+    "en": "Eyes react faster",
+    "tr": "Gözler daha hızlı tepki verir"
+   }
+  ],
+  "correct": "light_travels_faster",
+  "source": "https://en.wikipedia.org/wiki/Thunder"
+ },
+ {
+  "key": "science_nature_q0028",
+  "category_id": "science_nature",
+  "subcategory_id": "physics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In the usual list, how many colours make up a rainbow?",
+   "tr": "Yaygın sayıma göre gökkuşağı kaç renkten oluşur?"
+  },
+  "options": [
+   {
+    "concept_id": "n_7",
+    "en": "7",
+    "tr": "7"
+   },
+   {
+    "concept_id": "n_5",
+    "en": "5",
+    "tr": "5"
+   },
+   {
+    "concept_id": "n_6",
+    "en": "6",
+    "tr": "6"
+   },
+   {
+    "concept_id": "n_9",
+    "en": "9",
+    "tr": "9"
+   }
+  ],
+  "correct": "n_7",
+  "source": "https://en.wikipedia.org/wiki/Rainbow"
+ },
+ {
+  "key": "science_nature_q0029",
+  "category_id": "science_nature",
+  "subcategory_id": "physics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these metals is strongly pulled by a magnet?",
+   "tr": "Bu metallerden hangisi mıknatısa güçlü biçimde çekilir?"
+  },
+  "options": [
+   {
+    "concept_id": "iron",
+    "en": "Iron",
+    "tr": "Demir"
+   },
+   {
+    "concept_id": "copper",
+    "en": "Copper",
+    "tr": "Bakır"
+   },
+   {
+    "concept_id": "aluminium",
+    "en": "Aluminium",
+    "tr": "Alüminyum"
+   },
+   {
+    "concept_id": "gold",
+    "en": "Gold",
+    "tr": "Altın"
+   }
+  ],
+  "correct": "iron",
+  "source": "https://en.wikipedia.org/wiki/Magnet"
+ },
+ {
+  "key": "science_nature_q0030",
+  "category_id": "science_nature",
+  "subcategory_id": "physics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which scientist is famous for the equation E = mc²?",
+   "tr": "E = mc² denklemiyle ünlü bilim insanı kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "albert_einstein",
+    "en": "Albert Einstein",
+    "tr": "Albert Einstein"
+   },
+   {
+    "concept_id": "isaac_newton",
+    "en": "Isaac Newton",
+    "tr": "Isaac Newton"
+   },
+   {
+    "concept_id": "galileo_galilei",
+    "en": "Galileo Galilei",
+    "tr": "Galileo Galilei"
+   },
+   {
+    "concept_id": "nikola_tesla",
+    "en": "Nikola Tesla",
+    "tr": "Nikola Tesla"
+   }
+  ],
+  "correct": "albert_einstein",
+  "source": "https://en.wikipedia.org/wiki/Mass–energy_equivalence"
+ },
+ {
+  "key": "science_nature_q0031",
+  "category_id": "science_nature",
+  "subcategory_id": "chemistry",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is H₂O better known as?",
+   "tr": "H₂O daha çok hangi adla bilinir?"
+  },
+  "options": [
+   {
+    "concept_id": "water",
+    "en": "Water",
+    "tr": "Su"
+   },
+   {
+    "concept_id": "salt",
+    "en": "Salt",
+    "tr": "Tuz"
+   },
+   {
+    "concept_id": "hydrogen_gas",
+    "en": "Hydrogen gas",
+    "tr": "Hidrojen gazı"
+   },
+   {
+    "concept_id": "ice_cream",
+    "en": "Ice cream",
+    "tr": "Dondurma"
+   }
+  ],
+  "correct": "water",
+  "source": "https://en.wikipedia.org/wiki/Properties_of_water"
+ },
+ {
+  "key": "science_nature_q0032",
+  "category_id": "science_nature",
+  "subcategory_id": "chemistry",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Lemon juice and vinegar taste sour because they are what?",
+   "tr": "Limon suyu ve sirke ekşi tadını ne oldukları için verir?"
+  },
+  "options": [
+   {
+    "concept_id": "acids",
+    "en": "Acids",
+    "tr": "Asit"
+   },
+   {
+    "concept_id": "bases",
+    "en": "Bases",
+    "tr": "Baz"
+   },
+   {
+    "concept_id": "salts",
+    "en": "Salts",
+    "tr": "Tuz"
+   },
+   {
+    "concept_id": "metals",
+    "en": "Metals",
+    "tr": "Metal"
+   }
+  ],
+  "correct": "acids",
+  "source": "https://en.wikipedia.org/wiki/Acid"
+ },
+ {
+  "key": "science_nature_q0033",
+  "category_id": "science_nature",
+  "subcategory_id": "chemistry",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which gas makes fizzy drinks bubbly?",
+   "tr": "Gazlı içecekleri köpüklü yapan gaz hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "carbon_dioxide",
+    "en": "Carbon dioxide",
+    "tr": "Karbondioksit"
+   },
+   {
+    "concept_id": "oxygen",
+    "en": "Oxygen",
+    "tr": "Oksijen"
+   },
+   {
+    "concept_id": "helium",
+    "en": "Helium",
+    "tr": "Helyum"
+   },
+   {
+    "concept_id": "nitrogen",
+    "en": "Nitrogen",
+    "tr": "Azot"
+   }
+  ],
+  "correct": "carbon_dioxide",
+  "source": "https://en.wikipedia.org/wiki/Carbonated_water"
+ },
+ {
+  "key": "science_nature_q0034",
+  "category_id": "science_nature",
+  "subcategory_id": "chemistry",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "A sparkling diamond is made of the same element as pencil graphite. Which?",
+   "tr": "Parıl parıl bir elmas, kurşun kalemdeki grafitle aynı elementten yapılmıştır. Hangisi?"
+  },
+  "options": [
+   {
+    "concept_id": "carbon",
+    "en": "Carbon",
+    "tr": "Karbon"
+   },
+   {
+    "concept_id": "silicon",
+    "en": "Silicon",
+    "tr": "Silisyum"
+   },
+   {
+    "concept_id": "quartz",
+    "en": "Quartz",
+    "tr": "Kuvars"
+   },
+   {
+    "concept_id": "glass",
+    "en": "Glass",
+    "tr": "Cam"
+   }
+  ],
+  "correct": "carbon",
+  "source": "https://en.wikipedia.org/wiki/Diamond"
+ },
+ {
+  "key": "science_nature_q0035",
+  "category_id": "science_nature",
+  "subcategory_id": "earth_science",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which scale for measuring earthquakes is named after an American scientist?",
+   "tr": "Depremleri ölçmek için kullanılan, adını Amerikalı bir bilim insanından alan ölçek hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "richter_scale",
+    "en": "Richter scale",
+    "tr": "Richter ölçeği"
+   },
+   {
+    "concept_id": "beaufort_scale",
+    "en": "Beaufort scale",
+    "tr": "Beaufort ölçeği"
+   },
+   {
+    "concept_id": "kelvin_scale",
+    "en": "Kelvin scale",
+    "tr": "Kelvin ölçeği"
+   },
+   {
+    "concept_id": "mohs_scale",
+    "en": "Mohs scale",
+    "tr": "Mohs ölçeği"
+   }
+  ],
+  "correct": "richter_scale",
+  "source": "https://en.wikipedia.org/wiki/Richter_scale"
+ },
+ {
+  "key": "science_nature_q0036",
+  "category_id": "science_nature",
+  "subcategory_id": "earth_science",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the thin outer layer of the Earth, where we live, called?",
+   "tr": "Dünya'nın üzerinde yaşadığımız ince dış katmanına ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "crust",
+    "en": "Crust",
+    "tr": "Yer kabuğu"
+   },
+   {
+    "concept_id": "core",
+    "en": "Core",
+    "tr": "Çekirdek"
+   },
+   {
+    "concept_id": "mantle",
+    "en": "Mantle",
+    "tr": "Manto"
+   },
+   {
+    "concept_id": "atmosphere",
+    "en": "Atmosphere",
+    "tr": "Atmosfer"
+   }
+  ],
+  "correct": "crust",
+  "source": "https://en.wikipedia.org/wiki/Crust_(geology)"
+ },
+ {
+  "key": "science_nature_q0037",
+  "category_id": "science_nature",
+  "subcategory_id": "earth_science",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "A seismograph records what kind of natural event?",
+   "tr": "Sismograf hangi doğa olayını kaydeder?"
+  },
+  "options": [
+   {
+    "concept_id": "earthquakes",
+    "en": "Earthquakes",
+    "tr": "Depremler"
+   },
+   {
+    "concept_id": "rainfall",
+    "en": "Rainfall",
+    "tr": "Yağış"
+   },
+   {
+    "concept_id": "wind_speed",
+    "en": "Wind speed",
+    "tr": "Rüzgâr hızı"
+   },
+   {
+    "concept_id": "tides",
+    "en": "Tides",
+    "tr": "Gelgitler"
+   }
+  ],
+  "correct": "earthquakes",
+  "source": "https://en.wikipedia.org/wiki/Seismometer"
+ },
+ {
+  "key": "science_nature_q0038",
+  "category_id": "science_nature",
+  "subcategory_id": "earth_science",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the very centre of the Earth called?",
+   "tr": "Dünya'nın tam merkezine ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "core",
+    "en": "Core",
+    "tr": "Çekirdek"
+   },
+   {
+    "concept_id": "crust",
+    "en": "Crust",
+    "tr": "Kabuk"
+   },
+   {
+    "concept_id": "mantle",
+    "en": "Mantle",
+    "tr": "Manto"
+   },
+   {
+    "concept_id": "magma_chamber",
+    "en": "Magma chamber",
+    "tr": "Magma odası"
+   }
+  ],
+  "correct": "core",
+  "source": "https://en.wikipedia.org/wiki/Earth's_inner_core"
+ },
+ {
+  "key": "science_nature_q0039",
+  "category_id": "science_nature",
+  "subcategory_id": "environment",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Panels on rooftops that turn sunlight into electricity are called what?",
+   "tr": "Çatılarda güneş ışığını elektriğe çeviren panellere ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "solar_panels",
+    "en": "Solar panels",
+    "tr": "Güneş panelleri"
+   },
+   {
+    "concept_id": "wind_turbines",
+    "en": "Wind turbines",
+    "tr": "Rüzgâr türbinleri"
+   },
+   {
+    "concept_id": "heat_pumps",
+    "en": "Heat pumps",
+    "tr": "Isı pompaları"
+   },
+   {
+    "concept_id": "batteries",
+    "en": "Batteries",
+    "tr": "Piller"
+   }
+  ],
+  "correct": "solar_panels",
+  "source": "https://en.wikipedia.org/wiki/Solar_panel"
+ },
+ {
+  "key": "science_nature_q0040",
+  "category_id": "science_nature",
+  "subcategory_id": "environment",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which everyday material can take hundreds of years to break down in the ocean?",
+   "tr": "Hangi gündelik malzemenin okyanusta parçalanması yüzlerce yıl sürebilir?"
+  },
+  "options": [
+   {
+    "concept_id": "plastic",
+    "en": "Plastic",
+    "tr": "Plastik"
+   },
+   {
+    "concept_id": "paper",
+    "en": "Paper",
+    "tr": "Kâğıt"
+   },
+   {
+    "concept_id": "cotton",
+    "en": "Cotton",
+    "tr": "Pamuk"
+   },
+   {
+    "concept_id": "wood",
+    "en": "Wood",
+    "tr": "Tahta"
+   }
+  ],
+  "correct": "plastic",
+  "source": "https://en.wikipedia.org/wiki/Plastic_pollution"
+ },
+ {
+  "key": "science_nature_q0041",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which animal has the longest pregnancy, lasting about 22 months?",
+   "tr": "Yaklaşık 22 ay süren en uzun gebeliğe sahip hayvan hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "elephant",
+    "en": "Elephant",
+    "tr": "Fil"
+   },
+   {
+    "concept_id": "blue_whale",
+    "en": "Blue whale",
+    "tr": "Mavi balina"
+   },
+   {
+    "concept_id": "giraffe",
+    "en": "Giraffe",
+    "tr": "Zürafa"
+   },
+   {
+    "concept_id": "rhinoceros",
+    "en": "Rhinoceros",
+    "tr": "Gergedan"
+   }
+  ],
+  "correct": "elephant",
+  "source": "https://en.wikipedia.org/wiki/Elephant"
+ },
+ {
+  "key": "science_nature_q0042",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Under its white fur, what colour is a polar bear's skin?",
+   "tr": "Beyaz kürkünün altında kutup ayısının derisi ne renktir?"
+  },
+  "options": [
+   {
+    "concept_id": "black",
+    "en": "Black",
+    "tr": "Siyah"
+   },
+   {
+    "concept_id": "white",
+    "en": "White",
+    "tr": "Beyaz"
+   },
+   {
+    "concept_id": "pink",
+    "en": "Pink",
+    "tr": "Pembe"
+   },
+   {
+    "concept_id": "grey",
+    "en": "Grey",
+    "tr": "Gri"
+   }
+  ],
+  "correct": "black",
+  "source": "https://en.wikipedia.org/wiki/Polar_bear"
+ },
+ {
+  "key": "science_nature_q0043",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which mammal lays eggs and has a bill like a duck?",
+   "tr": "Yumurtlayan ve ördeğinkine benzer gagası olan memeli hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "platypus",
+    "en": "Platypus",
+    "tr": "Ornitorenk"
+   },
+   {
+    "concept_id": "otter",
+    "en": "Otter",
+    "tr": "Su samuru"
+   },
+   {
+    "concept_id": "beaver",
+    "en": "Beaver",
+    "tr": "Kunduz"
+   },
+   {
+    "concept_id": "anteater",
+    "en": "Anteater",
+    "tr": "Karıncayiyen"
+   }
+  ],
+  "correct": "platypus",
+  "source": "https://en.wikipedia.org/wiki/Platypus"
+ },
+ {
+  "key": "science_nature_q0044",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What colour is an octopus's blood?",
+   "tr": "Ahtapotun kanı ne renktir?"
+  },
+  "options": [
+   {
+    "concept_id": "blue",
+    "en": "Blue",
+    "tr": "Mavi"
+   },
+   {
+    "concept_id": "red",
+    "en": "Red",
+    "tr": "Kırmızı"
+   },
+   {
+    "concept_id": "green",
+    "en": "Green",
+    "tr": "Yeşil"
+   },
+   {
+    "concept_id": "clear",
+    "en": "Clear",
+    "tr": "Renksiz"
+   }
+  ],
+  "correct": "blue",
+  "source": "https://en.wikipedia.org/wiki/Octopus"
+ },
+ {
+  "key": "science_nature_q0045",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which bird has the largest wingspan of any living bird, over 3 metres?",
+   "tr": "3 metreyi aşan kanat açıklığıyla yaşayan kuşların en genişine sahip olanı hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "wandering_albatross",
+    "en": "Wandering albatross",
+    "tr": "Gezgin albatros"
+   },
+   {
+    "concept_id": "andean_condor",
+    "en": "Andean condor",
+    "tr": "And kondoru"
+   },
+   {
+    "concept_id": "bald_eagle",
+    "en": "Bald eagle",
+    "tr": "Ak başlı kartal"
+   },
+   {
+    "concept_id": "pelican",
+    "en": "Pelican",
+    "tr": "Pelikan"
+   }
+  ],
+  "correct": "wandering_albatross",
+  "source": "https://en.wikipedia.org/wiki/Wandering_albatross"
+ },
+ {
+  "key": "science_nature_q0046",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Flamingos are born grey. What turns them pink?",
+   "tr": "Flamingolar gri doğar. Onları pembeye ne çevirir?"
+  },
+  "options": [
+   {
+    "concept_id": "their_food",
+    "en": "Their food",
+    "tr": "Yedikleri besin"
+   },
+   {
+    "concept_id": "sunlight",
+    "en": "Sunlight",
+    "tr": "Güneş ışığı"
+   },
+   {
+    "concept_id": "their_age",
+    "en": "Their age",
+    "tr": "Yaşları"
+   },
+   {
+    "concept_id": "salty_water",
+    "en": "Salty water",
+    "tr": "Tuzlu su"
+   }
+  ],
+  "correct": "their_food",
+  "source": "https://en.wikipedia.org/wiki/Flamingo"
+ },
+ {
+  "key": "science_nature_q0047",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the largest species of shark, and of any fish?",
+   "tr": "Köpekbalıklarının ve tüm balıkların en büyük türü hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "whale_shark",
+    "en": "Whale shark",
+    "tr": "Balina köpekbalığı"
+   },
+   {
+    "concept_id": "great_white_shark",
+    "en": "Great white shark",
+    "tr": "Büyük beyaz köpekbalığı"
+   },
+   {
+    "concept_id": "hammerhead_shark",
+    "en": "Hammerhead shark",
+    "tr": "Çekiçbaş köpekbalığı"
+   },
+   {
+    "concept_id": "tiger_shark",
+    "en": "Tiger shark",
+    "tr": "Kaplan köpekbalığı"
+   }
+  ],
+  "correct": "whale_shark",
+  "source": "https://en.wikipedia.org/wiki/Whale_shark"
+ },
+ {
+  "key": "science_nature_q0048",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "When dolphins sleep, how much of their brain stays awake?",
+   "tr": "Yunuslar uyurken beyinlerinin ne kadarı uyanık kalır?"
+  },
+  "options": [
+   {
+    "concept_id": "half",
+    "en": "Half",
+    "tr": "Yarısı"
+   },
+   {
+    "concept_id": "none",
+    "en": "None",
+    "tr": "Hiç"
+   },
+   {
+    "concept_id": "a_quarter",
+    "en": "A quarter",
+    "tr": "Dörtte biri"
+   },
+   {
+    "concept_id": "all_of_it",
+    "en": "All of it",
+    "tr": "Tamamı"
+   }
+  ],
+  "correct": "half",
+  "source": "https://en.wikipedia.org/wiki/Dolphin"
+ },
+ {
+  "key": "science_nature_q0049",
+  "category_id": "science_nature",
+  "subcategory_id": "plants",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which tree species grows the tallest on Earth?",
+   "tr": "Dünyada en uzun boya ulaşan ağaç türü hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "coast_redwood",
+    "en": "Coast redwood",
+    "tr": "Kıyı sekoyası"
+   },
+   {
+    "concept_id": "giant_sequoia",
+    "en": "Giant sequoia",
+    "tr": "Dev sekoya"
+   },
+   {
+    "concept_id": "baobab",
+    "en": "Baobab",
+    "tr": "Baobab"
+   },
+   {
+    "concept_id": "oak",
+    "en": "Oak",
+    "tr": "Meşe"
+   }
+  ],
+  "correct": "coast_redwood",
+  "source": "https://en.wikipedia.org/wiki/Sequoia_sempervirens"
+ },
+ {
+  "key": "science_nature_q0050",
+  "category_id": "science_nature",
+  "subcategory_id": "plants",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Botanically speaking, which of these is a berry?",
+   "tr": "Botanik açısından bunlardan hangisi bir üzümsü meyvedir (berry)?"
+  },
+  "options": [
+   {
+    "concept_id": "banana",
+    "en": "Banana",
+    "tr": "Muz"
+   },
+   {
+    "concept_id": "strawberry",
+    "en": "Strawberry",
+    "tr": "Çilek"
+   },
+   {
+    "concept_id": "raspberry",
+    "en": "Raspberry",
+    "tr": "Ahududu"
+   },
+   {
+    "concept_id": "cherry",
+    "en": "Cherry",
+    "tr": "Kiraz"
+   }
+  ],
+  "correct": "banana",
+  "source": "https://en.wikipedia.org/wiki/Berry_(botany)"
+ },
+ {
+  "key": "science_nature_q0051",
+  "category_id": "science_nature",
+  "subcategory_id": "plants",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which plant has the world's largest single flower, which smells of rotting meat?",
+   "tr": "Dünyanın en büyük tekil çiçeğine sahip, çürük et gibi kokan bitki hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "rafflesia",
+    "en": "Rafflesia",
+    "tr": "Rafflesia"
+   },
+   {
+    "concept_id": "sunflower",
+    "en": "Sunflower",
+    "tr": "Ayçiçeği"
+   },
+   {
+    "concept_id": "water_lily",
+    "en": "Water lily",
+    "tr": "Nilüfer"
+   },
+   {
+    "concept_id": "lotus",
+    "en": "Lotus",
+    "tr": "Lotus"
+   }
+  ],
+  "correct": "rafflesia",
+  "source": "https://en.wikipedia.org/wiki/Rafflesia_arnoldii"
+ },
+ {
+  "key": "science_nature_q0052",
+  "category_id": "science_nature",
+  "subcategory_id": "plants",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Vanilla comes from the pods of which kind of plant?",
+   "tr": "Vanilya hangi tür bitkinin kapsüllerinden elde edilir?"
+  },
+  "options": [
+   {
+    "concept_id": "an_orchid",
+    "en": "An orchid",
+    "tr": "Bir orkide"
+   },
+   {
+    "concept_id": "a_palm",
+    "en": "A palm",
+    "tr": "Bir palmiye"
+   },
+   {
+    "concept_id": "a_bean_bush",
+    "en": "A bean bush",
+    "tr": "Bir fasulye çalısı"
+   },
+   {
+    "concept_id": "a_cactus",
+    "en": "A cactus",
+    "tr": "Bir kaktüs"
+   }
+  ],
+  "correct": "an_orchid",
+  "source": "https://en.wikipedia.org/wiki/Vanilla"
+ },
+ {
+  "key": "science_nature_q0053",
+  "category_id": "science_nature",
+  "subcategory_id": "space",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Mercury is closest to the Sun, but which planet is the hottest?",
+   "tr": "Güneş'e en yakın gezegen Merkür'dür, ama en sıcak gezegen hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "venus",
+    "en": "Venus",
+    "tr": "Venüs"
+   },
+   {
+    "concept_id": "mercury",
+    "en": "Mercury",
+    "tr": "Merkür"
+   },
+   {
+    "concept_id": "mars",
+    "en": "Mars",
+    "tr": "Mars"
+   },
+   {
+    "concept_id": "jupiter",
+    "en": "Jupiter",
+    "tr": "Jüpiter"
+   }
+  ],
+  "correct": "venus",
+  "source": "https://en.wikipedia.org/wiki/Venus"
+ },
+ {
+  "key": "science_nature_q0054",
+  "category_id": "science_nature",
+  "subcategory_id": "space",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Roughly how long does sunlight take to reach Earth?",
+   "tr": "Güneş ışığının Dünya'ya ulaşması yaklaşık ne kadar sürer?"
+  },
+  "options": [
+   {
+    "concept_id": "about_8_minutes",
+    "en": "About 8 minutes",
+    "tr": "Yaklaşık 8 dakika"
+   },
+   {
+    "concept_id": "about_8_seconds",
+    "en": "About 8 seconds",
+    "tr": "Yaklaşık 8 saniye"
+   },
+   {
+    "concept_id": "about_8_hours",
+    "en": "About 8 hours",
+    "tr": "Yaklaşık 8 saat"
+   },
+   {
+    "concept_id": "about_8_days",
+    "en": "About 8 days",
+    "tr": "Yaklaşık 8 gün"
+   }
+  ],
+  "correct": "about_8_minutes",
+  "source": "https://en.wikipedia.org/wiki/Sunlight"
+ },
+ {
+  "key": "science_nature_q0055",
+  "category_id": "science_nature",
+  "subcategory_id": "space",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What lies at the centre of our Milky Way galaxy?",
+   "tr": "Samanyolu galaksimizin merkezinde ne vardır?"
+  },
+  "options": [
+   {
+    "concept_id": "a_supermassive_black_hole",
+    "en": "A supermassive black hole",
+    "tr": "Süper kütleli bir kara delik"
+   },
+   {
+    "concept_id": "a_giant_star",
+    "en": "A giant star",
+    "tr": "Dev bir yıldız"
+   },
+   {
+    "concept_id": "a_huge_planet",
+    "en": "A huge planet",
+    "tr": "Devasa bir gezegen"
+   },
+   {
+    "concept_id": "empty_space",
+    "en": "Empty space",
+    "tr": "Boşluk"
+   }
+  ],
+  "correct": "a_supermassive_black_hole",
+  "source": "https://en.wikipedia.org/wiki/Sagittarius_A*"
+ },
+ {
+  "key": "science_nature_q0056",
+  "category_id": "science_nature",
+  "subcategory_id": "space",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Halley's Comet returns to our skies roughly every how many years?",
+   "tr": "Halley Kuyruklu Yıldızı gökyüzümüze yaklaşık kaç yılda bir geri döner?"
+  },
+  "options": [
+   {
+    "concept_id": "n_76",
+    "en": "76",
+    "tr": "76"
+   },
+   {
+    "concept_id": "n_12",
+    "en": "12",
+    "tr": "12"
+   },
+   {
+    "concept_id": "n_150",
+    "en": "150",
+    "tr": "150"
+   },
+   {
+    "concept_id": "n_500",
+    "en": "500",
+    "tr": "500"
+   }
+  ],
+  "correct": "n_76",
+  "source": "https://en.wikipedia.org/wiki/Halley's_Comet"
+ },
+ {
+  "key": "science_nature_q0057",
+  "category_id": "science_nature",
+  "subcategory_id": "space",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "On Venus, a single day lasts longer than what?",
+   "tr": "Venüs'te tek bir gün neyden daha uzun sürer?"
+  },
+  "options": [
+   {
+    "concept_id": "its_year",
+    "en": "Its year",
+    "tr": "Kendi yılından"
+   },
+   {
+    "concept_id": "an_earth_month",
+    "en": "An Earth month",
+    "tr": "Bir Dünya ayından"
+   },
+   {
+    "concept_id": "a_mars_day",
+    "en": "A Mars day",
+    "tr": "Bir Mars gününden"
+   },
+   {
+    "concept_id": "nothing_else",
+    "en": "Nothing else",
+    "tr": "Başka hiçbir şeyden"
+   }
+  ],
+  "correct": "its_year",
+  "source": "https://en.wikipedia.org/wiki/Venus"
+ },
+ {
+  "key": "science_nature_q0058",
+  "category_id": "science_nature",
+  "subcategory_id": "human_body",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which organ can regrow to full size even after much of it is removed?",
+   "tr": "Hangi organ büyük bir kısmı alındıktan sonra bile yeniden tam boyuta ulaşabilir?"
+  },
+  "options": [
+   {
+    "concept_id": "liver",
+    "en": "Liver",
+    "tr": "Karaciğer"
+   },
+   {
+    "concept_id": "heart",
+    "en": "Heart",
+    "tr": "Kalp"
+   },
+   {
+    "concept_id": "kidney",
+    "en": "Kidney",
+    "tr": "Böbrek"
+   },
+   {
+    "concept_id": "lung",
+    "en": "Lung",
+    "tr": "Akciğer"
+   }
+  ],
+  "correct": "liver",
+  "source": "https://en.wikipedia.org/wiki/Liver_regeneration"
+ },
+ {
+  "key": "science_nature_q0059",
+  "category_id": "science_nature",
+  "subcategory_id": "human_body",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the hardest substance in the human body?",
+   "tr": "İnsan vücudundaki en sert madde hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "tooth_enamel",
+    "en": "Tooth enamel",
+    "tr": "Diş minesi"
+   },
+   {
+    "concept_id": "bone",
+    "en": "Bone",
+    "tr": "Kemik"
+   },
+   {
+    "concept_id": "fingernail",
+    "en": "Fingernail",
+    "tr": "Tırnak"
+   },
+   {
+    "concept_id": "cartilage",
+    "en": "Cartilage",
+    "tr": "Kıkırdak"
+   }
+  ],
+  "correct": "tooth_enamel",
+  "source": "https://en.wikipedia.org/wiki/Tooth_enamel"
+ },
+ {
+  "key": "science_nature_q0060",
+  "category_id": "science_nature",
+  "subcategory_id": "human_body",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Roughly what share of an adult's body weight is water?",
+   "tr": "Bir yetişkinin vücut ağırlığının yaklaşık ne kadarı sudur?"
+  },
+  "options": [
+   {
+    "concept_id": "about_60",
+    "en": "About 60%",
+    "tr": "Yaklaşık %60"
+   },
+   {
+    "concept_id": "about_20",
+    "en": "About 20%",
+    "tr": "Yaklaşık %20"
+   },
+   {
+    "concept_id": "about_40",
+    "en": "About 40%",
+    "tr": "Yaklaşık %40"
+   },
+   {
+    "concept_id": "about_90",
+    "en": "About 90%",
+    "tr": "Yaklaşık %90"
+   }
+  ],
+  "correct": "about_60",
+  "source": "https://en.wikipedia.org/wiki/Body_water"
+ },
+ {
+  "key": "science_nature_q0061",
+  "category_id": "science_nature",
+  "subcategory_id": "human_body",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The body's smallest muscle, the stapedius, is found where?",
+   "tr": "Vücudun en küçük kası üzengi kası (stapedius) nerededir?"
+  },
+  "options": [
+   {
+    "concept_id": "in_the_ear",
+    "en": "In the ear",
+    "tr": "Kulakta"
+   },
+   {
+    "concept_id": "in_the_eye",
+    "en": "In the eye",
+    "tr": "Gözde"
+   },
+   {
+    "concept_id": "in_the_nose",
+    "en": "In the nose",
+    "tr": "Burunda"
+   },
+   {
+    "concept_id": "in_a_finger",
+    "en": "In a finger",
+    "tr": "Bir parmakta"
+   }
+  ],
+  "correct": "in_the_ear",
+  "source": "https://en.wikipedia.org/wiki/Stapedius_muscle"
+ },
+ {
+  "key": "science_nature_q0062",
+  "category_id": "science_nature",
+  "subcategory_id": "human_body",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which blood type is known as the \"universal donor\" for red blood cells?",
+   "tr": "Alyuvarlar için \"genel verici\" olarak bilinen kan grubu hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "o_negative",
+    "en": "O negative",
+    "tr": "0 negatif"
+   },
+   {
+    "concept_id": "ab_positive",
+    "en": "AB positive",
+    "tr": "AB pozitif"
+   },
+   {
+    "concept_id": "a_positive",
+    "en": "A positive",
+    "tr": "A pozitif"
+   },
+   {
+    "concept_id": "b_negative",
+    "en": "B negative",
+    "tr": "B negatif"
+   }
+  ],
+  "correct": "o_negative",
+  "source": "https://en.wikipedia.org/wiki/Blood_type"
+ },
+ {
+  "key": "science_nature_q0063",
+  "category_id": "science_nature",
+  "subcategory_id": "human_body",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which blood vessels carry blood away from the heart?",
+   "tr": "Hangi kan damarları kanı kalpten uzağa taşır?"
+  },
+  "options": [
+   {
+    "concept_id": "arteries",
+    "en": "Arteries",
+    "tr": "Atardamarlar"
+   },
+   {
+    "concept_id": "veins",
+    "en": "Veins",
+    "tr": "Toplardamarlar"
+   },
+   {
+    "concept_id": "capillaries",
+    "en": "Capillaries",
+    "tr": "Kılcal damarlar"
+   },
+   {
+    "concept_id": "lymph_vessels",
+    "en": "Lymph vessels",
+    "tr": "Lenf damarları"
+   }
+  ],
+  "correct": "arteries",
+  "source": "https://en.wikipedia.org/wiki/Artery"
+ },
+ {
+  "key": "science_nature_q0064",
+  "category_id": "science_nature",
+  "subcategory_id": "biology",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "With eight legs, spiders are not insects. Which group do they belong to?",
+   "tr": "Sekiz bacaklı örümcekler böcek değildir. Hangi gruba aittirler?"
+  },
+  "options": [
+   {
+    "concept_id": "arachnids",
+    "en": "Arachnids",
+    "tr": "Örümcekgiller"
+   },
+   {
+    "concept_id": "crustaceans",
+    "en": "Crustaceans",
+    "tr": "Kabuklular"
+   },
+   {
+    "concept_id": "reptiles",
+    "en": "Reptiles",
+    "tr": "Sürüngenler"
+   },
+   {
+    "concept_id": "molluscs",
+    "en": "Molluscs",
+    "tr": "Yumuşakçalar"
+   }
+  ],
+  "correct": "arachnids",
+  "source": "https://en.wikipedia.org/wiki/Arachnid"
+ },
+ {
+  "key": "science_nature_q0065",
+  "category_id": "science_nature",
+  "subcategory_id": "biology",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which naturalist proposed evolution by natural selection after his voyage on HMS Beagle?",
+   "tr": "HMS Beagle yolculuğundan sonra doğal seçilimle evrimi öne süren doğa bilimci kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "charles_darwin",
+    "en": "Charles Darwin",
+    "tr": "Charles Darwin"
+   },
+   {
+    "concept_id": "gregor_mendel",
+    "en": "Gregor Mendel",
+    "tr": "Gregor Mendel"
+   },
+   {
+    "concept_id": "louis_pasteur",
+    "en": "Louis Pasteur",
+    "tr": "Louis Pasteur"
+   },
+   {
+    "concept_id": "carl_linnaeus",
+    "en": "Carl Linnaeus",
+    "tr": "Carl Linnaeus"
+   }
+  ],
+  "correct": "charles_darwin",
+  "source": "https://en.wikipedia.org/wiki/Charles_Darwin"
+ },
+ {
+  "key": "science_nature_q0066",
+  "category_id": "science_nature",
+  "subcategory_id": "biology",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Sunlight on our skin helps the body make which vitamin?",
+   "tr": "Derimize vuran güneş ışığı vücudun hangi vitamini üretmesine yardım eder?"
+  },
+  "options": [
+   {
+    "concept_id": "vitamin_d",
+    "en": "Vitamin D",
+    "tr": "D vitamini"
+   },
+   {
+    "concept_id": "vitamin_c",
+    "en": "Vitamin C",
+    "tr": "C vitamini"
+   },
+   {
+    "concept_id": "vitamin_a",
+    "en": "Vitamin A",
+    "tr": "A vitamini"
+   },
+   {
+    "concept_id": "vitamin_b12",
+    "en": "Vitamin B12",
+    "tr": "B12 vitamini"
+   }
+  ],
+  "correct": "vitamin_d",
+  "source": "https://en.wikipedia.org/wiki/Vitamin_D"
+ },
+ {
+  "key": "science_nature_q0067",
+  "category_id": "science_nature",
+  "subcategory_id": "physics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Why is the daytime sky blue?",
+   "tr": "Gündüz gökyüzü neden mavidir?"
+  },
+  "options": [
+   {
+    "concept_id": "air_scatters_blue_light_most",
+    "en": "Air scatters blue light most",
+    "tr": "Hava en çok mavi ışığı saçar"
+   },
+   {
+    "concept_id": "it_reflects_the_oceans",
+    "en": "It reflects the oceans",
+    "tr": "Okyanusları yansıtır"
+   },
+   {
+    "concept_id": "the_air_contains_blue_gas",
+    "en": "The air contains blue gas",
+    "tr": "Havada mavi gaz vardır"
+   },
+   {
+    "concept_id": "ozone_is_blue",
+    "en": "Ozone is blue",
+    "tr": "Ozon mavidir"
+   }
+  ],
+  "correct": "air_scatters_blue_light_most",
+  "source": "https://en.wikipedia.org/wiki/Rayleigh_scattering"
+ },
+ {
+  "key": "science_nature_q0068",
+  "category_id": "science_nature",
+  "subcategory_id": "physics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Absolute zero, the coldest possible temperature, is about how many degrees Celsius?",
+   "tr": "Mümkün olan en düşük sıcaklık olan mutlak sıfır yaklaşık kaç santigrat derecedir?"
+  },
+  "options": [
+   {
+    "concept_id": "n_273_c",
+    "en": "−273 °C",
+    "tr": "−273 °C"
+   },
+   {
+    "concept_id": "n_100_c",
+    "en": "−100 °C",
+    "tr": "−100 °C"
+   },
+   {
+    "concept_id": "n_459_c",
+    "en": "−459 °C",
+    "tr": "−459 °C"
+   },
+   {
+    "concept_id": "n_1_000_c",
+    "en": "−1,000 °C",
+    "tr": "−1.000 °C"
+   }
+  ],
+  "correct": "n_273_c",
+  "source": "https://en.wikipedia.org/wiki/Absolute_zero"
+ },
+ {
+  "key": "science_nature_q0069",
+  "category_id": "science_nature",
+  "subcategory_id": "physics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which unit is used to measure how loud a sound is?",
+   "tr": "Bir sesin ne kadar yüksek olduğunu ölçmek için hangi birim kullanılır?"
+  },
+  "options": [
+   {
+    "concept_id": "decibel",
+    "en": "Decibel",
+    "tr": "Desibel"
+   },
+   {
+    "concept_id": "hertz",
+    "en": "Hertz",
+    "tr": "Hertz"
+   },
+   {
+    "concept_id": "watt",
+    "en": "Watt",
+    "tr": "Watt"
+   },
+   {
+    "concept_id": "newton",
+    "en": "Newton",
+    "tr": "Newton"
+   }
+  ],
+  "correct": "decibel",
+  "source": "https://en.wikipedia.org/wiki/Decibel"
+ },
+ {
+  "key": "science_nature_q0070",
+  "category_id": "science_nature",
+  "subcategory_id": "chemistry",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which element has the symbol Pb, from its Latin name plumbum?",
+   "tr": "Latince adı plumbum'dan gelen Pb simgesi hangi elementindir?"
+  },
+  "options": [
+   {
+    "concept_id": "lead",
+    "en": "Lead",
+    "tr": "Kurşun"
+   },
+   {
+    "concept_id": "platinum",
+    "en": "Platinum",
+    "tr": "Platin"
+   },
+   {
+    "concept_id": "phosphorus",
+    "en": "Phosphorus",
+    "tr": "Fosfor"
+   },
+   {
+    "concept_id": "polonium",
+    "en": "Polonium",
+    "tr": "Polonyum"
+   }
+  ],
+  "correct": "lead",
+  "source": "https://en.wikipedia.org/wiki/Lead"
+ },
+ {
+  "key": "science_nature_q0071",
+  "category_id": "science_nature",
+  "subcategory_id": "chemistry",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which element is the most abundant in the universe?",
+   "tr": "Evrende en bol bulunan element hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "hydrogen",
+    "en": "Hydrogen",
+    "tr": "Hidrojen"
+   },
+   {
+    "concept_id": "oxygen",
+    "en": "Oxygen",
+    "tr": "Oksijen"
+   },
+   {
+    "concept_id": "helium",
+    "en": "Helium",
+    "tr": "Helyum"
+   },
+   {
+    "concept_id": "carbon",
+    "en": "Carbon",
+    "tr": "Karbon"
+   }
+  ],
+  "correct": "hydrogen",
+  "source": "https://en.wikipedia.org/wiki/Abundance_of_the_chemical_elements"
+ },
+ {
+  "key": "science_nature_q0072",
+  "category_id": "science_nature",
+  "subcategory_id": "chemistry",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Table salt is made of sodium and which other element?",
+   "tr": "Sofra tuzu sodyum ve hangi başka elementten oluşur?"
+  },
+  "options": [
+   {
+    "concept_id": "chlorine",
+    "en": "Chlorine",
+    "tr": "Klor"
+   },
+   {
+    "concept_id": "calcium",
+    "en": "Calcium",
+    "tr": "Kalsiyum"
+   },
+   {
+    "concept_id": "sulphur",
+    "en": "Sulphur",
+    "tr": "Kükürt"
+   },
+   {
+    "concept_id": "iodine",
+    "en": "Iodine",
+    "tr": "İyot"
+   }
+  ],
+  "correct": "chlorine",
+  "source": "https://en.wikipedia.org/wiki/Sodium_chloride"
+ },
+ {
+  "key": "science_nature_q0073",
+  "category_id": "science_nature",
+  "subcategory_id": "earth_science",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which element makes up the largest share of the Earth's crust?",
+   "tr": "Yer kabuğunun en büyük payını hangi element oluşturur?"
+  },
+  "options": [
+   {
+    "concept_id": "oxygen",
+    "en": "Oxygen",
+    "tr": "Oksijen"
+   },
+   {
+    "concept_id": "iron",
+    "en": "Iron",
+    "tr": "Demir"
+   },
+   {
+    "concept_id": "silicon",
+    "en": "Silicon",
+    "tr": "Silisyum"
+   },
+   {
+    "concept_id": "aluminium",
+    "en": "Aluminium",
+    "tr": "Alüminyum"
+   }
+  ],
+  "correct": "oxygen",
+  "source": "https://en.wikipedia.org/wiki/Abundance_of_elements_in_Earth's_crust"
+ },
+ {
+  "key": "science_nature_q0074",
+  "category_id": "science_nature",
+  "subcategory_id": "earth_science",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In caves, stalactites hang from the ceiling. What grows up from the floor?",
+   "tr": "Mağaralarda sarkıtlar tavandan sarkar. Tabandan yukarı doğru ne büyür?"
+  },
+  "options": [
+   {
+    "concept_id": "stalagmites",
+    "en": "Stalagmites",
+    "tr": "Dikitler"
+   },
+   {
+    "concept_id": "geodes",
+    "en": "Geodes",
+    "tr": "Jeotlar"
+   },
+   {
+    "concept_id": "crystals",
+    "en": "Crystals",
+    "tr": "Kristaller"
+   },
+   {
+    "concept_id": "fossils",
+    "en": "Fossils",
+    "tr": "Fosiller"
+   }
+  ],
+  "correct": "stalagmites",
+  "source": "https://en.wikipedia.org/wiki/Stalagmite"
+ },
+ {
+  "key": "science_nature_q0075",
+  "category_id": "science_nature",
+  "subcategory_id": "earth_science",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which type of rock forms from layers of sand and mud pressed together over time?",
+   "tr": "Zamanla sıkışan kum ve çamur katmanlarından hangi tür kayaç oluşur?"
+  },
+  "options": [
+   {
+    "concept_id": "sedimentary",
+    "en": "Sedimentary",
+    "tr": "Tortul"
+   },
+   {
+    "concept_id": "igneous",
+    "en": "Igneous",
+    "tr": "Magmatik"
+   },
+   {
+    "concept_id": "metamorphic",
+    "en": "Metamorphic",
+    "tr": "Başkalaşım"
+   },
+   {
+    "concept_id": "volcanic",
+    "en": "Volcanic",
+    "tr": "Volkanik"
+   }
+  ],
+  "correct": "sedimentary",
+  "source": "https://en.wikipedia.org/wiki/Sedimentary_rock"
+ },
+ {
+  "key": "science_nature_q0076",
+  "category_id": "science_nature",
+  "subcategory_id": "earth_science",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What was the name of the supercontinent that broke apart around 200 million years ago?",
+   "tr": "Yaklaşık 200 milyon yıl önce parçalanan süper kıtanın adı neydi?"
+  },
+  "options": [
+   {
+    "concept_id": "pangaea",
+    "en": "Pangaea",
+    "tr": "Pangea"
+   },
+   {
+    "concept_id": "atlantis",
+    "en": "Atlantis",
+    "tr": "Atlantis"
+   },
+   {
+    "concept_id": "gondwana",
+    "en": "Gondwana",
+    "tr": "Gondvana"
+   },
+   {
+    "concept_id": "laurasia",
+    "en": "Laurasia",
+    "tr": "Lavrasya"
+   }
+  ],
+  "correct": "pangaea",
+  "source": "https://en.wikipedia.org/wiki/Pangaea"
+ },
+ {
+  "key": "science_nature_q0077",
+  "category_id": "science_nature",
+  "subcategory_id": "environment",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Tiny bits of plastic smaller than 5 millimetres are called what?",
+   "tr": "5 milimetreden küçük plastik parçacıklarına ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "microplastics",
+    "en": "Microplastics",
+    "tr": "Mikroplastikler"
+   },
+   {
+    "concept_id": "nanofibres",
+    "en": "Nanofibres",
+    "tr": "Nanolifler"
+   },
+   {
+    "concept_id": "polymers",
+    "en": "Polymers",
+    "tr": "Polimerler"
+   },
+   {
+    "concept_id": "bioplastics",
+    "en": "Bioplastics",
+    "tr": "Biyoplastikler"
+   }
+  ],
+  "correct": "microplastics",
+  "source": "https://en.wikipedia.org/wiki/Microplastics"
+ },
+ {
+  "key": "science_nature_q0078",
+  "category_id": "science_nature",
+  "subcategory_id": "environment",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which renewable energy taps the heat from deep inside the Earth?",
+   "tr": "Hangi yenilenebilir enerji Dünya'nın derinliklerindeki ısıdan yararlanır?"
+  },
+  "options": [
+   {
+    "concept_id": "geothermal",
+    "en": "Geothermal",
+    "tr": "Jeotermal"
+   },
+   {
+    "concept_id": "tidal",
+    "en": "Tidal",
+    "tr": "Gelgit"
+   },
+   {
+    "concept_id": "solar",
+    "en": "Solar",
+    "tr": "Güneş"
+   },
+   {
+    "concept_id": "hydroelectric",
+    "en": "Hydroelectric",
+    "tr": "Hidroelektrik"
+   }
+  ],
+  "correct": "geothermal",
+  "source": "https://en.wikipedia.org/wiki/Geothermal_energy"
+ },
+ {
+  "key": "science_nature_q0079",
+  "category_id": "science_nature",
+  "subcategory_id": "environment",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which greenhouse gas do cows release in large amounts as they digest?",
+   "tr": "İnekler sindirim yaparken hangi sera gazını bol miktarda salar?"
+  },
+  "options": [
+   {
+    "concept_id": "methane",
+    "en": "Methane",
+    "tr": "Metan"
+   },
+   {
+    "concept_id": "ozone",
+    "en": "Ozone",
+    "tr": "Ozon"
+   },
+   {
+    "concept_id": "hydrogen",
+    "en": "Hydrogen",
+    "tr": "Hidrojen"
+   },
+   {
+    "concept_id": "neon",
+    "en": "Neon",
+    "tr": "Neon"
+   }
+  ],
+  "correct": "methane",
+  "source": "https://en.wikipedia.org/wiki/Methane"
+ },
+ {
+  "key": "science_nature_q0080",
+  "category_id": "science_nature",
+  "subcategory_id": "environment",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which 2015 agreement aims to keep global warming well below 2 °C?",
+   "tr": "2015'te imzalanan hangi anlaşma küresel ısınmayı 2 °C'nin epey altında tutmayı amaçlar?"
+  },
+  "options": [
+   {
+    "concept_id": "paris_agreement",
+    "en": "Paris Agreement",
+    "tr": "Paris Anlaşması"
+   },
+   {
+    "concept_id": "kyoto_protocol",
+    "en": "Kyoto Protocol",
+    "tr": "Kyoto Protokolü"
+   },
+   {
+    "concept_id": "montreal_protocol",
+    "en": "Montreal Protocol",
+    "tr": "Montreal Protokolü"
+   },
+   {
+    "concept_id": "geneva_convention",
+    "en": "Geneva Convention",
+    "tr": "Cenevre Sözleşmesi"
+   }
+  ],
+  "correct": "paris_agreement",
+  "source": "https://en.wikipedia.org/wiki/Paris_Agreement"
+ },
+ {
+  "key": "science_nature_q0081",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which animal has the largest eyes ever measured, as big as dinner plates?",
+   "tr": "Yemek tabağı büyüklüğündeki gözleriyle ölçülmüş en büyük gözlere sahip hayvan hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "colossal_squid",
+    "en": "Colossal squid",
+    "tr": "Dev kalamar (colossal)"
+   },
+   {
+    "concept_id": "blue_whale",
+    "en": "Blue whale",
+    "tr": "Mavi balina"
+   },
+   {
+    "concept_id": "giant_octopus",
+    "en": "Giant octopus",
+    "tr": "Dev ahtapot"
+   },
+   {
+    "concept_id": "ostrich",
+    "en": "Ostrich",
+    "tr": "Devekuşu"
+   }
+  ],
+  "correct": "colossal_squid",
+  "source": "https://en.wikipedia.org/wiki/Colossal_squid"
+ },
+ {
+  "key": "science_nature_q0082",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which is the only bird that can fly backwards?",
+   "tr": "Geriye doğru uçabilen tek kuş hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "hummingbird",
+    "en": "Hummingbird",
+    "tr": "Sinek kuşu"
+   },
+   {
+    "concept_id": "swift",
+    "en": "Swift",
+    "tr": "Ebabil"
+   },
+   {
+    "concept_id": "kingfisher",
+    "en": "Kingfisher",
+    "tr": "Yalıçapkını"
+   },
+   {
+    "concept_id": "sparrow",
+    "en": "Sparrow",
+    "tr": "Serçe"
+   }
+  ],
+  "correct": "hummingbird",
+  "source": "https://en.wikipedia.org/wiki/Hummingbird"
+ },
+ {
+  "key": "science_nature_q0083",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Instead of bone, a shark's skeleton is made of what?",
+   "tr": "Köpekbalığının iskeleti kemik yerine neden yapılmıştır?"
+  },
+  "options": [
+   {
+    "concept_id": "cartilage",
+    "en": "Cartilage",
+    "tr": "Kıkırdak"
+   },
+   {
+    "concept_id": "chitin",
+    "en": "Chitin",
+    "tr": "Kitin"
+   },
+   {
+    "concept_id": "keratin",
+    "en": "Keratin",
+    "tr": "Keratin"
+   },
+   {
+    "concept_id": "coral",
+    "en": "Coral",
+    "tr": "Mercan"
+   }
+  ],
+  "correct": "cartilage",
+  "source": "https://en.wikipedia.org/wiki/Shark"
+ },
+ {
+  "key": "science_nature_q0084",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which animal is the loudest on Earth, with clicks of up to about 230 decibels?",
+   "tr": "Yaklaşık 230 desibele varan tıkırtılarıyla dünyanın en gürültülü hayvanı hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "sperm_whale",
+    "en": "Sperm whale",
+    "tr": "Kaşalot"
+   },
+   {
+    "concept_id": "howler_monkey",
+    "en": "Howler monkey",
+    "tr": "Uluyan maymun"
+   },
+   {
+    "concept_id": "lion",
+    "en": "Lion",
+    "tr": "Aslan"
+   },
+   {
+    "concept_id": "blue_whale",
+    "en": "Blue whale",
+    "tr": "Mavi balina"
+   }
+  ],
+  "correct": "sperm_whale",
+  "source": "https://en.wikipedia.org/wiki/Sperm_whale"
+ },
+ {
+  "key": "science_nature_q0085",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which animal has fingerprints so like ours that they could confuse a crime scene?",
+   "tr": "Hangi hayvanın parmak izleri bizimkine o kadar benzer ki bir olay yerinde kafa karıştırabilir?"
+  },
+  "options": [
+   {
+    "concept_id": "koala",
+    "en": "Koala",
+    "tr": "Koala"
+   },
+   {
+    "concept_id": "chimpanzee",
+    "en": "Chimpanzee",
+    "tr": "Şempanze"
+   },
+   {
+    "concept_id": "raccoon",
+    "en": "Raccoon",
+    "tr": "Rakun"
+   },
+   {
+    "concept_id": "gorilla",
+    "en": "Gorilla",
+    "tr": "Goril"
+   }
+  ],
+  "correct": "koala",
+  "source": "https://en.wikipedia.org/wiki/Koala"
+ },
+ {
+  "key": "science_nature_q0086",
+  "category_id": "science_nature",
+  "subcategory_id": "chemistry",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which metal has the highest melting point, over 3,400 °C?",
+   "tr": "3.400 °C'yi aşan erime noktasıyla en yüksek erime noktasına sahip metal hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "tungsten",
+    "en": "Tungsten",
+    "tr": "Tungsten"
+   },
+   {
+    "concept_id": "iron",
+    "en": "Iron",
+    "tr": "Demir"
+   },
+   {
+    "concept_id": "titanium",
+    "en": "Titanium",
+    "tr": "Titanyum"
+   },
+   {
+    "concept_id": "platinum",
+    "en": "Platinum",
+    "tr": "Platin"
+   }
+  ],
+  "correct": "tungsten",
+  "source": "https://en.wikipedia.org/wiki/Tungsten"
+ },
+ {
+  "key": "science_nature_q0087",
+  "category_id": "science_nature",
+  "subcategory_id": "space",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which planet has the fastest winds in the Solar System?",
+   "tr": "Güneş Sistemi'ndeki en hızlı rüzgârlar hangi gezegendedir?"
+  },
+  "options": [
+   {
+    "concept_id": "neptune",
+    "en": "Neptune",
+    "tr": "Neptün"
+   },
+   {
+    "concept_id": "jupiter",
+    "en": "Jupiter",
+    "tr": "Jüpiter"
+   },
+   {
+    "concept_id": "saturn",
+    "en": "Saturn",
+    "tr": "Satürn"
+   },
+   {
+    "concept_id": "mars",
+    "en": "Mars",
+    "tr": "Mars"
+   }
+  ],
+  "correct": "neptune",
+  "source": "https://en.wikipedia.org/wiki/Neptune"
+ },
+ {
+  "key": "science_nature_q0088",
+  "category_id": "science_nature",
+  "subcategory_id": "space",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which moon has lakes and seas of liquid methane on its surface?",
+   "tr": "Hangi uydunun yüzeyinde sıvı metandan göller ve denizler vardır?"
+  },
+  "options": [
+   {
+    "concept_id": "titan",
+    "en": "Titan",
+    "tr": "Titan"
+   },
+   {
+    "concept_id": "europa",
+    "en": "Europa",
+    "tr": "Europa"
+   },
+   {
+    "concept_id": "io",
+    "en": "Io",
+    "tr": "İo"
+   },
+   {
+    "concept_id": "ganymede",
+    "en": "Ganymede",
+    "tr": "Ganymede"
+   }
+  ],
+  "correct": "titan",
+  "source": "https://en.wikipedia.org/wiki/Titan_(moon)"
+ },
+ {
+  "key": "science_nature_q0089",
+  "category_id": "science_nature",
+  "subcategory_id": "earth_science",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which volcanic rock is so full of gas bubbles that it can float on water?",
+   "tr": "Hangi volkanik kayaç gaz kabarcıklarıyla o kadar doludur ki suda yüzebilir?"
+  },
+  "options": [
+   {
+    "concept_id": "pumice",
+    "en": "Pumice",
+    "tr": "Sünger taşı (pomza)"
+   },
+   {
+    "concept_id": "basalt",
+    "en": "Basalt",
+    "tr": "Bazalt"
+   },
+   {
+    "concept_id": "granite",
+    "en": "Granite",
+    "tr": "Granit"
+   },
+   {
+    "concept_id": "obsidian",
+    "en": "Obsidian",
+    "tr": "Obsidyen"
+   }
+  ],
+  "correct": "pumice",
+  "source": "https://en.wikipedia.org/wiki/Pumice"
+ },
+ {
+  "key": "science_nature_q0090",
+  "category_id": "science_nature",
+  "subcategory_id": "chemistry",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which element, first seen in the Sun's light, is named after the Greek word for \"sun\"?",
+   "tr": "İlk kez Güneş'in ışığında görülen hangi element adını Yunancada \"güneş\" anlamına gelen kelimeden alır?"
+  },
+  "options": [
+   {
+    "concept_id": "helium",
+    "en": "Helium",
+    "tr": "Helyum"
+   },
+   {
+    "concept_id": "hydrogen",
+    "en": "Hydrogen",
+    "tr": "Hidrojen"
+   },
+   {
+    "concept_id": "neon",
+    "en": "Neon",
+    "tr": "Neon"
+   },
+   {
+    "concept_id": "solium",
+    "en": "Solium",
+    "tr": "Solyum"
+   }
+  ],
+  "correct": "helium",
+  "source": "https://en.wikipedia.org/wiki/Helium"
+ },
+ {
+  "key": "science_nature_q0091",
+  "category_id": "science_nature",
+  "subcategory_id": "human_body",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which organ has no pain receptors of its own, so surgeons can operate on it while you are awake?",
+   "tr": "Hangi organın kendine ait ağrı algılayıcısı yoktur, bu yüzden cerrahlar siz uyanıkken onu ameliyat edebilir?"
+  },
+  "options": [
+   {
+    "concept_id": "brain",
+    "en": "Brain",
+    "tr": "Beyin"
+   },
+   {
+    "concept_id": "liver",
+    "en": "Liver",
+    "tr": "Karaciğer"
+   },
+   {
+    "concept_id": "heart",
+    "en": "Heart",
+    "tr": "Kalp"
+   },
+   {
+    "concept_id": "stomach",
+    "en": "Stomach",
+    "tr": "Mide"
+   }
+  ],
+  "correct": "brain",
+  "source": "https://en.wikipedia.org/wiki/Awake_craniotomy"
+ },
+ {
+  "key": "science_nature_q0092",
+  "category_id": "science_nature",
+  "subcategory_id": "human_body",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Roughly how long is the adult human small intestine?",
+   "tr": "Yetişkin bir insanın ince bağırsağı yaklaşık ne uzunluktadır?"
+  },
+  "options": [
+   {
+    "concept_id": "about_6_metres",
+    "en": "About 6 metres",
+    "tr": "Yaklaşık 6 metre"
+   },
+   {
+    "concept_id": "about_1_metre",
+    "en": "About 1 metre",
+    "tr": "Yaklaşık 1 metre"
+   },
+   {
+    "concept_id": "about_15_metres",
+    "en": "About 15 metres",
+    "tr": "Yaklaşık 15 metre"
+   },
+   {
+    "concept_id": "about_30_cm",
+    "en": "About 30 cm",
+    "tr": "Yaklaşık 30 cm"
+   }
+  ],
+  "correct": "about_6_metres",
+  "source": "https://en.wikipedia.org/wiki/Small_intestine"
+ },
+ {
+  "key": "science_nature_q0093",
+  "category_id": "science_nature",
+  "subcategory_id": "human_body",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the most abundant protein in the human body?",
+   "tr": "İnsan vücudunda en bol bulunan protein hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "collagen",
+    "en": "Collagen",
+    "tr": "Kolajen"
+   },
+   {
+    "concept_id": "keratin",
+    "en": "Keratin",
+    "tr": "Keratin"
+   },
+   {
+    "concept_id": "haemoglobin",
+    "en": "Haemoglobin",
+    "tr": "Hemoglobin"
+   },
+   {
+    "concept_id": "insulin",
+    "en": "Insulin",
+    "tr": "İnsülin"
+   }
+  ],
+  "correct": "collagen",
+  "source": "https://en.wikipedia.org/wiki/Collagen"
+ },
+ {
+  "key": "science_nature_q0094",
+  "category_id": "science_nature",
+  "subcategory_id": "plants",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which palm produces the largest seed in the plant kingdom?",
+   "tr": "Bitkiler âleminin en büyük tohumunu hangi palmiye üretir?"
+  },
+  "options": [
+   {
+    "concept_id": "coco_de_mer",
+    "en": "Coco de mer",
+    "tr": "Coco de mer"
+   },
+   {
+    "concept_id": "coconut_palm",
+    "en": "Coconut palm",
+    "tr": "Hindistancevizi palmiyesi"
+   },
+   {
+    "concept_id": "date_palm",
+    "en": "Date palm",
+    "tr": "Hurma"
+   },
+   {
+    "concept_id": "oil_palm",
+    "en": "Oil palm",
+    "tr": "Yağ palmiyesi"
+   }
+  ],
+  "correct": "coco_de_mer",
+  "source": "https://en.wikipedia.org/wiki/Lodoicea"
+ },
+ {
+  "key": "science_nature_q0095",
+  "category_id": "science_nature",
+  "subcategory_id": "earth_science",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Despite temperatures like the Sun's surface, which part of the Earth is solid because of immense pressure?",
+   "tr": "Güneş'in yüzeyine yakın sıcaklığına rağmen muazzam basınç yüzünden katı olan Dünya katmanı hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "inner_core",
+    "en": "Inner core",
+    "tr": "İç çekirdek"
+   },
+   {
+    "concept_id": "outer_core",
+    "en": "Outer core",
+    "tr": "Dış çekirdek"
+   },
+   {
+    "concept_id": "lower_mantle",
+    "en": "Lower mantle",
+    "tr": "Alt manto"
+   },
+   {
+    "concept_id": "asthenosphere",
+    "en": "Asthenosphere",
+    "tr": "Astenosfer"
+   }
+  ],
+  "correct": "inner_core",
+  "source": "https://en.wikipedia.org/wiki/Earth's_inner_core"
+ },
+ {
+  "key": "science_nature_q0096",
+  "category_id": "science_nature",
+  "subcategory_id": "physics",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which metal conducts electricity better than any other?",
+   "tr": "Elektriği her metalden daha iyi ileten metal hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "silver",
+    "en": "Silver",
+    "tr": "Gümüş"
+   },
+   {
+    "concept_id": "copper",
+    "en": "Copper",
+    "tr": "Bakır"
+   },
+   {
+    "concept_id": "gold",
+    "en": "Gold",
+    "tr": "Altın"
+   },
+   {
+    "concept_id": "aluminium",
+    "en": "Aluminium",
+    "tr": "Alüminyum"
+   }
+  ],
+  "correct": "silver",
+  "source": "https://en.wikipedia.org/wiki/Electrical_resistivity_and_conductivity"
+ },
+ {
+  "key": "science_nature_q0097",
+  "category_id": "science_nature",
+  "subcategory_id": "biology",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Reef-building corals are animals closely related to which creatures?",
+   "tr": "Resif kuran mercanlar hangi canlılarla yakın akraba hayvanlardır?"
+  },
+  "options": [
+   {
+    "concept_id": "jellyfish",
+    "en": "Jellyfish",
+    "tr": "Denizanaları"
+   },
+   {
+    "concept_id": "sponges",
+    "en": "Sponges",
+    "tr": "Süngerler"
+   },
+   {
+    "concept_id": "starfish",
+    "en": "Starfish",
+    "tr": "Denizyıldızları"
+   },
+   {
+    "concept_id": "snails",
+    "en": "Snails",
+    "tr": "Salyangozlar"
+   }
+  ],
+  "correct": "jellyfish",
+  "source": "https://en.wikipedia.org/wiki/Coral"
+ },
+ {
+  "key": "science_nature_q0098",
+  "category_id": "science_nature",
+  "subcategory_id": "biology",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who discovered penicillin in 1928 after noticing mould killing bacteria?",
+   "tr": "1928'de bakterileri öldüren küfü fark ederek penisilini kim keşfetti?"
+  },
+  "options": [
+   {
+    "concept_id": "alexander_fleming",
+    "en": "Alexander Fleming",
+    "tr": "Alexander Fleming"
+   },
+   {
+    "concept_id": "louis_pasteur",
+    "en": "Louis Pasteur",
+    "tr": "Louis Pasteur"
+   },
+   {
+    "concept_id": "robert_koch",
+    "en": "Robert Koch",
+    "tr": "Robert Koch"
+   },
+   {
+    "concept_id": "edward_jenner",
+    "en": "Edward Jenner",
+    "tr": "Edward Jenner"
+   }
+  ],
+  "correct": "alexander_fleming",
+  "source": "https://en.wikipedia.org/wiki/Alexander_Fleming"
+ },
+ {
+  "key": "science_nature_q0099",
+  "category_id": "science_nature",
+  "subcategory_id": "chemistry",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which element is named after the planet discovered by William Herschel in 1781?",
+   "tr": "Hangi element, William Herschel'in 1781'de keşfettiği gezegenin adını taşır?"
+  },
+  "options": [
+   {
+    "concept_id": "uranium",
+    "en": "Uranium",
+    "tr": "Uranyum"
+   },
+   {
+    "concept_id": "neptunium",
+    "en": "Neptunium",
+    "tr": "Neptünyum"
+   },
+   {
+    "concept_id": "plutonium",
+    "en": "Plutonium",
+    "tr": "Plütonyum"
+   },
+   {
+    "concept_id": "mercury",
+    "en": "Mercury",
+    "tr": "Cıva"
+   }
+  ],
+  "correct": "uranium",
+  "source": "https://en.wikipedia.org/wiki/Uranium"
+ },
+ {
+  "key": "science_nature_q0100",
+  "category_id": "science_nature",
+  "subcategory_id": "space",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What causes the Northern Lights?",
+   "tr": "Kuzey Işıklarına ne yol açar?"
+  },
+  "options": [
+   {
+    "concept_id": "charged_solar_particles_hitting_air",
+    "en": "Charged solar particles hitting air",
+    "tr": "Güneş'ten gelen yüklü parçacıklar"
+   },
+   {
+    "concept_id": "moonlight_on_ice",
+    "en": "Moonlight on ice",
+    "tr": "Buzdaki ay ışığı"
+   },
+   {
+    "concept_id": "burning_meteors",
+    "en": "Burning meteors",
+    "tr": "Yanan göktaşları"
+   },
+   {
+    "concept_id": "city_lights",
+    "en": "City lights",
+    "tr": "Şehir ışıkları"
+   }
+  ],
+  "correct": "charged_solar_particles_hitting_air",
+  "source": "https://en.wikipedia.org/wiki/Aurora"
+ }
 ]
