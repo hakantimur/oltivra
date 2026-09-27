@@ -1,0 +1,38 @@
+# Cloud Tasks queue families sharded by live match shard (spec §20.2). `scripts/provision_queues.py`
+# expands this into <family>-00..<family>-NN for the environment's shard count.
+# Rates are conservative starting points; the combined sustained rate must stay under 50% of tested capacity.
+shard_counts:
+  dev: 2
+  stage: 4
+  prod: 16
+families:
+  round-recovery:
+    max_dispatches_per_second: 200
+    max_concurrent_dispatches: 500
+    max_attempts: 20
+    min_backoff: 0.1s
+    max_backoff: 5s
+  round-start:
+    max_dispatches_per_second: 200
+    max_concurrent_dispatches: 500
+    max_attempts: 20
+    min_backoff: 0.1s
+    max_backoff: 5s
+  bot-winner:
+    max_dispatches_per_second: 150
+    max_concurrent_dispatches: 400
+    max_attempts: 20
+    min_backoff: 0.1s
+    max_backoff: 5s
+  settlement:
+    max_dispatches_per_second: 60
+    max_concurrent_dispatches: 120
+    max_attempts: 50
+    min_backoff: 1s
+    max_backoff: 120s
+  cleanup:
+    max_dispatches_per_second: 30
+    max_concurrent_dispatches: 60
+    max_attempts: 30
+    min_backoff: 5s
+    max_backoff: 600s
