@@ -1,0 +1,59 @@
+# Cloud Run service (spec §13.3, §28.1a). Initial stage values; production values are set only after the
+# 10k load tests pass (spec §36.3).
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: oltivra-api
+  annotations:
+    run.googleapis.com/ingress: internal-and-cloud-load-balancing
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/minScale: "2"
+        autoscaling.knative.dev/maxScale: "50"
+        run.googleapis.com/cpu-throttling: "false"
+        run.googleapis.com/startup-cpu-boost: "true"
+    spec:
+      containerConcurrency: 20
+      timeoutSeconds: 30
+      serviceAccountName: oltivra-api@PROJECT_ID.iam.gserviceaccount.com
+      containers:
+        - image: IMAGE
+          resources:
+            limits:
+              cpu: "2"
+              memory: 2Gi
+          env:
+            - { name: OLTIVRA_ENV, value: ENVIRONMENT }
+            - { name: OLTIVRA_STORE_BACKEND, value: firebase }
+            - { name: OLTIVRA_AUTH_MODE, value: firebase }
+            - { name: OLTIVRA_APP_CHECK_MODE, value: enforce }
+            - { name: OLTIVRA_TASKS_MODE, value: cloud }
+            - { name: OLTIVRA_INTERNAL_AUTH_MODE, value: oidc }
+            - { name: OLTIVRA_ADMIN_REQUIRE_MFA, value: "true" }
+            - { name: OLTIVRA_ADMOB_SSV_MODE, value: google }
+            - { name: OLTIVRA_PURCHASE_VERIFY_MODE, value: store }
+            - { name: OLTIVRA_SHARD_COUNT, value: "16" }
+            - { name: OLTIVRA_FIREBASE_PROJECT_ID, value: PROJECT_ID }
+            - { name: OLTIVRA_CLOUD_TASKS_PROJECT, value: PROJECT_ID }
+            - { name: OLTIVRA_TASK_SERVICE_ACCOUNT, value: oltivra-tasks@PROJECT_ID.iam.gserviceaccount.com }
+            # Secrets come from Secret Manager only (spec §28.5).
+            - name: OLTIVRA_TIEBREAK_KEYS
+              valueFrom: { secretKeyRef: { name: tiebreak-keys, key: latest } }
+            - name: OLTIVRA_RESOLVER_KEYS
+              valueFrom: { secretKeyRef: { name: resolver-keys, key: latest } }
+            - name: OLTIVRA_SHARD_KEYS
+              valueFrom: { secretKeyRef: { name: shard-keys, key: latest } }
+            - name: OLTIVRA_BOT_PLAN_KEYS
+              valueFrom: { secretKeyRef: { name: bot-plan-keys, key: latest } }
+            - name: OLTIVRA_REWARD_KEYS
+              valueFrom: { secretKeyRef: { name: reward-keys, key: latest } }
+            - name: OLTIVRA_MISSION_KEYS
+              valueFrom: { secretKeyRef: { name: mission-keys, key: latest } }
+            - name: OLTIVRA_USERNAME_HASH_KEYS
+              valueFrom: { secretKeyRef: { name: username-hash-keys, key: latest } }
+            - name: OLTIVRA_RTDB_SHARD_URLS
+              valueFrom: { secretKeyRef: { name: rtdb-shard-urls, key: latest } }
+            - name: OLTIVRA_ANTHROPIC_API_KEY
+              valueFrom: { secretKeyRef: { name: anthropic-api-key, key: latest } }

@@ -1,0 +1,41 @@
+name: oltivra
+
+services:
+  emulators:
+    build:
+      context: .
+      dockerfile: firebase/emulator/Dockerfile
+    ports:
+      - "4000:4000"   # Emulator UI
+      - "4400:4400"
+      - "4500:4500"
+      - "8080:8080"   # Firestore
+      - "9000:9000"   # RTDB (shard namespaces demo-oltivra-live-NN)
+      - "9099:9099"   # Auth
+      - "9199:9199"   # Storage
+    healthcheck:
+      test: ["CMD", "curl", "-sf", "http://127.0.0.1:4400/emulators"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  api:
+    build:
+      context: backend
+    depends_on:
+      emulators:
+        condition: service_healthy
+    environment:
+      OLTIVRA_ENV: dev
+      OLTIVRA_STORE_BACKEND: firebase
+      OLTIVRA_AUTH_MODE: firebase
+      OLTIVRA_APP_CHECK_MODE: "off"
+      OLTIVRA_TASKS_MODE: local
+      OLTIVRA_SHARD_COUNT: "4"
+      OLTIVRA_RTDB_EMULATOR_HOST: emulators:9000
+      FIRESTORE_EMULATOR_HOST: emulators:8080
+      FIREBASE_AUTH_EMULATOR_HOST: emulators:9099
+      FIREBASE_DATABASE_EMULATOR_HOST: emulators:9000
+      FIREBASE_STORAGE_EMULATOR_HOST: emulators:9199
+    ports:
+      - "8000:8080"

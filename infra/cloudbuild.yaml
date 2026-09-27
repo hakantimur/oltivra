@@ -1,0 +1,51 @@
+# Cloud Build pipeline (spec §41). Triggered from GitHub; dev deploys automatically, stage after smoke
+# tests, prod requires manual approval on the trigger.
+substitutions:
+  _ENV: dev
+  _REGION: europe-west1
+  _SERVICE: oltivra-api
+  _AR_REPO: oltivra
+
+steps:
+  - id: unit-tests
+    name: python:3.12-slim
+    dir: backend
+    entrypoint: bash
+    args: ["-c", "pip install -q -e '.[dev]' && ruff check app tests && pytest -q"]
+
+  - id: rules-tests
+    name: node:22-trixie
+    entrypoint: bash
+    args:
+      - -c
+      - |
+        apt-get update -qq && apt-get install -y -qq openjdk-21-jre-headless >/dev/null
+        cd firebase/tests && npm ci
+        cd ../.. && npx -y firebase-tools@15 emulators:exec --project demo-oltivra \
+          --only firestore,database,storage "cd firebase/tests && npm test"
+
+  - id: build
+    name: gcr.io/cloud-builders/docker
+    args: ["build", "-t", "${_REGION}-docker.pkg.dev/$PROJECT_ID/${_AR_REPO}/${_SERVICE}:$SHORT_SHA", "backend"]
+
+  - id: push
+    name: gcr.io/cloud-builders/docker
+    args: ["push", "${_REGION}-docker.pkg.dev/$PROJECT_ID/${_AR_REPO}/${_SERVICE}:$SHORT_SHA"]
+
+  - id: deploy-rules
+    name: node:22-trixie
+    entrypoint: bash
+    args: ["-c", "npx -y firebase-tools@15 deploy --project $PROJECT_ID --only firestore,database,storage --non-interactive"]
+
+  - id: deploy-run
+    name: gcr.io/google.com/cloudsdktool/cloud-sdk:slim
+    entrypoint: bash
+    args:
+      - -c
+      - |
+        sed -e "s|IMAGE|${_REGION}-docker.pkg.dev/$PROJECT_ID/${_AR_REPO}/${_SERVICE}:$SHORT_SHA|" \
+            -e "s|PROJECT_ID|$PROJECT_ID|g" -e "s|ENVIRONMENT|${_ENV}|g" infra/cloudrun.yaml > /workspace/run.yaml
+        gcloud run services replace /workspace/run.yaml --region ${_REGION}
+
+options:
+  logging: CLOUD_LOGGING_ONLY

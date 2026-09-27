@@ -1,0 +1,1442 @@
+[
+  {
+    "key": "food_culture_001",
+    "category_id": "food_culture",
+    "subcategory_id": "dishes",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Sushi is most closely associated with which country's cuisine?",
+      "tr": "Suşi en çok hangi ülkenin mutfağıyla özdeşleşir?"
+    },
+    "options": [
+      {
+        "concept_id": "japan",
+        "en": "Japan",
+        "tr": "Japonya"
+      },
+      {
+        "concept_id": "korea",
+        "en": "Korea",
+        "tr": "Kore"
+      },
+      {
+        "concept_id": "china",
+        "en": "China",
+        "tr": "Çin"
+      },
+      {
+        "concept_id": "thailand",
+        "en": "Thailand",
+        "tr": "Tayland"
+      }
+    ],
+    "correct": "japan",
+    "source": "https://en.wikipedia.org/wiki/Sushi"
+  },
+  {
+    "key": "food_culture_002",
+    "category_id": "food_culture",
+    "subcategory_id": "dishes",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Paella is a rice dish that originated in which country?",
+      "tr": "Paella hangi ülkede ortaya çıkmış bir pilav yemeğidir?"
+    },
+    "options": [
+      {
+        "concept_id": "mexico",
+        "en": "Mexico",
+        "tr": "Meksika"
+      },
+      {
+        "concept_id": "italy",
+        "en": "Italy",
+        "tr": "İtalya"
+      },
+      {
+        "concept_id": "portugal",
+        "en": "Portugal",
+        "tr": "Portekiz"
+      },
+      {
+        "concept_id": "spain",
+        "en": "Spain",
+        "tr": "İspanya"
+      }
+    ],
+    "correct": "spain",
+    "source": "https://en.wikipedia.org/wiki/Paella"
+  },
+  {
+    "key": "food_culture_003",
+    "category_id": "food_culture",
+    "subcategory_id": "dishes",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Tacos are a traditional dish from which country?",
+      "tr": "Taco hangi ülkenin geleneksel yemeğidir?"
+    },
+    "options": [
+      {
+        "concept_id": "spain",
+        "en": "Spain",
+        "tr": "İspanya"
+      },
+      {
+        "concept_id": "mexico",
+        "en": "Mexico",
+        "tr": "Meksika"
+      },
+      {
+        "concept_id": "peru",
+        "en": "Peru",
+        "tr": "Peru"
+      },
+      {
+        "concept_id": "brazil",
+        "en": "Brazil",
+        "tr": "Brezilya"
+      }
+    ],
+    "correct": "mexico",
+    "source": "https://en.wikipedia.org/wiki/Taco"
+  },
+  {
+    "key": "food_culture_004",
+    "category_id": "food_culture",
+    "subcategory_id": "cultural_symbols",
+    "difficulty": "EASY",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which fruit appears in New York City's famous nickname?",
+      "tr": "New York şehrinin ünlü takma adında hangi meyve geçer?"
+    },
+    "options": [
+      {
+        "concept_id": "orange",
+        "en": "Orange",
+        "tr": "Portakal"
+      },
+      {
+        "concept_id": "cherry",
+        "en": "Cherry",
+        "tr": "Kiraz"
+      },
+      {
+        "concept_id": "peach",
+        "en": "Peach",
+        "tr": "Şeftali"
+      },
+      {
+        "concept_id": "apple",
+        "en": "Apple",
+        "tr": "Elma"
+      }
+    ],
+    "correct": "apple",
+    "source": "https://en.wikipedia.org/wiki/Big_Apple"
+  },
+  {
+    "key": "food_culture_005",
+    "category_id": "food_culture",
+    "subcategory_id": "ingredients",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "What is the main ingredient of guacamole?",
+      "tr": "Guakamolenin ana malzemesi nedir?"
+    },
+    "options": [
+      {
+        "concept_id": "green_pea",
+        "en": "Green pea",
+        "tr": "Bezelye"
+      },
+      {
+        "concept_id": "avocado",
+        "en": "Avocado",
+        "tr": "Avokado"
+      },
+      {
+        "concept_id": "tomato",
+        "en": "Tomato",
+        "tr": "Domates"
+      },
+      {
+        "concept_id": "cucumber",
+        "en": "Cucumber",
+        "tr": "Salatalık"
+      }
+    ],
+    "correct": "avocado",
+    "source": "https://en.wikipedia.org/wiki/Guacamole"
+  },
+  {
+    "key": "food_culture_006",
+    "category_id": "food_culture",
+    "subcategory_id": "ingredients",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which grain is used to make Italian risotto?",
+      "tr": "İtalyan risottosu hangi tahılla yapılır?"
+    },
+    "options": [
+      {
+        "concept_id": "rice",
+        "en": "Rice",
+        "tr": "Pirinç"
+      },
+      {
+        "concept_id": "wheat",
+        "en": "Wheat",
+        "tr": "Buğday"
+      },
+      {
+        "concept_id": "corn",
+        "en": "Corn",
+        "tr": "Mısır"
+      },
+      {
+        "concept_id": "oats",
+        "en": "Oats",
+        "tr": "Yulaf"
+      }
+    ],
+    "correct": "rice",
+    "source": "https://en.wikipedia.org/wiki/Risotto"
+  },
+  {
+    "key": "food_culture_007",
+    "category_id": "food_culture",
+    "subcategory_id": "ingredients",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Hummus is made mainly from which legume?",
+      "tr": "Humus esas olarak hangi baklagilden yapılır?"
+    },
+    "options": [
+      {
+        "concept_id": "kidney_beans",
+        "en": "Kidney beans",
+        "tr": "Barbunya"
+      },
+      {
+        "concept_id": "chickpeas",
+        "en": "Chickpeas",
+        "tr": "Nohut"
+      },
+      {
+        "concept_id": "peas",
+        "en": "Peas",
+        "tr": "Bezelye"
+      },
+      {
+        "concept_id": "lentils",
+        "en": "Lentils",
+        "tr": "Mercimek"
+      }
+    ],
+    "correct": "chickpeas",
+    "source": "https://en.wikipedia.org/wiki/Hummus"
+  },
+  {
+    "key": "food_culture_008",
+    "category_id": "food_culture",
+    "subcategory_id": "ingredients",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Tofu is made from the milk of which bean?",
+      "tr": "Tofu hangi fasulyenin sütünden yapılır?"
+    },
+    "options": [
+      {
+        "concept_id": "soybean",
+        "en": "Soybean",
+        "tr": "Soya fasulyesi"
+      },
+      {
+        "concept_id": "chickpea",
+        "en": "Chickpea",
+        "tr": "Nohut"
+      },
+      {
+        "concept_id": "kidney_bean",
+        "en": "Kidney bean",
+        "tr": "Barbunya"
+      },
+      {
+        "concept_id": "black_bean",
+        "en": "Black bean",
+        "tr": "Siyah fasulye"
+      }
+    ],
+    "correct": "soybean",
+    "source": "https://en.wikipedia.org/wiki/Tofu"
+  },
+  {
+    "key": "food_culture_009",
+    "category_id": "food_culture",
+    "subcategory_id": "cuisines",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Pizza Margherita is traditionally linked to which Italian city?",
+      "tr": "Margherita pizza geleneksel olarak hangi İtalyan şehriyle ilişkilendirilir?"
+    },
+    "options": [
+      {
+        "concept_id": "venice",
+        "en": "Venice",
+        "tr": "Venedik"
+      },
+      {
+        "concept_id": "naples",
+        "en": "Naples",
+        "tr": "Napoli"
+      },
+      {
+        "concept_id": "milan",
+        "en": "Milan",
+        "tr": "Milano"
+      },
+      {
+        "concept_id": "rome",
+        "en": "Rome",
+        "tr": "Roma"
+      }
+    ],
+    "correct": "naples",
+    "source": "https://en.wikipedia.org/wiki/Pizza_Margherita"
+  },
+  {
+    "key": "food_culture_010",
+    "category_id": "food_culture",
+    "subcategory_id": "cuisines",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Kimchi, made from fermented vegetables, is a staple of which cuisine?",
+      "tr": "Fermente sebzelerden yapılan kimçi hangi mutfağın temel yiyeceğidir?"
+    },
+    "options": [
+      {
+        "concept_id": "chinese",
+        "en": "Chinese",
+        "tr": "Çin"
+      },
+      {
+        "concept_id": "vietnamese",
+        "en": "Vietnamese",
+        "tr": "Vietnam"
+      },
+      {
+        "concept_id": "japanese",
+        "en": "Japanese",
+        "tr": "Japon"
+      },
+      {
+        "concept_id": "korean",
+        "en": "Korean",
+        "tr": "Kore"
+      }
+    ],
+    "correct": "korean",
+    "source": "https://en.wikipedia.org/wiki/Kimchi"
+  },
+  {
+    "key": "food_culture_011",
+    "category_id": "food_culture",
+    "subcategory_id": "festivals",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "The Oktoberfest beer festival is held every year in which city?",
+      "tr": "Oktoberfest her yıl hangi şehirde düzenlenir?"
+    },
+    "options": [
+      {
+        "concept_id": "munich",
+        "en": "Munich",
+        "tr": "Münih"
+      },
+      {
+        "concept_id": "vienna",
+        "en": "Vienna",
+        "tr": "Viyana"
+      },
+      {
+        "concept_id": "hamburg",
+        "en": "Hamburg",
+        "tr": "Hamburg"
+      },
+      {
+        "concept_id": "berlin",
+        "en": "Berlin",
+        "tr": "Berlin"
+      }
+    ],
+    "correct": "munich",
+    "source": "https://en.wikipedia.org/wiki/Oktoberfest"
+  },
+  {
+    "key": "food_culture_012",
+    "category_id": "food_culture",
+    "subcategory_id": "festivals",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Diwali is widely known as the festival of what?",
+      "tr": "Divali yaygın olarak neyin bayramı olarak bilinir?"
+    },
+    "options": [
+      {
+        "concept_id": "colors",
+        "en": "Colors",
+        "tr": "Renkler"
+      },
+      {
+        "concept_id": "flowers",
+        "en": "Flowers",
+        "tr": "Çiçekler"
+      },
+      {
+        "concept_id": "kites",
+        "en": "Kites",
+        "tr": "Uçurtmalar"
+      },
+      {
+        "concept_id": "lights",
+        "en": "Lights",
+        "tr": "Işıklar"
+      }
+    ],
+    "correct": "lights",
+    "source": "https://en.wikipedia.org/wiki/Diwali"
+  },
+  {
+    "key": "food_culture_013",
+    "category_id": "food_culture",
+    "subcategory_id": "festivals",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In which Spanish festival do crowds throw tomatoes at each other?",
+      "tr": "Hangi İspanyol festivalinde kalabalıklar birbirine domates atar?"
+    },
+    "options": [
+      {
+        "concept_id": "las_fallas",
+        "en": "Las Fallas",
+        "tr": "Las Fallas"
+      },
+      {
+        "concept_id": "la_tomatina",
+        "en": "La Tomatina",
+        "tr": "La Tomatina"
+      },
+      {
+        "concept_id": "san_fermin",
+        "en": "San Fermín",
+        "tr": "San Fermín"
+      },
+      {
+        "concept_id": "feria_de_abril",
+        "en": "Feria de Abril",
+        "tr": "Feria de Abril"
+      }
+    ],
+    "correct": "la_tomatina",
+    "source": "https://en.wikipedia.org/wiki/La_Tomatina"
+  },
+  {
+    "key": "food_culture_014",
+    "category_id": "food_culture",
+    "subcategory_id": "cultural_symbols",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "The sap of which tree is boiled to make a syrup famous in Canada?",
+      "tr": "Kanada'da ünlü olan şurup hangi ağacın özsuyu kaynatılarak yapılır?"
+    },
+    "options": [
+      {
+        "concept_id": "maple",
+        "en": "Maple",
+        "tr": "Akçaağaç"
+      },
+      {
+        "concept_id": "oak",
+        "en": "Oak",
+        "tr": "Meşe"
+      },
+      {
+        "concept_id": "willow",
+        "en": "Willow",
+        "tr": "Söğüt"
+      },
+      {
+        "concept_id": "pine",
+        "en": "Pine",
+        "tr": "Çam"
+      }
+    ],
+    "correct": "maple",
+    "source": "https://en.wikipedia.org/wiki/Maple_syrup"
+  },
+  {
+    "key": "food_culture_015",
+    "category_id": "food_culture",
+    "subcategory_id": "traditions",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "The traditional tea ceremony known as chanoyu comes from which country?",
+      "tr": "Chanoyu adlı geleneksel çay seremonisi hangi ülkeye aittir?"
+    },
+    "options": [
+      {
+        "concept_id": "china",
+        "en": "China",
+        "tr": "Çin"
+      },
+      {
+        "concept_id": "sri_lanka",
+        "en": "Sri Lanka",
+        "tr": "Sri Lanka"
+      },
+      {
+        "concept_id": "japan",
+        "en": "Japan",
+        "tr": "Japonya"
+      },
+      {
+        "concept_id": "india",
+        "en": "India",
+        "tr": "Hindistan"
+      }
+    ],
+    "correct": "japan",
+    "source": "https://en.wikipedia.org/wiki/Japanese_tea_ceremony"
+  },
+  {
+    "key": "food_culture_016",
+    "category_id": "food_culture",
+    "subcategory_id": "traditions",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Cantonese dim sum is traditionally enjoyed with which drink?",
+      "tr": "Kanton usulü dim sum geleneksel olarak hangi içecekle yenir?"
+    },
+    "options": [
+      {
+        "concept_id": "tea",
+        "en": "Tea",
+        "tr": "Çay"
+      },
+      {
+        "concept_id": "lemonade",
+        "en": "Lemonade",
+        "tr": "Limonata"
+      },
+      {
+        "concept_id": "soy_milk",
+        "en": "Soy milk",
+        "tr": "Soya sütü"
+      },
+      {
+        "concept_id": "coffee",
+        "en": "Coffee",
+        "tr": "Kahve"
+      }
+    ],
+    "correct": "tea",
+    "source": "https://en.wikipedia.org/wiki/Yum_cha"
+  },
+  {
+    "key": "food_culture_017",
+    "category_id": "food_culture",
+    "subcategory_id": "traditions",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which country is known for 'fika', a social coffee break with pastries?",
+      "tr": "Hamur işleriyle yapılan sosyal kahve molası 'fika' hangi ülkeye özgüdür?"
+    },
+    "options": [
+      {
+        "concept_id": "finland",
+        "en": "Finland",
+        "tr": "Finlandiya"
+      },
+      {
+        "concept_id": "denmark",
+        "en": "Denmark",
+        "tr": "Danimarka"
+      },
+      {
+        "concept_id": "sweden",
+        "en": "Sweden",
+        "tr": "İsveç"
+      },
+      {
+        "concept_id": "norway",
+        "en": "Norway",
+        "tr": "Norveç"
+      }
+    ],
+    "correct": "sweden",
+    "source": "https://en.wikipedia.org/wiki/Fika_(Sweden)"
+  },
+  {
+    "key": "food_culture_018",
+    "category_id": "food_culture",
+    "subcategory_id": "traditions",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In which Islamic month do Muslims fast from dawn to sunset?",
+      "tr": "Müslümanlar hangi ayda şafaktan gün batımına kadar oruç tutar?"
+    },
+    "options": [
+      {
+        "concept_id": "muharram",
+        "en": "Muharram",
+        "tr": "Muharrem"
+      },
+      {
+        "concept_id": "shawwal",
+        "en": "Shawwal",
+        "tr": "Şevval"
+      },
+      {
+        "concept_id": "rajab",
+        "en": "Rajab",
+        "tr": "Recep"
+      },
+      {
+        "concept_id": "ramadan",
+        "en": "Ramadan",
+        "tr": "Ramazan"
+      }
+    ],
+    "correct": "ramadan",
+    "source": "https://en.wikipedia.org/wiki/Ramadan"
+  },
+  {
+    "key": "food_culture_019",
+    "category_id": "food_culture",
+    "subcategory_id": "ingredients",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which spice is made from the dried stigmas of a crocus flower?",
+      "tr": "Hangi baharat bir çiğdem çiçeğinin kurutulmuş tepeciklerinden elde edilir?"
+    },
+    "options": [
+      {
+        "concept_id": "saffron",
+        "en": "Saffron",
+        "tr": "Safran"
+      },
+      {
+        "concept_id": "paprika",
+        "en": "Paprika",
+        "tr": "Kırmızı toz biber"
+      },
+      {
+        "concept_id": "cardamom",
+        "en": "Cardamom",
+        "tr": "Kakule"
+      },
+      {
+        "concept_id": "turmeric",
+        "en": "Turmeric",
+        "tr": "Zerdeçal"
+      }
+    ],
+    "correct": "saffron",
+    "source": "https://en.wikipedia.org/wiki/Saffron"
+  },
+  {
+    "key": "food_culture_020",
+    "category_id": "food_culture",
+    "subcategory_id": "ingredients",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Vanilla comes from the pods of which type of plant?",
+      "tr": "Vanilya hangi tür bitkinin kapsüllerinden elde edilir?"
+    },
+    "options": [
+      {
+        "concept_id": "palm",
+        "en": "Palm",
+        "tr": "Palmiye"
+      },
+      {
+        "concept_id": "rose",
+        "en": "Rose",
+        "tr": "Gül"
+      },
+      {
+        "concept_id": "orchid",
+        "en": "Orchid",
+        "tr": "Orkide"
+      },
+      {
+        "concept_id": "lily",
+        "en": "Lily",
+        "tr": "Zambak"
+      }
+    ],
+    "correct": "orchid",
+    "source": "https://en.wikipedia.org/wiki/Vanilla"
+  },
+  {
+    "key": "food_culture_021",
+    "category_id": "food_culture",
+    "subcategory_id": "ingredients",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Marzipan is made mainly from sugar and which nut?",
+      "tr": "Badem ezmesi (marzipan) şeker ve hangi kuruyemişle yapılır?"
+    },
+    "options": [
+      {
+        "concept_id": "peanut",
+        "en": "Peanut",
+        "tr": "Yer fıstığı"
+      },
+      {
+        "concept_id": "hazelnut",
+        "en": "Hazelnut",
+        "tr": "Fındık"
+      },
+      {
+        "concept_id": "almond",
+        "en": "Almond",
+        "tr": "Badem"
+      },
+      {
+        "concept_id": "walnut",
+        "en": "Walnut",
+        "tr": "Ceviz"
+      }
+    ],
+    "correct": "almond",
+    "source": "https://en.wikipedia.org/wiki/Marzipan"
+  },
+  {
+    "key": "food_culture_022",
+    "category_id": "food_culture",
+    "subcategory_id": "dishes",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which vegetable gives borscht soup its deep red color?",
+      "tr": "Borş çorbasına koyu kırmızı rengini hangi sebze verir?"
+    },
+    "options": [
+      {
+        "concept_id": "beetroot",
+        "en": "Beetroot",
+        "tr": "Pancar"
+      },
+      {
+        "concept_id": "tomato",
+        "en": "Tomato",
+        "tr": "Domates"
+      },
+      {
+        "concept_id": "red_cabbage",
+        "en": "Red cabbage",
+        "tr": "Kırmızı lahana"
+      },
+      {
+        "concept_id": "red_pepper",
+        "en": "Red pepper",
+        "tr": "Kırmızı biber"
+      }
+    ],
+    "correct": "beetroot",
+    "source": "https://en.wikipedia.org/wiki/Borscht"
+  },
+  {
+    "key": "food_culture_023",
+    "category_id": "food_culture",
+    "subcategory_id": "dishes",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Goulash, a stew of meat and paprika, originated in which country?",
+      "tr": "Et ve kırmızı biberle yapılan gulaş hangi ülkede ortaya çıkmıştır?"
+    },
+    "options": [
+      {
+        "concept_id": "romania",
+        "en": "Romania",
+        "tr": "Romanya"
+      },
+      {
+        "concept_id": "germany",
+        "en": "Germany",
+        "tr": "Almanya"
+      },
+      {
+        "concept_id": "hungary",
+        "en": "Hungary",
+        "tr": "Macaristan"
+      },
+      {
+        "concept_id": "poland",
+        "en": "Poland",
+        "tr": "Polonya"
+      }
+    ],
+    "correct": "hungary",
+    "source": "https://en.wikipedia.org/wiki/Goulash"
+  },
+  {
+    "key": "food_culture_024",
+    "category_id": "food_culture",
+    "subcategory_id": "cuisines",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "The slow-cooked tagine is most closely associated with which country?",
+      "tr": "Ağır ateşte pişen tajin en çok hangi ülkeyle özdeşleşir?"
+    },
+    "options": [
+      {
+        "concept_id": "greece",
+        "en": "Greece",
+        "tr": "Yunanistan"
+      },
+      {
+        "concept_id": "lebanon",
+        "en": "Lebanon",
+        "tr": "Lübnan"
+      },
+      {
+        "concept_id": "morocco",
+        "en": "Morocco",
+        "tr": "Fas"
+      },
+      {
+        "concept_id": "egypt",
+        "en": "Egypt",
+        "tr": "Mısır"
+      }
+    ],
+    "correct": "morocco",
+    "source": "https://en.wikipedia.org/wiki/Tajine"
+  },
+  {
+    "key": "food_culture_025",
+    "category_id": "food_culture",
+    "subcategory_id": "cuisines",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Feijoada, a black bean stew, is often called the national dish of which country?",
+      "tr": "Siyah fasulye yahnisi feijoada hangi ülkenin ulusal yemeği sayılır?"
+    },
+    "options": [
+      {
+        "concept_id": "argentina",
+        "en": "Argentina",
+        "tr": "Arjantin"
+      },
+      {
+        "concept_id": "brazil",
+        "en": "Brazil",
+        "tr": "Brezilya"
+      },
+      {
+        "concept_id": "chile",
+        "en": "Chile",
+        "tr": "Şili"
+      },
+      {
+        "concept_id": "mexico",
+        "en": "Mexico",
+        "tr": "Meksika"
+      }
+    ],
+    "correct": "brazil",
+    "source": "https://en.wikipedia.org/wiki/Feijoada"
+  },
+  {
+    "key": "food_culture_026",
+    "category_id": "food_culture",
+    "subcategory_id": "cuisines",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Pho, a noodle soup with herbs and broth, comes from which country?",
+      "tr": "Otlar ve et suyuyla yapılan erişte çorbası pho hangi ülkeden gelir?"
+    },
+    "options": [
+      {
+        "concept_id": "thailand",
+        "en": "Thailand",
+        "tr": "Tayland"
+      },
+      {
+        "concept_id": "laos",
+        "en": "Laos",
+        "tr": "Laos"
+      },
+      {
+        "concept_id": "cambodia",
+        "en": "Cambodia",
+        "tr": "Kamboçya"
+      },
+      {
+        "concept_id": "vietnam",
+        "en": "Vietnam",
+        "tr": "Vietnam"
+      }
+    ],
+    "correct": "vietnam",
+    "source": "https://en.wikipedia.org/wiki/Pho"
+  },
+  {
+    "key": "food_culture_027",
+    "category_id": "food_culture",
+    "subcategory_id": "festivals",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Mooncakes are traditionally eaten during which Chinese festival?",
+      "tr": "Ay çörekleri geleneksel olarak hangi Çin festivalinde yenir?"
+    },
+    "options": [
+      {
+        "concept_id": "lantern_festival",
+        "en": "Lantern Festival",
+        "tr": "Fener Festivali"
+      },
+      {
+        "concept_id": "dragon_boat_festival",
+        "en": "Dragon Boat Festival",
+        "tr": "Ejderha Teknesi Festivali"
+      },
+      {
+        "concept_id": "qingming_festival",
+        "en": "Qingming Festival",
+        "tr": "Qingming Festivali"
+      },
+      {
+        "concept_id": "mid_autumn_festival",
+        "en": "Mid-Autumn Festival",
+        "tr": "Sonbahar Ortası Festivali"
+      }
+    ],
+    "correct": "mid_autumn_festival",
+    "source": "https://en.wikipedia.org/wiki/Mooncake"
+  },
+  {
+    "key": "food_culture_028",
+    "category_id": "food_culture",
+    "subcategory_id": "festivals",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Unleavened bread called matzah is eaten during which Jewish holiday?",
+      "tr": "Matza denen mayasız ekmek hangi Yahudi bayramında yenir?"
+    },
+    "options": [
+      {
+        "concept_id": "hanukkah",
+        "en": "Hanukkah",
+        "tr": "Hanuka"
+      },
+      {
+        "concept_id": "sukkot",
+        "en": "Sukkot",
+        "tr": "Sukot"
+      },
+      {
+        "concept_id": "purim",
+        "en": "Purim",
+        "tr": "Purim"
+      },
+      {
+        "concept_id": "passover",
+        "en": "Passover",
+        "tr": "Hamursuz Bayramı"
+      }
+    ],
+    "correct": "passover",
+    "source": "https://en.wikipedia.org/wiki/Matzah"
+  },
+  {
+    "key": "food_culture_029",
+    "category_id": "food_culture",
+    "subcategory_id": "cultural_symbols",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In 2022, UNESCO recognized the craft of baking which French bread?",
+      "tr": "UNESCO 2022'de hangi Fransız ekmeğinin yapım zanaatını tanıdı?"
+    },
+    "options": [
+      {
+        "concept_id": "fougasse",
+        "en": "Fougasse",
+        "tr": "Fougasse"
+      },
+      {
+        "concept_id": "croissant",
+        "en": "Croissant",
+        "tr": "Kruvasan"
+      },
+      {
+        "concept_id": "brioche",
+        "en": "Brioche",
+        "tr": "Brioş"
+      },
+      {
+        "concept_id": "baguette",
+        "en": "Baguette",
+        "tr": "Baget"
+      }
+    ],
+    "correct": "baguette",
+    "source": "https://en.wikipedia.org/wiki/Baguette"
+  },
+  {
+    "key": "food_culture_030",
+    "category_id": "food_culture",
+    "subcategory_id": "cultural_symbols",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which drink, sipped through a metal straw called a bombilla, is popular in Argentina?",
+      "tr": "Bombilla denen metal pipetle içilen, Arjantin'de popüler içecek hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "yerba_mate",
+        "en": "Yerba mate",
+        "tr": "Yerba mate"
+      },
+      {
+        "concept_id": "rooibos",
+        "en": "Rooibos",
+        "tr": "Rooibos"
+      },
+      {
+        "concept_id": "kombucha",
+        "en": "Kombucha",
+        "tr": "Kombuça"
+      },
+      {
+        "concept_id": "chai",
+        "en": "Chai",
+        "tr": "Chai"
+      }
+    ],
+    "correct": "yerba_mate",
+    "source": "https://en.wikipedia.org/wiki/Mate_(drink)"
+  },
+  {
+    "key": "food_culture_031",
+    "category_id": "food_culture",
+    "subcategory_id": "festivals",
+    "difficulty": "HARD",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which food is traditionally eaten during China's Dragon Boat Festival?",
+      "tr": "Çin'deki Ejderha Teknesi Festivali'nde geleneksel olarak hangi yiyecek yenir?"
+    },
+    "options": [
+      {
+        "concept_id": "tangyuan",
+        "en": "Tangyuan",
+        "tr": "Tangyuan"
+      },
+      {
+        "concept_id": "zongzi",
+        "en": "Zongzi",
+        "tr": "Zongzi"
+      },
+      {
+        "concept_id": "spring_rolls",
+        "en": "Spring rolls",
+        "tr": "Çin böreği"
+      },
+      {
+        "concept_id": "mooncake",
+        "en": "Mooncake",
+        "tr": "Ay çöreği"
+      }
+    ],
+    "correct": "zongzi",
+    "source": "https://en.wikipedia.org/wiki/Zongzi"
+  },
+  {
+    "key": "food_culture_032",
+    "category_id": "food_culture",
+    "subcategory_id": "dishes",
+    "difficulty": "HARD",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which Georgian dish is a boat-shaped bread filled with cheese and egg?",
+      "tr": "Hangi Gürcü yemeği peynir ve yumurtayla doldurulmuş kayık biçimli bir ekmektir?"
+    },
+    "options": [
+      {
+        "concept_id": "khachapuri",
+        "en": "Khachapuri",
+        "tr": "Haçapuri"
+      },
+      {
+        "concept_id": "churchkhela",
+        "en": "Churchkhela",
+        "tr": "Çurçhela"
+      },
+      {
+        "concept_id": "khinkali",
+        "en": "Khinkali",
+        "tr": "Hinkali"
+      },
+      {
+        "concept_id": "lobiani",
+        "en": "Lobiani",
+        "tr": "Lobiani"
+      }
+    ],
+    "correct": "khachapuri",
+    "source": "https://en.wikipedia.org/wiki/Khachapuri"
+  },
+  {
+    "key": "food_culture_033",
+    "category_id": "food_culture",
+    "subcategory_id": "dishes",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which Spanish soup, made from raw blended tomatoes, is served cold?",
+      "tr": "Çiğ domatesin ezilmesiyle yapılan hangi İspanyol çorbası soğuk servis edilir?"
+    },
+    "options": [
+      {
+        "concept_id": "gazpacho",
+        "en": "Gazpacho",
+        "tr": "Gazpaço"
+      },
+      {
+        "concept_id": "cocido",
+        "en": "Cocido",
+        "tr": "Cocido"
+      },
+      {
+        "concept_id": "pisto",
+        "en": "Pisto",
+        "tr": "Pisto"
+      },
+      {
+        "concept_id": "fabada",
+        "en": "Fabada",
+        "tr": "Fabada"
+      }
+    ],
+    "correct": "gazpacho",
+    "source": "https://en.wikipedia.org/wiki/Gazpacho"
+  },
+  {
+    "key": "food_culture_034",
+    "category_id": "food_culture",
+    "subcategory_id": "dishes",
+    "difficulty": "HARD",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "Mexico's famous mole poblano sauce notably contains which ingredient?",
+      "tr": "Meksika'nın ünlü mole poblano sosu özellikle hangi malzemeyi içerir?"
+    },
+    "options": [
+      {
+        "concept_id": "coconut",
+        "en": "Coconut",
+        "tr": "Hindistan cevizi"
+      },
+      {
+        "concept_id": "chocolate",
+        "en": "Chocolate",
+        "tr": "Çikolata"
+      },
+      {
+        "concept_id": "honey",
+        "en": "Honey",
+        "tr": "Bal"
+      },
+      {
+        "concept_id": "coffee",
+        "en": "Coffee",
+        "tr": "Kahve"
+      }
+    ],
+    "correct": "chocolate",
+    "source": "https://en.wikipedia.org/wiki/Mole_poblano"
+  },
+  {
+    "key": "food_culture_035",
+    "category_id": "food_culture",
+    "subcategory_id": "ingredients",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which spice consists of the dried flower buds of a tree?",
+      "tr": "Hangi baharat bir ağacın kurutulmuş çiçek tomurcuklarından oluşur?"
+    },
+    "options": [
+      {
+        "concept_id": "cinnamon",
+        "en": "Cinnamon",
+        "tr": "Tarçın"
+      },
+      {
+        "concept_id": "cloves",
+        "en": "Cloves",
+        "tr": "Karanfil"
+      },
+      {
+        "concept_id": "black_pepper",
+        "en": "Black pepper",
+        "tr": "Karabiber"
+      },
+      {
+        "concept_id": "nutmeg",
+        "en": "Nutmeg",
+        "tr": "Muskat"
+      }
+    ],
+    "correct": "cloves",
+    "source": "https://en.wikipedia.org/wiki/Clove"
+  },
+  {
+    "key": "food_culture_036",
+    "category_id": "food_culture",
+    "subcategory_id": "cuisines",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Injera, a spongy sourdough flatbread, is central to which country's cuisine?",
+      "tr": "Süngerimsi ekşi mayalı yassı ekmek injera hangi ülkenin mutfağının temelidir?"
+    },
+    "options": [
+      {
+        "concept_id": "kenya",
+        "en": "Kenya",
+        "tr": "Kenya"
+      },
+      {
+        "concept_id": "morocco",
+        "en": "Morocco",
+        "tr": "Fas"
+      },
+      {
+        "concept_id": "nigeria",
+        "en": "Nigeria",
+        "tr": "Nijerya"
+      },
+      {
+        "concept_id": "ethiopia",
+        "en": "Ethiopia",
+        "tr": "Etiyopya"
+      }
+    ],
+    "correct": "ethiopia",
+    "source": "https://en.wikipedia.org/wiki/Injera"
+  },
+  {
+    "key": "food_culture_037",
+    "category_id": "food_culture",
+    "subcategory_id": "cuisines",
+    "difficulty": "HARD",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "Tempura was introduced to Japan in the 16th century by traders from which country?",
+      "tr": "Tempura, 16. yüzyılda Japonya'ya hangi ülkeden gelen tüccarlarca tanıtıldı?"
+    },
+    "options": [
+      {
+        "concept_id": "portugal",
+        "en": "Portugal",
+        "tr": "Portekiz"
+      },
+      {
+        "concept_id": "netherlands",
+        "en": "Netherlands",
+        "tr": "Hollanda"
+      },
+      {
+        "concept_id": "france",
+        "en": "France",
+        "tr": "Fransa"
+      },
+      {
+        "concept_id": "england",
+        "en": "England",
+        "tr": "İngiltere"
+      }
+    ],
+    "correct": "portugal",
+    "source": "https://en.wikipedia.org/wiki/Tempura"
+  },
+  {
+    "key": "food_culture_038",
+    "category_id": "food_culture",
+    "subcategory_id": "traditions",
+    "difficulty": "HARD",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "What is the Korean tradition of making large amounts of kimchi together in late autumn?",
+      "tr": "Sonbahar sonunda toplu hâlde bol miktarda kimçi yapma Kore geleneğinin adı nedir?"
+    },
+    "options": [
+      {
+        "concept_id": "seollal",
+        "en": "Seollal",
+        "tr": "Seollal"
+      },
+      {
+        "concept_id": "chuseok",
+        "en": "Chuseok",
+        "tr": "Chuseok"
+      },
+      {
+        "concept_id": "hanbok",
+        "en": "Hanbok",
+        "tr": "Hanbok"
+      },
+      {
+        "concept_id": "kimjang",
+        "en": "Kimjang",
+        "tr": "Kimjang"
+      }
+    ],
+    "correct": "kimjang",
+    "source": "https://en.wikipedia.org/wiki/Kimjang"
+  },
+  {
+    "key": "food_culture_039",
+    "category_id": "food_culture",
+    "subcategory_id": "traditions",
+    "difficulty": "HARD",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "Traditional Turkish coffee is customarily served with a glass of what?",
+      "tr": "Geleneksel Türk kahvesinin yanında adet olarak bir bardak ne ikram edilir?"
+    },
+    "options": [
+      {
+        "concept_id": "water",
+        "en": "Water",
+        "tr": "Su"
+      },
+      {
+        "concept_id": "lemonade",
+        "en": "Lemonade",
+        "tr": "Limonata"
+      },
+      {
+        "concept_id": "fruit_juice",
+        "en": "Fruit juice",
+        "tr": "Meyve suyu"
+      },
+      {
+        "concept_id": "milk",
+        "en": "Milk",
+        "tr": "Süt"
+      }
+    ],
+    "correct": "water",
+    "source": "https://en.wikipedia.org/wiki/Turkish_coffee"
+  },
+  {
+    "key": "food_culture_040",
+    "category_id": "food_culture",
+    "subcategory_id": "cultural_symbols",
+    "difficulty": "HARD",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "UNESCO lists the art of the Neapolitan pizza maker. What is this craftsman called?",
+      "tr": "UNESCO, Napoli usulü pizza ustalığını listeledi. Bu ustaya ne ad verilir?"
+    },
+    "options": [
+      {
+        "concept_id": "panettiere",
+        "en": "Panettiere",
+        "tr": "Panettiere"
+      },
+      {
+        "concept_id": "pizzaiuolo",
+        "en": "Pizzaiuolo",
+        "tr": "Pizzaiuolo"
+      },
+      {
+        "concept_id": "gelataio",
+        "en": "Gelataio",
+        "tr": "Gelataio"
+      },
+      {
+        "concept_id": "barista",
+        "en": "Barista",
+        "tr": "Barista"
+      }
+    ],
+    "correct": "pizzaiuolo",
+    "source": "https://en.wikipedia.org/wiki/Art_of_Neapolitan_%27Pizzaiuolo%27"
+  }
+]

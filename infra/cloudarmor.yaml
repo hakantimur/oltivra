@@ -1,0 +1,39 @@
+# Cloud Armor baseline for the external HTTPS load balancer in front of Cloud Run (spec §28.3 layer 1).
+# Apply: gcloud compute security-policies import oltivra-edge --source infra/cloudarmor.yaml
+name: oltivra-edge
+description: Oltivra mobile API edge policy
+type: CLOUD_ARMOR
+rules:
+  - priority: 1000
+    description: Per-IP volumetric limit on the mobile API
+    match:
+      versionedExpr: SRC_IPS_V1
+      config: { srcIpRanges: ["*"] }
+    action: throttle
+    rateLimitOptions:
+      conformAction: allow
+      exceedAction: deny(429)
+      enforceOnKey: IP
+      rateLimitThreshold: { count: 600, intervalSec: 60 }
+  - priority: 1100
+    description: Block direct access to internal routes from the internet
+    match:
+      expr: { expression: "request.path.startsWith('/internal/')" }
+    action: deny(403)
+  - priority: 1200
+    description: OWASP preconfigured SQLi/XSS/LFI signatures
+    match:
+      expr:
+        expression: "evaluatePreconfiguredWaf('sqli-v33-stable') || evaluatePreconfiguredWaf('xss-v33-stable') || evaluatePreconfiguredWaf('lfi-v33-stable')"
+    action: deny(403)
+  - priority: 1300
+    description: Reject oversized bodies (API payloads are small)
+    match:
+      expr: { expression: "int(request.headers['content-length']) > 65536" }
+    action: deny(413)
+  - priority: 2147483647
+    description: default allow
+    match:
+      versionedExpr: SRC_IPS_V1
+      config: { srcIpRanges: ["*"] }
+    action: allow

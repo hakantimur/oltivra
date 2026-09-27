@@ -1,0 +1,1442 @@
+[
+  {
+    "key": "sports_001",
+    "category_id": "sports",
+    "subcategory_id": "olympics",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "How many rings are on the Olympic flag?",
+      "tr": "Olimpiyat bayrağında kaç halka vardır?"
+    },
+    "options": [
+      {
+        "concept_id": "four",
+        "en": "Four",
+        "tr": "Dört"
+      },
+      {
+        "concept_id": "five",
+        "en": "Five",
+        "tr": "Beş"
+      },
+      {
+        "concept_id": "six",
+        "en": "Six",
+        "tr": "Altı"
+      },
+      {
+        "concept_id": "seven",
+        "en": "Seven",
+        "tr": "Yedi"
+      }
+    ],
+    "correct": "five",
+    "source": "https://en.wikipedia.org/wiki/Olympic_symbols"
+  },
+  {
+    "key": "sports_002",
+    "category_id": "sports",
+    "subcategory_id": "world_cup",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which country won the 1998 FIFA World Cup?",
+      "tr": "1998 FIFA Dünya Kupası'nı hangi ülke kazandı?"
+    },
+    "options": [
+      {
+        "concept_id": "france",
+        "en": "France",
+        "tr": "Fransa"
+      },
+      {
+        "concept_id": "brazil",
+        "en": "Brazil",
+        "tr": "Brezilya"
+      },
+      {
+        "concept_id": "italy",
+        "en": "Italy",
+        "tr": "İtalya"
+      },
+      {
+        "concept_id": "germany",
+        "en": "Germany",
+        "tr": "Almanya"
+      }
+    ],
+    "correct": "france",
+    "source": "https://en.wikipedia.org/wiki/1998_FIFA_World_Cup"
+  },
+  {
+    "key": "sports_003",
+    "category_id": "sports",
+    "subcategory_id": "basketball",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "How many players from each team are on the court at once in basketball?",
+      "tr": "Basketbolda sahada aynı anda her takımdan kaç oyuncu bulunur?"
+    },
+    "options": [
+      {
+        "concept_id": "four",
+        "en": "Four",
+        "tr": "Dört"
+      },
+      {
+        "concept_id": "five",
+        "en": "Five",
+        "tr": "Beş"
+      },
+      {
+        "concept_id": "six",
+        "en": "Six",
+        "tr": "Altı"
+      },
+      {
+        "concept_id": "seven",
+        "en": "Seven",
+        "tr": "Yedi"
+      }
+    ],
+    "correct": "five",
+    "source": "https://en.wikipedia.org/wiki/Basketball"
+  },
+  {
+    "key": "sports_004",
+    "category_id": "sports",
+    "subcategory_id": "tennis",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "On which surface is Wimbledon played?",
+      "tr": "Wimbledon hangi zemin üzerinde oynanır?"
+    },
+    "options": [
+      {
+        "concept_id": "clay",
+        "en": "Clay",
+        "tr": "Toprak"
+      },
+      {
+        "concept_id": "hard_court",
+        "en": "Hard court",
+        "tr": "Sert kort"
+      },
+      {
+        "concept_id": "grass",
+        "en": "Grass",
+        "tr": "Çim"
+      },
+      {
+        "concept_id": "carpet",
+        "en": "Carpet",
+        "tr": "Halı"
+      }
+    ],
+    "correct": "grass",
+    "source": "https://en.wikipedia.org/wiki/The_Championships,_Wimbledon"
+  },
+  {
+    "key": "sports_005",
+    "category_id": "sports",
+    "subcategory_id": "football",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "How many players does each team have on the field in a football (soccer) match?",
+      "tr": "Bir futbol maçında her takımın sahada kaç oyuncusu bulunur?"
+    },
+    "options": [
+      {
+        "concept_id": "nine",
+        "en": "Nine",
+        "tr": "Dokuz"
+      },
+      {
+        "concept_id": "ten",
+        "en": "Ten",
+        "tr": "On"
+      },
+      {
+        "concept_id": "eleven",
+        "en": "Eleven",
+        "tr": "On bir"
+      },
+      {
+        "concept_id": "twelve",
+        "en": "Twelve",
+        "tr": "On iki"
+      }
+    ],
+    "correct": "eleven",
+    "source": "https://en.wikipedia.org/wiki/Association_football"
+  },
+  {
+    "key": "sports_006",
+    "category_id": "sports",
+    "subcategory_id": "formula_1",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which flag is waved as the winner crosses the finish line in Formula 1?",
+      "tr": "Formula 1'de kazanan bitiş çizgisini geçerken hangi bayrak sallanır?"
+    },
+    "options": [
+      {
+        "concept_id": "chequered",
+        "en": "Chequered flag",
+        "tr": "Damalı bayrak"
+      },
+      {
+        "concept_id": "red",
+        "en": "Red flag",
+        "tr": "Kırmızı bayrak"
+      },
+      {
+        "concept_id": "yellow",
+        "en": "Yellow flag",
+        "tr": "Sarı bayrak"
+      },
+      {
+        "concept_id": "blue",
+        "en": "Blue flag",
+        "tr": "Mavi bayrak"
+      }
+    ],
+    "correct": "chequered",
+    "source": "https://en.wikipedia.org/wiki/Racing_flags"
+  },
+  {
+    "key": "sports_007",
+    "category_id": "sports",
+    "subcategory_id": "athletics",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "What is the official distance of a marathon?",
+      "tr": "Maratonun resmi mesafesi nedir?"
+    },
+    "options": [
+      {
+        "concept_id": "km_40",
+        "en": "40 km",
+        "tr": "40 km"
+      },
+      {
+        "concept_id": "km_21_1",
+        "en": "21.1 km",
+        "tr": "21,1 km"
+      },
+      {
+        "concept_id": "km_50",
+        "en": "50 km",
+        "tr": "50 km"
+      },
+      {
+        "concept_id": "km_42_195",
+        "en": "42.195 km",
+        "tr": "42,195 km"
+      }
+    ],
+    "correct": "km_42_195",
+    "source": "https://en.wikipedia.org/wiki/Marathon"
+  },
+  {
+    "key": "sports_008",
+    "category_id": "sports",
+    "subcategory_id": "world_cup",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which country hosted the 2014 FIFA World Cup?",
+      "tr": "2014 FIFA Dünya Kupası'na hangi ülke ev sahipliği yaptı?"
+    },
+    "options": [
+      {
+        "concept_id": "south_africa",
+        "en": "South Africa",
+        "tr": "Güney Afrika"
+      },
+      {
+        "concept_id": "russia",
+        "en": "Russia",
+        "tr": "Rusya"
+      },
+      {
+        "concept_id": "brazil",
+        "en": "Brazil",
+        "tr": "Brezilya"
+      },
+      {
+        "concept_id": "germany",
+        "en": "Germany",
+        "tr": "Almanya"
+      }
+    ],
+    "correct": "brazil",
+    "source": "https://en.wikipedia.org/wiki/2014_FIFA_World_Cup"
+  },
+  {
+    "key": "sports_009",
+    "category_id": "sports",
+    "subcategory_id": "olympics",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which city hosted the 2008 Summer Olympics?",
+      "tr": "2008 Yaz Olimpiyatları hangi şehirde yapıldı?"
+    },
+    "options": [
+      {
+        "concept_id": "athens",
+        "en": "Athens",
+        "tr": "Atina"
+      },
+      {
+        "concept_id": "beijing",
+        "en": "Beijing",
+        "tr": "Pekin"
+      },
+      {
+        "concept_id": "london",
+        "en": "London",
+        "tr": "Londra"
+      },
+      {
+        "concept_id": "sydney",
+        "en": "Sydney",
+        "tr": "Sidney"
+      }
+    ],
+    "correct": "beijing",
+    "source": "https://en.wikipedia.org/wiki/2008_Summer_Olympics"
+  },
+  {
+    "key": "sports_010",
+    "category_id": "sports",
+    "subcategory_id": "basketball",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Michael Jordan won six NBA titles with which team?",
+      "tr": "Michael Jordan altı NBA şampiyonluğunu hangi takımla kazandı?"
+    },
+    "options": [
+      {
+        "concept_id": "chicago_bulls",
+        "en": "Chicago Bulls",
+        "tr": "Chicago Bulls"
+      },
+      {
+        "concept_id": "la_lakers",
+        "en": "Los Angeles Lakers",
+        "tr": "Los Angeles Lakers"
+      },
+      {
+        "concept_id": "boston_celtics",
+        "en": "Boston Celtics",
+        "tr": "Boston Celtics"
+      },
+      {
+        "concept_id": "miami_heat",
+        "en": "Miami Heat",
+        "tr": "Miami Heat"
+      }
+    ],
+    "correct": "chicago_bulls",
+    "source": "https://en.wikipedia.org/wiki/Michael_Jordan"
+  },
+  {
+    "key": "sports_011",
+    "category_id": "sports",
+    "subcategory_id": "tennis",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In tennis, what word is used for a score of zero?",
+      "tr": "Teniste sıfır skoru için hangi kelime kullanılır?"
+    },
+    "options": [
+      {
+        "concept_id": "nil",
+        "en": "Nil",
+        "tr": "Nil"
+      },
+      {
+        "concept_id": "duck",
+        "en": "Duck",
+        "tr": "Duck"
+      },
+      {
+        "concept_id": "deuce",
+        "en": "Deuce",
+        "tr": "Deuce"
+      },
+      {
+        "concept_id": "love",
+        "en": "Love",
+        "tr": "Love"
+      }
+    ],
+    "correct": "love",
+    "source": "https://en.wikipedia.org/wiki/Tennis_scoring_system"
+  },
+  {
+    "key": "sports_012",
+    "category_id": "sports",
+    "subcategory_id": "football",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which country does Lionel Messi represent in international football?",
+      "tr": "Lionel Messi uluslararası futbolda hangi ülkeyi temsil eder?"
+    },
+    "options": [
+      {
+        "concept_id": "spain",
+        "en": "Spain",
+        "tr": "İspanya"
+      },
+      {
+        "concept_id": "uruguay",
+        "en": "Uruguay",
+        "tr": "Uruguay"
+      },
+      {
+        "concept_id": "argentina",
+        "en": "Argentina",
+        "tr": "Arjantin"
+      },
+      {
+        "concept_id": "portugal",
+        "en": "Portugal",
+        "tr": "Portekiz"
+      }
+    ],
+    "correct": "argentina",
+    "source": "https://en.wikipedia.org/wiki/Lionel_Messi"
+  },
+  {
+    "key": "sports_013",
+    "category_id": "sports",
+    "subcategory_id": "athletics",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which country is sprinter Usain Bolt from?",
+      "tr": "Sprinter Usain Bolt hangi ülkelidir?"
+    },
+    "options": [
+      {
+        "concept_id": "usa",
+        "en": "United States",
+        "tr": "ABD"
+      },
+      {
+        "concept_id": "jamaica",
+        "en": "Jamaica",
+        "tr": "Jamaika"
+      },
+      {
+        "concept_id": "trinidad",
+        "en": "Trinidad and Tobago",
+        "tr": "Trinidad ve Tobago"
+      },
+      {
+        "concept_id": "kenya",
+        "en": "Kenya",
+        "tr": "Kenya"
+      }
+    ],
+    "correct": "jamaica",
+    "source": "https://en.wikipedia.org/wiki/Usain_Bolt"
+  },
+  {
+    "key": "sports_014",
+    "category_id": "sports",
+    "subcategory_id": "international_competitions",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "The Tour de France is a famous race in which sport?",
+      "tr": "Fransa Bisiklet Turu (Tour de France) hangi sporda ünlü bir yarıştır?"
+    },
+    "options": [
+      {
+        "concept_id": "cycling",
+        "en": "Cycling",
+        "tr": "Bisiklet"
+      },
+      {
+        "concept_id": "motor_racing",
+        "en": "Motor racing",
+        "tr": "Motor sporları"
+      },
+      {
+        "concept_id": "running",
+        "en": "Running",
+        "tr": "Koşu"
+      },
+      {
+        "concept_id": "sailing",
+        "en": "Sailing",
+        "tr": "Yelken"
+      }
+    ],
+    "correct": "cycling",
+    "source": "https://en.wikipedia.org/wiki/Tour_de_France"
+  },
+  {
+    "key": "sports_015",
+    "category_id": "sports",
+    "subcategory_id": "world_cup",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which country won the 2010 FIFA World Cup?",
+      "tr": "2010 FIFA Dünya Kupası'nı hangi ülke kazandı?"
+    },
+    "options": [
+      {
+        "concept_id": "netherlands",
+        "en": "Netherlands",
+        "tr": "Hollanda"
+      },
+      {
+        "concept_id": "germany",
+        "en": "Germany",
+        "tr": "Almanya"
+      },
+      {
+        "concept_id": "italy",
+        "en": "Italy",
+        "tr": "İtalya"
+      },
+      {
+        "concept_id": "spain",
+        "en": "Spain",
+        "tr": "İspanya"
+      }
+    ],
+    "correct": "spain",
+    "source": "https://en.wikipedia.org/wiki/2010_FIFA_World_Cup"
+  },
+  {
+    "key": "sports_016",
+    "category_id": "sports",
+    "subcategory_id": "world_cup",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which country hosted the first FIFA World Cup in 1930?",
+      "tr": "1930'daki ilk FIFA Dünya Kupası'na hangi ülke ev sahipliği yaptı?"
+    },
+    "options": [
+      {
+        "concept_id": "brazil",
+        "en": "Brazil",
+        "tr": "Brezilya"
+      },
+      {
+        "concept_id": "italy",
+        "en": "Italy",
+        "tr": "İtalya"
+      },
+      {
+        "concept_id": "uruguay",
+        "en": "Uruguay",
+        "tr": "Uruguay"
+      },
+      {
+        "concept_id": "england",
+        "en": "England",
+        "tr": "İngiltere"
+      }
+    ],
+    "correct": "uruguay",
+    "source": "https://en.wikipedia.org/wiki/1930_FIFA_World_Cup"
+  },
+  {
+    "key": "sports_017",
+    "category_id": "sports",
+    "subcategory_id": "world_cup",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "How many FIFA World Cups did Pelé win as a player?",
+      "tr": "Pelé oyuncu olarak kaç FIFA Dünya Kupası kazandı?"
+    },
+    "options": [
+      {
+        "concept_id": "one",
+        "en": "One",
+        "tr": "Bir"
+      },
+      {
+        "concept_id": "two",
+        "en": "Two",
+        "tr": "İki"
+      },
+      {
+        "concept_id": "three",
+        "en": "Three",
+        "tr": "Üç"
+      },
+      {
+        "concept_id": "four",
+        "en": "Four",
+        "tr": "Dört"
+      }
+    ],
+    "correct": "three",
+    "source": "https://en.wikipedia.org/wiki/Pel%C3%A9"
+  },
+  {
+    "key": "sports_018",
+    "category_id": "sports",
+    "subcategory_id": "world_cup",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who scored the famous \"Hand of God\" goal at the 1986 World Cup?",
+      "tr": "1986 Dünya Kupası'ndaki ünlü \"Tanrı'nın Eli\" golünü kim attı?"
+    },
+    "options": [
+      {
+        "concept_id": "maradona",
+        "en": "Diego Maradona",
+        "tr": "Diego Maradona"
+      },
+      {
+        "concept_id": "pele",
+        "en": "Pelé",
+        "tr": "Pelé"
+      },
+      {
+        "concept_id": "zico",
+        "en": "Zico",
+        "tr": "Zico"
+      },
+      {
+        "concept_id": "platini",
+        "en": "Michel Platini",
+        "tr": "Michel Platini"
+      }
+    ],
+    "correct": "maradona",
+    "source": "https://en.wikipedia.org/wiki/Argentina_v_England_(1986_FIFA_World_Cup)"
+  },
+  {
+    "key": "sports_019",
+    "category_id": "sports",
+    "subcategory_id": "olympics",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which city hosted the first modern Olympic Games in 1896?",
+      "tr": "1896'daki ilk modern Olimpiyat Oyunları hangi şehirde yapıldı?"
+    },
+    "options": [
+      {
+        "concept_id": "paris",
+        "en": "Paris",
+        "tr": "Paris"
+      },
+      {
+        "concept_id": "london",
+        "en": "London",
+        "tr": "Londra"
+      },
+      {
+        "concept_id": "rome",
+        "en": "Rome",
+        "tr": "Roma"
+      },
+      {
+        "concept_id": "athens",
+        "en": "Athens",
+        "tr": "Atina"
+      }
+    ],
+    "correct": "athens",
+    "source": "https://en.wikipedia.org/wiki/1896_Summer_Olympics"
+  },
+  {
+    "key": "sports_020",
+    "category_id": "sports",
+    "subcategory_id": "olympics",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which swimmer won eight gold medals at the 2008 Beijing Olympics?",
+      "tr": "2008 Pekin Olimpiyatları'nda sekiz altın madalya kazanan yüzücü kimdir?"
+    },
+    "options": [
+      {
+        "concept_id": "thorpe",
+        "en": "Ian Thorpe",
+        "tr": "Ian Thorpe"
+      },
+      {
+        "concept_id": "spitz",
+        "en": "Mark Spitz",
+        "tr": "Mark Spitz"
+      },
+      {
+        "concept_id": "phelps",
+        "en": "Michael Phelps",
+        "tr": "Michael Phelps"
+      },
+      {
+        "concept_id": "lochte",
+        "en": "Ryan Lochte",
+        "tr": "Ryan Lochte"
+      }
+    ],
+    "correct": "phelps",
+    "source": "https://en.wikipedia.org/wiki/Michael_Phelps"
+  },
+  {
+    "key": "sports_021",
+    "category_id": "sports",
+    "subcategory_id": "olympics",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which city hosted the 2018 Winter Olympics?",
+      "tr": "2018 Kış Olimpiyatları hangi şehirde yapıldı?"
+    },
+    "options": [
+      {
+        "concept_id": "sochi",
+        "en": "Sochi",
+        "tr": "Soçi"
+      },
+      {
+        "concept_id": "pyeongchang",
+        "en": "PyeongChang",
+        "tr": "Pyeongchang"
+      },
+      {
+        "concept_id": "vancouver",
+        "en": "Vancouver",
+        "tr": "Vancouver"
+      },
+      {
+        "concept_id": "beijing",
+        "en": "Beijing",
+        "tr": "Pekin"
+      }
+    ],
+    "correct": "pyeongchang",
+    "source": "https://en.wikipedia.org/wiki/2018_Winter_Olympics"
+  },
+  {
+    "key": "sports_022",
+    "category_id": "sports",
+    "subcategory_id": "basketball",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Kobe Bryant spent his entire NBA career with which team?",
+      "tr": "Kobe Bryant tüm NBA kariyerini hangi takımda geçirdi?"
+    },
+    "options": [
+      {
+        "concept_id": "la_lakers",
+        "en": "Los Angeles Lakers",
+        "tr": "Los Angeles Lakers"
+      },
+      {
+        "concept_id": "chicago_bulls",
+        "en": "Chicago Bulls",
+        "tr": "Chicago Bulls"
+      },
+      {
+        "concept_id": "gs_warriors",
+        "en": "Golden State Warriors",
+        "tr": "Golden State Warriors"
+      },
+      {
+        "concept_id": "boston_celtics",
+        "en": "Boston Celtics",
+        "tr": "Boston Celtics"
+      }
+    ],
+    "correct": "la_lakers",
+    "source": "https://en.wikipedia.org/wiki/Kobe_Bryant"
+  },
+  {
+    "key": "sports_023",
+    "category_id": "sports",
+    "subcategory_id": "basketball",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "How many minutes long is one quarter in an NBA game?",
+      "tr": "Bir NBA maçında bir çeyrek kaç dakika sürer?"
+    },
+    "options": [
+      {
+        "concept_id": "ten",
+        "en": "10 minutes",
+        "tr": "10 dakika"
+      },
+      {
+        "concept_id": "fifteen",
+        "en": "15 minutes",
+        "tr": "15 dakika"
+      },
+      {
+        "concept_id": "twenty",
+        "en": "20 minutes",
+        "tr": "20 dakika"
+      },
+      {
+        "concept_id": "twelve",
+        "en": "12 minutes",
+        "tr": "12 dakika"
+      }
+    ],
+    "correct": "twelve",
+    "source": "https://en.wikipedia.org/wiki/National_Basketball_Association"
+  },
+  {
+    "key": "sports_024",
+    "category_id": "sports",
+    "subcategory_id": "tennis",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which Grand Slam tournament is played on clay courts?",
+      "tr": "Hangi Grand Slam turnuvası toprak kortta oynanır?"
+    },
+    "options": [
+      {
+        "concept_id": "wimbledon",
+        "en": "Wimbledon",
+        "tr": "Wimbledon"
+      },
+      {
+        "concept_id": "us_open",
+        "en": "US Open",
+        "tr": "ABD Açık"
+      },
+      {
+        "concept_id": "french_open",
+        "en": "French Open",
+        "tr": "Fransa Açık"
+      },
+      {
+        "concept_id": "australian_open",
+        "en": "Australian Open",
+        "tr": "Avustralya Açık"
+      }
+    ],
+    "correct": "french_open",
+    "source": "https://en.wikipedia.org/wiki/French_Open"
+  },
+  {
+    "key": "sports_025",
+    "category_id": "sports",
+    "subcategory_id": "formula_1",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which Formula 1 team uses a prancing horse as its emblem?",
+      "tr": "Hangi Formula 1 takımı amblem olarak şaha kalkmış bir at kullanır?"
+    },
+    "options": [
+      {
+        "concept_id": "mclaren",
+        "en": "McLaren",
+        "tr": "McLaren"
+      },
+      {
+        "concept_id": "ferrari",
+        "en": "Ferrari",
+        "tr": "Ferrari"
+      },
+      {
+        "concept_id": "williams",
+        "en": "Williams",
+        "tr": "Williams"
+      },
+      {
+        "concept_id": "mercedes",
+        "en": "Mercedes",
+        "tr": "Mercedes"
+      }
+    ],
+    "correct": "ferrari",
+    "source": "https://en.wikipedia.org/wiki/Scuderia_Ferrari"
+  },
+  {
+    "key": "sports_026",
+    "category_id": "sports",
+    "subcategory_id": "formula_1",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which country was F1 legend Ayrton Senna from?",
+      "tr": "F1 efsanesi Ayrton Senna hangi ülkeliydi?"
+    },
+    "options": [
+      {
+        "concept_id": "brazil",
+        "en": "Brazil",
+        "tr": "Brezilya"
+      },
+      {
+        "concept_id": "argentina",
+        "en": "Argentina",
+        "tr": "Arjantin"
+      },
+      {
+        "concept_id": "portugal",
+        "en": "Portugal",
+        "tr": "Portekiz"
+      },
+      {
+        "concept_id": "spain",
+        "en": "Spain",
+        "tr": "İspanya"
+      }
+    ],
+    "correct": "brazil",
+    "source": "https://en.wikipedia.org/wiki/Ayrton_Senna"
+  },
+  {
+    "key": "sports_027",
+    "category_id": "sports",
+    "subcategory_id": "formula_1",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who was the first driver to win seven Formula 1 world titles?",
+      "tr": "Yedi Formula 1 dünya şampiyonluğu kazanan ilk pilot kimdir?"
+    },
+    "options": [
+      {
+        "concept_id": "hamilton",
+        "en": "Lewis Hamilton",
+        "tr": "Lewis Hamilton"
+      },
+      {
+        "concept_id": "fangio",
+        "en": "Juan Manuel Fangio",
+        "tr": "Juan Manuel Fangio"
+      },
+      {
+        "concept_id": "prost",
+        "en": "Alain Prost",
+        "tr": "Alain Prost"
+      },
+      {
+        "concept_id": "schumacher",
+        "en": "Michael Schumacher",
+        "tr": "Michael Schumacher"
+      }
+    ],
+    "correct": "schumacher",
+    "source": "https://en.wikipedia.org/wiki/Michael_Schumacher"
+  },
+  {
+    "key": "sports_028",
+    "category_id": "sports",
+    "subcategory_id": "athletics",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "How many events make up the heptathlon?",
+      "tr": "Heptatlon kaç yarıştan oluşur?"
+    },
+    "options": [
+      {
+        "concept_id": "five",
+        "en": "Five",
+        "tr": "Beş"
+      },
+      {
+        "concept_id": "six",
+        "en": "Six",
+        "tr": "Altı"
+      },
+      {
+        "concept_id": "seven",
+        "en": "Seven",
+        "tr": "Yedi"
+      },
+      {
+        "concept_id": "ten",
+        "en": "Ten",
+        "tr": "On"
+      }
+    ],
+    "correct": "seven",
+    "source": "https://en.wikipedia.org/wiki/Heptathlon"
+  },
+  {
+    "key": "sports_029",
+    "category_id": "sports",
+    "subcategory_id": "football",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which club plays its home matches at the Camp Nou?",
+      "tr": "Hangi kulüp iç saha maçlarını Camp Nou'da oynar?"
+    },
+    "options": [
+      {
+        "concept_id": "real_madrid",
+        "en": "Real Madrid",
+        "tr": "Real Madrid"
+      },
+      {
+        "concept_id": "barcelona",
+        "en": "FC Barcelona",
+        "tr": "FC Barcelona"
+      },
+      {
+        "concept_id": "atletico",
+        "en": "Atlético Madrid",
+        "tr": "Atlético Madrid"
+      },
+      {
+        "concept_id": "valencia",
+        "en": "Valencia",
+        "tr": "Valencia"
+      }
+    ],
+    "correct": "barcelona",
+    "source": "https://en.wikipedia.org/wiki/Camp_Nou"
+  },
+  {
+    "key": "sports_030",
+    "category_id": "sports",
+    "subcategory_id": "football",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which English club is nicknamed \"The Red Devils\"?",
+      "tr": "Hangi İngiliz kulübünün lakabı \"Kırmızı Şeytanlar\"dır?"
+    },
+    "options": [
+      {
+        "concept_id": "man_utd",
+        "en": "Manchester United",
+        "tr": "Manchester United"
+      },
+      {
+        "concept_id": "liverpool",
+        "en": "Liverpool",
+        "tr": "Liverpool"
+      },
+      {
+        "concept_id": "arsenal",
+        "en": "Arsenal",
+        "tr": "Arsenal"
+      },
+      {
+        "concept_id": "chelsea",
+        "en": "Chelsea",
+        "tr": "Chelsea"
+      }
+    ],
+    "correct": "man_utd",
+    "source": "https://en.wikipedia.org/wiki/Manchester_United_F.C."
+  },
+  {
+    "key": "sports_031",
+    "category_id": "sports",
+    "subcategory_id": "world_cup",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who scored a hat-trick in the 1966 World Cup final?",
+      "tr": "1966 Dünya Kupası finalinde hat-trick yapan oyuncu kimdir?"
+    },
+    "options": [
+      {
+        "concept_id": "charlton",
+        "en": "Bobby Charlton",
+        "tr": "Bobby Charlton"
+      },
+      {
+        "concept_id": "eusebio",
+        "en": "Eusébio",
+        "tr": "Eusébio"
+      },
+      {
+        "concept_id": "beckenbauer",
+        "en": "Franz Beckenbauer",
+        "tr": "Franz Beckenbauer"
+      },
+      {
+        "concept_id": "hurst",
+        "en": "Geoff Hurst",
+        "tr": "Geoff Hurst"
+      }
+    ],
+    "correct": "hurst",
+    "source": "https://en.wikipedia.org/wiki/1966_FIFA_World_Cup_final"
+  },
+  {
+    "key": "sports_032",
+    "category_id": "sports",
+    "subcategory_id": "olympics",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "At which Olympics did Nadia Comăneci score gymnastics' first perfect 10?",
+      "tr": "Nadia Comăneci jimnastiğin ilk kusursuz 10'unu hangi olimpiyatta aldı?"
+    },
+    "options": [
+      {
+        "concept_id": "munich_1972",
+        "en": "Munich 1972",
+        "tr": "Münih 1972"
+      },
+      {
+        "concept_id": "moscow_1980",
+        "en": "Moscow 1980",
+        "tr": "Moskova 1980"
+      },
+      {
+        "concept_id": "montreal_1976",
+        "en": "Montreal 1976",
+        "tr": "Montreal 1976"
+      },
+      {
+        "concept_id": "mexico_1968",
+        "en": "Mexico City 1968",
+        "tr": "Meksiko 1968"
+      }
+    ],
+    "correct": "montreal_1976",
+    "source": "https://en.wikipedia.org/wiki/Nadia_Com%C4%83neci"
+  },
+  {
+    "key": "sports_033",
+    "category_id": "sports",
+    "subcategory_id": "tennis",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which player won the tennis \"Golden Slam\" in 1988?",
+      "tr": "1988'de teniste \"Altın Slam\"i kazanan oyuncu kimdir?"
+    },
+    "options": [
+      {
+        "concept_id": "navratilova",
+        "en": "Martina Navratilova",
+        "tr": "Martina Navratilova"
+      },
+      {
+        "concept_id": "graf",
+        "en": "Steffi Graf",
+        "tr": "Steffi Graf"
+      },
+      {
+        "concept_id": "evert",
+        "en": "Chris Evert",
+        "tr": "Chris Evert"
+      },
+      {
+        "concept_id": "seles",
+        "en": "Monica Seles",
+        "tr": "Monica Seles"
+      }
+    ],
+    "correct": "graf",
+    "source": "https://en.wikipedia.org/wiki/Steffi_Graf"
+  },
+  {
+    "key": "sports_034",
+    "category_id": "sports",
+    "subcategory_id": "formula_1",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In which year was the first Formula 1 World Championship season held?",
+      "tr": "İlk Formula 1 Dünya Şampiyonası sezonu hangi yıl düzenlendi?"
+    },
+    "options": [
+      {
+        "concept_id": "y1946",
+        "en": "1946",
+        "tr": "1946"
+      },
+      {
+        "concept_id": "y1950",
+        "en": "1950",
+        "tr": "1950"
+      },
+      {
+        "concept_id": "y1955",
+        "en": "1955",
+        "tr": "1955"
+      },
+      {
+        "concept_id": "y1960",
+        "en": "1960",
+        "tr": "1960"
+      }
+    ],
+    "correct": "y1950",
+    "source": "https://en.wikipedia.org/wiki/1950_Formula_One_season"
+  },
+  {
+    "key": "sports_035",
+    "category_id": "sports",
+    "subcategory_id": "athletics",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "At which Olympics did Bob Beamon make his famous long jump?",
+      "tr": "Bob Beamon ünlü uzun atlayışını hangi olimpiyatta yaptı?"
+    },
+    "options": [
+      {
+        "concept_id": "tokyo_1964",
+        "en": "Tokyo 1964",
+        "tr": "Tokyo 1964"
+      },
+      {
+        "concept_id": "munich_1972",
+        "en": "Munich 1972",
+        "tr": "Münih 1972"
+      },
+      {
+        "concept_id": "rome_1960",
+        "en": "Rome 1960",
+        "tr": "Roma 1960"
+      },
+      {
+        "concept_id": "mexico_1968",
+        "en": "Mexico City 1968",
+        "tr": "Meksiko 1968"
+      }
+    ],
+    "correct": "mexico_1968",
+    "source": "https://en.wikipedia.org/wiki/Bob_Beamon"
+  },
+  {
+    "key": "sports_036",
+    "category_id": "sports",
+    "subcategory_id": "athletics",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "How many hurdles are there in the men's 110 metres hurdles?",
+      "tr": "Erkekler 110 metre engelli koşusunda kaç engel vardır?"
+    },
+    "options": [
+      {
+        "concept_id": "eight",
+        "en": "8",
+        "tr": "8"
+      },
+      {
+        "concept_id": "twelve",
+        "en": "12",
+        "tr": "12"
+      },
+      {
+        "concept_id": "ten",
+        "en": "10",
+        "tr": "10"
+      },
+      {
+        "concept_id": "eleven",
+        "en": "11",
+        "tr": "11"
+      }
+    ],
+    "correct": "ten",
+    "source": "https://en.wikipedia.org/wiki/110_metres_hurdles"
+  },
+  {
+    "key": "sports_037",
+    "category_id": "sports",
+    "subcategory_id": "basketball",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "How many points did Wilt Chamberlain score in one NBA game in 1962?",
+      "tr": "Wilt Chamberlain 1962'de tek bir NBA maçında kaç sayı attı?"
+    },
+    "options": [
+      {
+        "concept_id": "p81",
+        "en": "81",
+        "tr": "81"
+      },
+      {
+        "concept_id": "p100",
+        "en": "100",
+        "tr": "100"
+      },
+      {
+        "concept_id": "p73",
+        "en": "73",
+        "tr": "73"
+      },
+      {
+        "concept_id": "p92",
+        "en": "92",
+        "tr": "92"
+      }
+    ],
+    "correct": "p100",
+    "source": "https://en.wikipedia.org/wiki/Wilt_Chamberlain%27s_100-point_game"
+  },
+  {
+    "key": "sports_038",
+    "category_id": "sports",
+    "subcategory_id": "football",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which club won the first European Cup in 1956?",
+      "tr": "1956'daki ilk Avrupa Kupası'nı hangi kulüp kazandı?"
+    },
+    "options": [
+      {
+        "concept_id": "real_madrid",
+        "en": "Real Madrid",
+        "tr": "Real Madrid"
+      },
+      {
+        "concept_id": "benfica",
+        "en": "Benfica",
+        "tr": "Benfica"
+      },
+      {
+        "concept_id": "ac_milan",
+        "en": "AC Milan",
+        "tr": "AC Milan"
+      },
+      {
+        "concept_id": "reims",
+        "en": "Stade de Reims",
+        "tr": "Stade de Reims"
+      }
+    ],
+    "correct": "real_madrid",
+    "source": "https://en.wikipedia.org/wiki/1956_European_Cup_final"
+  },
+  {
+    "key": "sports_039",
+    "category_id": "sports",
+    "subcategory_id": "international_competitions",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which team won the first Cricket World Cup in 1975?",
+      "tr": "1975'teki ilk Kriket Dünya Kupası'nı hangi takım kazandı?"
+    },
+    "options": [
+      {
+        "concept_id": "australia",
+        "en": "Australia",
+        "tr": "Avustralya"
+      },
+      {
+        "concept_id": "england",
+        "en": "England",
+        "tr": "İngiltere"
+      },
+      {
+        "concept_id": "india",
+        "en": "India",
+        "tr": "Hindistan"
+      },
+      {
+        "concept_id": "west_indies",
+        "en": "West Indies",
+        "tr": "Batı Hint Adaları"
+      }
+    ],
+    "correct": "west_indies",
+    "source": "https://en.wikipedia.org/wiki/1975_Cricket_World_Cup"
+  },
+  {
+    "key": "sports_040",
+    "category_id": "sports",
+    "subcategory_id": "international_competitions",
+    "difficulty": "HARD",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which country won the first Rugby World Cup in 1987?",
+      "tr": "1987'deki ilk Rugby Dünya Kupası'nı hangi ülke kazandı?"
+    },
+    "options": [
+      {
+        "concept_id": "australia",
+        "en": "Australia",
+        "tr": "Avustralya"
+      },
+      {
+        "concept_id": "south_africa",
+        "en": "South Africa",
+        "tr": "Güney Afrika"
+      },
+      {
+        "concept_id": "new_zealand",
+        "en": "New Zealand",
+        "tr": "Yeni Zelanda"
+      },
+      {
+        "concept_id": "france",
+        "en": "France",
+        "tr": "Fransa"
+      }
+    ],
+    "correct": "new_zealand",
+    "source": "https://en.wikipedia.org/wiki/1987_Rugby_World_Cup"
+  }
+]

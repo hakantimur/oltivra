@@ -1,0 +1,1442 @@
+[
+  {
+    "key": "arts_literature_001",
+    "category_id": "arts_literature",
+    "subcategory_id": "painters",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who painted the Mona Lisa?",
+      "tr": "Mona Lisa tablosunu kim yapmıştır?"
+    },
+    "options": [
+      {
+        "concept_id": "michelangelo",
+        "en": "Michelangelo",
+        "tr": "Michelangelo"
+      },
+      {
+        "concept_id": "titian",
+        "en": "Titian",
+        "tr": "Tiziano"
+      },
+      {
+        "concept_id": "raphael",
+        "en": "Raphael",
+        "tr": "Rafael"
+      },
+      {
+        "concept_id": "leonardo_da_vinci",
+        "en": "Leonardo da Vinci",
+        "tr": "Leonardo da Vinci"
+      }
+    ],
+    "correct": "leonardo_da_vinci",
+    "source": "https://en.wikipedia.org/wiki/Mona_Lisa"
+  },
+  {
+    "key": "arts_literature_002",
+    "category_id": "arts_literature",
+    "subcategory_id": "painters",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who painted 'The Starry Night' in 1889?",
+      "tr": "1889 tarihli 'Yıldızlı Gece' tablosunu kim yaptı?"
+    },
+    "options": [
+      {
+        "concept_id": "paul_cezanne",
+        "en": "Paul Cézanne",
+        "tr": "Paul Cézanne"
+      },
+      {
+        "concept_id": "vincent_van_gogh",
+        "en": "Vincent van Gogh",
+        "tr": "Vincent van Gogh"
+      },
+      {
+        "concept_id": "claude_monet",
+        "en": "Claude Monet",
+        "tr": "Claude Monet"
+      },
+      {
+        "concept_id": "paul_gauguin",
+        "en": "Paul Gauguin",
+        "tr": "Paul Gauguin"
+      }
+    ],
+    "correct": "vincent_van_gogh",
+    "source": "https://en.wikipedia.org/wiki/The_Starry_Night"
+  },
+  {
+    "key": "arts_literature_003",
+    "category_id": "arts_literature",
+    "subcategory_id": "famous_works",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which artist painted the ceiling of the Sistine Chapel?",
+      "tr": "Sistina Şapeli'nin tavanını hangi sanatçı boyadı?"
+    },
+    "options": [
+      {
+        "concept_id": "raphael",
+        "en": "Raphael",
+        "tr": "Rafael"
+      },
+      {
+        "concept_id": "donatello",
+        "en": "Donatello",
+        "tr": "Donatello"
+      },
+      {
+        "concept_id": "michelangelo",
+        "en": "Michelangelo",
+        "tr": "Michelangelo"
+      },
+      {
+        "concept_id": "caravaggio",
+        "en": "Caravaggio",
+        "tr": "Caravaggio"
+      }
+    ],
+    "correct": "michelangelo",
+    "source": "https://en.wikipedia.org/wiki/Sistine_Chapel_ceiling"
+  },
+  {
+    "key": "arts_literature_004",
+    "category_id": "arts_literature",
+    "subcategory_id": "famous_works",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which Edvard Munch painting shows a figure holding its face in anguish?",
+      "tr": "Edvard Munch'un, ıstırapla yüzünü tutan bir figürü gösteren tablosu hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "the_night_watch",
+        "en": "The Night Watch",
+        "tr": "Gece Devriyesi"
+      },
+      {
+        "concept_id": "guernica",
+        "en": "Guernica",
+        "tr": "Guernica"
+      },
+      {
+        "concept_id": "the_scream",
+        "en": "The Scream",
+        "tr": "Çığlık"
+      },
+      {
+        "concept_id": "the_kiss",
+        "en": "The Kiss",
+        "tr": "Öpücük"
+      }
+    ],
+    "correct": "the_scream",
+    "source": "https://en.wikipedia.org/wiki/The_Scream"
+  },
+  {
+    "key": "arts_literature_005",
+    "category_id": "arts_literature",
+    "subcategory_id": "public_domain_art",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In Botticelli's 'The Birth of Venus', what is Venus standing on?",
+      "tr": "Botticelli'nin 'Venüs'ün Doğuşu' tablosunda Venüs neyin üzerinde durur?"
+    },
+    "options": [
+      {
+        "concept_id": "scallop_shell",
+        "en": "A scallop shell",
+        "tr": "Bir deniz kabuğu"
+      },
+      {
+        "concept_id": "cloud",
+        "en": "A cloud",
+        "tr": "Bir bulut"
+      },
+      {
+        "concept_id": "rock",
+        "en": "A rock",
+        "tr": "Bir kaya"
+      },
+      {
+        "concept_id": "chariot",
+        "en": "A chariot",
+        "tr": "Bir savaş arabası"
+      }
+    ],
+    "correct": "scallop_shell",
+    "source": "https://en.wikipedia.org/wiki/The_Birth_of_Venus"
+  },
+  {
+    "key": "arts_literature_006",
+    "category_id": "arts_literature",
+    "subcategory_id": "world_literature",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In J. M. Barrie's story, which boy never grows up?",
+      "tr": "J. M. Barrie'nin öyküsünde hiç büyümeyen çocuk kimdir?"
+    },
+    "options": [
+      {
+        "concept_id": "pinocchio",
+        "en": "Pinocchio",
+        "tr": "Pinokyo"
+      },
+      {
+        "concept_id": "peter_pan",
+        "en": "Peter Pan",
+        "tr": "Peter Pan"
+      },
+      {
+        "concept_id": "oliver_twist",
+        "en": "Oliver Twist",
+        "tr": "Oliver Twist"
+      },
+      {
+        "concept_id": "tom_sawyer",
+        "en": "Tom Sawyer",
+        "tr": "Tom Sawyer"
+      }
+    ],
+    "correct": "peter_pan",
+    "source": "https://en.wikipedia.org/wiki/Peter_Pan"
+  },
+  {
+    "key": "arts_literature_007",
+    "category_id": "arts_literature",
+    "subcategory_id": "authors",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who wrote the play 'Romeo and Juliet'?",
+      "tr": "'Romeo ve Juliet' oyununu kim yazdı?"
+    },
+    "options": [
+      {
+        "concept_id": "charles_dickens",
+        "en": "Charles Dickens",
+        "tr": "Charles Dickens"
+      },
+      {
+        "concept_id": "william_shakespeare",
+        "en": "William Shakespeare",
+        "tr": "William Shakespeare"
+      },
+      {
+        "concept_id": "john_milton",
+        "en": "John Milton",
+        "tr": "John Milton"
+      },
+      {
+        "concept_id": "christopher_marlowe",
+        "en": "Christopher Marlowe",
+        "tr": "Christopher Marlowe"
+      }
+    ],
+    "correct": "william_shakespeare",
+    "source": "https://en.wikipedia.org/wiki/Romeo_and_Juliet"
+  },
+  {
+    "key": "arts_literature_008",
+    "category_id": "arts_literature",
+    "subcategory_id": "authors",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which author created the detective Sherlock Holmes?",
+      "tr": "Dedektif Sherlock Holmes'u hangi yazar yarattı?"
+    },
+    "options": [
+      {
+        "concept_id": "edgar_allan_poe",
+        "en": "Edgar Allan Poe",
+        "tr": "Edgar Allan Poe"
+      },
+      {
+        "concept_id": "agatha_christie",
+        "en": "Agatha Christie",
+        "tr": "Agatha Christie"
+      },
+      {
+        "concept_id": "arthur_conan_doyle",
+        "en": "Arthur Conan Doyle",
+        "tr": "Arthur Conan Doyle"
+      },
+      {
+        "concept_id": "charles_dickens",
+        "en": "Charles Dickens",
+        "tr": "Charles Dickens"
+      }
+    ],
+    "correct": "arthur_conan_doyle",
+    "source": "https://en.wikipedia.org/wiki/Arthur_Conan_Doyle"
+  },
+  {
+    "key": "arts_literature_009",
+    "category_id": "arts_literature",
+    "subcategory_id": "architecture",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "The Sydney Opera House is in which country?",
+      "tr": "Sidney Opera Binası hangi ülkededir?"
+    },
+    "options": [
+      {
+        "concept_id": "new_zealand",
+        "en": "New Zealand",
+        "tr": "Yeni Zelanda"
+      },
+      {
+        "concept_id": "australia",
+        "en": "Australia",
+        "tr": "Avustralya"
+      },
+      {
+        "concept_id": "canada",
+        "en": "Canada",
+        "tr": "Kanada"
+      },
+      {
+        "concept_id": "south_africa",
+        "en": "South Africa",
+        "tr": "Güney Afrika"
+      }
+    ],
+    "correct": "australia",
+    "source": "https://en.wikipedia.org/wiki/Sydney_Opera_House"
+  },
+  {
+    "key": "arts_literature_010",
+    "category_id": "arts_literature",
+    "subcategory_id": "architecture",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In which country is the Taj Mahal located?",
+      "tr": "Tac Mahal hangi ülkededir?"
+    },
+    "options": [
+      {
+        "concept_id": "pakistan",
+        "en": "Pakistan",
+        "tr": "Pakistan"
+      },
+      {
+        "concept_id": "iran",
+        "en": "Iran",
+        "tr": "İran"
+      },
+      {
+        "concept_id": "bangladesh",
+        "en": "Bangladesh",
+        "tr": "Bangladeş"
+      },
+      {
+        "concept_id": "india",
+        "en": "India",
+        "tr": "Hindistan"
+      }
+    ],
+    "correct": "india",
+    "source": "https://en.wikipedia.org/wiki/Taj_Mahal"
+  },
+  {
+    "key": "arts_literature_011",
+    "category_id": "arts_literature",
+    "subcategory_id": "mythology",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who is the king of the gods in Greek mythology?",
+      "tr": "Yunan mitolojisinde tanrıların kralı kimdir?"
+    },
+    "options": [
+      {
+        "concept_id": "poseidon",
+        "en": "Poseidon",
+        "tr": "Poseidon"
+      },
+      {
+        "concept_id": "apollo",
+        "en": "Apollo",
+        "tr": "Apollon"
+      },
+      {
+        "concept_id": "hermes",
+        "en": "Hermes",
+        "tr": "Hermes"
+      },
+      {
+        "concept_id": "zeus",
+        "en": "Zeus",
+        "tr": "Zeus"
+      }
+    ],
+    "correct": "zeus",
+    "source": "https://en.wikipedia.org/wiki/Zeus"
+  },
+  {
+    "key": "arts_literature_012",
+    "category_id": "arts_literature",
+    "subcategory_id": "mythology",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In Norse mythology, which god wields the hammer Mjölnir?",
+      "tr": "İskandinav mitolojisinde Mjölnir çekicini kullanan tanrı kimdir?"
+    },
+    "options": [
+      {
+        "concept_id": "odin",
+        "en": "Odin",
+        "tr": "Odin"
+      },
+      {
+        "concept_id": "thor",
+        "en": "Thor",
+        "tr": "Thor"
+      },
+      {
+        "concept_id": "freyr",
+        "en": "Freyr",
+        "tr": "Freyr"
+      },
+      {
+        "concept_id": "loki",
+        "en": "Loki",
+        "tr": "Loki"
+      }
+    ],
+    "correct": "thor",
+    "source": "https://en.wikipedia.org/wiki/Thor"
+  },
+  {
+    "key": "arts_literature_013",
+    "category_id": "arts_literature",
+    "subcategory_id": "art_movements",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "The Renaissance art movement began in which country?",
+      "tr": "Rönesans sanat akımı hangi ülkede başladı?"
+    },
+    "options": [
+      {
+        "concept_id": "france",
+        "en": "France",
+        "tr": "Fransa"
+      },
+      {
+        "concept_id": "spain",
+        "en": "Spain",
+        "tr": "İspanya"
+      },
+      {
+        "concept_id": "italy",
+        "en": "Italy",
+        "tr": "İtalya"
+      },
+      {
+        "concept_id": "england",
+        "en": "England",
+        "tr": "İngiltere"
+      }
+    ],
+    "correct": "italy",
+    "source": "https://en.wikipedia.org/wiki/Italian_Renaissance"
+  },
+  {
+    "key": "arts_literature_014",
+    "category_id": "arts_literature",
+    "subcategory_id": "art_movements",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Andy Warhol was a leading figure of which art movement?",
+      "tr": "Andy Warhol hangi sanat akımının önde gelen isimlerindendir?"
+    },
+    "options": [
+      {
+        "concept_id": "pop_art",
+        "en": "Pop Art",
+        "tr": "Pop Art"
+      },
+      {
+        "concept_id": "cubism",
+        "en": "Cubism",
+        "tr": "Kübizm"
+      },
+      {
+        "concept_id": "impressionism",
+        "en": "Impressionism",
+        "tr": "İzlenimcilik"
+      },
+      {
+        "concept_id": "baroque",
+        "en": "Baroque",
+        "tr": "Barok"
+      }
+    ],
+    "correct": "pop_art",
+    "source": "https://en.wikipedia.org/wiki/Andy_Warhol"
+  },
+  {
+    "key": "arts_literature_015",
+    "category_id": "arts_literature",
+    "subcategory_id": "painters",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which painter is famous for the 'Water Lilies' series?",
+      "tr": "'Nilüferler' serisiyle ünlü ressam kimdir?"
+    },
+    "options": [
+      {
+        "concept_id": "edgar_degas",
+        "en": "Edgar Degas",
+        "tr": "Edgar Degas"
+      },
+      {
+        "concept_id": "claude_monet",
+        "en": "Claude Monet",
+        "tr": "Claude Monet"
+      },
+      {
+        "concept_id": "edouard_manet",
+        "en": "Édouard Manet",
+        "tr": "Édouard Manet"
+      },
+      {
+        "concept_id": "henri_matisse",
+        "en": "Henri Matisse",
+        "tr": "Henri Matisse"
+      }
+    ],
+    "correct": "claude_monet",
+    "source": "https://en.wikipedia.org/wiki/Water_Lilies_(Monet_series)"
+  },
+  {
+    "key": "arts_literature_016",
+    "category_id": "arts_literature",
+    "subcategory_id": "painters",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "The painter Frida Kahlo came from which country?",
+      "tr": "Ressam Frida Kahlo hangi ülkedendir?"
+    },
+    "options": [
+      {
+        "concept_id": "colombia",
+        "en": "Colombia",
+        "tr": "Kolombiya"
+      },
+      {
+        "concept_id": "spain",
+        "en": "Spain",
+        "tr": "İspanya"
+      },
+      {
+        "concept_id": "mexico",
+        "en": "Mexico",
+        "tr": "Meksika"
+      },
+      {
+        "concept_id": "argentina",
+        "en": "Argentina",
+        "tr": "Arjantin"
+      }
+    ],
+    "correct": "mexico",
+    "source": "https://en.wikipedia.org/wiki/Frida_Kahlo"
+  },
+  {
+    "key": "arts_literature_017",
+    "category_id": "arts_literature",
+    "subcategory_id": "famous_works",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which famous Rodin sculpture shows a seated man deep in thought?",
+      "tr": "Rodin'in derin düşüncelere dalmış oturan bir adamı gösteren ünlü heykeli hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "the_thinker",
+        "en": "The Thinker",
+        "tr": "Düşünen Adam"
+      },
+      {
+        "concept_id": "david",
+        "en": "David",
+        "tr": "Davut"
+      },
+      {
+        "concept_id": "discobolus",
+        "en": "Discobolus",
+        "tr": "Diskobolos"
+      },
+      {
+        "concept_id": "the_kiss",
+        "en": "The Kiss",
+        "tr": "Öpücük"
+      }
+    ],
+    "correct": "the_thinker",
+    "source": "https://en.wikipedia.org/wiki/The_Thinker"
+  },
+  {
+    "key": "arts_literature_018",
+    "category_id": "arts_literature",
+    "subcategory_id": "famous_works",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who painted 'Girl with a Pearl Earring'?",
+      "tr": "'İnci Küpeli Kız' tablosunu kim yaptı?"
+    },
+    "options": [
+      {
+        "concept_id": "peter_paul_rubens",
+        "en": "Peter Paul Rubens",
+        "tr": "Peter Paul Rubens"
+      },
+      {
+        "concept_id": "johannes_vermeer",
+        "en": "Johannes Vermeer",
+        "tr": "Johannes Vermeer"
+      },
+      {
+        "concept_id": "frans_hals",
+        "en": "Frans Hals",
+        "tr": "Frans Hals"
+      },
+      {
+        "concept_id": "rembrandt",
+        "en": "Rembrandt",
+        "tr": "Rembrandt"
+      }
+    ],
+    "correct": "johannes_vermeer",
+    "source": "https://en.wikipedia.org/wiki/Girl_with_a_Pearl_Earring"
+  },
+  {
+    "key": "arts_literature_019",
+    "category_id": "arts_literature",
+    "subcategory_id": "public_domain_art",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which Japanese artist created 'The Great Wave off Kanagawa'?",
+      "tr": "'Kanagawa Açıklarında Büyük Dalga'yı hangi Japon sanatçı yaptı?"
+    },
+    "options": [
+      {
+        "concept_id": "hokusai",
+        "en": "Hokusai",
+        "tr": "Hokusai"
+      },
+      {
+        "concept_id": "utamaro",
+        "en": "Utamaro",
+        "tr": "Utamaro"
+      },
+      {
+        "concept_id": "hiroshige",
+        "en": "Hiroshige",
+        "tr": "Hiroshige"
+      },
+      {
+        "concept_id": "sesshu",
+        "en": "Sesshū",
+        "tr": "Sesshū"
+      }
+    ],
+    "correct": "hokusai",
+    "source": "https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa"
+  },
+  {
+    "key": "arts_literature_020",
+    "category_id": "arts_literature",
+    "subcategory_id": "public_domain_art",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Leonardo's mural 'The Last Supper' is in which city?",
+      "tr": "Leonardo'nun 'Son Akşam Yemeği' duvar resmi hangi şehirdedir?"
+    },
+    "options": [
+      {
+        "concept_id": "milan",
+        "en": "Milan",
+        "tr": "Milano"
+      },
+      {
+        "concept_id": "venice",
+        "en": "Venice",
+        "tr": "Venedik"
+      },
+      {
+        "concept_id": "rome",
+        "en": "Rome",
+        "tr": "Roma"
+      },
+      {
+        "concept_id": "florence",
+        "en": "Florence",
+        "tr": "Floransa"
+      }
+    ],
+    "correct": "milan",
+    "source": "https://en.wikipedia.org/wiki/The_Last_Supper_(Leonardo)"
+  },
+  {
+    "key": "arts_literature_021",
+    "category_id": "arts_literature",
+    "subcategory_id": "world_literature",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In 'Don Quixote', what does the knight mistake for giants?",
+      "tr": "'Don Kişot'ta şövalye neyi dev sanır?"
+    },
+    "options": [
+      {
+        "concept_id": "mountains",
+        "en": "Mountains",
+        "tr": "Dağlar"
+      },
+      {
+        "concept_id": "castles",
+        "en": "Castles",
+        "tr": "Kaleler"
+      },
+      {
+        "concept_id": "windmills",
+        "en": "Windmills",
+        "tr": "Yel değirmenleri"
+      },
+      {
+        "concept_id": "trees",
+        "en": "Trees",
+        "tr": "Ağaçlar"
+      }
+    ],
+    "correct": "windmills",
+    "source": "https://en.wikipedia.org/wiki/Don_Quixote"
+  },
+  {
+    "key": "arts_literature_022",
+    "category_id": "arts_literature",
+    "subcategory_id": "world_literature",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In Homer's 'Odyssey', what is the name of Odysseus's home island?",
+      "tr": "Homeros'un 'Odysseia' destanında Odysseus'un yurdu olan ada hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "ithaca",
+        "en": "Ithaca",
+        "tr": "İthaka"
+      },
+      {
+        "concept_id": "crete",
+        "en": "Crete",
+        "tr": "Girit"
+      },
+      {
+        "concept_id": "sicily",
+        "en": "Sicily",
+        "tr": "Sicilya"
+      },
+      {
+        "concept_id": "rhodes",
+        "en": "Rhodes",
+        "tr": "Rodos"
+      }
+    ],
+    "correct": "ithaca",
+    "source": "https://en.wikipedia.org/wiki/Odyssey"
+  },
+  {
+    "key": "arts_literature_023",
+    "category_id": "arts_literature",
+    "subcategory_id": "world_literature",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which Tolstoy novel is set during Napoleon's invasion of Russia?",
+      "tr": "Tolstoy'un Napolyon'un Rusya seferi döneminde geçen romanı hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "anna_karenina",
+        "en": "Anna Karenina",
+        "tr": "Anna Karenina"
+      },
+      {
+        "concept_id": "crime_and_punishment",
+        "en": "Crime and Punishment",
+        "tr": "Suç ve Ceza"
+      },
+      {
+        "concept_id": "war_and_peace",
+        "en": "War and Peace",
+        "tr": "Savaş ve Barış"
+      },
+      {
+        "concept_id": "resurrection",
+        "en": "Resurrection",
+        "tr": "Diriliş"
+      }
+    ],
+    "correct": "war_and_peace",
+    "source": "https://en.wikipedia.org/wiki/War_and_Peace"
+  },
+  {
+    "key": "arts_literature_024",
+    "category_id": "arts_literature",
+    "subcategory_id": "authors",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who wrote the novel 'Pride and Prejudice'?",
+      "tr": "'Aşk ve Gurur' romanını kim yazdı?"
+    },
+    "options": [
+      {
+        "concept_id": "charlotte_bronte",
+        "en": "Charlotte Brontë",
+        "tr": "Charlotte Brontë"
+      },
+      {
+        "concept_id": "jane_austen",
+        "en": "Jane Austen",
+        "tr": "Jane Austen"
+      },
+      {
+        "concept_id": "emily_bronte",
+        "en": "Emily Brontë",
+        "tr": "Emily Brontë"
+      },
+      {
+        "concept_id": "mary_shelley",
+        "en": "Mary Shelley",
+        "tr": "Mary Shelley"
+      }
+    ],
+    "correct": "jane_austen",
+    "source": "https://en.wikipedia.org/wiki/Pride_and_Prejudice"
+  },
+  {
+    "key": "arts_literature_025",
+    "category_id": "arts_literature",
+    "subcategory_id": "authors",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who wrote 'One Hundred Years of Solitude'?",
+      "tr": "'Yüzyıllık Yalnızlık' romanını kim yazdı?"
+    },
+    "options": [
+      {
+        "concept_id": "pablo_neruda",
+        "en": "Pablo Neruda",
+        "tr": "Pablo Neruda"
+      },
+      {
+        "concept_id": "mario_vargas_llosa",
+        "en": "Mario Vargas Llosa",
+        "tr": "Mario Vargas Llosa"
+      },
+      {
+        "concept_id": "jorge_luis_borges",
+        "en": "Jorge Luis Borges",
+        "tr": "Jorge Luis Borges"
+      },
+      {
+        "concept_id": "gabriel_garcia_marquez",
+        "en": "Gabriel García Márquez",
+        "tr": "Gabriel García Márquez"
+      }
+    ],
+    "correct": "gabriel_garcia_marquez",
+    "source": "https://en.wikipedia.org/wiki/One_Hundred_Years_of_Solitude"
+  },
+  {
+    "key": "arts_literature_026",
+    "category_id": "arts_literature",
+    "subcategory_id": "architecture",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which architect designed Barcelona's Sagrada Família?",
+      "tr": "Barselona'daki Sagrada Família'yı hangi mimar tasarladı?"
+    },
+    "options": [
+      {
+        "concept_id": "mimar_sinan",
+        "en": "Mimar Sinan",
+        "tr": "Mimar Sinan"
+      },
+      {
+        "concept_id": "antoni_gaudi",
+        "en": "Antoni Gaudí",
+        "tr": "Antoni Gaudí"
+      },
+      {
+        "concept_id": "frank_lloyd_wright",
+        "en": "Frank Lloyd Wright",
+        "tr": "Frank Lloyd Wright"
+      },
+      {
+        "concept_id": "le_corbusier",
+        "en": "Le Corbusier",
+        "tr": "Le Corbusier"
+      }
+    ],
+    "correct": "antoni_gaudi",
+    "source": "https://en.wikipedia.org/wiki/Sagrada_Fam%C3%ADlia"
+  },
+  {
+    "key": "arts_literature_027",
+    "category_id": "arts_literature",
+    "subcategory_id": "architecture",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In which city is the Hagia Sophia located?",
+      "tr": "Ayasofya hangi şehirdedir?"
+    },
+    "options": [
+      {
+        "concept_id": "rome",
+        "en": "Rome",
+        "tr": "Roma"
+      },
+      {
+        "concept_id": "istanbul",
+        "en": "Istanbul",
+        "tr": "İstanbul"
+      },
+      {
+        "concept_id": "athens",
+        "en": "Athens",
+        "tr": "Atina"
+      },
+      {
+        "concept_id": "cairo",
+        "en": "Cairo",
+        "tr": "Kahire"
+      }
+    ],
+    "correct": "istanbul",
+    "source": "https://en.wikipedia.org/wiki/Hagia_Sophia"
+  },
+  {
+    "key": "arts_literature_028",
+    "category_id": "arts_literature",
+    "subcategory_id": "mythology",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which Egyptian god is usually shown with the head of a jackal?",
+      "tr": "Hangi Mısır tanrısı genellikle çakal başlı olarak tasvir edilir?"
+    },
+    "options": [
+      {
+        "concept_id": "horus",
+        "en": "Horus",
+        "tr": "Horus"
+      },
+      {
+        "concept_id": "osiris",
+        "en": "Osiris",
+        "tr": "Osiris"
+      },
+      {
+        "concept_id": "ra",
+        "en": "Ra",
+        "tr": "Ra"
+      },
+      {
+        "concept_id": "anubis",
+        "en": "Anubis",
+        "tr": "Anubis"
+      }
+    ],
+    "correct": "anubis",
+    "source": "https://en.wikipedia.org/wiki/Anubis"
+  },
+  {
+    "key": "arts_literature_029",
+    "category_id": "arts_literature",
+    "subcategory_id": "mythology",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which Greek hero is famous for completing twelve labors?",
+      "tr": "On iki görevi tamamlamasıyla ünlü Yunan kahramanı kimdir?"
+    },
+    "options": [
+      {
+        "concept_id": "achilles",
+        "en": "Achilles",
+        "tr": "Akhilleus"
+      },
+      {
+        "concept_id": "perseus",
+        "en": "Perseus",
+        "tr": "Perseus"
+      },
+      {
+        "concept_id": "theseus",
+        "en": "Theseus",
+        "tr": "Theseus"
+      },
+      {
+        "concept_id": "heracles",
+        "en": "Heracles",
+        "tr": "Herakles"
+      }
+    ],
+    "correct": "heracles",
+    "source": "https://en.wikipedia.org/wiki/Labours_of_Hercules"
+  },
+  {
+    "key": "arts_literature_030",
+    "category_id": "arts_literature",
+    "subcategory_id": "art_movements",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Salvador Dalí is best known as a leading artist of which movement?",
+      "tr": "Salvador Dalí en çok hangi akımın önde gelen sanatçısı olarak bilinir?"
+    },
+    "options": [
+      {
+        "concept_id": "realism",
+        "en": "Realism",
+        "tr": "Realizm"
+      },
+      {
+        "concept_id": "cubism",
+        "en": "Cubism",
+        "tr": "Kübizm"
+      },
+      {
+        "concept_id": "expressionism",
+        "en": "Expressionism",
+        "tr": "Dışavurumculuk"
+      },
+      {
+        "concept_id": "surrealism",
+        "en": "Surrealism",
+        "tr": "Sürrealizm"
+      }
+    ],
+    "correct": "surrealism",
+    "source": "https://en.wikipedia.org/wiki/Salvador_Dal%C3%AD"
+  },
+  {
+    "key": "arts_literature_031",
+    "category_id": "arts_literature",
+    "subcategory_id": "painters",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who painted 'The Night Watch' (1642)?",
+      "tr": "'Gece Devriyesi' (1642) tablosunu kim yaptı?"
+    },
+    "options": [
+      {
+        "concept_id": "peter_paul_rubens",
+        "en": "Peter Paul Rubens",
+        "tr": "Peter Paul Rubens"
+      },
+      {
+        "concept_id": "johannes_vermeer",
+        "en": "Johannes Vermeer",
+        "tr": "Johannes Vermeer"
+      },
+      {
+        "concept_id": "frans_hals",
+        "en": "Frans Hals",
+        "tr": "Frans Hals"
+      },
+      {
+        "concept_id": "rembrandt",
+        "en": "Rembrandt",
+        "tr": "Rembrandt"
+      }
+    ],
+    "correct": "rembrandt",
+    "source": "https://en.wikipedia.org/wiki/The_Night_Watch"
+  },
+  {
+    "key": "arts_literature_032",
+    "category_id": "arts_literature",
+    "subcategory_id": "famous_works",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Picasso's 'Guernica' depicts the bombing of a town during which war?",
+      "tr": "Picasso'nun 'Guernica' tablosu hangi savaş sırasında bir kasabanın bombalanmasını anlatır?"
+    },
+    "options": [
+      {
+        "concept_id": "franco_prussian_war",
+        "en": "Franco-Prussian War",
+        "tr": "Fransa-Prusya Savaşı"
+      },
+      {
+        "concept_id": "napoleonic_wars",
+        "en": "Napoleonic Wars",
+        "tr": "Napolyon Savaşları"
+      },
+      {
+        "concept_id": "world_war_i",
+        "en": "World War I",
+        "tr": "Birinci Dünya Savaşı"
+      },
+      {
+        "concept_id": "spanish_civil_war",
+        "en": "Spanish Civil War",
+        "tr": "İspanya İç Savaşı"
+      }
+    ],
+    "correct": "spanish_civil_war",
+    "source": "https://en.wikipedia.org/wiki/Guernica_(Picasso)"
+  },
+  {
+    "key": "arts_literature_033",
+    "category_id": "arts_literature",
+    "subcategory_id": "public_domain_art",
+    "difficulty": "HARD",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who painted the triptych 'The Garden of Earthly Delights'?",
+      "tr": "'Dünyevi Zevkler Bahçesi' triptiğini kim yaptı?"
+    },
+    "options": [
+      {
+        "concept_id": "pieter_bruegel",
+        "en": "Pieter Bruegel the Elder",
+        "tr": "Yaşlı Pieter Bruegel"
+      },
+      {
+        "concept_id": "hieronymus_bosch",
+        "en": "Hieronymus Bosch",
+        "tr": "Hieronymus Bosch"
+      },
+      {
+        "concept_id": "albrecht_durer",
+        "en": "Albrecht Dürer",
+        "tr": "Albrecht Dürer"
+      },
+      {
+        "concept_id": "jan_van_eyck",
+        "en": "Jan van Eyck",
+        "tr": "Jan van Eyck"
+      }
+    ],
+    "correct": "hieronymus_bosch",
+    "source": "https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights"
+  },
+  {
+    "key": "arts_literature_034",
+    "category_id": "arts_literature",
+    "subcategory_id": "public_domain_art",
+    "difficulty": "HARD",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who painted 'The Arnolfini Portrait' (1434), known for its convex mirror?",
+      "tr": "Dışbükey aynasıyla bilinen 'Arnolfini Portresi'ni (1434) kim yaptı?"
+    },
+    "options": [
+      {
+        "concept_id": "rogier_van_der_weyden",
+        "en": "Rogier van der Weyden",
+        "tr": "Rogier van der Weyden"
+      },
+      {
+        "concept_id": "sandro_botticelli",
+        "en": "Sandro Botticelli",
+        "tr": "Sandro Botticelli"
+      },
+      {
+        "concept_id": "jan_van_eyck",
+        "en": "Jan van Eyck",
+        "tr": "Jan van Eyck"
+      },
+      {
+        "concept_id": "hans_holbein",
+        "en": "Hans Holbein the Younger",
+        "tr": "Genç Hans Holbein"
+      }
+    ],
+    "correct": "jan_van_eyck",
+    "source": "https://en.wikipedia.org/wiki/Arnolfini_Portrait"
+  },
+  {
+    "key": "arts_literature_035",
+    "category_id": "arts_literature",
+    "subcategory_id": "world_literature",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In Dante's 'Divine Comedy', who guides Dante through Hell?",
+      "tr": "Dante'nin 'İlahi Komedya'sında Dante'ye Cehennem'de kim rehberlik eder?"
+    },
+    "options": [
+      {
+        "concept_id": "virgil",
+        "en": "Virgil",
+        "tr": "Vergilius"
+      },
+      {
+        "concept_id": "homer",
+        "en": "Homer",
+        "tr": "Homeros"
+      },
+      {
+        "concept_id": "ovid",
+        "en": "Ovid",
+        "tr": "Ovidius"
+      },
+      {
+        "concept_id": "beatrice",
+        "en": "Beatrice",
+        "tr": "Beatrice"
+      }
+    ],
+    "correct": "virgil",
+    "source": "https://en.wikipedia.org/wiki/Divine_Comedy"
+  },
+  {
+    "key": "arts_literature_036",
+    "category_id": "arts_literature",
+    "subcategory_id": "authors",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who wrote the novel 'The Brothers Karamazov'?",
+      "tr": "'Karamazov Kardeşler' romanını kim yazdı?"
+    },
+    "options": [
+      {
+        "concept_id": "leo_tolstoy",
+        "en": "Leo Tolstoy",
+        "tr": "Lev Tolstoy"
+      },
+      {
+        "concept_id": "anton_chekhov",
+        "en": "Anton Chekhov",
+        "tr": "Anton Çehov"
+      },
+      {
+        "concept_id": "fyodor_dostoevsky",
+        "en": "Fyodor Dostoevsky",
+        "tr": "Fyodor Dostoyevski"
+      },
+      {
+        "concept_id": "ivan_turgenev",
+        "en": "Ivan Turgenev",
+        "tr": "İvan Turgenyev"
+      }
+    ],
+    "correct": "fyodor_dostoevsky",
+    "source": "https://en.wikipedia.org/wiki/The_Brothers_Karamazov"
+  },
+  {
+    "key": "arts_literature_037",
+    "category_id": "arts_literature",
+    "subcategory_id": "architecture",
+    "difficulty": "HARD",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which architect designed the Guggenheim Museum in Bilbao?",
+      "tr": "Bilbao'daki Guggenheim Müzesi'ni hangi mimar tasarladı?"
+    },
+    "options": [
+      {
+        "concept_id": "frank_gehry",
+        "en": "Frank Gehry",
+        "tr": "Frank Gehry"
+      },
+      {
+        "concept_id": "renzo_piano",
+        "en": "Renzo Piano",
+        "tr": "Renzo Piano"
+      },
+      {
+        "concept_id": "norman_foster",
+        "en": "Norman Foster",
+        "tr": "Norman Foster"
+      },
+      {
+        "concept_id": "zaha_hadid",
+        "en": "Zaha Hadid",
+        "tr": "Zaha Hadid"
+      }
+    ],
+    "correct": "frank_gehry",
+    "source": "https://en.wikipedia.org/wiki/Guggenheim_Museum_Bilbao"
+  },
+  {
+    "key": "arts_literature_038",
+    "category_id": "arts_literature",
+    "subcategory_id": "mythology",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "The Roman goddess Minerva corresponds to which Greek goddess?",
+      "tr": "Roma tanrıçası Minerva hangi Yunan tanrıçasına karşılık gelir?"
+    },
+    "options": [
+      {
+        "concept_id": "aphrodite",
+        "en": "Aphrodite",
+        "tr": "Afrodit"
+      },
+      {
+        "concept_id": "artemis",
+        "en": "Artemis",
+        "tr": "Artemis"
+      },
+      {
+        "concept_id": "hera",
+        "en": "Hera",
+        "tr": "Hera"
+      },
+      {
+        "concept_id": "athena",
+        "en": "Athena",
+        "tr": "Athena"
+      }
+    ],
+    "correct": "athena",
+    "source": "https://en.wikipedia.org/wiki/Minerva"
+  },
+  {
+    "key": "arts_literature_039",
+    "category_id": "arts_literature",
+    "subcategory_id": "art_movements",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which art movement took its name from a Monet painting exhibited in 1874?",
+      "tr": "Hangi sanat akımı adını 1874'te sergilenen bir Monet tablosundan aldı?"
+    },
+    "options": [
+      {
+        "concept_id": "symbolism",
+        "en": "Symbolism",
+        "tr": "Sembolizm"
+      },
+      {
+        "concept_id": "fauvism",
+        "en": "Fauvism",
+        "tr": "Fovizm"
+      },
+      {
+        "concept_id": "romanticism",
+        "en": "Romanticism",
+        "tr": "Romantizm"
+      },
+      {
+        "concept_id": "impressionism",
+        "en": "Impressionism",
+        "tr": "İzlenimcilik"
+      }
+    ],
+    "correct": "impressionism",
+    "source": "https://en.wikipedia.org/wiki/Impression,_Sunrise"
+  },
+  {
+    "key": "arts_literature_040",
+    "category_id": "arts_literature",
+    "subcategory_id": "art_movements",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In which country was the influential Bauhaus art school founded in 1919?",
+      "tr": "Etkili Bauhaus sanat okulu 1919'da hangi ülkede kuruldu?"
+    },
+    "options": [
+      {
+        "concept_id": "germany",
+        "en": "Germany",
+        "tr": "Almanya"
+      },
+      {
+        "concept_id": "switzerland",
+        "en": "Switzerland",
+        "tr": "İsviçre"
+      },
+      {
+        "concept_id": "austria",
+        "en": "Austria",
+        "tr": "Avusturya"
+      },
+      {
+        "concept_id": "netherlands",
+        "en": "Netherlands",
+        "tr": "Hollanda"
+      }
+    ],
+    "correct": "germany",
+    "source": "https://en.wikipedia.org/wiki/Bauhaus"
+  }
+]

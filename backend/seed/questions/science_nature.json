@@ -1,0 +1,1442 @@
+[
+  {
+    "key": "science_nature_001",
+    "category_id": "science_nature",
+    "subcategory_id": "space",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which planet is known as the Red Planet?",
+      "tr": "Kızıl Gezegen olarak bilinen gezegen hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "mercury",
+        "en": "Mercury",
+        "tr": "Merkür"
+      },
+      {
+        "concept_id": "mars",
+        "en": "Mars",
+        "tr": "Mars"
+      },
+      {
+        "concept_id": "venus",
+        "en": "Venus",
+        "tr": "Venüs"
+      },
+      {
+        "concept_id": "jupiter",
+        "en": "Jupiter",
+        "tr": "Jüpiter"
+      }
+    ],
+    "correct": "mars",
+    "source": "https://science.nasa.gov/mars/"
+  },
+  {
+    "key": "science_nature_002",
+    "category_id": "science_nature",
+    "subcategory_id": "space",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which is the largest planet in our Solar System?",
+      "tr": "Güneş Sistemi'mizin en büyük gezegeni hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "jupiter",
+        "en": "Jupiter",
+        "tr": "Jüpiter"
+      },
+      {
+        "concept_id": "saturn",
+        "en": "Saturn",
+        "tr": "Satürn"
+      },
+      {
+        "concept_id": "neptune",
+        "en": "Neptune",
+        "tr": "Neptün"
+      },
+      {
+        "concept_id": "uranus",
+        "en": "Uranus",
+        "tr": "Uranüs"
+      }
+    ],
+    "correct": "jupiter",
+    "source": "https://science.nasa.gov/jupiter/"
+  },
+  {
+    "key": "science_nature_003",
+    "category_id": "science_nature",
+    "subcategory_id": "animals",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "What is the largest animal living on Earth today?",
+      "tr": "Günümüzde yaşayan en büyük hayvan hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "african_elephant",
+        "en": "African elephant",
+        "tr": "Afrika fili"
+      },
+      {
+        "concept_id": "whale_shark",
+        "en": "Whale shark",
+        "tr": "Balina köpekbalığı"
+      },
+      {
+        "concept_id": "sperm_whale",
+        "en": "Sperm whale",
+        "tr": "İspermeçet balinası"
+      },
+      {
+        "concept_id": "blue_whale",
+        "en": "Blue whale",
+        "tr": "Mavi balina"
+      }
+    ],
+    "correct": "blue_whale",
+    "source": "https://en.wikipedia.org/wiki/Blue_whale"
+  },
+  {
+    "key": "science_nature_004",
+    "category_id": "science_nature",
+    "subcategory_id": "human_body",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which organ pumps blood around the human body?",
+      "tr": "İnsan vücudunda kanı pompalayan organ hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "liver",
+        "en": "Liver",
+        "tr": "Karaciğer"
+      },
+      {
+        "concept_id": "kidneys",
+        "en": "Kidneys",
+        "tr": "Böbrekler"
+      },
+      {
+        "concept_id": "heart",
+        "en": "Heart",
+        "tr": "Kalp"
+      },
+      {
+        "concept_id": "lungs",
+        "en": "Lungs",
+        "tr": "Akciğerler"
+      }
+    ],
+    "correct": "heart",
+    "source": "https://en.wikipedia.org/wiki/Heart"
+  },
+  {
+    "key": "science_nature_005",
+    "category_id": "science_nature",
+    "subcategory_id": "chemistry",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "What is the chemical symbol for gold?",
+      "tr": "Altının kimyasal sembolü nedir?"
+    },
+    "options": [
+      {
+        "concept_id": "go",
+        "en": "Go",
+        "tr": "Go"
+      },
+      {
+        "concept_id": "au",
+        "en": "Au",
+        "tr": "Au"
+      },
+      {
+        "concept_id": "ag",
+        "en": "Ag",
+        "tr": "Ag"
+      },
+      {
+        "concept_id": "gd",
+        "en": "Gd",
+        "tr": "Gd"
+      }
+    ],
+    "correct": "au",
+    "source": "https://en.wikipedia.org/wiki/Gold"
+  },
+  {
+    "key": "science_nature_006",
+    "category_id": "science_nature",
+    "subcategory_id": "plants",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which gas do plants take in from the air for photosynthesis?",
+      "tr": "Bitkiler fotosentez için havadan hangi gazı alır?"
+    },
+    "options": [
+      {
+        "concept_id": "carbon_dioxide",
+        "en": "Carbon dioxide",
+        "tr": "Karbondioksit"
+      },
+      {
+        "concept_id": "oxygen",
+        "en": "Oxygen",
+        "tr": "Oksijen"
+      },
+      {
+        "concept_id": "nitrogen",
+        "en": "Nitrogen",
+        "tr": "Azot"
+      },
+      {
+        "concept_id": "helium",
+        "en": "Helium",
+        "tr": "Helyum"
+      }
+    ],
+    "correct": "carbon_dioxide",
+    "source": "https://en.wikipedia.org/wiki/Photosynthesis"
+  },
+  {
+    "key": "science_nature_007",
+    "category_id": "science_nature",
+    "subcategory_id": "physics",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which force keeps the planets in orbit around the Sun?",
+      "tr": "Gezegenleri Güneş etrafındaki yörüngede tutan kuvvet hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "magnetism",
+        "en": "Magnetism",
+        "tr": "Manyetizma"
+      },
+      {
+        "concept_id": "friction",
+        "en": "Friction",
+        "tr": "Sürtünme"
+      },
+      {
+        "concept_id": "static_electricity",
+        "en": "Static electricity",
+        "tr": "Statik elektrik"
+      },
+      {
+        "concept_id": "gravity",
+        "en": "Gravity",
+        "tr": "Kütle çekimi"
+      }
+    ],
+    "correct": "gravity",
+    "source": "https://en.wikipedia.org/wiki/Gravity"
+  },
+  {
+    "key": "science_nature_008",
+    "category_id": "science_nature",
+    "subcategory_id": "animals",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "What is the fastest land animal?",
+      "tr": "Karadaki en hızlı hayvan hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "pronghorn",
+        "en": "Pronghorn",
+        "tr": "Çatal boynuzlu antilop"
+      },
+      {
+        "concept_id": "greyhound",
+        "en": "Greyhound",
+        "tr": "Tazı"
+      },
+      {
+        "concept_id": "cheetah",
+        "en": "Cheetah",
+        "tr": "Çita"
+      },
+      {
+        "concept_id": "lion",
+        "en": "Lion",
+        "tr": "Aslan"
+      }
+    ],
+    "correct": "cheetah",
+    "source": "https://en.wikipedia.org/wiki/Cheetah"
+  },
+  {
+    "key": "science_nature_009",
+    "category_id": "science_nature",
+    "subcategory_id": "earth_science",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "What is molten rock beneath the Earth's surface called?",
+      "tr": "Yer yüzeyinin altındaki erimiş kayaya ne ad verilir?"
+    },
+    "options": [
+      {
+        "concept_id": "obsidian",
+        "en": "Obsidian",
+        "tr": "Obsidyen"
+      },
+      {
+        "concept_id": "magma",
+        "en": "Magma",
+        "tr": "Magma"
+      },
+      {
+        "concept_id": "lava",
+        "en": "Lava",
+        "tr": "Lav"
+      },
+      {
+        "concept_id": "basalt",
+        "en": "Basalt",
+        "tr": "Bazalt"
+      }
+    ],
+    "correct": "magma",
+    "source": "https://en.wikipedia.org/wiki/Magma"
+  },
+  {
+    "key": "science_nature_010",
+    "category_id": "science_nature",
+    "subcategory_id": "human_body",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "What is the largest organ of the human body?",
+      "tr": "İnsan vücudunun en büyük organı hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "skin",
+        "en": "Skin",
+        "tr": "Deri"
+      },
+      {
+        "concept_id": "liver",
+        "en": "Liver",
+        "tr": "Karaciğer"
+      },
+      {
+        "concept_id": "brain",
+        "en": "Brain",
+        "tr": "Beyin"
+      },
+      {
+        "concept_id": "lungs",
+        "en": "Lungs",
+        "tr": "Akciğerler"
+      }
+    ],
+    "correct": "skin",
+    "source": "https://en.wikipedia.org/wiki/Skin"
+  },
+  {
+    "key": "science_nature_011",
+    "category_id": "science_nature",
+    "subcategory_id": "biology",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "What is the basic structural unit of all living things?",
+      "tr": "Tüm canlıların temel yapı birimi nedir?"
+    },
+    "options": [
+      {
+        "concept_id": "atom",
+        "en": "Atom",
+        "tr": "Atom"
+      },
+      {
+        "concept_id": "tissue",
+        "en": "Tissue",
+        "tr": "Doku"
+      },
+      {
+        "concept_id": "organ",
+        "en": "Organ",
+        "tr": "Organ"
+      },
+      {
+        "concept_id": "cell",
+        "en": "Cell",
+        "tr": "Hücre"
+      }
+    ],
+    "correct": "cell",
+    "source": "https://en.wikipedia.org/wiki/Cell_(biology)"
+  },
+  {
+    "key": "science_nature_012",
+    "category_id": "science_nature",
+    "subcategory_id": "space",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "What is the closest star to Earth?",
+      "tr": "Dünya'ya en yakın yıldız hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "sirius",
+        "en": "Sirius",
+        "tr": "Sirius"
+      },
+      {
+        "concept_id": "polaris",
+        "en": "Polaris",
+        "tr": "Kutup Yıldızı"
+      },
+      {
+        "concept_id": "sun",
+        "en": "The Sun",
+        "tr": "Güneş"
+      },
+      {
+        "concept_id": "proxima",
+        "en": "Proxima Centauri",
+        "tr": "Proxima Centauri"
+      }
+    ],
+    "correct": "sun",
+    "source": "https://science.nasa.gov/sun/"
+  },
+  {
+    "key": "science_nature_013",
+    "category_id": "science_nature",
+    "subcategory_id": "physics",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "At sea level, at what temperature does pure water boil?",
+      "tr": "Deniz seviyesinde saf su kaç derecede kaynar?"
+    },
+    "options": [
+      {
+        "concept_id": "c212",
+        "en": "212 °C",
+        "tr": "212 °C"
+      },
+      {
+        "concept_id": "c100",
+        "en": "100 °C",
+        "tr": "100 °C"
+      },
+      {
+        "concept_id": "c90",
+        "en": "90 °C",
+        "tr": "90 °C"
+      },
+      {
+        "concept_id": "c110",
+        "en": "110 °C",
+        "tr": "110 °C"
+      }
+    ],
+    "correct": "c100",
+    "source": "https://en.wikipedia.org/wiki/Boiling_point"
+  },
+  {
+    "key": "science_nature_014",
+    "category_id": "science_nature",
+    "subcategory_id": "environment",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which layer of the atmosphere absorbs most of the Sun's harmful UV rays?",
+      "tr": "Atmosferin hangi tabakası Güneş'in zararlı UV ışınlarının çoğunu emer?"
+    },
+    "options": [
+      {
+        "concept_id": "ozone_layer",
+        "en": "Ozone layer",
+        "tr": "Ozon tabakası"
+      },
+      {
+        "concept_id": "ionosphere",
+        "en": "Ionosphere",
+        "tr": "İyonosfer"
+      },
+      {
+        "concept_id": "troposphere",
+        "en": "Troposphere",
+        "tr": "Troposfer"
+      },
+      {
+        "concept_id": "mesosphere",
+        "en": "Mesosphere",
+        "tr": "Mezosfer"
+      }
+    ],
+    "correct": "ozone_layer",
+    "source": "https://en.wikipedia.org/wiki/Ozone_layer"
+  },
+  {
+    "key": "science_nature_015",
+    "category_id": "science_nature",
+    "subcategory_id": "biology",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which organelle is known as the 'powerhouse of the cell'?",
+      "tr": "Hangi organel 'hücrenin enerji santrali' olarak bilinir?"
+    },
+    "options": [
+      {
+        "concept_id": "nucleus",
+        "en": "Nucleus",
+        "tr": "Çekirdek"
+      },
+      {
+        "concept_id": "ribosome",
+        "en": "Ribosome",
+        "tr": "Ribozom"
+      },
+      {
+        "concept_id": "golgi",
+        "en": "Golgi apparatus",
+        "tr": "Golgi aygıtı"
+      },
+      {
+        "concept_id": "mitochondrion",
+        "en": "Mitochondrion",
+        "tr": "Mitokondri"
+      }
+    ],
+    "correct": "mitochondrion",
+    "source": "https://en.wikipedia.org/wiki/Mitochondrion"
+  },
+  {
+    "key": "science_nature_016",
+    "category_id": "science_nature",
+    "subcategory_id": "chemistry",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which gas makes up most of the Earth's atmosphere?",
+      "tr": "Dünya atmosferinin büyük kısmını hangi gaz oluşturur?"
+    },
+    "options": [
+      {
+        "concept_id": "argon",
+        "en": "Argon",
+        "tr": "Argon"
+      },
+      {
+        "concept_id": "carbon_dioxide",
+        "en": "Carbon dioxide",
+        "tr": "Karbondioksit"
+      },
+      {
+        "concept_id": "nitrogen",
+        "en": "Nitrogen",
+        "tr": "Azot"
+      },
+      {
+        "concept_id": "oxygen",
+        "en": "Oxygen",
+        "tr": "Oksijen"
+      }
+    ],
+    "correct": "nitrogen",
+    "source": "https://en.wikipedia.org/wiki/Atmosphere_of_Earth"
+  },
+  {
+    "key": "science_nature_017",
+    "category_id": "science_nature",
+    "subcategory_id": "space",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which planet is closest to the Sun?",
+      "tr": "Güneş'e en yakın gezegen hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "earth",
+        "en": "Earth",
+        "tr": "Dünya"
+      },
+      {
+        "concept_id": "mercury",
+        "en": "Mercury",
+        "tr": "Merkür"
+      },
+      {
+        "concept_id": "venus",
+        "en": "Venus",
+        "tr": "Venüs"
+      },
+      {
+        "concept_id": "mars",
+        "en": "Mars",
+        "tr": "Mars"
+      }
+    ],
+    "correct": "mercury",
+    "source": "https://science.nasa.gov/mercury/"
+  },
+  {
+    "key": "science_nature_018",
+    "category_id": "science_nature",
+    "subcategory_id": "human_body",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "How many bones are in a typical adult human skeleton?",
+      "tr": "Tipik bir yetişkin insan iskeletinde kaç kemik bulunur?"
+    },
+    "options": [
+      {
+        "concept_id": "b206",
+        "en": "206",
+        "tr": "206"
+      },
+      {
+        "concept_id": "b186",
+        "en": "186",
+        "tr": "186"
+      },
+      {
+        "concept_id": "b212",
+        "en": "212",
+        "tr": "212"
+      },
+      {
+        "concept_id": "b256",
+        "en": "256",
+        "tr": "256"
+      }
+    ],
+    "correct": "b206",
+    "source": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "key": "science_nature_019",
+    "category_id": "science_nature",
+    "subcategory_id": "physics",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Approximately how fast does light travel in a vacuum?",
+      "tr": "Işık boşlukta yaklaşık olarak hangi hızla yol alır?"
+    },
+    "options": [
+      {
+        "concept_id": "km150000",
+        "en": "150,000 km/s",
+        "tr": "150.000 km/s"
+      },
+      {
+        "concept_id": "km30000",
+        "en": "30,000 km/s",
+        "tr": "30.000 km/s"
+      },
+      {
+        "concept_id": "km3000000",
+        "en": "3,000,000 km/s",
+        "tr": "3.000.000 km/s"
+      },
+      {
+        "concept_id": "km300000",
+        "en": "300,000 km/s",
+        "tr": "300.000 km/s"
+      }
+    ],
+    "correct": "km300000",
+    "source": "https://en.wikipedia.org/wiki/Speed_of_light"
+  },
+  {
+    "key": "science_nature_020",
+    "category_id": "science_nature",
+    "subcategory_id": "animals",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which are the only mammals capable of true powered flight?",
+      "tr": "Gerçek anlamda kanat çırparak uçabilen tek memeliler hangileridir?"
+    },
+    "options": [
+      {
+        "concept_id": "colugos",
+        "en": "Colugos",
+        "tr": "Uçan lemurlar"
+      },
+      {
+        "concept_id": "sugar_gliders",
+        "en": "Sugar gliders",
+        "tr": "Şeker planörleri"
+      },
+      {
+        "concept_id": "bats",
+        "en": "Bats",
+        "tr": "Yarasalar"
+      },
+      {
+        "concept_id": "flying_squirrels",
+        "en": "Flying squirrels",
+        "tr": "Uçan sincaplar"
+      }
+    ],
+    "correct": "bats",
+    "source": "https://en.wikipedia.org/wiki/Bat"
+  },
+  {
+    "key": "science_nature_021",
+    "category_id": "science_nature",
+    "subcategory_id": "earth_science",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which layer of the Earth lies directly beneath the crust?",
+      "tr": "Yer kabuğunun hemen altında hangi katman bulunur?"
+    },
+    "options": [
+      {
+        "concept_id": "magnetosphere",
+        "en": "Magnetosphere",
+        "tr": "Manyetosfer"
+      },
+      {
+        "concept_id": "mantle",
+        "en": "Mantle",
+        "tr": "Manto"
+      },
+      {
+        "concept_id": "outer_core",
+        "en": "Outer core",
+        "tr": "Dış çekirdek"
+      },
+      {
+        "concept_id": "inner_core",
+        "en": "Inner core",
+        "tr": "İç çekirdek"
+      }
+    ],
+    "correct": "mantle",
+    "source": "https://en.wikipedia.org/wiki/Earth%27s_mantle"
+  },
+  {
+    "key": "science_nature_022",
+    "category_id": "science_nature",
+    "subcategory_id": "plants",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "What is the loss of water vapour from a plant's leaves called?",
+      "tr": "Bitkilerin yapraklarından su buharı kaybetmesine ne ad verilir?"
+    },
+    "options": [
+      {
+        "concept_id": "transpiration",
+        "en": "Transpiration",
+        "tr": "Terleme"
+      },
+      {
+        "concept_id": "photosynthesis",
+        "en": "Photosynthesis",
+        "tr": "Fotosentez"
+      },
+      {
+        "concept_id": "germination",
+        "en": "Germination",
+        "tr": "Çimlenme"
+      },
+      {
+        "concept_id": "pollination",
+        "en": "Pollination",
+        "tr": "Tozlaşma"
+      }
+    ],
+    "correct": "transpiration",
+    "source": "https://en.wikipedia.org/wiki/Transpiration"
+  },
+  {
+    "key": "science_nature_023",
+    "category_id": "science_nature",
+    "subcategory_id": "chemistry",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "What is the pH of pure water at 25 °C?",
+      "tr": "25 °C'de saf suyun pH değeri kaçtır?"
+    },
+    "options": [
+      {
+        "concept_id": "ph1",
+        "en": "1",
+        "tr": "1"
+      },
+      {
+        "concept_id": "ph10",
+        "en": "10",
+        "tr": "10"
+      },
+      {
+        "concept_id": "ph14",
+        "en": "14",
+        "tr": "14"
+      },
+      {
+        "concept_id": "ph7",
+        "en": "7",
+        "tr": "7"
+      }
+    ],
+    "correct": "ph7",
+    "source": "https://en.wikipedia.org/wiki/PH"
+  },
+  {
+    "key": "science_nature_024",
+    "category_id": "science_nature",
+    "subcategory_id": "biology",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which molecule carries genetic information in most living organisms?",
+      "tr": "Canlıların çoğunda genetik bilgiyi taşıyan molekül hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "glucose",
+        "en": "Glucose",
+        "tr": "Glikoz"
+      },
+      {
+        "concept_id": "hemoglobin",
+        "en": "Hemoglobin",
+        "tr": "Hemoglobin"
+      },
+      {
+        "concept_id": "dna",
+        "en": "DNA",
+        "tr": "DNA"
+      },
+      {
+        "concept_id": "atp",
+        "en": "ATP",
+        "tr": "ATP"
+      }
+    ],
+    "correct": "dna",
+    "source": "https://en.wikipedia.org/wiki/DNA"
+  },
+  {
+    "key": "science_nature_025",
+    "category_id": "science_nature",
+    "subcategory_id": "human_body",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which blood cells mainly help the body fight infections?",
+      "tr": "Vücudun enfeksiyonlarla savaşmasına esas olarak hangi kan hücreleri yardım eder?"
+    },
+    "options": [
+      {
+        "concept_id": "plasma",
+        "en": "Blood plasma",
+        "tr": "Kan plazması"
+      },
+      {
+        "concept_id": "white_cells",
+        "en": "White blood cells",
+        "tr": "Akyuvarlar"
+      },
+      {
+        "concept_id": "red_cells",
+        "en": "Red blood cells",
+        "tr": "Alyuvarlar"
+      },
+      {
+        "concept_id": "platelets",
+        "en": "Platelets",
+        "tr": "Kan pulcukları"
+      }
+    ],
+    "correct": "white_cells",
+    "source": "https://en.wikipedia.org/wiki/White_blood_cell"
+  },
+  {
+    "key": "science_nature_026",
+    "category_id": "science_nature",
+    "subcategory_id": "space",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "What is the name of the galaxy that contains our Solar System?",
+      "tr": "Güneş Sistemi'mizi içeren gökadanın adı nedir?"
+    },
+    "options": [
+      {
+        "concept_id": "milky_way",
+        "en": "Milky Way",
+        "tr": "Samanyolu"
+      },
+      {
+        "concept_id": "andromeda",
+        "en": "Andromeda",
+        "tr": "Andromeda"
+      },
+      {
+        "concept_id": "triangulum",
+        "en": "Triangulum",
+        "tr": "Üçgen Gökadası"
+      },
+      {
+        "concept_id": "sombrero",
+        "en": "Sombrero",
+        "tr": "Sombrero Gökadası"
+      }
+    ],
+    "correct": "milky_way",
+    "source": "https://en.wikipedia.org/wiki/Milky_Way"
+  },
+  {
+    "key": "science_nature_027",
+    "category_id": "science_nature",
+    "subcategory_id": "animals",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "What is the largest living species of bird?",
+      "tr": "Yaşayan en büyük kuş türü hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "emu",
+        "en": "Emu",
+        "tr": "Emu"
+      },
+      {
+        "concept_id": "albatross",
+        "en": "Albatross",
+        "tr": "Albatros"
+      },
+      {
+        "concept_id": "condor",
+        "en": "Condor",
+        "tr": "Akbaba (kondor)"
+      },
+      {
+        "concept_id": "ostrich",
+        "en": "Ostrich",
+        "tr": "Deve kuşu"
+      }
+    ],
+    "correct": "ostrich",
+    "source": "https://en.wikipedia.org/wiki/Common_ostrich"
+  },
+  {
+    "key": "science_nature_028",
+    "category_id": "science_nature",
+    "subcategory_id": "physics",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "What is the SI unit of force?",
+      "tr": "Kuvvetin SI birimi nedir?"
+    },
+    "options": [
+      {
+        "concept_id": "watt",
+        "en": "Watt",
+        "tr": "Watt"
+      },
+      {
+        "concept_id": "pascal",
+        "en": "Pascal",
+        "tr": "Pascal"
+      },
+      {
+        "concept_id": "newton",
+        "en": "Newton",
+        "tr": "Newton"
+      },
+      {
+        "concept_id": "joule",
+        "en": "Joule",
+        "tr": "Joule"
+      }
+    ],
+    "correct": "newton",
+    "source": "https://en.wikipedia.org/wiki/Newton_(unit)"
+  },
+  {
+    "key": "science_nature_029",
+    "category_id": "science_nature",
+    "subcategory_id": "environment",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which gas from burning fossil fuels is the main driver of human-caused global warming?",
+      "tr": "Fosil yakıtların yanmasıyla açığa çıkan hangi gaz, insan kaynaklı küresel ısınmanın başlıca nedenidir?"
+    },
+    "options": [
+      {
+        "concept_id": "hydrogen",
+        "en": "Hydrogen",
+        "tr": "Hidrojen"
+      },
+      {
+        "concept_id": "co2",
+        "en": "Carbon dioxide",
+        "tr": "Karbondioksit"
+      },
+      {
+        "concept_id": "nitrogen",
+        "en": "Nitrogen",
+        "tr": "Azot"
+      },
+      {
+        "concept_id": "argon",
+        "en": "Argon",
+        "tr": "Argon"
+      }
+    ],
+    "correct": "co2",
+    "source": "https://en.wikipedia.org/wiki/Carbon_dioxide_in_Earth%27s_atmosphere"
+  },
+  {
+    "key": "science_nature_030",
+    "category_id": "science_nature",
+    "subcategory_id": "earth_science",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which type of rock forms when magma or lava cools and solidifies?",
+      "tr": "Magma veya lav soğuyup katılaştığında hangi tür kayaç oluşur?"
+    },
+    "options": [
+      {
+        "concept_id": "igneous",
+        "en": "Igneous rock",
+        "tr": "Magmatik kayaç"
+      },
+      {
+        "concept_id": "sedimentary",
+        "en": "Sedimentary rock",
+        "tr": "Tortul kayaç"
+      },
+      {
+        "concept_id": "metamorphic",
+        "en": "Metamorphic rock",
+        "tr": "Başkalaşım kayacı"
+      },
+      {
+        "concept_id": "limestone",
+        "en": "Limestone",
+        "tr": "Kireçtaşı"
+      }
+    ],
+    "correct": "igneous",
+    "source": "https://en.wikipedia.org/wiki/Igneous_rock"
+  },
+  {
+    "key": "science_nature_031",
+    "category_id": "science_nature",
+    "subcategory_id": "chemistry",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which element has the chemical symbol K?",
+      "tr": "Kimyasal sembolü K olan element hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "krypton",
+        "en": "Krypton",
+        "tr": "Kripton"
+      },
+      {
+        "concept_id": "calcium",
+        "en": "Calcium",
+        "tr": "Kalsiyum"
+      },
+      {
+        "concept_id": "cobalt",
+        "en": "Cobalt",
+        "tr": "Kobalt"
+      },
+      {
+        "concept_id": "potassium",
+        "en": "Potassium",
+        "tr": "Potasyum"
+      }
+    ],
+    "correct": "potassium",
+    "source": "https://en.wikipedia.org/wiki/Potassium"
+  },
+  {
+    "key": "science_nature_032",
+    "category_id": "science_nature",
+    "subcategory_id": "physics",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "What is the SI unit of electrical resistance?",
+      "tr": "Elektriksel direncin SI birimi nedir?"
+    },
+    "options": [
+      {
+        "concept_id": "ampere",
+        "en": "Ampere",
+        "tr": "Amper"
+      },
+      {
+        "concept_id": "farad",
+        "en": "Farad",
+        "tr": "Farad"
+      },
+      {
+        "concept_id": "ohm",
+        "en": "Ohm",
+        "tr": "Ohm"
+      },
+      {
+        "concept_id": "volt",
+        "en": "Volt",
+        "tr": "Volt"
+      }
+    ],
+    "correct": "ohm",
+    "source": "https://en.wikipedia.org/wiki/Ohm"
+  },
+  {
+    "key": "science_nature_033",
+    "category_id": "science_nature",
+    "subcategory_id": "space",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which planet spins on its side, with an axial tilt of about 98 degrees?",
+      "tr": "Hangi gezegen yaklaşık 98 derecelik eksen eğikliğiyle yan yatmış şekilde döner?"
+    },
+    "options": [
+      {
+        "concept_id": "venus",
+        "en": "Venus",
+        "tr": "Venüs"
+      },
+      {
+        "concept_id": "uranus",
+        "en": "Uranus",
+        "tr": "Uranüs"
+      },
+      {
+        "concept_id": "neptune",
+        "en": "Neptune",
+        "tr": "Neptün"
+      },
+      {
+        "concept_id": "saturn",
+        "en": "Saturn",
+        "tr": "Satürn"
+      }
+    ],
+    "correct": "uranus",
+    "source": "https://science.nasa.gov/uranus/"
+  },
+  {
+    "key": "science_nature_034",
+    "category_id": "science_nature",
+    "subcategory_id": "biology",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "How many chromosomes does a typical human body cell contain?",
+      "tr": "Tipik bir insan vücut hücresinde kaç kromozom bulunur?"
+    },
+    "options": [
+      {
+        "concept_id": "c46",
+        "en": "46",
+        "tr": "46"
+      },
+      {
+        "concept_id": "c23",
+        "en": "23",
+        "tr": "23"
+      },
+      {
+        "concept_id": "c44",
+        "en": "44",
+        "tr": "44"
+      },
+      {
+        "concept_id": "c48",
+        "en": "48",
+        "tr": "48"
+      }
+    ],
+    "correct": "c46",
+    "source": "https://en.wikipedia.org/wiki/Chromosome"
+  },
+  {
+    "key": "science_nature_035",
+    "category_id": "science_nature",
+    "subcategory_id": "human_body",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "What is the smallest bone in the human body?",
+      "tr": "İnsan vücudundaki en küçük kemik hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "incus",
+        "en": "Incus",
+        "tr": "Örs kemiği"
+      },
+      {
+        "concept_id": "malleus",
+        "en": "Malleus",
+        "tr": "Çekiç kemiği"
+      },
+      {
+        "concept_id": "hyoid",
+        "en": "Hyoid",
+        "tr": "Dil kemiği"
+      },
+      {
+        "concept_id": "stapes",
+        "en": "Stapes",
+        "tr": "Üzengi kemiği"
+      }
+    ],
+    "correct": "stapes",
+    "source": "https://en.wikipedia.org/wiki/Stapes"
+  },
+  {
+    "key": "science_nature_036",
+    "category_id": "science_nature",
+    "subcategory_id": "animals",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which of these animals has three hearts?",
+      "tr": "Bu hayvanlardan hangisinin üç kalbi vardır?"
+    },
+    "options": [
+      {
+        "concept_id": "jellyfish",
+        "en": "Jellyfish",
+        "tr": "Denizanası"
+      },
+      {
+        "concept_id": "crab",
+        "en": "Crab",
+        "tr": "Yengeç"
+      },
+      {
+        "concept_id": "octopus",
+        "en": "Octopus",
+        "tr": "Ahtapot"
+      },
+      {
+        "concept_id": "starfish",
+        "en": "Starfish",
+        "tr": "Deniz yıldızı"
+      }
+    ],
+    "correct": "octopus",
+    "source": "https://en.wikipedia.org/wiki/Octopus"
+  },
+  {
+    "key": "science_nature_037",
+    "category_id": "science_nature",
+    "subcategory_id": "earth_science",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which mineral has a hardness of 10, the highest on the Mohs scale?",
+      "tr": "Mohs ölçeğinde en yüksek değer olan 10 sertliğe sahip mineral hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "quartz",
+        "en": "Quartz",
+        "tr": "Kuvars"
+      },
+      {
+        "concept_id": "diamond",
+        "en": "Diamond",
+        "tr": "Elmas"
+      },
+      {
+        "concept_id": "corundum",
+        "en": "Corundum",
+        "tr": "Korindon"
+      },
+      {
+        "concept_id": "topaz",
+        "en": "Topaz",
+        "tr": "Topaz"
+      }
+    ],
+    "correct": "diamond",
+    "source": "https://en.wikipedia.org/wiki/Mohs_scale"
+  },
+  {
+    "key": "science_nature_038",
+    "category_id": "science_nature",
+    "subcategory_id": "plants",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which part of a flower produces pollen?",
+      "tr": "Çiçeğin hangi kısmı polen üretir?"
+    },
+    "options": [
+      {
+        "concept_id": "anther",
+        "en": "Anther",
+        "tr": "Başçık"
+      },
+      {
+        "concept_id": "stigma",
+        "en": "Stigma",
+        "tr": "Tepecik"
+      },
+      {
+        "concept_id": "ovary",
+        "en": "Ovary",
+        "tr": "Yumurtalık"
+      },
+      {
+        "concept_id": "petal",
+        "en": "Petal",
+        "tr": "Taç yaprak"
+      }
+    ],
+    "correct": "anther",
+    "source": "https://en.wikipedia.org/wiki/Stamen"
+  },
+  {
+    "key": "science_nature_039",
+    "category_id": "science_nature",
+    "subcategory_id": "environment",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which 1987 treaty phased out ozone-depleting substances such as CFCs?",
+      "tr": "Hangi 1987 antlaşması CFC gibi ozonu incelten maddelerin aşamalı olarak kaldırılmasını sağladı?"
+    },
+    "options": [
+      {
+        "concept_id": "kyoto",
+        "en": "Kyoto Protocol",
+        "tr": "Kyoto Protokolü"
+      },
+      {
+        "concept_id": "paris",
+        "en": "Paris Agreement",
+        "tr": "Paris Anlaşması"
+      },
+      {
+        "concept_id": "rio",
+        "en": "Rio Declaration",
+        "tr": "Rio Bildirgesi"
+      },
+      {
+        "concept_id": "montreal",
+        "en": "Montreal Protocol",
+        "tr": "Montreal Protokolü"
+      }
+    ],
+    "correct": "montreal",
+    "source": "https://en.wikipedia.org/wiki/Montreal_Protocol"
+  },
+  {
+    "key": "science_nature_040",
+    "category_id": "science_nature",
+    "subcategory_id": "chemistry",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which is the only metal that is liquid at standard room temperature?",
+      "tr": "Standart oda sıcaklığında sıvı hâlde bulunan tek metal hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "bromine",
+        "en": "Bromine",
+        "tr": "Brom"
+      },
+      {
+        "concept_id": "sodium",
+        "en": "Sodium",
+        "tr": "Sodyum"
+      },
+      {
+        "concept_id": "mercury_metal",
+        "en": "Mercury",
+        "tr": "Cıva"
+      },
+      {
+        "concept_id": "gallium",
+        "en": "Gallium",
+        "tr": "Galyum"
+      }
+    ],
+    "correct": "mercury_metal",
+    "source": "https://en.wikipedia.org/wiki/Mercury_(element)"
+  }
+]
