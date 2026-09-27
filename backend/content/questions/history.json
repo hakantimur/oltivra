@@ -14578,5 +14578,3605 @@
   ],
   "correct": "su_song",
   "source": "https://en.wikipedia.org/wiki/Su_Song"
+ },
+ {
+  "key": "history_q0401",
+  "category_id": "history",
+  "subcategory_id": "ancient_civilisations",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "If you walked into a Roman \"thermae\", what would you most likely do there?",
+   "tr": "Bir Roma \"thermae\"sine girseniz orada büyük olasılıkla ne yapardınız?"
+  },
+  "options": [
+   {
+    "concept_id": "take_a_bath",
+    "en": "Take a bath",
+    "tr": "Yıkanırdınız"
+   },
+   {
+    "concept_id": "watch_a_play",
+    "en": "Watch a play",
+    "tr": "Oyun izlerdiniz"
+   },
+   {
+    "concept_id": "pray_to_the_gods",
+    "en": "Pray to the gods",
+    "tr": "Tanrılara dua ederdiniz"
+   },
+   {
+    "concept_id": "buy_bread",
+    "en": "Buy bread",
+    "tr": "Ekmek alırdınız"
+   }
+  ],
+  "correct": "take_a_bath",
+  "source": "https://en.wikipedia.org/wiki/Thermae"
+ },
+ {
+  "key": "history_q0402",
+  "category_id": "history",
+  "subcategory_id": "ancient_civilisations",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What do the Colossus of Rhodes, the Hanging Gardens and the Lighthouse of Alexandria share?",
+   "tr": "Rodos Heykeli, Asma Bahçeler ve İskenderiye Feneri'nin ortak noktası nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "they_were_seven_wonders_of_the_ancient_world",
+    "en": "They were Seven Wonders of the Ancient World",
+    "tr": "Antik Dünyanın Yedi Harikası'ndandılar"
+   },
+   {
+    "concept_id": "they_were_built_by_the_romans",
+    "en": "They were built by the Romans",
+    "tr": "Romalılar yaptı"
+   },
+   {
+    "concept_id": "they_still_stand_today",
+    "en": "They still stand today",
+    "tr": "Hâlâ ayaktalar"
+   },
+   {
+    "concept_id": "they_were_in_egypt",
+    "en": "They were in Egypt",
+    "tr": "Mısır'daydılar"
+   }
+  ],
+  "correct": "they_were_seven_wonders_of_the_ancient_world",
+  "source": "https://en.wikipedia.org/wiki/Seven_Wonders_of_the_Ancient_World"
+ },
+ {
+  "key": "history_q0403",
+  "category_id": "history",
+  "subcategory_id": "ancient_civilisations",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which word comes from the Greek for \"a place for viewing\"?",
+   "tr": "Hangi kelime Yunancada \"seyir yeri\" anlamına gelen sözcükten türemiştir?"
+  },
+  "options": [
+   {
+    "concept_id": "theatre",
+    "en": "Theatre",
+    "tr": "Tiyatro"
+   },
+   {
+    "concept_id": "stadium",
+    "en": "Stadium",
+    "tr": "Stadyum"
+   },
+   {
+    "concept_id": "museum",
+    "en": "Museum",
+    "tr": "Müze"
+   },
+   {
+    "concept_id": "library",
+    "en": "Library",
+    "tr": "Kütüphane"
+   }
+  ],
+  "correct": "theatre",
+  "source": "https://en.wikipedia.org/wiki/Theatre_of_ancient_Greece"
+ },
+ {
+  "key": "history_q0404",
+  "category_id": "history",
+  "subcategory_id": "ancient_civilisations",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these ancient civilisations lived in the Americas?",
+   "tr": "Bu antik uygarlıklardan hangisi Amerika kıtasında yaşadı?"
+  },
+  "options": [
+   {
+    "concept_id": "maya",
+    "en": "Maya",
+    "tr": "Mayalar"
+   },
+   {
+    "concept_id": "sumerians",
+    "en": "Sumerians",
+    "tr": "Sümerler"
+   },
+   {
+    "concept_id": "minoans",
+    "en": "Minoans",
+    "tr": "Minoslular"
+   },
+   {
+    "concept_id": "hittites",
+    "en": "Hittites",
+    "tr": "Hititler"
+   }
+  ],
+  "correct": "maya",
+  "source": "https://en.wikipedia.org/wiki/Maya_civilization"
+ },
+ {
+  "key": "history_q0405",
+  "category_id": "history",
+  "subcategory_id": "ancient_civilisations",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Did Viking warriors really wear horned helmets in battle?",
+   "tr": "Viking savaşçıları savaşta gerçekten boynuzlu miğfer takar mıydı?"
+  },
+  "options": [
+   {
+    "concept_id": "no_that_s_a_19th_century_myth",
+    "en": "No, that's a 19th-century myth",
+    "tr": "Hayır, bu 19. yüzyıl efsanesi"
+   },
+   {
+    "concept_id": "yes_all_of_them",
+    "en": "Yes, all of them",
+    "tr": "Evet, her biri takardı"
+   },
+   {
+    "concept_id": "only_their_kings",
+    "en": "Only their kings",
+    "tr": "Yalnızca kralları"
+   },
+   {
+    "concept_id": "only_in_winter",
+    "en": "Only in winter",
+    "tr": "Yalnızca kışın"
+   }
+  ],
+  "correct": "no_that_s_a_19th_century_myth",
+  "source": "https://en.wikipedia.org/wiki/Horned_helmet"
+ },
+ {
+  "key": "history_q0406",
+  "category_id": "history",
+  "subcategory_id": "ancient_civilisations",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What did the ancient Egyptian ankh symbol stand for?",
+   "tr": "Antik Mısır'ın ankh sembolü neyi simgelerdi?"
+  },
+  "options": [
+   {
+    "concept_id": "life",
+    "en": "Life",
+    "tr": "Hayat"
+   },
+   {
+    "concept_id": "death",
+    "en": "Death",
+    "tr": "Ölüm"
+   },
+   {
+    "concept_id": "water",
+    "en": "Water",
+    "tr": "Su"
+   },
+   {
+    "concept_id": "war",
+    "en": "War",
+    "tr": "Savaş"
+   }
+  ],
+  "correct": "life",
+  "source": "https://en.wikipedia.org/wiki/Ankh"
+ },
+ {
+  "key": "history_q0407",
+  "category_id": "history",
+  "subcategory_id": "empires",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "If you paid for bread with a silver denarius, which empire would you be in?",
+   "tr": "Ekmeği gümüş bir denarius ile ödeseydiniz hangi imparatorlukta olurdunuz?"
+  },
+  "options": [
+   {
+    "concept_id": "roman_empire",
+    "en": "Roman Empire",
+    "tr": "Roma İmparatorluğu"
+   },
+   {
+    "concept_id": "ottoman_empire",
+    "en": "Ottoman Empire",
+    "tr": "Osmanlı İmparatorluğu"
+   },
+   {
+    "concept_id": "aztec_empire",
+    "en": "Aztec Empire",
+    "tr": "Aztek İmparatorluğu"
+   },
+   {
+    "concept_id": "mughal_empire",
+    "en": "Mughal Empire",
+    "tr": "Babür İmparatorluğu"
+   }
+  ],
+  "correct": "roman_empire",
+  "source": "https://en.wikipedia.org/wiki/Denarius"
+ },
+ {
+  "key": "history_q0408",
+  "category_id": "history",
+  "subcategory_id": "empires",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these countries was once part of the Ottoman Empire?",
+   "tr": "Bu ülkelerden hangisi bir zamanlar Osmanlı İmparatorluğu'nun parçasıydı?"
+  },
+  "options": [
+   {
+    "concept_id": "greece",
+    "en": "Greece",
+    "tr": "Yunanistan"
+   },
+   {
+    "concept_id": "spain",
+    "en": "Spain",
+    "tr": "İspanya"
+   },
+   {
+    "concept_id": "france",
+    "en": "France",
+    "tr": "Fransa"
+   },
+   {
+    "concept_id": "portugal",
+    "en": "Portugal",
+    "tr": "Portekiz"
+   }
+  ],
+  "correct": "greece",
+  "source": "https://en.wikipedia.org/wiki/Ottoman_Greece"
+ },
+ {
+  "key": "history_q0409",
+  "category_id": "history",
+  "subcategory_id": "empires",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What was the code of honour of Japan's samurai called?",
+   "tr": "Japon samurayların onur yasasına ne denirdi?"
+  },
+  "options": [
+   {
+    "concept_id": "bushido",
+    "en": "Bushido",
+    "tr": "Buşido"
+   },
+   {
+    "concept_id": "shinto",
+    "en": "Shinto",
+    "tr": "Şinto"
+   },
+   {
+    "concept_id": "karate",
+    "en": "Karate",
+    "tr": "Karate"
+   },
+   {
+    "concept_id": "ikebana",
+    "en": "Ikebana",
+    "tr": "İkebana"
+   }
+  ],
+  "correct": "bushido",
+  "source": "https://en.wikipedia.org/wiki/Bushido"
+ },
+ {
+  "key": "history_q0410",
+  "category_id": "history",
+  "subcategory_id": "empires",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which city was the first capital of the Ottoman state, from 1326?",
+   "tr": "1326'dan itibaren Osmanlı Devleti'nin ilk başkenti hangi şehirdi?"
+  },
+  "options": [
+   {
+    "concept_id": "bursa",
+    "en": "Bursa",
+    "tr": "Bursa"
+   },
+   {
+    "concept_id": "konya",
+    "en": "Konya",
+    "tr": "Konya"
+   },
+   {
+    "concept_id": "ankara",
+    "en": "Ankara",
+    "tr": "Ankara"
+   },
+   {
+    "concept_id": "edirne",
+    "en": "Edirne",
+    "tr": "Edirne"
+   }
+  ],
+  "correct": "bursa",
+  "source": "https://en.wikipedia.org/wiki/Bursa"
+ },
+ {
+  "key": "history_q0411",
+  "category_id": "history",
+  "subcategory_id": "empires",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The English word \"mogul\", meaning a powerful tycoon, comes from which empire?",
+   "tr": "İngilizcede güçlü iş insanı anlamına gelen \"mogul\" kelimesi hangi imparatorluktan gelir?"
+  },
+  "options": [
+   {
+    "concept_id": "mughal_empire",
+    "en": "Mughal Empire",
+    "tr": "Babür İmparatorluğu"
+   },
+   {
+    "concept_id": "mongol_empire",
+    "en": "Mongol Empire",
+    "tr": "Moğol İmparatorluğu"
+   },
+   {
+    "concept_id": "ottoman_empire",
+    "en": "Ottoman Empire",
+    "tr": "Osmanlı İmparatorluğu"
+   },
+   {
+    "concept_id": "persian_empire",
+    "en": "Persian Empire",
+    "tr": "Pers İmparatorluğu"
+   }
+  ],
+  "correct": "mughal_empire",
+  "source": "https://en.wikipedia.org/wiki/Mughal_Empire"
+ },
+ {
+  "key": "history_q0412",
+  "category_id": "history",
+  "subcategory_id": "historical_figures",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What did Hatshepsut, Nefertiti and Cleopatra have in common?",
+   "tr": "Hatşepsut, Nefertiti ve Kleopatra'nın ortak noktası neydi?"
+  },
+  "options": [
+   {
+    "concept_id": "they_were_powerful_women_of_ancient_egypt",
+    "en": "They were powerful women of ancient Egypt",
+    "tr": "Antik Mısır'ın güçlü kadınlarıydı"
+   },
+   {
+    "concept_id": "they_were_greek_goddesses",
+    "en": "They were Greek goddesses",
+    "tr": "Yunan tanrıçalarıydı"
+   },
+   {
+    "concept_id": "they_were_roman_empresses",
+    "en": "They were Roman empresses",
+    "tr": "Roma imparatoriçeleriydi"
+   },
+   {
+    "concept_id": "they_were_persian_princesses",
+    "en": "They were Persian princesses",
+    "tr": "Pers prensesleriydi"
+   }
+  ],
+  "correct": "they_were_powerful_women_of_ancient_egypt",
+  "source": "https://en.wikipedia.org/wiki/Women_in_ancient_Egypt"
+ },
+ {
+  "key": "history_q0413",
+  "category_id": "history",
+  "subcategory_id": "historical_figures",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which South American leader is known simply as \"The Liberator\"?",
+   "tr": "Güney Amerika'da sadece \"Kurtarıcı\" (El Libertador) diye anılan lider kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "simon_bolivar",
+    "en": "Simón Bolívar",
+    "tr": "Simón Bolívar"
+   },
+   {
+    "concept_id": "jose_de_san_martin",
+    "en": "José de San Martín",
+    "tr": "José de San Martín"
+   },
+   {
+    "concept_id": "che_guevara",
+    "en": "Che Guevara",
+    "tr": "Che Guevara"
+   },
+   {
+    "concept_id": "pancho_villa",
+    "en": "Pancho Villa",
+    "tr": "Pancho Villa"
+   }
+  ],
+  "correct": "simon_bolivar",
+  "source": "https://en.wikipedia.org/wiki/Simón_Bolívar"
+ },
+ {
+  "key": "history_q0414",
+  "category_id": "history",
+  "subcategory_id": "historical_figures",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who was the first US president to live in the White House?",
+   "tr": "Beyaz Saray'da yaşayan ilk ABD başkanı kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "john_adams",
+    "en": "John Adams",
+    "tr": "John Adams"
+   },
+   {
+    "concept_id": "george_washington",
+    "en": "George Washington",
+    "tr": "George Washington"
+   },
+   {
+    "concept_id": "thomas_jefferson",
+    "en": "Thomas Jefferson",
+    "tr": "Thomas Jefferson"
+   },
+   {
+    "concept_id": "abraham_lincoln",
+    "en": "Abraham Lincoln",
+    "tr": "Abraham Lincoln"
+   }
+  ],
+  "correct": "john_adams",
+  "source": "https://en.wikipedia.org/wiki/John_Adams"
+ },
+ {
+  "key": "history_q0415",
+  "category_id": "history",
+  "subcategory_id": "historical_figures",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Scottish hero fought for independence from England and was executed in 1305?",
+   "tr": "İngiltere'ye karşı bağımsızlık için savaşan ve 1305'te idam edilen İskoç kahraman kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "william_wallace",
+    "en": "William Wallace",
+    "tr": "William Wallace"
+   },
+   {
+    "concept_id": "robert_the_bruce",
+    "en": "Robert the Bruce",
+    "tr": "Robert the Bruce"
+   },
+   {
+    "concept_id": "rob_roy",
+    "en": "Rob Roy",
+    "tr": "Rob Roy"
+   },
+   {
+    "concept_id": "macbeth",
+    "en": "Macbeth",
+    "tr": "Macbeth"
+   }
+  ],
+  "correct": "william_wallace",
+  "source": "https://en.wikipedia.org/wiki/William_Wallace"
+ },
+ {
+  "key": "history_q0416",
+  "category_id": "history",
+  "subcategory_id": "historical_figures",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Russian tsar was nicknamed \"the Terrible\"?",
+   "tr": "\"Korkunç\" lakaplı Rus çarı kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "ivan_iv",
+    "en": "Ivan IV",
+    "tr": "IV. İvan"
+   },
+   {
+    "concept_id": "peter_i",
+    "en": "Peter I",
+    "tr": "I. Petro"
+   },
+   {
+    "concept_id": "nicholas_ii",
+    "en": "Nicholas II",
+    "tr": "II. Nikolay"
+   },
+   {
+    "concept_id": "alexander_i",
+    "en": "Alexander I",
+    "tr": "I. Aleksandr"
+   }
+  ],
+  "correct": "ivan_iv",
+  "source": "https://en.wikipedia.org/wiki/Ivan_the_Terrible"
+ },
+ {
+  "key": "history_q0417",
+  "category_id": "history",
+  "subcategory_id": "historical_figures",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Francisco Pizarro set out to conquer the vast Inca Empire with roughly how many soldiers?",
+   "tr": "Francisco Pizarro koca İnka İmparatorluğu'nu fethetmeye yaklaşık kaç askerle yola çıktı?"
+  },
+  "options": [
+   {
+    "concept_id": "about_170",
+    "en": "About 170",
+    "tr": "Yaklaşık 170"
+   },
+   {
+    "concept_id": "about_1_700",
+    "en": "About 1,700",
+    "tr": "Yaklaşık 1.700"
+   },
+   {
+    "concept_id": "about_17_000",
+    "en": "About 17,000",
+    "tr": "Yaklaşık 17.000"
+   },
+   {
+    "concept_id": "about_170_000",
+    "en": "About 170,000",
+    "tr": "Yaklaşık 170.000"
+   }
+  ],
+  "correct": "about_170",
+  "source": "https://en.wikipedia.org/wiki/Spanish_conquest_of_the_Inca_Empire"
+ },
+ {
+  "key": "history_q0418",
+  "category_id": "history",
+  "subcategory_id": "world_wars",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these wars happened first?",
+   "tr": "Bu savaşlardan hangisi önce yaşandı?"
+  },
+  "options": [
+   {
+    "concept_id": "napoleonic_wars",
+    "en": "Napoleonic Wars",
+    "tr": "Napolyon Savaşları"
+   },
+   {
+    "concept_id": "world_war_i",
+    "en": "World War I",
+    "tr": "Birinci Dünya Savaşı"
+   },
+   {
+    "concept_id": "korean_war",
+    "en": "Korean War",
+    "tr": "Kore Savaşı"
+   },
+   {
+    "concept_id": "vietnam_war",
+    "en": "Vietnam War",
+    "tr": "Vietnam Savaşı"
+   }
+  ],
+  "correct": "napoleonic_wars",
+  "source": "https://en.wikipedia.org/wiki/Napoleonic_Wars"
+ },
+ {
+  "key": "history_q0419",
+  "category_id": "history",
+  "subcategory_id": "world_wars",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which country has been split into North and South since the fighting stopped in 1953?",
+   "tr": "1953'te çatışmalar durduğundan beri kuzey ve güney olarak bölünmüş ülke hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "korea",
+    "en": "Korea",
+    "tr": "Kore"
+   },
+   {
+    "concept_id": "vietnam",
+    "en": "Vietnam",
+    "tr": "Vietnam"
+   },
+   {
+    "concept_id": "germany",
+    "en": "Germany",
+    "tr": "Almanya"
+   },
+   {
+    "concept_id": "yemen",
+    "en": "Yemen",
+    "tr": "Yemen"
+   }
+  ],
+  "correct": "korea",
+  "source": "https://en.wikipedia.org/wiki/Division_of_Korea"
+ },
+ {
+  "key": "history_q0420",
+  "category_id": "history",
+  "subcategory_id": "world_wars",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The shortest war in history, between Britain and Zanzibar in 1896, lasted about how long?",
+   "tr": "Tarihin en kısa savaşı, 1896'da Britanya ile Zanzibar arasında, yaklaşık ne kadar sürdü?"
+  },
+  "options": [
+   {
+    "concept_id": "about_40_minutes",
+    "en": "About 40 minutes",
+    "tr": "Yaklaşık 40 dakika"
+   },
+   {
+    "concept_id": "about_4_days",
+    "en": "About 4 days",
+    "tr": "Yaklaşık 4 gün"
+   },
+   {
+    "concept_id": "about_4_weeks",
+    "en": "About 4 weeks",
+    "tr": "Yaklaşık 4 hafta"
+   },
+   {
+    "concept_id": "about_4_months",
+    "en": "About 4 months",
+    "tr": "Yaklaşık 4 ay"
+   }
+  ],
+  "correct": "about_40_minutes",
+  "source": "https://en.wikipedia.org/wiki/Anglo-Zanzibar_War"
+ },
+ {
+  "key": "history_q0421",
+  "category_id": "history",
+  "subcategory_id": "world_wars",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What does the military alliance NATO's name stand for?",
+   "tr": "Askerî ittifak NATO'nun adı neyin kısaltmasıdır?"
+  },
+  "options": [
+   {
+    "concept_id": "north_atlantic_treaty_organization",
+    "en": "North Atlantic Treaty Organization",
+    "tr": "Kuzey Atlantik Antlaşması Örgütü"
+   },
+   {
+    "concept_id": "national_army_training_office",
+    "en": "National Army Training Office",
+    "tr": "Ulusal Ordu Eğitim Bürosu"
+   },
+   {
+    "concept_id": "new_allied_treaty_order",
+    "en": "New Allied Treaty Order",
+    "tr": "Yeni Müttefik Antlaşma Düzeni"
+   },
+   {
+    "concept_id": "northern_air_transport_office",
+    "en": "Northern Air Transport Office",
+    "tr": "Kuzey Hava Taşımacılığı Bürosu"
+   }
+  ],
+  "correct": "north_atlantic_treaty_organization",
+  "source": "https://en.wikipedia.org/wiki/NATO"
+ },
+ {
+  "key": "history_q0422",
+  "category_id": "history",
+  "subcategory_id": "world_wars",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In World War I, what was \"no man's land\"?",
+   "tr": "Birinci Dünya Savaşı'nda \"kimsesiz toprak\" (no man's land) neydi?"
+  },
+  "options": [
+   {
+    "concept_id": "ground_between_enemy_trenches",
+    "en": "Ground between enemy trenches",
+    "tr": "Düşman siperleri arasındaki alan"
+   },
+   {
+    "concept_id": "a_neutral_country",
+    "en": "A neutral country",
+    "tr": "Tarafsız bir ülke"
+   },
+   {
+    "concept_id": "a_field_hospital_zone",
+    "en": "A field hospital zone",
+    "tr": "Sahra hastanesi bölgesi"
+   },
+   {
+    "concept_id": "a_prisoner_camp",
+    "en": "A prisoner camp",
+    "tr": "Esir kampı"
+   }
+  ],
+  "correct": "ground_between_enemy_trenches",
+  "source": "https://en.wikipedia.org/wiki/No_man's_land"
+ },
+ {
+  "key": "history_q0423",
+  "category_id": "history",
+  "subcategory_id": "world_wars",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which country lost the most people in World War II?",
+   "tr": "İkinci Dünya Savaşı'nda en çok insanını kaybeden ülke hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "soviet_union",
+    "en": "Soviet Union",
+    "tr": "Sovyetler Birliği"
+   },
+   {
+    "concept_id": "britain",
+    "en": "Britain",
+    "tr": "Britanya"
+   },
+   {
+    "concept_id": "united_states",
+    "en": "United States",
+    "tr": "ABD"
+   },
+   {
+    "concept_id": "france",
+    "en": "France",
+    "tr": "Fransa"
+   }
+  ],
+  "correct": "soviet_union",
+  "source": "https://en.wikipedia.org/wiki/World_War_II_casualties_of_the_Soviet_Union"
+ },
+ {
+  "key": "history_q0424",
+  "category_id": "history",
+  "subcategory_id": "archaeology",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What on an ancient coin usually helps archaeologists date it?",
+   "tr": "Antik bir sikkenin üzerindeki hangi şey genellikle arkeologların onu tarihlendirmesine yardım eder?"
+  },
+  "options": [
+   {
+    "concept_id": "the_ruler_shown_on_it",
+    "en": "The ruler shown on it",
+    "tr": "Üzerindeki hükümdar"
+   },
+   {
+    "concept_id": "its_colour",
+    "en": "Its colour",
+    "tr": "Rengi"
+   },
+   {
+    "concept_id": "its_size",
+    "en": "Its size",
+    "tr": "Boyutu"
+   },
+   {
+    "concept_id": "its_smell",
+    "en": "Its smell",
+    "tr": "Kokusu"
+   }
+  ],
+  "correct": "the_ruler_shown_on_it",
+  "source": "https://en.wikipedia.org/wiki/Numismatics"
+ },
+ {
+  "key": "history_q0425",
+  "category_id": "history",
+  "subcategory_id": "archaeology",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "If you went to see Tutankhamun's tomb today, which Egyptian valley would you visit?",
+   "tr": "Bugün Tutankamon'un mezarını görmeye gitseniz Mısır'daki hangi vadiyi ziyaret ederdiniz?"
+  },
+  "options": [
+   {
+    "concept_id": "valley_of_the_kings",
+    "en": "Valley of the Kings",
+    "tr": "Krallar Vadisi"
+   },
+   {
+    "concept_id": "valley_of_the_moon",
+    "en": "Valley of the Moon",
+    "tr": "Ay Vadisi"
+   },
+   {
+    "concept_id": "valley_of_the_nile",
+    "en": "Valley of the Nile",
+    "tr": "Nil Vadisi"
+   },
+   {
+    "concept_id": "valley_of_gold",
+    "en": "Valley of Gold",
+    "tr": "Altın Vadi"
+   }
+  ],
+  "correct": "valley_of_the_kings",
+  "source": "https://en.wikipedia.org/wiki/Valley_of_the_Kings"
+ },
+ {
+  "key": "history_q0426",
+  "category_id": "history",
+  "subcategory_id": "archaeology",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In Europe, ground-up Egyptian mummies were once sold as what?",
+   "tr": "Avrupa'da öğütülmüş Mısır mumyaları bir zamanlar ne olarak satılırdı?"
+  },
+  "options": [
+   {
+    "concept_id": "medicine",
+    "en": "Medicine",
+    "tr": "İlaç"
+   },
+   {
+    "concept_id": "candles",
+    "en": "Candles",
+    "tr": "Mum"
+   },
+   {
+    "concept_id": "soap",
+    "en": "Soap",
+    "tr": "Sabun"
+   },
+   {
+    "concept_id": "building_mortar",
+    "en": "Building mortar",
+    "tr": "İnşaat harcı"
+   }
+  ],
+  "correct": "medicine",
+  "source": "https://en.wikipedia.org/wiki/Mummia"
+ },
+ {
+  "key": "history_q0427",
+  "category_id": "history",
+  "subcategory_id": "archaeology",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What does an underwater archaeologist most often study?",
+   "tr": "Bir sualtı arkeoloğu en çok neyi inceler?"
+  },
+  "options": [
+   {
+    "concept_id": "shipwrecks",
+    "en": "Shipwrecks",
+    "tr": "Batıkları"
+   },
+   {
+    "concept_id": "volcanoes",
+    "en": "Volcanoes",
+    "tr": "Volkanları"
+   },
+   {
+    "concept_id": "coral_reefs",
+    "en": "Coral reefs",
+    "tr": "Mercan resiflerini"
+   },
+   {
+    "concept_id": "whales",
+    "en": "Whales",
+    "tr": "Balinaları"
+   }
+  ],
+  "correct": "shipwrecks",
+  "source": "https://en.wikipedia.org/wiki/Underwater_archaeology"
+ },
+ {
+  "key": "history_q0428",
+  "category_id": "history",
+  "subcategory_id": "archaeology",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In the films, what is Indiana Jones's job?",
+   "tr": "Filmlerde Indiana Jones'un mesleği nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "archaeologist",
+    "en": "Archaeologist",
+    "tr": "Arkeolog"
+   },
+   {
+    "concept_id": "astronaut",
+    "en": "Astronaut",
+    "tr": "Astronot"
+   },
+   {
+    "concept_id": "detective",
+    "en": "Detective",
+    "tr": "Dedektif"
+   },
+   {
+    "concept_id": "pilot",
+    "en": "Pilot",
+    "tr": "Pilot"
+   }
+  ],
+  "correct": "archaeologist",
+  "source": "https://en.wikipedia.org/wiki/Indiana_Jones"
+ },
+ {
+  "key": "history_q0429",
+  "category_id": "history",
+  "subcategory_id": "exploration",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "When Columbus died in 1506, where did he believe he had sailed to?",
+   "tr": "Kolomb 1506'da öldüğünde nereye yelken açtığına inanıyordu?"
+  },
+  "options": [
+   {
+    "concept_id": "asia",
+    "en": "Asia",
+    "tr": "Asya'ya"
+   },
+   {
+    "concept_id": "africa",
+    "en": "Africa",
+    "tr": "Afrika'ya"
+   },
+   {
+    "concept_id": "a_new_continent",
+    "en": "A new continent",
+    "tr": "Yeni bir kıtaya"
+   },
+   {
+    "concept_id": "australia",
+    "en": "Australia",
+    "tr": "Avustralya'ya"
+   }
+  ],
+  "correct": "asia",
+  "source": "https://en.wikipedia.org/wiki/Christopher_Columbus"
+ },
+ {
+  "key": "history_q0430",
+  "category_id": "history",
+  "subcategory_id": "exploration",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who became the first American to orbit the Earth, in 1962?",
+   "tr": "1962'de Dünya'nın yörüngesinde dolaşan ilk Amerikalı kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "john_glenn",
+    "en": "John Glenn",
+    "tr": "John Glenn"
+   },
+   {
+    "concept_id": "alan_shepard",
+    "en": "Alan Shepard",
+    "tr": "Alan Shepard"
+   },
+   {
+    "concept_id": "neil_armstrong",
+    "en": "Neil Armstrong",
+    "tr": "Neil Armstrong"
+   },
+   {
+    "concept_id": "buzz_aldrin",
+    "en": "Buzz Aldrin",
+    "tr": "Buzz Aldrin"
+   }
+  ],
+  "correct": "john_glenn",
+  "source": "https://en.wikipedia.org/wiki/John_Glenn"
+ },
+ {
+  "key": "history_q0431",
+  "category_id": "history",
+  "subcategory_id": "exploration",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What did Vostok, Soyuz and Mir have in common?",
+   "tr": "Vostok, Soyuz ve Mir'in ortak noktası neydi?"
+  },
+  "options": [
+   {
+    "concept_id": "they_were_soviet_spacecraft",
+    "en": "They were Soviet spacecraft",
+    "tr": "Sovyet uzay araçlarıydı"
+   },
+   {
+    "concept_id": "they_were_us_rockets",
+    "en": "They were US rockets",
+    "tr": "ABD roketleriydi"
+   },
+   {
+    "concept_id": "they_were_comets",
+    "en": "They were comets",
+    "tr": "Kuyruklu yıldızlardı"
+   },
+   {
+    "concept_id": "they_were_telescopes",
+    "en": "They were telescopes",
+    "tr": "Teleskoplardı"
+   }
+  ],
+  "correct": "they_were_soviet_spacecraft",
+  "source": "https://en.wikipedia.org/wiki/Soviet_space_program"
+ },
+ {
+  "key": "history_q0432",
+  "category_id": "history",
+  "subcategory_id": "exploration",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which fruit did British sailors eat against scurvy, earning them the nickname \"limeys\"?",
+   "tr": "İngiliz denizciler iskorbüte karşı hangi meyveyi yedi ve bu yüzden \"limey\" lakabını aldı?"
+  },
+  "options": [
+   {
+    "concept_id": "limes",
+    "en": "Limes",
+    "tr": "Misket limonu"
+   },
+   {
+    "concept_id": "apples",
+    "en": "Apples",
+    "tr": "Elma"
+   },
+   {
+    "concept_id": "bananas",
+    "en": "Bananas",
+    "tr": "Muz"
+   },
+   {
+    "concept_id": "grapes",
+    "en": "Grapes",
+    "tr": "Üzüm"
+   }
+  ],
+  "correct": "limes",
+  "source": "https://en.wikipedia.org/wiki/Limey"
+ },
+ {
+  "key": "history_q0433",
+  "category_id": "history",
+  "subcategory_id": "exploration",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Sailing west from Spain in 1492, which ocean did Columbus cross?",
+   "tr": "1492'de İspanya'dan batıya yelken açan Kolomb hangi okyanusu geçti?"
+  },
+  "options": [
+   {
+    "concept_id": "atlantic",
+    "en": "Atlantic",
+    "tr": "Atlas Okyanusu"
+   },
+   {
+    "concept_id": "pacific",
+    "en": "Pacific",
+    "tr": "Pasifik"
+   },
+   {
+    "concept_id": "indian",
+    "en": "Indian",
+    "tr": "Hint Okyanusu"
+   },
+   {
+    "concept_id": "arctic",
+    "en": "Arctic",
+    "tr": "Arktik"
+   }
+  ],
+  "correct": "atlantic",
+  "source": "https://en.wikipedia.org/wiki/Atlantic_Ocean"
+ },
+ {
+  "key": "history_q0434",
+  "category_id": "history",
+  "subcategory_id": "exploration",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What do the Titanic, the Lusitania and the Mary Rose have in common?",
+   "tr": "Titanik, Lusitania ve Mary Rose'un ortak noktası nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "they_all_sank",
+    "en": "They all sank",
+    "tr": "Üçü de battı"
+   },
+   {
+    "concept_id": "they_were_viking_ships",
+    "en": "They were Viking ships",
+    "tr": "Viking gemisiydiler"
+   },
+   {
+    "concept_id": "they_were_built_in_japan",
+    "en": "They were built in Japan",
+    "tr": "Japonya'da yapıldılar"
+   },
+   {
+    "concept_id": "they_never_left_port",
+    "en": "They never left port",
+    "tr": "Limandan hiç çıkmadılar"
+   }
+  ],
+  "correct": "they_all_sank",
+  "source": "https://en.wikipedia.org/wiki/List_of_shipwrecks"
+ },
+ {
+  "key": "history_q0435",
+  "category_id": "history",
+  "subcategory_id": "historical_inventions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Before electronic machines, the job title \"computer\" meant what?",
+   "tr": "Elektronik makinelerden önce \"computer\" unvanı ne anlama geliyordu?"
+  },
+  "options": [
+   {
+    "concept_id": "a_person_who_did_calculations",
+    "en": "A person who did calculations",
+    "tr": "Hesap yapan kişi"
+   },
+   {
+    "concept_id": "a_clockmaker",
+    "en": "A clockmaker",
+    "tr": "Saatçi"
+   },
+   {
+    "concept_id": "a_library_clerk",
+    "en": "A library clerk",
+    "tr": "Kütüphane memuru"
+   },
+   {
+    "concept_id": "a_telegraph_operator",
+    "en": "A telegraph operator",
+    "tr": "Telgrafçı"
+   }
+  ],
+  "correct": "a_person_who_did_calculations",
+  "source": "https://en.wikipedia.org/wiki/Computer_(occupation)"
+ },
+ {
+  "key": "history_q0436",
+  "category_id": "history",
+  "subcategory_id": "historical_inventions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Before glass mirrors, what did people mostly use to see themselves?",
+   "tr": "Cam aynalardan önce insanlar kendilerini görmek için çoğunlukla ne kullanırdı?"
+  },
+  "options": [
+   {
+    "concept_id": "polished_metal",
+    "en": "Polished metal",
+    "tr": "Cilalı metal"
+   },
+   {
+    "concept_id": "painted_wood",
+    "en": "Painted wood",
+    "tr": "Boyalı ahşap"
+   },
+   {
+    "concept_id": "silk_cloth",
+    "en": "Silk cloth",
+    "tr": "İpek kumaş"
+   },
+   {
+    "concept_id": "clay_tiles",
+    "en": "Clay tiles",
+    "tr": "Kil karo"
+   }
+  ],
+  "correct": "polished_metal",
+  "source": "https://en.wikipedia.org/wiki/Mirror"
+ },
+ {
+  "key": "history_q0437",
+  "category_id": "history",
+  "subcategory_id": "historical_inventions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these was invented first?",
+   "tr": "Bunlardan hangisi önce icat edildi?"
+  },
+  "options": [
+   {
+    "concept_id": "the_wheel",
+    "en": "The wheel",
+    "tr": "Tekerlek"
+   },
+   {
+    "concept_id": "the_printing_press",
+    "en": "The printing press",
+    "tr": "Matbaa"
+   },
+   {
+    "concept_id": "the_telescope",
+    "en": "The telescope",
+    "tr": "Teleskop"
+   },
+   {
+    "concept_id": "the_steam_engine",
+    "en": "The steam engine",
+    "tr": "Buhar makinesi"
+   }
+  ],
+  "correct": "the_wheel",
+  "source": "https://en.wikipedia.org/wiki/Wheel"
+ },
+ {
+  "key": "history_q0438",
+  "category_id": "history",
+  "subcategory_id": "historical_inventions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The word \"calendar\" comes from the Roman \"kalendae\". What were they?",
+   "tr": "\"Takvim\" anlamındaki \"calendar\" kelimesi Romalıların \"kalendae\"sinden gelir. Kalendae neydi?"
+  },
+  "options": [
+   {
+    "concept_id": "the_first_day_of_each_month",
+    "en": "The first day of each month",
+    "tr": "Her ayın ilk günü"
+   },
+   {
+    "concept_id": "the_god_of_time",
+    "en": "The god of time",
+    "tr": "Zamanın tanrısı"
+   },
+   {
+    "concept_id": "a_harvest_festival",
+    "en": "A harvest festival",
+    "tr": "Bir hasat bayramı"
+   },
+   {
+    "concept_id": "the_emperor_s_birthday",
+    "en": "The emperor's birthday",
+    "tr": "İmparatorun doğum günü"
+   }
+  ],
+  "correct": "the_first_day_of_each_month",
+  "source": "https://en.wikipedia.org/wiki/Kalends"
+ },
+ {
+  "key": "history_q0439",
+  "category_id": "history",
+  "subcategory_id": "historical_inventions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which animals pulled most ploughs in early farming?",
+   "tr": "İlk tarım dönemlerinde sabanların çoğunu hangi hayvanlar çekerdi?"
+  },
+  "options": [
+   {
+    "concept_id": "oxen",
+    "en": "Oxen",
+    "tr": "Öküzler"
+   },
+   {
+    "concept_id": "horses",
+    "en": "Horses",
+    "tr": "Atlar"
+   },
+   {
+    "concept_id": "dogs",
+    "en": "Dogs",
+    "tr": "Köpekler"
+   },
+   {
+    "concept_id": "camels",
+    "en": "Camels",
+    "tr": "Develer"
+   }
+  ],
+  "correct": "oxen",
+  "source": "https://en.wikipedia.org/wiki/Plough"
+ },
+ {
+  "key": "history_q0440",
+  "category_id": "history",
+  "subcategory_id": "historical_inventions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Roman mile was named after how many paces?",
+   "tr": "Roma mili adını kaç adımdan alır?"
+  },
+  "options": [
+   {
+    "concept_id": "a_thousand",
+    "en": "A thousand",
+    "tr": "Bin"
+   },
+   {
+    "concept_id": "a_hundred",
+    "en": "A hundred",
+    "tr": "Yüz"
+   },
+   {
+    "concept_id": "ten_thousand",
+    "en": "Ten thousand",
+    "tr": "On bin"
+   },
+   {
+    "concept_id": "fifty",
+    "en": "Fifty",
+    "tr": "Elli"
+   }
+  ],
+  "correct": "a_thousand",
+  "source": "https://en.wikipedia.org/wiki/Mile"
+ },
+ {
+  "key": "history_q0441",
+  "category_id": "history",
+  "subcategory_id": "ancient_civilisations",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What colour was a Roman bride's traditional veil?",
+   "tr": "Romalı gelinlerin geleneksel duvağı ne renkti?"
+  },
+  "options": [
+   {
+    "concept_id": "flame_orange",
+    "en": "Flame orange",
+    "tr": "Alev turuncusu"
+   },
+   {
+    "concept_id": "white",
+    "en": "White",
+    "tr": "Beyaz"
+   },
+   {
+    "concept_id": "deep_blue",
+    "en": "Deep blue",
+    "tr": "Koyu mavi"
+   },
+   {
+    "concept_id": "black",
+    "en": "Black",
+    "tr": "Siyah"
+   }
+  ],
+  "correct": "flame_orange",
+  "source": "https://en.wikipedia.org/wiki/Flammeum"
+ },
+ {
+  "key": "history_q0442",
+  "category_id": "history",
+  "subcategory_id": "ancient_civilisations",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "From Rome's legendary founding in 753 BC to the fall of the West in 476, roughly how long is that?",
+   "tr": "Roma'nın efsanevi kuruluşu olan MÖ 753'ten Batı'nın çöküşü olan 476'ya kadar yaklaşık ne kadar zaman geçti?"
+  },
+  "options": [
+   {
+    "concept_id": "about_1_200_years",
+    "en": "About 1,200 years",
+    "tr": "Yaklaşık 1.200 yıl"
+   },
+   {
+    "concept_id": "about_300_years",
+    "en": "About 300 years",
+    "tr": "Yaklaşık 300 yıl"
+   },
+   {
+    "concept_id": "about_3_000_years",
+    "en": "About 3,000 years",
+    "tr": "Yaklaşık 3.000 yıl"
+   },
+   {
+    "concept_id": "about_600_years",
+    "en": "About 600 years",
+    "tr": "Yaklaşık 600 yıl"
+   }
+  ],
+  "correct": "about_1_200_years",
+  "source": "https://en.wikipedia.org/wiki/History_of_Rome"
+ },
+ {
+  "key": "history_q0443",
+  "category_id": "history",
+  "subcategory_id": "ancient_civilisations",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Greek philosopher is said to have designed a water-powered alarm clock?",
+   "tr": "Suyla çalışan bir çalar saat tasarladığı söylenen Yunan filozofu kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "plato",
+    "en": "Plato",
+    "tr": "Platon"
+   },
+   {
+    "concept_id": "socrates",
+    "en": "Socrates",
+    "tr": "Sokrates"
+   },
+   {
+    "concept_id": "diogenes",
+    "en": "Diogenes",
+    "tr": "Diyojen"
+   },
+   {
+    "concept_id": "pericles",
+    "en": "Pericles",
+    "tr": "Perikles"
+   }
+  ],
+  "correct": "plato",
+  "source": "https://en.wikipedia.org/wiki/Plato"
+ },
+ {
+  "key": "history_q0444",
+  "category_id": "history",
+  "subcategory_id": "ancient_civilisations",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The word \"parchment\" comes from which ancient city, famous for its library?",
+   "tr": "\"Parşömen\" kelimesi, kütüphanesiyle ünlü hangi antik kentin adından gelir?"
+  },
+  "options": [
+   {
+    "concept_id": "pergamon",
+    "en": "Pergamon",
+    "tr": "Bergama"
+   },
+   {
+    "concept_id": "alexandria",
+    "en": "Alexandria",
+    "tr": "İskenderiye"
+   },
+   {
+    "concept_id": "athens",
+    "en": "Athens",
+    "tr": "Atina"
+   },
+   {
+    "concept_id": "babylon",
+    "en": "Babylon",
+    "tr": "Babil"
+   }
+  ],
+  "correct": "pergamon",
+  "source": "https://en.wikipedia.org/wiki/Parchment"
+ },
+ {
+  "key": "history_q0445",
+  "category_id": "history",
+  "subcategory_id": "ancient_civilisations",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The ancient town of Jericho has one of the oldest known what?",
+   "tr": "Antik Eriha (Jericho) kenti bilinen en eski hangi yapılardan birine sahiptir?"
+  },
+  "options": [
+   {
+    "concept_id": "town_walls",
+    "en": "Town walls",
+    "tr": "Kent surları"
+   },
+   {
+    "concept_id": "pyramids",
+    "en": "Pyramids",
+    "tr": "Piramitler"
+   },
+   {
+    "concept_id": "libraries",
+    "en": "Libraries",
+    "tr": "Kütüphaneler"
+   },
+   {
+    "concept_id": "coins",
+    "en": "Coins",
+    "tr": "Sikkeler"
+   }
+  ],
+  "correct": "town_walls",
+  "source": "https://en.wikipedia.org/wiki/Jericho"
+ },
+ {
+  "key": "history_q0446",
+  "category_id": "history",
+  "subcategory_id": "empires",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these English words came from India during British rule?",
+   "tr": "Bu İngilizce kelimelerden hangisi İngiliz yönetimi döneminde Hindistan'dan geldi?"
+  },
+  "options": [
+   {
+    "concept_id": "shampoo",
+    "en": "Shampoo",
+    "tr": "Shampoo (şampuan)"
+   },
+   {
+    "concept_id": "robot",
+    "en": "Robot",
+    "tr": "Robot"
+   },
+   {
+    "concept_id": "tycoon",
+    "en": "Tycoon",
+    "tr": "Tycoon"
+   },
+   {
+    "concept_id": "algebra",
+    "en": "Algebra",
+    "tr": "Algebra"
+   }
+  ],
+  "correct": "shampoo",
+  "source": "https://en.wikipedia.org/wiki/Shampoo"
+ },
+ {
+  "key": "history_q0447",
+  "category_id": "history",
+  "subcategory_id": "empires",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What were the Aztecs' floating farm plots on the lake called?",
+   "tr": "Aztekler'in göl üzerindeki yüzen tarım parsellerine ne denirdi?"
+  },
+  "options": [
+   {
+    "concept_id": "chinampas",
+    "en": "Chinampas",
+    "tr": "Chinampa"
+   },
+   {
+    "concept_id": "terraces",
+    "en": "Terraces",
+    "tr": "Teras"
+   },
+   {
+    "concept_id": "paddies",
+    "en": "Paddies",
+    "tr": "Çeltik"
+   },
+   {
+    "concept_id": "oases",
+    "en": "Oases",
+    "tr": "Vaha"
+   }
+  ],
+  "correct": "chinampas",
+  "source": "https://en.wikipedia.org/wiki/Chinampa"
+ },
+ {
+  "key": "history_q0448",
+  "category_id": "history",
+  "subcategory_id": "empires",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "If you were in Paris on 14 July 1789, which fortress would the crowds be storming?",
+   "tr": "14 Temmuz 1789'da Paris'te olsaydınız halk hangi kaleyi basıyor olurdu?"
+  },
+  "options": [
+   {
+    "concept_id": "the_bastille",
+    "en": "The Bastille",
+    "tr": "Bastille"
+   },
+   {
+    "concept_id": "the_louvre",
+    "en": "The Louvre",
+    "tr": "Louvre"
+   },
+   {
+    "concept_id": "versailles",
+    "en": "Versailles",
+    "tr": "Versay"
+   },
+   {
+    "concept_id": "notre_dame",
+    "en": "Notre-Dame",
+    "tr": "Notre-Dame"
+   }
+  ],
+  "correct": "the_bastille",
+  "source": "https://en.wikipedia.org/wiki/Storming_of_the_Bastille"
+ },
+ {
+  "key": "history_q0449",
+  "category_id": "history",
+  "subcategory_id": "empires",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The 1947 partition of British India created India and which other country?",
+   "tr": "1947'de Britanya Hindistanı'nın bölünmesi Hindistan ve hangi diğer ülkeyi doğurdu?"
+  },
+  "options": [
+   {
+    "concept_id": "pakistan",
+    "en": "Pakistan",
+    "tr": "Pakistan"
+   },
+   {
+    "concept_id": "bangladesh",
+    "en": "Bangladesh",
+    "tr": "Bangladeş"
+   },
+   {
+    "concept_id": "sri_lanka",
+    "en": "Sri Lanka",
+    "tr": "Sri Lanka"
+   },
+   {
+    "concept_id": "nepal",
+    "en": "Nepal",
+    "tr": "Nepal"
+   }
+  ],
+  "correct": "pakistan",
+  "source": "https://en.wikipedia.org/wiki/Partition_of_India"
+ },
+ {
+  "key": "history_q0450",
+  "category_id": "history",
+  "subcategory_id": "empires",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Garibaldi's volunteers who helped unite Italy were famous for wearing what?",
+   "tr": "İtalya'nın birleşmesine yardım eden Garibaldi gönüllüleri ne giymeleriyle ünlüydü?"
+  },
+  "options": [
+   {
+    "concept_id": "red_shirts",
+    "en": "Red shirts",
+    "tr": "Kırmızı gömlek"
+   },
+   {
+    "concept_id": "black_hats",
+    "en": "Black hats",
+    "tr": "Siyah şapka"
+   },
+   {
+    "concept_id": "blue_coats",
+    "en": "Blue coats",
+    "tr": "Mavi palto"
+   },
+   {
+    "concept_id": "white_sashes",
+    "en": "White sashes",
+    "tr": "Beyaz kuşak"
+   }
+  ],
+  "correct": "red_shirts",
+  "source": "https://en.wikipedia.org/wiki/Redshirts_(Italy)"
+ },
+ {
+  "key": "history_q0451",
+  "category_id": "history",
+  "subcategory_id": "historical_figures",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What was Genghis Khan's birth name?",
+   "tr": "Cengiz Han'ın doğumdaki adı neydi?"
+  },
+  "options": [
+   {
+    "concept_id": "temujin",
+    "en": "Temüjin",
+    "tr": "Temuçin"
+   },
+   {
+    "concept_id": "ogedei",
+    "en": "Ögedei",
+    "tr": "Ögeday"
+   },
+   {
+    "concept_id": "tolui",
+    "en": "Tolui",
+    "tr": "Tuluy"
+   },
+   {
+    "concept_id": "batu",
+    "en": "Batu",
+    "tr": "Batu"
+   }
+  ],
+  "correct": "temujin",
+  "source": "https://en.wikipedia.org/wiki/Genghis_Khan"
+ },
+ {
+  "key": "history_q0452",
+  "category_id": "history",
+  "subcategory_id": "historical_figures",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In 1952 Albert Einstein was offered the presidency of which country?",
+   "tr": "1952'de Albert Einstein'a hangi ülkenin cumhurbaşkanlığı teklif edildi?"
+  },
+  "options": [
+   {
+    "concept_id": "israel",
+    "en": "Israel",
+    "tr": "İsrail"
+   },
+   {
+    "concept_id": "germany",
+    "en": "Germany",
+    "tr": "Almanya"
+   },
+   {
+    "concept_id": "switzerland",
+    "en": "Switzerland",
+    "tr": "İsviçre"
+   },
+   {
+    "concept_id": "usa",
+    "en": "USA",
+    "tr": "ABD"
+   }
+  ],
+  "correct": "israel",
+  "source": "https://en.wikipedia.org/wiki/Albert_Einstein"
+ },
+ {
+  "key": "history_q0453",
+  "category_id": "history",
+  "subcategory_id": "historical_figures",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which revolutionary leader of the Reign of Terror was himself guillotined in 1794?",
+   "tr": "Terör Dönemi'nin önderlerinden olup 1794'te kendisi de giyotinle idam edilen devrimci kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "maximilien_robespierre",
+    "en": "Maximilien Robespierre",
+    "tr": "Maximilien Robespierre"
+   },
+   {
+    "concept_id": "georges_danton",
+    "en": "Georges Danton",
+    "tr": "Georges Danton"
+   },
+   {
+    "concept_id": "jean_paul_marat",
+    "en": "Jean-Paul Marat",
+    "tr": "Jean-Paul Marat"
+   },
+   {
+    "concept_id": "napoleon_bonaparte",
+    "en": "Napoleon Bonaparte",
+    "tr": "Napolyon Bonapart"
+   }
+  ],
+  "correct": "maximilien_robespierre",
+  "source": "https://en.wikipedia.org/wiki/Maximilien_Robespierre"
+ },
+ {
+  "key": "history_q0454",
+  "category_id": "history",
+  "subcategory_id": "historical_figures",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who was the last Byzantine emperor, killed defending Constantinople in 1453?",
+   "tr": "1453'te Konstantinopolis'i savunurken ölen son Bizans imparatoru kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "constantine_xi",
+    "en": "Constantine XI",
+    "tr": "XI. Konstantinos"
+   },
+   {
+    "concept_id": "john_viii",
+    "en": "John VIII",
+    "tr": "VIII. İoannis"
+   },
+   {
+    "concept_id": "manuel_ii",
+    "en": "Manuel II",
+    "tr": "II. Manuil"
+   },
+   {
+    "concept_id": "alexios_iv",
+    "en": "Alexios IV",
+    "tr": "IV. Aleksios"
+   }
+  ],
+  "correct": "constantine_xi",
+  "source": "https://en.wikipedia.org/wiki/Constantine_XI_Palaiologos"
+ },
+ {
+  "key": "history_q0455",
+  "category_id": "history",
+  "subcategory_id": "historical_figures",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What links Thomas Jefferson, John Adams and Benjamin Franklin in 1776?",
+   "tr": "Thomas Jefferson, John Adams ve Benjamin Franklin'i 1776'da ne birbirine bağlar?"
+  },
+  "options": [
+   {
+    "concept_id": "they_drafted_the_declaration_of_independence",
+    "en": "They drafted the Declaration of Independence",
+    "tr": "Bağımsızlık Bildirgesi'ni birlikte hazırladılar"
+   },
+   {
+    "concept_id": "they_were_british_generals",
+    "en": "They were British generals",
+    "tr": "İngiliz generaliydiler"
+   },
+   {
+    "concept_id": "they_were_all_us_presidents",
+    "en": "They were all US presidents",
+    "tr": "Üçü de ABD başkanı oldu"
+   },
+   {
+    "concept_id": "they_sailed_on_the_mayflower",
+    "en": "They sailed on the Mayflower",
+    "tr": "Mayflower ile geldiler"
+   }
+  ],
+  "correct": "they_drafted_the_declaration_of_independence",
+  "source": "https://en.wikipedia.org/wiki/Committee_of_Five"
+ },
+ {
+  "key": "history_q0456",
+  "category_id": "history",
+  "subcategory_id": "world_wars",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Tennyson's poem \"The Charge of the Light Brigade\" tells of a disaster in which war?",
+   "tr": "Tennyson'ın \"Hafif Süvari Tugayının Hücumu\" şiiri hangi savaştaki bir felaketi anlatır?"
+  },
+  "options": [
+   {
+    "concept_id": "crimean_war",
+    "en": "Crimean War",
+    "tr": "Kırım Savaşı"
+   },
+   {
+    "concept_id": "boer_war",
+    "en": "Boer War",
+    "tr": "Boer Savaşı"
+   },
+   {
+    "concept_id": "napoleonic_wars",
+    "en": "Napoleonic Wars",
+    "tr": "Napolyon Savaşları"
+   },
+   {
+    "concept_id": "world_war_i",
+    "en": "World War I",
+    "tr": "Birinci Dünya Savaşı"
+   }
+  ],
+  "correct": "crimean_war",
+  "source": "https://en.wikipedia.org/wiki/Charge_of_the_Light_Brigade"
+ },
+ {
+  "key": "history_q0457",
+  "category_id": "history",
+  "subcategory_id": "world_wars",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which country did the Soviet Union invade in 1979, starting a decade-long war?",
+   "tr": "Sovyetler Birliği 1979'da hangi ülkeyi işgal ederek on yıl sürecek bir savaş başlattı?"
+  },
+  "options": [
+   {
+    "concept_id": "afghanistan",
+    "en": "Afghanistan",
+    "tr": "Afganistan"
+   },
+   {
+    "concept_id": "poland",
+    "en": "Poland",
+    "tr": "Polonya"
+   },
+   {
+    "concept_id": "hungary",
+    "en": "Hungary",
+    "tr": "Macaristan"
+   },
+   {
+    "concept_id": "iran",
+    "en": "Iran",
+    "tr": "İran"
+   }
+  ],
+  "correct": "afghanistan",
+  "source": "https://en.wikipedia.org/wiki/Soviet–Afghan_War"
+ },
+ {
+  "key": "history_q0458",
+  "category_id": "history",
+  "subcategory_id": "world_wars",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What was France's Maginot Line?",
+   "tr": "Fransa'nın Maginot Hattı neydi?"
+  },
+  "options": [
+   {
+    "concept_id": "a_chain_of_border_fortifications",
+    "en": "A chain of border fortifications",
+    "tr": "Sınır boyunca bir tahkimat zinciri"
+   },
+   {
+    "concept_id": "a_railway_to_the_front",
+    "en": "A railway to the front",
+    "tr": "Cepheye giden bir demiryolu"
+   },
+   {
+    "concept_id": "a_secret_code",
+    "en": "A secret code",
+    "tr": "Gizli bir şifre"
+   },
+   {
+    "concept_id": "a_naval_blockade",
+    "en": "A naval blockade",
+    "tr": "Bir deniz ablukası"
+   }
+  ],
+  "correct": "a_chain_of_border_fortifications",
+  "source": "https://en.wikipedia.org/wiki/Maginot_Line"
+ },
+ {
+  "key": "history_q0459",
+  "category_id": "history",
+  "subcategory_id": "world_wars",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "To fool Germany before D-Day, the Allies built fake armies using what?",
+   "tr": "D-Day öncesinde Almanya'yı kandırmak için Müttefikler sahte orduları neyle kurdu?"
+  },
+  "options": [
+   {
+    "concept_id": "inflatable_tanks",
+    "en": "Inflatable tanks",
+    "tr": "Şişme tanklarla"
+   },
+   {
+    "concept_id": "trained_parrots",
+    "en": "Trained parrots",
+    "tr": "Eğitimli papağanlarla"
+   },
+   {
+    "concept_id": "giant_mirrors",
+    "en": "Giant mirrors",
+    "tr": "Dev aynalarla"
+   },
+   {
+    "concept_id": "paper_aircraft_carriers",
+    "en": "Paper aircraft carriers",
+    "tr": "Kâğıt uçak gemileriyle"
+   }
+  ],
+  "correct": "inflatable_tanks",
+  "source": "https://en.wikipedia.org/wiki/Operation_Fortitude"
+ },
+ {
+  "key": "history_q0460",
+  "category_id": "history",
+  "subcategory_id": "world_wars",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In 1961, a Berliner who woke to find barbed wire across the street was seeing the start of what?",
+   "tr": "1961'de sabah uyandığında sokağında dikenli tel gören bir Berlinli neyin başlangıcını görüyordu?"
+  },
+  "options": [
+   {
+    "concept_id": "the_berlin_wall",
+    "en": "The Berlin Wall",
+    "tr": "Berlin Duvarı'nın"
+   },
+   {
+    "concept_id": "the_berlin_airlift",
+    "en": "The Berlin Airlift",
+    "tr": "Berlin Hava Köprüsü'nün"
+   },
+   {
+    "concept_id": "the_marshall_plan",
+    "en": "The Marshall Plan",
+    "tr": "Marshall Planı'nın"
+   },
+   {
+    "concept_id": "german_reunification",
+    "en": "German reunification",
+    "tr": "Almanya'nın birleşmesinin"
+   }
+  ],
+  "correct": "the_berlin_wall",
+  "source": "https://en.wikipedia.org/wiki/Berlin_Wall"
+ },
+ {
+  "key": "history_q0461",
+  "category_id": "history",
+  "subcategory_id": "archaeology",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What remarkable finds came from the Roman fort of Vindolanda near Hadrian's Wall?",
+   "tr": "Hadrian Duvarı yakınındaki Roma kalesi Vindolanda'dan hangi dikkat çekici buluntular çıktı?"
+  },
+  "options": [
+   {
+    "concept_id": "handwritten_letters_on_wood",
+    "en": "Handwritten letters on wood",
+    "tr": "Tahta üzerine el yazısı mektuplar"
+   },
+   {
+    "concept_id": "a_gold_throne",
+    "en": "A gold throne",
+    "tr": "Altın bir taht"
+   },
+   {
+    "concept_id": "dinosaur_bones",
+    "en": "Dinosaur bones",
+    "tr": "Dinozor kemikleri"
+   },
+   {
+    "concept_id": "a_viking_ship",
+    "en": "A Viking ship",
+    "tr": "Bir Viking gemisi"
+   }
+  ],
+  "correct": "handwritten_letters_on_wood",
+  "source": "https://en.wikipedia.org/wiki/Vindolanda_tablets"
+ },
+ {
+  "key": "history_q0462",
+  "category_id": "history",
+  "subcategory_id": "archaeology",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Staffordshire Hoard, found in 2009, is the largest find of gold from which culture?",
+   "tr": "2009'da bulunan Staffordshire Definesi hangi kültüre ait en büyük altın buluntusudur?"
+  },
+  "options": [
+   {
+    "concept_id": "anglo_saxon",
+    "en": "Anglo-Saxon",
+    "tr": "Anglosakson"
+   },
+   {
+    "concept_id": "roman",
+    "en": "Roman",
+    "tr": "Roma"
+   },
+   {
+    "concept_id": "viking",
+    "en": "Viking",
+    "tr": "Viking"
+   },
+   {
+    "concept_id": "celtic",
+    "en": "Celtic",
+    "tr": "Kelt"
+   }
+  ],
+  "correct": "anglo_saxon",
+  "source": "https://en.wikipedia.org/wiki/Staffordshire_Hoard"
+ },
+ {
+  "key": "history_q0463",
+  "category_id": "history",
+  "subcategory_id": "archaeology",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Roman city on the coast of Libya is one of the best-preserved in the world?",
+   "tr": "Libya kıyısındaki hangi Roma kenti dünyanın en iyi korunmuş antik kentlerinden biridir?"
+  },
+  "options": [
+   {
+    "concept_id": "leptis_magna",
+    "en": "Leptis Magna",
+    "tr": "Leptis Magna"
+   },
+   {
+    "concept_id": "carthage",
+    "en": "Carthage",
+    "tr": "Kartaca"
+   },
+   {
+    "concept_id": "palmyra",
+    "en": "Palmyra",
+    "tr": "Palmira"
+   },
+   {
+    "concept_id": "volubilis",
+    "en": "Volubilis",
+    "tr": "Volubilis"
+   }
+  ],
+  "correct": "leptis_magna",
+  "source": "https://en.wikipedia.org/wiki/Leptis_Magna"
+ },
+ {
+  "key": "history_q0464",
+  "category_id": "history",
+  "subcategory_id": "archaeology",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What does stratigraphy help archaeologists work out?",
+   "tr": "Stratigrafi arkeologların neyi anlamasına yardım eder?"
+  },
+  "options": [
+   {
+    "concept_id": "the_order_in_which_layers_formed",
+    "en": "The order in which layers formed",
+    "tr": "Katmanların hangi sırayla oluştuğunu"
+   },
+   {
+    "concept_id": "the_weight_of_objects",
+    "en": "The weight of objects",
+    "tr": "Nesnelerin ağırlığını"
+   },
+   {
+    "concept_id": "the_colour_of_paintings",
+    "en": "The colour of paintings",
+    "tr": "Resimlerin rengini"
+   },
+   {
+    "concept_id": "the_language_of_texts",
+    "en": "The language of texts",
+    "tr": "Metinlerin dilini"
+   }
+  ],
+  "correct": "the_order_in_which_layers_formed",
+  "source": "https://en.wikipedia.org/wiki/Stratigraphy_(archaeology)"
+ },
+ {
+  "key": "history_q0465",
+  "category_id": "history",
+  "subcategory_id": "archaeology",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Senet, found in Tutankhamun's tomb, was what?",
+   "tr": "Tutankamon'un mezarında bulunan Senet neydi?"
+  },
+  "options": [
+   {
+    "concept_id": "a_board_game",
+    "en": "A board game",
+    "tr": "Bir masa oyunu"
+   },
+   {
+    "concept_id": "a_musical_instrument",
+    "en": "A musical instrument",
+    "tr": "Bir müzik aleti"
+   },
+   {
+    "concept_id": "a_war_chariot",
+    "en": "A war chariot",
+    "tr": "Bir savaş arabası"
+   },
+   {
+    "concept_id": "a_perfume_jar",
+    "en": "A perfume jar",
+    "tr": "Bir parfüm kabı"
+   }
+  ],
+  "correct": "a_board_game",
+  "source": "https://en.wikipedia.org/wiki/Senet"
+ },
+ {
+  "key": "history_q0466",
+  "category_id": "history",
+  "subcategory_id": "exploration",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "According to legend, which Spanish explorer searched Florida for the Fountain of Youth?",
+   "tr": "Efsaneye göre Florida'da Gençlik Çeşmesi'ni arayan İspanyol kâşif kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "juan_ponce_de_leon",
+    "en": "Juan Ponce de León",
+    "tr": "Juan Ponce de León"
+   },
+   {
+    "concept_id": "hernando_de_soto",
+    "en": "Hernando de Soto",
+    "tr": "Hernando de Soto"
+   },
+   {
+    "concept_id": "francisco_coronado",
+    "en": "Francisco Coronado",
+    "tr": "Francisco Coronado"
+   },
+   {
+    "concept_id": "alvar_nunez_cabeza_de_vaca",
+    "en": "Álvar Núñez Cabeza de Vaca",
+    "tr": "Álvar Núñez Cabeza de Vaca"
+   }
+  ],
+  "correct": "juan_ponce_de_leon",
+  "source": "https://en.wikipedia.org/wiki/Juan_Ponce_de_León"
+ },
+ {
+  "key": "history_q0467",
+  "category_id": "history",
+  "subcategory_id": "exploration",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The island of Tasmania is named after which Dutch explorer?",
+   "tr": "Tazmanya adası adını hangi Hollandalı kâşiften alır?"
+  },
+  "options": [
+   {
+    "concept_id": "abel_tasman",
+    "en": "Abel Tasman",
+    "tr": "Abel Tasman"
+   },
+   {
+    "concept_id": "willem_janszoon",
+    "en": "Willem Janszoon",
+    "tr": "Willem Janszoon"
+   },
+   {
+    "concept_id": "dirk_hartog",
+    "en": "Dirk Hartog",
+    "tr": "Dirk Hartog"
+   },
+   {
+    "concept_id": "willem_barentsz",
+    "en": "Willem Barentsz",
+    "tr": "Willem Barentsz"
+   }
+  ],
+  "correct": "abel_tasman",
+  "source": "https://en.wikipedia.org/wiki/Abel_Tasman"
+ },
+ {
+  "key": "history_q0468",
+  "category_id": "history",
+  "subcategory_id": "exploration",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Franklin's lost 1845 expedition was searching for what?",
+   "tr": "Franklin'in 1845'te kaybolan seferi neyi arıyordu?"
+  },
+  "options": [
+   {
+    "concept_id": "the_northwest_passage",
+    "en": "The Northwest Passage",
+    "tr": "Kuzeybatı Geçidi'ni"
+   },
+   {
+    "concept_id": "the_north_pole",
+    "en": "The North Pole",
+    "tr": "Kuzey Kutbu'nu"
+   },
+   {
+    "concept_id": "the_source_of_the_nile",
+    "en": "The source of the Nile",
+    "tr": "Nil'in kaynağını"
+   },
+   {
+    "concept_id": "el_dorado",
+    "en": "El Dorado",
+    "tr": "El Dorado'yu"
+   }
+  ],
+  "correct": "the_northwest_passage",
+  "source": "https://en.wikipedia.org/wiki/Franklin's_lost_expedition"
+ },
+ {
+  "key": "history_q0469",
+  "category_id": "history",
+  "subcategory_id": "exploration",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Magellan's fleet left Spain with five ships in 1519. How many came home?",
+   "tr": "Macellan'ın filosu 1519'da İspanya'dan beş gemiyle ayrıldı. Kaçı geri döndü?"
+  },
+  "options": [
+   {
+    "concept_id": "n_1",
+    "en": "1",
+    "tr": "1"
+   },
+   {
+    "concept_id": "n_3",
+    "en": "3",
+    "tr": "3"
+   },
+   {
+    "concept_id": "n_4",
+    "en": "4",
+    "tr": "4"
+   },
+   {
+    "concept_id": "n_5",
+    "en": "5",
+    "tr": "5"
+   }
+  ],
+  "correct": "n_1",
+  "source": "https://en.wikipedia.org/wiki/Magellan's_circumnavigation"
+ },
+ {
+  "key": "history_q0470",
+  "category_id": "history",
+  "subcategory_id": "exploration",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Venetian's travel book inspired Columbus, who carried an annotated copy?",
+   "tr": "Hangi Venediklinin seyahat kitabı Kolomb'a ilham verdi ve Kolomb kitabın notlu bir kopyasını taşıdı?"
+  },
+  "options": [
+   {
+    "concept_id": "marco_polo",
+    "en": "Marco Polo",
+    "tr": "Marco Polo"
+   },
+   {
+    "concept_id": "niccolo_de_conti",
+    "en": "Niccolò de' Conti",
+    "tr": "Niccolò de' Conti"
+   },
+   {
+    "concept_id": "john_mandeville",
+    "en": "John Mandeville",
+    "tr": "John Mandeville"
+   },
+   {
+    "concept_id": "ibn_battuta",
+    "en": "Ibn Battuta",
+    "tr": "İbn Battuta"
+   }
+  ],
+  "correct": "marco_polo",
+  "source": "https://en.wikipedia.org/wiki/The_Travels_of_Marco_Polo"
+ },
+ {
+  "key": "history_q0471",
+  "category_id": "history",
+  "subcategory_id": "historical_inventions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What did the first known vending machine, described by Hero of Alexandria, dispense?",
+   "tr": "İskenderiyeli Heron'un tarif ettiği bilinen ilk otomatik satış makinesi ne veriyordu?"
+  },
+  "options": [
+   {
+    "concept_id": "holy_water",
+    "en": "Holy water",
+    "tr": "Kutsal su"
+   },
+   {
+    "concept_id": "wine",
+    "en": "Wine",
+    "tr": "Şarap"
+   },
+   {
+    "concept_id": "olive_oil",
+    "en": "Olive oil",
+    "tr": "Zeytinyağı"
+   },
+   {
+    "concept_id": "coins",
+    "en": "Coins",
+    "tr": "Sikke"
+   }
+  ],
+  "correct": "holy_water",
+  "source": "https://en.wikipedia.org/wiki/Vending_machine"
+ },
+ {
+  "key": "history_q0472",
+  "category_id": "history",
+  "subcategory_id": "historical_inventions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Early soap in ancient Babylon was made from fats boiled with what?",
+   "tr": "Antik Babil'deki ilk sabunlar yağların neyle kaynatılmasıyla yapılırdı?"
+  },
+  "options": [
+   {
+    "concept_id": "wood_ash",
+    "en": "Wood ash",
+    "tr": "Odun külü"
+   },
+   {
+    "concept_id": "sand",
+    "en": "Sand",
+    "tr": "Kum"
+   },
+   {
+    "concept_id": "honey",
+    "en": "Honey",
+    "tr": "Bal"
+   },
+   {
+    "concept_id": "salt_water",
+    "en": "Salt water",
+    "tr": "Tuzlu su"
+   }
+  ],
+  "correct": "wood_ash",
+  "source": "https://en.wikipedia.org/wiki/Soap"
+ },
+ {
+  "key": "history_q0473",
+  "category_id": "history",
+  "subcategory_id": "historical_inventions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Where was glass first made, over 4,000 years ago?",
+   "tr": "Cam ilk kez, 4.000 yılı aşkın süre önce nerede yapıldı?"
+  },
+  "options": [
+   {
+    "concept_id": "mesopotamia",
+    "en": "Mesopotamia",
+    "tr": "Mezopotamya"
+   },
+   {
+    "concept_id": "china",
+    "en": "China",
+    "tr": "Çin"
+   },
+   {
+    "concept_id": "greece",
+    "en": "Greece",
+    "tr": "Yunanistan"
+   },
+   {
+    "concept_id": "italy",
+    "en": "Italy",
+    "tr": "İtalya"
+   }
+  ],
+  "correct": "mesopotamia",
+  "source": "https://en.wikipedia.org/wiki/History_of_glass"
+ },
+ {
+  "key": "history_q0474",
+  "category_id": "history",
+  "subcategory_id": "historical_inventions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which medieval fabric, named after Mosul, is still a common word for fine cotton?",
+   "tr": "Adını Musul'dan alan ve hâlâ ince pamuklu kumaş için kullanılan Orta Çağ kumaşı hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "muslin",
+    "en": "Muslin",
+    "tr": "Muslin"
+   },
+   {
+    "concept_id": "damask",
+    "en": "Damask",
+    "tr": "Damask"
+   },
+   {
+    "concept_id": "satin",
+    "en": "Satin",
+    "tr": "Saten"
+   },
+   {
+    "concept_id": "denim",
+    "en": "Denim",
+    "tr": "Denim"
+   }
+  ],
+  "correct": "muslin",
+  "source": "https://en.wikipedia.org/wiki/Muslin"
+ },
+ {
+  "key": "history_q0475",
+  "category_id": "history",
+  "subcategory_id": "historical_inventions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The ancient Inca kept records with a quipu. What was it?",
+   "tr": "Eski İnkalar kayıtlarını \"quipu\" ile tutardı. Quipu neydi?"
+  },
+  "options": [
+   {
+    "concept_id": "knotted_cords",
+    "en": "Knotted cords",
+    "tr": "Düğümlü ipler"
+   },
+   {
+    "concept_id": "clay_tablets",
+    "en": "Clay tablets",
+    "tr": "Kil tabletler"
+   },
+   {
+    "concept_id": "painted_bark",
+    "en": "Painted bark",
+    "tr": "Boyalı ağaç kabuğu"
+   },
+   {
+    "concept_id": "carved_bones",
+    "en": "Carved bones",
+    "tr": "Oyulmuş kemikler"
+   }
+  ],
+  "correct": "knotted_cords",
+  "source": "https://en.wikipedia.org/wiki/Quipu"
+ },
+ {
+  "key": "history_q0476",
+  "category_id": "history",
+  "subcategory_id": "historical_inventions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these was NOT invented in ancient China?",
+   "tr": "Bunlardan hangisi antik Çin'de icat EDİLMEDİ?"
+  },
+  "options": [
+   {
+    "concept_id": "the_windmill",
+    "en": "The windmill",
+    "tr": "Yel değirmeni"
+   },
+   {
+    "concept_id": "paper",
+    "en": "Paper",
+    "tr": "Kâğıt"
+   },
+   {
+    "concept_id": "the_wheelbarrow",
+    "en": "The wheelbarrow",
+    "tr": "El arabası"
+   },
+   {
+    "concept_id": "porcelain",
+    "en": "Porcelain",
+    "tr": "Porselen"
+   }
+  ],
+  "correct": "the_windmill",
+  "source": "https://en.wikipedia.org/wiki/Windmill"
+ },
+ {
+  "key": "history_q0477",
+  "category_id": "history",
+  "subcategory_id": "world_wars",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Treaty of Sèvres of 1920 was imposed on which state?",
+   "tr": "1920 Sevr Antlaşması hangi devlete dayatıldı?"
+  },
+  "options": [
+   {
+    "concept_id": "ottoman_empire",
+    "en": "Ottoman Empire",
+    "tr": "Osmanlı Devleti"
+   },
+   {
+    "concept_id": "germany",
+    "en": "Germany",
+    "tr": "Almanya"
+   },
+   {
+    "concept_id": "austria",
+    "en": "Austria",
+    "tr": "Avusturya"
+   },
+   {
+    "concept_id": "bulgaria",
+    "en": "Bulgaria",
+    "tr": "Bulgaristan"
+   }
+  ],
+  "correct": "ottoman_empire",
+  "source": "https://en.wikipedia.org/wiki/Treaty_of_Sèvres"
+ },
+ {
+  "key": "history_q0478",
+  "category_id": "history",
+  "subcategory_id": "ancient_civilisations",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Greek statesman led Athens in its golden age and built the Parthenon?",
+   "tr": "Atina'yı altın çağında yöneten ve Parthenon'u yaptıran Yunan devlet adamı kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "pericles",
+    "en": "Pericles",
+    "tr": "Perikles"
+   },
+   {
+    "concept_id": "solon",
+    "en": "Solon",
+    "tr": "Solon"
+   },
+   {
+    "concept_id": "themistocles",
+    "en": "Themistocles",
+    "tr": "Themistokles"
+   },
+   {
+    "concept_id": "cleisthenes",
+    "en": "Cleisthenes",
+    "tr": "Kleisthenes"
+   }
+  ],
+  "correct": "pericles",
+  "source": "https://en.wikipedia.org/wiki/Pericles"
+ },
+ {
+  "key": "history_q0479",
+  "category_id": "history",
+  "subcategory_id": "historical_figures",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Suleiman I's Turkish epithet \"Kanuni\" means what?",
+   "tr": "I. Süleyman'ın \"Kanuni\" lakabı ne anlama gelir?"
+  },
+  "options": [
+   {
+    "concept_id": "the_lawgiver",
+    "en": "The Lawgiver",
+    "tr": "Kanun koyucu"
+   },
+   {
+    "concept_id": "the_magnificent",
+    "en": "The Magnificent",
+    "tr": "Muhteşem"
+   },
+   {
+    "concept_id": "the_conqueror",
+    "en": "The Conqueror",
+    "tr": "Fatih"
+   },
+   {
+    "concept_id": "the_just",
+    "en": "The Just",
+    "tr": "Adil"
+   }
+  ],
+  "correct": "the_lawgiver",
+  "source": "https://en.wikipedia.org/wiki/Suleiman_the_Magnificent"
+ },
+ {
+  "key": "history_q0480",
+  "category_id": "history",
+  "subcategory_id": "empires",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these revolutions came first?",
+   "tr": "Bu devrimlerden hangisi önce gerçekleşti?"
+  },
+  "options": [
+   {
+    "concept_id": "american_revolution",
+    "en": "American Revolution",
+    "tr": "Amerikan Devrimi"
+   },
+   {
+    "concept_id": "french_revolution",
+    "en": "French Revolution",
+    "tr": "Fransız Devrimi"
+   },
+   {
+    "concept_id": "russian_revolution",
+    "en": "Russian Revolution",
+    "tr": "Rus Devrimi"
+   },
+   {
+    "concept_id": "chinese_revolution",
+    "en": "Chinese Revolution",
+    "tr": "Çin Devrimi"
+   }
+  ],
+  "correct": "american_revolution",
+  "source": "https://en.wikipedia.org/wiki/American_Revolution"
+ },
+ {
+  "key": "history_q0481",
+  "category_id": "history",
+  "subcategory_id": "historical_figures",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which queen of Ndongo and Matamba resisted Portuguese expansion in 17th-century Angola?",
+   "tr": "17. yüzyılda Angola'da Portekiz yayılmasına direnen Ndongo ve Matamba kraliçesi kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "nzinga",
+    "en": "Nzinga",
+    "tr": "Nzinga"
+   },
+   {
+    "concept_id": "amina",
+    "en": "Amina",
+    "tr": "Amina"
+   },
+   {
+    "concept_id": "makeda",
+    "en": "Makeda",
+    "tr": "Makeda"
+   },
+   {
+    "concept_id": "yaa_asantewaa",
+    "en": "Yaa Asantewaa",
+    "tr": "Yaa Asantewaa"
+   }
+  ],
+  "correct": "nzinga",
+  "source": "https://en.wikipedia.org/wiki/Nzinga_of_Ndongo_and_Matamba"
+ },
+ {
+  "key": "history_q0482",
+  "category_id": "history",
+  "subcategory_id": "historical_figures",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Whose reign (1184–1213) is remembered as Georgia's golden age?",
+   "tr": "Hangi hükümdarın saltanatı (1184–1213) Gürcistan'ın altın çağı olarak anılır?"
+  },
+  "options": [
+   {
+    "concept_id": "queen_tamar",
+    "en": "Queen Tamar",
+    "tr": "Kraliçe Tamar"
+   },
+   {
+    "concept_id": "david_iv",
+    "en": "David IV",
+    "tr": "IV. David"
+   },
+   {
+    "concept_id": "queen_rusudan",
+    "en": "Queen Rusudan",
+    "tr": "Kraliçe Rusudan"
+   },
+   {
+    "concept_id": "george_iii",
+    "en": "George III",
+    "tr": "III. Giorgi"
+   }
+  ],
+  "correct": "queen_tamar",
+  "source": "https://en.wikipedia.org/wiki/Tamar_of_Georgia"
+ },
+ {
+  "key": "history_q0483",
+  "category_id": "history",
+  "subcategory_id": "empires",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "After Selim I conquered Egypt in 1517, the Ottoman sultans also claimed which title?",
+   "tr": "I. Selim 1517'de Mısır'ı fethettikten sonra Osmanlı padişahları hangi unvanı da üstlendi?"
+  },
+  "options": [
+   {
+    "concept_id": "caliph",
+    "en": "Caliph",
+    "tr": "Halife"
+   },
+   {
+    "concept_id": "shah",
+    "en": "Shah",
+    "tr": "Şah"
+   },
+   {
+    "concept_id": "khan",
+    "en": "Khan",
+    "tr": "Han"
+   },
+   {
+    "concept_id": "tsar",
+    "en": "Tsar",
+    "tr": "Çar"
+   }
+  ],
+  "correct": "caliph",
+  "source": "https://en.wikipedia.org/wiki/Ottoman_Caliphate"
+ },
+ {
+  "key": "history_q0484",
+  "category_id": "history",
+  "subcategory_id": "empires",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Chola king sent a great naval raid against Srivijaya in Southeast Asia around 1025?",
+   "tr": "1025 civarında Güneydoğu Asya'daki Srivijaya'ya büyük bir deniz seferi düzenleyen Chola kralı kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "rajendra_i",
+    "en": "Rajendra I",
+    "tr": "I. Rajendra"
+   },
+   {
+    "concept_id": "rajaraja_i",
+    "en": "Rajaraja I",
+    "tr": "I. Rajaraja"
+   },
+   {
+    "concept_id": "ashoka",
+    "en": "Ashoka",
+    "tr": "Aşoka"
+   },
+   {
+    "concept_id": "harsha",
+    "en": "Harsha",
+    "tr": "Harşa"
+   }
+  ],
+  "correct": "rajendra_i",
+  "source": "https://en.wikipedia.org/wiki/Rajendra_I"
+ },
+ {
+  "key": "history_q0485",
+  "category_id": "history",
+  "subcategory_id": "empires",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Muslim dynasty built the Alhambra palace in Granada?",
+   "tr": "Gırnata'daki Elhamra Sarayı'nı hangi Müslüman hanedan inşa etti?"
+  },
+  "options": [
+   {
+    "concept_id": "nasrid",
+    "en": "Nasrid",
+    "tr": "Nasriler"
+   },
+   {
+    "concept_id": "umayyad",
+    "en": "Umayyad",
+    "tr": "Emeviler"
+   },
+   {
+    "concept_id": "almohad",
+    "en": "Almohad",
+    "tr": "Muvahhidler"
+   },
+   {
+    "concept_id": "abbasid",
+    "en": "Abbasid",
+    "tr": "Abbasiler"
+   }
+  ],
+  "correct": "nasrid",
+  "source": "https://en.wikipedia.org/wiki/Nasrid_dynasty"
+ },
+ {
+  "key": "history_q0486",
+  "category_id": "history",
+  "subcategory_id": "world_wars",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "At Tsushima in 1905, which navy destroyed Russia's fleet in a shock to Europe?",
+   "tr": "1905'te Tsuşima'da Rus filosunu yok ederek Avrupa'yı şoke eden donanma hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "japanese",
+    "en": "Japanese",
+    "tr": "Japon"
+   },
+   {
+    "concept_id": "british",
+    "en": "British",
+    "tr": "İngiliz"
+   },
+   {
+    "concept_id": "chinese",
+    "en": "Chinese",
+    "tr": "Çin"
+   },
+   {
+    "concept_id": "american",
+    "en": "American",
+    "tr": "Amerikan"
+   }
+  ],
+  "correct": "japanese",
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Tsushima"
+ },
+ {
+  "key": "history_q0487",
+  "category_id": "history",
+  "subcategory_id": "world_wars",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the 1939–40 war between Finland and the Soviet Union called?",
+   "tr": "Finlandiya ile Sovyetler Birliği arasındaki 1939-40 savaşına ne ad verilir?"
+  },
+  "options": [
+   {
+    "concept_id": "winter_war",
+    "en": "Winter War",
+    "tr": "Kış Savaşı"
+   },
+   {
+    "concept_id": "continuation_war",
+    "en": "Continuation War",
+    "tr": "Devam Savaşı"
+   },
+   {
+    "concept_id": "snow_war",
+    "en": "Snow War",
+    "tr": "Kar Savaşı"
+   },
+   {
+    "concept_id": "northern_war",
+    "en": "Northern War",
+    "tr": "Kuzey Savaşı"
+   }
+  ],
+  "correct": "winter_war",
+  "source": "https://en.wikipedia.org/wiki/Winter_War"
+ },
+ {
+  "key": "history_q0488",
+  "category_id": "history",
+  "subcategory_id": "world_wars",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "The 1916 Siege of Kut in Iraq ended with the surrender of which army to the Ottomans?",
+   "tr": "1916'da Irak'taki Kut Kuşatması hangi ordunun Osmanlılara teslim olmasıyla sona erdi?"
+  },
+  "options": [
+   {
+    "concept_id": "british",
+    "en": "British",
+    "tr": "İngiliz"
+   },
+   {
+    "concept_id": "french",
+    "en": "French",
+    "tr": "Fransız"
+   },
+   {
+    "concept_id": "russian",
+    "en": "Russian",
+    "tr": "Rus"
+   },
+   {
+    "concept_id": "italian",
+    "en": "Italian",
+    "tr": "İtalyan"
+   }
+  ],
+  "correct": "british",
+  "source": "https://en.wikipedia.org/wiki/Siege_of_Kut"
+ },
+ {
+  "key": "history_q0489",
+  "category_id": "history",
+  "subcategory_id": "world_wars",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "The WWII siege of Leningrad lasted roughly how long?",
+   "tr": "İkinci Dünya Savaşı'ndaki Leningrad kuşatması yaklaşık ne kadar sürdü?"
+  },
+  "options": [
+   {
+    "concept_id": "about_872_days",
+    "en": "About 872 days",
+    "tr": "Yaklaşık 872 gün"
+   },
+   {
+    "concept_id": "about_87_days",
+    "en": "About 87 days",
+    "tr": "Yaklaşık 87 gün"
+   },
+   {
+    "concept_id": "about_8_months",
+    "en": "About 8 months",
+    "tr": "Yaklaşık 8 ay"
+   },
+   {
+    "concept_id": "about_12_years",
+    "en": "About 12 years",
+    "tr": "Yaklaşık 12 yıl"
+   }
+  ],
+  "correct": "about_872_days",
+  "source": "https://en.wikipedia.org/wiki/Siege_of_Leningrad"
+ },
+ {
+  "key": "history_q0490",
+  "category_id": "history",
+  "subcategory_id": "archaeology",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "The paintings in France's Chauvet Cave are roughly how old?",
+   "tr": "Fransa'daki Chauvet Mağarası'nın resimleri yaklaşık kaç yaşındadır?"
+  },
+  "options": [
+   {
+    "concept_id": "about_36_000_years",
+    "en": "About 36,000 years",
+    "tr": "Yaklaşık 36.000 yıl"
+   },
+   {
+    "concept_id": "about_3_600_years",
+    "en": "About 3,600 years",
+    "tr": "Yaklaşık 3.600 yıl"
+   },
+   {
+    "concept_id": "about_360_000_years",
+    "en": "About 360,000 years",
+    "tr": "Yaklaşık 360.000 yıl"
+   },
+   {
+    "concept_id": "about_12_000_years",
+    "en": "About 12,000 years",
+    "tr": "Yaklaşık 12.000 yıl"
+   }
+  ],
+  "correct": "about_36_000_years",
+  "source": "https://en.wikipedia.org/wiki/Chauvet_Cave"
+ },
+ {
+  "key": "history_q0491",
+  "category_id": "history",
+  "subcategory_id": "archaeology",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Hoxne Hoard of Roman gold was found in 1992 by a man searching for what?",
+   "tr": "Roma altınlarından oluşan Hoxne Definesi 1992'de neyi arayan bir adam tarafından bulundu?"
+  },
+  "options": [
+   {
+    "concept_id": "a_lost_hammer",
+    "en": "A lost hammer",
+    "tr": "Kayıp bir çekici"
+   },
+   {
+    "concept_id": "truffles",
+    "en": "Truffles",
+    "tr": "Trüf mantarı"
+   },
+   {
+    "concept_id": "his_dog",
+    "en": "His dog",
+    "tr": "Köpeğini"
+   },
+   {
+    "concept_id": "fossils",
+    "en": "Fossils",
+    "tr": "Fosilleri"
+   }
+  ],
+  "correct": "a_lost_hammer",
+  "source": "https://en.wikipedia.org/wiki/Hoxne_Hoard"
+ },
+ {
+  "key": "history_q0492",
+  "category_id": "history",
+  "subcategory_id": "archaeology",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "The mosaic nicknamed the \"Gypsy Girl\" comes from which ancient city in Gaziantep?",
+   "tr": "\"Çingene Kızı\" olarak bilinen mozaik Gaziantep'teki hangi antik kentten gelir?"
+  },
+  "options": [
+   {
+    "concept_id": "zeugma",
+    "en": "Zeugma",
+    "tr": "Zeugma"
+   },
+   {
+    "concept_id": "ephesus",
+    "en": "Ephesus",
+    "tr": "Efes"
+   },
+   {
+    "concept_id": "antioch",
+    "en": "Antioch",
+    "tr": "Antakya"
+   },
+   {
+    "concept_id": "sardis",
+    "en": "Sardis",
+    "tr": "Sardes"
+   }
+  ],
+  "correct": "zeugma",
+  "source": "https://en.wikipedia.org/wiki/Zeugma_Mosaic_Museum"
+ },
+ {
+  "key": "history_q0493",
+  "category_id": "history",
+  "subcategory_id": "archaeology",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which lost Egyptian port city was rediscovered underwater near Alexandria in 2000?",
+   "tr": "2000 yılında İskenderiye yakınlarında sular altında yeniden keşfedilen kayıp Mısır liman kenti hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "thonis_heracleion",
+    "en": "Thonis-Heracleion",
+    "tr": "Thonis-Herakleion"
+   },
+   {
+    "concept_id": "avaris",
+    "en": "Avaris",
+    "tr": "Avaris"
+   },
+   {
+    "concept_id": "tanis",
+    "en": "Tanis",
+    "tr": "Tanis"
+   },
+   {
+    "concept_id": "amarna",
+    "en": "Amarna",
+    "tr": "Amarna"
+   }
+  ],
+  "correct": "thonis_heracleion",
+  "source": "https://en.wikipedia.org/wiki/Thonis-Heracleion"
+ },
+ {
+  "key": "history_q0494",
+  "category_id": "history",
+  "subcategory_id": "exploration",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Belgian-French explorer disguised herself to reach forbidden Lhasa in 1924?",
+   "tr": "1924'te kılık değiştirerek yasak kent Lhasa'ya ulaşan Belçika-Fransız kâşif kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "alexandra_david_neel",
+    "en": "Alexandra David-Néel",
+    "tr": "Alexandra David-Néel"
+   },
+   {
+    "concept_id": "isabella_bird",
+    "en": "Isabella Bird",
+    "tr": "Isabella Bird"
+   },
+   {
+    "concept_id": "gertrude_bell",
+    "en": "Gertrude Bell",
+    "tr": "Gertrude Bell"
+   },
+   {
+    "concept_id": "freya_stark",
+    "en": "Freya Stark",
+    "tr": "Freya Stark"
+   }
+  ],
+  "correct": "alexandra_david_neel",
+  "source": "https://en.wikipedia.org/wiki/Alexandra_David-Néel"
+ },
+ {
+  "key": "history_q0495",
+  "category_id": "history",
+  "subcategory_id": "exploration",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Han dynasty envoy's journeys west, around 130 BC, helped open the Silk Road?",
+   "tr": "MÖ 130 civarında batıya yaptığı yolculuklarla İpek Yolu'nun açılmasına yardım eden Han elçisi kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "zhang_qian",
+    "en": "Zhang Qian",
+    "tr": "Zhang Qian"
+   },
+   {
+    "concept_id": "ban_chao",
+    "en": "Ban Chao",
+    "tr": "Ban Chao"
+   },
+   {
+    "concept_id": "faxian",
+    "en": "Faxian",
+    "tr": "Faxian"
+   },
+   {
+    "concept_id": "xuanzang",
+    "en": "Xuanzang",
+    "tr": "Xuanzang"
+   }
+  ],
+  "correct": "zhang_qian",
+  "source": "https://en.wikipedia.org/wiki/Zhang_Qian"
+ },
+ {
+  "key": "history_q0496",
+  "category_id": "history",
+  "subcategory_id": "exploration",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Arab navigator wrote a famous 15th-century guide to sailing the Indian Ocean?",
+   "tr": "Hint Okyanusu'nda denizcilik üzerine 15. yüzyılda ünlü bir rehber yazan Arap denizci kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "ahmad_ibn_majid",
+    "en": "Ahmad ibn Majid",
+    "tr": "Ahmed ibn Mâcid"
+   },
+   {
+    "concept_id": "ibn_battuta",
+    "en": "Ibn Battuta",
+    "tr": "İbn Battuta"
+   },
+   {
+    "concept_id": "al_idrisi",
+    "en": "Al-Idrisi",
+    "tr": "İdrisi"
+   },
+   {
+    "concept_id": "sulaiman_al_mahri",
+    "en": "Sulaiman al-Mahri",
+    "tr": "Süleyman el-Mehri"
+   }
+  ],
+  "correct": "ahmad_ibn_majid",
+  "source": "https://en.wikipedia.org/wiki/Ahmad_ibn_Majid"
+ },
+ {
+  "key": "history_q0497",
+  "category_id": "history",
+  "subcategory_id": "historical_inventions",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which part of a mechanical clock, invented in medieval Europe, makes it tick in steady steps?",
+   "tr": "Orta Çağ Avrupası'nda icat edilen ve mekanik saatin düzenli adımlarla tıkırdamasını sağlayan parça hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "the_escapement",
+    "en": "The escapement",
+    "tr": "Eşapman (ankraj)"
+   },
+   {
+    "concept_id": "the_pendulum_bob",
+    "en": "The pendulum bob",
+    "tr": "Sarkaç ağırlığı"
+   },
+   {
+    "concept_id": "the_mainspring",
+    "en": "The mainspring",
+    "tr": "Zemberek"
+   },
+   {
+    "concept_id": "the_dial",
+    "en": "The dial",
+    "tr": "Kadran"
+   }
+  ],
+  "correct": "the_escapement",
+  "source": "https://en.wikipedia.org/wiki/Escapement"
+ },
+ {
+  "key": "history_q0498",
+  "category_id": "history",
+  "subcategory_id": "historical_inventions",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Korea's Jikji of 1377 is the oldest surviving book printed with what?",
+   "tr": "Kore'nin 1377 tarihli Jikji'si neyle basılmış, günümüze ulaşan en eski kitaptır?"
+  },
+  "options": [
+   {
+    "concept_id": "movable_metal_type",
+    "en": "Movable metal type",
+    "tr": "Hareketli metal harf"
+   },
+   {
+    "concept_id": "carved_wooden_blocks",
+    "en": "Carved wooden blocks",
+    "tr": "Oyma ahşap kalıp"
+   },
+   {
+    "concept_id": "clay_type",
+    "en": "Clay type",
+    "tr": "Kil harf"
+   },
+   {
+    "concept_id": "stone_plates",
+    "en": "Stone plates",
+    "tr": "Taş levha"
+   }
+  ],
+  "correct": "movable_metal_type",
+  "source": "https://en.wikipedia.org/wiki/Jikji"
+ },
+ {
+  "key": "history_q0499",
+  "category_id": "history",
+  "subcategory_id": "historical_inventions",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Leonardo da Vinci's drawing \"Vitruvian Man\" is named after which Roman writer on architecture?",
+   "tr": "Leonardo da Vinci'nin \"Vitruvius Adamı\" çizimi adını mimarlık üzerine yazan hangi Romalıdan alır?"
+  },
+  "options": [
+   {
+    "concept_id": "vitruvius",
+    "en": "Vitruvius",
+    "tr": "Vitruvius"
+   },
+   {
+    "concept_id": "frontinus",
+    "en": "Frontinus",
+    "tr": "Frontinus"
+   },
+   {
+    "concept_id": "apollodorus",
+    "en": "Apollodorus",
+    "tr": "Apollodoros"
+   },
+   {
+    "concept_id": "pliny_the_elder",
+    "en": "Pliny the Elder",
+    "tr": "Yaşlı Plinius"
+   }
+  ],
+  "correct": "vitruvius",
+  "source": "https://en.wikipedia.org/wiki/Vitruvius"
+ },
+ {
+  "key": "history_q0500",
+  "category_id": "history",
+  "subcategory_id": "historical_inventions",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "The earliest known windmills, in Persia, differed from Dutch ones how?",
+   "tr": "Bilinen en eski yel değirmenleri olan İran değirmenleri Hollanda değirmenlerinden nasıl farklıydı?"
+  },
+  "options": [
+   {
+    "concept_id": "their_sails_turned_horizontally",
+    "en": "Their sails turned horizontally",
+    "tr": "Kanatları yatay dönerdi"
+   },
+   {
+    "concept_id": "they_were_powered_by_animals",
+    "en": "They were powered by animals",
+    "tr": "Hayvan gücüyle çalışırdı"
+   },
+   {
+    "concept_id": "they_only_worked_at_night",
+    "en": "They only worked at night",
+    "tr": "Yalnızca gece çalışırdı"
+   },
+   {
+    "concept_id": "they_had_no_sails",
+    "en": "They had no sails",
+    "tr": "Kanatları yoktu"
+   }
+  ],
+  "correct": "their_sails_turned_horizontally",
+  "source": "https://en.wikipedia.org/wiki/Windmill"
  }
 ]
