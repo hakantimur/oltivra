@@ -1,182 +1,7382 @@
 [
-  {
-    "key": "sports_t001",
-    "category_id": "sports",
-    "subcategory_id": "tennis",
-    "difficulty": "EASY",
-    "global_relevance_score": 5,
-    "time_sensitive": false,
-    "question": {
-      "en": "Which Grand Slam tennis tournament is played on grass courts?",
-      "tr": "Hangi Grand Slam tenis turnuvası çim kortta oynanır?"
-    },
-    "options": [
-      {
-        "concept_id": "wimbledon",
-        "en": "Wimbledon",
-        "tr": "Wimbledon"
-      },
-      {
-        "concept_id": "us_open",
-        "en": "US Open",
-        "tr": "ABD Açık"
-      },
-      {
-        "concept_id": "french_open",
-        "en": "French Open",
-        "tr": "Fransa Açık"
-      },
-      {
-        "concept_id": "australian_open",
-        "en": "Australian Open",
-        "tr": "Avustralya Açık"
-      }
-    ],
-    "correct": "wimbledon",
-    "source": "https://en.wikipedia.org/wiki/Grass_court"
+ {
+  "key": "sports_t001",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Grand Slam tennis tournament is played on grass courts?",
+   "tr": "Hangi Grand Slam tenis turnuvası çim kortta oynanır?"
   },
-  {
-    "key": "sports_c002",
-    "category_id": "sports",
-    "subcategory_id": "basketball",
-    "difficulty": "EASY",
-    "global_relevance_score": 5,
-    "time_sensitive": false,
-    "question": {
-      "en": "In basketball, how many points is a shot from beyond the arc worth?",
-      "tr": "Basketbolda çizginin (yayın) dışından atılan basket kaç sayı değerindedir?"
-    },
-    "options": [
-      {
-        "concept_id": "three",
-        "en": "3",
-        "tr": "3"
-      },
-      {
-        "concept_id": "two",
-        "en": "2",
-        "tr": "2"
-      },
-      {
-        "concept_id": "four",
-        "en": "4",
-        "tr": "4"
-      },
-      {
-        "concept_id": "one",
-        "en": "1",
-        "tr": "1"
-      }
-    ],
-    "correct": "three",
-    "source": "https://en.wikipedia.org/wiki/Three-point_field_goal"
+  "options": [
+   {
+    "concept_id": "wimbledon",
+    "en": "Wimbledon",
+    "tr": "Wimbledon"
+   },
+   {
+    "concept_id": "us_open",
+    "en": "US Open",
+    "tr": "ABD Açık"
+   },
+   {
+    "concept_id": "french_open",
+    "en": "French Open",
+    "tr": "Fransa Açık"
+   },
+   {
+    "concept_id": "australian_open",
+    "en": "Australian Open",
+    "tr": "Avustralya Açık"
+   }
+  ],
+  "correct": "wimbledon",
+  "source": "https://en.wikipedia.org/wiki/Grass_court"
+ },
+ {
+  "key": "sports_c002",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In basketball, how many points is a shot from beyond the arc worth?",
+   "tr": "Basketbolda çizginin (yayın) dışından atılan basket kaç sayı değerindedir?"
   },
-  {
-    "key": "sports_t003",
-    "category_id": "sports",
-    "subcategory_id": "athletics",
-    "difficulty": "MEDIUM",
-    "global_relevance_score": 5,
-    "time_sensitive": false,
-    "question": {
-      "en": "How long is one lap of the inside lane on a standard outdoor running track?",
-      "tr": "Standart bir açık hava koşu pistinde iç kulvarda bir tur kaç metredir?"
-    },
-    "options": [
-      {
-        "concept_id": "m400",
-        "en": "400 metres",
-        "tr": "400 metre"
-      },
-      {
-        "concept_id": "m200",
-        "en": "200 metres",
-        "tr": "200 metre"
-      },
-      {
-        "concept_id": "m500",
-        "en": "500 metres",
-        "tr": "500 metre"
-      },
-      {
-        "concept_id": "m800",
-        "en": "800 metres",
-        "tr": "800 metre"
-      }
-    ],
-    "correct": "m400",
-    "source": "https://en.wikipedia.org/wiki/Running_track"
+  "options": [
+   {
+    "concept_id": "three",
+    "en": "3",
+    "tr": "3"
+   },
+   {
+    "concept_id": "two",
+    "en": "2",
+    "tr": "2"
+   },
+   {
+    "concept_id": "four",
+    "en": "4",
+    "tr": "4"
+   },
+   {
+    "concept_id": "one",
+    "en": "1",
+    "tr": "1"
+   }
+  ],
+  "correct": "three",
+  "source": "https://en.wikipedia.org/wiki/Three-point_field_goal"
+ },
+ {
+  "key": "sports_t003",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How long is one lap of the inside lane on a standard outdoor running track?",
+   "tr": "Standart bir açık hava koşu pistinde iç kulvarda bir tur kaç metredir?"
   },
-  {
-    "key": "sports_t004",
-    "category_id": "sports",
-    "subcategory_id": "football",
-    "difficulty": "MEDIUM",
-    "global_relevance_score": 4,
-    "time_sensitive": false,
-    "question": {
-      "en": "In which city is the Maracanã football stadium?",
-      "tr": "Maracanã futbol stadyumu hangi şehirdedir?"
-    },
-    "options": [
-      {
-        "concept_id": "rio_de_janeiro",
-        "en": "Rio de Janeiro",
-        "tr": "Rio de Janeiro"
-      },
-      {
-        "concept_id": "sao_paulo",
-        "en": "São Paulo",
-        "tr": "São Paulo"
-      },
-      {
-        "concept_id": "buenos_aires",
-        "en": "Buenos Aires",
-        "tr": "Buenos Aires"
-      },
-      {
-        "concept_id": "montevideo",
-        "en": "Montevideo",
-        "tr": "Montevideo"
-      }
-    ],
-    "correct": "rio_de_janeiro",
-    "source": "https://en.wikipedia.org/wiki/Maracan%C3%A3_Stadium"
+  "options": [
+   {
+    "concept_id": "m400",
+    "en": "400 metres",
+    "tr": "400 metre"
+   },
+   {
+    "concept_id": "m200",
+    "en": "200 metres",
+    "tr": "200 metre"
+   },
+   {
+    "concept_id": "m500",
+    "en": "500 metres",
+    "tr": "500 metre"
+   },
+   {
+    "concept_id": "m800",
+    "en": "800 metres",
+    "tr": "800 metre"
+   }
+  ],
+  "correct": "m400",
+  "source": "https://en.wikipedia.org/wiki/Running_track"
+ },
+ {
+  "key": "sports_t004",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "In which city is the Maracanã football stadium?",
+   "tr": "Maracanã futbol stadyumu hangi şehirdedir?"
   },
-  {
-    "key": "sports_t005",
-    "category_id": "sports",
-    "subcategory_id": "olympics",
-    "difficulty": "HARD",
-    "global_relevance_score": 4,
-    "time_sensitive": false,
-    "question": {
-      "en": "The ancient Olympic Games held at Olympia honoured which Greek god?",
-      "tr": "Olympia'da düzenlenen antik Olimpiyat Oyunları hangi Yunan tanrısı onuruna yapılırdı?"
-    },
-    "options": [
-      {
-        "concept_id": "zeus",
-        "en": "Zeus",
-        "tr": "Zeus"
-      },
-      {
-        "concept_id": "apollo",
-        "en": "Apollo",
-        "tr": "Apollon"
-      },
-      {
-        "concept_id": "poseidon",
-        "en": "Poseidon",
-        "tr": "Poseidon"
-      },
-      {
-        "concept_id": "ares",
-        "en": "Ares",
-        "tr": "Ares"
-      }
-    ],
-    "correct": "zeus",
-    "source": "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"
-  }
+  "options": [
+   {
+    "concept_id": "rio_de_janeiro",
+    "en": "Rio de Janeiro",
+    "tr": "Rio de Janeiro"
+   },
+   {
+    "concept_id": "sao_paulo",
+    "en": "São Paulo",
+    "tr": "São Paulo"
+   },
+   {
+    "concept_id": "buenos_aires",
+    "en": "Buenos Aires",
+    "tr": "Buenos Aires"
+   },
+   {
+    "concept_id": "montevideo",
+    "en": "Montevideo",
+    "tr": "Montevideo"
+   }
+  ],
+  "correct": "rio_de_janeiro",
+  "source": "https://en.wikipedia.org/wiki/Maracan%C3%A3_Stadium"
+ },
+ {
+  "key": "sports_t005",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "The ancient Olympic Games held at Olympia honoured which Greek god?",
+   "tr": "Olympia'da düzenlenen antik Olimpiyat Oyunları hangi Yunan tanrısı onuruna yapılırdı?"
+  },
+  "options": [
+   {
+    "concept_id": "zeus",
+    "en": "Zeus",
+    "tr": "Zeus"
+   },
+   {
+    "concept_id": "apollo",
+    "en": "Apollo",
+    "tr": "Apollon"
+   },
+   {
+    "concept_id": "poseidon",
+    "en": "Poseidon",
+    "tr": "Poseidon"
+   },
+   {
+    "concept_id": "ares",
+    "en": "Ares",
+    "tr": "Ares"
+   }
+  ],
+  "correct": "zeus",
+  "source": "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"
+ },
+ {
+  "key": "sports_q0001",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which colour is NOT one of the five Olympic rings?",
+   "tr": "Hangi renk beş Olimpiyat halkasından biri DEĞİLDİR?"
+  },
+  "options": [
+   {
+    "concept_id": "orange",
+    "en": "Orange",
+    "tr": "Turuncu"
+   },
+   {
+    "concept_id": "blue",
+    "en": "Blue",
+    "tr": "Mavi"
+   },
+   {
+    "concept_id": "black",
+    "en": "Black",
+    "tr": "Siyah"
+   },
+   {
+    "concept_id": "green",
+    "en": "Green",
+    "tr": "Yeşil"
+   }
+  ],
+  "correct": "orange",
+  "source": "https://en.wikipedia.org/wiki/Olympic_symbols"
+ },
+ {
+  "key": "sports_q0002",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In which country is the Olympic flame lit before every Games?",
+   "tr": "Olimpiyat ateşi her oyunlardan önce hangi ülkede yakılır?"
+  },
+  "options": [
+   {
+    "concept_id": "greece",
+    "en": "Greece",
+    "tr": "Yunanistan"
+   },
+   {
+    "concept_id": "italy",
+    "en": "Italy",
+    "tr": "İtalya"
+   },
+   {
+    "concept_id": "france",
+    "en": "France",
+    "tr": "Fransa"
+   },
+   {
+    "concept_id": "switzerland",
+    "en": "Switzerland",
+    "tr": "İsviçre"
+   }
+  ],
+  "correct": "greece",
+  "source": "https://en.wikipedia.org/wiki/Olympic_flame"
+ },
+ {
+  "key": "sports_q0003",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which sport has events called floor, vault, beam and rings?",
+   "tr": "Yer, atlama masası, denge aleti ve halka gibi dalları olan spor hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "gymnastics",
+    "en": "Gymnastics",
+    "tr": "Cimnastik"
+   },
+   {
+    "concept_id": "diving",
+    "en": "Diving",
+    "tr": "Atlama (dalış)"
+   },
+   {
+    "concept_id": "weightlifting",
+    "en": "Weightlifting",
+    "tr": "Halter"
+   },
+   {
+    "concept_id": "fencing",
+    "en": "Fencing",
+    "tr": "Eskrim"
+   }
+  ],
+  "correct": "gymnastics",
+  "source": "https://en.wikipedia.org/wiki/Artistic_gymnastics"
+ },
+ {
+  "key": "sports_q0004",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Olympic motto \"Citius, Altius, Fortius\" means what?",
+   "tr": "Olimpiyat sloganı \"Citius, Altius, Fortius\" ne anlama gelir?"
+  },
+  "options": [
+   {
+    "concept_id": "faster_higher_stronger",
+    "en": "Faster, Higher, Stronger",
+    "tr": "Daha hızlı, daha yüksek, daha güçlü"
+   },
+   {
+    "concept_id": "peace_unity_glory",
+    "en": "Peace, Unity, Glory",
+    "tr": "Barış, birlik, zafer"
+   },
+   {
+    "concept_id": "run_jump_throw",
+    "en": "Run, Jump, Throw",
+    "tr": "Koş, atla, fırlat"
+   },
+   {
+    "concept_id": "honour_courage_victory",
+    "en": "Honour, Courage, Victory",
+    "tr": "Onur, cesaret, zafer"
+   }
+  ],
+  "correct": "faster_higher_stronger",
+  "source": "https://en.wikipedia.org/wiki/Olympic_motto"
+ },
+ {
+  "key": "sports_q0005",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Winter Olympic sport, played with stones and brooms, is called \"chess on ice\"?",
+   "tr": "Taş ve süpürgelerle oynanan, \"buz üstünde satranç\" denen Kış Olimpiyatı sporu hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "curling",
+    "en": "Curling",
+    "tr": "Curling"
+   },
+   {
+    "concept_id": "bobsleigh",
+    "en": "Bobsleigh",
+    "tr": "Bobsleigh"
+   },
+   {
+    "concept_id": "biathlon",
+    "en": "Biathlon",
+    "tr": "Biatlon"
+   },
+   {
+    "concept_id": "ice_hockey",
+    "en": "Ice hockey",
+    "tr": "Buz hokeyi"
+   }
+  ],
+  "correct": "curling",
+  "source": "https://en.wikipedia.org/wiki/Curling"
+ },
+ {
+  "key": "sports_q0006",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which country won the 2022 FIFA World Cup in Qatar?",
+   "tr": "2022 Katar Dünya Kupası'nı hangi ülke kazandı?"
+  },
+  "options": [
+   {
+    "concept_id": "argentina",
+    "en": "Argentina",
+    "tr": "Arjantin"
+   },
+   {
+    "concept_id": "france",
+    "en": "France",
+    "tr": "Fransa"
+   },
+   {
+    "concept_id": "croatia",
+    "en": "Croatia",
+    "tr": "Hırvatistan"
+   },
+   {
+    "concept_id": "morocco",
+    "en": "Morocco",
+    "tr": "Fas"
+   }
+  ],
+  "correct": "argentina",
+  "source": "https://en.wikipedia.org/wiki/2022_FIFA_World_Cup"
+ },
+ {
+  "key": "sports_q0007",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How often is the men's FIFA World Cup held?",
+   "tr": "Erkekler FIFA Dünya Kupası kaç yılda bir düzenlenir?"
+  },
+  "options": [
+   {
+    "concept_id": "every_4_years",
+    "en": "Every 4 years",
+    "tr": "4 yılda bir"
+   },
+   {
+    "concept_id": "every_2_years",
+    "en": "Every 2 years",
+    "tr": "2 yılda bir"
+   },
+   {
+    "concept_id": "every_3_years",
+    "en": "Every 3 years",
+    "tr": "3 yılda bir"
+   },
+   {
+    "concept_id": "every_5_years",
+    "en": "Every 5 years",
+    "tr": "5 yılda bir"
+   }
+  ],
+  "correct": "every_4_years",
+  "source": "https://en.wikipedia.org/wiki/FIFA_World_Cup"
+ },
+ {
+  "key": "sports_q0008",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The 2022 World Cup was the first held in which region?",
+   "tr": "2022 Dünya Kupası hangi bölgede düzenlenen ilk turnuvaydı?"
+  },
+  "options": [
+   {
+    "concept_id": "the_middle_east",
+    "en": "The Middle East",
+    "tr": "Orta Doğu"
+   },
+   {
+    "concept_id": "africa",
+    "en": "Africa",
+    "tr": "Afrika"
+   },
+   {
+    "concept_id": "asia",
+    "en": "Asia",
+    "tr": "Asya"
+   },
+   {
+    "concept_id": "oceania",
+    "en": "Oceania",
+    "tr": "Okyanusya"
+   }
+  ],
+  "correct": "the_middle_east",
+  "source": "https://en.wikipedia.org/wiki/2022_FIFA_World_Cup"
+ },
+ {
+  "key": "sports_q0009",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What do the USA, Canada and Mexico share in football history?",
+   "tr": "ABD, Kanada ve Meksika'nın futbol tarihindeki ortak noktası nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "they_co_hosted_the_2026_world_cup",
+    "en": "They co-hosted the 2026 World Cup",
+    "tr": "2026 Kupası'na birlikte ev sahipliği yaptılar"
+   },
+   {
+    "concept_id": "they_ve_never_played_a_world_cup",
+    "en": "They've never played a World Cup",
+    "tr": "Hiç Dünya Kupası oynamadılar"
+   },
+   {
+    "concept_id": "they_share_one_national_team",
+    "en": "They share one national team",
+    "tr": "Tek bir milli takımları var"
+   },
+   {
+    "concept_id": "they_won_the_1994_world_cup",
+    "en": "They won the 1994 World Cup",
+    "tr": "1994 Dünya Kupası'nı kazandılar"
+   }
+  ],
+  "correct": "they_co_hosted_the_2026_world_cup",
+  "source": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup"
+ },
+ {
+  "key": "sports_q0010",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In 2022, which country became the first African team to reach a World Cup semi-final?",
+   "tr": "2022'de Dünya Kupası'nda yarı finale çıkan ilk Afrika takımı hangisi oldu?"
+  },
+  "options": [
+   {
+    "concept_id": "morocco",
+    "en": "Morocco",
+    "tr": "Fas"
+   },
+   {
+    "concept_id": "senegal",
+    "en": "Senegal",
+    "tr": "Senegal"
+   },
+   {
+    "concept_id": "cameroon",
+    "en": "Cameroon",
+    "tr": "Kamerun"
+   },
+   {
+    "concept_id": "ghana",
+    "en": "Ghana",
+    "tr": "Gana"
+   }
+  ],
+  "correct": "morocco",
+  "source": "https://en.wikipedia.org/wiki/Morocco_national_football_team"
+ },
+ {
+  "key": "sports_q0011",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What colour card does a referee show to send a player off?",
+   "tr": "Hakem bir oyuncuyu oyundan atmak için hangi renk kart gösterir?"
+  },
+  "options": [
+   {
+    "concept_id": "red",
+    "en": "Red",
+    "tr": "Kırmızı"
+   },
+   {
+    "concept_id": "yellow",
+    "en": "Yellow",
+    "tr": "Sarı"
+   },
+   {
+    "concept_id": "blue",
+    "en": "Blue",
+    "tr": "Mavi"
+   },
+   {
+    "concept_id": "green",
+    "en": "Green",
+    "tr": "Yeşil"
+   }
+  ],
+  "correct": "red",
+  "source": "https://en.wikipedia.org/wiki/Penalty_card"
+ },
+ {
+  "key": "sports_q0012",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How long is a standard football match, not counting added time?",
+   "tr": "Uzatmalar hariç standart bir futbol maçı ne kadar sürer?"
+  },
+  "options": [
+   {
+    "concept_id": "n_90_minutes",
+    "en": "90 minutes",
+    "tr": "90 dakika"
+   },
+   {
+    "concept_id": "n_60_minutes",
+    "en": "60 minutes",
+    "tr": "60 dakika"
+   },
+   {
+    "concept_id": "n_80_minutes",
+    "en": "80 minutes",
+    "tr": "80 dakika"
+   },
+   {
+    "concept_id": "n_100_minutes",
+    "en": "100 minutes",
+    "tr": "100 dakika"
+   }
+  ],
+  "correct": "n_90_minutes",
+  "source": "https://en.wikipedia.org/wiki/Association_football"
+ },
+ {
+  "key": "sports_q0013",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which player is allowed to handle the ball inside their own penalty area?",
+   "tr": "Kendi ceza sahası içinde topa elle dokunabilen oyuncu hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "the_goalkeeper",
+    "en": "The goalkeeper",
+    "tr": "Kaleci"
+   },
+   {
+    "concept_id": "the_captain",
+    "en": "The captain",
+    "tr": "Kaptan"
+   },
+   {
+    "concept_id": "the_sweeper",
+    "en": "The sweeper",
+    "tr": "Libero"
+   },
+   {
+    "concept_id": "any_defender",
+    "en": "Any defender",
+    "tr": "Herhangi bir defans oyuncusu"
+   }
+  ],
+  "correct": "the_goalkeeper",
+  "source": "https://en.wikipedia.org/wiki/Goalkeeper_(association_football)"
+ },
+ {
+  "key": "sports_q0014",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Istanbul club plays in yellow and navy blue?",
+   "tr": "Sarı-lacivert renkleriyle oynayan İstanbul kulübü hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "fenerbahce",
+    "en": "Fenerbahçe",
+    "tr": "Fenerbahçe"
+   },
+   {
+    "concept_id": "galatasaray",
+    "en": "Galatasaray",
+    "tr": "Galatasaray"
+   },
+   {
+    "concept_id": "besiktas",
+    "en": "Beşiktaş",
+    "tr": "Beşiktaş"
+   },
+   {
+    "concept_id": "kasmpasa",
+    "en": "Kasımpaşa",
+    "tr": "Kasımpaşa"
+   }
+  ],
+  "correct": "fenerbahce",
+  "source": "https://en.wikipedia.org/wiki/Fenerbahçe_S.K._(football)"
+ },
+ {
+  "key": "sports_q0015",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In football, what is a \"clean sheet\"?",
+   "tr": "Futbolda \"clean sheet\" (gol yememek) ne demektir?"
+  },
+  "options": [
+   {
+    "concept_id": "a_match_without_conceding_a_goal",
+    "en": "A match without conceding a goal",
+    "tr": "Gol yemeden biten maç"
+   },
+   {
+    "concept_id": "a_match_without_fouls",
+    "en": "A match without fouls",
+    "tr": "Faulsüz biten maç"
+   },
+   {
+    "concept_id": "a_new_kit",
+    "en": "A new kit",
+    "tr": "Yeni forma"
+   },
+   {
+    "concept_id": "a_goal_from_a_free_kick",
+    "en": "A goal from a free kick",
+    "tr": "Serbest vuruştan gol"
+   }
+  ],
+  "correct": "a_match_without_conceding_a_goal",
+  "source": "https://en.wikipedia.org/wiki/Clean_sheet"
+ },
+ {
+  "key": "sports_q0016",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How high above the floor is a standard basketball hoop?",
+   "tr": "Standart bir basketbol potası yerden ne kadar yüksektedir?"
+  },
+  "options": [
+   {
+    "concept_id": "n_10_feet_3_05_m",
+    "en": "10 feet (3.05 m)",
+    "tr": "3,05 m (10 ft)"
+   },
+   {
+    "concept_id": "n_8_feet_2_44_m",
+    "en": "8 feet (2.44 m)",
+    "tr": "2,44 m (8 ft)"
+   },
+   {
+    "concept_id": "n_12_feet_3_66_m",
+    "en": "12 feet (3.66 m)",
+    "tr": "3,66 m (12 ft)"
+   },
+   {
+    "concept_id": "n_15_feet_4_57_m",
+    "en": "15 feet (4.57 m)",
+    "tr": "4,57 m (15 ft)"
+   }
+  ],
+  "correct": "n_10_feet_3_05_m",
+  "source": "https://en.wikipedia.org/wiki/Basketball_court"
+ },
+ {
+  "key": "sports_q0017",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is it called when a player jumps and forces the ball down through the hoop?",
+   "tr": "Oyuncunun sıçrayıp topu potaya yukarıdan bastırmasına ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "a_slam_dunk",
+    "en": "A slam dunk",
+    "tr": "Smaç"
+   },
+   {
+    "concept_id": "a_layup",
+    "en": "A layup",
+    "tr": "Turnike"
+   },
+   {
+    "concept_id": "a_free_throw",
+    "en": "A free throw",
+    "tr": "Serbest atış"
+   },
+   {
+    "concept_id": "a_rebound",
+    "en": "A rebound",
+    "tr": "Ribaund"
+   }
+  ],
+  "correct": "a_slam_dunk",
+  "source": "https://en.wikipedia.org/wiki/Slam_dunk"
+ },
+ {
+  "key": "sports_q0018",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "James Naismith invented basketball in the USA in 1891, but where was he born?",
+   "tr": "James Naismith basketbolu 1891'de ABD'de icat etti; peki kendisi nerede doğdu?"
+  },
+  "options": [
+   {
+    "concept_id": "canada",
+    "en": "Canada",
+    "tr": "Kanada"
+   },
+   {
+    "concept_id": "scotland",
+    "en": "Scotland",
+    "tr": "İskoçya"
+   },
+   {
+    "concept_id": "england",
+    "en": "England",
+    "tr": "İngiltere"
+   },
+   {
+    "concept_id": "usa",
+    "en": "USA",
+    "tr": "ABD"
+   }
+  ],
+  "correct": "canada",
+  "source": "https://en.wikipedia.org/wiki/James_Naismith"
+ },
+ {
+  "key": "sports_q0019",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What did the very first basketball games use as hoops?",
+   "tr": "İlk basketbol maçlarında pota olarak ne kullanıldı?"
+  },
+  "options": [
+   {
+    "concept_id": "peach_baskets",
+    "en": "Peach baskets",
+    "tr": "Şeftali sepetleri"
+   },
+   {
+    "concept_id": "metal_buckets",
+    "en": "Metal buckets",
+    "tr": "Metal kovalar"
+   },
+   {
+    "concept_id": "fishing_nets",
+    "en": "Fishing nets",
+    "tr": "Balık ağları"
+   },
+   {
+    "concept_id": "wooden_barrels",
+    "en": "Wooden barrels",
+    "tr": "Tahta fıçılar"
+   }
+  ],
+  "correct": "peach_baskets",
+  "source": "https://en.wikipedia.org/wiki/History_of_basketball"
+ },
+ {
+  "key": "sports_q0020",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which NBA legend's nickname was \"Magic\"?",
+   "tr": "Hangi NBA efsanesinin lakabı \"Magic\" idi?"
+  },
+  "options": [
+   {
+    "concept_id": "earvin_johnson",
+    "en": "Earvin Johnson",
+    "tr": "Earvin Johnson"
+   },
+   {
+    "concept_id": "larry_bird",
+    "en": "Larry Bird",
+    "tr": "Larry Bird"
+   },
+   {
+    "concept_id": "kareem_abdul_jabbar",
+    "en": "Kareem Abdul-Jabbar",
+    "tr": "Kareem Abdul-Jabbar"
+   },
+   {
+    "concept_id": "isiah_thomas",
+    "en": "Isiah Thomas",
+    "tr": "Isiah Thomas"
+   }
+  ],
+  "correct": "earvin_johnson",
+  "source": "https://en.wikipedia.org/wiki/Magic_Johnson"
+ },
+ {
+  "key": "sports_q0021",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the shortest sprint race at the Olympics?",
+   "tr": "Olimpiyatlardaki en kısa sürat koşusu hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "n_100_metres",
+    "en": "100 metres",
+    "tr": "100 metre"
+   },
+   {
+    "concept_id": "n_60_metres",
+    "en": "60 metres",
+    "tr": "60 metre"
+   },
+   {
+    "concept_id": "n_200_metres",
+    "en": "200 metres",
+    "tr": "200 metre"
+   },
+   {
+    "concept_id": "n_50_metres",
+    "en": "50 metres",
+    "tr": "50 metre"
+   }
+  ],
+  "correct": "n_100_metres",
+  "source": "https://en.wikipedia.org/wiki/100_metres"
+ },
+ {
+  "key": "sports_q0022",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What do runners pass to each other in a relay race?",
+   "tr": "Bayrak yarışında koşucular birbirine ne verir?"
+  },
+  "options": [
+   {
+    "concept_id": "a_baton",
+    "en": "A baton",
+    "tr": "Bayrak (baton)"
+   },
+   {
+    "concept_id": "a_flag",
+    "en": "A flag",
+    "tr": "Flama"
+   },
+   {
+    "concept_id": "a_torch",
+    "en": "A torch",
+    "tr": "Meşale"
+   },
+   {
+    "concept_id": "a_ribbon",
+    "en": "A ribbon",
+    "tr": "Kurdele"
+   }
+  ],
+  "correct": "a_baton",
+  "source": "https://en.wikipedia.org/wiki/Relay_race"
+ },
+ {
+  "key": "sports_q0023",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In which event do athletes throw a heavy metal ball from the shoulder?",
+   "tr": "Sporcuların ağır metal bir topu omuzdan fırlattığı branş hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "shot_put",
+    "en": "Shot put",
+    "tr": "Gülle atma"
+   },
+   {
+    "concept_id": "discus",
+    "en": "Discus",
+    "tr": "Disk atma"
+   },
+   {
+    "concept_id": "hammer_throw",
+    "en": "Hammer throw",
+    "tr": "Çekiç atma"
+   },
+   {
+    "concept_id": "javelin",
+    "en": "Javelin",
+    "tr": "Cirit atma"
+   }
+  ],
+  "correct": "shot_put",
+  "source": "https://en.wikipedia.org/wiki/Shot_put"
+ },
+ {
+  "key": "sports_q0024",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the 10-event men's athletics competition called?",
+   "tr": "Erkeklerde 10 branştan oluşan atletizm yarışmasına ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "decathlon",
+    "en": "Decathlon",
+    "tr": "Dekatlon"
+   },
+   {
+    "concept_id": "pentathlon",
+    "en": "Pentathlon",
+    "tr": "Pentatlon"
+   },
+   {
+    "concept_id": "heptathlon",
+    "en": "Heptathlon",
+    "tr": "Heptatlon"
+   },
+   {
+    "concept_id": "triathlon",
+    "en": "Triathlon",
+    "tr": "Triatlon"
+   }
+  ],
+  "correct": "decathlon",
+  "source": "https://en.wikipedia.org/wiki/Decathlon"
+ },
+ {
+  "key": "sports_q0025",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In a sprint start, what do runners push off from?",
+   "tr": "Sürat koşusu startında koşucular neyden itilerek çıkar?"
+  },
+  "options": [
+   {
+    "concept_id": "starting_blocks",
+    "en": "Starting blocks",
+    "tr": "Start takozlarından"
+   },
+   {
+    "concept_id": "a_rope",
+    "en": "A rope",
+    "tr": "Bir iptan"
+   },
+   {
+    "concept_id": "a_painted_line_only",
+    "en": "A painted line only",
+    "tr": "Sadece boyalı çizgiden"
+   },
+   {
+    "concept_id": "a_wooden_fence",
+    "en": "A wooden fence",
+    "tr": "Ahşap bir çitten"
+   }
+  ],
+  "correct": "starting_blocks",
+  "source": "https://en.wikipedia.org/wiki/Starting_blocks"
+ },
+ {
+  "key": "sports_q0026",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In tennis, what is a serve the opponent can't even touch called?",
+   "tr": "Teniste rakibin dokunamadığı servise ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "an_ace",
+    "en": "An ace",
+    "tr": "As"
+   },
+   {
+    "concept_id": "a_let",
+    "en": "A let",
+    "tr": "Let"
+   },
+   {
+    "concept_id": "a_volley",
+    "en": "A volley",
+    "tr": "Vole"
+   },
+   {
+    "concept_id": "a_lob",
+    "en": "A lob",
+    "tr": "Lob"
+   }
+  ],
+  "correct": "an_ace",
+  "source": "https://en.wikipedia.org/wiki/Ace_(tennis)"
+ },
+ {
+  "key": "sports_q0027",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many Grand Slam tournaments are there each year?",
+   "tr": "Her yıl kaç Grand Slam turnuvası yapılır?"
+  },
+  "options": [
+   {
+    "concept_id": "n_4",
+    "en": "4",
+    "tr": "4"
+   },
+   {
+    "concept_id": "n_3",
+    "en": "3",
+    "tr": "3"
+   },
+   {
+    "concept_id": "n_5",
+    "en": "5",
+    "tr": "5"
+   },
+   {
+    "concept_id": "n_6",
+    "en": "6",
+    "tr": "6"
+   }
+  ],
+  "correct": "n_4",
+  "source": "https://en.wikipedia.org/wiki/Grand_Slam_(tennis)"
+ },
+ {
+  "key": "sports_q0028",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Grand Slam tournament is held in Melbourne?",
+   "tr": "Melbourne'de düzenlenen Grand Slam turnuvası hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "australian_open",
+    "en": "Australian Open",
+    "tr": "Avustralya Açık"
+   },
+   {
+    "concept_id": "us_open",
+    "en": "US Open",
+    "tr": "ABD Açık"
+   },
+   {
+    "concept_id": "french_open",
+    "en": "French Open",
+    "tr": "Fransa Açık"
+   },
+   {
+    "concept_id": "wimbledon",
+    "en": "Wimbledon",
+    "tr": "Wimbledon"
+   }
+  ],
+  "correct": "australian_open",
+  "source": "https://en.wikipedia.org/wiki/Australian_Open"
+ },
+ {
+  "key": "sports_q0029",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the score called when both players reach 40 in a game?",
+   "tr": "Bir oyunda iki oyuncu da 40'a ulaştığında skora ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "deuce",
+    "en": "Deuce",
+    "tr": "Düs (deuce)"
+   },
+   {
+    "concept_id": "advantage",
+    "en": "Advantage",
+    "tr": "Avantaj"
+   },
+   {
+    "concept_id": "love",
+    "en": "Love",
+    "tr": "Sıfır (love)"
+   },
+   {
+    "concept_id": "match_point",
+    "en": "Match point",
+    "tr": "Maç sayısı"
+   }
+  ],
+  "correct": "deuce",
+  "source": "https://en.wikipedia.org/wiki/Tennis_scoring_system"
+ },
+ {
+  "key": "sports_q0030",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Wimbledon traditionally serves which fruit with cream?",
+   "tr": "Wimbledon'da geleneksel olarak hangi meyve kremayla ikram edilir?"
+  },
+  "options": [
+   {
+    "concept_id": "strawberries",
+    "en": "Strawberries",
+    "tr": "Çilek"
+   },
+   {
+    "concept_id": "raspberries",
+    "en": "Raspberries",
+    "tr": "Ahududu"
+   },
+   {
+    "concept_id": "cherries",
+    "en": "Cherries",
+    "tr": "Kiraz"
+   },
+   {
+    "concept_id": "peaches",
+    "en": "Peaches",
+    "tr": "Şeftali"
+   }
+  ],
+  "correct": "strawberries",
+  "source": "https://en.wikipedia.org/wiki/Wimbledon_Championships"
+ },
+ {
+  "key": "sports_q0031",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In Formula 1, what does the fastest qualifier start from?",
+   "tr": "Formula 1'de sıralama turlarının en hızlısı yarışa nereden başlar?"
+  },
+  "options": [
+   {
+    "concept_id": "pole_position",
+    "en": "Pole position",
+    "tr": "Pole pozisyonu"
+   },
+   {
+    "concept_id": "grid_zero",
+    "en": "Grid zero",
+    "tr": "Sıfır grid"
+   },
+   {
+    "concept_id": "front_row_b",
+    "en": "Front row B",
+    "tr": "Ön sıra B"
+   },
+   {
+    "concept_id": "the_pit_lane",
+    "en": "The pit lane",
+    "tr": "Pit yolu"
+   }
+  ],
+  "correct": "pole_position",
+  "source": "https://en.wikipedia.org/wiki/Pole_position"
+ },
+ {
+  "key": "sports_q0032",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Formula 1 race is held on the streets of a tiny country on the French Riviera?",
+   "tr": "Fransız Rivierası'ndaki minik bir ülkenin sokaklarında yapılan Formula 1 yarışı hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "monaco_grand_prix",
+    "en": "Monaco Grand Prix",
+    "tr": "Monako Grand Prix"
+   },
+   {
+    "concept_id": "french_grand_prix",
+    "en": "French Grand Prix",
+    "tr": "Fransa Grand Prix"
+   },
+   {
+    "concept_id": "italian_grand_prix",
+    "en": "Italian Grand Prix",
+    "tr": "İtalya Grand Prix"
+   },
+   {
+    "concept_id": "spanish_grand_prix",
+    "en": "Spanish Grand Prix",
+    "tr": "İspanya Grand Prix"
+   }
+  ],
+  "correct": "monaco_grand_prix",
+  "source": "https://en.wikipedia.org/wiki/Monaco_Grand_Prix"
+ },
+ {
+  "key": "sports_q0033",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "During a pit stop, what does an F1 crew mostly do?",
+   "tr": "Pit stop sırasında F1 ekibi çoğunlukla ne yapar?"
+  },
+  "options": [
+   {
+    "concept_id": "change_the_tyres",
+    "en": "Change the tyres",
+    "tr": "Lastikleri değiştirir"
+   },
+   {
+    "concept_id": "refuel_the_car",
+    "en": "Refuel the car",
+    "tr": "Yakıt ikmali yapar"
+   },
+   {
+    "concept_id": "swap_the_driver",
+    "en": "Swap the driver",
+    "tr": "Pilotu değiştirir"
+   },
+   {
+    "concept_id": "wash_the_car",
+    "en": "Wash the car",
+    "tr": "Aracı yıkar"
+   }
+  ],
+  "correct": "change_the_tyres",
+  "source": "https://en.wikipedia.org/wiki/Pit_stop"
+ },
+ {
+  "key": "sports_q0034",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many points does the winner of a Formula 1 Grand Prix receive?",
+   "tr": "Bir Formula 1 Grand Prix'sinin galibi kaç puan alır?"
+  },
+  "options": [
+   {
+    "concept_id": "n_25",
+    "en": "25",
+    "tr": "25"
+   },
+   {
+    "concept_id": "n_10",
+    "en": "10",
+    "tr": "10"
+   },
+   {
+    "concept_id": "n_20",
+    "en": "20",
+    "tr": "20"
+   },
+   {
+    "concept_id": "n_50",
+    "en": "50",
+    "tr": "50"
+   }
+  ],
+  "correct": "n_25",
+  "source": "https://en.wikipedia.org/wiki/List_of_Formula_One_World_Championship_points_scoring_systems"
+ },
+ {
+  "key": "sports_q0035",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which British driver won seven F1 world titles, the first in 2008?",
+   "tr": "İlki 2008'de olmak üzere yedi F1 dünya şampiyonluğu kazanan İngiliz pilot kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "lewis_hamilton",
+    "en": "Lewis Hamilton",
+    "tr": "Lewis Hamilton"
+   },
+   {
+    "concept_id": "jenson_button",
+    "en": "Jenson Button",
+    "tr": "Jenson Button"
+   },
+   {
+    "concept_id": "nigel_mansell",
+    "en": "Nigel Mansell",
+    "tr": "Nigel Mansell"
+   },
+   {
+    "concept_id": "damon_hill",
+    "en": "Damon Hill",
+    "tr": "Damon Hill"
+   }
+  ],
+  "correct": "lewis_hamilton",
+  "source": "https://en.wikipedia.org/wiki/Lewis_Hamilton"
+ },
+ {
+  "key": "sports_q0036",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In which sport is the Ryder Cup contested between Europe and the USA?",
+   "tr": "Avrupa ile ABD arasında oynanan Ryder Kupası hangi spordadır?"
+  },
+  "options": [
+   {
+    "concept_id": "golf",
+    "en": "Golf",
+    "tr": "Golf"
+   },
+   {
+    "concept_id": "tennis",
+    "en": "Tennis",
+    "tr": "Tenis"
+   },
+   {
+    "concept_id": "sailing",
+    "en": "Sailing",
+    "tr": "Yelken"
+   },
+   {
+    "concept_id": "polo",
+    "en": "Polo",
+    "tr": "Polo"
+   }
+  ],
+  "correct": "golf",
+  "source": "https://en.wikipedia.org/wiki/Ryder_Cup"
+ },
+ {
+  "key": "sports_q0037",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Webb Ellis Cup is the World Cup trophy of which sport?",
+   "tr": "Webb Ellis Kupası hangi sporun dünya kupası ödülüdür?"
+  },
+  "options": [
+   {
+    "concept_id": "rugby_union",
+    "en": "Rugby union",
+    "tr": "Ragbi"
+   },
+   {
+    "concept_id": "cricket",
+    "en": "Cricket",
+    "tr": "Kriket"
+   },
+   {
+    "concept_id": "hockey",
+    "en": "Hockey",
+    "tr": "Hokey"
+   },
+   {
+    "concept_id": "handball",
+    "en": "Handball",
+    "tr": "Hentbol"
+   }
+  ],
+  "correct": "rugby_union",
+  "source": "https://en.wikipedia.org/wiki/Webb_Ellis_Cup"
+ },
+ {
+  "key": "sports_q0038",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What colour jersey does the overall leader of the Tour de France wear?",
+   "tr": "Tour de France'ta genel klasman lideri hangi renk mayo giyer?"
+  },
+  "options": [
+   {
+    "concept_id": "yellow",
+    "en": "Yellow",
+    "tr": "Sarı"
+   },
+   {
+    "concept_id": "green",
+    "en": "Green",
+    "tr": "Yeşil"
+   },
+   {
+    "concept_id": "pink",
+    "en": "Pink",
+    "tr": "Pembe"
+   },
+   {
+    "concept_id": "red",
+    "en": "Red",
+    "tr": "Kırmızı"
+   }
+  ],
+  "correct": "yellow",
+  "source": "https://en.wikipedia.org/wiki/General_classification_in_the_Tour_de_France"
+ },
+ {
+  "key": "sports_q0039",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Super Bowl is the championship game of which sport?",
+   "tr": "Super Bowl hangi sporun şampiyonluk maçıdır?"
+  },
+  "options": [
+   {
+    "concept_id": "american_football",
+    "en": "American football",
+    "tr": "Amerikan futbolu"
+   },
+   {
+    "concept_id": "baseball",
+    "en": "Baseball",
+    "tr": "Beyzbol"
+   },
+   {
+    "concept_id": "basketball",
+    "en": "Basketball",
+    "tr": "Basketbol"
+   },
+   {
+    "concept_id": "ice_hockey",
+    "en": "Ice hockey",
+    "tr": "Buz hokeyi"
+   }
+  ],
+  "correct": "american_football",
+  "source": "https://en.wikipedia.org/wiki/Super_Bowl"
+ },
+ {
+  "key": "sports_q0040",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The cricket series known as the Ashes is played between England and which country?",
+   "tr": "\"Ashes\" olarak bilinen kriket serisi İngiltere ile hangi ülke arasında oynanır?"
+  },
+  "options": [
+   {
+    "concept_id": "australia",
+    "en": "Australia",
+    "tr": "Avustralya"
+   },
+   {
+    "concept_id": "india",
+    "en": "India",
+    "tr": "Hindistan"
+   },
+   {
+    "concept_id": "south_africa",
+    "en": "South Africa",
+    "tr": "Güney Afrika"
+   },
+   {
+    "concept_id": "new_zealand",
+    "en": "New Zealand",
+    "tr": "Yeni Zelanda"
+   }
+  ],
+  "correct": "australia",
+  "source": "https://en.wikipedia.org/wiki/The_Ashes"
+ },
+ {
+  "key": "sports_q0041",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which French town hosted the first Winter Olympics, in 1924?",
+   "tr": "İlk Kış Olimpiyatları 1924'te hangi Fransız kasabasında yapıldı?"
+  },
+  "options": [
+   {
+    "concept_id": "chamonix",
+    "en": "Chamonix",
+    "tr": "Chamonix"
+   },
+   {
+    "concept_id": "grenoble",
+    "en": "Grenoble",
+    "tr": "Grenoble"
+   },
+   {
+    "concept_id": "albertville",
+    "en": "Albertville",
+    "tr": "Albertville"
+   },
+   {
+    "concept_id": "lyon",
+    "en": "Lyon",
+    "tr": "Lyon"
+   }
+  ],
+  "correct": "chamonix",
+  "source": "https://en.wikipedia.org/wiki/1924_Winter_Olympics"
+ },
+ {
+  "key": "sports_q0042",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which American athlete won four gold medals at the 1936 Berlin Olympics?",
+   "tr": "1936 Berlin Olimpiyatları'nda dört altın madalya kazanan Amerikalı atlet kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "jesse_owens",
+    "en": "Jesse Owens",
+    "tr": "Jesse Owens"
+   },
+   {
+    "concept_id": "carl_lewis",
+    "en": "Carl Lewis",
+    "tr": "Carl Lewis"
+   },
+   {
+    "concept_id": "jim_thorpe",
+    "en": "Jim Thorpe",
+    "tr": "Jim Thorpe"
+   },
+   {
+    "concept_id": "ralph_metcalfe",
+    "en": "Ralph Metcalfe",
+    "tr": "Ralph Metcalfe"
+   }
+  ],
+  "correct": "jesse_owens",
+  "source": "https://en.wikipedia.org/wiki/Jesse_Owens"
+ },
+ {
+  "key": "sports_q0043",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which city hosted the 1964 Summer Olympics, the first held in Asia?",
+   "tr": "Asya'da düzenlenen ilk Yaz Olimpiyatları olan 1964 Oyunları'na hangi şehir ev sahipliği yaptı?"
+  },
+  "options": [
+   {
+    "concept_id": "tokyo",
+    "en": "Tokyo",
+    "tr": "Tokyo"
+   },
+   {
+    "concept_id": "seoul",
+    "en": "Seoul",
+    "tr": "Seul"
+   },
+   {
+    "concept_id": "beijing",
+    "en": "Beijing",
+    "tr": "Pekin"
+   },
+   {
+    "concept_id": "manila",
+    "en": "Manila",
+    "tr": "Manila"
+   }
+  ],
+  "correct": "tokyo",
+  "source": "https://en.wikipedia.org/wiki/1964_Summer_Olympics"
+ },
+ {
+  "key": "sports_q0044",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which country led a large boycott of the 1980 Moscow Olympics?",
+   "tr": "1980 Moskova Olimpiyatları'na yönelik geniş boykota hangi ülke önderlik etti?"
+  },
+  "options": [
+   {
+    "concept_id": "united_states",
+    "en": "United States",
+    "tr": "ABD"
+   },
+   {
+    "concept_id": "china",
+    "en": "China",
+    "tr": "Çin"
+   },
+   {
+    "concept_id": "united_kingdom",
+    "en": "United Kingdom",
+    "tr": "Birleşik Krallık"
+   },
+   {
+    "concept_id": "france",
+    "en": "France",
+    "tr": "Fransa"
+   }
+  ],
+  "correct": "united_states",
+  "source": "https://en.wikipedia.org/wiki/1980_Summer_Olympics_boycott"
+ },
+ {
+  "key": "sports_q0045",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Turkish weightlifter Naim Süleymanoğlu was famously nicknamed what?",
+   "tr": "Türk halterci Naim Süleymanoğlu hangi lakapla ünlüydü?"
+  },
+  "options": [
+   {
+    "concept_id": "pocket_hercules",
+    "en": "Pocket Hercules",
+    "tr": "Cep Herkülü"
+   },
+   {
+    "concept_id": "little_lion",
+    "en": "Little Lion",
+    "tr": "Küçük Aslan"
+   },
+   {
+    "concept_id": "iron_man",
+    "en": "Iron Man",
+    "tr": "Demir Adam"
+   },
+   {
+    "concept_id": "the_hammer",
+    "en": "The Hammer",
+    "tr": "Çekiç"
+   }
+  ],
+  "correct": "pocket_hercules",
+  "source": "https://en.wikipedia.org/wiki/Naim_Süleymanoğlu"
+ },
+ {
+  "key": "sports_q0046",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "When the World Cup trophy was stolen in London in 1966, who found it?",
+   "tr": "Dünya Kupası 1966'da Londra'da çalındığında onu kim buldu?"
+  },
+  "options": [
+   {
+    "concept_id": "a_dog_called_pickles",
+    "en": "A dog called Pickles",
+    "tr": "Pickles adlı bir köpek"
+   },
+   {
+    "concept_id": "a_taxi_driver",
+    "en": "A taxi driver",
+    "tr": "Bir taksi şoförü"
+   },
+   {
+    "concept_id": "a_schoolboy",
+    "en": "A schoolboy",
+    "tr": "Bir okul çocuğu"
+   },
+   {
+    "concept_id": "a_police_detective",
+    "en": "A police detective",
+    "tr": "Bir polis dedektifi"
+   }
+  ],
+  "correct": "a_dog_called_pickles",
+  "source": "https://en.wikipedia.org/wiki/Pickles_(dog)"
+ },
+ {
+  "key": "sports_q0047",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which country beat Brazil 7–1 in the 2014 World Cup semi-final?",
+   "tr": "2014 Dünya Kupası yarı finalinde Brezilya'yı 7-1 yenen ülke hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "germany",
+    "en": "Germany",
+    "tr": "Almanya"
+   },
+   {
+    "concept_id": "netherlands",
+    "en": "Netherlands",
+    "tr": "Hollanda"
+   },
+   {
+    "concept_id": "argentina",
+    "en": "Argentina",
+    "tr": "Arjantin"
+   },
+   {
+    "concept_id": "france",
+    "en": "France",
+    "tr": "Fransa"
+   }
+  ],
+  "correct": "germany",
+  "source": "https://en.wikipedia.org/wiki/Brazil_v_Germany_(2014_FIFA_World_Cup)"
+ },
+ {
+  "key": "sports_q0048",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Turkey finished third at which FIFA World Cup?",
+   "tr": "Türkiye hangi FIFA Dünya Kupası'nda üçüncü oldu?"
+  },
+  "options": [
+   {
+    "concept_id": "n_2002",
+    "en": "2002",
+    "tr": "2002"
+   },
+   {
+    "concept_id": "n_1998",
+    "en": "1998",
+    "tr": "1998"
+   },
+   {
+    "concept_id": "n_2006",
+    "en": "2006",
+    "tr": "2006"
+   },
+   {
+    "concept_id": "n_1954",
+    "en": "1954",
+    "tr": "1954"
+   }
+  ],
+  "correct": "n_2002",
+  "source": "https://en.wikipedia.org/wiki/Turkey_national_football_team"
+ },
+ {
+  "key": "sports_q0049",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Hakan Şükür scored the fastest goal in World Cup history in 2002. After roughly how long?",
+   "tr": "Hakan Şükür 2002'de Dünya Kupası tarihinin en hızlı golünü attı. Yaklaşık kaçıncı saniyede?"
+  },
+  "options": [
+   {
+    "concept_id": "n_11_seconds",
+    "en": "11 seconds",
+    "tr": "11. saniye"
+   },
+   {
+    "concept_id": "n_30_seconds",
+    "en": "30 seconds",
+    "tr": "30. saniye"
+   },
+   {
+    "concept_id": "n_1_minute",
+    "en": "1 minute",
+    "tr": "1. dakika"
+   },
+   {
+    "concept_id": "n_3_seconds",
+    "en": "3 seconds",
+    "tr": "3. saniye"
+   }
+  ],
+  "correct": "n_11_seconds",
+  "source": "https://en.wikipedia.org/wiki/Hakan_Şükür"
+ },
+ {
+  "key": "sports_q0050",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The original World Cup trophy, used until 1970, was named after which FIFA president?",
+   "tr": "1970'e kadar kullanılan ilk Dünya Kupası ödülü hangi FIFA başkanının adını taşıyordu?"
+  },
+  "options": [
+   {
+    "concept_id": "jules_rimet",
+    "en": "Jules Rimet",
+    "tr": "Jules Rimet"
+   },
+   {
+    "concept_id": "joao_havelange",
+    "en": "João Havelange",
+    "tr": "João Havelange"
+   },
+   {
+    "concept_id": "sepp_blatter",
+    "en": "Sepp Blatter",
+    "tr": "Sepp Blatter"
+   },
+   {
+    "concept_id": "stanley_rous",
+    "en": "Stanley Rous",
+    "tr": "Stanley Rous"
+   }
+  ],
+  "correct": "jules_rimet",
+  "source": "https://en.wikipedia.org/wiki/Jules_Rimet_Trophy"
+ },
+ {
+  "key": "sports_q0051",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "At which tournament did Johan Cruyff first show the world his famous \"Cruyff turn\"?",
+   "tr": "Johan Cruyff ünlü \"Cruyff dönüşü\"nü dünyaya ilk kez hangi turnuvada gösterdi?"
+  },
+  "options": [
+   {
+    "concept_id": "n_1974_world_cup",
+    "en": "1974 World Cup",
+    "tr": "1974 Dünya Kupası"
+   },
+   {
+    "concept_id": "n_1972_european_cup_final",
+    "en": "1972 European Cup final",
+    "tr": "1972 Avrupa Kupası finali"
+   },
+   {
+    "concept_id": "n_1976_euros",
+    "en": "1976 Euros",
+    "tr": "1976 Avrupa Şampiyonası"
+   },
+   {
+    "concept_id": "n_1978_world_cup",
+    "en": "1978 World Cup",
+    "tr": "1978 Dünya Kupası"
+   }
+  ],
+  "correct": "n_1974_world_cup",
+  "source": "https://en.wikipedia.org/wiki/Cruyff_turn"
+ },
+ {
+  "key": "sports_q0052",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In football, what is a \"Panenka\"?",
+   "tr": "Futbolda \"Panenka\" nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "a_gently_chipped_penalty",
+    "en": "A gently chipped penalty",
+    "tr": "Yumuşakça aşırtılan penaltı"
+   },
+   {
+    "concept_id": "a_bicycle_kick",
+    "en": "A bicycle kick",
+    "tr": "Rövaşata"
+   },
+   {
+    "concept_id": "a_back_heel_pass",
+    "en": "A back-heel pass",
+    "tr": "Topuk pası"
+   },
+   {
+    "concept_id": "a_long_throw_in",
+    "en": "A long throw-in",
+    "tr": "Uzun taç atışı"
+   }
+  ],
+  "correct": "a_gently_chipped_penalty",
+  "source": "https://en.wikipedia.org/wiki/Antonín_Panenka"
+ },
+ {
+  "key": "sports_q0053",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who has won the Ballon d'Or a record eight times?",
+   "tr": "Ballon d'Or'u rekor sayıda, sekiz kez kazanan oyuncu kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "lionel_messi",
+    "en": "Lionel Messi",
+    "tr": "Lionel Messi"
+   },
+   {
+    "concept_id": "cristiano_ronaldo",
+    "en": "Cristiano Ronaldo",
+    "tr": "Cristiano Ronaldo"
+   },
+   {
+    "concept_id": "michel_platini",
+    "en": "Michel Platini",
+    "tr": "Michel Platini"
+   },
+   {
+    "concept_id": "johan_cruyff",
+    "en": "Johan Cruyff",
+    "tr": "Johan Cruyff"
+   }
+  ],
+  "correct": "lionel_messi",
+  "source": "https://en.wikipedia.org/wiki/Ballon_d'Or"
+ },
+ {
+  "key": "sports_q0054",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In 2000, which club became the first Turkish team to win a European trophy?",
+   "tr": "2000'de Avrupa kupası kazanan ilk Türk takımı hangisi oldu?"
+  },
+  "options": [
+   {
+    "concept_id": "galatasaray",
+    "en": "Galatasaray",
+    "tr": "Galatasaray"
+   },
+   {
+    "concept_id": "fenerbahce",
+    "en": "Fenerbahçe",
+    "tr": "Fenerbahçe"
+   },
+   {
+    "concept_id": "besiktas",
+    "en": "Beşiktaş",
+    "tr": "Beşiktaş"
+   },
+   {
+    "concept_id": "trabzonspor",
+    "en": "Trabzonspor",
+    "tr": "Trabzonspor"
+   }
+  ],
+  "correct": "galatasaray",
+  "source": "https://en.wikipedia.org/wiki/2000_UEFA_Cup_final"
+ },
+ {
+  "key": "sports_q0055",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What does VAR stand for in football?",
+   "tr": "Futbolda VAR neyin kısaltmasıdır?"
+  },
+  "options": [
+   {
+    "concept_id": "video_assistant_referee",
+    "en": "Video Assistant Referee",
+    "tr": "Video Yardımcı Hakem"
+   },
+   {
+    "concept_id": "virtual_action_replay",
+    "en": "Virtual Action Replay",
+    "tr": "Sanal Aksiyon Tekrarı"
+   },
+   {
+    "concept_id": "visual_area_review",
+    "en": "Visual Area Review",
+    "tr": "Görsel Alan İncelemesi"
+   },
+   {
+    "concept_id": "video_angle_recorder",
+    "en": "Video Angle Recorder",
+    "tr": "Video Açı Kaydedici"
+   }
+  ],
+  "correct": "video_assistant_referee",
+  "source": "https://en.wikipedia.org/wiki/Video_assistant_referee"
+ },
+ {
+  "key": "sports_q0056",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who scored 81 points in a single NBA game in 2006?",
+   "tr": "2006'da tek bir NBA maçında 81 sayı atan oyuncu kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "kobe_bryant",
+    "en": "Kobe Bryant",
+    "tr": "Kobe Bryant"
+   },
+   {
+    "concept_id": "lebron_james",
+    "en": "LeBron James",
+    "tr": "LeBron James"
+   },
+   {
+    "concept_id": "michael_jordan",
+    "en": "Michael Jordan",
+    "tr": "Michael Jordan"
+   },
+   {
+    "concept_id": "shaquille_o_neal",
+    "en": "Shaquille O'Neal",
+    "tr": "Shaquille O'Neal"
+   }
+  ],
+  "correct": "kobe_bryant",
+  "source": "https://en.wikipedia.org/wiki/Kobe_Bryant's_81-point_game"
+ },
+ {
+  "key": "sports_q0057",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How long is the shot clock in an NBA possession?",
+   "tr": "NBA'de bir hücumdaki şut saati kaç saniyedir?"
+  },
+  "options": [
+   {
+    "concept_id": "n_24_seconds",
+    "en": "24 seconds",
+    "tr": "24 saniye"
+   },
+   {
+    "concept_id": "n_30_seconds",
+    "en": "30 seconds",
+    "tr": "30 saniye"
+   },
+   {
+    "concept_id": "n_35_seconds",
+    "en": "35 seconds",
+    "tr": "35 saniye"
+   },
+   {
+    "concept_id": "n_20_seconds",
+    "en": "20 seconds",
+    "tr": "20 saniye"
+   }
+  ],
+  "correct": "n_24_seconds",
+  "source": "https://en.wikipedia.org/wiki/Shot_clock"
+ },
+ {
+  "key": "sports_q0058",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Turkey hosted the 2010 FIBA World Championship. Where did the home team finish?",
+   "tr": "Türkiye 2010 FIBA Dünya Şampiyonası'na ev sahipliği yaptı. Ev sahibi takım kaçıncı oldu?"
+  },
+  "options": [
+   {
+    "concept_id": "runners_up",
+    "en": "Runners-up",
+    "tr": "İkinci"
+   },
+   {
+    "concept_id": "champions",
+    "en": "Champions",
+    "tr": "Şampiyon"
+   },
+   {
+    "concept_id": "third",
+    "en": "Third",
+    "tr": "Üçüncü"
+   },
+   {
+    "concept_id": "fourth",
+    "en": "Fourth",
+    "tr": "Dördüncü"
+   }
+  ],
+  "correct": "runners_up",
+  "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship"
+ },
+ {
+  "key": "sports_q0059",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What was the 1992 US Olympic basketball team, with Jordan and Magic, nicknamed?",
+   "tr": "Jordan ve Magic'in de bulunduğu 1992 ABD Olimpiyat basketbol takımının lakabı neydi?"
+  },
+  "options": [
+   {
+    "concept_id": "the_dream_team",
+    "en": "The Dream Team",
+    "tr": "Rüya Takım"
+   },
+   {
+    "concept_id": "the_redeem_team",
+    "en": "The Redeem Team",
+    "tr": "Kefaret Takımı"
+   },
+   {
+    "concept_id": "the_showtime_squad",
+    "en": "The Showtime Squad",
+    "tr": "Showtime Takımı"
+   },
+   {
+    "concept_id": "the_golden_five",
+    "en": "The Golden Five",
+    "tr": "Altın Beşli"
+   }
+  ],
+  "correct": "the_dream_team",
+  "source": "https://en.wikipedia.org/wiki/1992_United_States_men's_Olympic_basketball_team"
+ },
+ {
+  "key": "sports_q0060",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "During a break from the NBA in 1994, which sport did Michael Jordan play professionally?",
+   "tr": "Michael Jordan 1994'te NBA'e ara verdiğinde hangi sporu profesyonel olarak oynadı?"
+  },
+  "options": [
+   {
+    "concept_id": "baseball",
+    "en": "Baseball",
+    "tr": "Beyzbol"
+   },
+   {
+    "concept_id": "golf",
+    "en": "Golf",
+    "tr": "Golf"
+   },
+   {
+    "concept_id": "american_football",
+    "en": "American football",
+    "tr": "Amerikan futbolu"
+   },
+   {
+    "concept_id": "ice_hockey",
+    "en": "Ice hockey",
+    "tr": "Buz hokeyi"
+   }
+  ],
+  "correct": "baseball",
+  "source": "https://en.wikipedia.org/wiki/Michael_Jordan"
+ },
+ {
+  "key": "sports_q0061",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Fosbury Flop is a technique in which event?",
+   "tr": "Fosbury Flop hangi branşta kullanılan bir tekniktir?"
+  },
+  "options": [
+   {
+    "concept_id": "high_jump",
+    "en": "High jump",
+    "tr": "Yüksek atlama"
+   },
+   {
+    "concept_id": "long_jump",
+    "en": "Long jump",
+    "tr": "Uzun atlama"
+   },
+   {
+    "concept_id": "pole_vault",
+    "en": "Pole vault",
+    "tr": "Sırıkla atlama"
+   },
+   {
+    "concept_id": "triple_jump",
+    "en": "Triple jump",
+    "tr": "Üç adım atlama"
+   }
+  ],
+  "correct": "high_jump",
+  "source": "https://en.wikipedia.org/wiki/Fosbury_flop"
+ },
+ {
+  "key": "sports_q0062",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many laps of a standard 400 m track make up 1,500 m?",
+   "tr": "1.500 metre, standart 400 metrelik pistte kaç tura denk gelir?"
+  },
+  "options": [
+   {
+    "concept_id": "n_3_75",
+    "en": "3.75",
+    "tr": "3,75"
+   },
+   {
+    "concept_id": "n_3",
+    "en": "3",
+    "tr": "3"
+   },
+   {
+    "concept_id": "n_4",
+    "en": "4",
+    "tr": "4"
+   },
+   {
+    "concept_id": "n_4_5",
+    "en": "4.5",
+    "tr": "4,5"
+   }
+  ],
+  "correct": "n_3_75",
+  "source": "https://en.wikipedia.org/wiki/1500_metres"
+ },
+ {
+  "key": "sports_q0063",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who ran the first mile under four minutes, in 1954?",
+   "tr": "1954'te bir mili dört dakikanın altında koşan ilk kişi kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "roger_bannister",
+    "en": "Roger Bannister",
+    "tr": "Roger Bannister"
+   },
+   {
+    "concept_id": "john_landy",
+    "en": "John Landy",
+    "tr": "John Landy"
+   },
+   {
+    "concept_id": "sebastian_coe",
+    "en": "Sebastian Coe",
+    "tr": "Sebastian Coe"
+   },
+   {
+    "concept_id": "paavo_nurmi",
+    "en": "Paavo Nurmi",
+    "tr": "Paavo Nurmi"
+   }
+  ],
+  "correct": "roger_bannister",
+  "source": "https://en.wikipedia.org/wiki/Roger_Bannister"
+ },
+ {
+  "key": "sports_q0064",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Usain Bolt's 2009 men's 100 m world record is how many seconds?",
+   "tr": "Usain Bolt'un 2009'daki erkekler 100 m dünya rekoru kaç saniyedir?"
+  },
+  "options": [
+   {
+    "concept_id": "n_9_58",
+    "en": "9.58",
+    "tr": "9,58"
+   },
+   {
+    "concept_id": "n_9_69",
+    "en": "9.69",
+    "tr": "9,69"
+   },
+   {
+    "concept_id": "n_9_79",
+    "en": "9.79",
+    "tr": "9,79"
+   },
+   {
+    "concept_id": "n_9_49",
+    "en": "9.49",
+    "tr": "9,49"
+   }
+  ],
+  "correct": "n_9_58",
+  "source": "https://en.wikipedia.org/wiki/Men's_100_metres_world_record_progression"
+ },
+ {
+  "key": "sports_q0065",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Besides barriers, what do athletes clear in the steeplechase?",
+   "tr": "Engelli koşuda (steeplechase) sporcular engellerin yanı sıra neyi aşar?"
+  },
+  "options": [
+   {
+    "concept_id": "a_water_jump",
+    "en": "A water jump",
+    "tr": "Su çukurunu"
+   },
+   {
+    "concept_id": "a_sand_pit",
+    "en": "A sand pit",
+    "tr": "Kum havuzunu"
+   },
+   {
+    "concept_id": "a_rope_net",
+    "en": "A rope net",
+    "tr": "İp ağını"
+   },
+   {
+    "concept_id": "a_low_wall_of_hay",
+    "en": "A low wall of hay",
+    "tr": "Alçak saman duvarı"
+   }
+  ],
+  "correct": "a_water_jump",
+  "source": "https://en.wikipedia.org/wiki/Steeplechase_(athletics)"
+ },
+ {
+  "key": "sports_q0066",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Grand Slam is played at Flushing Meadows?",
+   "tr": "Flushing Meadows'ta oynanan Grand Slam turnuvası hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "us_open",
+    "en": "US Open",
+    "tr": "ABD Açık"
+   },
+   {
+    "concept_id": "australian_open",
+    "en": "Australian Open",
+    "tr": "Avustralya Açık"
+   },
+   {
+    "concept_id": "french_open",
+    "en": "French Open",
+    "tr": "Fransa Açık"
+   },
+   {
+    "concept_id": "wimbledon",
+    "en": "Wimbledon",
+    "tr": "Wimbledon"
+   }
+  ],
+  "correct": "us_open",
+  "source": "https://en.wikipedia.org/wiki/US_Open_(tennis)"
+ },
+ {
+  "key": "sports_q0067",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "At what game score in a set is a tie-break usually played?",
+   "tr": "Bir sette tie-break genellikle hangi oyun skorunda oynanır?"
+  },
+  "options": [
+   {
+    "concept_id": "n_66",
+    "en": "6–6",
+    "tr": "6-6"
+   },
+   {
+    "concept_id": "n_55",
+    "en": "5–5",
+    "tr": "5-5"
+   },
+   {
+    "concept_id": "n_77",
+    "en": "7–7",
+    "tr": "7-7"
+   },
+   {
+    "concept_id": "n_44",
+    "en": "4–4",
+    "tr": "4-4"
+   }
+  ],
+  "correct": "n_66",
+  "source": "https://en.wikipedia.org/wiki/Tiebreak_(tennis)"
+ },
+ {
+  "key": "sports_q0068",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which player is nicknamed the \"King of Clay\"?",
+   "tr": "\"Toprak Kortların Kralı\" lakaplı oyuncu kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "rafael_nadal",
+    "en": "Rafael Nadal",
+    "tr": "Rafael Nadal"
+   },
+   {
+    "concept_id": "novak_djokovic",
+    "en": "Novak Djokovic",
+    "tr": "Novak Djokovic"
+   },
+   {
+    "concept_id": "roger_federer",
+    "en": "Roger Federer",
+    "tr": "Roger Federer"
+   },
+   {
+    "concept_id": "bjorn_borg",
+    "en": "Björn Borg",
+    "tr": "Björn Borg"
+   }
+  ],
+  "correct": "rafael_nadal",
+  "source": "https://en.wikipedia.org/wiki/Rafael_Nadal"
+ },
+ {
+  "key": "sports_q0069",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What do Venus and Serena Williams share besides being sisters?",
+   "tr": "Venus ve Serena Williams'ın kardeş olmaları dışında ortak noktası nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "both_became_world_no_1_in_singles",
+    "en": "Both became world No. 1 in singles",
+    "tr": "İkisi de teklerde dünya bir numarası oldu"
+   },
+   {
+    "concept_id": "both_were_born_in_australia",
+    "en": "Both were born in Australia",
+    "tr": "İkisi de Avustralya'da doğdu"
+   },
+   {
+    "concept_id": "both_play_left_handed",
+    "en": "Both play left-handed",
+    "tr": "İkisi de solak"
+   },
+   {
+    "concept_id": "both_retired_as_teenagers",
+    "en": "Both retired as teenagers",
+    "tr": "İkisi de genç yaşta bıraktı"
+   }
+  ],
+  "correct": "both_became_world_no_1_in_singles",
+  "source": "https://en.wikipedia.org/wiki/Williams_sisters"
+ },
+ {
+  "key": "sports_q0070",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The French Open is also known by the name of which WWI aviator?",
+   "tr": "Fransa Açık, Birinci Dünya Savaşı'ndaki hangi pilotun adıyla da anılır?"
+  },
+  "options": [
+   {
+    "concept_id": "roland_garros",
+    "en": "Roland Garros",
+    "tr": "Roland Garros"
+   },
+   {
+    "concept_id": "louis_bleriot",
+    "en": "Louis Blériot",
+    "tr": "Louis Blériot"
+   },
+   {
+    "concept_id": "georges_guynemer",
+    "en": "Georges Guynemer",
+    "tr": "Georges Guynemer"
+   },
+   {
+    "concept_id": "manfred_von_richthofen",
+    "en": "Manfred von Richthofen",
+    "tr": "Manfred von Richthofen"
+   }
+  ],
+  "correct": "roland_garros",
+  "source": "https://en.wikipedia.org/wiki/French_Open"
+ },
+ {
+  "key": "sports_q0071",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What does a waved blue flag tell a Formula 1 driver?",
+   "tr": "Formula 1'de sallanan mavi bayrak pilota ne söyler?"
+  },
+  "options": [
+   {
+    "concept_id": "let_a_faster_car_pass",
+    "en": "Let a faster car pass",
+    "tr": "Daha hızlı araca yol ver"
+   },
+   {
+    "concept_id": "the_race_is_over",
+    "en": "The race is over",
+    "tr": "Yarış bitti"
+   },
+   {
+    "concept_id": "danger_ahead",
+    "en": "Danger ahead",
+    "tr": "İleride tehlike var"
+   },
+   {
+    "concept_id": "enter_the_pits",
+    "en": "Enter the pits",
+    "tr": "Pite gir"
+   }
+  ],
+  "correct": "let_a_faster_car_pass",
+  "source": "https://en.wikipedia.org/wiki/Racing_flags"
+ },
+ {
+  "key": "sports_q0072",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Italian circuit is known as the \"Temple of Speed\"?",
+   "tr": "\"Hız Tapınağı\" olarak bilinen İtalyan pisti hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "monza",
+    "en": "Monza",
+    "tr": "Monza"
+   },
+   {
+    "concept_id": "imola",
+    "en": "Imola",
+    "tr": "Imola"
+   },
+   {
+    "concept_id": "mugello",
+    "en": "Mugello",
+    "tr": "Mugello"
+   },
+   {
+    "concept_id": "misano",
+    "en": "Misano",
+    "tr": "Misano"
+   }
+  ],
+  "correct": "monza",
+  "source": "https://en.wikipedia.org/wiki/Monza_Circuit"
+ },
+ {
+  "key": "sports_q0073",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What does DRS stand for in Formula 1?",
+   "tr": "Formula 1'de DRS neyin kısaltmasıdır?"
+  },
+  "options": [
+   {
+    "concept_id": "drag_reduction_system",
+    "en": "Drag Reduction System",
+    "tr": "Sürtünme Azaltma Sistemi"
+   },
+   {
+    "concept_id": "driver_radio_signal",
+    "en": "Driver Radio Signal",
+    "tr": "Pilot Telsiz Sinyali"
+   },
+   {
+    "concept_id": "dynamic_race_speed",
+    "en": "Dynamic Race Speed",
+    "tr": "Dinamik Yarış Hızı"
+   },
+   {
+    "concept_id": "downforce_regulation_setup",
+    "en": "Downforce Regulation Setup",
+    "tr": "Bastırma Kuvveti Ayarı"
+   }
+  ],
+  "correct": "drag_reduction_system",
+  "source": "https://en.wikipedia.org/wiki/Drag_reduction_system"
+ },
+ {
+  "key": "sports_q0074",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Istanbul Park's famous four-apex left-hander is known simply by which name?",
+   "tr": "İstanbul Park'ın dört tepe noktalı ünlü sol virajı hangi adla bilinir?"
+  },
+  "options": [
+   {
+    "concept_id": "turn_8",
+    "en": "Turn 8",
+    "tr": "8. Viraj"
+   },
+   {
+    "concept_id": "eau_rouge",
+    "en": "Eau Rouge",
+    "tr": "Eau Rouge"
+   },
+   {
+    "concept_id": "the_parabolica",
+    "en": "The Parabolica",
+    "tr": "Parabolica"
+   },
+   {
+    "concept_id": "n_130r",
+    "en": "130R",
+    "tr": "130R"
+   }
+  ],
+  "correct": "turn_8",
+  "source": "https://en.wikipedia.org/wiki/Istanbul_Park"
+ },
+ {
+  "key": "sports_q0075",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which driver won his first F1 title on the final lap of the final race in 2021?",
+   "tr": "2021'de ilk F1 şampiyonluğunu son yarışın son turunda kazanan pilot kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "max_verstappen",
+    "en": "Max Verstappen",
+    "tr": "Max Verstappen"
+   },
+   {
+    "concept_id": "lewis_hamilton",
+    "en": "Lewis Hamilton",
+    "tr": "Lewis Hamilton"
+   },
+   {
+    "concept_id": "charles_leclerc",
+    "en": "Charles Leclerc",
+    "tr": "Charles Leclerc"
+   },
+   {
+    "concept_id": "sergio_perez",
+    "en": "Sergio Pérez",
+    "tr": "Sergio Pérez"
+   }
+  ],
+  "correct": "max_verstappen",
+  "source": "https://en.wikipedia.org/wiki/2021_Abu_Dhabi_Grand_Prix"
+ },
+ {
+  "key": "sports_q0076",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Stanley Cup is the championship trophy of which sport?",
+   "tr": "Stanley Kupası hangi sporun şampiyonluk kupasıdır?"
+  },
+  "options": [
+   {
+    "concept_id": "ice_hockey",
+    "en": "Ice hockey",
+    "tr": "Buz hokeyi"
+   },
+   {
+    "concept_id": "baseball",
+    "en": "Baseball",
+    "tr": "Beyzbol"
+   },
+   {
+    "concept_id": "rugby_league",
+    "en": "Rugby league",
+    "tr": "Ragbi ligi"
+   },
+   {
+    "concept_id": "lacrosse",
+    "en": "Lacrosse",
+    "tr": "Lakros"
+   }
+  ],
+  "correct": "ice_hockey",
+  "source": "https://en.wikipedia.org/wiki/Stanley_Cup"
+ },
+ {
+  "key": "sports_q0077",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which multi-sport race combines swimming, cycling and running?",
+   "tr": "Yüzme, bisiklet ve koşuyu birleştiren çok sporlu yarış hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "triathlon",
+    "en": "Triathlon",
+    "tr": "Triatlon"
+   },
+   {
+    "concept_id": "biathlon",
+    "en": "Biathlon",
+    "tr": "Biatlon"
+   },
+   {
+    "concept_id": "pentathlon",
+    "en": "Pentathlon",
+    "tr": "Pentatlon"
+   },
+   {
+    "concept_id": "duathlon",
+    "en": "Duathlon",
+    "tr": "Duatlon"
+   }
+  ],
+  "correct": "triathlon",
+  "source": "https://en.wikipedia.org/wiki/Triathlon"
+ },
+ {
+  "key": "sports_q0078",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "On which famous Paris avenue has the Tour de France traditionally finished?",
+   "tr": "Tour de France geleneksel olarak Paris'in hangi ünlü caddesinde sona erer?"
+  },
+  "options": [
+   {
+    "concept_id": "champs_elysees",
+    "en": "Champs-Élysées",
+    "tr": "Champs-Élysées"
+   },
+   {
+    "concept_id": "boulevard_haussmann",
+    "en": "Boulevard Haussmann",
+    "tr": "Haussmann Bulvarı"
+   },
+   {
+    "concept_id": "rue_de_rivoli",
+    "en": "Rue de Rivoli",
+    "tr": "Rivoli Caddesi"
+   },
+   {
+    "concept_id": "avenue_foch",
+    "en": "Avenue Foch",
+    "tr": "Foch Caddesi"
+   }
+  ],
+  "correct": "champs_elysees",
+  "source": "https://en.wikipedia.org/wiki/Tour_de_France"
+ },
+ {
+  "key": "sports_q0079",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which boxer called himself \"The Greatest\"?",
+   "tr": "Kendine \"En Büyük\" (The Greatest) diyen boksör kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "muhammad_ali",
+    "en": "Muhammad Ali",
+    "tr": "Muhammed Ali"
+   },
+   {
+    "concept_id": "mike_tyson",
+    "en": "Mike Tyson",
+    "tr": "Mike Tyson"
+   },
+   {
+    "concept_id": "joe_frazier",
+    "en": "Joe Frazier",
+    "tr": "Joe Frazier"
+   },
+   {
+    "concept_id": "george_foreman",
+    "en": "George Foreman",
+    "tr": "George Foreman"
+   }
+  ],
+  "correct": "muhammad_ali",
+  "source": "https://en.wikipedia.org/wiki/Muhammad_Ali"
+ },
+ {
+  "key": "sports_q0080",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Muhammad Ali was born with which name?",
+   "tr": "Muhammed Ali doğduğunda hangi adı taşıyordu?"
+  },
+  "options": [
+   {
+    "concept_id": "cassius_clay",
+    "en": "Cassius Clay",
+    "tr": "Cassius Clay"
+   },
+   {
+    "concept_id": "sonny_liston",
+    "en": "Sonny Liston",
+    "tr": "Sonny Liston"
+   },
+   {
+    "concept_id": "joe_louis",
+    "en": "Joe Louis",
+    "tr": "Joe Louis"
+   },
+   {
+    "concept_id": "floyd_patterson",
+    "en": "Floyd Patterson",
+    "tr": "Floyd Patterson"
+   }
+  ],
+  "correct": "cassius_clay",
+  "source": "https://en.wikipedia.org/wiki/Muhammad_Ali"
+ },
+ {
+  "key": "sports_q0081",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these was once an official Olympic sport?",
+   "tr": "Bunlardan hangisi bir zamanlar resmî Olimpiyat sporuydu?"
+  },
+  "options": [
+   {
+    "concept_id": "tug_of_war",
+    "en": "Tug of war",
+    "tr": "Halat çekme"
+   },
+   {
+    "concept_id": "darts",
+    "en": "Darts",
+    "tr": "Dart"
+   },
+   {
+    "concept_id": "chess",
+    "en": "Chess",
+    "tr": "Satranç"
+   },
+   {
+    "concept_id": "bowling",
+    "en": "Bowling",
+    "tr": "Bowling"
+   }
+  ],
+  "correct": "tug_of_war",
+  "source": "https://en.wikipedia.org/wiki/Tug_of_war_at_the_Summer_Olympics"
+ },
+ {
+  "key": "sports_q0082",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which athlete won nine Olympic golds, including four straight long jump titles?",
+   "tr": "Art arda dört uzun atlama şampiyonluğu dahil dokuz Olimpiyat altını kazanan atlet kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "carl_lewis",
+    "en": "Carl Lewis",
+    "tr": "Carl Lewis"
+   },
+   {
+    "concept_id": "jesse_owens",
+    "en": "Jesse Owens",
+    "tr": "Jesse Owens"
+   },
+   {
+    "concept_id": "bob_beamon",
+    "en": "Bob Beamon",
+    "tr": "Bob Beamon"
+   },
+   {
+    "concept_id": "mike_powell",
+    "en": "Mike Powell",
+    "tr": "Mike Powell"
+   }
+  ],
+  "correct": "carl_lewis",
+  "source": "https://en.wikipedia.org/wiki/Carl_Lewis"
+ },
+ {
+  "key": "sports_q0083",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "At the 1900 Paris Olympics, the Games were stretched over five months as part of what?",
+   "tr": "1900 Paris Olimpiyatları neyin parçası olarak beş aya yayıldı?"
+  },
+  "options": [
+   {
+    "concept_id": "the_world_s_fair",
+    "en": "The World's Fair",
+    "tr": "Dünya Fuarı'nın"
+   },
+   {
+    "concept_id": "a_royal_wedding",
+    "en": "A royal wedding",
+    "tr": "Bir kraliyet düğününün"
+   },
+   {
+    "concept_id": "the_tour_de_france",
+    "en": "The Tour de France",
+    "tr": "Tour de France'ın"
+   },
+   {
+    "concept_id": "a_peace_conference",
+    "en": "A peace conference",
+    "tr": "Bir barış konferansının"
+   }
+  ],
+  "correct": "the_world_s_fair",
+  "source": "https://en.wikipedia.org/wiki/1900_Summer_Olympics"
+ },
+ {
+  "key": "sports_q0084",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What was the name of the lion mascot of the 1966 World Cup, the first official mascot?",
+   "tr": "İlk resmî maskot olan 1966 Dünya Kupası'nın aslan maskotunun adı neydi?"
+  },
+  "options": [
+   {
+    "concept_id": "world_cup_willie",
+    "en": "World Cup Willie",
+    "tr": "World Cup Willie"
+   },
+   {
+    "concept_id": "leo",
+    "en": "Leo",
+    "tr": "Leo"
+   },
+   {
+    "concept_id": "footix",
+    "en": "Footix",
+    "tr": "Footix"
+   },
+   {
+    "concept_id": "striker",
+    "en": "Striker",
+    "tr": "Striker"
+   }
+  ],
+  "correct": "world_cup_willie",
+  "source": "https://en.wikipedia.org/wiki/World_Cup_Willie"
+ },
+ {
+  "key": "sports_q0085",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "West Germany's surprise 1954 World Cup final win is known as the \"Miracle of\" which city?",
+   "tr": "Batı Almanya'nın 1954 Dünya Kupası finalindeki sürpriz zaferi hangi şehrin \"Mucizesi\" olarak anılır?"
+  },
+  "options": [
+   {
+    "concept_id": "bern",
+    "en": "Bern",
+    "tr": "Bern"
+   },
+   {
+    "concept_id": "zurich",
+    "en": "Zurich",
+    "tr": "Zürih"
+   },
+   {
+    "concept_id": "geneva",
+    "en": "Geneva",
+    "tr": "Cenevre"
+   },
+   {
+    "concept_id": "basel",
+    "en": "Basel",
+    "tr": "Basel"
+   }
+  ],
+  "correct": "bern",
+  "source": "https://en.wikipedia.org/wiki/Miracle_of_Bern"
+ },
+ {
+  "key": "sports_q0086",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which country has played at every single men's World Cup?",
+   "tr": "Erkekler Dünya Kupası'nın her birinde yer alan ülke hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "brazil",
+    "en": "Brazil",
+    "tr": "Brezilya"
+   },
+   {
+    "concept_id": "germany",
+    "en": "Germany",
+    "tr": "Almanya"
+   },
+   {
+    "concept_id": "italy",
+    "en": "Italy",
+    "tr": "İtalya"
+   },
+   {
+    "concept_id": "argentina",
+    "en": "Argentina",
+    "tr": "Arjantin"
+   }
+  ],
+  "correct": "brazil",
+  "source": "https://en.wikipedia.org/wiki/Brazil_at_the_FIFA_World_Cup"
+ },
+ {
+  "key": "sports_q0087",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which club won the first English Football League title, in 1888–89, unbeaten?",
+   "tr": "1888-89'da ilk İngiliz Futbol Ligi şampiyonluğunu yenilgisiz kazanan kulüp hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "preston_north_end",
+    "en": "Preston North End",
+    "tr": "Preston North End"
+   },
+   {
+    "concept_id": "aston_villa",
+    "en": "Aston Villa",
+    "tr": "Aston Villa"
+   },
+   {
+    "concept_id": "everton",
+    "en": "Everton",
+    "tr": "Everton"
+   },
+   {
+    "concept_id": "blackburn_rovers",
+    "en": "Blackburn Rovers",
+    "tr": "Blackburn Rovers"
+   }
+  ],
+  "correct": "preston_north_end",
+  "source": "https://en.wikipedia.org/wiki/Preston_North_End_F.C."
+ },
+ {
+  "key": "sports_q0088",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who is the all-time top scorer of Turkey's Süper Lig?",
+   "tr": "Türkiye Süper Ligi'nin tüm zamanların en golcü oyuncusu kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "hakan_sukur",
+    "en": "Hakan Şükür",
+    "tr": "Hakan Şükür"
+   },
+   {
+    "concept_id": "tanju_colak",
+    "en": "Tanju Çolak",
+    "tr": "Tanju Çolak"
+   },
+   {
+    "concept_id": "metin_oktay",
+    "en": "Metin Oktay",
+    "tr": "Metin Oktay"
+   },
+   {
+    "concept_id": "aykut_kocaman",
+    "en": "Aykut Kocaman",
+    "tr": "Aykut Kocaman"
+   }
+  ],
+  "correct": "hakan_sukur",
+  "source": "https://en.wikipedia.org/wiki/Süper_Lig"
+ },
+ {
+  "key": "sports_q0089",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "In 2023, who passed Kareem Abdul-Jabbar to become the NBA's all-time leading scorer?",
+   "tr": "2023'te Kareem Abdul-Jabbar'ı geçerek NBA'in tüm zamanların en skorer oyuncusu olan kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "lebron_james",
+    "en": "LeBron James",
+    "tr": "LeBron James"
+   },
+   {
+    "concept_id": "kevin_durant",
+    "en": "Kevin Durant",
+    "tr": "Kevin Durant"
+   },
+   {
+    "concept_id": "stephen_curry",
+    "en": "Stephen Curry",
+    "tr": "Stephen Curry"
+   },
+   {
+    "concept_id": "karl_malone",
+    "en": "Karl Malone",
+    "tr": "Karl Malone"
+   }
+  ],
+  "correct": "lebron_james",
+  "source": "https://en.wikipedia.org/wiki/LeBron_James"
+ },
+ {
+  "key": "sports_q0090",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Turkish player won the NBA's Most Improved Player award in 2008?",
+   "tr": "2008'de NBA'in En Çok Gelişim Gösteren Oyuncu ödülünü kazanan Türk oyuncu kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "hedo_turkoglu",
+    "en": "Hedo Türkoğlu",
+    "tr": "Hedo Türkoğlu"
+   },
+   {
+    "concept_id": "mehmet_okur",
+    "en": "Mehmet Okur",
+    "tr": "Mehmet Okur"
+   },
+   {
+    "concept_id": "enes_kanter",
+    "en": "Enes Kanter",
+    "tr": "Enes Kanter"
+   },
+   {
+    "concept_id": "cedi_osman",
+    "en": "Cedi Osman",
+    "tr": "Cedi Osman"
+   }
+  ],
+  "correct": "hedo_turkoglu",
+  "source": "https://en.wikipedia.org/wiki/Hedo_Türkoğlu"
+ },
+ {
+  "key": "sports_q0091",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Ethiopia's Abebe Bikila won the 1960 Olympic marathon in Rome in what remarkable way?",
+   "tr": "Etiyopyalı Abebe Bikila 1960 Roma Olimpiyatları maratonunu hangi dikkat çekici şekilde kazandı?"
+  },
+  "options": [
+   {
+    "concept_id": "running_barefoot",
+    "en": "Running barefoot",
+    "tr": "Çıplak ayakla koşarak"
+   },
+   {
+    "concept_id": "running_backwards",
+    "en": "Running backwards",
+    "tr": "Geri geri koşarak"
+   },
+   {
+    "concept_id": "after_a_car_ride",
+    "en": "After a car ride",
+    "tr": "Arabaya binerek"
+   },
+   {
+    "concept_id": "wearing_army_boots",
+    "en": "Wearing army boots",
+    "tr": "Asker botuyla"
+   }
+  ],
+  "correct": "running_barefoot",
+  "source": "https://en.wikipedia.org/wiki/Abebe_Bikila"
+ },
+ {
+  "key": "sports_q0092",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Whose 1988 women's 100 m world record of 10.49 seconds has stood for decades?",
+   "tr": "1988'de koşulan ve on yıllardır kırılamayan 10,49 saniyelik kadınlar 100 m dünya rekoru kime aittir?"
+  },
+  "options": [
+   {
+    "concept_id": "florence_griffith_joyner",
+    "en": "Florence Griffith-Joyner",
+    "tr": "Florence Griffith-Joyner"
+   },
+   {
+    "concept_id": "marion_jones",
+    "en": "Marion Jones",
+    "tr": "Marion Jones"
+   },
+   {
+    "concept_id": "shelly_ann_fraser_pryce",
+    "en": "Shelly-Ann Fraser-Pryce",
+    "tr": "Shelly-Ann Fraser-Pryce"
+   },
+   {
+    "concept_id": "evelyn_ashford",
+    "en": "Evelyn Ashford",
+    "tr": "Evelyn Ashford"
+   }
+  ],
+  "correct": "florence_griffith_joyner",
+  "source": "https://en.wikipedia.org/wiki/Florence_Griffith_Joyner"
+ },
+ {
+  "key": "sports_q0093",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who won the very first Wimbledon championship, in 1877?",
+   "tr": "1877'deki ilk Wimbledon şampiyonluğunu kim kazandı?"
+  },
+  "options": [
+   {
+    "concept_id": "spencer_gore",
+    "en": "Spencer Gore",
+    "tr": "Spencer Gore"
+   },
+   {
+    "concept_id": "william_renshaw",
+    "en": "William Renshaw",
+    "tr": "William Renshaw"
+   },
+   {
+    "concept_id": "fred_perry",
+    "en": "Fred Perry",
+    "tr": "Fred Perry"
+   },
+   {
+    "concept_id": "arthur_gore",
+    "en": "Arthur Gore",
+    "tr": "Arthur Gore"
+   }
+  ],
+  "correct": "spencer_gore",
+  "source": "https://en.wikipedia.org/wiki/Spencer_Gore"
+ },
+ {
+  "key": "sports_q0094",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which player won a record 24 Grand Slam women's singles titles?",
+   "tr": "Kadınlar teklerde rekor 24 Grand Slam şampiyonluğu kazanan oyuncu kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "margaret_court",
+    "en": "Margaret Court",
+    "tr": "Margaret Court"
+   },
+   {
+    "concept_id": "serena_williams",
+    "en": "Serena Williams",
+    "tr": "Serena Williams"
+   },
+   {
+    "concept_id": "steffi_graf",
+    "en": "Steffi Graf",
+    "tr": "Steffi Graf"
+   },
+   {
+    "concept_id": "martina_navratilova",
+    "en": "Martina Navratilova",
+    "tr": "Martina Navratilova"
+   }
+  ],
+  "correct": "margaret_court",
+  "source": "https://en.wikipedia.org/wiki/Margaret_Court"
+ },
+ {
+  "key": "sports_q0095",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which driver is the only Formula 1 world champion to be crowned after his death, in 1970?",
+   "tr": "Ölümünden sonra, 1970'te şampiyon ilan edilen tek Formula 1 pilotu kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "jochen_rindt",
+    "en": "Jochen Rindt",
+    "tr": "Jochen Rindt"
+   },
+   {
+    "concept_id": "jim_clark",
+    "en": "Jim Clark",
+    "tr": "Jim Clark"
+   },
+   {
+    "concept_id": "gilles_villeneuve",
+    "en": "Gilles Villeneuve",
+    "tr": "Gilles Villeneuve"
+   },
+   {
+    "concept_id": "ronnie_peterson",
+    "en": "Ronnie Peterson",
+    "tr": "Ronnie Peterson"
+   }
+  ],
+  "correct": "jochen_rindt",
+  "source": "https://en.wikipedia.org/wiki/Jochen_Rindt"
+ },
+ {
+  "key": "sports_q0096",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who won the first Formula 1 World Championship, in 1950?",
+   "tr": "1950'deki ilk Formula 1 Dünya Şampiyonluğunu kim kazandı?"
+  },
+  "options": [
+   {
+    "concept_id": "giuseppe_farina",
+    "en": "Giuseppe Farina",
+    "tr": "Giuseppe Farina"
+   },
+   {
+    "concept_id": "juan_manuel_fangio",
+    "en": "Juan Manuel Fangio",
+    "tr": "Juan Manuel Fangio"
+   },
+   {
+    "concept_id": "alberto_ascari",
+    "en": "Alberto Ascari",
+    "tr": "Alberto Ascari"
+   },
+   {
+    "concept_id": "luigi_fagioli",
+    "en": "Luigi Fagioli",
+    "tr": "Luigi Fagioli"
+   }
+  ],
+  "correct": "giuseppe_farina",
+  "source": "https://en.wikipedia.org/wiki/Nino_Farina"
+ },
+ {
+  "key": "sports_q0097",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "At the 1980 Winter Olympics, which team beat the mighty Soviet Union in the \"Miracle on Ice\"?",
+   "tr": "1980 Kış Olimpiyatları'nda \"Buz Üstündeki Mucize\" ile güçlü Sovyetler Birliği'ni yenen takım hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "usa",
+    "en": "USA",
+    "tr": "ABD"
+   },
+   {
+    "concept_id": "sweden",
+    "en": "Sweden",
+    "tr": "İsveç"
+   },
+   {
+    "concept_id": "finland",
+    "en": "Finland",
+    "tr": "Finlandiya"
+   },
+   {
+    "concept_id": "czechoslovakia",
+    "en": "Czechoslovakia",
+    "tr": "Çekoslovakya"
+   }
+  ],
+  "correct": "usa",
+  "source": "https://en.wikipedia.org/wiki/Miracle_on_Ice"
+ },
+ {
+  "key": "sports_q0098",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Sam Maguire Cup is the top prize in which sport?",
+   "tr": "Sam Maguire Kupası hangi sporun en büyük ödülüdür?"
+  },
+  "options": [
+   {
+    "concept_id": "gaelic_football",
+    "en": "Gaelic football",
+    "tr": "Gal futbolu"
+   },
+   {
+    "concept_id": "hurling",
+    "en": "Hurling",
+    "tr": "Hurling"
+   },
+   {
+    "concept_id": "rugby_league",
+    "en": "Rugby league",
+    "tr": "Ragbi ligi"
+   },
+   {
+    "concept_id": "australian_rules_football",
+    "en": "Australian rules football",
+    "tr": "Avustralya futbolu"
+   }
+  ],
+  "correct": "gaelic_football",
+  "source": "https://en.wikipedia.org/wiki/Sam_Maguire_Cup"
+ },
+ {
+  "key": "sports_q0099",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who was the first cyclist to win the Tour de France five times?",
+   "tr": "Tour de France'ı beş kez kazanan ilk bisikletçi kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "jacques_anquetil",
+    "en": "Jacques Anquetil",
+    "tr": "Jacques Anquetil"
+   },
+   {
+    "concept_id": "eddy_merckx",
+    "en": "Eddy Merckx",
+    "tr": "Eddy Merckx"
+   },
+   {
+    "concept_id": "bernard_hinault",
+    "en": "Bernard Hinault",
+    "tr": "Bernard Hinault"
+   },
+   {
+    "concept_id": "miguel_indurain",
+    "en": "Miguel Induráin",
+    "tr": "Miguel Induráin"
+   }
+  ],
+  "correct": "jacques_anquetil",
+  "source": "https://en.wikipedia.org/wiki/Jacques_Anquetil"
+ },
+ {
+  "key": "sports_q0100",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Besides Naim Süleymanoğlu, which Turkish weightlifter won three straight Olympic golds (1996–2004)?",
+   "tr": "Naim Süleymanoğlu dışında art arda üç Olimpiyat altını (1996-2004) kazanan Türk halterci kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "halil_mutlu",
+    "en": "Halil Mutlu",
+    "tr": "Halil Mutlu"
+   },
+   {
+    "concept_id": "taner_sagr",
+    "en": "Taner Sağır",
+    "tr": "Taner Sağır"
+   },
+   {
+    "concept_id": "hafize_sahin",
+    "en": "Hafize Şahin",
+    "tr": "Hafize Şahin"
+   },
+   {
+    "concept_id": "nurcan_taylan",
+    "en": "Nurcan Taylan",
+    "tr": "Nurcan Taylan"
+   }
+  ],
+  "correct": "halil_mutlu",
+  "source": "https://en.wikipedia.org/wiki/Halil_Mutlu"
+ },
+ {
+  "key": "sports_q0101",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which country hosted the 2016 Summer Olympics, in Rio de Janeiro?",
+   "tr": "Rio de Janeiro'daki 2016 Yaz Olimpiyatları'na hangi ülke ev sahipliği yaptı?"
+  },
+  "options": [
+   {
+    "concept_id": "brazil",
+    "en": "Brazil",
+    "tr": "Brezilya"
+   },
+   {
+    "concept_id": "argentina",
+    "en": "Argentina",
+    "tr": "Arjantin"
+   },
+   {
+    "concept_id": "mexico",
+    "en": "Mexico",
+    "tr": "Meksika"
+   },
+   {
+    "concept_id": "portugal",
+    "en": "Portugal",
+    "tr": "Portekiz"
+   }
+  ],
+  "correct": "brazil",
+  "source": "https://en.wikipedia.org/wiki/2016_Summer_Olympics"
+ },
+ {
+  "key": "sports_q0102",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What are the Paralympic Games?",
+   "tr": "Paralimpik Oyunları nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "games_for_athletes_with_disabilities",
+    "en": "Games for athletes with disabilities",
+    "tr": "Engelli sporcular için oyunlar"
+   },
+   {
+    "concept_id": "games_for_young_athletes",
+    "en": "Games for young athletes",
+    "tr": "Genç sporcular için oyunlar"
+   },
+   {
+    "concept_id": "games_for_retired_stars",
+    "en": "Games for retired stars",
+    "tr": "Emekli yıldızlar için oyunlar"
+   },
+   {
+    "concept_id": "games_for_military_teams",
+    "en": "Games for military teams",
+    "tr": "Askerî takımlar için oyunlar"
+   }
+  ],
+  "correct": "games_for_athletes_with_disabilities",
+  "source": "https://en.wikipedia.org/wiki/Paralympic_Games"
+ },
+ {
+  "key": "sports_q0103",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which is the fastest swimming stroke?",
+   "tr": "En hızlı yüzme stili hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "front_crawl_freestyle",
+    "en": "Front crawl (freestyle)",
+    "tr": "Serbest stil (kulaç)"
+   },
+   {
+    "concept_id": "breaststroke",
+    "en": "Breaststroke",
+    "tr": "Kurbağalama"
+   },
+   {
+    "concept_id": "backstroke",
+    "en": "Backstroke",
+    "tr": "Sırtüstü"
+   },
+   {
+    "concept_id": "butterfly",
+    "en": "Butterfly",
+    "tr": "Kelebek"
+   }
+  ],
+  "correct": "front_crawl_freestyle",
+  "source": "https://en.wikipedia.org/wiki/Front_crawl"
+ },
+ {
+  "key": "sports_q0104",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In which sport do athletes use a foil, an épée or a sabre?",
+   "tr": "Sporcuların flöre, epe ya da kılıç kullandığı spor hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "fencing",
+    "en": "Fencing",
+    "tr": "Eskrim"
+   },
+   {
+    "concept_id": "archery",
+    "en": "Archery",
+    "tr": "Okçuluk"
+   },
+   {
+    "concept_id": "kendo",
+    "en": "Kendo",
+    "tr": "Kendo"
+   },
+   {
+    "concept_id": "rowing",
+    "en": "Rowing",
+    "tr": "Kürek"
+   }
+  ],
+  "correct": "fencing",
+  "source": "https://en.wikipedia.org/wiki/Fencing"
+ },
+ {
+  "key": "sports_q0105",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In which Winter Olympic sport do athletes race head-first down an ice track on a tiny sled?",
+   "tr": "Hangi Kış Olimpiyatı sporunda sporcular küçük bir kızakla buz pistinden baş aşağı iner?"
+  },
+  "options": [
+   {
+    "concept_id": "skeleton",
+    "en": "Skeleton",
+    "tr": "Skeleton"
+   },
+   {
+    "concept_id": "luge",
+    "en": "Luge",
+    "tr": "Kızak (luge)"
+   },
+   {
+    "concept_id": "bobsleigh",
+    "en": "Bobsleigh",
+    "tr": "Bobsleigh"
+   },
+   {
+    "concept_id": "biathlon",
+    "en": "Biathlon",
+    "tr": "Biatlon"
+   }
+  ],
+  "correct": "skeleton",
+  "source": "https://en.wikipedia.org/wiki/Skeleton_(sport)"
+ },
+ {
+  "key": "sports_q0106",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which country hosted the 2018 FIFA World Cup?",
+   "tr": "2018 FIFA Dünya Kupası'na hangi ülke ev sahipliği yaptı?"
+  },
+  "options": [
+   {
+    "concept_id": "russia",
+    "en": "Russia",
+    "tr": "Rusya"
+   },
+   {
+    "concept_id": "brazil",
+    "en": "Brazil",
+    "tr": "Brezilya"
+   },
+   {
+    "concept_id": "germany",
+    "en": "Germany",
+    "tr": "Almanya"
+   },
+   {
+    "concept_id": "qatar",
+    "en": "Qatar",
+    "tr": "Katar"
+   }
+  ],
+  "correct": "russia",
+  "source": "https://en.wikipedia.org/wiki/2018_FIFA_World_Cup"
+ },
+ {
+  "key": "sports_q0107",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What do the 1998 and 2018 World Cups have in common?",
+   "tr": "1998 ve 2018 Dünya Kupalarının ortak noktası nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "france_won_both",
+    "en": "France won both",
+    "tr": "İkisini de Fransa kazandı"
+   },
+   {
+    "concept_id": "both_were_in_asia",
+    "en": "Both were in Asia",
+    "tr": "İkisi de Asya'daydı"
+   },
+   {
+    "concept_id": "both_finals_went_to_penalties",
+    "en": "Both finals went to penalties",
+    "tr": "İki final de penaltılara gitti"
+   },
+   {
+    "concept_id": "brazil_hosted_both",
+    "en": "Brazil hosted both",
+    "tr": "İkisine de Brezilya ev sahipliği yaptı"
+   }
+  ],
+  "correct": "france_won_both",
+  "source": "https://en.wikipedia.org/wiki/France_national_football_team"
+ },
+ {
+  "key": "sports_q0108",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The 2010 World Cup in South Africa was famous for the droning sound of which plastic horns?",
+   "tr": "Güney Afrika'daki 2010 Dünya Kupası hangi plastik boruların uğultusuyla ünlendi?"
+  },
+  "options": [
+   {
+    "concept_id": "vuvuzelas",
+    "en": "Vuvuzelas",
+    "tr": "Vuvuzela"
+   },
+   {
+    "concept_id": "didgeridoos",
+    "en": "Didgeridoos",
+    "tr": "Didgeridoo"
+   },
+   {
+    "concept_id": "kazoos",
+    "en": "Kazoos",
+    "tr": "Kazoo"
+   },
+   {
+    "concept_id": "bagpipes",
+    "en": "Bagpipes",
+    "tr": "Gayda"
+   }
+  ],
+  "correct": "vuvuzelas",
+  "source": "https://en.wikipedia.org/wiki/Vuvuzela"
+ },
+ {
+  "key": "sports_q0109",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Netherlands team is nicknamed \"Oranje\". Which colour does it wear?",
+   "tr": "Hollanda milli takımının lakabı \"Oranje\"dir. Hangi renk forma giyer?"
+  },
+  "options": [
+   {
+    "concept_id": "orange",
+    "en": "Orange",
+    "tr": "Turuncu"
+   },
+   {
+    "concept_id": "red",
+    "en": "Red",
+    "tr": "Kırmızı"
+   },
+   {
+    "concept_id": "blue",
+    "en": "Blue",
+    "tr": "Mavi"
+   },
+   {
+    "concept_id": "white",
+    "en": "White",
+    "tr": "Beyaz"
+   }
+  ],
+  "correct": "orange",
+  "source": "https://en.wikipedia.org/wiki/Netherlands_national_football_team"
+ },
+ {
+  "key": "sports_q0110",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which award goes to the top goalscorer at a World Cup?",
+   "tr": "Dünya Kupası'nın gol kralına hangi ödül verilir?"
+  },
+  "options": [
+   {
+    "concept_id": "golden_boot",
+    "en": "Golden Boot",
+    "tr": "Altın Ayakkabı"
+   },
+   {
+    "concept_id": "golden_ball",
+    "en": "Golden Ball",
+    "tr": "Altın Top"
+   },
+   {
+    "concept_id": "golden_glove",
+    "en": "Golden Glove",
+    "tr": "Altın Eldiven"
+   },
+   {
+    "concept_id": "golden_whistle",
+    "en": "Golden Whistle",
+    "tr": "Altın Düdük"
+   }
+  ],
+  "correct": "golden_boot",
+  "source": "https://en.wikipedia.org/wiki/FIFA_World_Cup_awards"
+ },
+ {
+  "key": "sports_q0111",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is it called when a player kicks the ball backwards over their own head in mid-air?",
+   "tr": "Oyuncunun havada topa kendi başının üzerinden geriye doğru vurmasına ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "a_bicycle_kick",
+    "en": "A bicycle kick",
+    "tr": "Rövaşata"
+   },
+   {
+    "concept_id": "a_volley",
+    "en": "A volley",
+    "tr": "Vole"
+   },
+   {
+    "concept_id": "a_header",
+    "en": "A header",
+    "tr": "Kafa vuruşu"
+   },
+   {
+    "concept_id": "a_back_heel",
+    "en": "A back-heel",
+    "tr": "Topuk"
+   }
+  ],
+  "correct": "a_bicycle_kick",
+  "source": "https://en.wikipedia.org/wiki/Bicycle_kick"
+ },
+ {
+  "key": "sports_q0112",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which club plays its home games at the Santiago Bernabéu?",
+   "tr": "İç saha maçlarını Santiago Bernabéu'da oynayan kulüp hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "real_madrid",
+    "en": "Real Madrid",
+    "tr": "Real Madrid"
+   },
+   {
+    "concept_id": "atletico_madrid",
+    "en": "Atlético Madrid",
+    "tr": "Atlético Madrid"
+   },
+   {
+    "concept_id": "barcelona",
+    "en": "Barcelona",
+    "tr": "Barcelona"
+   },
+   {
+    "concept_id": "sevilla",
+    "en": "Sevilla",
+    "tr": "Sevilla"
+   }
+  ],
+  "correct": "real_madrid",
+  "source": "https://en.wikipedia.org/wiki/Santiago_Bernabéu_Stadium"
+ },
+ {
+  "key": "sports_q0113",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many players are on the pitch at kick-off, counting both teams?",
+   "tr": "Başlama vuruşunda iki takım birlikte sahada kaç oyuncu bulunur?"
+  },
+  "options": [
+   {
+    "concept_id": "n_22",
+    "en": "22",
+    "tr": "22"
+   },
+   {
+    "concept_id": "n_20",
+    "en": "20",
+    "tr": "20"
+   },
+   {
+    "concept_id": "n_24",
+    "en": "24",
+    "tr": "24"
+   },
+   {
+    "concept_id": "n_18",
+    "en": "18",
+    "tr": "18"
+   }
+  ],
+  "correct": "n_22",
+  "source": "https://en.wikipedia.org/wiki/Association_football"
+ },
+ {
+  "key": "sports_q0114",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which club was the first from outside Istanbul to win the Turkish league, in 1976?",
+   "tr": "1976'da Türkiye liginde şampiyon olan ilk İstanbul dışı kulüp hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "trabzonspor",
+    "en": "Trabzonspor",
+    "tr": "Trabzonspor"
+   },
+   {
+    "concept_id": "bursaspor",
+    "en": "Bursaspor",
+    "tr": "Bursaspor"
+   },
+   {
+    "concept_id": "goztepe",
+    "en": "Göztepe",
+    "tr": "Göztepe"
+   },
+   {
+    "concept_id": "ankaragucu",
+    "en": "Ankaragücü",
+    "tr": "Ankaragücü"
+   }
+  ],
+  "correct": "trabzonspor",
+  "source": "https://en.wikipedia.org/wiki/Trabzonspor"
+ },
+ {
+  "key": "sports_q0115",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "If a defender trips an attacker inside the penalty area, what does the referee usually award?",
+   "tr": "Bir savunmacı ceza sahası içinde hücum oyuncusunu düşürürse hakem genellikle ne verir?"
+  },
+  "options": [
+   {
+    "concept_id": "a_penalty_kick",
+    "en": "A penalty kick",
+    "tr": "Penaltı"
+   },
+   {
+    "concept_id": "a_corner_kick",
+    "en": "A corner kick",
+    "tr": "Korner"
+   },
+   {
+    "concept_id": "a_throw_in",
+    "en": "A throw-in",
+    "tr": "Taç"
+   },
+   {
+    "concept_id": "a_goal_kick",
+    "en": "A goal kick",
+    "tr": "Kale vuruşu"
+   }
+  ],
+  "correct": "a_penalty_kick",
+  "source": "https://en.wikipedia.org/wiki/Penalty_kick_(association_football)"
+ },
+ {
+  "key": "sports_q0116",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many points is a successful free throw worth?",
+   "tr": "Başarılı bir serbest atış kaç sayı değerindedir?"
+  },
+  "options": [
+   {
+    "concept_id": "n_1",
+    "en": "1",
+    "tr": "1"
+   },
+   {
+    "concept_id": "n_2",
+    "en": "2",
+    "tr": "2"
+   },
+   {
+    "concept_id": "n_3",
+    "en": "3",
+    "tr": "3"
+   },
+   {
+    "concept_id": "n_0_5",
+    "en": "0.5",
+    "tr": "0,5"
+   }
+  ],
+  "correct": "n_1",
+  "source": "https://en.wikipedia.org/wiki/Free_throw"
+ },
+ {
+  "key": "sports_q0117",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Stephen Curry holds the NBA record for the most career what?",
+   "tr": "Stephen Curry NBA'de kariyer boyunca en çok neyin rekorunu elinde tutar?"
+  },
+  "options": [
+   {
+    "concept_id": "three_pointers_made",
+    "en": "Three-pointers made",
+    "tr": "İsabetli üçlük"
+   },
+   {
+    "concept_id": "slam_dunks",
+    "en": "Slam dunks",
+    "tr": "Smaç"
+   },
+   {
+    "concept_id": "blocked_shots",
+    "en": "Blocked shots",
+    "tr": "Blok"
+   },
+   {
+    "concept_id": "games_played",
+    "en": "Games played",
+    "tr": "Oynanan maç"
+   }
+  ],
+  "correct": "three_pointers_made",
+  "source": "https://en.wikipedia.org/wiki/Stephen_Curry"
+ },
+ {
+  "key": "sports_q0118",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In basketball, what is a \"triple-double\"?",
+   "tr": "Basketbolda \"triple-double\" nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "double_figures_in_three_stats_in_one_game",
+    "en": "Double figures in three stats in one game",
+    "tr": "Bir maçta üç istatistikte çift hane"
+   },
+   {
+    "concept_id": "three_dunks_in_a_row",
+    "en": "Three dunks in a row",
+    "tr": "Art arda üç smaç"
+   },
+   {
+    "concept_id": "three_straight_wins",
+    "en": "Three straight wins",
+    "tr": "Art arda üç galibiyet"
+   },
+   {
+    "concept_id": "a_three_point_play",
+    "en": "A three-point play",
+    "tr": "Üç sayılık oyun"
+   }
+  ],
+  "correct": "double_figures_in_three_stats_in_one_game",
+  "source": "https://en.wikipedia.org/wiki/Double_(basketball)"
+ },
+ {
+  "key": "sports_q0119",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is it called when a player takes too many steps without dribbling?",
+   "tr": "Oyuncunun top sürmeden fazla adım atmasına ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "travelling",
+    "en": "Travelling",
+    "tr": "Adım (travelling)"
+   },
+   {
+    "concept_id": "double_dribble",
+    "en": "Double dribble",
+    "tr": "Çift dripling"
+   },
+   {
+    "concept_id": "goaltending",
+    "en": "Goaltending",
+    "tr": "Goaltending"
+   },
+   {
+    "concept_id": "charging",
+    "en": "Charging",
+    "tr": "Hücum faulü"
+   }
+  ],
+  "correct": "travelling",
+  "source": "https://en.wikipedia.org/wiki/Traveling_(basketball)"
+ },
+ {
+  "key": "sports_q0120",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which sport, similar to basketball but without dribbling, is widely played in schools in Britain?",
+   "tr": "Basketbola benzeyen ama top sürülmeyen, Britanya okullarında yaygın oynanan spor hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "netball",
+    "en": "Netball",
+    "tr": "Netbol"
+   },
+   {
+    "concept_id": "handball",
+    "en": "Handball",
+    "tr": "Hentbol"
+   },
+   {
+    "concept_id": "korfball",
+    "en": "Korfball",
+    "tr": "Korfbol"
+   },
+   {
+    "concept_id": "volleyball",
+    "en": "Volleyball",
+    "tr": "Voleybol"
+   }
+  ],
+  "correct": "netball",
+  "source": "https://en.wikipedia.org/wiki/Netball"
+ },
+ {
+  "key": "sports_q0121",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In which event do athletes clear a high bar using a long, flexible pole?",
+   "tr": "Sporcuların uzun ve esnek bir sırıkla yüksek bir çıtayı aştığı branş hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "pole_vault",
+    "en": "Pole vault",
+    "tr": "Sırıkla atlama"
+   },
+   {
+    "concept_id": "high_jump",
+    "en": "High jump",
+    "tr": "Yüksek atlama"
+   },
+   {
+    "concept_id": "hurdles",
+    "en": "Hurdles",
+    "tr": "Engelli koşu"
+   },
+   {
+    "concept_id": "triple_jump",
+    "en": "Triple jump",
+    "tr": "Üç adım atlama"
+   }
+  ],
+  "correct": "pole_vault",
+  "source": "https://en.wikipedia.org/wiki/Pole_vault"
+ },
+ {
+  "key": "sports_q0122",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The three phases of the triple jump are known as what?",
+   "tr": "Üç adım atlamanın üç aşaması nasıl adlandırılır?"
+  },
+  "options": [
+   {
+    "concept_id": "hop_step_and_jump",
+    "en": "Hop, step and jump",
+    "tr": "Sek, adım ve atla"
+   },
+   {
+    "concept_id": "run_leap_and_land",
+    "en": "Run, leap and land",
+    "tr": "Koş, sıçra ve kon"
+   },
+   {
+    "concept_id": "skip_hop_and_fly",
+    "en": "Skip, hop and fly",
+    "tr": "Hopla, sek ve uç"
+   },
+   {
+    "concept_id": "step_bound_and_dive",
+    "en": "Step, bound and dive",
+    "tr": "Adım, fırla ve dal"
+   }
+  ],
+  "correct": "hop_step_and_jump",
+  "source": "https://en.wikipedia.org/wiki/Triple_jump"
+ },
+ {
+  "key": "sports_q0123",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the longest standard running race held on the track at the Olympics?",
+   "tr": "Olimpiyatlarda pistte koşulan en uzun standart yarış hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "n_10_000_metres",
+    "en": "10,000 metres",
+    "tr": "10.000 metre"
+   },
+   {
+    "concept_id": "n_5_000_metres",
+    "en": "5,000 metres",
+    "tr": "5.000 metre"
+   },
+   {
+    "concept_id": "n_3_000_metres",
+    "en": "3,000 metres",
+    "tr": "3.000 metre"
+   },
+   {
+    "concept_id": "n_20_000_metres",
+    "en": "20,000 metres",
+    "tr": "20.000 metre"
+   }
+  ],
+  "correct": "n_10_000_metres",
+  "source": "https://en.wikipedia.org/wiki/10,000_metres"
+ },
+ {
+  "key": "sports_q0124",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Eliud Kipchoge and many great distance runners come from which country?",
+   "tr": "Eliud Kipchoge ve pek çok büyük uzun mesafe koşucusu hangi ülkedendir?"
+  },
+  "options": [
+   {
+    "concept_id": "kenya",
+    "en": "Kenya",
+    "tr": "Kenya"
+   },
+   {
+    "concept_id": "nigeria",
+    "en": "Nigeria",
+    "tr": "Nijerya"
+   },
+   {
+    "concept_id": "morocco",
+    "en": "Morocco",
+    "tr": "Fas"
+   },
+   {
+    "concept_id": "egypt",
+    "en": "Egypt",
+    "tr": "Mısır"
+   }
+  ],
+  "correct": "kenya",
+  "source": "https://en.wikipedia.org/wiki/Eliud_Kipchoge"
+ },
+ {
+  "key": "sports_q0125",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which event's name means \"five contests\" in Greek?",
+   "tr": "Hangi branşın adı Yunancada \"beş yarışma\" anlamına gelir?"
+  },
+  "options": [
+   {
+    "concept_id": "pentathlon",
+    "en": "Pentathlon",
+    "tr": "Pentatlon"
+   },
+   {
+    "concept_id": "decathlon",
+    "en": "Decathlon",
+    "tr": "Dekatlon"
+   },
+   {
+    "concept_id": "marathon",
+    "en": "Marathon",
+    "tr": "Maraton"
+   },
+   {
+    "concept_id": "biathlon",
+    "en": "Biathlon",
+    "tr": "Biatlon"
+   }
+  ],
+  "correct": "pentathlon",
+  "source": "https://en.wikipedia.org/wiki/Modern_pentathlon"
+ },
+ {
+  "key": "sports_q0126",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Tennis balls were made bright yellow in 1972 so they'd be easier to see on what?",
+   "tr": "Tenis topları 1972'de neyin üzerinde daha kolay görünsün diye parlak sarı yapıldı?"
+  },
+  "options": [
+   {
+    "concept_id": "television",
+    "en": "Television",
+    "tr": "Televizyonda"
+   },
+   {
+    "concept_id": "grass_courts",
+    "en": "Grass courts",
+    "tr": "Çim kortta"
+   },
+   {
+    "concept_id": "night_games",
+    "en": "Night games",
+    "tr": "Gece maçlarında"
+   },
+   {
+    "concept_id": "clay_courts",
+    "en": "Clay courts",
+    "tr": "Toprak kortta"
+   }
+  ],
+  "correct": "television",
+  "source": "https://en.wikipedia.org/wiki/Tennis_ball"
+ },
+ {
+  "key": "sports_q0127",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the line at the very back of a tennis court called?",
+   "tr": "Tenis kortunun en arkasındaki çizgiye ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "the_baseline",
+    "en": "The baseline",
+    "tr": "Dip çizgisi"
+   },
+   {
+    "concept_id": "the_service_line",
+    "en": "The service line",
+    "tr": "Servis çizgisi"
+   },
+   {
+    "concept_id": "the_tramline",
+    "en": "The tramline",
+    "tr": "Koridor çizgisi"
+   },
+   {
+    "concept_id": "the_net_line",
+    "en": "The net line",
+    "tr": "File çizgisi"
+   }
+  ],
+  "correct": "the_baseline",
+  "source": "https://en.wikipedia.org/wiki/Tennis_court"
+ },
+ {
+  "key": "sports_q0128",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which country does Novak Djokovic represent?",
+   "tr": "Novak Djokovic hangi ülkeyi temsil eder?"
+  },
+  "options": [
+   {
+    "concept_id": "serbia",
+    "en": "Serbia",
+    "tr": "Sırbistan"
+   },
+   {
+    "concept_id": "croatia",
+    "en": "Croatia",
+    "tr": "Hırvatistan"
+   },
+   {
+    "concept_id": "russia",
+    "en": "Russia",
+    "tr": "Rusya"
+   },
+   {
+    "concept_id": "switzerland",
+    "en": "Switzerland",
+    "tr": "İsviçre"
+   }
+  ],
+  "correct": "serbia",
+  "source": "https://en.wikipedia.org/wiki/Novak_Djokovic"
+ },
+ {
+  "key": "sports_q0129",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Federer, Nadal and Djokovic are often grouped together under which nickname?",
+   "tr": "Federer, Nadal ve Djokovic genellikle hangi lakapla birlikte anılır?"
+  },
+  "options": [
+   {
+    "concept_id": "the_big_three",
+    "en": "The Big Three",
+    "tr": "Büyük Üçlü"
+   },
+   {
+    "concept_id": "the_golden_trio",
+    "en": "The Golden Trio",
+    "tr": "Altın Üçlü"
+   },
+   {
+    "concept_id": "the_grand_slammers",
+    "en": "The Grand Slammers",
+    "tr": "Grand Slamciler"
+   },
+   {
+    "concept_id": "the_three_kings",
+    "en": "The Three Kings",
+    "tr": "Üç Kral"
+   }
+  ],
+  "correct": "the_big_three",
+  "source": "https://en.wikipedia.org/wiki/Big_Three_(tennis)"
+ },
+ {
+  "key": "sports_q0130",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is it called when a player wins all four major titles in one calendar year?",
+   "tr": "Bir oyuncunun aynı takvim yılında dört büyük turnuvanın hepsini kazanmasına ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "a_calendar_grand_slam",
+    "en": "A calendar Grand Slam",
+    "tr": "Takvim Grand Slam'i"
+   },
+   {
+    "concept_id": "a_triple_crown",
+    "en": "A Triple Crown",
+    "tr": "Üçlü Taç"
+   },
+   {
+    "concept_id": "a_masters_sweep",
+    "en": "A Masters sweep",
+    "tr": "Masters süpürmesi"
+   },
+   {
+    "concept_id": "a_clean_four",
+    "en": "A Clean Four",
+    "tr": "Temiz Dörtlü"
+   }
+  ],
+  "correct": "a_calendar_grand_slam",
+  "source": "https://en.wikipedia.org/wiki/Grand_Slam_(tennis)"
+ },
+ {
+  "key": "sports_q0131",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In Formula 1, what does a waved yellow flag mean?",
+   "tr": "Formula 1'de sallanan sarı bayrak ne anlama gelir?"
+  },
+  "options": [
+   {
+    "concept_id": "danger_ahead_no_overtaking",
+    "en": "Danger ahead, no overtaking",
+    "tr": "İleride tehlike, sollama yok"
+   },
+   {
+    "concept_id": "last_lap",
+    "en": "Last lap",
+    "tr": "Son tur"
+   },
+   {
+    "concept_id": "race_stopped",
+    "en": "Race stopped",
+    "tr": "Yarış durdu"
+   },
+   {
+    "concept_id": "pit_lane_closed",
+    "en": "Pit lane closed",
+    "tr": "Pit yolu kapalı"
+   }
+  ],
+  "correct": "danger_ahead_no_overtaking",
+  "source": "https://en.wikipedia.org/wiki/Racing_flags"
+ },
+ {
+  "key": "sports_q0132",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Formula 1 team is nicknamed the \"Silver Arrows\"?",
+   "tr": "Hangi Formula 1 takımının lakabı \"Gümüş Oklar\"dır?"
+  },
+  "options": [
+   {
+    "concept_id": "mercedes",
+    "en": "Mercedes",
+    "tr": "Mercedes"
+   },
+   {
+    "concept_id": "mclaren",
+    "en": "McLaren",
+    "tr": "McLaren"
+   },
+   {
+    "concept_id": "williams",
+    "en": "Williams",
+    "tr": "Williams"
+   },
+   {
+    "concept_id": "red_bull",
+    "en": "Red Bull",
+    "tr": "Red Bull"
+   }
+  ],
+  "correct": "mercedes",
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One"
+ },
+ {
+  "key": "sports_q0133",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Silverstone hosts the Grand Prix of which country?",
+   "tr": "Silverstone hangi ülkenin Grand Prix'sine ev sahipliği yapar?"
+  },
+  "options": [
+   {
+    "concept_id": "great_britain",
+    "en": "Great Britain",
+    "tr": "Büyük Britanya"
+   },
+   {
+    "concept_id": "germany",
+    "en": "Germany",
+    "tr": "Almanya"
+   },
+   {
+    "concept_id": "canada",
+    "en": "Canada",
+    "tr": "Kanada"
+   },
+   {
+    "concept_id": "australia",
+    "en": "Australia",
+    "tr": "Avustralya"
+   }
+  ],
+  "correct": "great_britain",
+  "source": "https://en.wikipedia.org/wiki/Silverstone_Circuit"
+ },
+ {
+  "key": "sports_q0134",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What are \"slicks\" in Formula 1?",
+   "tr": "Formula 1'de \"slick\" lastik nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "smooth_tyres_for_dry_weather",
+    "en": "Smooth tyres for dry weather",
+    "tr": "Kuru hava için dişsiz lastik"
+   },
+   {
+    "concept_id": "wet_weather_tyres",
+    "en": "Wet-weather tyres",
+    "tr": "Yağmur lastiği"
+   },
+   {
+    "concept_id": "oil_spills",
+    "en": "Oil spills",
+    "tr": "Yağ birikintisi"
+   },
+   {
+    "concept_id": "fast_pit_crews",
+    "en": "Fast pit crews",
+    "tr": "Hızlı pit ekibi"
+   }
+  ],
+  "correct": "smooth_tyres_for_dry_weather",
+  "source": "https://en.wikipedia.org/wiki/Racing_slick"
+ },
+ {
+  "key": "sports_q0135",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In 2008, which city hosted the first night race in Formula 1?",
+   "tr": "2008'de Formula 1'in ilk gece yarışına hangi şehir ev sahipliği yaptı?"
+  },
+  "options": [
+   {
+    "concept_id": "singapore",
+    "en": "Singapore",
+    "tr": "Singapur"
+   },
+   {
+    "concept_id": "abu_dhabi",
+    "en": "Abu Dhabi",
+    "tr": "Abu Dabi"
+   },
+   {
+    "concept_id": "bahrain",
+    "en": "Bahrain",
+    "tr": "Bahreyn"
+   },
+   {
+    "concept_id": "las_vegas",
+    "en": "Las Vegas",
+    "tr": "Las Vegas"
+   }
+  ],
+  "correct": "singapore",
+  "source": "https://en.wikipedia.org/wiki/Singapore_Grand_Prix"
+ },
+ {
+  "key": "sports_q0136",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The America's Cup is the oldest trophy in which sport?",
+   "tr": "America's Cup hangi sporun en eski kupasıdır?"
+  },
+  "options": [
+   {
+    "concept_id": "sailing",
+    "en": "Sailing",
+    "tr": "Yelken"
+   },
+   {
+    "concept_id": "rowing",
+    "en": "Rowing",
+    "tr": "Kürek"
+   },
+   {
+    "concept_id": "golf",
+    "en": "Golf",
+    "tr": "Golf"
+   },
+   {
+    "concept_id": "polo",
+    "en": "Polo",
+    "tr": "Polo"
+   }
+  ],
+  "correct": "sailing",
+  "source": "https://en.wikipedia.org/wiki/America's_Cup"
+ },
+ {
+  "key": "sports_q0137",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many players are in a cricket team on the field?",
+   "tr": "Bir kriket takımında sahada kaç oyuncu bulunur?"
+  },
+  "options": [
+   {
+    "concept_id": "n_11",
+    "en": "11",
+    "tr": "11"
+   },
+   {
+    "concept_id": "n_9",
+    "en": "9",
+    "tr": "9"
+   },
+   {
+    "concept_id": "n_13",
+    "en": "13",
+    "tr": "13"
+   },
+   {
+    "concept_id": "n_15",
+    "en": "15",
+    "tr": "15"
+   }
+  ],
+  "correct": "n_11",
+  "source": "https://en.wikipedia.org/wiki/Cricket"
+ },
+ {
+  "key": "sports_q0138",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which traditional Japanese sport features huge wrestlers in a ring called a dohyō?",
+   "tr": "Dohyo denen halkada iri güreşçilerin karşılaştığı geleneksel Japon sporu hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "sumo",
+    "en": "Sumo",
+    "tr": "Sumo"
+   },
+   {
+    "concept_id": "judo",
+    "en": "Judo",
+    "tr": "Judo"
+   },
+   {
+    "concept_id": "kendo",
+    "en": "Kendo",
+    "tr": "Kendo"
+   },
+   {
+    "concept_id": "aikido",
+    "en": "Aikido",
+    "tr": "Aikido"
+   }
+  ],
+  "correct": "sumo",
+  "source": "https://en.wikipedia.org/wiki/Sumo"
+ },
+ {
+  "key": "sports_q0139",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which sport is held every year at Kırkpınar near Edirne?",
+   "tr": "Edirne yakınlarındaki Kırkpınar'da her yıl hangi spor yapılır?"
+  },
+  "options": [
+   {
+    "concept_id": "oil_wrestling",
+    "en": "Oil wrestling",
+    "tr": "Yağlı güreş"
+   },
+   {
+    "concept_id": "archery",
+    "en": "Archery",
+    "tr": "Okçuluk"
+   },
+   {
+    "concept_id": "horse_racing",
+    "en": "Horse racing",
+    "tr": "At yarışı"
+   },
+   {
+    "concept_id": "camel_wrestling",
+    "en": "Camel wrestling",
+    "tr": "Deve güreşi"
+   }
+  ],
+  "correct": "oil_wrestling",
+  "source": "https://en.wikipedia.org/wiki/Kırkpınar"
+ },
+ {
+  "key": "sports_q0140",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Besides prize money, what famous item does the winner of golf's Masters receive?",
+   "tr": "Golfün Masters turnuvasının galibi para ödülü dışında hangi ünlü şeyi alır?"
+  },
+  "options": [
+   {
+    "concept_id": "a_green_jacket",
+    "en": "A green jacket",
+    "tr": "Yeşil ceket"
+   },
+   {
+    "concept_id": "a_gold_club",
+    "en": "A gold club",
+    "tr": "Altın sopa"
+   },
+   {
+    "concept_id": "a_silver_cap",
+    "en": "A silver cap",
+    "tr": "Gümüş şapka"
+   },
+   {
+    "concept_id": "a_red_scarf",
+    "en": "A red scarf",
+    "tr": "Kırmızı atkı"
+   }
+  ],
+  "correct": "a_green_jacket",
+  "source": "https://en.wikipedia.org/wiki/Green_jacket"
+ },
+ {
+  "key": "sports_q0141",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Olympics were the first to be broadcast on live television?",
+   "tr": "Canlı televizyon yayını yapılan ilk Olimpiyatlar hangisiydi?"
+  },
+  "options": [
+   {
+    "concept_id": "berlin_1936",
+    "en": "Berlin 1936",
+    "tr": "Berlin 1936"
+   },
+   {
+    "concept_id": "london_1908",
+    "en": "London 1908",
+    "tr": "Londra 1908"
+   },
+   {
+    "concept_id": "paris_1924",
+    "en": "Paris 1924",
+    "tr": "Paris 1924"
+   },
+   {
+    "concept_id": "helsinki_1952",
+    "en": "Helsinki 1952",
+    "tr": "Helsinki 1952"
+   }
+  ],
+  "correct": "berlin_1936",
+  "source": "https://en.wikipedia.org/wiki/1936_Summer_Olympics"
+ },
+ {
+  "key": "sports_q0142",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which city hosted the 2004 Summer Olympics, bringing the Games back to Greece?",
+   "tr": "Oyunları Yunanistan'a geri getiren 2004 Yaz Olimpiyatları'na hangi şehir ev sahipliği yaptı?"
+  },
+  "options": [
+   {
+    "concept_id": "athens",
+    "en": "Athens",
+    "tr": "Atina"
+   },
+   {
+    "concept_id": "thessaloniki",
+    "en": "Thessaloniki",
+    "tr": "Selanik"
+   },
+   {
+    "concept_id": "olympia",
+    "en": "Olympia",
+    "tr": "Olimpia"
+   },
+   {
+    "concept_id": "sparta",
+    "en": "Sparta",
+    "tr": "Sparta"
+   }
+  ],
+  "correct": "athens",
+  "source": "https://en.wikipedia.org/wiki/2004_Summer_Olympics"
+ },
+ {
+  "key": "sports_q0143",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which American gymnast has won more Olympic and World medals than any other gymnast?",
+   "tr": "Olimpiyat ve Dünya şampiyonalarında en çok madalya kazanan Amerikalı cimnastikçi kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "simone_biles",
+    "en": "Simone Biles",
+    "tr": "Simone Biles"
+   },
+   {
+    "concept_id": "gabby_douglas",
+    "en": "Gabby Douglas",
+    "tr": "Gabby Douglas"
+   },
+   {
+    "concept_id": "nastia_liukin",
+    "en": "Nastia Liukin",
+    "tr": "Nastia Liukin"
+   },
+   {
+    "concept_id": "mary_lou_retton",
+    "en": "Mary Lou Retton",
+    "tr": "Mary Lou Retton"
+   }
+  ],
+  "correct": "simone_biles",
+  "source": "https://en.wikipedia.org/wiki/Simone_Biles"
+ },
+ {
+  "key": "sports_q0144",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these sports made its Olympic debut at the Tokyo 2020 Games?",
+   "tr": "Bu sporlardan hangisi Olimpiyatlara ilk kez Tokyo 2020'de girdi?"
+  },
+  "options": [
+   {
+    "concept_id": "skateboarding",
+    "en": "Skateboarding",
+    "tr": "Kaykay"
+   },
+   {
+    "concept_id": "judo",
+    "en": "Judo",
+    "tr": "Judo"
+   },
+   {
+    "concept_id": "volleyball",
+    "en": "Volleyball",
+    "tr": "Voleybol"
+   },
+   {
+    "concept_id": "archery",
+    "en": "Archery",
+    "tr": "Okçuluk"
+   }
+  ],
+  "correct": "skateboarding",
+  "source": "https://en.wikipedia.org/wiki/Skateboarding_at_the_2020_Summer_Olympics"
+ },
+ {
+  "key": "sports_q0145",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The designer of the Olympic rings chose their colours plus white because together they did what?",
+   "tr": "Olimpiyat halkalarının tasarımcısı renkleri beyazla birlikte neden seçti?"
+  },
+  "options": [
+   {
+    "concept_id": "appeared_in_every_nation_s_flag",
+    "en": "Appeared in every nation's flag",
+    "tr": "Her ülkenin bayrağında yer alıyordu"
+   },
+   {
+    "concept_id": "matched_the_rainbow",
+    "en": "Matched the rainbow",
+    "tr": "Gökkuşağına uyuyordu"
+   },
+   {
+    "concept_id": "stood_for_five_sports",
+    "en": "Stood for five sports",
+    "tr": "Beş sporu temsil ediyordu"
+   },
+   {
+    "concept_id": "were_the_colours_of_greece",
+    "en": "Were the colours of Greece",
+    "tr": "Yunanistan'ın renkleriydi"
+   }
+  ],
+  "correct": "appeared_in_every_nation_s_flag",
+  "source": "https://en.wikipedia.org/wiki/Olympic_symbols"
+ },
+ {
+  "key": "sports_q0146",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which country won the 2006 World Cup after a penalty shoot-out in the final?",
+   "tr": "Finali penaltılarla kazanarak 2006 Dünya Kupası'nın şampiyonu olan ülke hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "italy",
+    "en": "Italy",
+    "tr": "İtalya"
+   },
+   {
+    "concept_id": "france",
+    "en": "France",
+    "tr": "Fransa"
+   },
+   {
+    "concept_id": "germany",
+    "en": "Germany",
+    "tr": "Almanya"
+   },
+   {
+    "concept_id": "portugal",
+    "en": "Portugal",
+    "tr": "Portekiz"
+   }
+  ],
+  "correct": "italy",
+  "source": "https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_final"
+ },
+ {
+  "key": "sports_q0147",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Why was Zinedine Zidane sent off in the 2006 World Cup final?",
+   "tr": "Zinedine Zidane 2006 Dünya Kupası finalinde neden oyundan atıldı?"
+  },
+  "options": [
+   {
+    "concept_id": "he_headbutted_an_opponent",
+    "en": "He headbutted an opponent",
+    "tr": "Rakibine kafa attı"
+   },
+   {
+    "concept_id": "he_handled_the_ball",
+    "en": "He handled the ball",
+    "tr": "Topa elle dokundu"
+   },
+   {
+    "concept_id": "he_insulted_the_referee",
+    "en": "He insulted the referee",
+    "tr": "Hakeme hakaret etti"
+   },
+   {
+    "concept_id": "he_left_the_pitch",
+    "en": "He left the pitch",
+    "tr": "Sahayı terk etti"
+   }
+  ],
+  "correct": "he_headbutted_an_opponent",
+  "source": "https://en.wikipedia.org/wiki/Zinedine_Zidane"
+ },
+ {
+  "key": "sports_q0148",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who scored both of Brazil's goals in the 2002 World Cup final?",
+   "tr": "2002 Dünya Kupası finalinde Brezilya'nın iki golünü de kim attı?"
+  },
+  "options": [
+   {
+    "concept_id": "ronaldo",
+    "en": "Ronaldo",
+    "tr": "Ronaldo"
+   },
+   {
+    "concept_id": "rivaldo",
+    "en": "Rivaldo",
+    "tr": "Rivaldo"
+   },
+   {
+    "concept_id": "ronaldinho",
+    "en": "Ronaldinho",
+    "tr": "Ronaldinho"
+   },
+   {
+    "concept_id": "roberto_carlos",
+    "en": "Roberto Carlos",
+    "tr": "Roberto Carlos"
+   }
+  ],
+  "correct": "ronaldo",
+  "source": "https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_final"
+ },
+ {
+  "key": "sports_q0149",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which country hosted the first World Cup in Africa, in 2010?",
+   "tr": "Afrika'daki ilk Dünya Kupası'na 2010'da hangi ülke ev sahipliği yaptı?"
+  },
+  "options": [
+   {
+    "concept_id": "south_africa",
+    "en": "South Africa",
+    "tr": "Güney Afrika"
+   },
+   {
+    "concept_id": "egypt",
+    "en": "Egypt",
+    "tr": "Mısır"
+   },
+   {
+    "concept_id": "morocco",
+    "en": "Morocco",
+    "tr": "Fas"
+   },
+   {
+    "concept_id": "nigeria",
+    "en": "Nigeria",
+    "tr": "Nijerya"
+   }
+  ],
+  "correct": "south_africa",
+  "source": "https://en.wikipedia.org/wiki/2010_FIFA_World_Cup"
+ },
+ {
+  "key": "sports_q0150",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the World Cup's \"Golden Ball\" award given for?",
+   "tr": "Dünya Kupası'nın \"Altın Top\" ödülü neye verilir?"
+  },
+  "options": [
+   {
+    "concept_id": "best_player_of_the_tournament",
+    "en": "Best player of the tournament",
+    "tr": "Turnuvanın en iyi oyuncusuna"
+   },
+   {
+    "concept_id": "top_scorer",
+    "en": "Top scorer",
+    "tr": "Gol kralına"
+   },
+   {
+    "concept_id": "best_goalkeeper",
+    "en": "Best goalkeeper",
+    "tr": "En iyi kaleciye"
+   },
+   {
+    "concept_id": "best_young_player",
+    "en": "Best young player",
+    "tr": "En iyi genç oyuncuya"
+   }
+  ],
+  "correct": "best_player_of_the_tournament",
+  "source": "https://en.wikipedia.org/wiki/FIFA_World_Cup_awards"
+ },
+ {
+  "key": "sports_q0151",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Italian club is nicknamed \"The Old Lady\"?",
+   "tr": "\"Yaşlı Hanım\" lakaplı İtalyan kulübü hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "juventus",
+    "en": "Juventus",
+    "tr": "Juventus"
+   },
+   {
+    "concept_id": "ac_milan",
+    "en": "AC Milan",
+    "tr": "AC Milan"
+   },
+   {
+    "concept_id": "inter_milan",
+    "en": "Inter Milan",
+    "tr": "Inter"
+   },
+   {
+    "concept_id": "as_roma",
+    "en": "AS Roma",
+    "tr": "AS Roma"
+   }
+  ],
+  "correct": "juventus",
+  "source": "https://en.wikipedia.org/wiki/Juventus_FC"
+ },
+ {
+  "key": "sports_q0152",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which club went a whole Premier League season unbeaten in 2003–04?",
+   "tr": "2003-04'te bütün bir Premier Lig sezonunu yenilgisiz tamamlayan kulüp hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "arsenal",
+    "en": "Arsenal",
+    "tr": "Arsenal"
+   },
+   {
+    "concept_id": "manchester_united",
+    "en": "Manchester United",
+    "tr": "Manchester United"
+   },
+   {
+    "concept_id": "chelsea",
+    "en": "Chelsea",
+    "tr": "Chelsea"
+   },
+   {
+    "concept_id": "liverpool",
+    "en": "Liverpool",
+    "tr": "Liverpool"
+   }
+  ],
+  "correct": "arsenal",
+  "source": "https://en.wikipedia.org/wiki/The_Invincibles_(football)"
+ },
+ {
+  "key": "sports_q0153",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The 2005 Champions League final, the \"Miracle of Istanbul\", was played at which stadium?",
+   "tr": "\"İstanbul Mucizesi\" olarak anılan 2005 Şampiyonlar Ligi finali hangi stadyumda oynandı?"
+  },
+  "options": [
+   {
+    "concept_id": "ataturk_olympic_stadium",
+    "en": "Atatürk Olympic Stadium",
+    "tr": "Atatürk Olimpiyat Stadı"
+   },
+   {
+    "concept_id": "sukru_saracoglu",
+    "en": "Şükrü Saracoğlu",
+    "tr": "Şükrü Saracoğlu"
+   },
+   {
+    "concept_id": "ali_sami_yen",
+    "en": "Ali Sami Yen",
+    "tr": "Ali Sami Yen"
+   },
+   {
+    "concept_id": "inonu_stadium",
+    "en": "İnönü Stadium",
+    "tr": "İnönü Stadı"
+   }
+  ],
+  "correct": "ataturk_olympic_stadium",
+  "source": "https://en.wikipedia.org/wiki/2005_UEFA_Champions_League_final"
+ },
+ {
+  "key": "sports_q0154",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In the 2005 Champions League final, Liverpool came back to win after trailing by how much at half-time?",
+   "tr": "2005 Şampiyonlar Ligi finalinde Liverpool ilk yarıyı kaç farkla geride kapatmasına rağmen maçı kazandı?"
+  },
+  "options": [
+   {
+    "concept_id": "n_30",
+    "en": "3–0",
+    "tr": "3-0"
+   },
+   {
+    "concept_id": "n_20",
+    "en": "2–0",
+    "tr": "2-0"
+   },
+   {
+    "concept_id": "n_10",
+    "en": "1–0",
+    "tr": "1-0"
+   },
+   {
+    "concept_id": "n_41",
+    "en": "4–1",
+    "tr": "4-1"
+   }
+  ],
+  "correct": "n_30",
+  "source": "https://en.wikipedia.org/wiki/2005_UEFA_Champions_League_final"
+ },
+ {
+  "key": "sports_q0155",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "A player is offside if nearer the goal line than the ball and the second-last what?",
+   "tr": "Bir oyuncu, toptan ve sondan ikinci neyden kale çizgisine daha yakınsa ofsayttadır?"
+  },
+  "options": [
+   {
+    "concept_id": "opponent",
+    "en": "Opponent",
+    "tr": "Rakip oyuncudan"
+   },
+   {
+    "concept_id": "teammate",
+    "en": "Teammate",
+    "tr": "Takım arkadaşından"
+   },
+   {
+    "concept_id": "referee",
+    "en": "Referee",
+    "tr": "Hakemden"
+   },
+   {
+    "concept_id": "corner_flag",
+    "en": "Corner flag",
+    "tr": "Korner bayrağından"
+   }
+  ],
+  "correct": "opponent",
+  "source": "https://en.wikipedia.org/wiki/Offside_(association_football)"
+ },
+ {
+  "key": "sports_q0156",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which country won the 2023 FIBA Basketball World Cup?",
+   "tr": "2023 FIBA Basketbol Dünya Kupası'nı hangi ülke kazandı?"
+  },
+  "options": [
+   {
+    "concept_id": "germany",
+    "en": "Germany",
+    "tr": "Almanya"
+   },
+   {
+    "concept_id": "serbia",
+    "en": "Serbia",
+    "tr": "Sırbistan"
+   },
+   {
+    "concept_id": "usa",
+    "en": "USA",
+    "tr": "ABD"
+   },
+   {
+    "concept_id": "canada",
+    "en": "Canada",
+    "tr": "Kanada"
+   }
+  ],
+  "correct": "germany",
+  "source": "https://en.wikipedia.org/wiki/2023_FIBA_Basketball_World_Cup"
+ },
+ {
+  "key": "sports_q0157",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In 2017, which Turkish club became the first from Turkey to win the EuroLeague?",
+   "tr": "2017'de EuroLeague'i kazanan ilk Türk kulübü hangisi oldu?"
+  },
+  "options": [
+   {
+    "concept_id": "fenerbahce",
+    "en": "Fenerbahçe",
+    "tr": "Fenerbahçe"
+   },
+   {
+    "concept_id": "anadolu_efes",
+    "en": "Anadolu Efes",
+    "tr": "Anadolu Efes"
+   },
+   {
+    "concept_id": "galatasaray",
+    "en": "Galatasaray",
+    "tr": "Galatasaray"
+   },
+   {
+    "concept_id": "besiktas",
+    "en": "Beşiktaş",
+    "tr": "Beşiktaş"
+   }
+  ],
+  "correct": "fenerbahce",
+  "source": "https://en.wikipedia.org/wiki/2017_EuroLeague_Final_Four"
+ },
+ {
+  "key": "sports_q0158",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many personal fouls make a player foul out of an NBA game?",
+   "tr": "Bir oyuncu NBA maçında kaç kişisel faulle oyundan atılır?"
+  },
+  "options": [
+   {
+    "concept_id": "n_6",
+    "en": "6",
+    "tr": "6"
+   },
+   {
+    "concept_id": "n_5",
+    "en": "5",
+    "tr": "5"
+   },
+   {
+    "concept_id": "n_4",
+    "en": "4",
+    "tr": "4"
+   },
+   {
+    "concept_id": "n_7",
+    "en": "7",
+    "tr": "7"
+   }
+  ],
+  "correct": "n_6",
+  "source": "https://en.wikipedia.org/wiki/Personal_foul_(basketball)"
+ },
+ {
+  "key": "sports_q0159",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which NBA star is nicknamed \"The Greek Freak\"?",
+   "tr": "\"The Greek Freak\" lakaplı NBA yıldızı kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "giannis_antetokounmpo",
+    "en": "Giannis Antetokounmpo",
+    "tr": "Giannis Antetokounmpo"
+   },
+   {
+    "concept_id": "nikola_jokic",
+    "en": "Nikola Jokić",
+    "tr": "Nikola Jokić"
+   },
+   {
+    "concept_id": "luka_doncic",
+    "en": "Luka Dončić",
+    "tr": "Luka Dončić"
+   },
+   {
+    "concept_id": "kristaps_porzingis",
+    "en": "Kristaps Porziņģis",
+    "tr": "Kristaps Porziņģis"
+   }
+  ],
+  "correct": "giannis_antetokounmpo",
+  "source": "https://en.wikipedia.org/wiki/Giannis_Antetokounmpo"
+ },
+ {
+  "key": "sports_q0160",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which towering Chinese centre became a star with the Houston Rockets?",
+   "tr": "Houston Rockets'ta yıldızlaşan dev Çinli pivot kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "yao_ming",
+    "en": "Yao Ming",
+    "tr": "Yao Ming"
+   },
+   {
+    "concept_id": "yi_jianlian",
+    "en": "Yi Jianlian",
+    "tr": "Yi Jianlian"
+   },
+   {
+    "concept_id": "wang_zhizhi",
+    "en": "Wang Zhizhi",
+    "tr": "Wang Zhizhi"
+   },
+   {
+    "concept_id": "zhou_qi",
+    "en": "Zhou Qi",
+    "tr": "Zhou Qi"
+   }
+  ],
+  "correct": "yao_ming",
+  "source": "https://en.wikipedia.org/wiki/Yao_Ming"
+ },
+ {
+  "key": "sports_q0161",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In 2019, Eliud Kipchoge became the first person to do what?",
+   "tr": "Eliud Kipchoge 2019'da neyi başaran ilk kişi oldu?"
+  },
+  "options": [
+   {
+    "concept_id": "run_a_marathon_in_under_two_hours",
+    "en": "Run a marathon in under two hours",
+    "tr": "Maratonu iki saatin altında koşmak"
+   },
+   {
+    "concept_id": "win_three_olympic_marathons",
+    "en": "Win three Olympic marathons",
+    "tr": "Üç Olimpiyat maratonu kazanmak"
+   },
+   {
+    "concept_id": "run_100_marathons",
+    "en": "Run 100 marathons",
+    "tr": "100 maraton koşmak"
+   },
+   {
+    "concept_id": "win_a_marathon_barefoot",
+    "en": "Win a marathon barefoot",
+    "tr": "Çıplak ayakla maraton kazanmak"
+   }
+  ],
+  "correct": "run_a_marathon_in_under_two_hours",
+  "source": "https://en.wikipedia.org/wiki/Ineos_1:59_Challenge"
+ },
+ {
+  "key": "sports_q0162",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In a track race, what is the \"bell lap\"?",
+   "tr": "Pist yarışlarında \"çan turu\" (bell lap) nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "the_final_lap",
+    "en": "The final lap",
+    "tr": "Son tur"
+   },
+   {
+    "concept_id": "the_first_lap",
+    "en": "The first lap",
+    "tr": "İlk tur"
+   },
+   {
+    "concept_id": "a_warm_up_lap",
+    "en": "A warm-up lap",
+    "tr": "Isınma turu"
+   },
+   {
+    "concept_id": "a_victory_lap",
+    "en": "A victory lap",
+    "tr": "Zafer turu"
+   }
+  ],
+  "correct": "the_final_lap",
+  "source": "https://en.wikipedia.org/wiki/Middle-distance_running"
+ },
+ {
+  "key": "sports_q0163",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Jamaican sprinter, nicknamed the \"Pocket Rocket\", won five world 100 m titles?",
+   "tr": "\"Cep Roketi\" lakaplı, beş kez dünya 100 m şampiyonu olan Jamaikalı sprinter kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "shelly_ann_fraser_pryce",
+    "en": "Shelly-Ann Fraser-Pryce",
+    "tr": "Shelly-Ann Fraser-Pryce"
+   },
+   {
+    "concept_id": "elaine_thompson_herah",
+    "en": "Elaine Thompson-Herah",
+    "tr": "Elaine Thompson-Herah"
+   },
+   {
+    "concept_id": "merlene_ottey",
+    "en": "Merlene Ottey",
+    "tr": "Merlene Ottey"
+   },
+   {
+    "concept_id": "veronica_campbell_brown",
+    "en": "Veronica Campbell-Brown",
+    "tr": "Veronica Campbell-Brown"
+   }
+  ],
+  "correct": "shelly_ann_fraser_pryce",
+  "source": "https://en.wikipedia.org/wiki/Shelly-Ann_Fraser-Pryce"
+ },
+ {
+  "key": "sports_q0164",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In the long jump, what happens if your foot goes past the take-off board?",
+   "tr": "Uzun atlamada ayağınız basma tahtasını geçerse ne olur?"
+  },
+  "options": [
+   {
+    "concept_id": "the_jump_is_a_foul",
+    "en": "The jump is a foul",
+    "tr": "Atlayış geçersiz sayılır"
+   },
+   {
+    "concept_id": "you_get_extra_distance",
+    "en": "You get extra distance",
+    "tr": "Ek mesafe kazanırsınız"
+   },
+   {
+    "concept_id": "you_jump_again_at_once",
+    "en": "You jump again at once",
+    "tr": "Hemen yeniden atlarsınız"
+   },
+   {
+    "concept_id": "half_the_distance_counts",
+    "en": "Half the distance counts",
+    "tr": "Mesafenin yarısı sayılır"
+   }
+  ],
+  "correct": "the_jump_is_a_foul",
+  "source": "https://en.wikipedia.org/wiki/Long_jump"
+ },
+ {
+  "key": "sports_q0165",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Moroccan runner has held the men's 1,500 m world record since 1998?",
+   "tr": "1998'den beri erkekler 1.500 m dünya rekorunu elinde tutan Faslı koşucu kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "hicham_el_guerrouj",
+    "en": "Hicham El Guerrouj",
+    "tr": "Hicham El Guerrouj"
+   },
+   {
+    "concept_id": "said_aouita",
+    "en": "Saïd Aouita",
+    "tr": "Saïd Aouita"
+   },
+   {
+    "concept_id": "noureddine_morceli",
+    "en": "Noureddine Morceli",
+    "tr": "Noureddine Morceli"
+   },
+   {
+    "concept_id": "bernard_lagat",
+    "en": "Bernard Lagat",
+    "tr": "Bernard Lagat"
+   }
+  ],
+  "correct": "hicham_el_guerrouj",
+  "source": "https://en.wikipedia.org/wiki/Hicham_El_Guerrouj"
+ },
+ {
+  "key": "sports_q0166",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In 2013, who became the first British man to win Wimbledon since 1936?",
+   "tr": "2013'te 1936'dan bu yana Wimbledon'ı kazanan ilk İngiliz erkek kim oldu?"
+  },
+  "options": [
+   {
+    "concept_id": "andy_murray",
+    "en": "Andy Murray",
+    "tr": "Andy Murray"
+   },
+   {
+    "concept_id": "tim_henman",
+    "en": "Tim Henman",
+    "tr": "Tim Henman"
+   },
+   {
+    "concept_id": "greg_rusedski",
+    "en": "Greg Rusedski",
+    "tr": "Greg Rusedski"
+   },
+   {
+    "concept_id": "cameron_norrie",
+    "en": "Cameron Norrie",
+    "tr": "Cameron Norrie"
+   }
+  ],
+  "correct": "andy_murray",
+  "source": "https://en.wikipedia.org/wiki/Andy_Murray"
+ },
+ {
+  "key": "sports_q0167",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "On which surface is the Australian Open played?",
+   "tr": "Avustralya Açık hangi zeminde oynanır?"
+  },
+  "options": [
+   {
+    "concept_id": "hard_court",
+    "en": "Hard court",
+    "tr": "Sert kort"
+   },
+   {
+    "concept_id": "grass",
+    "en": "Grass",
+    "tr": "Çim"
+   },
+   {
+    "concept_id": "clay",
+    "en": "Clay",
+    "tr": "Toprak"
+   },
+   {
+    "concept_id": "carpet",
+    "en": "Carpet",
+    "tr": "Halı"
+   }
+  ],
+  "correct": "hard_court",
+  "source": "https://en.wikipedia.org/wiki/Australian_Open"
+ },
+ {
+  "key": "sports_q0168",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In tennis slang, what is a \"bagel\"?",
+   "tr": "Tenis argosunda \"bagel\" nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "a_set_won_60",
+    "en": "A set won 6–0",
+    "tr": "6-0 kazanılan set"
+   },
+   {
+    "concept_id": "a_double_fault",
+    "en": "A double fault",
+    "tr": "Çift hata"
+   },
+   {
+    "concept_id": "a_net_cord_winner",
+    "en": "A net cord winner",
+    "tr": "Fileye değip geçen sayı"
+   },
+   {
+    "concept_id": "a_ball_boy",
+    "en": "A ball boy",
+    "tr": "Top toplayıcı"
+   }
+  ],
+  "correct": "a_set_won_60",
+  "source": "https://en.wikipedia.org/wiki/Tennis_scoring_system"
+ },
+ {
+  "key": "sports_q0169",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "At the Paris 2024 Olympics, who won men's singles gold to complete a Career Golden Slam?",
+   "tr": "Paris 2024 Olimpiyatları'nda erkekler teklerde altın kazanarak Kariyer Altın Slam'ini tamamlayan kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "novak_djokovic",
+    "en": "Novak Djokovic",
+    "tr": "Novak Djokovic"
+   },
+   {
+    "concept_id": "carlos_alcaraz",
+    "en": "Carlos Alcaraz",
+    "tr": "Carlos Alcaraz"
+   },
+   {
+    "concept_id": "rafael_nadal",
+    "en": "Rafael Nadal",
+    "tr": "Rafael Nadal"
+   },
+   {
+    "concept_id": "jannik_sinner",
+    "en": "Jannik Sinner",
+    "tr": "Jannik Sinner"
+   }
+  ],
+  "correct": "novak_djokovic",
+  "source": "https://en.wikipedia.org/wiki/Tennis_at_the_2024_Summer_Olympics_–_Men's_singles"
+ },
+ {
+  "key": "sports_q0170",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the most sets a men's Grand Slam singles match can last?",
+   "tr": "Erkekler Grand Slam tekler maçı en fazla kaç set sürebilir?"
+  },
+  "options": [
+   {
+    "concept_id": "n_5",
+    "en": "5",
+    "tr": "5"
+   },
+   {
+    "concept_id": "n_3",
+    "en": "3",
+    "tr": "3"
+   },
+   {
+    "concept_id": "n_4",
+    "en": "4",
+    "tr": "4"
+   },
+   {
+    "concept_id": "n_7",
+    "en": "7",
+    "tr": "7"
+   }
+  ],
+  "correct": "n_5",
+  "source": "https://en.wikipedia.org/wiki/Grand_Slam_(tennis)"
+ },
+ {
+  "key": "sports_q0171",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the \"halo\" on a modern Formula 1 car?",
+   "tr": "Modern bir Formula 1 aracındaki \"halo\" nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "a_protective_bar_over_the_cockpit",
+    "en": "A protective bar over the cockpit",
+    "tr": "Kokpit üstündeki koruyucu çubuk"
+   },
+   {
+    "concept_id": "a_lighting_strip",
+    "en": "A lighting strip",
+    "tr": "Işık şeridi"
+   },
+   {
+    "concept_id": "a_rear_wing_flap",
+    "en": "A rear wing flap",
+    "tr": "Arka kanat kapağı"
+   },
+   {
+    "concept_id": "a_steering_sensor",
+    "en": "A steering sensor",
+    "tr": "Direksiyon sensörü"
+   }
+  ],
+  "correct": "a_protective_bar_over_the_cockpit",
+  "source": "https://en.wikipedia.org/wiki/Halo_(safety_device)"
+ },
+ {
+  "key": "sports_q0172",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Spanish driver won the F1 world title in 2005 and 2006?",
+   "tr": "2005 ve 2006'da F1 dünya şampiyonu olan İspanyol pilot kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "fernando_alonso",
+    "en": "Fernando Alonso",
+    "tr": "Fernando Alonso"
+   },
+   {
+    "concept_id": "carlos_sainz",
+    "en": "Carlos Sainz",
+    "tr": "Carlos Sainz"
+   },
+   {
+    "concept_id": "pedro_de_la_rosa",
+    "en": "Pedro de la Rosa",
+    "tr": "Pedro de la Rosa"
+   },
+   {
+    "concept_id": "marc_gene",
+    "en": "Marc Gené",
+    "tr": "Marc Gené"
+   }
+  ],
+  "correct": "fernando_alonso",
+  "source": "https://en.wikipedia.org/wiki/Fernando_Alonso"
+ },
+ {
+  "key": "sports_q0173",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The famous Eau Rouge corner is part of which circuit?",
+   "tr": "Ünlü Eau Rouge virajı hangi pistin parçasıdır?"
+  },
+  "options": [
+   {
+    "concept_id": "spa_francorchamps",
+    "en": "Spa-Francorchamps",
+    "tr": "Spa-Francorchamps"
+   },
+   {
+    "concept_id": "monza",
+    "en": "Monza",
+    "tr": "Monza"
+   },
+   {
+    "concept_id": "suzuka",
+    "en": "Suzuka",
+    "tr": "Suzuka"
+   },
+   {
+    "concept_id": "interlagos",
+    "en": "Interlagos",
+    "tr": "Interlagos"
+   }
+  ],
+  "correct": "spa_francorchamps",
+  "source": "https://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps"
+ },
+ {
+  "key": "sports_q0174",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which driver won the 2016 F1 title and retired just five days later?",
+   "tr": "2016'da F1 şampiyonu olup yalnızca beş gün sonra emekli olan pilot kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "nico_rosberg",
+    "en": "Nico Rosberg",
+    "tr": "Nico Rosberg"
+   },
+   {
+    "concept_id": "kimi_raikkonen",
+    "en": "Kimi Räikkönen",
+    "tr": "Kimi Räikkönen"
+   },
+   {
+    "concept_id": "jenson_button",
+    "en": "Jenson Button",
+    "tr": "Jenson Button"
+   },
+   {
+    "concept_id": "felipe_massa",
+    "en": "Felipe Massa",
+    "tr": "Felipe Massa"
+   }
+  ],
+  "correct": "nico_rosberg",
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg"
+ },
+ {
+  "key": "sports_q0175",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In which year did Istanbul Park host its first Turkish Grand Prix?",
+   "tr": "İstanbul Park ilk Türkiye Grand Prix'sine hangi yıl ev sahipliği yaptı?"
+  },
+  "options": [
+   {
+    "concept_id": "n_2005",
+    "en": "2005",
+    "tr": "2005"
+   },
+   {
+    "concept_id": "n_2001",
+    "en": "2001",
+    "tr": "2001"
+   },
+   {
+    "concept_id": "n_2010",
+    "en": "2010",
+    "tr": "2010"
+   },
+   {
+    "concept_id": "n_2020",
+    "en": "2020",
+    "tr": "2020"
+   }
+  ],
+  "correct": "n_2005",
+  "source": "https://en.wikipedia.org/wiki/Turkish_Grand_Prix"
+ },
+ {
+  "key": "sports_q0176",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In which sport can a single \"Test match\" last up to five days?",
+   "tr": "Hangi sporda tek bir \"Test maçı\" beş güne kadar sürebilir?"
+  },
+  "options": [
+   {
+    "concept_id": "cricket",
+    "en": "Cricket",
+    "tr": "Kriket"
+   },
+   {
+    "concept_id": "rugby",
+    "en": "Rugby",
+    "tr": "Ragbi"
+   },
+   {
+    "concept_id": "baseball",
+    "en": "Baseball",
+    "tr": "Beyzbol"
+   },
+   {
+    "concept_id": "polo",
+    "en": "Polo",
+    "tr": "Polo"
+   }
+  ],
+  "correct": "cricket",
+  "source": "https://en.wikipedia.org/wiki/Test_cricket"
+ },
+ {
+  "key": "sports_q0177",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which national rugby team performs the Māori war dance called the haka before matches?",
+   "tr": "Maçlardan önce haka denen Maori savaş dansını yapan milli ragbi takımı hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "new_zealand",
+    "en": "New Zealand",
+    "tr": "Yeni Zelanda"
+   },
+   {
+    "concept_id": "australia",
+    "en": "Australia",
+    "tr": "Avustralya"
+   },
+   {
+    "concept_id": "fiji",
+    "en": "Fiji",
+    "tr": "Fiji"
+   },
+   {
+    "concept_id": "south_africa",
+    "en": "South Africa",
+    "tr": "Güney Afrika"
+   }
+  ],
+  "correct": "new_zealand",
+  "source": "https://en.wikipedia.org/wiki/Haka_in_sports"
+ },
+ {
+  "key": "sports_q0178",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Harlem Globetrotters are famous for entertaining exhibitions of which sport?",
+   "tr": "Harlem Globetrotters hangi sporun eğlenceli gösteri maçlarıyla ünlüdür?"
+  },
+  "options": [
+   {
+    "concept_id": "basketball",
+    "en": "Basketball",
+    "tr": "Basketbol"
+   },
+   {
+    "concept_id": "baseball",
+    "en": "Baseball",
+    "tr": "Beyzbol"
+   },
+   {
+    "concept_id": "football",
+    "en": "Football",
+    "tr": "Futbol"
+   },
+   {
+    "concept_id": "volleyball",
+    "en": "Volleyball",
+    "tr": "Voleybol"
+   }
+  ],
+  "correct": "basketball",
+  "source": "https://en.wikipedia.org/wiki/Harlem_Globetrotters"
+ },
+ {
+  "key": "sports_q0179",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the popular nickname of Turkey's women's national volleyball team?",
+   "tr": "Türkiye Kadın Milli Voleybol Takımı'nın popüler lakabı nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "filenin_sultanlar",
+    "en": "Filenin Sultanları",
+    "tr": "Filenin Sultanları"
+   },
+   {
+    "concept_id": "ay_yldzllar",
+    "en": "Ay-Yıldızlılar",
+    "tr": "Ay-Yıldızlılar"
+   },
+   {
+    "concept_id": "potann_perileri",
+    "en": "Potanın Perileri",
+    "tr": "Potanın Perileri"
+   },
+   {
+    "concept_id": "altn_kzlar",
+    "en": "Altın Kızlar",
+    "tr": "Altın Kızlar"
+   }
+  ],
+  "correct": "filenin_sultanlar",
+  "source": "https://en.wikipedia.org/wiki/Turkey_women's_national_volleyball_team"
+ },
+ {
+  "key": "sports_q0180",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In golf, what is a score of one under par on a hole called?",
+   "tr": "Golfte bir delikte parın bir altında skor yapmaya ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "birdie",
+    "en": "Birdie",
+    "tr": "Birdie"
+   },
+   {
+    "concept_id": "eagle",
+    "en": "Eagle",
+    "tr": "Eagle"
+   },
+   {
+    "concept_id": "bogey",
+    "en": "Bogey",
+    "tr": "Bogey"
+   },
+   {
+    "concept_id": "albatross",
+    "en": "Albatross",
+    "tr": "Albatros"
+   }
+  ],
+  "correct": "birdie",
+  "source": "https://en.wikipedia.org/wiki/Par_(score)"
+ },
+ {
+  "key": "sports_q0181",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which city's 1972 Olympics were overshadowed by a deadly attack on Israeli athletes?",
+   "tr": "1972'de İsrailli sporculara yönelik ölümcül bir saldırıyla gölgelenen Olimpiyatlar hangi şehirdeydi?"
+  },
+  "options": [
+   {
+    "concept_id": "munich",
+    "en": "Munich",
+    "tr": "Münih"
+   },
+   {
+    "concept_id": "mexico_city",
+    "en": "Mexico City",
+    "tr": "Meksiko"
+   },
+   {
+    "concept_id": "montreal",
+    "en": "Montreal",
+    "tr": "Montreal"
+   },
+   {
+    "concept_id": "moscow",
+    "en": "Moscow",
+    "tr": "Moskova"
+   }
+  ],
+  "correct": "munich",
+  "source": "https://en.wikipedia.org/wiki/1972_Summer_Olympics"
+ },
+ {
+  "key": "sports_q0182",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which doctor organised the 1948 Stoke Mandeville Games, forerunner of the Paralympics?",
+   "tr": "Paralimpik Oyunları'nın öncüsü olan 1948 Stoke Mandeville Oyunları'nı hangi doktor düzenledi?"
+  },
+  "options": [
+   {
+    "concept_id": "ludwig_guttmann",
+    "en": "Ludwig Guttmann",
+    "tr": "Ludwig Guttmann"
+   },
+   {
+    "concept_id": "pierre_de_coubertin",
+    "en": "Pierre de Coubertin",
+    "tr": "Pierre de Coubertin"
+   },
+   {
+    "concept_id": "avery_brundage",
+    "en": "Avery Brundage",
+    "tr": "Avery Brundage"
+   },
+   {
+    "concept_id": "jacques_rogge",
+    "en": "Jacques Rogge",
+    "tr": "Jacques Rogge"
+   }
+  ],
+  "correct": "ludwig_guttmann",
+  "source": "https://en.wikipedia.org/wiki/Ludwig_Guttmann"
+ },
+ {
+  "key": "sports_q0183",
+  "category_id": "sports",
+  "subcategory_id": "olympics",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which speed skater won all five men's speed skating golds at the 1980 Winter Olympics?",
+   "tr": "1980 Kış Olimpiyatları'nda erkekler sürat patenindeki beş altının hepsini kazanan sporcu kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "eric_heiden",
+    "en": "Eric Heiden",
+    "tr": "Eric Heiden"
+   },
+   {
+    "concept_id": "johann_olav_koss",
+    "en": "Johann Olav Koss",
+    "tr": "Johann Olav Koss"
+   },
+   {
+    "concept_id": "sven_kramer",
+    "en": "Sven Kramer",
+    "tr": "Sven Kramer"
+   },
+   {
+    "concept_id": "bonnie_blair",
+    "en": "Bonnie Blair",
+    "tr": "Bonnie Blair"
+   }
+  ],
+  "correct": "eric_heiden",
+  "source": "https://en.wikipedia.org/wiki/Eric_Heiden"
+ },
+ {
+  "key": "sports_q0184",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which team scored a record 27 goals at a single World Cup, in 1954?",
+   "tr": "1954'te tek bir Dünya Kupası'nda rekor 27 gol atan takım hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "hungary",
+    "en": "Hungary",
+    "tr": "Macaristan"
+   },
+   {
+    "concept_id": "west_germany",
+    "en": "West Germany",
+    "tr": "Batı Almanya"
+   },
+   {
+    "concept_id": "brazil",
+    "en": "Brazil",
+    "tr": "Brezilya"
+   },
+   {
+    "concept_id": "uruguay",
+    "en": "Uruguay",
+    "tr": "Uruguay"
+   }
+  ],
+  "correct": "hungary",
+  "source": "https://en.wikipedia.org/wiki/Hungary_at_the_FIFA_World_Cup"
+ },
+ {
+  "key": "sports_q0185",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Italian striker won the Golden Boot and Golden Ball at the 1990 World Cup?",
+   "tr": "1990 Dünya Kupası'nda Altın Ayakkabı ve Altın Top'u kazanan İtalyan golcü kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "salvatore_schillaci",
+    "en": "Salvatore Schillaci",
+    "tr": "Salvatore Schillaci"
+   },
+   {
+    "concept_id": "roberto_baggio",
+    "en": "Roberto Baggio",
+    "tr": "Roberto Baggio"
+   },
+   {
+    "concept_id": "gianluca_vialli",
+    "en": "Gianluca Vialli",
+    "tr": "Gianluca Vialli"
+   },
+   {
+    "concept_id": "paolo_rossi",
+    "en": "Paolo Rossi",
+    "tr": "Paolo Rossi"
+   }
+  ],
+  "correct": "salvatore_schillaci",
+  "source": "https://en.wikipedia.org/wiki/Salvatore_Schillaci"
+ },
+ {
+  "key": "sports_q0186",
+  "category_id": "sports",
+  "subcategory_id": "world_cup",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which World Cup had no single final, but a final group stage instead?",
+   "tr": "Hangi Dünya Kupası'nda tek bir final yerine son grup aşaması oynandı?"
+  },
+  "options": [
+   {
+    "concept_id": "n_1950",
+    "en": "1950",
+    "tr": "1950"
+   },
+   {
+    "concept_id": "n_1934",
+    "en": "1934",
+    "tr": "1934"
+   },
+   {
+    "concept_id": "n_1966",
+    "en": "1966",
+    "tr": "1966"
+   },
+   {
+    "concept_id": "n_1978",
+    "en": "1978",
+    "tr": "1978"
+   }
+  ],
+  "correct": "n_1950",
+  "source": "https://en.wikipedia.org/wiki/1950_FIFA_World_Cup"
+ },
+ {
+  "key": "sports_q0187",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which club became the first British team to win the European Cup, in 1967?",
+   "tr": "1967'de Avrupa Kupası'nı kazanan ilk Britanya takımı hangisi oldu?"
+  },
+  "options": [
+   {
+    "concept_id": "celtic",
+    "en": "Celtic",
+    "tr": "Celtic"
+   },
+   {
+    "concept_id": "manchester_united",
+    "en": "Manchester United",
+    "tr": "Manchester United"
+   },
+   {
+    "concept_id": "liverpool",
+    "en": "Liverpool",
+    "tr": "Liverpool"
+   },
+   {
+    "concept_id": "rangers",
+    "en": "Rangers",
+    "tr": "Rangers"
+   }
+  ],
+  "correct": "celtic",
+  "source": "https://en.wikipedia.org/wiki/Lisbon_Lions"
+ },
+ {
+  "key": "sports_q0188",
+  "category_id": "sports",
+  "subcategory_id": "football",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of Istanbul's \"big three\" clubs was founded first, in 1903?",
+   "tr": "İstanbul'un üç büyük kulübünden hangisi 1903'te ilk kurulandır?"
+  },
+  "options": [
+   {
+    "concept_id": "besiktas",
+    "en": "Beşiktaş",
+    "tr": "Beşiktaş"
+   },
+   {
+    "concept_id": "galatasaray",
+    "en": "Galatasaray",
+    "tr": "Galatasaray"
+   },
+   {
+    "concept_id": "fenerbahce",
+    "en": "Fenerbahçe",
+    "tr": "Fenerbahçe"
+   },
+   {
+    "concept_id": "all_in_the_same_year",
+    "en": "All in the same year",
+    "tr": "Üçü aynı yıl"
+   }
+  ],
+  "correct": "besiktas",
+  "source": "https://en.wikipedia.org/wiki/Beşiktaş_J.K."
+ },
+ {
+  "key": "sports_q0189",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who won the first NBA Most Valuable Player award, in 1956?",
+   "tr": "1956'daki ilk NBA En Değerli Oyuncu ödülünü kim kazandı?"
+  },
+  "options": [
+   {
+    "concept_id": "bob_pettit",
+    "en": "Bob Pettit",
+    "tr": "Bob Pettit"
+   },
+   {
+    "concept_id": "bill_russell",
+    "en": "Bill Russell",
+    "tr": "Bill Russell"
+   },
+   {
+    "concept_id": "bob_cousy",
+    "en": "Bob Cousy",
+    "tr": "Bob Cousy"
+   },
+   {
+    "concept_id": "george_mikan",
+    "en": "George Mikan",
+    "tr": "George Mikan"
+   }
+  ],
+  "correct": "bob_pettit",
+  "source": "https://en.wikipedia.org/wiki/Bob_Pettit"
+ },
+ {
+  "key": "sports_q0190",
+  "category_id": "sports",
+  "subcategory_id": "basketball",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which country won the first FIBA Basketball World Championship, in 1950?",
+   "tr": "1950'deki ilk FIBA Basketbol Dünya Şampiyonası'nı hangi ülke kazandı?"
+  },
+  "options": [
+   {
+    "concept_id": "argentina",
+    "en": "Argentina",
+    "tr": "Arjantin"
+   },
+   {
+    "concept_id": "usa",
+    "en": "USA",
+    "tr": "ABD"
+   },
+   {
+    "concept_id": "brazil",
+    "en": "Brazil",
+    "tr": "Brezilya"
+   },
+   {
+    "concept_id": "yugoslavia",
+    "en": "Yugoslavia",
+    "tr": "Yugoslavya"
+   }
+  ],
+  "correct": "argentina",
+  "source": "https://en.wikipedia.org/wiki/1950_FIBA_World_Championship"
+ },
+ {
+  "key": "sports_q0191",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Czech runner won the 5,000 m, 10,000 m and marathon at the 1952 Olympics?",
+   "tr": "1952 Olimpiyatları'nda 5.000 m, 10.000 m ve maratonu kazanan Çek koşucu kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "emil_zatopek",
+    "en": "Emil Zátopek",
+    "tr": "Emil Zátopek"
+   },
+   {
+    "concept_id": "paavo_nurmi",
+    "en": "Paavo Nurmi",
+    "tr": "Paavo Nurmi"
+   },
+   {
+    "concept_id": "lasse_viren",
+    "en": "Lasse Virén",
+    "tr": "Lasse Virén"
+   },
+   {
+    "concept_id": "abebe_bikila",
+    "en": "Abebe Bikila",
+    "tr": "Abebe Bikila"
+   }
+  ],
+  "correct": "emil_zatopek",
+  "source": "https://en.wikipedia.org/wiki/Emil_Zátopek"
+ },
+ {
+  "key": "sports_q0192",
+  "category_id": "sports",
+  "subcategory_id": "athletics",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who has held the men's long jump world record of 8.95 m since 1991?",
+   "tr": "1991'den beri 8,95 m'lik erkekler uzun atlama dünya rekorunu elinde tutan kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "mike_powell",
+    "en": "Mike Powell",
+    "tr": "Mike Powell"
+   },
+   {
+    "concept_id": "carl_lewis",
+    "en": "Carl Lewis",
+    "tr": "Carl Lewis"
+   },
+   {
+    "concept_id": "bob_beamon",
+    "en": "Bob Beamon",
+    "tr": "Bob Beamon"
+   },
+   {
+    "concept_id": "ivan_pedroso",
+    "en": "Iván Pedroso",
+    "tr": "Iván Pedroso"
+   }
+  ],
+  "correct": "mike_powell",
+  "source": "https://en.wikipedia.org/wiki/Mike_Powell_(long_jumper)"
+ },
+ {
+  "key": "sports_q0193",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who was the first player to win the calendar Grand Slam, in 1938?",
+   "tr": "1938'de takvim Grand Slam'ini kazanan ilk oyuncu kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "don_budge",
+    "en": "Don Budge",
+    "tr": "Don Budge"
+   },
+   {
+    "concept_id": "fred_perry",
+    "en": "Fred Perry",
+    "tr": "Fred Perry"
+   },
+   {
+    "concept_id": "rod_laver",
+    "en": "Rod Laver",
+    "tr": "Rod Laver"
+   },
+   {
+    "concept_id": "bill_tilden",
+    "en": "Bill Tilden",
+    "tr": "Bill Tilden"
+   }
+  ],
+  "correct": "don_budge",
+  "source": "https://en.wikipedia.org/wiki/Don_Budge"
+ },
+ {
+  "key": "sports_q0194",
+  "category_id": "sports",
+  "subcategory_id": "tennis",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "The longest tennis match ever, Isner v Mahut at Wimbledon 2010, lasted roughly how long?",
+   "tr": "Tarihin en uzun tenis maçı olan 2010 Wimbledon'daki Isner-Mahut maçı yaklaşık ne kadar sürdü?"
+  },
+  "options": [
+   {
+    "concept_id": "n_11_hours",
+    "en": "11 hours",
+    "tr": "11 saat"
+   },
+   {
+    "concept_id": "n_6_hours",
+    "en": "6 hours",
+    "tr": "6 saat"
+   },
+   {
+    "concept_id": "n_4_hours",
+    "en": "4 hours",
+    "tr": "4 saat"
+   },
+   {
+    "concept_id": "n_24_hours",
+    "en": "24 hours",
+    "tr": "24 saat"
+   }
+  ],
+  "correct": "n_11_hours",
+  "source": "https://en.wikipedia.org/wiki/Isner–Mahut_match_at_the_2010_Wimbledon_Championships"
+ },
+ {
+  "key": "sports_q0195",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Argentine driver won five Formula 1 world titles in the 1950s?",
+   "tr": "1950'lerde beş Formula 1 dünya şampiyonluğu kazanan Arjantinli pilot kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "juan_manuel_fangio",
+    "en": "Juan Manuel Fangio",
+    "tr": "Juan Manuel Fangio"
+   },
+   {
+    "concept_id": "jose_froilan_gonzalez",
+    "en": "José Froilán González",
+    "tr": "José Froilán González"
+   },
+   {
+    "concept_id": "carlos_reutemann",
+    "en": "Carlos Reutemann",
+    "tr": "Carlos Reutemann"
+   },
+   {
+    "concept_id": "onofre_marimon",
+    "en": "Onofre Marimón",
+    "tr": "Onofre Marimón"
+   }
+  ],
+  "correct": "juan_manuel_fangio",
+  "source": "https://en.wikipedia.org/wiki/Juan_Manuel_Fangio"
+ },
+ {
+  "key": "sports_q0196",
+  "category_id": "sports",
+  "subcategory_id": "formula_1",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which country hosted the first Formula 1 World Championship race in Asia, in 1976?",
+   "tr": "Asya'daki ilk Formula 1 Dünya Şampiyonası yarışına 1976'da hangi ülke ev sahipliği yaptı?"
+  },
+  "options": [
+   {
+    "concept_id": "japan",
+    "en": "Japan",
+    "tr": "Japonya"
+   },
+   {
+    "concept_id": "malaysia",
+    "en": "Malaysia",
+    "tr": "Malezya"
+   },
+   {
+    "concept_id": "china",
+    "en": "China",
+    "tr": "Çin"
+   },
+   {
+    "concept_id": "singapore",
+    "en": "Singapore",
+    "tr": "Singapur"
+   }
+  ],
+  "correct": "japan",
+  "source": "https://en.wikipedia.org/wiki/1976_Japanese_Grand_Prix"
+ },
+ {
+  "key": "sports_q0197",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Calcutta Cup is contested in rugby between England and which nation?",
+   "tr": "Calcutta Kupası ragbide İngiltere ile hangi ülke arasında oynanır?"
+  },
+  "options": [
+   {
+    "concept_id": "scotland",
+    "en": "Scotland",
+    "tr": "İskoçya"
+   },
+   {
+    "concept_id": "wales",
+    "en": "Wales",
+    "tr": "Galler"
+   },
+   {
+    "concept_id": "ireland",
+    "en": "Ireland",
+    "tr": "İrlanda"
+   },
+   {
+    "concept_id": "france",
+    "en": "France",
+    "tr": "Fransa"
+   }
+  ],
+  "correct": "scotland",
+  "source": "https://en.wikipedia.org/wiki/Calcutta_Cup"
+ },
+ {
+  "key": "sports_q0198",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which country won the first FIFA Women's World Cup, in 1991?",
+   "tr": "1991'deki ilk FIFA Kadınlar Dünya Kupası'nı hangi ülke kazandı?"
+  },
+  "options": [
+   {
+    "concept_id": "usa",
+    "en": "USA",
+    "tr": "ABD"
+   },
+   {
+    "concept_id": "norway",
+    "en": "Norway",
+    "tr": "Norveç"
+   },
+   {
+    "concept_id": "germany",
+    "en": "Germany",
+    "tr": "Almanya"
+   },
+   {
+    "concept_id": "china",
+    "en": "China",
+    "tr": "Çin"
+   }
+  ],
+  "correct": "usa",
+  "source": "https://en.wikipedia.org/wiki/1991_FIFA_Women's_World_Cup"
+ },
+ {
+  "key": "sports_q0199",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Oxford–Cambridge Boat Race is rowed on which river?",
+   "tr": "Oxford-Cambridge Kürek Yarışı hangi nehirde yapılır?"
+  },
+  "options": [
+   {
+    "concept_id": "thames",
+    "en": "Thames",
+    "tr": "Thames"
+   },
+   {
+    "concept_id": "cam",
+    "en": "Cam",
+    "tr": "Cam"
+   },
+   {
+    "concept_id": "isis",
+    "en": "Isis",
+    "tr": "Isis"
+   },
+   {
+    "concept_id": "severn",
+    "en": "Severn",
+    "tr": "Severn"
+   }
+  ],
+  "correct": "thames",
+  "source": "https://en.wikipedia.org/wiki/The_Boat_Race"
+ },
+ {
+  "key": "sports_q0200",
+  "category_id": "sports",
+  "subcategory_id": "international_competitions",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the highest rank a sumo wrestler can reach?",
+   "tr": "Bir sumo güreşçisinin ulaşabileceği en yüksek rütbe hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "yokozuna",
+    "en": "Yokozuna",
+    "tr": "Yokozuna"
+   },
+   {
+    "concept_id": "ozeki",
+    "en": "Ōzeki",
+    "tr": "Ōzeki"
+   },
+   {
+    "concept_id": "sekiwake",
+    "en": "Sekiwake",
+    "tr": "Sekiwake"
+   },
+   {
+    "concept_id": "komusubi",
+    "en": "Komusubi",
+    "tr": "Komusubi"
+   }
+  ],
+  "correct": "yokozuna",
+  "source": "https://en.wikipedia.org/wiki/Makuuchi"
+ }
 ]
