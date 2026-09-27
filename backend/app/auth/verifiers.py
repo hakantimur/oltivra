@@ -2,12 +2,15 @@
 
 from __future__ import annotations
 
+import logging
 from dataclasses import dataclass, field
 from typing import Any, Protocol
 
 import anyio
 
 from app.common.errors import ApiError, ErrorCode
+
+_log = logging.getLogger(__name__)
 
 
 @dataclass(frozen=True)
@@ -88,6 +91,19 @@ class DebugAppCheck:
 
     async def verify(self, token: str | None) -> None:
         await self._inner.verify(token)
+
+
+class MonitorAppCheck:
+    """``monitor`` mode (stage rollout): verifies tokens and logs failures, but never rejects the request."""
+
+    def __init__(self, inner: AppCheckVerifier) -> None:
+        self._inner = inner
+
+    async def verify(self, token: str | None) -> None:
+        try:
+            await self._inner.verify(token)
+        except ApiError:
+            _log.warning("app_check_monitor_failure", extra={"has_token": bool(token)})
 
 
 class FirebaseAppCheck:

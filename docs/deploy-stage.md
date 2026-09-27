@@ -6,7 +6,7 @@ Synova's resources:
 | Resource | Oltivra | Synova (do not touch) |
 |---|---|---|
 | Firestore | named database `oltivra` (europe-west1) | `(default)` (nam5) |
-| Realtime Database | `oltivra-live-00`, `oltivra-live-01` (europe-west1) | default instance |
+| Realtime Database | `oltivra-live-00` … `oltivra-live-15` (europe-west1, 16 shards) | default instance |
 | Storage | `gs://synova-36a5f-oltivra-media` (europe-west1) | default bucket |
 | Secrets | `oltivra-*` | everything else |
 | Cloud Run | `oltivra-api` (europe-west1) | Cloud Functions (us-central1) |
@@ -24,15 +24,18 @@ firebase deploy --config firebase.oltivra.json --only firestore:oltivra,database
 
 - Service account `oltivra-api` runs the service and is also the Cloud Tasks OIDC identity and the V4 URL signer
   (it holds `iam.serviceAccountTokenCreator` / `serviceAccountUser` on itself).
-- Queues: `python scripts/provision_queues.py stage europe-west1` (2 shards per family). Strip `\r` on Windows.
+- Queues: `python scripts/provision_queues.py stage europe-west1` (16 shards per family, like prod). Strip `\r` on
+  Windows. New shard instances: `firebase database:instances:create oltivra-live-NN --location europe-west1`, add
+  them to `firebase.oltivra.json`, deploy the rules and add a version of the `oltivra-rtdb-shard-urls` secret.
 - Deploy from `backend/` (`.gcloudignore` keeps the upload to what the Dockerfile copies):
 
 ```bash
 gcloud run deploy oltivra-api --source . --region=europe-west1 --project=synova-36a5f
 ```
 
-  The first deploy sets `OLTIVRA_ENV=stage`, `OLTIVRA_FIRESTORE_DATABASE=oltivra`, `OLTIVRA_SHARD_COUNT=2`,
-  `OLTIVRA_APP_CHECK_MODE=off` (the client does not ship App Check yet), `OLTIVRA_TASKS_MODE=cloud`,
+  The first deploy sets `OLTIVRA_ENV=stage`, `OLTIVRA_FIRESTORE_DATABASE=oltivra`, `OLTIVRA_SHARD_COUNT=16`,
+  `OLTIVRA_APP_CHECK_MODE=monitor` (verifies and logs App Check failures without rejecting, until every tester runs a
+  build with App Check; then switch to `enforce`), `OLTIVRA_TASKS_MODE=cloud`,
   `OLTIVRA_INTERNAL_AUTH_MODE=oidc`, the bucket, the task target URL/service account, the legal identity and
   the `oltivra-*` secrets. Later deploys keep that configuration.
 
@@ -58,6 +61,10 @@ flutter build appbundle --release \
   --dart-define=FIREBASE_APP_ID=1:269747180478:android:6c258e7cd845535c8a1fef \
   --dart-define=FIREBASE_SENDER_ID=269747180478 --dart-define=GOOGLE_SERVER_CLIENT_ID=<web oauth client id>
 ```
+
+App Check uses Play Integrity (the Firebase Android app lists the SHA-256 of the Play app-signing key and the Play
+Console links the Cloud project under *Play Integrity API*). Emulator or sideloaded builds pass
+`--dart-define=APP_CHECK_DEBUG_TOKEN=<token registered in Firebase App Check>`.
 
 The API key and web client id come from `firebase apps:sdkconfig ANDROID <app id>`. The Firebase Android app
 lists the SHA-1/SHA-256 of the upload key, the Play app-signing key and the local debug key.

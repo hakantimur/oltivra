@@ -14,6 +14,7 @@ from app.auth.verifiers import (
     FakeTokenVerifier,
     FirebaseAppCheck,
     FirebaseTokenVerifier,
+    MonitorAppCheck,
     NoAppCheck,
     TokenVerifier,
 )
@@ -91,6 +92,8 @@ class Container:
         from app.common.firebase import default_app
 
         inner = FirebaseAppCheck(self.firebase_app or default_app(self.settings), self.io_limiter)
+        if mode == "monitor":
+            return MonitorAppCheck(inner)
         return DebugAppCheck(inner) if mode == "debug" else inner
 
     def _build_internal_auth(self) -> InternalAuth:
