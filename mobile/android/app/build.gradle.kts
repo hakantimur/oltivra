@@ -55,6 +55,7 @@ android {
         release {
             // Upload key from key.properties; falls back to debug keys so `flutter run --release` works locally.
             signingConfig = signingConfigs.findByName("release") ?: signingConfigs.getByName("debug")
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
 }
