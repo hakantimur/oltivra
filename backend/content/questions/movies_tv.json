@@ -1,0 +1,206 @@
+[
+  {
+    "key": "movies_tv_c001",
+    "category_id": "movies_tv",
+    "subcategory_id": "characters_franchises",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "This village set from The Lord of the Rings films is in which country?",
+      "tr": "Yüzüklerin Efendisi filmleri için kurulan bu köy seti hangi ülkededir?"
+    },
+    "options": [
+      {
+        "concept_id": "new_zealand",
+        "en": "New Zealand",
+        "tr": "Yeni Zelanda"
+      },
+      {
+        "concept_id": "ireland",
+        "en": "Ireland",
+        "tr": "İrlanda"
+      },
+      {
+        "concept_id": "scotland",
+        "en": "Scotland",
+        "tr": "İskoçya"
+      },
+      {
+        "concept_id": "canada",
+        "en": "Canada",
+        "tr": "Kanada"
+      }
+    ],
+    "correct": "new_zealand",
+    "source": "https://en.wikipedia.org/wiki/Hobbiton_Movie_Set",
+    "image": {
+      "refined": "mov_hobbiton",
+      "index": 4,
+      "alt_text": {
+        "en": "A round blue door set into a grassy hillside, surrounded by flowers",
+        "tr": "Çiçeklerle çevrili, çimenli bir yamaca yerleştirilmiş yuvarlak mavi bir kapı"
+      }
+    }
+  },
+  {
+    "key": "movies_tv_c002",
+    "category_id": "movies_tv",
+    "subcategory_id": "characters_franchises",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which animated film follows a clownfish searching the ocean for his son?",
+      "tr": "Hangi animasyon filmi, oğlunu okyanusta arayan bir palyaço balığını anlatır?"
+    },
+    "options": [
+      {
+        "concept_id": "finding_nemo",
+        "en": "Finding Nemo",
+        "tr": "Kayıp Balık Nemo"
+      },
+      {
+        "concept_id": "shark_tale",
+        "en": "Shark Tale",
+        "tr": "Köpekbalığı Hikayesi"
+      },
+      {
+        "concept_id": "the_little_mermaid",
+        "en": "The Little Mermaid",
+        "tr": "Küçük Deniz Kızı"
+      },
+      {
+        "concept_id": "moana",
+        "en": "Moana",
+        "tr": "Moana"
+      }
+    ],
+    "correct": "finding_nemo",
+    "source": "https://en.wikipedia.org/wiki/Finding_Nemo"
+  },
+  {
+    "key": "movies_tv_c003",
+    "category_id": "movies_tv",
+    "subcategory_id": "global_films",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "This early camera and projector was built by which famous brothers?",
+      "tr": "Bu erken dönem kamera ve projektörü hangi ünlü kardeşler yaptı?"
+    },
+    "options": [
+      {
+        "concept_id": "lumiere",
+        "en": "Lumière brothers",
+        "tr": "Lumière kardeşler"
+      },
+      {
+        "concept_id": "wright",
+        "en": "Wright brothers",
+        "tr": "Wright kardeşler"
+      },
+      {
+        "concept_id": "warner",
+        "en": "Warner brothers",
+        "tr": "Warner kardeşler"
+      },
+      {
+        "concept_id": "marx",
+        "en": "Marx brothers",
+        "tr": "Marx kardeşler"
+      }
+    ],
+    "correct": "lumiere",
+    "source": "https://en.wikipedia.org/wiki/Cin%C3%A9matographe",
+    "image": {
+      "refined": "mov_cinematograph",
+      "index": 1,
+      "alt_text": {
+        "en": "An open wooden box camera showing a brass hand crank mechanism inside",
+        "tr": "İçinde pirinç bir el krankı mekanizması görünen, açık, ahşap kutu biçiminde bir kamera"
+      }
+    }
+  },
+  {
+    "key": "movies_tv_c004",
+    "category_id": "movies_tv",
+    "subcategory_id": "tv_streaming",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which TV series is set mainly on the fictional continent of Westeros?",
+      "tr": "Hangi dizi ağırlıklı olarak hayali Westeros kıtasında geçer?"
+    },
+    "options": [
+      {
+        "concept_id": "game_of_thrones",
+        "en": "Game of Thrones",
+        "tr": "Game of Thrones"
+      },
+      {
+        "concept_id": "the_witcher",
+        "en": "The Witcher",
+        "tr": "The Witcher"
+      },
+      {
+        "concept_id": "vikings",
+        "en": "Vikings",
+        "tr": "Vikings"
+      },
+      {
+        "concept_id": "the_last_kingdom",
+        "en": "The Last Kingdom",
+        "tr": "The Last Kingdom"
+      }
+    ],
+    "correct": "game_of_thrones",
+    "source": "https://en.wikipedia.org/wiki/Game_of_Thrones"
+  },
+  {
+    "key": "movies_tv_c005",
+    "category_id": "movies_tv",
+    "subcategory_id": "directors",
+    "difficulty": "HARD",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which director made the 1902 silent film this famous image comes from?",
+      "tr": "Bu ünlü görüntünün alındığı 1902 yapımı sessiz filmi hangi yönetmen çekti?"
+    },
+    "options": [
+      {
+        "concept_id": "georges_melies",
+        "en": "Georges Méliès",
+        "tr": "Georges Méliès"
+      },
+      {
+        "concept_id": "charlie_chaplin",
+        "en": "Charlie Chaplin",
+        "tr": "Charlie Chaplin"
+      },
+      {
+        "concept_id": "d_w_griffith",
+        "en": "D. W. Griffith",
+        "tr": "D. W. Griffith"
+      },
+      {
+        "concept_id": "fritz_lang",
+        "en": "Fritz Lang",
+        "tr": "Fritz Lang"
+      }
+    ],
+    "correct": "georges_melies",
+    "source": "https://en.wikipedia.org/wiki/A_Trip_to_the_Moon",
+    "image": {
+      "refined": "mov_trip_moon",
+      "index": 0,
+      "alt_text": {
+        "en": "A black-and-white Moon with a face, hit in the eye by a capsule",
+        "tr": "Yüzü olan siyah-beyaz bir Ay'ın gözüne çarpmış bir kapsül"
+      }
+    }
+  }
+]

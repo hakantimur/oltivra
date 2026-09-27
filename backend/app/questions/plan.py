@@ -28,6 +28,8 @@ def plan_item(entry: ManifestEntry, bundle: QuestionBundle) -> dict[str, Any]:
             "path": bundle.media["storage_path"],
             "aspect": round(bundle.media["width"] / max(1, bundle.media["height"]), 4),
             "alt": bundle.media.get("alt_text", {}),
+            # Licence credit shown with the image (CC BY / BY-SA); None for public-domain uploads without one.
+            "attribution": bundle.media.get("attribution"),
         }
     return {
         "qid": entry.qid,

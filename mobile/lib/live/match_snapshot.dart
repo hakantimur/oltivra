@@ -107,6 +107,7 @@ class MatchSnapshot {
       ((question['options'] as Map?) ?? const {}).map((k, v) => MapEntry(k.toString(), v.toString()));
   String? get imageUrl => question['signed_image_url'] as String?;
   double get imageAspect => (question['image_aspect'] as num?)?.toDouble() ?? 16 / 9;
+  String get imageAttribution => (question['image_attribution'] as String?) ?? '';
   Json? get reveal => (public['correct_answer_reveal'] as Map?)?.cast<String, dynamic>();
   String? get correctConceptId => reveal?['concept_id'] as String?;
   String? get roundWinnerPid => reveal?['winner_pid'] as String?;

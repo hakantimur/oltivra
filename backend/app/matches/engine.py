@@ -583,7 +583,9 @@ def project(state: dict[str, Any], keys: Keyring) -> dict[str, Any]:
                 "text": rnd["text"],
                 "options": {o["concept_id"]: o["text"] for o in rnd["options"]},
                 **({"signed_image_url": rnd["signed_image_url"], "image_expires_at_ms": rnd["image_expires_at_ms"],
-                    "image_aspect": rnd["media"]["aspect"]} if rnd.get("signed_image_url") and rnd.get("media")
+                    "image_aspect": rnd["media"]["aspect"],
+                    "image_attribution": rnd["media"].get("attribution") or ""}
+                   if rnd.get("signed_image_url") and rnd.get("media")
                    else {}),
             },
         })

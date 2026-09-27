@@ -9,6 +9,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 
 import '../api/api_client.dart';
+import '../core/env.dart';
 
 class AuthUser {
   const AuthUser({required this.uid, required this.provider, this.email});
@@ -126,7 +127,9 @@ class FirebaseAuthService implements AuthService {
   Future<void> signInWithGoogle() async {
     final google = GoogleSignIn.instance;
     if (!_googleReady) {
-      await google.initialize();
+      await google.initialize(
+        serverClientId: Env.googleServerClientId.isEmpty ? null : Env.googleServerClientId,
+      );
       _googleReady = true;
     }
     final GoogleSignInAccount account;

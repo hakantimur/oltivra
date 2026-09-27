@@ -1,0 +1,11 @@
+# Upload only what the Dockerfile copies (gcloud run deploy --source).
+.gcloudignore
+.venv/
+.env
+.env.*
+.pytest_cache/
+.ruff_cache/
+__pycache__/
+tests/
+tools/
+content/

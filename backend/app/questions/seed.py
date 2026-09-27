@@ -28,7 +28,7 @@ from app.questions.taxonomy import CATEGORIES
 
 SEED_ROOT = Path(__file__).resolve().parents[2] / "seed"
 SEED_DIR = SEED_ROOT / "questions"
-# Image questions (spec §9.1): WebP files under seed/media, referenced by `media.file`.
+# Curated questions (spec §9.1): most carry a WebP under seed/media referenced by `media.file`; some are text-only.
 MEDIA_SEED_DIR = SEED_ROOT / "media_questions"
 MEDIA_FILES_DIR = SEED_ROOT / "media"
 SEED_LANGUAGES = ("en", "tr")
@@ -72,7 +72,7 @@ async def import_seed(repo: QuestionRepository, store, status: QuestionStatus, a
             if await repo.get_group(seed_group_id(item["key"])):
                 skipped += 1
                 continue
-            asset_id = await _upload_media(repo, uploader, item, status, now_ms)
+            asset_id = await _upload_media(repo, uploader, item, status, now_ms) if item.get("media") else None
             await _create(repo, item, status, actor_uid, media_asset_id=asset_id)
             created += 1
     return {"created": created, "skipped": skipped}

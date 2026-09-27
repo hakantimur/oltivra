@@ -1,0 +1,230 @@
+[
+  {
+    "key": "sports_c001",
+    "category_id": "sports",
+    "subcategory_id": "tennis",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which Grand Slam tournament is played on this kind of court?",
+      "tr": "Hangi Grand Slam turnuvası bu tür bir kortta oynanır?"
+    },
+    "options": [
+      {
+        "concept_id": "wimbledon",
+        "en": "Wimbledon",
+        "tr": "Wimbledon"
+      },
+      {
+        "concept_id": "us_open",
+        "en": "US Open",
+        "tr": "ABD Açık"
+      },
+      {
+        "concept_id": "french_open",
+        "en": "French Open",
+        "tr": "Fransa Açık"
+      },
+      {
+        "concept_id": "australian_open",
+        "en": "Australian Open",
+        "tr": "Avustralya Açık"
+      }
+    ],
+    "correct": "wimbledon",
+    "source": "https://en.wikipedia.org/wiki/Grass_court",
+    "media": {
+      "file": "sports/sports_c001.webp",
+      "alt_text": {
+        "en": "An empty tennis court with a net, marked out on a grass lawn",
+        "tr": "Çimenlik bir alanda çizgileri çekilmiş, fileli boş bir tenis kortu"
+      },
+      "source": "https://commons.wikimedia.org/wiki/File:Appleby_Castle,_tennis_court_-_geograph.org.uk_-_4958770.jpg",
+      "author": "Stephen Craven",
+      "license": "CC BY-SA 2.0",
+      "attribution": "Stephen Craven / Wikimedia Commons, CC BY-SA 2.0",
+      "copyright_status": "LICENSED"
+    }
+  },
+  {
+    "key": "sports_c002",
+    "category_id": "sports",
+    "subcategory_id": "basketball",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In basketball, how many points is a shot from beyond the arc worth?",
+      "tr": "Basketbolda çizginin (yayın) dışından atılan basket kaç sayı değerindedir?"
+    },
+    "options": [
+      {
+        "concept_id": "three",
+        "en": "3",
+        "tr": "3"
+      },
+      {
+        "concept_id": "two",
+        "en": "2",
+        "tr": "2"
+      },
+      {
+        "concept_id": "four",
+        "en": "4",
+        "tr": "4"
+      },
+      {
+        "concept_id": "one",
+        "en": "1",
+        "tr": "1"
+      }
+    ],
+    "correct": "three",
+    "source": "https://en.wikipedia.org/wiki/Three-point_field_goal"
+  },
+  {
+    "key": "sports_c003",
+    "category_id": "sports",
+    "subcategory_id": "athletics",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "How long is one lap of the inside lane on a standard outdoor track like this?",
+      "tr": "Bunun gibi standart bir açık hava pistinde iç kulvarda bir tur kaç metredir?"
+    },
+    "options": [
+      {
+        "concept_id": "m400",
+        "en": "400 metres",
+        "tr": "400 metre"
+      },
+      {
+        "concept_id": "m200",
+        "en": "200 metres",
+        "tr": "200 metre"
+      },
+      {
+        "concept_id": "m500",
+        "en": "500 metres",
+        "tr": "500 metre"
+      },
+      {
+        "concept_id": "m800",
+        "en": "800 metres",
+        "tr": "800 metre"
+      }
+    ],
+    "correct": "m400",
+    "source": "https://en.wikipedia.org/wiki/Running_track",
+    "media": {
+      "file": "sports/sports_c003.webp",
+      "alt_text": {
+        "en": "The curved red lanes of an empty outdoor running track",
+        "tr": "Boş bir açık hava koşu pistinin kıvrılan kırmızı kulvarları"
+      },
+      "source": "https://commons.wikimedia.org/wiki/File:Running_track,_Linford_Christie_Stadium_-_geograph.org.uk_-_4543964.jpg",
+      "author": "David Hawgood",
+      "license": "CC BY-SA 2.0",
+      "attribution": "David Hawgood / Wikimedia Commons, CC BY-SA 2.0",
+      "copyright_status": "LICENSED"
+    }
+  },
+  {
+    "key": "sports_c004",
+    "category_id": "sports",
+    "subcategory_id": "football",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "In which city is this famous football stadium?",
+      "tr": "Bu ünlü futbol stadyumu hangi şehirdedir?"
+    },
+    "options": [
+      {
+        "concept_id": "rio_de_janeiro",
+        "en": "Rio de Janeiro",
+        "tr": "Rio de Janeiro"
+      },
+      {
+        "concept_id": "sao_paulo",
+        "en": "São Paulo",
+        "tr": "São Paulo"
+      },
+      {
+        "concept_id": "buenos_aires",
+        "en": "Buenos Aires",
+        "tr": "Buenos Aires"
+      },
+      {
+        "concept_id": "montevideo",
+        "en": "Montevideo",
+        "tr": "Montevideo"
+      }
+    ],
+    "correct": "rio_de_janeiro",
+    "source": "https://en.wikipedia.org/wiki/Maracan%C3%A3_Stadium",
+    "media": {
+      "file": "sports/sports_c004.webp",
+      "alt_text": {
+        "en": "Aerial view of a large oval stadium with a ring-shaped white roof",
+        "tr": "Halka biçiminde beyaz çatısı olan büyük, oval bir stadyumun havadan görünümü"
+      },
+      "source": "https://commons.wikimedia.org/wiki/File:Maracana_stadium,_brazil_-_panoramio.jpg",
+      "author": "Pedro Lopez from Ottawa, Canada",
+      "license": "CC BY 2.0",
+      "attribution": "Pedro Lopez from Ottawa, Canada / Wikimedia Commons, CC BY 2.0",
+      "copyright_status": "LICENSED"
+    }
+  },
+  {
+    "key": "sports_c005",
+    "category_id": "sports",
+    "subcategory_id": "olympics",
+    "difficulty": "HARD",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "The ancient games held in this stadium honoured which Greek god?",
+      "tr": "Bu stadyumda düzenlenen antik oyunlar hangi Yunan tanrısı onuruna yapılırdı?"
+    },
+    "options": [
+      {
+        "concept_id": "zeus",
+        "en": "Zeus",
+        "tr": "Zeus"
+      },
+      {
+        "concept_id": "apollo",
+        "en": "Apollo",
+        "tr": "Apollon"
+      },
+      {
+        "concept_id": "poseidon",
+        "en": "Poseidon",
+        "tr": "Poseidon"
+      },
+      {
+        "concept_id": "ares",
+        "en": "Ares",
+        "tr": "Ares"
+      }
+    ],
+    "correct": "zeus",
+    "source": "https://en.wikipedia.org/wiki/Ancient_Olympic_Games",
+    "media": {
+      "file": "sports/sports_c005.webp",
+      "alt_text": {
+        "en": "A long, flat earthen running track between grassy embankments",
+        "tr": "Çimenli setler arasında uzun, düz, toprak bir koşu alanı"
+      },
+      "source": "https://commons.wikimedia.org/wiki/File:Ancient_Olympia_Stadium_in_Greece_(51224128585).jpg",
+      "author": "dronepicr",
+      "license": "CC BY 2.0",
+      "attribution": "dronepicr / Wikimedia Commons, CC BY 2.0",
+      "copyright_status": "LICENSED"
+    }
+  }
+]

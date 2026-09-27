@@ -16,6 +16,10 @@ abstract final class Env {
   static const firebaseProjectId = String.fromEnvironment('FIREBASE_PROJECT_ID', defaultValue: 'demo-oltivra');
   static const firebaseApiKey = String.fromEnvironment('FIREBASE_API_KEY', defaultValue: 'demo-api-key');
   static const firebaseAppId = String.fromEnvironment('FIREBASE_APP_ID', defaultValue: '1:000000000000:android:0000');
+  static const firebaseSenderId = String.fromEnvironment('FIREBASE_SENDER_ID', defaultValue: '0');
+
+  /// OAuth *web* client id of the Firebase project; Android Google Sign-In needs it to mint an ID token.
+  static const googleServerClientId = String.fromEnvironment('GOOGLE_SERVER_CLIENT_ID');
 
   /// Public web page for account deletion (spec §30.2), served by the backend.
   static String get accountDeletionUrl => '$apiBaseUrl/account/delete';

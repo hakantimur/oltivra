@@ -1,0 +1,103 @@
+[
+  {
+    "key": "science_nature_c001",
+    "category_id": "science_nature",
+    "subcategory_id": "space",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {"en": "Roughly how long does this body take to orbit Earth once?", "tr": "Bu gök cismi Dünya'nın çevresini bir kez yaklaşık ne kadar sürede dolanır?"},
+    "options": [
+      {"concept_id": "about_27_days", "en": "About 27 days", "tr": "Yaklaşık 27 gün"},
+      {"concept_id": "about_7_days", "en": "About 7 days", "tr": "Yaklaşık 7 gün"},
+      {"concept_id": "about_90_days", "en": "About 90 days", "tr": "Yaklaşık 90 gün"},
+      {"concept_id": "about_1_year", "en": "About 1 year", "tr": "Yaklaşık 1 yıl"}
+    ],
+    "correct": "about_27_days",
+    "source": "https://en.wikipedia.org/wiki/Orbit_of_the_Moon",
+    "image": {
+      "refined": "sci_full_moon", "index": 0,
+      "alt_text": {"en": "A grey, cratered sphere against a black sky", "tr": "Siyah gökyüzünde gri, kraterli bir küre"}
+    }
+  },
+  {
+    "key": "science_nature_c002",
+    "category_id": "science_nature",
+    "subcategory_id": "earth_science",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {"en": "What is the hardest natural substance on Earth?", "tr": "Dünya'daki en sert doğal madde hangisidir?"},
+    "options": [
+      {"concept_id": "diamond", "en": "Diamond", "tr": "Elmas"},
+      {"concept_id": "quartz", "en": "Quartz", "tr": "Kuvars"},
+      {"concept_id": "granite", "en": "Granite", "tr": "Granit"},
+      {"concept_id": "iron", "en": "Iron", "tr": "Demir"}
+    ],
+    "correct": "diamond",
+    "source": "https://en.wikipedia.org/wiki/Diamond"
+  },
+  {
+    "key": "science_nature_c003",
+    "category_id": "science_nature",
+    "subcategory_id": "animals",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {"en": "This amphibian is native to lakes in which country?", "tr": "Bu amfibi hangi ülkenin göllerine özgüdür?"},
+    "options": [
+      {"concept_id": "mexico", "en": "Mexico", "tr": "Meksika"},
+      {"concept_id": "brazil", "en": "Brazil", "tr": "Brezilya"},
+      {"concept_id": "japan", "en": "Japan", "tr": "Japonya"},
+      {"concept_id": "australia", "en": "Australia", "tr": "Avustralya"}
+    ],
+    "correct": "mexico",
+    "source": "https://en.wikipedia.org/wiki/Axolotl",
+    "image": {
+      "refined": "sci_axolotl", "index": 2,
+      "alt_text": {"en": "A pale pink amphibian with feathery gills on the sides of its head", "tr": "Başının iki yanında tüy gibi solungaçları olan açık pembe bir amfibi"}
+    }
+  },
+  {
+    "key": "science_nature_c004",
+    "category_id": "science_nature",
+    "subcategory_id": "plants",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {"en": "This carnivorous plant grows wild in only one country. Which one?", "tr": "Bu etobur bitki doğada yalnızca tek bir ülkede yetişir. Hangisi?"},
+    "options": [
+      {"concept_id": "united_states", "en": "United States", "tr": "ABD"},
+      {"concept_id": "brazil", "en": "Brazil", "tr": "Brezilya"},
+      {"concept_id": "indonesia", "en": "Indonesia", "tr": "Endonezya"},
+      {"concept_id": "madagascar", "en": "Madagascar", "tr": "Madagaskar"}
+    ],
+    "correct": "united_states",
+    "source": "https://en.wikipedia.org/wiki/Venus_flytrap",
+    "image": {
+      "refined": "sci_flytrap", "index": 4,
+      "alt_text": {"en": "A fly sitting on an open, toothed green-and-red leaf trap", "tr": "Açık, dişli, yeşil-kırmızı bir yaprak kapanın üzerinde duran bir sinek"}
+    }
+  },
+  {
+    "key": "science_nature_c005",
+    "category_id": "science_nature",
+    "subcategory_id": "animals",
+    "difficulty": "HARD",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {"en": "What is the common nickname of these microscopic animals?", "tr": "Bu mikroskobik hayvanlara halk arasında ne ad verilir?"},
+    "options": [
+      {"concept_id": "water_bears", "en": "Water bears", "tr": "Su ayıları"},
+      {"concept_id": "moss_mice", "en": "Moss mice", "tr": "Yosun fareleri"},
+      {"concept_id": "sea_monkeys", "en": "Sea monkeys", "tr": "Deniz maymunları"},
+      {"concept_id": "glass_worms", "en": "Glass worms", "tr": "Cam solucanları"}
+    ],
+    "correct": "water_bears",
+    "source": "https://en.wikipedia.org/wiki/Tardigrade",
+    "image": {
+      "refined": "sci_tardigrade", "index": 5,
+      "alt_text": {"en": "Three tiny translucent eight-legged creatures under a microscope", "tr": "Mikroskop altında üç küçük, yarı saydam, sekiz bacaklı canlı"}
+    }
+  }
+]
