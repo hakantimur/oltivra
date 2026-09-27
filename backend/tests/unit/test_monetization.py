@@ -98,6 +98,18 @@ def test_ssv_after_offer_expiry_is_rejected(players, container, ssv_key, client)
     assert client.get(f"/internal/ads/admob-ssv?{ssv_query(ssv_key, offer)}").status_code == 402
 
 
+def test_reward_offer_window_is_fixed_at_settlement(players, container):
+    match_id = settled_match(players, container)
+    doc = container.store._docs[f"reward_offers/{match_id}_u1"]
+    assert doc["expires_at"] and doc["eligible_until_ms"] - doc["created_at_ms"] == 15 * 60_000
+    first = players.post(f"/v1/rewards/offers/{match_id}/start", "u1").json()
+    container.clock.advance(14 * 60_000)
+    assert players.post(f"/v1/rewards/offers/{match_id}/start", "u1").json()["offer_id"] == first["offer_id"]
+    container.clock.advance(2 * 60_000)  # the first offer expired and so did the settlement window
+    res = players.post(f"/v1/rewards/offers/{match_id}/start", "u1")
+    assert res.status_code == 404 and res.json()["error"]["detail"]["reason"] == "reward_offer_expired"
+
+
 def test_reward_daily_cap(players, container):
     match_id = settled_match(players, container)
     from app.common.clock import utc_date_id

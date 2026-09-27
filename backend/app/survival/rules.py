@@ -82,18 +82,26 @@ def _normal_difficulty(state: dict[str, Any], keys: Keyring, active_count: int) 
     return "HARD"
 
 
-def _take_item(state: dict[str, Any], difficulty: str) -> dict[str, Any] | None:
+def _take_item(state: dict[str, Any], difficulty: str, allow_media: bool = True) -> dict[str, Any] | None:
     """Fresh question of the wanted band (falling back to neighbours); never repeats a question group."""
     used = set(state.get("used_gids") or [])
     pools = (state.get("plan") or {}).get("pools") or {}
     for band in _FALLBACK[difficulty]:
         items = list(pools.get(band) or [])
         for position, item in enumerate(items):
-            if item["gid"] not in used:
+            if item["gid"] not in used and (allow_media or not item.get("media")):
                 pools[band] = items[:position] + items[position + 1:]
                 state["plan"] = {**(state.get("plan") or {}), "pools": pools}
                 return item
     return None
+
+
+def media_substitute(state: dict[str, Any], rnd: dict[str, Any]) -> dict[str, Any] | None:
+    return _take_item(state, rnd["difficulty"], allow_media=False)
+
+
+def rewind_round(state: dict[str, Any], rnd: dict[str, Any]) -> None:
+    """The failed media question stays in ``used_gids``; nothing else was counted at open."""
 
 
 def pool_remaining(state: dict[str, Any]) -> int:

@@ -22,6 +22,7 @@ from app.ranking.elo import Seat, rating_deltas
 from app.ranking.leagues import League, display_league
 from app.ranking.levels import level_for_xp
 
+REWARD_RETAIN_MS = 86_400_000
 log = logging.getLogger("oltivra.progression")
 
 SPECIALIST_CORRECT = 100
@@ -237,7 +238,9 @@ class ProgressionHooks:
             # Rewarded XP eligibility: one offer per settled match (spec §7.2, §31.2).
             txn.set(f"reward_offers/{match_id}_{uid}", {
                 "schema_version": 1, "match_id": match_id, "uid": uid, "state": "ELIGIBLE", "base_xp": base_xp,
-                "created_at_ms": now})
+                "created_at_ms": now, "eligible_until_ms": now + prepared["config"].economy.reward_offer_ttl_ms,
+                # Firestore TTL (spec §16.4); grants stay auditable in reward_transactions.
+                "expires_at": ms_to_datetime(now + prepared["config"].economy.reward_offer_ttl_ms + REWARD_RETAIN_MS)})
             txn.set(f"progression_events/{uid}_{sequence:08d}", {
                 "schema_version": 1, "uid": uid, "sequence": sequence, "match_id": match_id, "kind": "MATCH_SETTLED",
                 "xp": base_xp, "ranked": ranked, "mmr_delta": delta, "badges": new_badges, "at_ms": now})

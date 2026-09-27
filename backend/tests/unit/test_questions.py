@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import asyncio
 import json
 import random
 from collections import Counter
@@ -277,3 +278,48 @@ def test_synova_serves_shared_question_and_decides_server_side(api, container):
     # Exposure is shared with Live Trivia selection.
     history = container.store.dump("user_recent_questions")["user_recent_questions/solo1"]["qids"]
     assert history == [question["qid"]]
+
+
+async def _media_question(container) -> dict:
+    from app.questions.models import MediaAsset, OptionText
+    from app.questions.repository import TranslationInput
+
+    asset = MediaAsset(id="img1", storage_path="questions/gimg/v1/main.webp", width=1024, height=768, bytes=90_000,
+                       source="own", license="CC0", copyright_status="CLEARED", review_status="APPROVED")
+    await container.question_repo.put_media(asset)
+    options = [OptionText(concept_id=f"c{i}", text=t) for i, t in enumerate(("Lion", "Tiger", "Wolf", "Bear"))]
+    group = await container.question_repo.create_question(
+        category_id="science_nature", subcategory_id="animals", difficulty="EASY", global_relevance_score=5,
+        canonical_language="en", translations=[TranslationInput("en", "Which animal is shown?", options, True)],
+        correct_concept_id="c0", source_refs=["own"], actor_uid="admin", status=QuestionStatus.ACTIVE,
+        media_asset_id="img1")
+    await container.manifest_builder.build_all(["en"])
+    container.manifest_cache.invalidate()
+    return group
+
+
+def test_synova_serves_image_questions_only_with_signed_image(api, container, monkeypatch):
+    group = asyncio.run(_media_question(container))
+    original = container.manifest_cache.get
+
+    async def only_media(language, mode, difficulty):
+        return [e for e in await original(language, mode, difficulty) if e.m]
+
+    monkeypatch.setattr(container.manifest_cache, "get", only_media)
+    res = api.post("/v1/synova/questions/next", "solo1", {"language": "en"})
+    assert res.status_code == 200, res.text
+    question = res.json()["question"]
+    assert question["qid"] == group["qid"] and "questions%2Fgimg%2Fv1%2Fmain.webp" in question["signed_image_url"]
+    assert question["image_expires_at_ms"] > container.clock.now_ms() and question["image_aspect"] == 1.333
+
+    async def broken(path, expires):
+        raise RuntimeError("signer down")
+
+    monkeypatch.setattr(container.media_signer, "sign", broken)
+    res = api.post("/v1/synova/questions/next", "solo1", {"language": "en"})
+    assert res.status_code == 409 and res.json()["error"]["detail"]["reason"] == "no_servable_question"
+
+
+def test_synova_rejects_unsupported_language(api):
+    res = api.post("/v1/synova/questions/next", "solo1", {"language": "xx"})
+    assert res.status_code == 403 or res.json()["error"]["code"] == "FEATURE_DISABLED"

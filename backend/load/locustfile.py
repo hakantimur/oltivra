@@ -130,7 +130,8 @@ class Player(HttpUser):
                 self._answer(match_id, view, public, private)
                 answered.add(round_id)
             if not self.listener or self.server_now() > int(public.get("next_server_event_at_ms") or 0) + 500:
-                self._post(f"/v1/matches/{match_id}/sync", name="matches/sync")
+                self._post(f"/v1/matches/{match_id}/sync",
+                           {"observed_state_version": int(public.get("state_version") or 0)}, name="matches/sync")
             if random.random() < 0.05:  # sparse reactions (one per round is enforced server-side)
                 self._post(f"/v1/matches/{match_id}/reaction", {"round_id": round_id or "",
                                                                 "reaction_id": "emoji_clap"}, name="matches/reaction")

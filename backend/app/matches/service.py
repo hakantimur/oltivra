@@ -143,7 +143,7 @@ class MatchService:
         if error:
             code = ErrorCode(error)
             status = 409 if code in (ErrorCode.ROUND_NOT_ACTIVE, ErrorCode.ROUND_EXPIRED,
-                                     ErrorCode.ANSWER_ALREADY_SUBMITTED) else None
+                                     ErrorCode.ANSWER_ALREADY_SUBMITTED, ErrorCode.IDEMPOTENCY_KEY_REUSED) else None
             raise ApiError(code, status=status, detail={"state_version": state.get("state_version"),
                                                         **({"reason": result.outcome["reason"]}
                                                            if "reason" in result.outcome else {})})

@@ -8,6 +8,7 @@ executed only after commit.
 from __future__ import annotations
 
 import copy
+import logging
 import random
 from typing import Any
 
@@ -40,6 +41,8 @@ GRACE_MS = 300
 RECOVERY_DELAY_MS = GRACE_MS + 250
 START_DELAY_MS = 50
 ADVANCE_DELAY_MS = 50
+
+log = logging.getLogger("oltivra.engine")
 
 
 def _rules(mode: str):
@@ -136,7 +139,10 @@ def open_round(state: dict[str, Any], keys: Keyring, now_ms: int, item: dict[str
                duration_ms: int, eligible: list[str], result: StepResult) -> None:
     index = int(state.get("round_index", 0)) + 1
     match_id = state["match_id"]
-    round_id = f"r{index:02d}-{keys.resolver.hexdigest(f'round:{match_id}:{index}')[:10]}"
+    # A substituted round gets a fresh ID so its tasks are never deduplicated against the replaced one.
+    attempt = int((state.get("round_attempts") or {}).get(str(index), 0))
+    seed = f"round:{match_id}:{index}" + (f":{attempt}" if attempt else "")
+    round_id = f"r{index:02d}-{keys.resolver.hexdigest(seed)[:10]}"
     lead = state["config"]["mode"]["round_lead_ms"]
     starts = now_ms + lead
     ends = starts + duration_ms
@@ -212,6 +218,33 @@ def _earliest_correct_bot(state: dict[str, Any]) -> tuple[str, int] | None:
         if best is None or plan["response_at_ms"] < best[1]:
             best = (pid, plan["response_at_ms"])
     return best
+
+
+def _substitute_unsigned_media(state: dict[str, Any], keys: Keyring, now_ms: int, result: StepResult,
+                               source: str) -> bool:
+    """A media question whose image never arrived is replaced by a text-only reserve before it becomes
+    answerable (spec §9.1, §22.2); it is never played without its image. Returns True when replaced."""
+    rnd = current_round(state)
+    if not rnd.get("media") or rnd.get("signed_image_url"):
+        return False
+    rules = _rules(state["mode"])
+    replacement = rules.media_substitute(state, rnd)
+    if replacement is None:
+        log.error("media_substitute_unavailable", extra={"match_id": state["match_id"], "qid": rnd.get("qid")})
+        return False
+    kind = RoundKind(rnd["kind"])
+    attempts = dict(state.get("round_attempts") or {})
+    attempts[str(rnd["index"])] = int(attempts.get(str(rnd["index"]), 0)) + 1
+    state["round_attempts"] = attempts
+    state["round_index"] = int(state.get("round_index", 1)) - 1
+    rules.rewind_round(state, rnd)
+    open_round(state, keys, now_ms, replacement, kind, int(rnd["duration_ms"]), list(rnd.get("eligible") or []),
+               result)
+    if hasattr(rules, "after_open"):
+        rules.after_open(state, now_ms, result)
+    bump(state, now_ms, "MEDIA_SUBSTITUTED", source)
+    result.changed = True
+    return True
 
 
 def _advance_to_next_round(state: dict[str, Any], keys: Keyring, now_ms: int, result: StepResult,
@@ -317,6 +350,8 @@ def resolve_due(state: dict[str, Any], keys: Keyring, now_ms: int, source: str,
         status = state.get("state")
         rnd = current_round(state)
         if status == MatchState.ROUND_LOADING and now_ms >= rnd["starts_at_ms"]:
+            if _substitute_unsigned_media(state, keys, now_ms, result, source):
+                continue
             state["state"] = MatchState.ROUND_ACTIVE.value
             earliest = _earliest_correct_bot(state) if state["mode"] == Mode.QUICK else None
             event_at = min(earliest[1], rnd["ends_at_ms"]) if earliest else rnd["ends_at_ms"]
@@ -358,6 +393,8 @@ def apply_answer(state: dict[str, Any], keys: Keyring, *, uid: str, round_id: st
     existing = (rnd.get("answers") or {}).get(pid) if rnd.get("round_id") == round_id else None
     if existing is not None:
         if existing.get("request_id") == request_id:  # idempotent replay of the original outcome
+            if existing.get("concept_id") != option_id:  # same key, different payload (spec §19.1)
+                return _reject(result, ErrorCode.IDEMPOTENCY_KEY_REUSED)
             result.outcome = {"accepted": True, "replay": True, **_answer_view(state, pid, existing)}
             return result
         return _reject(result, ErrorCode.ANSWER_ALREADY_SUBMITTED)

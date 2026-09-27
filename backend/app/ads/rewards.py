@@ -19,7 +19,7 @@ from cryptography.exceptions import InvalidSignature
 from cryptography.hazmat.primitives import hashes, serialization
 from cryptography.hazmat.primitives.asymmetric import ec
 
-from app.common.clock import utc_date_id
+from app.common.clock import ms_to_datetime, utc_date_id
 from app.common.errors import ApiError, ErrorCode
 from app.common.ids import random_token
 from app.profiles.service import user_path
@@ -177,9 +177,15 @@ class RewardService:
                 raise ApiError(ErrorCode.REWARD_CAP_REACHED)
             if offer["state"] == "OFFERED" and offer["offer_expires_at_ms"] > now:
                 return offer  # one live offer per settled match
+            eligible_until = int(offer.get("eligible_until_ms") or offer["created_at_ms"] +
+                                 config.economy.reward_offer_ttl_ms)
+            if now >= eligible_until:
+                # The offer window is fixed at settlement; an expired offer cannot be restarted forever.
+                raise ApiError(ErrorCode.NOT_FOUND, detail={"reason": "reward_offer_expired"})
+            expires = min(now + config.economy.reward_offer_ttl_ms, eligible_until + config.economy.reward_offer_ttl_ms)
             updated = {**offer, "state": "OFFERED", "offer_id": random_token(12).replace(".", "_"),
                        "nonce": random_token(12).replace(".", "_"), "offered_at_ms": now,
-                       "offer_expires_at_ms": now + config.economy.reward_offer_ttl_ms}
+                       "offer_expires_at_ms": expires, "expires_at": ms_to_datetime(expires + 86_400_000)}
             txn.set(offer_path(match_id, uid), updated)
             return updated
 
