@@ -4,24 +4,25 @@ from __future__ import annotations
 
 from fastapi import APIRouter, Depends, Query
 
-from app.common.api import Caller, authenticated
-from app.questions.taxonomy import CATEGORIES
+from app.common.api import Caller, authenticated, get_container
+from app.container import Container
 
 router = APIRouter(prefix="/v1")
 
 
 @router.get("/categories")
-async def categories(lang: str = Query("en", max_length=16), caller: Caller = Depends(authenticated)) -> dict:
+async def categories(lang: str = Query("en", max_length=16), caller: Caller = Depends(authenticated),
+                     c: Container = Depends(get_container)) -> dict:
     return {
         "schema_version": 1,
         "categories": [
             {
-                "id": c.id,
-                "name": c.names.get(lang, c.names["en"]),
-                "icon": c.icon,
+                "id": cat["id"],
+                "name": cat["names"].get(lang, cat["names"]["en"]),
+                "icon": cat["icon"],
                 "subcategories": [{"id": sid, "name": names.get(lang, names["en"])}
-                                  for sid, names in c.subcategories.items()],
+                                  for sid, names in cat["subcategories"].items()],
             }
-            for c in CATEGORIES
+            for cat in await c.categories.all()
         ],
     }

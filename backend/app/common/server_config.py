@@ -126,6 +126,13 @@ class ModerationConfig(BaseModel):
     question_report_period_ms: int = 30 * 86_400_000
 
 
+class ContentConfig(BaseModel):
+    # Versioned near-duplicate threshold for semantic similarity (spec §11.2).
+    near_duplicate_threshold: float = Field(default=0.86, ge=0.5, le=1.0)
+    ai_min_global_relevance: int = Field(default=4, ge=1, le=5)
+    ai_max_candidates_per_job: int = Field(default=25, ge=1, le=100)
+
+
 class RetentionConfig(BaseModel):
     live_cleanup_after_settlement_ms: int = 30 * 60_000
     settlement_max_retries: int = 8
@@ -142,6 +149,7 @@ class GameConfig(BaseModel):
     bots: BotConfig = Field(default_factory=BotConfig)
     features: FeatureConfig = Field(default_factory=FeatureConfig)
     moderation: ModerationConfig = Field(default_factory=ModerationConfig)
+    content: ContentConfig = Field(default_factory=ContentConfig)
     retention: RetentionConfig = Field(default_factory=RetentionConfig)
 
     def match_snapshot(self, mode: str) -> dict[str, Any]:

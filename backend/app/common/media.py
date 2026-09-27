@@ -52,3 +52,45 @@ class GcsMediaSigner:
             )
 
         return await anyio.to_thread.run_sync(_sign, limiter=self._limiter)
+
+
+class MediaUploader(Protocol):
+    async def put(self, storage_path: str, data: bytes, content_type: str) -> None: ...
+
+
+class MemoryMediaUploader:
+    def __init__(self) -> None:
+        self.objects: dict[str, tuple[bytes, str]] = {}
+
+    async def put(self, storage_path: str, data: bytes, content_type: str) -> None:
+        self.objects[storage_path] = (data, content_type)
+
+
+class EmulatorMediaUploader:
+    """Uploads through the Storage emulator's GCS JSON API."""
+
+    def __init__(self, host: str, bucket: str) -> None:
+        self._host = host
+        self._bucket = bucket
+
+    async def put(self, storage_path: str, data: bytes, content_type: str) -> None:
+        import httpx
+
+        url = f"http://{self._host}/upload/storage/v1/b/{self._bucket}/o"
+        async with httpx.AsyncClient(timeout=15.0) as client:
+            res = await client.post(url, params={"uploadType": "media", "name": storage_path}, content=data,
+                                    headers={"content-type": content_type})
+            res.raise_for_status()
+
+
+class GcsMediaUploader:
+    def __init__(self, bucket: str, limiter: anyio.CapacityLimiter) -> None:
+        from google.cloud import storage
+
+        self._bucket = storage.Client().bucket(bucket)
+        self._limiter = limiter
+
+    async def put(self, storage_path: str, data: bytes, content_type: str) -> None:
+        blob = self._bucket.blob(storage_path)
+        await anyio.to_thread.run_sync(lambda: blob.upload_from_string(data, content_type=content_type),
+                                       limiter=self._limiter)

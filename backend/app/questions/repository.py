@@ -186,13 +186,40 @@ class QuestionRepository:
             if target == QuestionStatus.ACTIVE and not (group.get("verified") or updates.get("verified")):
                 raise ApiError(ErrorCode.CONFLICT, detail={"reason": "not_verified"})
             txn.update(path, updates)
-            txn.set(f"question_status_history/{group_id}_{now}", {
+            txn.set(f"question_status_history/{group_id}_{now}_{new_uuid()[:8]}", {
                 "schema_version": 1, "question_group_id": group_id, "from": current.value, "to": target.value,
                 "actor_uid": actor_uid, "reason": reason, "at_ms": now,
             })
             return {**group, **updates}
 
         return await self._store.run_transaction(txn_fn)
+
+    async def upsert_translation(self, group_id: str, translation: TranslationInput) -> dict[str, Any]:
+        """Add or edit a not-yet-verified translation of the current version. Editing a verified translation
+        requires a new immutable version (history is never rewritten)."""
+        group = await self.get_group(group_id)
+        if not group:
+            raise ApiError(ErrorCode.NOT_FOUND)
+        version = group["version"]
+        path = f"question_translations/{translation_doc_id(group_id, translation.language, version)}"
+        existing = await self._store.get(path)
+        if existing and existing.get("translation_verified"):
+            raise ApiError(ErrorCode.CONFLICT, detail={"reason": "verified_translation_requires_new_version"})
+        private = await self._store.get(f"question_private/{private_doc_id(group_id, version)}") or {}
+        concepts = {o.concept_id for o in translation.options}
+        if private.get("correct_concept_id") not in concepts:
+            raise ApiError(ErrorCode.INVALID_REQUEST, detail={"reason": "concepts_must_match_version"})
+        doc = QuestionTranslation(question_group_id=group_id, question_version=version,
+                                  language=translation.language, question_text=translation.question_text,
+                                  options=translation.options, translation_verified=translation.verified)
+        problems = validate_competitive_text(doc, private.get("correct_concept_id"))
+        doc.competitive_text_valid = not problems
+        doc.text_hash = text_hash(translation.question_text, translation.options)
+        await self._store.set(path, doc.model_dump())
+        languages = sorted(set(group.get("languages") or []) | {translation.language})
+        await self._store.update(f"question_groups/{group_id}", {"languages": languages,
+                                                                 "updated_at_ms": self._clock.now_ms()})
+        return {**doc.model_dump(), "problems": problems}
 
     async def mark_translation_verified(self, group_id: str, version: int, language: str, verified: bool) -> None:
         await self._store.update(f"question_translations/{translation_doc_id(group_id, language, version)}",
