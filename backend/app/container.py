@@ -156,6 +156,41 @@ class Container:
             return GcsMediaSigner(self.settings.storage_bucket, self.settings.task_service_account, self.io_limiter)
         return EmulatorMediaSigner("127.0.0.1:9199", self.settings.storage_bucket)
 
+    # ---- accounts & safety ----
+    @cached_property
+    def auth_admin(self):
+        from app.auth.admin import FakeAuthAdmin, FirebaseAuthAdmin
+
+        if self.settings.auth_mode == "fake":
+            return FakeAuthAdmin()
+        from app.common.firebase import default_app
+
+        return FirebaseAuthAdmin(self.firebase_app or default_app(self.settings), self.io_limiter)
+
+    @cached_property
+    def catalog(self):
+        from app.catalog.service import CatalogService
+
+        return CatalogService(self.store, ttl_s=0 if self.settings.env == "test" else 30.0)
+
+    @cached_property
+    def profiles(self):
+        from app.profiles.service import ProfileService
+
+        return ProfileService(self.store, self.clock, self.keys, self.catalog)
+
+    @cached_property
+    def safety(self):
+        from app.moderation.safety import SafetyService
+
+        return SafetyService(self.store, self.clock)
+
+    @cached_property
+    def deletion(self):
+        from app.accounts.deletion import DeletionService
+
+        return DeletionService(self.store, self.clock, self.keys, self.auth_admin)
+
     # ---- lifecycle ----
     async def startup(self) -> None:
         from app.tasks.dispatch import dispatch_task
@@ -165,6 +200,10 @@ class Container:
 
         if hasattr(self.tasks, "dispatcher"):
             self.tasks.dispatcher = dispatcher
+        if self.settings.store_backend == "memory":
+            from app.catalog.data import seed_catalogs
+
+            await seed_catalogs(self.store)
 
     async def shutdown(self) -> None:
         if isinstance(self.tasks, LocalTaskScheduler):

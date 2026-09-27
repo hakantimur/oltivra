@@ -80,6 +80,9 @@ async def _main() -> None:
     container = Container(settings)
     status = QuestionStatus(args.status) if args.status else (
         QuestionStatus.ACTIVE if settings.env in ("dev", "test") else QuestionStatus.VALIDATION_PENDING)
+    from app.catalog.data import seed_catalogs
+
+    await seed_catalogs(container.store)
     result = await import_seed(container.question_repo, container.store, status)
     counts = await container.manifest_builder.build_all(list(SEED_LANGUAGES))
     print(json.dumps({"import": result, "manifests": counts}, indent=2))

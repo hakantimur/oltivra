@@ -81,6 +81,20 @@ class Api:
         return self._send("DELETE", path, uid, body, key, extra)
 
 
+    def onboard(self, uid: str, username: str | None = None, avatar_id: str = "av_001") -> dict[str, Any]:
+        """Consent + username + avatar, like the first-run flow."""
+        from app.profiles.service import PRIVACY_VERSION, TERMS_VERSION
+
+        res = self.post("/v1/onboarding/consent", uid, {"age_gate_confirmed": True, "terms_version": TERMS_VERSION,
+                                                         "privacy_version": PRIVACY_VERSION})
+        assert res.status_code == 200, res.text
+        res = self.post("/v1/profile/username", uid, {"username": username or f"user_{uid}"[:16]})
+        assert res.status_code == 200, res.text
+        res = self.patch("/v1/profile/avatar", uid, {"avatar_id": avatar_id})
+        assert res.status_code == 200, res.text
+        return res.json()["profile"]
+
+
 @pytest.fixture
 def api(client: TestClient) -> Api:
     return Api(client)

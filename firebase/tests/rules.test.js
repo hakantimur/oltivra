@@ -3,7 +3,7 @@ import { readFileSync } from "node:fs";
 import { after, before, beforeEach, describe, test } from "node:test";
 
 import { assertFails, assertSucceeds, initializeTestEnvironment } from "@firebase/rules-unit-testing";
-import { doc, getDoc, setDoc } from "firebase/firestore";
+import { collection, doc, getDoc, getDocs, setDoc } from "firebase/firestore";
 import { get, ref, set, update } from "firebase/database";
 import { getBytes, ref as storageRef } from "firebase/storage";
 
@@ -60,9 +60,10 @@ describe("firestore", () => {
   test("server config is server only", async () => {
     await assertFails(getDoc(doc(fsAs("alice"), "server_config/active")));
   });
-  test("public profiles readable when signed in only", async () => {
+  test("public profiles readable one at a time when signed in only", async () => {
     await assertSucceeds(getDoc(doc(fsAs("bob"), "public_profiles/alice")));
     await assertFails(getDoc(doc(fsAs(null), "public_profiles/alice")));
+    await assertFails(getDocs(collection(fsAs("bob"), "public_profiles")));
   });
   test("no client writes anywhere", async () => {
     await assertFails(setDoc(doc(fsAs("alice"), "public_profiles/alice"), { username_display: "x" }));

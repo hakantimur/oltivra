@@ -24,6 +24,7 @@ asyncio_default_fixture_loop_scope = "function"
 testpaths = ["tests"]
 markers = ["integration: requires the Firebase emulator suite (docker compose up emulators)"]
 addopts = "-m 'not integration'"
+filterwarnings = ["ignore::DeprecationWarning:fastapi.testclient", "ignore:Using `httpx`:DeprecationWarning"]
 
 [tool.ruff]
 line-length = 120

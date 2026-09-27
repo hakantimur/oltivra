@@ -9,10 +9,11 @@ service cloud.firestore {
       return request.auth != null;
     }
 
-    // Minimum safe public profile: display username, avatar, frame, league summary.
-    match /public_profiles/{uid} {
-      allow read: if signedIn();
-      allow write: if false;
+    // Minimum safe public profile keyed by the UID-derived public ID. Single-document reads only:
+    // listing would allow username enumeration (search goes through the rate-limited API).
+    match /public_profiles/{publicId} {
+      allow get: if signedIn();
+      allow list, write: if false;
     }
 
     // Curated catalogs and taxonomy are public, non-competitive content.
