@@ -1,0 +1,3602 @@
+[
+ {
+  "key": "technology_inventions_q0001",
+  "category_id": "technology_inventions",
+  "subcategory_id": "computers",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The QWERTY keyboard layout we still type on was first designed for what?",
+   "tr": "Hâlâ kullandığımız QWERTY klavye düzeni ilk olarak ne için tasarlandı?"
+  },
+  "options": [
+   {
+    "concept_id": "typewriters",
+    "en": "Typewriters",
+    "tr": "Daktilolar"
+   },
+   {
+    "concept_id": "telegraph_machines",
+    "en": "Telegraph machines",
+    "tr": "Telgraf makineleri"
+   },
+   {
+    "concept_id": "pianos",
+    "en": "Pianos",
+    "tr": "Piyanolar"
+   },
+   {
+    "concept_id": "cash_registers",
+    "en": "Cash registers",
+    "tr": "Yazar kasalar"
+   }
+  ],
+  "correct": "typewriters",
+  "source": "https://en.wikipedia.org/wiki/QWERTY"
+ },
+ {
+  "key": "technology_inventions_q0002",
+  "category_id": "technology_inventions",
+  "subcategory_id": "computers",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The programming language Java takes its name from what?",
+   "tr": "Java programlama dili adını neden alır?"
+  },
+  "options": [
+   {
+    "concept_id": "coffee_from_java",
+    "en": "Coffee from Java",
+    "tr": "Cava adasının kahvesinden"
+   },
+   {
+    "concept_id": "a_greek_god",
+    "en": "A Greek god",
+    "tr": "Bir Yunan tanrısından"
+   },
+   {
+    "concept_id": "a_famous_robot",
+    "en": "A famous robot",
+    "tr": "Ünlü bir robottan"
+   },
+   {
+    "concept_id": "a_dance",
+    "en": "A dance",
+    "tr": "Bir danstan"
+   }
+  ],
+  "correct": "coffee_from_java",
+  "source": "https://en.wikipedia.org/wiki/Java_(programming_language)"
+ },
+ {
+  "key": "technology_inventions_q0003",
+  "category_id": "technology_inventions",
+  "subcategory_id": "computers",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which three-key combination did Windows users press to restart or open the Task Manager?",
+   "tr": "Windows kullanıcıları yeniden başlatmak ya da Görev Yöneticisi'ni açmak için hangi üç tuşa basardı?"
+  },
+  "options": [
+   {
+    "concept_id": "ctrl_alt_delete",
+    "en": "Ctrl + Alt + Delete",
+    "tr": "Ctrl + Alt + Delete"
+   },
+   {
+    "concept_id": "shift_tab_enter",
+    "en": "Shift + Tab + Enter",
+    "tr": "Shift + Tab + Enter"
+   },
+   {
+    "concept_id": "ctrl_c_v",
+    "en": "Ctrl + C + V",
+    "tr": "Ctrl + C + V"
+   },
+   {
+    "concept_id": "alt_f4_esc",
+    "en": "Alt + F4 + Esc",
+    "tr": "Alt + F4 + Esc"
+   }
+  ],
+  "correct": "ctrl_alt_delete",
+  "source": "https://en.wikipedia.org/wiki/Control-Alt-Delete"
+ },
+ {
+  "key": "technology_inventions_q0004",
+  "category_id": "technology_inventions",
+  "subcategory_id": "computers",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many different values can a single bit hold?",
+   "tr": "Tek bir bit kaç farklı değer alabilir?"
+  },
+  "options": [
+   {
+    "concept_id": "n_2",
+    "en": "2",
+    "tr": "2"
+   },
+   {
+    "concept_id": "n_8",
+    "en": "8",
+    "tr": "8"
+   },
+   {
+    "concept_id": "n_10",
+    "en": "10",
+    "tr": "10"
+   },
+   {
+    "concept_id": "n_16",
+    "en": "16",
+    "tr": "16"
+   }
+  ],
+  "correct": "n_2",
+  "source": "https://en.wikipedia.org/wiki/Bit"
+ },
+ {
+  "key": "technology_inventions_q0005",
+  "category_id": "technology_inventions",
+  "subcategory_id": "computers",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Finnish student started the Linux operating system kernel as a hobby in 1991?",
+   "tr": "Linux işletim sistemi çekirdeğini 1991'de hobi olarak başlatan Finli öğrenci kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "linus_torvalds",
+    "en": "Linus Torvalds",
+    "tr": "Linus Torvalds"
+   },
+   {
+    "concept_id": "bill_gates",
+    "en": "Bill Gates",
+    "tr": "Bill Gates"
+   },
+   {
+    "concept_id": "richard_stallman",
+    "en": "Richard Stallman",
+    "tr": "Richard Stallman"
+   },
+   {
+    "concept_id": "steve_jobs",
+    "en": "Steve Jobs",
+    "tr": "Steve Jobs"
+   }
+  ],
+  "correct": "linus_torvalds",
+  "source": "https://en.wikipedia.org/wiki/Linus_Torvalds"
+ },
+ {
+  "key": "technology_inventions_q0006",
+  "category_id": "technology_inventions",
+  "subcategory_id": "internet",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Unwanted junk email is called \"spam\" after what?",
+   "tr": "İstenmeyen gereksiz e-postalara neden \"spam\" denir?"
+  },
+  "options": [
+   {
+    "concept_id": "a_monty_python_comedy_sketch",
+    "en": "A Monty Python comedy sketch",
+    "tr": "Bir Monty Python skecinden dolayı"
+   },
+   {
+    "concept_id": "a_spider_s_web",
+    "en": "A spider's web",
+    "tr": "Bir örümcek ağından dolayı"
+   },
+   {
+    "concept_id": "a_computer_virus",
+    "en": "A computer virus",
+    "tr": "Bir bilgisayar virüsünden dolayı"
+   },
+   {
+    "concept_id": "a_postal_strike",
+    "en": "A postal strike",
+    "tr": "Bir posta grevinden dolayı"
+   }
+  ],
+  "correct": "a_monty_python_comedy_sketch",
+  "source": "https://en.wikipedia.org/wiki/Spamming"
+ },
+ {
+  "key": "technology_inventions_q0007",
+  "category_id": "technology_inventions",
+  "subcategory_id": "internet",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which free online encyclopedia, launched in 2001, can be edited by almost anyone?",
+   "tr": "2001'de açılan ve neredeyse herkesin düzenleyebildiği ücretsiz çevrim içi ansiklopedi hangisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "wikipedia",
+    "en": "Wikipedia",
+    "tr": "Vikipedi"
+   },
+   {
+    "concept_id": "britannica",
+    "en": "Britannica",
+    "tr": "Britannica"
+   },
+   {
+    "concept_id": "encarta",
+    "en": "Encarta",
+    "tr": "Encarta"
+   },
+   {
+    "concept_id": "quora",
+    "en": "Quora",
+    "tr": "Quora"
+   }
+  ],
+  "correct": "wikipedia",
+  "source": "https://en.wikipedia.org/wiki/Wikipedia"
+ },
+ {
+  "key": "technology_inventions_q0008",
+  "category_id": "technology_inventions",
+  "subcategory_id": "internet",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Bluetooth is named after a 10th-century king of which country?",
+   "tr": "Bluetooth, hangi ülkenin 10. yüzyıldaki bir kralının adını taşır?"
+  },
+  "options": [
+   {
+    "concept_id": "denmark",
+    "en": "Denmark",
+    "tr": "Danimarka"
+   },
+   {
+    "concept_id": "england",
+    "en": "England",
+    "tr": "İngiltere"
+   },
+   {
+    "concept_id": "scotland",
+    "en": "Scotland",
+    "tr": "İskoçya"
+   },
+   {
+    "concept_id": "poland",
+    "en": "Poland",
+    "tr": "Polonya"
+   }
+  ],
+  "correct": "denmark",
+  "source": "https://en.wikipedia.org/wiki/Bluetooth"
+ },
+ {
+  "key": "technology_inventions_q0009",
+  "category_id": "technology_inventions",
+  "subcategory_id": "internet",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The very first YouTube video, \"Me at the zoo\" (2005), lasts about how long?",
+   "tr": "YouTube'a yüklenen ilk video \"Me at the zoo\" (2005) yaklaşık ne kadar sürer?"
+  },
+  "options": [
+   {
+    "concept_id": "n_19_seconds",
+    "en": "19 seconds",
+    "tr": "19 saniye"
+   },
+   {
+    "concept_id": "n_3_minutes",
+    "en": "3 minutes",
+    "tr": "3 dakika"
+   },
+   {
+    "concept_id": "n_10_minutes",
+    "en": "10 minutes",
+    "tr": "10 dakika"
+   },
+   {
+    "concept_id": "n_1_hour",
+    "en": "1 hour",
+    "tr": "1 saat"
+   }
+  ],
+  "correct": "n_19_seconds",
+  "source": "https://en.wikipedia.org/wiki/Me_at_the_zoo"
+ },
+ {
+  "key": "technology_inventions_q0010",
+  "category_id": "technology_inventions",
+  "subcategory_id": "internet",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In 1971 Ray Tomlinson picked which symbol to separate a user's name from the computer in email addresses?",
+   "tr": "Ray Tomlinson 1971'de e-posta adreslerinde kullanıcı adını bilgisayardan ayırmak için hangi simgeyi seçti?"
+  },
+  "options": [
+   {
+    "concept_id": "at_sign",
+    "en": "@ (at sign)",
+    "tr": "@ (et işareti)"
+   },
+   {
+    "concept_id": "hash",
+    "en": "# (hash)",
+    "tr": "# (diyez)"
+   },
+   {
+    "concept_id": "ampersand",
+    "en": "& (ampersand)",
+    "tr": "& (ve işareti)"
+   },
+   {
+    "concept_id": "percent",
+    "en": "% (percent)",
+    "tr": "% (yüzde)"
+   }
+  ],
+  "correct": "at_sign",
+  "source": "https://en.wikipedia.org/wiki/Ray_Tomlinson"
+ },
+ {
+  "key": "technology_inventions_q0011",
+  "category_id": "technology_inventions",
+  "subcategory_id": "ai_basics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What does \"GPT\" stand for in ChatGPT?",
+   "tr": "ChatGPT'deki \"GPT\" neyin kısaltmasıdır?"
+  },
+  "options": [
+   {
+    "concept_id": "generative_pre_trained_transformer",
+    "en": "Generative Pre-trained Transformer",
+    "tr": "Generative Pre-trained Transformer"
+   },
+   {
+    "concept_id": "general_purpose_technology",
+    "en": "General Purpose Technology",
+    "tr": "General Purpose Technology"
+   },
+   {
+    "concept_id": "global_processing_tool",
+    "en": "Global Processing Tool",
+    "tr": "Global Processing Tool"
+   },
+   {
+    "concept_id": "graphic_picture_translator",
+    "en": "Graphic Picture Translator",
+    "tr": "Graphic Picture Translator"
+   }
+  ],
+  "correct": "generative_pre_trained_transformer",
+  "source": "https://en.wikipedia.org/wiki/Generative_pre-trained_transformer"
+ },
+ {
+  "key": "technology_inventions_q0012",
+  "category_id": "technology_inventions",
+  "subcategory_id": "ai_basics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In which year was ChatGPT released to the public?",
+   "tr": "ChatGPT hangi yıl herkesin kullanımına açıldı?"
+  },
+  "options": [
+   {
+    "concept_id": "n_2022",
+    "en": "2022",
+    "tr": "2022"
+   },
+   {
+    "concept_id": "n_2012",
+    "en": "2012",
+    "tr": "2012"
+   },
+   {
+    "concept_id": "n_2016",
+    "en": "2016",
+    "tr": "2016"
+   },
+   {
+    "concept_id": "n_2019",
+    "en": "2019",
+    "tr": "2019"
+   }
+  ],
+  "correct": "n_2022",
+  "source": "https://en.wikipedia.org/wiki/ChatGPT"
+ },
+ {
+  "key": "technology_inventions_q0013",
+  "category_id": "technology_inventions",
+  "subcategory_id": "ai_basics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "When an AI chatbot confidently makes up facts that are false, what is this called?",
+   "tr": "Bir yapay zekâ sohbet botu kendinden emin şekilde yanlış bilgiler uydurduğunda buna ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "a_hallucination",
+    "en": "A hallucination",
+    "tr": "Halüsinasyon"
+   },
+   {
+    "concept_id": "a_firewall",
+    "en": "A firewall",
+    "tr": "Güvenlik duvarı"
+   },
+   {
+    "concept_id": "a_glitch_art",
+    "en": "A glitch art",
+    "tr": "Glitch sanatı"
+   },
+   {
+    "concept_id": "a_captcha",
+    "en": "A captcha",
+    "tr": "Captcha"
+   }
+  ],
+  "correct": "a_hallucination",
+  "source": "https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)"
+ },
+ {
+  "key": "technology_inventions_q0014",
+  "category_id": "technology_inventions",
+  "subcategory_id": "ai_basics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which science-fiction writer came up with the famous \"Three Laws of Robotics\"?",
+   "tr": "Ünlü \"Robotiğin Üç Yasası\"nı hangi bilimkurgu yazarı ortaya attı?"
+  },
+  "options": [
+   {
+    "concept_id": "isaac_asimov",
+    "en": "Isaac Asimov",
+    "tr": "Isaac Asimov"
+   },
+   {
+    "concept_id": "h_g_wells",
+    "en": "H. G. Wells",
+    "tr": "H. G. Wells"
+   },
+   {
+    "concept_id": "jules_verne",
+    "en": "Jules Verne",
+    "tr": "Jules Verne"
+   },
+   {
+    "concept_id": "arthur_c_clarke",
+    "en": "Arthur C. Clarke",
+    "tr": "Arthur C. Clarke"
+   }
+  ],
+  "correct": "isaac_asimov",
+  "source": "https://en.wikipedia.org/wiki/Three_Laws_of_Robotics"
+ },
+ {
+  "key": "technology_inventions_q0015",
+  "category_id": "technology_inventions",
+  "subcategory_id": "ai_basics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which company makes the Roomba robot vacuum cleaner?",
+   "tr": "Roomba robot süpürgeyi hangi şirket üretir?"
+  },
+  "options": [
+   {
+    "concept_id": "irobot",
+    "en": "iRobot",
+    "tr": "iRobot"
+   },
+   {
+    "concept_id": "dyson",
+    "en": "Dyson",
+    "tr": "Dyson"
+   },
+   {
+    "concept_id": "tesla",
+    "en": "Tesla",
+    "tr": "Tesla"
+   },
+   {
+    "concept_id": "boston_dynamics",
+    "en": "Boston Dynamics",
+    "tr": "Boston Dynamics"
+   }
+  ],
+  "correct": "irobot",
+  "source": "https://en.wikipedia.org/wiki/Roomba"
+ },
+ {
+  "key": "technology_inventions_q0016",
+  "category_id": "technology_inventions",
+  "subcategory_id": "smartphones",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which classic game on Nokia phones had a line that grew longer every time it ate?",
+   "tr": "Nokia telefonlarındaki hangi klasik oyunda her yem yiyişte uzayan bir çizgi vardı?"
+  },
+  "options": [
+   {
+    "concept_id": "snake",
+    "en": "Snake",
+    "tr": "Yılan"
+   },
+   {
+    "concept_id": "tetris",
+    "en": "Tetris",
+    "tr": "Tetris"
+   },
+   {
+    "concept_id": "pac_man",
+    "en": "Pac-Man",
+    "tr": "Pac-Man"
+   },
+   {
+    "concept_id": "space_impact",
+    "en": "Space Impact",
+    "tr": "Space Impact"
+   }
+  ],
+  "correct": "snake",
+  "source": "https://en.wikipedia.org/wiki/Snake_(video_game_genre)"
+ },
+ {
+  "key": "technology_inventions_q0017",
+  "category_id": "technology_inventions",
+  "subcategory_id": "smartphones",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "A classic SMS text message is limited to how many characters?",
+   "tr": "Klasik bir SMS kısa mesajı en fazla kaç karakter olabilir?"
+  },
+  "options": [
+   {
+    "concept_id": "n_160",
+    "en": "160",
+    "tr": "160"
+   },
+   {
+    "concept_id": "n_100",
+    "en": "100",
+    "tr": "100"
+   },
+   {
+    "concept_id": "n_256",
+    "en": "256",
+    "tr": "256"
+   },
+   {
+    "concept_id": "n_500",
+    "en": "500",
+    "tr": "500"
+   }
+  ],
+  "correct": "n_160",
+  "source": "https://en.wikipedia.org/wiki/SMS"
+ },
+ {
+  "key": "technology_inventions_q0018",
+  "category_id": "technology_inventions",
+  "subcategory_id": "smartphones",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The first emoji, created in Japan in 1999, were designed for what?",
+   "tr": "1999'da Japonya'da yaratılan ilk emojiler ne için tasarlandı?"
+  },
+  "options": [
+   {
+    "concept_id": "a_mobile_phone_internet_service",
+    "en": "A mobile phone internet service",
+    "tr": "Bir cep telefonu internet hizmeti"
+   },
+   {
+    "concept_id": "a_children_s_comic",
+    "en": "A children's comic",
+    "tr": "Bir çocuk çizgi romanı"
+   },
+   {
+    "concept_id": "a_video_game_console",
+    "en": "A video game console",
+    "tr": "Bir oyun konsolu"
+   },
+   {
+    "concept_id": "railway_timetables",
+    "en": "Railway timetables",
+    "tr": "Tren tarifeleri"
+   }
+  ],
+  "correct": "a_mobile_phone_internet_service",
+  "source": "https://en.wikipedia.org/wiki/Emoji"
+ },
+ {
+  "key": "technology_inventions_q0019",
+  "category_id": "technology_inventions",
+  "subcategory_id": "smartphones",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which 2009 Finnish mobile game has birds catapulted at green pigs?",
+   "tr": "2009 çıkışlı hangi Fin mobil oyununda kuşlar sapanla yeşil domuzlara fırlatılır?"
+  },
+  "options": [
+   {
+    "concept_id": "angry_birds",
+    "en": "Angry Birds",
+    "tr": "Angry Birds"
+   },
+   {
+    "concept_id": "flappy_bird",
+    "en": "Flappy Bird",
+    "tr": "Flappy Bird"
+   },
+   {
+    "concept_id": "cut_the_rope",
+    "en": "Cut the Rope",
+    "tr": "Cut the Rope"
+   },
+   {
+    "concept_id": "fruit_ninja",
+    "en": "Fruit Ninja",
+    "tr": "Fruit Ninja"
+   }
+  ],
+  "correct": "angry_birds",
+  "source": "https://en.wikipedia.org/wiki/Angry_Birds"
+ },
+ {
+  "key": "technology_inventions_q0020",
+  "category_id": "technology_inventions",
+  "subcategory_id": "smartphones",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What does \"SIM\" stand for in SIM card?",
+   "tr": "SIM kartındaki \"SIM\" neyin kısaltmasıdır?"
+  },
+  "options": [
+   {
+    "concept_id": "subscriber_identity_module",
+    "en": "Subscriber Identity Module",
+    "tr": "Subscriber Identity Module"
+   },
+   {
+    "concept_id": "smart_internet_memory",
+    "en": "Smart Internet Memory",
+    "tr": "Smart Internet Memory"
+   },
+   {
+    "concept_id": "signal_input_modem",
+    "en": "Signal Input Modem",
+    "tr": "Signal Input Modem"
+   },
+   {
+    "concept_id": "secure_instant_message",
+    "en": "Secure Instant Message",
+    "tr": "Secure Instant Message"
+   }
+  ],
+  "correct": "subscriber_identity_module",
+  "source": "https://en.wikipedia.org/wiki/SIM_card"
+ },
+ {
+  "key": "technology_inventions_q0021",
+  "category_id": "technology_inventions",
+  "subcategory_id": "inventions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What melted in Percy Spencer's pocket in 1945, leading him to invent the microwave oven?",
+   "tr": "1945'te Percy Spencer'ın cebinde ne eridi de mikrodalga fırını icat etmesine yol açtı?"
+  },
+  "options": [
+   {
+    "concept_id": "a_chocolate_bar",
+    "en": "A chocolate bar",
+    "tr": "Bir çikolata"
+   },
+   {
+    "concept_id": "an_ice_cube",
+    "en": "An ice cube",
+    "tr": "Bir buz küpü"
+   },
+   {
+    "concept_id": "a_candle",
+    "en": "A candle",
+    "tr": "Bir mum"
+   },
+   {
+    "concept_id": "a_plastic_comb",
+    "en": "A plastic comb",
+    "tr": "Plastik bir tarak"
+   }
+  ],
+  "correct": "a_chocolate_bar",
+  "source": "https://en.wikipedia.org/wiki/Microwave_oven"
+ },
+ {
+  "key": "technology_inventions_q0022",
+  "category_id": "technology_inventions",
+  "subcategory_id": "inventions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Velcro was inspired by what, stuck to its inventor's dog after a walk?",
+   "tr": "Cırt cırt (Velcro), bir yürüyüşten sonra mucidin köpeğine yapışan neyden esinlendi?"
+  },
+  "options": [
+   {
+    "concept_id": "burrs_from_a_plant",
+    "en": "Burrs from a plant",
+    "tr": "Bir bitkinin dikenli tohumlarından"
+   },
+   {
+    "concept_id": "chewing_gum",
+    "en": "Chewing gum",
+    "tr": "Sakızdan"
+   },
+   {
+    "concept_id": "fish_scales",
+    "en": "Fish scales",
+    "tr": "Balık pullarından"
+   },
+   {
+    "concept_id": "spider_silk",
+    "en": "Spider silk",
+    "tr": "Örümcek ipeğinden"
+   }
+  ],
+  "correct": "burrs_from_a_plant",
+  "source": "https://en.wikipedia.org/wiki/Hook-and-loop_fastener"
+ },
+ {
+  "key": "technology_inventions_q0023",
+  "category_id": "technology_inventions",
+  "subcategory_id": "inventions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which colourful puzzle cube was invented in 1974 by a Hungarian design professor?",
+   "tr": "Hangi renkli bulmaca küpü 1974'te Macar bir tasarım profesörü tarafından icat edildi?"
+  },
+  "options": [
+   {
+    "concept_id": "rubik_s_cube",
+    "en": "Rubik's Cube",
+    "tr": "Rubik Küpü"
+   },
+   {
+    "concept_id": "tangram",
+    "en": "Tangram",
+    "tr": "Tangram"
+   },
+   {
+    "concept_id": "jenga",
+    "en": "Jenga",
+    "tr": "Jenga"
+   },
+   {
+    "concept_id": "sudoku",
+    "en": "Sudoku",
+    "tr": "Sudoku"
+   }
+  ],
+  "correct": "rubik_s_cube",
+  "source": "https://en.wikipedia.org/wiki/Rubik's_Cube"
+ },
+ {
+  "key": "technology_inventions_q0024",
+  "category_id": "technology_inventions",
+  "subcategory_id": "inventions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "LEGO bricks made today still fit bricks from which year, when the modern design was patented?",
+   "tr": "Bugün üretilen LEGO parçaları, modern tasarımın patentlendiği hangi yılın parçalarına hâlâ uyar?"
+  },
+  "options": [
+   {
+    "concept_id": "n_1958",
+    "en": "1958",
+    "tr": "1958"
+   },
+   {
+    "concept_id": "n_1908",
+    "en": "1908",
+    "tr": "1908"
+   },
+   {
+    "concept_id": "n_1978",
+    "en": "1978",
+    "tr": "1978"
+   },
+   {
+    "concept_id": "n_1998",
+    "en": "1998",
+    "tr": "1998"
+   }
+  ],
+  "correct": "n_1958",
+  "source": "https://en.wikipedia.org/wiki/Lego"
+ },
+ {
+  "key": "technology_inventions_q0025",
+  "category_id": "technology_inventions",
+  "subcategory_id": "inventions",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The ballpoint pen is called a \"biro\" in many countries after which Hungarian-born inventor?",
+   "tr": "Tükenmez kalem pek çok ülkede hangi Macar asıllı mucit yüzünden \"biro\" diye anılır?"
+  },
+  "options": [
+   {
+    "concept_id": "laszlo_biro",
+    "en": "László Bíró",
+    "tr": "László Bíró"
+   },
+   {
+    "concept_id": "erno_rubik",
+    "en": "Ernő Rubik",
+    "tr": "Ernő Rubik"
+   },
+   {
+    "concept_id": "john_loud",
+    "en": "John Loud",
+    "tr": "John Loud"
+   },
+   {
+    "concept_id": "lewis_waterman",
+    "en": "Lewis Waterman",
+    "tr": "Lewis Waterman"
+   }
+  ],
+  "correct": "laszlo_biro",
+  "source": "https://en.wikipedia.org/wiki/László_Bíró"
+ },
+ {
+  "key": "technology_inventions_q0026",
+  "category_id": "technology_inventions",
+  "subcategory_id": "inventors",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Hollywood actress co-invented frequency hopping, an idea later used in Wi-Fi and Bluetooth?",
+   "tr": "Hangi Hollywood oyuncusu, daha sonra Wi-Fi ve Bluetooth'ta kullanılan frekans atlamalı iletişimin mucitlerindendir?"
+  },
+  "options": [
+   {
+    "concept_id": "hedy_lamarr",
+    "en": "Hedy Lamarr",
+    "tr": "Hedy Lamarr"
+   },
+   {
+    "concept_id": "marilyn_monroe",
+    "en": "Marilyn Monroe",
+    "tr": "Marilyn Monroe"
+   },
+   {
+    "concept_id": "grace_kelly",
+    "en": "Grace Kelly",
+    "tr": "Grace Kelly"
+   },
+   {
+    "concept_id": "audrey_hepburn",
+    "en": "Audrey Hepburn",
+    "tr": "Audrey Hepburn"
+   }
+  ],
+  "correct": "hedy_lamarr",
+  "source": "https://en.wikipedia.org/wiki/Hedy_Lamarr"
+ },
+ {
+  "key": "technology_inventions_q0027",
+  "category_id": "technology_inventions",
+  "subcategory_id": "inventors",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Before creating Morse code, Samuel Morse was best known as what?",
+   "tr": "Mors alfabesini yaratmadan önce Samuel Morse en çok ne olarak tanınıyordu?"
+  },
+  "options": [
+   {
+    "concept_id": "a_painter",
+    "en": "A painter",
+    "tr": "Ressam"
+   },
+   {
+    "concept_id": "a_sailor",
+    "en": "A sailor",
+    "tr": "Denizci"
+   },
+   {
+    "concept_id": "a_doctor",
+    "en": "A doctor",
+    "tr": "Doktor"
+   },
+   {
+    "concept_id": "a_banker",
+    "en": "A banker",
+    "tr": "Bankacı"
+   }
+  ],
+  "correct": "a_painter",
+  "source": "https://en.wikipedia.org/wiki/Samuel_Morse"
+ },
+ {
+  "key": "technology_inventions_q0028",
+  "category_id": "technology_inventions",
+  "subcategory_id": "inventors",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "James Dyson built roughly how many prototypes before his bagless vacuum cleaner worked?",
+   "tr": "James Dyson torbasız elektrikli süpürgesi çalışana kadar yaklaşık kaç prototip yaptı?"
+  },
+  "options": [
+   {
+    "concept_id": "n_5_127",
+    "en": "5,127",
+    "tr": "5.127"
+   },
+   {
+    "concept_id": "n_12",
+    "en": "12",
+    "tr": "12"
+   },
+   {
+    "concept_id": "n_300",
+    "en": "300",
+    "tr": "300"
+   },
+   {
+    "concept_id": "n_50_000",
+    "en": "50,000",
+    "tr": "50.000"
+   }
+  ],
+  "correct": "n_5_127",
+  "source": "https://en.wikipedia.org/wiki/James_Dyson"
+ },
+ {
+  "key": "technology_inventions_q0029",
+  "category_id": "technology_inventions",
+  "subcategory_id": "inventors",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Apple co-founder designed and hand-built the Apple I computer?",
+   "tr": "Apple I bilgisayarını tasarlayıp elle yapan Apple kurucu ortağı kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "steve_wozniak",
+    "en": "Steve Wozniak",
+    "tr": "Steve Wozniak"
+   },
+   {
+    "concept_id": "steve_jobs",
+    "en": "Steve Jobs",
+    "tr": "Steve Jobs"
+   },
+   {
+    "concept_id": "tim_cook",
+    "en": "Tim Cook",
+    "tr": "Tim Cook"
+   },
+   {
+    "concept_id": "ronald_wayne",
+    "en": "Ronald Wayne",
+    "tr": "Ronald Wayne"
+   }
+  ],
+  "correct": "steve_wozniak",
+  "source": "https://en.wikipedia.org/wiki/Steve_Wozniak"
+ },
+ {
+  "key": "technology_inventions_q0030",
+  "category_id": "technology_inventions",
+  "subcategory_id": "inventors",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Louis Braille, inventor of raised-dot writing, lost his sight as a child through an accident with what?",
+   "tr": "Kabartma noktalı yazının mucidi Louis Braille çocukken neyle yaşadığı bir kaza sonucu görme yetisini kaybetti?"
+  },
+  "options": [
+   {
+    "concept_id": "a_tool_in_his_father_s_workshop",
+    "en": "A tool in his father's workshop",
+    "tr": "Babasının atölyesindeki bir aletle"
+   },
+   {
+    "concept_id": "fireworks",
+    "en": "Fireworks",
+    "tr": "Havai fişekle"
+   },
+   {
+    "concept_id": "a_horse",
+    "en": "A horse",
+    "tr": "Bir atla"
+   },
+   {
+    "concept_id": "a_bee_sting",
+    "en": "A bee sting",
+    "tr": "Arı sokmasıyla"
+   }
+  ],
+  "correct": "a_tool_in_his_father_s_workshop",
+  "source": "https://en.wikipedia.org/wiki/Louis_Braille"
+ },
+ {
+  "key": "technology_inventions_q0031",
+  "category_id": "technology_inventions",
+  "subcategory_id": "space_technology",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What was the small helicopter that made the first powered flight on Mars in 2021 called?",
+   "tr": "2021'de Mars'ta ilk motorlu uçuşu yapan küçük helikopterin adı nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "ingenuity",
+    "en": "Ingenuity",
+    "tr": "Ingenuity"
+   },
+   {
+    "concept_id": "curiosity",
+    "en": "Curiosity",
+    "tr": "Curiosity"
+   },
+   {
+    "concept_id": "sojourner",
+    "en": "Sojourner",
+    "tr": "Sojourner"
+   },
+   {
+    "concept_id": "spirit",
+    "en": "Spirit",
+    "tr": "Spirit"
+   }
+  ],
+  "correct": "ingenuity",
+  "source": "https://en.wikipedia.org/wiki/Ingenuity_(helicopter)"
+ },
+ {
+  "key": "technology_inventions_q0032",
+  "category_id": "technology_inventions",
+  "subcategory_id": "space_technology",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What made SpaceX's Falcon 9 flight of December 2015 historic?",
+   "tr": "SpaceX'in Aralık 2015'teki Falcon 9 uçuşunu tarihi yapan neydi?"
+  },
+  "options": [
+   {
+    "concept_id": "its_booster_landed_back_upright",
+    "en": "Its booster landed back upright",
+    "tr": "İtici roket dik şekilde geri indi"
+   },
+   {
+    "concept_id": "it_carried_the_first_tourist",
+    "en": "It carried the first tourist",
+    "tr": "İlk turisti taşıdı"
+   },
+   {
+    "concept_id": "it_reached_mars",
+    "en": "It reached Mars",
+    "tr": "Mars'a ulaştı"
+   },
+   {
+    "concept_id": "it_was_launched_from_a_ship",
+    "en": "It was launched from a ship",
+    "tr": "Bir gemiden fırlatıldı"
+   }
+  ],
+  "correct": "its_booster_landed_back_upright",
+  "source": "https://en.wikipedia.org/wiki/Falcon_9"
+ },
+ {
+  "key": "technology_inventions_q0033",
+  "category_id": "technology_inventions",
+  "subcategory_id": "space_technology",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Turkish astronaut flew to the International Space Station in January 2024?",
+   "tr": "Ocak 2024'te Uluslararası Uzay İstasyonu'na giden Türk astronot kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "alper_gezeravc",
+    "en": "Alper Gezeravcı",
+    "tr": "Alper Gezeravcı"
+   },
+   {
+    "concept_id": "tuva_cihangir_atasever",
+    "en": "Tuva Cihangir Atasever",
+    "tr": "Tuva Cihangir Atasever"
+   },
+   {
+    "concept_id": "cahit_arf",
+    "en": "Cahit Arf",
+    "tr": "Cahit Arf"
+   },
+   {
+    "concept_id": "aziz_sancar",
+    "en": "Aziz Sancar",
+    "tr": "Aziz Sancar"
+   }
+  ],
+  "correct": "alper_gezeravc",
+  "source": "https://en.wikipedia.org/wiki/Alper_Gezeravcı"
+ },
+ {
+  "key": "technology_inventions_q0034",
+  "category_id": "technology_inventions",
+  "subcategory_id": "space_technology",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The International Space Station races around Earth at roughly what speed?",
+   "tr": "Uluslararası Uzay İstasyonu Dünya'nın çevresinde yaklaşık hangi hızla döner?"
+  },
+  "options": [
+   {
+    "concept_id": "about_28_000_km_h",
+    "en": "About 28,000 km/h",
+    "tr": "Yaklaşık 28.000 km/sa"
+   },
+   {
+    "concept_id": "about_900_km_h",
+    "en": "About 900 km/h",
+    "tr": "Yaklaşık 900 km/sa"
+   },
+   {
+    "concept_id": "about_3_000_km_h",
+    "en": "About 3,000 km/h",
+    "tr": "Yaklaşık 3.000 km/sa"
+   },
+   {
+    "concept_id": "about_300_000_km_h",
+    "en": "About 300,000 km/h",
+    "tr": "Yaklaşık 300.000 km/sa"
+   }
+  ],
+  "correct": "about_28_000_km_h",
+  "source": "https://en.wikipedia.org/wiki/International_Space_Station"
+ },
+ {
+  "key": "technology_inventions_q0035",
+  "category_id": "technology_inventions",
+  "subcategory_id": "space_technology",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In 2023, which country's Chandrayaan-3 became the first to land near the Moon's south pole?",
+   "tr": "2023'te hangi ülkenin Chandrayaan-3 aracı Ay'ın güney kutbu yakınına inen ilk araç oldu?"
+  },
+  "options": [
+   {
+    "concept_id": "india",
+    "en": "India",
+    "tr": "Hindistan"
+   },
+   {
+    "concept_id": "china",
+    "en": "China",
+    "tr": "Çin"
+   },
+   {
+    "concept_id": "japan",
+    "en": "Japan",
+    "tr": "Japonya"
+   },
+   {
+    "concept_id": "russia",
+    "en": "Russia",
+    "tr": "Rusya"
+   }
+  ],
+  "correct": "india",
+  "source": "https://en.wikipedia.org/wiki/Chandrayaan-3"
+ },
+ {
+  "key": "technology_inventions_q0036",
+  "category_id": "technology_inventions",
+  "subcategory_id": "tech_history",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "When Nintendo was founded in 1889, what did it make?",
+   "tr": "Nintendo 1889'da kurulduğunda ne üretiyordu?"
+  },
+  "options": [
+   {
+    "concept_id": "playing_cards",
+    "en": "Playing cards",
+    "tr": "Oyun kartları"
+   },
+   {
+    "concept_id": "bicycles",
+    "en": "Bicycles",
+    "tr": "Bisikletler"
+   },
+   {
+    "concept_id": "radios",
+    "en": "Radios",
+    "tr": "Radyolar"
+   },
+   {
+    "concept_id": "rice_cookers",
+    "en": "Rice cookers",
+    "tr": "Pilav pişiriciler"
+   }
+  ],
+  "correct": "playing_cards",
+  "source": "https://en.wikipedia.org/wiki/Nintendo"
+ },
+ {
+  "key": "technology_inventions_q0037",
+  "category_id": "technology_inventions",
+  "subcategory_id": "tech_history",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Samsung began in 1938 as a small trading company selling what?",
+   "tr": "Samsung 1938'de ne satan küçük bir ticaret şirketi olarak başladı?"
+  },
+  "options": [
+   {
+    "concept_id": "dried_fish_vegetables_and_noodles",
+    "en": "Dried fish, vegetables and noodles",
+    "tr": "Kuru balık, sebze ve erişte"
+   },
+   {
+    "concept_id": "televisions",
+    "en": "Televisions",
+    "tr": "Televizyon"
+   },
+   {
+    "concept_id": "steel",
+    "en": "Steel",
+    "tr": "Çelik"
+   },
+   {
+    "concept_id": "watches",
+    "en": "Watches",
+    "tr": "Saat"
+   }
+  ],
+  "correct": "dried_fish_vegetables_and_noodles",
+  "source": "https://en.wikipedia.org/wiki/Samsung"
+ },
+ {
+  "key": "technology_inventions_q0038",
+  "category_id": "technology_inventions",
+  "subcategory_id": "tech_history",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which falling-block puzzle game was created by Alexey Pajitnov in Moscow in 1984?",
+   "tr": "Hangi düşen bloklu bulmaca oyunu 1984'te Moskova'da Alexey Pajitnov tarafından yaratıldı?"
+  },
+  "options": [
+   {
+    "concept_id": "tetris",
+    "en": "Tetris",
+    "tr": "Tetris"
+   },
+   {
+    "concept_id": "pac_man",
+    "en": "Pac-Man",
+    "tr": "Pac-Man"
+   },
+   {
+    "concept_id": "minesweeper",
+    "en": "Minesweeper",
+    "tr": "Mayın Tarlası"
+   },
+   {
+    "concept_id": "pong",
+    "en": "Pong",
+    "tr": "Pong"
+   }
+  ],
+  "correct": "tetris",
+  "source": "https://en.wikipedia.org/wiki/Tetris"
+ },
+ {
+  "key": "technology_inventions_q0039",
+  "category_id": "technology_inventions",
+  "subcategory_id": "tech_history",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Apple's first iPod in 2001 promised how many songs in your pocket?",
+   "tr": "Apple'ın 2001'deki ilk iPod'u cebinize kaç şarkı sığdırmayı vaat ediyordu?"
+  },
+  "options": [
+   {
+    "concept_id": "n_1_000",
+    "en": "1,000",
+    "tr": "1.000"
+   },
+   {
+    "concept_id": "n_100",
+    "en": "100",
+    "tr": "100"
+   },
+   {
+    "concept_id": "n_10_000",
+    "en": "10,000",
+    "tr": "10.000"
+   },
+   {
+    "concept_id": "n_1_million",
+    "en": "1 million",
+    "tr": "1 milyon"
+   }
+  ],
+  "correct": "n_1_000",
+  "source": "https://en.wikipedia.org/wiki/IPod_Classic"
+ },
+ {
+  "key": "technology_inventions_q0040",
+  "category_id": "technology_inventions",
+  "subcategory_id": "tech_history",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Turkish car brand unveiled its first model, the electric T10X, in 2022?",
+   "tr": "Hangi Türk otomobil markası ilk modeli olan elektrikli T10X'i 2022'de tanıttı?"
+  },
+  "options": [
+   {
+    "concept_id": "togg",
+    "en": "Togg",
+    "tr": "Togg"
+   },
+   {
+    "concept_id": "tofas",
+    "en": "Tofaş",
+    "tr": "Tofaş"
+   },
+   {
+    "concept_id": "otokar",
+    "en": "Otokar",
+    "tr": "Otokar"
+   },
+   {
+    "concept_id": "karsan",
+    "en": "Karsan",
+    "tr": "Karsan"
+   }
+  ],
+  "correct": "togg",
+  "source": "https://en.wikipedia.org/wiki/Togg"
+ },
+ {
+  "key": "technology_inventions_q0041",
+  "category_id": "technology_inventions",
+  "subcategory_id": "computers",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who invented the computer mouse in the 1960s?",
+   "tr": "Bilgisayar faresini 1960'larda kim icat etti?"
+  },
+  "options": [
+   {
+    "concept_id": "douglas_engelbart",
+    "en": "Douglas Engelbart",
+    "tr": "Douglas Engelbart"
+   },
+   {
+    "concept_id": "alan_turing",
+    "en": "Alan Turing",
+    "tr": "Alan Turing"
+   },
+   {
+    "concept_id": "steve_jobs",
+    "en": "Steve Jobs",
+    "tr": "Steve Jobs"
+   },
+   {
+    "concept_id": "john_von_neumann",
+    "en": "John von Neumann",
+    "tr": "John von Neumann"
+   }
+  ],
+  "correct": "douglas_engelbart",
+  "source": "https://en.wikipedia.org/wiki/Douglas_Engelbart"
+ },
+ {
+  "key": "technology_inventions_q0042",
+  "category_id": "technology_inventions",
+  "subcategory_id": "computers",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "In 1947 Grace Hopper's team found a real \"bug\" jamming the Harvard Mark II computer. What was it?",
+   "tr": "1947'de Grace Hopper'ın ekibi Harvard Mark II bilgisayarını bozan gerçek bir \"böcek\" buldu. Neydi?"
+  },
+  "options": [
+   {
+    "concept_id": "a_moth",
+    "en": "A moth",
+    "tr": "Bir güve"
+   },
+   {
+    "concept_id": "a_cockroach",
+    "en": "A cockroach",
+    "tr": "Bir hamam böceği"
+   },
+   {
+    "concept_id": "a_spider",
+    "en": "A spider",
+    "tr": "Bir örümcek"
+   },
+   {
+    "concept_id": "a_mouse",
+    "en": "A mouse",
+    "tr": "Bir fare"
+   }
+  ],
+  "correct": "a_moth",
+  "source": "https://en.wikipedia.org/wiki/Software_bug"
+ },
+ {
+  "key": "technology_inventions_q0043",
+  "category_id": "technology_inventions",
+  "subcategory_id": "computers",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "IBM's first hard disk drive (1956) was as big as two fridges. Roughly how much data did it hold?",
+   "tr": "IBM'in ilk sabit diski (1956) iki buzdolabı büyüklüğündeydi. Yaklaşık ne kadar veri tutuyordu?"
+  },
+  "options": [
+   {
+    "concept_id": "about_3_75_mb",
+    "en": "About 3.75 MB",
+    "tr": "Yaklaşık 3,75 MB"
+   },
+   {
+    "concept_id": "about_1_kb",
+    "en": "About 1 KB",
+    "tr": "Yaklaşık 1 KB"
+   },
+   {
+    "concept_id": "about_500_mb",
+    "en": "About 500 MB",
+    "tr": "Yaklaşık 500 MB"
+   },
+   {
+    "concept_id": "about_1_gb",
+    "en": "About 1 GB",
+    "tr": "Yaklaşık 1 GB"
+   }
+  ],
+  "correct": "about_3_75_mb",
+  "source": "https://en.wikipedia.org/wiki/IBM_350"
+ },
+ {
+  "key": "technology_inventions_q0044",
+  "category_id": "technology_inventions",
+  "subcategory_id": "computers",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which research centre pioneered the windows-and-icons interface that inspired the Apple Macintosh?",
+   "tr": "Apple Macintosh'a ilham veren pencere ve simgeli arayüzün öncüsü hangi araştırma merkezidir?"
+  },
+  "options": [
+   {
+    "concept_id": "xerox_parc",
+    "en": "Xerox PARC",
+    "tr": "Xerox PARC"
+   },
+   {
+    "concept_id": "bell_labs",
+    "en": "Bell Labs",
+    "tr": "Bell Labs"
+   },
+   {
+    "concept_id": "mit_media_lab",
+    "en": "MIT Media Lab",
+    "tr": "MIT Media Lab"
+   },
+   {
+    "concept_id": "cern",
+    "en": "CERN",
+    "tr": "CERN"
+   }
+  ],
+  "correct": "xerox_parc",
+  "source": "https://en.wikipedia.org/wiki/PARC_(company)"
+ },
+ {
+  "key": "technology_inventions_q0045",
+  "category_id": "technology_inventions",
+  "subcategory_id": "computers",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Punched cards, the 1890 US census and a company that grew into IBM point to which inventor?",
+   "tr": "Delikli kartlar, 1890 ABD nüfus sayımı ve sonradan IBM'e dönüşen bir şirket hangi mucidi işaret eder?"
+  },
+  "options": [
+   {
+    "concept_id": "herman_hollerith",
+    "en": "Herman Hollerith",
+    "tr": "Herman Hollerith"
+   },
+   {
+    "concept_id": "charles_babbage",
+    "en": "Charles Babbage",
+    "tr": "Charles Babbage"
+   },
+   {
+    "concept_id": "thomas_watson",
+    "en": "Thomas Watson",
+    "tr": "Thomas Watson"
+   },
+   {
+    "concept_id": "joseph_jacquard",
+    "en": "Joseph Jacquard",
+    "tr": "Joseph Jacquard"
+   }
+  ],
+  "correct": "herman_hollerith",
+  "source": "https://en.wikipedia.org/wiki/Herman_Hollerith"
+ },
+ {
+  "key": "technology_inventions_q0046",
+  "category_id": "technology_inventions",
+  "subcategory_id": "internet",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which two engineers designed TCP/IP, the basic language of the internet?",
+   "tr": "İnternetin temel dili TCP/IP'yi hangi iki mühendis tasarladı?"
+  },
+  "options": [
+   {
+    "concept_id": "vint_cerf_and_bob_kahn",
+    "en": "Vint Cerf and Bob Kahn",
+    "tr": "Vint Cerf ve Bob Kahn"
+   },
+   {
+    "concept_id": "larry_page_and_sergey_brin",
+    "en": "Larry Page and Sergey Brin",
+    "tr": "Larry Page ve Sergey Brin"
+   },
+   {
+    "concept_id": "bill_gates_and_paul_allen",
+    "en": "Bill Gates and Paul Allen",
+    "tr": "Bill Gates ve Paul Allen"
+   },
+   {
+    "concept_id": "tim_berners_lee_and_robert_cailliau",
+    "en": "Tim Berners-Lee and Robert Cailliau",
+    "tr": "Tim Berners-Lee ve Robert Cailliau"
+   }
+  ],
+  "correct": "vint_cerf_and_bob_kahn",
+  "source": "https://en.wikipedia.org/wiki/Internet_protocol_suite"
+ },
+ {
+  "key": "technology_inventions_q0047",
+  "category_id": "technology_inventions",
+  "subcategory_id": "internet",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "When Jeff Bezos launched Amazon in 1995, what did it sell?",
+   "tr": "Jeff Bezos Amazon'u 1995'te kurduğunda ne satıyordu?"
+  },
+  "options": [
+   {
+    "concept_id": "only_books",
+    "en": "Only books",
+    "tr": "Yalnızca kitap"
+   },
+   {
+    "concept_id": "only_music_cds",
+    "en": "Only music CDs",
+    "tr": "Yalnızca müzik CD'si"
+   },
+   {
+    "concept_id": "only_toys",
+    "en": "Only toys",
+    "tr": "Yalnızca oyuncak"
+   },
+   {
+    "concept_id": "only_computers",
+    "en": "Only computers",
+    "tr": "Yalnızca bilgisayar"
+   }
+  ],
+  "correct": "only_books",
+  "source": "https://en.wikipedia.org/wiki/Amazon_(company)"
+ },
+ {
+  "key": "technology_inventions_q0048",
+  "category_id": "technology_inventions",
+  "subcategory_id": "internet",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "In which year was the first ever tweet posted?",
+   "tr": "İlk tweet hangi yıl atıldı?"
+  },
+  "options": [
+   {
+    "concept_id": "n_2006",
+    "en": "2006",
+    "tr": "2006"
+   },
+   {
+    "concept_id": "n_2001",
+    "en": "2001",
+    "tr": "2001"
+   },
+   {
+    "concept_id": "n_2009",
+    "en": "2009",
+    "tr": "2009"
+   },
+   {
+    "concept_id": "n_2012",
+    "en": "2012",
+    "tr": "2012"
+   }
+  ],
+  "correct": "n_2006",
+  "source": "https://en.wikipedia.org/wiki/Twitter"
+ },
+ {
+  "key": "technology_inventions_q0049",
+  "category_id": "technology_inventions",
+  "subcategory_id": "internet",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "The \".tv\" web domain, popular with streamers, belongs to which Pacific island nation?",
+   "tr": "Yayıncıların sevdiği \".tv\" alan adı hangi Pasifik ada ülkesine aittir?"
+  },
+  "options": [
+   {
+    "concept_id": "tuvalu",
+    "en": "Tuvalu",
+    "tr": "Tuvalu"
+   },
+   {
+    "concept_id": "tonga",
+    "en": "Tonga",
+    "tr": "Tonga"
+   },
+   {
+    "concept_id": "fiji",
+    "en": "Fiji",
+    "tr": "Fiji"
+   },
+   {
+    "concept_id": "samoa",
+    "en": "Samoa",
+    "tr": "Samoa"
+   }
+  ],
+  "correct": "tuvalu",
+  "source": "https://en.wikipedia.org/wiki/.tv"
+ },
+ {
+  "key": "technology_inventions_q0050",
+  "category_id": "technology_inventions",
+  "subcategory_id": "internet",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "In 1982 Scott Fahlman proposed which typed symbol to mark a message as a joke?",
+   "tr": "Scott Fahlman 1982'de bir mesajın şaka olduğunu belirtmek için hangi yazılı simgeyi önerdi?"
+  },
+  "options": [
+   {
+    "concept_id": "smiley",
+    "en": ":-) (smiley)",
+    "tr": ":-) (gülen yüz)"
+   },
+   {
+    "concept_id": "lol",
+    "en": "LOL",
+    "tr": "LOL"
+   },
+   {
+    "concept_id": "n_3_heart",
+    "en": "<3 (heart)",
+    "tr": "<3 (kalp)"
+   },
+   {
+    "concept_id": "xd_laugh",
+    "en": "XD (laugh)",
+    "tr": "XD (kahkaha)"
+   }
+  ],
+  "correct": "smiley",
+  "source": "https://en.wikipedia.org/wiki/Emoticon"
+ },
+ {
+  "key": "technology_inventions_q0051",
+  "category_id": "technology_inventions",
+  "subcategory_id": "ai_basics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What was the 1960s MIT chatbot that imitated a psychotherapist called?",
+   "tr": "1960'larda bir psikoterapisti taklit eden MIT sohbet botunun adı neydi?"
+  },
+  "options": [
+   {
+    "concept_id": "eliza",
+    "en": "ELIZA",
+    "tr": "ELIZA"
+   },
+   {
+    "concept_id": "shrdlu",
+    "en": "SHRDLU",
+    "tr": "SHRDLU"
+   },
+   {
+    "concept_id": "watson",
+    "en": "Watson",
+    "tr": "Watson"
+   },
+   {
+    "concept_id": "hal",
+    "en": "HAL",
+    "tr": "HAL"
+   }
+  ],
+  "correct": "eliza",
+  "source": "https://en.wikipedia.org/wiki/ELIZA"
+ },
+ {
+  "key": "technology_inventions_q0052",
+  "category_id": "technology_inventions",
+  "subcategory_id": "ai_basics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "The term \"artificial intelligence\" was coined for a 1956 summer workshop at which US college?",
+   "tr": "\"Yapay zekâ\" terimi 1956'da hangi ABD üniversitesindeki bir yaz çalıştayı için ortaya atıldı?"
+  },
+  "options": [
+   {
+    "concept_id": "dartmouth_college",
+    "en": "Dartmouth College",
+    "tr": "Dartmouth Koleji"
+   },
+   {
+    "concept_id": "harvard_university",
+    "en": "Harvard University",
+    "tr": "Harvard Üniversitesi"
+   },
+   {
+    "concept_id": "yale_university",
+    "en": "Yale University",
+    "tr": "Yale Üniversitesi"
+   },
+   {
+    "concept_id": "caltech",
+    "en": "Caltech",
+    "tr": "Caltech"
+   }
+  ],
+  "correct": "dartmouth_college",
+  "source": "https://en.wikipedia.org/wiki/Dartmouth_workshop"
+ },
+ {
+  "key": "technology_inventions_q0053",
+  "category_id": "technology_inventions",
+  "subcategory_id": "ai_basics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "DeepMind's AlphaFold, honoured with a share of the 2024 Nobel Prize in Chemistry, predicts what?",
+   "tr": "2024 Nobel Kimya Ödülü'nün bir kısmını getiren DeepMind'ın AlphaFold'u neyi tahmin eder?"
+  },
+  "options": [
+   {
+    "concept_id": "the_3d_shapes_of_proteins",
+    "en": "The 3D shapes of proteins",
+    "tr": "Proteinlerin 3B yapısını"
+   },
+   {
+    "concept_id": "earthquakes",
+    "en": "Earthquakes",
+    "tr": "Depremleri"
+   },
+   {
+    "concept_id": "stock_prices",
+    "en": "Stock prices",
+    "tr": "Hisse fiyatlarını"
+   },
+   {
+    "concept_id": "tomorrow_s_weather",
+    "en": "Tomorrow's weather",
+    "tr": "Yarının havasını"
+   }
+  ],
+  "correct": "the_3d_shapes_of_proteins",
+  "source": "https://en.wikipedia.org/wiki/AlphaFold"
+ },
+ {
+  "key": "technology_inventions_q0054",
+  "category_id": "technology_inventions",
+  "subcategory_id": "ai_basics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is a \"deepfake\"?",
+   "tr": "\"Deepfake\" nedir?"
+  },
+  "options": [
+   {
+    "concept_id": "ai_faked_video_or_audio_of_a_real_person",
+    "en": "AI-faked video or audio of a real person",
+    "tr": "Gerçek birinin YZ ile sahte video ya da sesi"
+   },
+   {
+    "concept_id": "a_very_deep_web_page",
+    "en": "A very deep web page",
+    "tr": "Çok derin bir web sayfası"
+   },
+   {
+    "concept_id": "a_broken_hard_drive",
+    "en": "A broken hard drive",
+    "tr": "Bozuk bir sabit disk"
+   },
+   {
+    "concept_id": "a_secret_password",
+    "en": "A secret password",
+    "tr": "Gizli bir şifre"
+   }
+  ],
+  "correct": "ai_faked_video_or_audio_of_a_real_person",
+  "source": "https://en.wikipedia.org/wiki/Deepfake"
+ },
+ {
+  "key": "technology_inventions_q0055",
+  "category_id": "technology_inventions",
+  "subcategory_id": "ai_basics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these AI milestones came first?",
+   "tr": "Bu yapay zekâ dönüm noktalarından hangisi önce gerçekleşti?"
+  },
+  "options": [
+   {
+    "concept_id": "deep_blue_beats_kasparov",
+    "en": "Deep Blue beats Kasparov",
+    "tr": "Deep Blue, Kasparov'u yener"
+   },
+   {
+    "concept_id": "watson_wins_jeopardy",
+    "en": "Watson wins Jeopardy!",
+    "tr": "Watson, Jeopardy!'yi kazanır"
+   },
+   {
+    "concept_id": "alphago_beats_lee_sedol",
+    "en": "AlphaGo beats Lee Sedol",
+    "tr": "AlphaGo, Lee Sedol'u yener"
+   },
+   {
+    "concept_id": "chatgpt_launches",
+    "en": "ChatGPT launches",
+    "tr": "ChatGPT çıkar"
+   }
+  ],
+  "correct": "deep_blue_beats_kasparov",
+  "source": "https://en.wikipedia.org/wiki/History_of_artificial_intelligence"
+ },
+ {
+  "key": "technology_inventions_q0056",
+  "category_id": "technology_inventions",
+  "subcategory_id": "smartphones",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Motorola engineer made the first public call on a handheld mobile phone, in 1973?",
+   "tr": "1973'te el tipi bir cep telefonuyla ilk açık aramayı yapan Motorola mühendisi kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "martin_cooper",
+    "en": "Martin Cooper",
+    "tr": "Martin Cooper"
+   },
+   {
+    "concept_id": "joel_engel",
+    "en": "Joel Engel",
+    "tr": "Joel Engel"
+   },
+   {
+    "concept_id": "jorma_ollila",
+    "en": "Jorma Ollila",
+    "tr": "Jorma Ollila"
+   },
+   {
+    "concept_id": "mike_lazaridis",
+    "en": "Mike Lazaridis",
+    "tr": "Mike Lazaridis"
+   }
+  ],
+  "correct": "martin_cooper",
+  "source": "https://en.wikipedia.org/wiki/Martin_Cooper_(inventor)"
+ },
+ {
+  "key": "technology_inventions_q0057",
+  "category_id": "technology_inventions",
+  "subcategory_id": "smartphones",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "The Motorola DynaTAC 8000X of 1983, the first handheld phone on sale, weighed roughly how much?",
+   "tr": "Satışa çıkan ilk el tipi telefon olan 1983 tarihli Motorola DynaTAC 8000X yaklaşık kaç kiloydu?"
+  },
+  "options": [
+   {
+    "concept_id": "about_0_8_kg",
+    "en": "About 0.8 kg",
+    "tr": "Yaklaşık 0,8 kg"
+   },
+   {
+    "concept_id": "about_100_g",
+    "en": "About 100 g",
+    "tr": "Yaklaşık 100 g"
+   },
+   {
+    "concept_id": "about_3_kg",
+    "en": "About 3 kg",
+    "tr": "Yaklaşık 3 kg"
+   },
+   {
+    "concept_id": "about_10_kg",
+    "en": "About 10 kg",
+    "tr": "Yaklaşık 10 kg"
+   }
+  ],
+  "correct": "about_0_8_kg",
+  "source": "https://en.wikipedia.org/wiki/Motorola_DynaTAC"
+ },
+ {
+  "key": "technology_inventions_q0058",
+  "category_id": "technology_inventions",
+  "subcategory_id": "smartphones",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What did the first ever SMS text message, sent in 1992, say?",
+   "tr": "1992'de gönderilen ilk SMS kısa mesajında ne yazıyordu?"
+  },
+  "options": [
+   {
+    "concept_id": "merry_christmas",
+    "en": "Merry Christmas",
+    "tr": "Mutlu Noeller"
+   },
+   {
+    "concept_id": "hello_world",
+    "en": "Hello World",
+    "tr": "Merhaba Dünya"
+   },
+   {
+    "concept_id": "can_you_hear_me",
+    "en": "Can you hear me?",
+    "tr": "Beni duyuyor musun?"
+   },
+   {
+    "concept_id": "happy_new_year",
+    "en": "Happy New Year",
+    "tr": "Mutlu Yıllar"
+   }
+  ],
+  "correct": "merry_christmas",
+  "source": "https://en.wikipedia.org/wiki/SMS"
+ },
+ {
+  "key": "technology_inventions_q0059",
+  "category_id": "technology_inventions",
+  "subcategory_id": "smartphones",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "QR codes were invented in 1994 by a Japanese engineer to track what?",
+   "tr": "QR kodlar 1994'te Japon bir mühendis tarafından neyi takip etmek için icat edildi?"
+  },
+  "options": [
+   {
+    "concept_id": "car_parts_in_factories",
+    "en": "Car parts in factories",
+    "tr": "Fabrikalardaki otomobil parçalarını"
+   },
+   {
+    "concept_id": "train_tickets",
+    "en": "Train tickets",
+    "tr": "Tren biletlerini"
+   },
+   {
+    "concept_id": "library_books",
+    "en": "Library books",
+    "tr": "Kütüphane kitaplarını"
+   },
+   {
+    "concept_id": "hospital_patients",
+    "en": "Hospital patients",
+    "tr": "Hastane hastalarını"
+   }
+  ],
+  "correct": "car_parts_in_factories",
+  "source": "https://en.wikipedia.org/wiki/QR_code"
+ },
+ {
+  "key": "technology_inventions_q0060",
+  "category_id": "technology_inventions",
+  "subcategory_id": "smartphones",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Physical keyboards, \"CrackBerry\" addicts and a company from Waterloo, Canada point to which phone brand?",
+   "tr": "Fiziksel klavyeler, \"CrackBerry\" bağımlıları ve Kanada'nın Waterloo şehrinden bir şirket hangi telefon markasını işaret eder?"
+  },
+  "options": [
+   {
+    "concept_id": "blackberry",
+    "en": "BlackBerry",
+    "tr": "BlackBerry"
+   },
+   {
+    "concept_id": "nokia",
+    "en": "Nokia",
+    "tr": "Nokia"
+   },
+   {
+    "concept_id": "palm",
+    "en": "Palm",
+    "tr": "Palm"
+   },
+   {
+    "concept_id": "motorola",
+    "en": "Motorola",
+    "tr": "Motorola"
+   }
+  ],
+  "correct": "blackberry",
+  "source": "https://en.wikipedia.org/wiki/BlackBerry"
+ },
+ {
+  "key": "technology_inventions_q0061",
+  "category_id": "technology_inventions",
+  "subcategory_id": "inventions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Play-Doh modelling clay was first sold as what?",
+   "tr": "Play-Doh oyun hamuru ilk olarak ne olarak satıldı?"
+  },
+  "options": [
+   {
+    "concept_id": "a_wallpaper_cleaner",
+    "en": "A wallpaper cleaner",
+    "tr": "Duvar kâğıdı temizleyici"
+   },
+   {
+    "concept_id": "a_bread_dough",
+    "en": "A bread dough",
+    "tr": "Ekmek hamuru"
+   },
+   {
+    "concept_id": "a_tooth_filling",
+    "en": "A tooth filling",
+    "tr": "Diş dolgusu"
+   },
+   {
+    "concept_id": "a_window_putty",
+    "en": "A window putty",
+    "tr": "Pencere macunu"
+   }
+  ],
+  "correct": "a_wallpaper_cleaner",
+  "source": "https://en.wikipedia.org/wiki/Play-Doh"
+ },
+ {
+  "key": "technology_inventions_q0062",
+  "category_id": "technology_inventions",
+  "subcategory_id": "inventions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which carmaker introduced the modern three-point seat belt in 1959 and let rivals use the patent free?",
+   "tr": "Hangi otomobil üreticisi modern üç noktalı emniyet kemerini 1959'da tanıttı ve patentini rakiplerine ücretsiz açtı?"
+  },
+  "options": [
+   {
+    "concept_id": "volvo",
+    "en": "Volvo",
+    "tr": "Volvo"
+   },
+   {
+    "concept_id": "ford",
+    "en": "Ford",
+    "tr": "Ford"
+   },
+   {
+    "concept_id": "mercedes_benz",
+    "en": "Mercedes-Benz",
+    "tr": "Mercedes-Benz"
+   },
+   {
+    "concept_id": "toyota",
+    "en": "Toyota",
+    "tr": "Toyota"
+   }
+  ],
+  "correct": "volvo",
+  "source": "https://en.wikipedia.org/wiki/Seat_belt"
+ },
+ {
+  "key": "technology_inventions_q0063",
+  "category_id": "technology_inventions",
+  "subcategory_id": "inventions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "In which year did the world's first cash machine (ATM) open, in London?",
+   "tr": "Dünyanın ilk bankamatiği (ATM) Londra'da hangi yıl hizmete girdi?"
+  },
+  "options": [
+   {
+    "concept_id": "n_1967",
+    "en": "1967",
+    "tr": "1967"
+   },
+   {
+    "concept_id": "n_1937",
+    "en": "1937",
+    "tr": "1937"
+   },
+   {
+    "concept_id": "n_1987",
+    "en": "1987",
+    "tr": "1987"
+   },
+   {
+    "concept_id": "n_1997",
+    "en": "1997",
+    "tr": "1997"
+   }
+  ],
+  "correct": "n_1967",
+  "source": "https://en.wikipedia.org/wiki/Automated_teller_machine"
+ },
+ {
+  "key": "technology_inventions_q0064",
+  "category_id": "technology_inventions",
+  "subcategory_id": "inventions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Willis Carrier's 1902 invention, first built to control humidity in a printing plant, became what?",
+   "tr": "Willis Carrier'ın 1902'de bir matbaadaki nemi kontrol etmek için yaptığı icat neye dönüştü?"
+  },
+  "options": [
+   {
+    "concept_id": "air_conditioning",
+    "en": "Air conditioning",
+    "tr": "Klimaya"
+   },
+   {
+    "concept_id": "the_refrigerator",
+    "en": "The refrigerator",
+    "tr": "Buzdolabına"
+   },
+   {
+    "concept_id": "the_dishwasher",
+    "en": "The dishwasher",
+    "tr": "Bulaşık makinesine"
+   },
+   {
+    "concept_id": "the_hair_dryer",
+    "en": "The hair dryer",
+    "tr": "Saç kurutma makinesine"
+   }
+  ],
+  "correct": "air_conditioning",
+  "source": "https://en.wikipedia.org/wiki/Air_conditioning"
+ },
+ {
+  "key": "technology_inventions_q0065",
+  "category_id": "technology_inventions",
+  "subcategory_id": "inventions",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these inventions came first?",
+   "tr": "Bu icatlardan hangisi önce ortaya çıktı?"
+  },
+  "options": [
+   {
+    "concept_id": "the_fax_machine",
+    "en": "The fax machine",
+    "tr": "Faks makinesi"
+   },
+   {
+    "concept_id": "the_telephone",
+    "en": "The telephone",
+    "tr": "Telefon"
+   },
+   {
+    "concept_id": "radio",
+    "en": "Radio",
+    "tr": "Radyo"
+   },
+   {
+    "concept_id": "television",
+    "en": "Television",
+    "tr": "Televizyon"
+   }
+  ],
+  "correct": "the_fax_machine",
+  "source": "https://en.wikipedia.org/wiki/Fax"
+ },
+ {
+  "key": "technology_inventions_q0066",
+  "category_id": "technology_inventions",
+  "subcategory_id": "inventors",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which engineer led the team that wrote the flight software for the Apollo 11 Moon landing?",
+   "tr": "Apollo 11 Ay inişinin uçuş yazılımını yazan ekibi hangi mühendis yönetti?"
+  },
+  "options": [
+   {
+    "concept_id": "margaret_hamilton",
+    "en": "Margaret Hamilton",
+    "tr": "Margaret Hamilton"
+   },
+   {
+    "concept_id": "katherine_johnson",
+    "en": "Katherine Johnson",
+    "tr": "Katherine Johnson"
+   },
+   {
+    "concept_id": "grace_hopper",
+    "en": "Grace Hopper",
+    "tr": "Grace Hopper"
+   },
+   {
+    "concept_id": "ada_lovelace",
+    "en": "Ada Lovelace",
+    "tr": "Ada Lovelace"
+   }
+  ],
+  "correct": "margaret_hamilton",
+  "source": "https://en.wikipedia.org/wiki/Margaret_Hamilton_(software_engineer)"
+ },
+ {
+  "key": "technology_inventions_q0067",
+  "category_id": "technology_inventions",
+  "subcategory_id": "inventors",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What happened to engine inventor Rudolf Diesel in 1913?",
+   "tr": "Motor mucidi Rudolf Diesel'e 1913'te ne oldu?"
+  },
+  "options": [
+   {
+    "concept_id": "he_vanished_from_a_ship_crossing_to_england",
+    "en": "He vanished from a ship crossing to England",
+    "tr": "İngiltere'ye giden bir gemiden kayboldu"
+   },
+   {
+    "concept_id": "he_won_the_nobel_prize",
+    "en": "He won the Nobel Prize",
+    "tr": "Nobel Ödülü kazandı"
+   },
+   {
+    "concept_id": "he_became_a_king_s_adviser",
+    "en": "He became a king's adviser",
+    "tr": "Bir kralın danışmanı oldu"
+   },
+   {
+    "concept_id": "he_was_struck_by_lightning",
+    "en": "He was struck by lightning",
+    "tr": "Yıldırım çarptı"
+   }
+  ],
+  "correct": "he_vanished_from_a_ship_crossing_to_england",
+  "source": "https://en.wikipedia.org/wiki/Rudolf_Diesel"
+ },
+ {
+  "key": "technology_inventions_q0068",
+  "category_id": "technology_inventions",
+  "subcategory_id": "inventors",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Nikola Tesla was born in 1856 in a village in today's which country?",
+   "tr": "Nikola Tesla 1856'da bugünkü hangi ülkede bulunan bir köyde doğdu?"
+  },
+  "options": [
+   {
+    "concept_id": "croatia",
+    "en": "Croatia",
+    "tr": "Hırvatistan"
+   },
+   {
+    "concept_id": "serbia",
+    "en": "Serbia",
+    "tr": "Sırbistan"
+   },
+   {
+    "concept_id": "austria",
+    "en": "Austria",
+    "tr": "Avusturya"
+   },
+   {
+    "concept_id": "hungary",
+    "en": "Hungary",
+    "tr": "Macaristan"
+   }
+  ],
+  "correct": "croatia",
+  "source": "https://en.wikipedia.org/wiki/Nikola_Tesla"
+ },
+ {
+  "key": "technology_inventions_q0069",
+  "category_id": "technology_inventions",
+  "subcategory_id": "inventors",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Thomas Edison held roughly how many US patents?",
+   "tr": "Thomas Edison'ın yaklaşık kaç ABD patenti vardı?"
+  },
+  "options": [
+   {
+    "concept_id": "n_1_093",
+    "en": "1,093",
+    "tr": "1.093"
+   },
+   {
+    "concept_id": "n_12",
+    "en": "12",
+    "tr": "12"
+   },
+   {
+    "concept_id": "n_150",
+    "en": "150",
+    "tr": "150"
+   },
+   {
+    "concept_id": "n_10_000",
+    "en": "10,000",
+    "tr": "10.000"
+   }
+  ],
+  "correct": "n_1_093",
+  "source": "https://en.wikipedia.org/wiki/List_of_Edison_patents"
+ },
+ {
+  "key": "technology_inventions_q0070",
+  "category_id": "technology_inventions",
+  "subcategory_id": "inventors",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "A DuPont chemist, a 1965 discovery and fibres five times stronger than steel point to whom?",
+   "tr": "Bir DuPont kimyacısı, 1965'teki bir keşif ve çelikten beş kat güçlü lifler kimi işaret eder?"
+  },
+  "options": [
+   {
+    "concept_id": "stephanie_kwolek",
+    "en": "Stephanie Kwolek",
+    "tr": "Stephanie Kwolek"
+   },
+   {
+    "concept_id": "marie_curie",
+    "en": "Marie Curie",
+    "tr": "Marie Curie"
+   },
+   {
+    "concept_id": "wallace_carothers",
+    "en": "Wallace Carothers",
+    "tr": "Wallace Carothers"
+   },
+   {
+    "concept_id": "rosalind_franklin",
+    "en": "Rosalind Franklin",
+    "tr": "Rosalind Franklin"
+   }
+  ],
+  "correct": "stephanie_kwolek",
+  "source": "https://en.wikipedia.org/wiki/Stephanie_Kwolek"
+ },
+ {
+  "key": "technology_inventions_q0071",
+  "category_id": "technology_inventions",
+  "subcategory_id": "space_technology",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Japanese probes brought back samples from the asteroids Itokawa and Ryugu?",
+   "tr": "Itokawa ve Ryugu asteroitlerinden örnek getiren Japon sondaları hangileridir?"
+  },
+  "options": [
+   {
+    "concept_id": "hayabusa",
+    "en": "Hayabusa",
+    "tr": "Hayabusa"
+   },
+   {
+    "concept_id": "rosetta",
+    "en": "Rosetta",
+    "tr": "Rosetta"
+   },
+   {
+    "concept_id": "akatsuki",
+    "en": "Akatsuki",
+    "tr": "Akatsuki"
+   },
+   {
+    "concept_id": "kaguya",
+    "en": "Kaguya",
+    "tr": "Kaguya"
+   }
+  ],
+  "correct": "hayabusa",
+  "source": "https://en.wikipedia.org/wiki/Hayabusa2"
+ },
+ {
+  "key": "technology_inventions_q0072",
+  "category_id": "technology_inventions",
+  "subcategory_id": "space_technology",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "How did NASA's Cassini mission end in 2017, after 13 years at Saturn?",
+   "tr": "NASA'nın Satürn'deki 13 yıllık Cassini görevi 2017'de nasıl sona erdi?"
+  },
+  "options": [
+   {
+    "concept_id": "it_dived_into_saturn_on_purpose",
+    "en": "It dived into Saturn on purpose",
+    "tr": "Bilerek Satürn'e daldı"
+   },
+   {
+    "concept_id": "it_crashed_into_a_moon",
+    "en": "It crashed into a moon",
+    "tr": "Bir uyduya çarptı"
+   },
+   {
+    "concept_id": "it_flew_out_of_the_solar_system",
+    "en": "It flew out of the Solar System",
+    "tr": "Güneş Sistemi'nden çıktı"
+   },
+   {
+    "concept_id": "it_was_switched_off_and_left_in_orbit",
+    "en": "It was switched off and left in orbit",
+    "tr": "Kapatılıp yörüngede bırakıldı"
+   }
+  ],
+  "correct": "it_dived_into_saturn_on_purpose",
+  "source": "https://en.wikipedia.org/wiki/Cassini–Huygens"
+ },
+ {
+  "key": "technology_inventions_q0073",
+  "category_id": "technology_inventions",
+  "subcategory_id": "space_technology",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Mars rover Opportunity was planned for 90 days. Roughly how long did it actually work?",
+   "tr": "Mars gezgini Opportunity 90 gün için planlanmıştı. Aslında yaklaşık ne kadar çalıştı?"
+  },
+  "options": [
+   {
+    "concept_id": "about_15_years",
+    "en": "About 15 years",
+    "tr": "Yaklaşık 15 yıl"
+   },
+   {
+    "concept_id": "about_1_year",
+    "en": "About 1 year",
+    "tr": "Yaklaşık 1 yıl"
+   },
+   {
+    "concept_id": "about_6_months",
+    "en": "About 6 months",
+    "tr": "Yaklaşık 6 ay"
+   },
+   {
+    "concept_id": "about_40_years",
+    "en": "About 40 years",
+    "tr": "Yaklaşık 40 yıl"
+   }
+  ],
+  "correct": "about_15_years",
+  "source": "https://en.wikipedia.org/wiki/Opportunity_(rover)"
+ },
+ {
+  "key": "technology_inventions_q0074",
+  "category_id": "technology_inventions",
+  "subcategory_id": "space_technology",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Memory foam, now in mattresses and pillows, was first developed for what?",
+   "tr": "Bugün yatak ve yastıklarda kullanılan hafızalı köpük ilk olarak ne için geliştirildi?"
+  },
+  "options": [
+   {
+    "concept_id": "nasa_aircraft_seats",
+    "en": "NASA aircraft seats",
+    "tr": "NASA uçak koltukları"
+   },
+   {
+    "concept_id": "army_helmets",
+    "en": "Army helmets",
+    "tr": "Ordu miğferleri"
+   },
+   {
+    "concept_id": "racing_cars",
+    "en": "Racing cars",
+    "tr": "Yarış arabaları"
+   },
+   {
+    "concept_id": "hospital_beds",
+    "en": "Hospital beds",
+    "tr": "Hastane yatakları"
+   }
+  ],
+  "correct": "nasa_aircraft_seats",
+  "source": "https://en.wikipedia.org/wiki/Memory_foam"
+ },
+ {
+  "key": "technology_inventions_q0075",
+  "category_id": "technology_inventions",
+  "subcategory_id": "space_technology",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is a satellite that stays above the same spot on Earth's equator called?",
+   "tr": "Dünya'nın ekvatorunda hep aynı noktanın üzerinde duran uyduya ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "geostationary",
+    "en": "Geostationary",
+    "tr": "Yer sabit (jeostatik)"
+   },
+   {
+    "concept_id": "polar",
+    "en": "Polar",
+    "tr": "Kutupsal"
+   },
+   {
+    "concept_id": "retrograde",
+    "en": "Retrograde",
+    "tr": "Ters yönlü"
+   },
+   {
+    "concept_id": "suborbital",
+    "en": "Suborbital",
+    "tr": "Yörünge altı"
+   }
+  ],
+  "correct": "geostationary",
+  "source": "https://en.wikipedia.org/wiki/Geostationary_orbit"
+ },
+ {
+  "key": "technology_inventions_q0076",
+  "category_id": "technology_inventions",
+  "subcategory_id": "tech_history",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "When Nokia was founded in 1865 in Finland, what was it?",
+   "tr": "Nokia 1865'te Finlandiya'da kurulduğunda neydi?"
+  },
+  "options": [
+   {
+    "concept_id": "a_paper_mill",
+    "en": "A paper mill",
+    "tr": "Bir kâğıt fabrikası"
+   },
+   {
+    "concept_id": "a_shipyard",
+    "en": "A shipyard",
+    "tr": "Bir tersane"
+   },
+   {
+    "concept_id": "a_fishing_company",
+    "en": "A fishing company",
+    "tr": "Bir balıkçılık şirketi"
+   },
+   {
+    "concept_id": "a_telephone_exchange",
+    "en": "A telephone exchange",
+    "tr": "Bir telefon santrali"
+   }
+  ],
+  "correct": "a_paper_mill",
+  "source": "https://en.wikipedia.org/wiki/Nokia"
+ },
+ {
+  "key": "technology_inventions_q0077",
+  "category_id": "technology_inventions",
+  "subcategory_id": "tech_history",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which 1972 Atari arcade hit was a simple game of electronic table tennis?",
+   "tr": "Hangi 1972 Atari salon oyunu basit bir elektronik masa tenisi oyunuydu?"
+  },
+  "options": [
+   {
+    "concept_id": "pong",
+    "en": "Pong",
+    "tr": "Pong"
+   },
+   {
+    "concept_id": "space_invaders",
+    "en": "Space Invaders",
+    "tr": "Space Invaders"
+   },
+   {
+    "concept_id": "asteroids",
+    "en": "Asteroids",
+    "tr": "Asteroids"
+   },
+   {
+    "concept_id": "breakout",
+    "en": "Breakout",
+    "tr": "Breakout"
+   }
+  ],
+  "correct": "pong",
+  "source": "https://en.wikipedia.org/wiki/Pong"
+ },
+ {
+  "key": "technology_inventions_q0078",
+  "category_id": "technology_inventions",
+  "subcategory_id": "tech_history",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "In which year was the Bitcoin network launched?",
+   "tr": "Bitcoin ağı hangi yıl başlatıldı?"
+  },
+  "options": [
+   {
+    "concept_id": "n_2009",
+    "en": "2009",
+    "tr": "2009"
+   },
+   {
+    "concept_id": "n_1999",
+    "en": "1999",
+    "tr": "1999"
+   },
+   {
+    "concept_id": "n_2004",
+    "en": "2004",
+    "tr": "2004"
+   },
+   {
+    "concept_id": "n_2014",
+    "en": "2014",
+    "tr": "2014"
+   }
+  ],
+  "correct": "n_2009",
+  "source": "https://en.wikipedia.org/wiki/Bitcoin"
+ },
+ {
+  "key": "technology_inventions_q0079",
+  "category_id": "technology_inventions",
+  "subcategory_id": "tech_history",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which videotape format beat Sony's Betamax in the home video war of the 1980s?",
+   "tr": "1980'lerin ev videosu savaşında Sony'nin Betamax'ını hangi video kaset formatı yendi?"
+  },
+  "options": [
+   {
+    "concept_id": "vhs",
+    "en": "VHS",
+    "tr": "VHS"
+   },
+   {
+    "concept_id": "laserdisc",
+    "en": "LaserDisc",
+    "tr": "LaserDisc"
+   },
+   {
+    "concept_id": "video_2000",
+    "en": "Video 2000",
+    "tr": "Video 2000"
+   },
+   {
+    "concept_id": "dvd",
+    "en": "DVD",
+    "tr": "DVD"
+   }
+  ],
+  "correct": "vhs",
+  "source": "https://en.wikipedia.org/wiki/Videotape_format_war"
+ },
+ {
+  "key": "technology_inventions_q0080",
+  "category_id": "technology_inventions",
+  "subcategory_id": "tech_history",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which of these tech companies is the oldest?",
+   "tr": "Bu teknoloji şirketlerinden hangisi en eskisidir?"
+  },
+  "options": [
+   {
+    "concept_id": "ibm",
+    "en": "IBM",
+    "tr": "IBM"
+   },
+   {
+    "concept_id": "microsoft",
+    "en": "Microsoft",
+    "tr": "Microsoft"
+   },
+   {
+    "concept_id": "apple",
+    "en": "Apple",
+    "tr": "Apple"
+   },
+   {
+    "concept_id": "google",
+    "en": "Google",
+    "tr": "Google"
+   }
+  ],
+  "correct": "ibm",
+  "source": "https://en.wikipedia.org/wiki/IBM"
+ },
+ {
+  "key": "technology_inventions_q0081",
+  "category_id": "technology_inventions",
+  "subcategory_id": "computers",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which German engineer built the Z3 (1941), the first working programmable, fully automatic computer?",
+   "tr": "İlk çalışan, programlanabilir ve tam otomatik bilgisayar Z3'ü (1941) hangi Alman mühendis yaptı?"
+  },
+  "options": [
+   {
+    "concept_id": "konrad_zuse",
+    "en": "Konrad Zuse",
+    "tr": "Konrad Zuse"
+   },
+   {
+    "concept_id": "heinz_nixdorf",
+    "en": "Heinz Nixdorf",
+    "tr": "Heinz Nixdorf"
+   },
+   {
+    "concept_id": "wernher_von_braun",
+    "en": "Wernher von Braun",
+    "tr": "Wernher von Braun"
+   },
+   {
+    "concept_id": "carl_zeiss",
+    "en": "Carl Zeiss",
+    "tr": "Carl Zeiss"
+   }
+  ],
+  "correct": "konrad_zuse",
+  "source": "https://en.wikipedia.org/wiki/Konrad_Zuse"
+ },
+ {
+  "key": "technology_inventions_q0082",
+  "category_id": "technology_inventions",
+  "subcategory_id": "computers",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many bits per character did the original ASCII code use?",
+   "tr": "Orijinal ASCII kodu karakter başına kaç bit kullanıyordu?"
+  },
+  "options": [
+   {
+    "concept_id": "n_7",
+    "en": "7",
+    "tr": "7"
+   },
+   {
+    "concept_id": "n_4",
+    "en": "4",
+    "tr": "4"
+   },
+   {
+    "concept_id": "n_12",
+    "en": "12",
+    "tr": "12"
+   },
+   {
+    "concept_id": "n_32",
+    "en": "32",
+    "tr": "32"
+   }
+  ],
+  "correct": "n_7",
+  "source": "https://en.wikipedia.org/wiki/ASCII"
+ },
+ {
+  "key": "technology_inventions_q0083",
+  "category_id": "technology_inventions",
+  "subcategory_id": "computers",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What was the root of the \"Y2K bug\" feared at the end of 1999?",
+   "tr": "1999'un sonunda korkulan \"Y2K hatası\"nın kökeni neydi?"
+  },
+  "options": [
+   {
+    "concept_id": "years_stored_with_only_two_digits",
+    "en": "Years stored with only two digits",
+    "tr": "Yılların yalnızca iki haneyle tutulması"
+   },
+   {
+    "concept_id": "clocks_running_too_fast",
+    "en": "Clocks running too fast",
+    "tr": "Saatlerin çok hızlı işlemesi"
+   },
+   {
+    "concept_id": "a_virus_set_for_midnight",
+    "en": "A virus set for midnight",
+    "tr": "Gece yarısına ayarlı bir virüs"
+   },
+   {
+    "concept_id": "satellites_losing_power",
+    "en": "Satellites losing power",
+    "tr": "Uyduların güç kaybetmesi"
+   }
+  ],
+  "correct": "years_stored_with_only_two_digits",
+  "source": "https://en.wikipedia.org/wiki/Year_2000_problem"
+ },
+ {
+  "key": "technology_inventions_q0084",
+  "category_id": "technology_inventions",
+  "subcategory_id": "inventions",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who gave the first public demonstration of a working television system, in London in 1926?",
+   "tr": "Çalışan bir televizyon sisteminin ilk halka açık gösterimini 1926'da Londra'da kim yaptı?"
+  },
+  "options": [
+   {
+    "concept_id": "john_logie_baird",
+    "en": "John Logie Baird",
+    "tr": "John Logie Baird"
+   },
+   {
+    "concept_id": "philo_farnsworth",
+    "en": "Philo Farnsworth",
+    "tr": "Philo Farnsworth"
+   },
+   {
+    "concept_id": "guglielmo_marconi",
+    "en": "Guglielmo Marconi",
+    "tr": "Guglielmo Marconi"
+   },
+   {
+    "concept_id": "vladimir_zworykin",
+    "en": "Vladimir Zworykin",
+    "tr": "Vladimir Zworykin"
+   }
+  ],
+  "correct": "john_logie_baird",
+  "source": "https://en.wikipedia.org/wiki/John_Logie_Baird"
+ },
+ {
+  "key": "technology_inventions_q0085",
+  "category_id": "technology_inventions",
+  "subcategory_id": "inventions",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "In 1914, the first electric traffic light was installed in which US city?",
+   "tr": "İlk elektrikli trafik ışığı 1914'te hangi ABD şehrine kuruldu?"
+  },
+  "options": [
+   {
+    "concept_id": "cleveland",
+    "en": "Cleveland",
+    "tr": "Cleveland"
+   },
+   {
+    "concept_id": "new_york",
+    "en": "New York",
+    "tr": "New York"
+   },
+   {
+    "concept_id": "chicago",
+    "en": "Chicago",
+    "tr": "Chicago"
+   },
+   {
+    "concept_id": "detroit",
+    "en": "Detroit",
+    "tr": "Detroit"
+   }
+  ],
+  "correct": "cleveland",
+  "source": "https://en.wikipedia.org/wiki/Traffic_light"
+ },
+ {
+  "key": "technology_inventions_q0086",
+  "category_id": "technology_inventions",
+  "subcategory_id": "inventions",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "A 1903 patent, a lever inside the car and snowy New York streetcars point to which inventor?",
+   "tr": "1903 tarihli bir patent, arabanın içindeki bir kol ve karlı New York tramvayları hangi mucidi işaret eder?"
+  },
+  "options": [
+   {
+    "concept_id": "mary_anderson",
+    "en": "Mary Anderson",
+    "tr": "Mary Anderson"
+   },
+   {
+    "concept_id": "josephine_cochrane",
+    "en": "Josephine Cochrane",
+    "tr": "Josephine Cochrane"
+   },
+   {
+    "concept_id": "margaret_knight",
+    "en": "Margaret Knight",
+    "tr": "Margaret Knight"
+   },
+   {
+    "concept_id": "bertha_benz",
+    "en": "Bertha Benz",
+    "tr": "Bertha Benz"
+   }
+  ],
+  "correct": "mary_anderson",
+  "source": "https://en.wikipedia.org/wiki/Mary_Anderson_(inventor)"
+ },
+ {
+  "key": "technology_inventions_q0087",
+  "category_id": "technology_inventions",
+  "subcategory_id": "inventors",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Russian schoolteacher published the rocket equation in 1903, laying foundations for spaceflight?",
+   "tr": "Hangi Rus öğretmen 1903'te roket denklemini yayımlayarak uzay uçuşunun temellerini attı?"
+  },
+  "options": [
+   {
+    "concept_id": "konstantin_tsiolkovsky",
+    "en": "Konstantin Tsiolkovsky",
+    "tr": "Konstantin Tsiolkovski"
+   },
+   {
+    "concept_id": "sergei_korolev",
+    "en": "Sergei Korolev",
+    "tr": "Sergey Korolyov"
+   },
+   {
+    "concept_id": "yuri_kondratyuk",
+    "en": "Yuri Kondratyuk",
+    "tr": "Yuri Kondratyuk"
+   },
+   {
+    "concept_id": "igor_sikorsky",
+    "en": "Igor Sikorsky",
+    "tr": "Igor Sikorsky"
+   }
+  ],
+  "correct": "konstantin_tsiolkovsky",
+  "source": "https://en.wikipedia.org/wiki/Konstantin_Tsiolkovsky"
+ },
+ {
+  "key": "technology_inventions_q0088",
+  "category_id": "technology_inventions",
+  "subcategory_id": "inventors",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "German \"Glider King\" Otto Lilienthal made roughly how many glider flights before his fatal crash?",
+   "tr": "Alman \"Planör Kralı\" Otto Lilienthal ölümcül kazasından önce yaklaşık kaç planör uçuşu yaptı?"
+  },
+  "options": [
+   {
+    "concept_id": "about_2_000",
+    "en": "About 2,000",
+    "tr": "Yaklaşık 2.000"
+   },
+   {
+    "concept_id": "about_20",
+    "en": "About 20",
+    "tr": "Yaklaşık 20"
+   },
+   {
+    "concept_id": "about_200",
+    "en": "About 200",
+    "tr": "Yaklaşık 200"
+   },
+   {
+    "concept_id": "about_20_000",
+    "en": "About 20,000",
+    "tr": "Yaklaşık 20.000"
+   }
+  ],
+  "correct": "about_2_000",
+  "source": "https://en.wikipedia.org/wiki/Otto_Lilienthal"
+ },
+ {
+  "key": "technology_inventions_q0089",
+  "category_id": "technology_inventions",
+  "subcategory_id": "inventors",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Brazilian aviation pioneer helped popularise the wristwatch, because he needed both hands to fly?",
+   "tr": "Hangi Brezilyalı havacılık öncüsü uçarken iki eline de ihtiyaç duyduğu için kol saatini yaygınlaştırdı?"
+  },
+  "options": [
+   {
+    "concept_id": "alberto_santos_dumont",
+    "en": "Alberto Santos-Dumont",
+    "tr": "Alberto Santos-Dumont"
+   },
+   {
+    "concept_id": "louis_bleriot",
+    "en": "Louis Blériot",
+    "tr": "Louis Blériot"
+   },
+   {
+    "concept_id": "glenn_curtiss",
+    "en": "Glenn Curtiss",
+    "tr": "Glenn Curtiss"
+   },
+   {
+    "concept_id": "henri_farman",
+    "en": "Henri Farman",
+    "tr": "Henri Farman"
+   }
+  ],
+  "correct": "alberto_santos_dumont",
+  "source": "https://en.wikipedia.org/wiki/Alberto_Santos-Dumont"
+ },
+ {
+  "key": "technology_inventions_q0090",
+  "category_id": "technology_inventions",
+  "subcategory_id": "tech_history",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which web-browser company's 1995 stock market debut kicked off the dot-com boom?",
+   "tr": "Hangi web tarayıcısı şirketinin 1995'teki halka arzı dot-com patlamasını başlattı?"
+  },
+  "options": [
+   {
+    "concept_id": "netscape",
+    "en": "Netscape",
+    "tr": "Netscape"
+   },
+   {
+    "concept_id": "yahoo",
+    "en": "Yahoo!",
+    "tr": "Yahoo!"
+   },
+   {
+    "concept_id": "aol",
+    "en": "AOL",
+    "tr": "AOL"
+   },
+   {
+    "concept_id": "opera",
+    "en": "Opera",
+    "tr": "Opera"
+   }
+  ],
+  "correct": "netscape",
+  "source": "https://en.wikipedia.org/wiki/Netscape"
+ },
+ {
+  "key": "technology_inventions_q0091",
+  "category_id": "technology_inventions",
+  "subcategory_id": "tech_history",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "In which year did Kodak engineer Steven Sasson build the first digital camera?",
+   "tr": "Kodak mühendisi Steven Sasson ilk dijital fotoğraf makinesini hangi yıl yaptı?"
+  },
+  "options": [
+   {
+    "concept_id": "n_1975",
+    "en": "1975",
+    "tr": "1975"
+   },
+   {
+    "concept_id": "n_1955",
+    "en": "1955",
+    "tr": "1955"
+   },
+   {
+    "concept_id": "n_1989",
+    "en": "1989",
+    "tr": "1989"
+   },
+   {
+    "concept_id": "n_1995",
+    "en": "1995",
+    "tr": "1995"
+   }
+  ],
+  "correct": "n_1975",
+  "source": "https://en.wikipedia.org/wiki/Steven_Sasson"
+ },
+ {
+  "key": "technology_inventions_q0092",
+  "category_id": "technology_inventions",
+  "subcategory_id": "tech_history",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Where does the name \"Google\" come from?",
+   "tr": "\"Google\" adı nereden gelir?"
+  },
+  "options": [
+   {
+    "concept_id": "a_misspelling_of_googol_10_to_the_100th",
+    "en": "A misspelling of \"googol\" (10 to the 100th)",
+    "tr": "\"Googol\"un (10 üzeri 100) yanlış yazımı"
+   },
+   {
+    "concept_id": "a_cartoon_character",
+    "en": "A cartoon character",
+    "tr": "Bir çizgi film karakterinden"
+   },
+   {
+    "concept_id": "a_founder_s_pet",
+    "en": "A founder's pet",
+    "tr": "Kurucunun evcil hayvanından"
+   },
+   {
+    "concept_id": "a_town_in_california",
+    "en": "A town in California",
+    "tr": "Kaliforniya'da bir kasabadan"
+   }
+  ],
+  "correct": "a_misspelling_of_googol_10_to_the_100th",
+  "source": "https://en.wikipedia.org/wiki/Google"
+ },
+ {
+  "key": "technology_inventions_q0093",
+  "category_id": "technology_inventions",
+  "subcategory_id": "internet",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Indian-born entrepreneur co-founded Hotmail, one of the first webmail services, in 1996?",
+   "tr": "İlk web postası hizmetlerinden Hotmail'i 1996'da kuranlardan olan Hindistan doğumlu girişimci kimdir?"
+  },
+  "options": [
+   {
+    "concept_id": "sabeer_bhatia",
+    "en": "Sabeer Bhatia",
+    "tr": "Sabeer Bhatia"
+   },
+   {
+    "concept_id": "sundar_pichai",
+    "en": "Sundar Pichai",
+    "tr": "Sundar Pichai"
+   },
+   {
+    "concept_id": "satya_nadella",
+    "en": "Satya Nadella",
+    "tr": "Satya Nadella"
+   },
+   {
+    "concept_id": "vinod_khosla",
+    "en": "Vinod Khosla",
+    "tr": "Vinod Khosla"
+   }
+  ],
+  "correct": "sabeer_bhatia",
+  "source": "https://en.wikipedia.org/wiki/Sabeer_Bhatia"
+ },
+ {
+  "key": "technology_inventions_q0094",
+  "category_id": "technology_inventions",
+  "subcategory_id": "internet",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Skype's original software was written by developers from which country?",
+   "tr": "Skype'ın ilk yazılımı hangi ülkeden geliştiriciler tarafından yazıldı?"
+  },
+  "options": [
+   {
+    "concept_id": "estonia",
+    "en": "Estonia",
+    "tr": "Estonya"
+   },
+   {
+    "concept_id": "finland",
+    "en": "Finland",
+    "tr": "Finlandiya"
+   },
+   {
+    "concept_id": "israel",
+    "en": "Israel",
+    "tr": "İsrail"
+   },
+   {
+    "concept_id": "sweden",
+    "en": "Sweden",
+    "tr": "İsveç"
+   }
+  ],
+  "correct": "estonia",
+  "source": "https://en.wikipedia.org/wiki/Skype"
+ },
+ {
+  "key": "technology_inventions_q0095",
+  "category_id": "technology_inventions",
+  "subcategory_id": "ai_basics",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Who built the Perceptron, an early learning machine inspired by brain cells, in 1958?",
+   "tr": "Beyin hücrelerinden esinlenen erken dönem öğrenen makine Perceptron'u 1958'de kim yaptı?"
+  },
+  "options": [
+   {
+    "concept_id": "frank_rosenblatt",
+    "en": "Frank Rosenblatt",
+    "tr": "Frank Rosenblatt"
+   },
+   {
+    "concept_id": "marvin_minsky",
+    "en": "Marvin Minsky",
+    "tr": "Marvin Minsky"
+   },
+   {
+    "concept_id": "john_mccarthy",
+    "en": "John McCarthy",
+    "tr": "John McCarthy"
+   },
+   {
+    "concept_id": "herbert_simon",
+    "en": "Herbert Simon",
+    "tr": "Herbert Simon"
+   }
+  ],
+  "correct": "frank_rosenblatt",
+  "source": "https://en.wikipedia.org/wiki/Perceptron"
+ },
+ {
+  "key": "technology_inventions_q0096",
+  "category_id": "technology_inventions",
+  "subcategory_id": "ai_basics",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What are the periods of collapsed funding and interest in AI research, as in the 1970s and late 1980s, called?",
+   "tr": "1970'lerde ve 1980'lerin sonunda olduğu gibi yapay zekâ araştırmalarına fon ve ilginin çöktüğü dönemlere ne denir?"
+  },
+  "options": [
+   {
+    "concept_id": "ai_winters",
+    "en": "AI winters",
+    "tr": "Yapay zekâ kışları"
+   },
+   {
+    "concept_id": "ai_droughts",
+    "en": "AI droughts",
+    "tr": "Yapay zekâ kuraklıkları"
+   },
+   {
+    "concept_id": "dark_ages_of_code",
+    "en": "Dark ages of code",
+    "tr": "Kodun karanlık çağları"
+   },
+   {
+    "concept_id": "silicon_freezes",
+    "en": "Silicon freezes",
+    "tr": "Silikon donmaları"
+   }
+  ],
+  "correct": "ai_winters",
+  "source": "https://en.wikipedia.org/wiki/AI_winter"
+ },
+ {
+  "key": "technology_inventions_q0097",
+  "category_id": "technology_inventions",
+  "subcategory_id": "smartphones",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Finnish company created the mobile hits \"Clash of Clans\" and \"Brawl Stars\"?",
+   "tr": "\"Clash of Clans\" ve \"Brawl Stars\" mobil oyunlarını hangi Fin şirketi yarattı?"
+  },
+  "options": [
+   {
+    "concept_id": "supercell",
+    "en": "Supercell",
+    "tr": "Supercell"
+   },
+   {
+    "concept_id": "rovio",
+    "en": "Rovio",
+    "tr": "Rovio"
+   },
+   {
+    "concept_id": "remedy",
+    "en": "Remedy",
+    "tr": "Remedy"
+   },
+   {
+    "concept_id": "king",
+    "en": "King",
+    "tr": "King"
+   }
+  ],
+  "correct": "supercell",
+  "source": "https://en.wikipedia.org/wiki/Supercell_(video_game_company)"
+ },
+ {
+  "key": "technology_inventions_q0098",
+  "category_id": "technology_inventions",
+  "subcategory_id": "smartphones",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Why did Samsung recall every Galaxy Note 7 in 2016?",
+   "tr": "Samsung 2016'da neden tüm Galaxy Note 7'leri geri çağırdı?"
+  },
+  "options": [
+   {
+    "concept_id": "its_batteries_could_catch_fire",
+    "en": "Its batteries could catch fire",
+    "tr": "Pilleri alev alabiliyordu"
+   },
+   {
+    "concept_id": "its_screens_cracked_in_cold",
+    "en": "Its screens cracked in cold",
+    "tr": "Ekranları soğukta çatlıyordu"
+   },
+   {
+    "concept_id": "it_recorded_calls_secretly",
+    "en": "It recorded calls secretly",
+    "tr": "Aramaları gizlice kaydediyordu"
+   },
+   {
+    "concept_id": "its_antenna_failed",
+    "en": "Its antenna failed",
+    "tr": "Anteni arızalıydı"
+   }
+  ],
+  "correct": "its_batteries_could_catch_fire",
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_Note_7"
+ },
+ {
+  "key": "technology_inventions_q0099",
+  "category_id": "technology_inventions",
+  "subcategory_id": "space_technology",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which Soviet chief designer, kept secret during his lifetime, led the Sputnik and Gagarin programmes?",
+   "tr": "Hayattayken kimliği gizli tutulan hangi Sovyet baş tasarımcı Sputnik ve Gagarin programlarını yönetti?"
+  },
+  "options": [
+   {
+    "concept_id": "sergei_korolev",
+    "en": "Sergei Korolev",
+    "tr": "Sergey Korolyov"
+   },
+   {
+    "concept_id": "konstantin_tsiolkovsky",
+    "en": "Konstantin Tsiolkovsky",
+    "tr": "Konstantin Tsiolkovski"
+   },
+   {
+    "concept_id": "valentin_glushko",
+    "en": "Valentin Glushko",
+    "tr": "Valentin Gluşko"
+   },
+   {
+    "concept_id": "mikhail_kalashnikov",
+    "en": "Mikhail Kalashnikov",
+    "tr": "Mihail Kalaşnikov"
+   }
+  ],
+  "correct": "sergei_korolev",
+  "source": "https://en.wikipedia.org/wiki/Sergei_Korolev"
+ },
+ {
+  "key": "technology_inventions_q0100",
+  "category_id": "technology_inventions",
+  "subcategory_id": "space_technology",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "In December 2024 the Parker Solar Probe set a speed record of roughly how fast?",
+   "tr": "Parker Güneş Sondası Aralık 2024'te yaklaşık hangi hızla rekor kırdı?"
+  },
+  "options": [
+   {
+    "concept_id": "about_690_000_km_h",
+    "en": "About 690,000 km/h",
+    "tr": "Yaklaşık 690.000 km/sa"
+   },
+   {
+    "concept_id": "about_69_000_km_h",
+    "en": "About 69,000 km/h",
+    "tr": "Yaklaşık 69.000 km/sa"
+   },
+   {
+    "concept_id": "about_6_900_km_h",
+    "en": "About 6,900 km/h",
+    "tr": "Yaklaşık 6.900 km/sa"
+   },
+   {
+    "concept_id": "about_6_9_million_km_h",
+    "en": "About 6.9 million km/h",
+    "tr": "Yaklaşık 6,9 milyon km/sa"
+   }
+  ],
+  "correct": "about_690_000_km_h",
+  "source": "https://en.wikipedia.org/wiki/Parker_Solar_Probe"
+ }
+]
