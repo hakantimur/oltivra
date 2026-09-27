@@ -25,6 +25,9 @@ services:
     depends_on:
       emulators:
         condition: service_healthy
+    env_file:
+      - path: backend/.env
+        required: false
     environment:
       OLTIVRA_ENV: dev
       OLTIVRA_STORE_BACKEND: firebase
