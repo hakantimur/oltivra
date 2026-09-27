@@ -7,7 +7,7 @@ import pytest
 from app.accounts.runtime import RuntimeState, idle_runtime, require_idle, transition
 from app.common.errors import ApiError, ErrorCode
 from app.profiles.service import PRIVACY_VERSION, TERMS_VERSION, USERNAME_COOLDOWN_MS
-from app.ranking.leagues import League, display_league, league_for_mmr, league_progress
+from app.ranking.leagues import League, bot_tier_for_mmr, promoted, relegated, tier_of
 from app.ranking.levels import level_for_xp, xp_to_start_level
 from app.usernames.rules import UsernameProblem, check_username
 
@@ -45,15 +45,15 @@ def test_level_curve():
     (1200, League.PLATINUM), (1350, League.DIAMOND), (1500, League.MASTER), (1699, League.MASTER),
     (1700, League.LEGEND),
 ])
-def test_league_thresholds(mmr, league):
-    assert league_for_mmr(mmr) == league
+def test_bot_card_tier_follows_mmr(mmr, league):
+    assert bot_tier_for_mmr(mmr) == league
 
 
-def test_unranked_during_placement_and_no_raw_mmr_in_progress():
-    assert display_league(1400, 4) == League.UNRANKED
-    progress = league_progress(1100, 7)
-    assert progress["league"] == "GOLD" and 0 <= progress["progress"] <= 1
-    assert "mmr" not in progress
+def test_tiers_start_at_bronze_and_step_one_at_a_time():
+    assert tier_of({}) == League.BRONZE and tier_of({"league_tier": "GOLD"}) == League.GOLD
+    assert tier_of({"league_tier": "UNRANKED"}) == League.BRONZE  # legacy value
+    assert promoted(League.BRONZE) == League.SILVER and promoted(League.LEGEND) == League.LEGEND
+    assert relegated(League.SILVER) == League.BRONZE and relegated(League.BRONZE) == League.BRONZE
 
 
 def test_runtime_lock_rules():
@@ -82,7 +82,7 @@ def test_first_run_flow_and_bootstrap(api):
     profile = api.onboard("new1", "Mira_Moves")
     assert profile["username_display"] == "Mira_Moves"
     assert profile["onboarding"] == {"consent": True, "username": True, "avatar": True, "rename_required": False}
-    assert profile["league"] == "UNRANKED" and profile["level"] == 1
+    assert profile["league"] == "BRONZE" and profile["level"] == 1
     body = api.post("/v1/session/bootstrap", "new1", {}).json()
     assert body["profile"]["public_id"].startswith("p")
     assert body["runtime"]["state"] == "IDLE"

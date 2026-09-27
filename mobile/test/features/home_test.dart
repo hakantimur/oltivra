@@ -251,7 +251,8 @@ void main() {
                 {'mission_id': 'c', 'template_id': 'send_reactions_5', 'target': 5, 'progress': 0, 'completed': false},
               ],
             },
-          '/v1/league' => {'league': 'SILVER', 'progress': 0.4, 'next_league': 'GOLD', 'ranked_weekly_xp': 320},
+          '/v1/league' => {'league': 'SILVER', 'joined': true, 'rank': 42, 'group_size': 100, 'promote_count': 20,
+              'demote_count': 20, 'ranked_weekly_xp': 320},
           '/v1/leaderboards/weekly' => {
               'entries': [],
               'me': {'rank': 142, 'league': 'SILVER', 'ranked_weekly_xp': 320},
@@ -267,7 +268,8 @@ void main() {
       expect(find.text('Answer 10 questions correctly'), findsOneWidget);
       expect(find.text('Send 5 reactions'), findsNothing);
       expect(find.text('Resets in 8h'), findsOneWidget);
-      expect(find.text('#142'), findsOneWidget);
+      expect(find.text('#42'), findsOneWidget); // rank in the weekly league group
+      expect(find.text('Silver League'), findsOneWidget);
       expect(find.text('320 XP'), findsOneWidget);
       expect(find.text('Rejoin'), findsNothing);
     });

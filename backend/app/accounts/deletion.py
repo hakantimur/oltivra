@@ -107,6 +107,9 @@ class DeletionService:
                     await self._store.delete(row.path)
         for row in await self._store.query(Query("friendships").filter("member_uids", "array_contains", uid)):
             await self._store.delete(row.path)
+        # League groups list their human members; the seat simply goes back to a bot.
+        for row in await self._store.query(Query("league_groups").filter("human_uids", "array_contains", uid)):
+            await self._store.update(row.path, {"human_uids": [u for u in row.data.get("human_uids", []) if u != uid]})
         # 2. Historical matches keep aggregate stats with pseudonymous participants.
         for row in await self._store.query(Query("match_history").filter("participant_uids", "array_contains", uid)):
             participants = [{**p, "uid_or_bot_id": anon} if p.get("uid_or_bot_id") == uid else p

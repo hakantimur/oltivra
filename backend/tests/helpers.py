@@ -8,6 +8,7 @@ from concurrent.futures import ThreadPoolExecutor
 from functools import lru_cache
 
 from app.common.clock import FakeClock
+from app.common.server_config import GameConfig, LeagueConfig, ServerConfigService
 from app.common.store.memory_docstore import MemoryDocStore
 from app.manifests.manifest import ManifestBuilder
 from app.questions.models import QuestionStatus
@@ -22,6 +23,11 @@ def _seeded_snapshot() -> dict:
         repo = QuestionRepository(store, clock)
         await import_seed(repo, store, QuestionStatus.ACTIVE)
         await ManifestBuilder(store, clock).build_all(list(SEED_LANGUAGES))
+        # Tests exercise the spec's ranked rule (bot matches are unranked) unless they opt into the league
+        # bootstrap explicitly (tests/unit/test_leagues.py).
+        config = GameConfig(leagues=LeagueConfig(bootstrap_active_humans=0))
+        await store.set(f"server_config/v{config.config_version}", config.model_dump())
+        await store.set(ServerConfigService.ACTIVE_PATH, {"config_version": config.config_version})
         return store.dump()
 
     # Run on a separate thread so this also works when called from inside a running event loop.

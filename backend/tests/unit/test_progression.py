@@ -148,19 +148,22 @@ def test_ranked_match_updates_mmr_streak_weekly_and_leaderboard(players, contain
         play_round_human_wins(players, container, match_id, uid="u1")
     u1 = user(container, "u1")
     # Four equal 1000 players, provisional K = 48: 48 * (3 - 1.5) / 3 = 24.
-    assert u1["mmr"] == 1024 and u1["ranked_matches_completed"] == 1 and u1["placement_matches_completed"] == 1
+    assert u1["mmr"] == 1024 and u1["ranked_matches_completed"] == 1
     assert u1["quick_current_ranked_win_streak"] == 1 and u1["quick_ranked_wins_lifetime"] == 1
     losers = [user(container, u)["mmr"] - 1000 for u in ("u2", "u3", "u4")]
     # Unique tiebroken placements (spec §3.7): 2nd gains vs 3rd/4th, the group loses overall.
     assert sum(losers) < 0 and sorted(losers) == [-24, -8, 8]
     week = iso_week_id(container.clock.now_ms())
     weekly = container.store._docs[f"weekly_user_stats/{week}_u1"]
-    assert weekly["ranked_weekly_xp"] == 200 and weekly["quick_ranked_wins"] == 1 and weekly["league"] == "UNRANKED"
+    assert weekly["ranked_weekly_xp"] == 200 and weekly["quick_ranked_wins"] == 1 and weekly["league"] == "BRONZE"
+    assert weekly["group_id"] == u1["league_state"]["group_id"]
     board = players.get("/v1/leaderboards/weekly", "u2").json()
     assert board["entries"][0]["public_id"] == u1["public_id"] and board["entries"][0]["rank"] == 1
     assert board["me"]["rank"] >= 2 and len(board["entries"]) == 4
     league = players.get("/v1/league", "u1").json()
-    assert league["league"] == "UNRANKED" and league["placement_matches_remaining"] == 4
+    assert league["league"] == "BRONZE" and league["joined"] is True and len(league["standings"]) == 100
+    mine = [row for row in league["standings"] if row["me"]]
+    assert len(mine) == 1 and mine[0]["weekly_xp"] == 200 and league["rank"] == mine[0]["rank"]
     assert "mmr" not in league and league["ranked_weekly_xp"] == 200
 
 

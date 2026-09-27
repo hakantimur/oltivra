@@ -1,4 +1,8 @@
-"""Leagues from server-only MMR (spec §7.3). Clients see league + abstract progress, never raw MMR."""
+"""League tiers (playtest 2026-09-27).
+
+Leagues are weekly cohorts (``app.ranking.league_groups``): a player's tier only changes at the week rollover by
+promotion or relegation. MMR stays server-only and is used for matchmaking and bot selection alone.
+"""
 
 from __future__ import annotations
 
@@ -6,7 +10,6 @@ from enum import StrEnum
 
 
 class League(StrEnum):
-    UNRANKED = "UNRANKED"
     BRONZE = "BRONZE"
     SILVER = "SILVER"
     GOLD = "GOLD"
@@ -16,45 +19,36 @@ class League(StrEnum):
     LEGEND = "LEGEND"
 
 
-# (league, inclusive lower bound)
-THRESHOLDS: tuple[tuple[League, int], ...] = (
-    (League.BRONZE, -10**9),
-    (League.SILVER, 900),
-    (League.GOLD, 1050),
-    (League.PLATINUM, 1200),
-    (League.DIAMOND, 1350),
-    (League.MASTER, 1500),
-    (League.LEGEND, 1700),
+TIERS: tuple[League, ...] = tuple(League)
+START_TIER = League.BRONZE
+
+# Only used to give match bots a plausible tier on their public card.
+_BOT_TIER_BY_MMR: tuple[tuple[League, int], ...] = (
+    (League.BRONZE, -10**9), (League.SILVER, 900), (League.GOLD, 1050), (League.PLATINUM, 1200),
+    (League.DIAMOND, 1350), (League.MASTER, 1500), (League.LEGEND, 1700),
 )
 
 
-def league_for_mmr(mmr: int) -> League:
+def tier_of(user: dict | None) -> League:
+    value = (user or {}).get("league_tier")
+    return League(value) if value in League.__members__ else START_TIER
+
+
+def tier_index(tier: League | str) -> int:
+    return TIERS.index(League(tier))
+
+
+def promoted(tier: League | str) -> League:
+    return TIERS[min(tier_index(tier) + 1, len(TIERS) - 1)]
+
+
+def relegated(tier: League | str) -> League:
+    return TIERS[max(tier_index(tier) - 1, 0)]
+
+
+def bot_tier_for_mmr(mmr: int) -> League:
     current = League.BRONZE
-    for league, lower in THRESHOLDS:
+    for league, lower in _BOT_TIER_BY_MMR:
         if mmr >= lower:
             current = league
     return current
-
-
-def display_league(mmr: int, placement_matches_completed: int, placement_required: int = 5) -> League:
-    if placement_matches_completed < placement_required:
-        return League.UNRANKED
-    return league_for_mmr(mmr)
-
-
-def league_progress(mmr: int, placement_matches_completed: int, placement_required: int = 5) -> dict:
-    """Abstract 0..1 progress toward the next league; no raw MMR is returned."""
-    league = display_league(mmr, placement_matches_completed, placement_required)
-    if league == League.UNRANKED:
-        return {"league": league.value, "progress": round(placement_matches_completed / placement_required, 3),
-                "next_league": None, "placement_matches_remaining": placement_required - placement_matches_completed}
-    bounds = [lower for _, lower in THRESHOLDS]
-    names = [lg for lg, _ in THRESHOLDS]
-    index = names.index(league)
-    if index == len(names) - 1:
-        return {"league": league.value, "progress": 1.0, "next_league": None, "placement_matches_remaining": 0}
-    low = bounds[index] if index > 0 else 750
-    high = bounds[index + 1]
-    progress = min(1.0, max(0.0, (mmr - low) / (high - low)))
-    return {"league": league.value, "progress": round(progress, 3), "next_league": names[index + 1].value,
-            "placement_matches_remaining": 0}

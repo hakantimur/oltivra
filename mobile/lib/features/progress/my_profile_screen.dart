@@ -152,7 +152,7 @@ class _PlayerCard extends StatelessWidget {
     final level = asInt(lp['level']) ?? asInt(profile['level']);
     final into = asInt(lp['xp_into_level']);
     final forLevel = asInt(lp['xp_for_level']);
-    final league = (profile['league'] as String?) ?? 'UNRANKED';
+    final league = (profile['league'] as String?) ?? 'BRONZE';
     final name = (profile['username_display'] as String?) ?? '';
 
     return Container(

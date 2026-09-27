@@ -421,30 +421,29 @@ class _WeekSection extends ConsumerWidget {
     final league = ref.watch(homeLeagueProvider).value;
     final me = ref.watch(homeWeeklyRankProvider).value;
     final tiles = <Widget>[];
-    final rank = (me?['rank'] as num?)?.toInt();
-    final leagueId = (me?['league'] as String?) ?? (league?['league'] as String?);
-    if (rank != null) {
-      tiles.add(_WeekTile(
-        icon: Icons.leaderboard_outlined,
-        label: context.t('home.week.division'),
-        value: context.t('home.week.rank', {'rank': rank}),
-        caption: leagueId == null ? null : context.t('home.week.division_name', {'league': context.t('league.$leagueId')}),
-        onTap: () => context.go(Routes.rankings),
-      ));
-    } else if (league != null && leagueId != null) {
-      final remaining = (league['placement_matches_remaining'] as num?)?.toInt() ?? 0;
-      final next = league['next_league'] as String?;
+    // Weekly league group (playtest 2026-09-27): rank among the group, or an invitation to join this week.
+    final leagueId = (league?['league'] as String?) ?? (me?['league'] as String?);
+    final rank = (league?['rank'] as num?)?.toInt();
+    if (league != null && leagueId != null) {
+      final size = (league['group_size'] as num?)?.toInt() ?? 100;
+      final promote = (league['promote_count'] as num?)?.toInt() ?? 0;
+      final demote = (league['demote_count'] as num?)?.toInt() ?? 0;
+      final String caption;
+      if (rank == null) {
+        caption = context.t('home.week.join');
+      } else if (rank <= promote) {
+        caption = context.t('home.week.zone_up');
+      } else if (demote > 0 && rank > size - demote) {
+        caption = context.t('home.week.zone_down');
+      } else {
+        caption = context.t('home.week.division_name', {'league': context.t('league.$leagueId')});
+      }
       tiles.add(_WeekTile(
         icon: Icons.military_tech_outlined,
         label: context.t('home.week.league'),
-        value: context.t('league.$leagueId'),
-        caption: remaining > 0
-            ? context.t('home.week.placement', {'n': remaining})
-            : next != null
-                ? context.t('home.week.next', {'league': context.t('league.$next')})
-                : context.t('home.week.top'),
-        progress: (league['progress'] as num?)?.toDouble(),
-        onTap: () => context.push(Routes.league),
+        value: rank == null ? context.t('league.$leagueId') : context.t('home.week.rank', {'rank': rank}),
+        caption: caption,
+        onTap: () => context.go(Routes.rankings),
       ));
     }
     final xp = (league?['ranked_weekly_xp'] as num?)?.toInt() ?? (me?['ranked_weekly_xp'] as num?)?.toInt();
@@ -481,14 +480,13 @@ class _WeekSection extends ConsumerWidget {
 
 class _WeekTile extends StatelessWidget {
   const _WeekTile({required this.icon, required this.label, required this.value, this.caption, this.onTap,
-      this.progress, this.iconColor = OColors.primary});
+      this.iconColor = OColors.primary});
 
   final IconData icon;
   final Color iconColor;
   final String label;
   final String value;
   final String? caption;
-  final double? progress;
   final VoidCallback? onTap;
 
   @override
@@ -511,10 +509,6 @@ class _WeekTile extends StatelessWidget {
             Text(value, style: OText.tabular(OText.headlineMd), maxLines: 1, overflow: TextOverflow.ellipsis),
             if (caption != null)
               Text(caption!, style: OText.bodySm.copyWith(color: OColors.inkSubtle), maxLines: 2),
-            if (progress != null) ...[
-              const SizedBox(height: OSpace.sm),
-              OProgressBar(value: progress!, height: 6),
-            ],
           ],
         ),
       );

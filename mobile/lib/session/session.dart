@@ -36,7 +36,7 @@ class Session {
   String get frameId => (profile?['frame_id'] as String?) ?? 'frame_none';
   String? get publicId => profile?['public_id'] as String?;
   int get level => (profile?['level'] as num?)?.toInt() ?? 1;
-  String get league => (profile?['league'] as String?) ?? 'UNRANKED';
+  String get league => (profile?['league'] as String?) ?? 'BRONZE';
   bool get removeAds => profile?['remove_ads'] == true;
   String get questionLanguage => (profile?['question_language'] as String?) ?? 'en';
   String get uiLanguage => (profile?['ui_language'] as String?) ?? 'en';

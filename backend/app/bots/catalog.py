@@ -13,7 +13,7 @@ from app.catalog.data import AVATARS
 from app.common.keys import Keyring
 from app.common.server_config import GameConfig
 from app.common.store.docstore import DocStore, Query
-from app.ranking.leagues import display_league
+from app.ranking.leagues import bot_tier_for_mmr
 
 _NAMES = [
     "ava_k", "kevin_q", "sora_7", "elena_z", "mira_lux", "theo_r", "nadia_v", "jonas_b", "lina_quiz", "omar_f",
@@ -56,7 +56,7 @@ def bot_public_profile(keys: Keyring, bot: dict[str, Any], config: GameConfig) -
         "avatar_id": bot["avatar_id"],
         "frame_id": "frame_none",
         "featured_badge_ids": [],
-        "league": display_league(mmr, 5).value,
+        "league": bot_tier_for_mmr(mmr).value,
         "level": 4 + rng.randint(0, 20) + (mmr - 850) // 60,
         "quick_best_ranked_win_streak": rng.randint(0, 6),
         "survival_ranked_crowns_lifetime": rng.randint(0, 3),

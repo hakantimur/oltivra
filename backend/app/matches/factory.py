@@ -23,12 +23,18 @@ RANKED_SOURCES = ("PUBLIC", "REMATCH")
 
 
 def ranked_eligibility(mode: Mode, human_count: int, bot_count: int, ranked: RankedConfig,
-                       source: str) -> dict[str, Any]:
-    """Ranked only with enough human opponents (spec §7.5); config can only make it stricter."""
+                       source: str, bootstrap: bool = False) -> dict[str, Any]:
+    """Ranked only with enough human opponents (spec §7.5); config can only make it stricter.
+
+    ``bootstrap``: while the player base is small, public matches with bots count as ranked so leagues and
+    leaderboards are alive (playtest 2026-09-27, see LeagueConfig.bootstrap_active_humans).
+    """
     minimum = ranked.quick_min_total_humans if mode == Mode.QUICK else ranked.survival_min_total_humans
     if source not in RANKED_SOURCES:
         # Friend challenges never move MMR (prevents arranged rating farming between friends).
         eligible, reason = False, "private_match"
+    elif human_count < minimum and bootstrap:
+        eligible, reason = True, "bootstrap"
     elif human_count < minimum:
         eligible, reason = False, "insufficient_human_opponents"
     else:
@@ -108,7 +114,8 @@ class MatchFactory:
             config_snapshot={**config.match_snapshot(mode.value),
                              "bots": {"reaction_probability": config.bots.reaction_probability},
                              "retention": config.retention.model_dump()},
-            ranked=ranked_eligibility(mode, len(humans), len(bots), config.ranked, source),
+            ranked=ranked_eligibility(mode, len(humans), len(bots), config.ranked, source,
+                                      bootstrap=await c.leagues.bootstrap_active(c.clock.now_ms())),
             reaction_ids=reactions,
             extra={"category_id": category_id} if category_id else {},
         )

@@ -9,9 +9,9 @@ from app.common.api import Caller, get_container, player, run_mutation
 from app.common.errors import ApiError, ErrorCode
 from app.common.store.docstore import Query as DocQuery
 from app.container import Container
-from app.progression.service import category_path, weekly_path
+from app.progression.service import category_path
 from app.questions.taxonomy import CATEGORIES
-from app.ranking.leagues import THRESHOLDS, League, league_progress
+from app.ranking.leagues import League
 
 router = APIRouter(prefix="/v1")
 
@@ -52,22 +52,11 @@ async def weekly_leaderboard(week_id: str | None = Query(default=None, max_lengt
 
 @router.get("/league")
 async def league(caller: Caller = Depends(player), c: Container = Depends(get_container)) -> dict:
-    """League and abstract progress only; raw MMR never leaves the server (spec §7.3)."""
-    user = caller.user or {}
-    config = await c.config.get()
-    from app.common.clock import iso_week_id
-
-    week = iso_week_id(c.clock.now_ms())
-    weekly = await c.store.get(weekly_path(week, caller.uid)) or {}
-    return {
-        "schema_version": 1,
-        **league_progress(int(user.get("mmr", config.ranked.start_mmr)),
-                          int(user.get("placement_matches_completed", 0)), config.ranked.placement_matches),
-        "leagues": [lg.value for lg, _ in THRESHOLDS],
-        "ranked_matches_completed": int(user.get("ranked_matches_completed", 0)),
-        "week_id": week,
-        "ranked_weekly_xp": int(weekly.get("ranked_weekly_xp", 0)),
-    }
+    """This week's league group: tier, standings with promotion/relegation zones and last week's result.
+    Raw MMR never leaves the server (spec §7.3)."""
+    view = await c.leagues.view(caller.uid, c.clock.now_ms())
+    view["ranked_matches_completed"] = int((caller.user or {}).get("ranked_matches_completed", 0))
+    return view
 
 
 @router.get("/category-stats")
