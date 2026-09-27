@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../core/legal.dart';
 import '../../core/providers.dart';
 import '../../l10n/strings.dart';
 import '../../router/routes.dart';
@@ -46,7 +47,6 @@ class _TermsScreenState extends ConsumerState<TermsScreen> {
   @override
   Widget build(BuildContext context) {
     final signedOut = ref.watch(authStateProvider).value == null;
-    final legal = ref.watch(sessionProvider).value?.legal ?? const {};
     return Scaffold(
       appBar: onboardingAppBar(
         context,
@@ -82,12 +82,7 @@ class _TermsScreenState extends ConsumerState<TermsScreen> {
               agreeLabel: context.t('onboarding.terms.agree_tos'),
               value: _tos,
               onChanged: (v) => setState(() => _tos = v),
-              onOpen: () => showLegalSheet(
-                context,
-                title: context.t('onboarding.terms.tos'),
-                body: context.t('onboarding.terms.tos_text'),
-                version: legal['terms_version']?.toString(),
-              ),
+              onOpen: () => showLegalDocument(context, 'terms'),
             ),
             const SizedBox(height: OSpace.md),
             _DocumentRow(
@@ -98,12 +93,7 @@ class _TermsScreenState extends ConsumerState<TermsScreen> {
               agreeLabel: context.t('onboarding.terms.agree_privacy'),
               value: _privacy,
               onChanged: (v) => setState(() => _privacy = v),
-              onOpen: () => showLegalSheet(
-                context,
-                title: context.t('onboarding.terms.privacy'),
-                body: context.t('onboarding.terms.privacy_text'),
-                version: legal['privacy_version']?.toString(),
-              ),
+              onOpen: () => showLegalDocument(context, 'privacy'),
             ),
             const SizedBox(height: OSpace.md),
             Text(

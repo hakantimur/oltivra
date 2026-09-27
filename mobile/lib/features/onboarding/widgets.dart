@@ -267,31 +267,3 @@ class _MarkPainter extends CustomPainter {
   @override
   bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
 }
-
-/// Opens a legal document summary in a bottom sheet (the backend does not serve legal pages yet).
-Future<void> showLegalSheet(BuildContext context, {required String title, required String body, String? version}) =>
-    showModalBottomSheet<void>(
-      context: context,
-      isScrollControlled: true,
-      showDragHandle: true,
-      backgroundColor: OColors.canvas,
-      builder: (context) => DraggableScrollableSheet(
-        expand: false,
-        initialChildSize: 0.7,
-        maxChildSize: 0.92,
-        builder: (context, controller) => ListView(
-          controller: controller,
-          padding: const EdgeInsets.fromLTRB(OSpace.margin, 0, OSpace.margin, OSpace.xxl),
-          children: [
-            Text(title, style: OText.headlineLg),
-            if (version != null) ...[
-              const SizedBox(height: OSpace.xs),
-              Text(context.t('onboarding.terms.version', {'v': version}),
-                  style: OText.bodySm.copyWith(color: OColors.inkSubtle)),
-            ],
-            const SizedBox(height: OSpace.lg),
-            Text(body, style: OText.bodyMd.copyWith(color: OColors.onSurfaceVariant)),
-          ],
-        ),
-      ),
-    );
