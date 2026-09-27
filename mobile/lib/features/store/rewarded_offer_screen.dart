@@ -168,7 +168,7 @@ class _RewardedOfferScreenState extends ConsumerState<RewardedOfferScreen> {
 
   void _close() {
     if (context.canPop()) {
-      context.pop();
+      context.pop(_phase == _Phase.granted);
     } else {
       context.go(Routes.home);
     }
