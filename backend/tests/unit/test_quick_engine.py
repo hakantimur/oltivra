@@ -82,6 +82,8 @@ def test_duplicate_request_returns_original_outcome():
     replay = answer(state, "u0", False, starts + 1_200, request_id="same")
     assert replay.outcome["replay"] is True and replay.outcome["score_delta"] == first.outcome["score_delta"]
     assert state["participants"]["ph0"]["score"] == -4
+    reused = answer(state, "u0", True, starts + 1_300, request_id="same")  # same key, different option
+    assert reused.outcome["error"] == "IDEMPOTENCY_KEY_REUSED" and state["participants"]["ph0"]["score"] == -4
 
 
 def test_late_and_invalid_answers_rejected():
@@ -314,3 +316,47 @@ def test_designated_resolver_is_a_non_left_human():
 def test_mode_is_quick():
     state, _ = new_match()
     assert state["mode"] == Mode.QUICK
+
+
+def _media_match(mode: Mode = Mode.QUICK):
+    from tests.engine_helpers import T0, item, quick_plan, roster, survival_plan
+
+    plan = quick_plan() if mode == Mode.QUICK else survival_plan()
+    media = {"path": "questions/g1/v1/main.webp", "aspect": 1.5}
+    if mode == Mode.QUICK:
+        plan["normal"][0] = {**plan["normal"][0], "media": media}
+    else:
+        for n, band in enumerate(("EASY", "MEDIUM", "HARD")):
+            plan["pools"][band] = [{**item(900 + n, band), "media": media}, *plan["pools"][band]]
+    return engine.create_match_state(
+        keys=KEYS, match_id="m-media", shard_id="live-00", mode=mode, language="en", region="europe-west1",
+        roster=roster(4, 0), plan=plan, config_snapshot=GameConfig().match_snapshot(mode.value), bot_profiles={},
+        reaction_ids=[], ranked={"eligible": False, "reason": "test", "human_slots": 4, "bot_slots": 0},
+        source="TEST", now_ms=T0)
+
+
+@pytest.mark.parametrize("mode", [Mode.QUICK, Mode.SURVIVAL])
+def test_media_question_without_signed_image_is_replaced_before_answerable(mode):
+    state, result = _media_match(mode)
+    rnd = state["round"]
+    assert rnd["media"] and any(e.kind == "SIGN_MEDIA" for e in result.effects)
+    failed_qid, failed_round = rnd["qid"], rnd["round_id"]
+    engine.resolve_due(state, KEYS, rnd["starts_at_ms"], "TEST")  # signing never arrived
+    new = state["round"]
+    assert state["state"] == MatchState.ROUND_LOADING and new["media"] is None
+    assert new["qid"] != failed_qid and new["round_id"] != failed_round and new["index"] == 1
+    assert new["starts_at_ms"] > rnd["starts_at_ms"]
+    engine.resolve_due(state, KEYS, new["starts_at_ms"], "TEST")
+    assert state["state"] == MatchState.ROUND_ACTIVE
+    if mode == Mode.QUICK:
+        assert state["normal_rounds_opened"] == 1 and state["plan"]["normal"][0]["qid"] == new["qid"]
+        assert len(state["plan"]["reserve"]) == 4
+
+
+def test_media_question_with_signed_image_plays_normally():
+    state, _ = _media_match()
+    rnd = state["round"]
+    engine.attach_media(state, rnd["round_id"], "https://signed", rnd["ends_at_ms"] + 30_000, rnd["starts_at_ms"] - 500)
+    engine.resolve_due(state, KEYS, rnd["starts_at_ms"], "TEST")
+    assert state["state"] == MatchState.ROUND_ACTIVE and state["round"]["qid"] == rnd["qid"]
+    assert engine.project(state, KEYS)["public"]["current_question"]["signed_image_url"] == "https://signed"

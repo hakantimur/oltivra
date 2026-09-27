@@ -109,9 +109,23 @@ async def answer(match_id: str, body: AnswerRequest, request: Request, caller: C
                                       body.rtdb_shard_id)
 
 
+class SyncRequest(BaseModel):
+    observed_state_version: int | None = Field(default=None, ge=0)
+
+
 @router.post("/matches/{match_id}/sync")
-async def sync(match_id: str, caller: Caller = Depends(player), c: Container = Depends(get_container)) -> dict:
-    await c.rate_limiter.hit(rate_limit.SYNC, caller.uid)
+async def sync(match_id: str, body: SyncRequest | None = None, caller: Caller = Depends(player),
+               c: Container = Depends(get_container)) -> dict:
+    await c.rate_limiter.hit(rate_limit.SYNC, caller.uid)  # coarse flood guard
+    observed = body.observed_state_version if body else None
+    if observed is not None:
+        # One resolving sync per user and observed event (spec §20.5); repeats are harmless no-ops.
+        try:
+            await c.rate_limiter.hit(rate_limit.SYNC_EVENT, f"{caller.uid}|{match_id}|{observed}")
+        except ApiError as exc:
+            if exc.code != ErrorCode.RATE_LIMITED:
+                raise
+            return {"schema_version": 1, "changed": False, "throttled": True, "server_time_ms": c.clock.now_ms()}
     return await c.matches.sync(caller.uid, match_id)
 
 

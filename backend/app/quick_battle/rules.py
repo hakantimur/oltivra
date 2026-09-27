@@ -46,6 +46,32 @@ def on_round_opened(state: dict[str, Any]) -> None:
         state["sd_rounds_opened"] = int(state.get("sd_rounds_opened", 0)) + 1
 
 
+def media_substitute(state: dict[str, Any], rnd: dict[str, Any]) -> dict[str, Any] | None:
+    """Take a text-only reserve from the end of the list (Sudden Death consumes reserves from the front)."""
+    plan = dict(state["plan"])
+    reserves = list(plan.get("reserve") or [])
+    sd_used = int(state.get("sd_rounds_opened", 0))
+    for index in range(len(reserves) - 1, sd_used - 1, -1):
+        if reserves[index].get("media"):
+            continue
+        item = reserves.pop(index)
+        if rnd["kind"] == RoundKind.NORMAL:
+            normal = list(plan["normal"])
+            normal[int(state.get("normal_rounds_opened", 1)) - 1] = item
+            plan["normal"] = normal
+        else:
+            reserves[sd_used - 1] = item
+        plan["reserve"] = reserves
+        state["plan"] = plan
+        return item
+    return None
+
+
+def rewind_round(state: dict[str, Any], rnd: dict[str, Any]) -> None:
+    key = "normal_rounds_opened" if rnd["kind"] == RoundKind.NORMAL else "sd_rounds_opened"
+    state[key] = max(0, int(state.get(key, 0)) - 1)
+
+
 def _not_left(state: dict[str, Any]) -> list[str]:
     return [pid for pid, p in sorted(participants(state).items(), key=lambda kv: kv[1]["slot"]) if not p.get("left")]
 

@@ -449,3 +449,13 @@ def test_survival_refill_effect_extends_pool(players, container):
     used = set(auth["used_gids"])
     pooled = [i["gid"] for items in auth["plan"]["pools"].values() for i in items]
     assert len(pooled) == len(set(pooled)) and not used & set(pooled)
+
+
+def test_sync_is_one_resolve_per_user_and_observed_event(players, container):
+    match_id = bot_fill_match(players, container)
+    version = public(container, match_id)["state_version"]
+    first = players.post(f"/v1/matches/{match_id}/sync", "u1", {"observed_state_version": version}).json()
+    assert "throttled" not in first
+    again = players.post(f"/v1/matches/{match_id}/sync", "u1", {"observed_state_version": version}).json()
+    assert again["throttled"] is True and again["changed"] is False
+    assert players.post(f"/v1/matches/{match_id}/sync", "u1").status_code == 200  # legacy body-less sync

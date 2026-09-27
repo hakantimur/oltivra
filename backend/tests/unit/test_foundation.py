@@ -48,6 +48,15 @@ def test_internal_routes_reject_user_tokens(client):
     assert res.status_code == 403
 
 
+def test_internal_task_must_match_its_queue_family(client):
+    headers = {"x-internal-auth": "dev-internal-secret"}
+    res = client.post("/internal/tasks/cleanup", json={"task_kind": "SETTLEMENT", "match_id": "m", "rtdb_shard_id":
+                                                       "live-00"}, headers=headers)
+    assert res.status_code == 400 and res.json()["error"]["detail"]["reason"] == "task_family_mismatch"
+    res = client.post("/internal/tasks/cleanup", json={"task_kind": "NOPE"}, headers=headers)
+    assert res.json()["error"]["detail"]["reason"] == "unknown_task_kind"
+
+
 @pytest.mark.parametrize("overrides", [
     {"env": "prod", "auth_mode": "fake"},
     {"env": "stage", "store_backend": "memory", "auth_mode": "firebase"},

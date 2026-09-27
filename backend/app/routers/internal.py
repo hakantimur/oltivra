@@ -17,7 +17,17 @@ async def _service_auth(request: Request, c: Container = Depends(get_container))
 
 @router.post("/{family}", dependencies=[Depends(_service_auth)])
 async def run_task(family: str, request: Request, c: Container = Depends(get_container)) -> dict:
+    from app.common.errors import ApiError, ErrorCode
+    from app.common.tasks import QUEUE_FAMILY, TaskKind
+
     body = await request.json()
+    # Each queue may only run its own task kinds (a task cannot be replayed through another family's route).
+    try:
+        kind = TaskKind(body.get("task_kind"))
+    except ValueError as exc:
+        raise ApiError(ErrorCode.INVALID_REQUEST, detail={"reason": "unknown_task_kind"}) from exc
+    if QUEUE_FAMILY[kind] != family:
+        raise ApiError(ErrorCode.INVALID_REQUEST, detail={"reason": "task_family_mismatch"})
     result = await dispatch_task(c, body)
     return {"ok": True, "result": result}
 

@@ -169,11 +169,23 @@ def test_party_expires_without_enough_humans(players, container):
 
 def test_member_leave_and_host_leave(players, container):
     party = challenge(players, container)
+    for friend in ("u2", "u3"):
+        players.post(f"/v1/challenges/{invite_token(players, friend)}/accept", friend,
+                     {"accept_question_language": "en"})
+    left = players.post(f"/v1/parties/{party['party_id']}/leave", "u2").json()
+    assert left["state"] == "READY" and runtime(container, "u2") == "IDLE"
+    host = players.post(f"/v1/parties/{party['party_id']}/leave", "u1").json()
+    assert host["state"] == "CANCELLED" and runtime(container, "u1") == "IDLE" and runtime(container, "u3") == "IDLE"
+
+
+def test_party_cancels_when_fewer_than_two_humans_remain(players, container):
+    party = challenge(players, container)
     players.post(f"/v1/challenges/{invite_token(players, 'u2')}/accept", "u2", {"accept_question_language": "en"})
     left = players.post(f"/v1/parties/{party['party_id']}/leave", "u2").json()
-    assert left["state"] == "WAITING" and runtime(container, "u2") == "IDLE"
-    host = players.post(f"/v1/parties/{party['party_id']}/leave", "u1").json()
-    assert host["state"] == "CANCELLED" and runtime(container, "u1") == "IDLE"
+    assert left["state"] == "CANCELLED"
+    doc = container.store._docs[f"parties/{party['party_id']}"]
+    assert doc["cancel_reason"] == "INSUFFICIENT_HUMANS"
+    assert runtime(container, "u1") == "IDLE" and runtime(container, "u2") == "IDLE"
 
 
 def test_one_activity_at_a_time(players, container):

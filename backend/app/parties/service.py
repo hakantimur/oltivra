@@ -231,16 +231,22 @@ class PartyService:
                 return party
             leaving = accepted if uid == party["host_uid"] else [uid]
             remaining = [u for u in accepted if u not in leaving]
-            if uid == party["host_uid"] or (party["kind"] == "REMATCH" and not remaining):
-                state = "CANCELLED"
+            reason = None
+            if uid == party["host_uid"]:
+                state, reason = "CANCELLED", "HOST_LEFT"
+            elif len(remaining) < 2:
+                # Fewer than two humans remain: the party cancels with no progression change (spec §6.2).
+                state, reason = "CANCELLED", "INSUFFICIENT_HUMANS"
             else:
                 state = "READY" if len(remaining) >= party.get("min_humans", 2) else "WAITING"
+            if state == "CANCELLED":
+                leaving = accepted
             for member in leaving:
                 runtime = current(runtimes[member], member, now)
                 if runtime.get("active_party_id") == party_id:
                     txn.set(runtime_path(member), transition(runtime, RuntimeState.IDLE, now))
             txn.update(party_path(party_id), {"accepted_uids": remaining, "state": state, "updated_at_ms": now,
-                                              **({"cancel_reason": "HOST_LEFT"} if state == "CANCELLED" else {})})
+                                              **({"cancel_reason": reason} if reason else {})})
             return {**party, "accepted_uids": remaining, "state": state}
 
         party = await c.store.run_transaction(txn_fn)
