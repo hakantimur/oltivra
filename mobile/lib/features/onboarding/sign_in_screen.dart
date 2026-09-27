@@ -12,9 +12,10 @@ import '../../theme/tokens.dart';
 import '../../widgets/o_widgets.dart';
 import 'widgets.dart';
 
-enum _Provider { google, apple }
+enum _Provider { google }
 
-/// P01 · Sign in or create account: Google, Apple and email, in that order and equally prominent (spec §2.1).
+/// P01 · Sign in or create account: Google and email, equally prominent (spec §2.1). Apple sign-in is not offered
+/// while the app ships on Android only.
 /// Once signed in, `onboardingRedirect` takes over (bootstrap → consent → name → avatar).
 class SignInScreen extends ConsumerStatefulWidget {
   const SignInScreen({super.key});
@@ -100,15 +101,6 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
                       leading: const _GoogleGlyph(),
                       loading: _busy == _Provider.google,
                       onPressed: _busy == null ? () => _run(_Provider.google, (a) => a.signInWithGoogle()) : null,
-                    ),
-                    const SizedBox(height: OSpace.md),
-                    OButton(
-                      key: const Key('signin-apple'),
-                      label: context.t('onboarding.signin.apple'),
-                      style: OButtonStyle.dark,
-                      icon: Icons.apple,
-                      loading: _busy == _Provider.apple,
-                      onPressed: _busy == null ? () => _run(_Provider.apple, (a) => a.signInWithApple()) : null,
                     ),
                     const SizedBox(height: OSpace.md),
                     OButton(
