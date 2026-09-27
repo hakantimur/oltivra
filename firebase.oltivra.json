@@ -1,0 +1,9 @@
+{
+  "firestore": [
+    { "database": "oltivra", "rules": "firebase/firestore.rules", "indexes": "firebase/firestore.indexes.json" }
+  ],
+  "database": [
+    { "instance": "oltivra-live-00", "rules": "firebase/rtdb/live-shard.rules.json" },
+    { "instance": "oltivra-live-01", "rules": "firebase/rtdb/live-shard.rules.json" }
+  ]
+}

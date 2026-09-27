@@ -322,7 +322,8 @@ def _media_match(mode: Mode = Mode.QUICK):
     from tests.engine_helpers import T0, item, quick_plan, roster, survival_plan
 
     plan = quick_plan() if mode == Mode.QUICK else survival_plan()
-    media = {"path": "questions/g1/v1/main.webp", "aspect": 1.5}
+    media = {"path": "questions/g1/v1/main.webp", "aspect": 1.5,
+             "attribution": "Jane Doe / Wikimedia Commons, CC BY 4.0"}
     if mode == Mode.QUICK:
         plan["normal"][0] = {**plan["normal"][0], "media": media}
     else:
@@ -359,4 +360,6 @@ def test_media_question_with_signed_image_plays_normally():
     engine.attach_media(state, rnd["round_id"], "https://signed", rnd["ends_at_ms"] + 30_000, rnd["starts_at_ms"] - 500)
     engine.resolve_due(state, KEYS, rnd["starts_at_ms"], "TEST")
     assert state["state"] == MatchState.ROUND_ACTIVE and state["round"]["qid"] == rnd["qid"]
-    assert engine.project(state, KEYS)["public"]["current_question"]["signed_image_url"] == "https://signed"
+    question = engine.project(state, KEYS)["public"]["current_question"]
+    assert question["signed_image_url"] == "https://signed"
+    assert question["image_attribution"] == "Jane Doe / Wikimedia Commons, CC BY 4.0"

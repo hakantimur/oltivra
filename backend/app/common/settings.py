@@ -26,6 +26,9 @@ class Settings(BaseSettings):
     internal_auth_mode: Literal["oidc", "shared_secret"] = "shared_secret"
 
     firebase_project_id: str = "demo-oltivra"
+    # Named Firestore database: Oltivra shares the Firebase project (and Auth) with Synova but keeps its data
+    # in its own EU database, separate from Synova's "(default)" database.
+    firestore_database: str = "(default)"
     # Comma separated RTDB URLs, index == shard number. Empty -> derived emulator namespaces.
     rtdb_shard_urls: str = ""
     shard_count: int = 2

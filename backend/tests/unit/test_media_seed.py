@@ -36,7 +36,8 @@ from tests.conftest import make_settings
 
 def test_image_seed_items_are_valid_and_files_meet_media_rules():
     items = load_media_seed_items()
-    assert len(items) == 3
+    assert len({i["key"] for i in items}) == len(items) >= 28
+    assert sum(1 for i in items if i.get("media")) >= 20  # curated rows may be text-only
     for item in items:
         assert is_valid_subcategory(item["category_id"], item["subcategory_id"]), item["key"]
         for lang in SEED_LANGUAGES:
@@ -44,6 +45,11 @@ def test_image_seed_items_are_valid_and_files_meet_media_rules():
                 question_group_id="g", question_version=1, language=lang, question_text=item["question"][lang],
                 options=[OptionText(concept_id=o["concept_id"], text=o[lang]) for o in item["options"]])
             assert validate_competitive_text(translation, item["correct"]) == [], (item["key"], lang)
+        if not item.get("media"):
+            continue
+        assert item["media"]["license"] and item["media"]["source"], item["key"]
+        if item["media"]["copyright_status"] == "LICENSED":
+            assert item["media"]["attribution"], item["key"]
         data = (MEDIA_FILES_DIR / item["media"]["file"]).read_bytes()
         width, height = webp_dimensions(data)
         assert len(data) <= MEDIA_PREFERRED_MAX_BYTES and max(width, height) <= MEDIA_PREFERRED_MAX_DIMENSION
@@ -62,9 +68,13 @@ def test_active_import_uploads_and_approves_media_so_questions_are_eligible():
         return result, again, bundles, uploader, clock.now_ms()
 
     result, again, bundles, uploader, now = asyncio.run(run())
-    assert result == {"created": 3, "skipped": 0} and again == {"created": 0, "skipped": 3}
-    assert len(uploader.objects) == 3
+    with_media = sum(1 for i in load_media_seed_items() if i.get("media"))
+    assert result == {"created": len(bundles), "skipped": 0} and again == {"created": 0, "skipped": len(bundles)}
+    assert len(uploader.objects) == with_media
     for bundle in bundles:
+        if bundle.media is None:
+            assert bundle_problems(bundle, now, "QUICK") == []
+            continue
         assert bundle.media["review_status"] == "APPROVED"
         assert bundle.media["storage_path"] in uploader.objects
         assert bundle_problems(bundle, now, "QUICK") == []

@@ -225,6 +225,9 @@ class CategoryChip extends StatelessWidget {
 /// after a failure so answer controls never move (spec §22.2).
 const imageMaxHeightFraction = 0.14;
 
+/// Height of the image credit line under a question image.
+const attributionLineHeight = 14.0;
+
 class QuestionCard extends StatelessWidget {
   const QuestionCard({super.key, required this.snapshot, this.header});
 
@@ -269,7 +272,23 @@ class QuestionCard extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(height: OSpace.md),
+            const SizedBox(height: 2),
+            // Licence credit. The line is reserved from the start (no layout jump) but filled only at reveal,
+            // because an author's name or place could hint at the answer.
+            SizedBox(
+              height: attributionLineHeight,
+              child: snapshot.isRevealed && snapshot.imageAttribution.isNotEmpty
+                  ? Text(
+                      context.t('match.image_credit', {'credit': snapshot.imageAttribution}),
+                      key: const ValueKey('image-attribution'),
+                      style: OText.labelSm.copyWith(color: OColors.inkSubtle),
+                      textAlign: TextAlign.center,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                    )
+                  : null,
+            ),
+            const SizedBox(height: 2),
           ],
           Text(snapshot.questionText, style: OText.headlineMd, textAlign: TextAlign.center),
         ],

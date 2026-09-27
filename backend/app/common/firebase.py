@@ -40,8 +40,9 @@ def firestore_client(settings: Settings):
     if os.environ.get("FIRESTORE_EMULATOR_HOST"):
         from google.auth.credentials import AnonymousCredentials
 
-        return firestore.Client(project=settings.firebase_project_id, credentials=AnonymousCredentials())
-    return firestore.Client(project=settings.firebase_project_id)
+        return firestore.Client(project=settings.firebase_project_id, credentials=AnonymousCredentials(),
+                                database=settings.firestore_database)
+    return firestore.Client(project=settings.firebase_project_id, database=settings.firestore_database)
 
 
 def build_firebase_stores(settings: Settings, limiter: anyio.CapacityLimiter):

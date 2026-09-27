@@ -178,6 +178,7 @@ void main() {
     'options': _options,
     'signed_image_url': 'http://img.test/questions/g/v1/main.webp?exp=1',
     'image_aspect': 1.5,
+    'image_attribution': 'Jane Doe / Wikimedia Commons, CC BY 4.0',
   };
 
   Future<void> expectAllAnswersOnScreen(WidgetTester tester) async {
@@ -199,6 +200,8 @@ void main() {
         'own_answer_status': 'NOT_ANSWERED',
       }),
     );
+    // The credit is withheld while answering: an author's name or place could hint at the answer.
+    expect(find.byKey(const ValueKey('image-attribution')), findsNothing);
     await expectAllAnswersOnScreen(tester);
   });
 
@@ -222,6 +225,7 @@ void main() {
       ),
     );
     expect(find.text('kevin_q wins +7'), findsOneWidget);
+    expect(find.text('Image: Jane Doe / Wikimedia Commons, CC BY 4.0'), findsOneWidget);
     await expectAllAnswersOnScreen(tester);
   });
 

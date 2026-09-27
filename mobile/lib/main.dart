@@ -23,7 +23,7 @@ Future<void> main() async {
       options: const FirebaseOptions(
         apiKey: Env.firebaseApiKey,
         appId: Env.firebaseAppId,
-        messagingSenderId: '0',
+        messagingSenderId: Env.firebaseSenderId,
         projectId: Env.firebaseProjectId,
       ),
     );

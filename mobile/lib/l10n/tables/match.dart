@@ -23,6 +23,7 @@ const Map<String, Map<String, String>> matchStrings = {
 
     // Question & answers
     'match.question_image': 'Question image',
+    'match.image_credit': 'Image: {credit}',
     'match.option_semantics': 'Option {letter}, {text}',
     'match.correct_answer': 'Correct answer',
     'match.wrong_answer': 'Incorrect',
@@ -158,6 +159,7 @@ const Map<String, Map<String, String>> matchStrings = {
 
     // Question & answers
     'match.question_image': 'Soru görseli',
+    'match.image_credit': 'Görsel: {credit}',
     'match.option_semantics': 'Seçenek {letter}, {text}',
     'match.correct_answer': 'Doğru cevap',
     'match.wrong_answer': 'Yanlış',
