@@ -100,6 +100,8 @@ def test_queue_restriction_and_lift(players, container):
                         extra=AS_ADMIN)
     assert lift.json()["sanction"]["state"] == "LIFTED"
     assert join(players, "u1").json()["state"] == "QUEUED"
+    history = asyncio.run(container.sanctions.history("u1"))
+    assert sorted(h["action"] for h in history) == ["APPLY_QUEUE_RESTRICTION", "LIFT_QUEUE_RESTRICTION"]
 
 
 def test_ranked_restriction_keeps_mmr_but_awards_xp(players, container):
@@ -286,3 +288,18 @@ def test_late_answers_are_normal_play_but_stale_and_forged_ones_count(players, c
     assert stale.status_code == 409 and stale.json()["error"]["detail"]["reason"] == "stale_round"
     signals = asyncio.run(container.risk.get("u1"))["signals"]
     assert signals == {"MALFORMED_REQUEST": 1}
+
+
+def test_many_accounts_on_one_device_raise_account_abuse(api, container):
+    for i in range(5):
+        api.onboard(f"multi{i}")
+        res = api.post("/v1/devices", f"multi{i}", {"token": "fcm-shared-device-token-1", "platform": "android"})
+        assert res.status_code == 200
+    signals = {f"multi{i}": asyncio.run(container.risk.get(f"multi{i}"))["signals"] for i in range(5)}
+    assert signals["multi0"] == {} and signals["multi2"] == {}
+    assert signals["multi3"] == {"ACCOUNT_ABUSE": 1} and signals["multi4"] == {"ACCOUNT_ABUSE": 1}
+    # Re-registering an already linked account on the same device is not a new signal.
+    api.post("/v1/devices", "multi4", {"token": "fcm-shared-device-token-1", "platform": "android"})
+    assert asyncio.run(container.risk.get("multi4"))["signals"] == {"ACCOUNT_ABUSE": 1}
+    doc = next(v for k, v in container.store.dump().items() if k.startswith("device_links/"))
+    assert "multi0" not in str(doc) and "fcm-shared" not in str(doc)

@@ -58,6 +58,11 @@ class Settings(BaseSettings):
     apple_bundle_id: str = "com.oltivra.app"
     # Comma separated paths to pinned Apple root certificates (e.g. AppleRootCA-G3.cer), mounted from secrets.
     apple_root_cert_paths: str = ""
+    # App Store Server API (reconciliation); the .p8 key is mounted from Secret Manager.
+    apple_issuer_id: str = ""
+    apple_key_id: str = ""
+    apple_private_key_path: str = ""
+    apple_environment: Literal["Production", "Sandbox"] = "Production"
     ai_provider: Literal["anthropic", "fake"] = "fake"
     anthropic_api_key: str = Field(default="", repr=False)
     ai_model: str = "claude-sonnet-5"

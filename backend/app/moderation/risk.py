@@ -14,6 +14,7 @@ from contextlib import asynccontextmanager
 from enum import StrEnum
 from typing import Any
 
+from app.common.clock import ms_to_datetime
 from app.common.errors import ApiError, ErrorCode
 from app.moderation.sanctions import SanctionKind
 
@@ -167,6 +168,31 @@ class RiskService:
         for uid, signals in found.items():
             for signal, evidence in signals:
                 await self.record(uid, signal, evidence=evidence)
+
+    async def device_linked(self, uid: str, device_token: str) -> int:
+        """Track distinct accounts per device (keyed hashes only) and flag account-creation abuse."""
+        from app.common.ids import sha256_hex
+
+        c = self._c
+        config = (await c.config.get()).moderation
+        now = c.clock.now_ms()
+        path = f"device_links/{sha256_hex('device:' + device_token)[:40]}"
+        account = c.keys.username_hash.hexdigest(f"device-account:{uid}")[:24]
+
+        def txn_fn(txn) -> tuple[int, bool]:
+            doc = txn.get(path) or {"schema_version": 1, "accounts": {}}
+            accounts = {k: v for k, v in (doc.get("accounts") or {}).items()
+                        if now - int(v) < config.risk_device_window_ms}
+            is_new = account not in accounts
+            accounts[account] = now
+            txn.set(path, {"schema_version": 1, "accounts": accounts, "updated_at_ms": now,
+                           "expires_at": ms_to_datetime(now + config.risk_device_window_ms)})
+            return len(accounts), is_new
+
+        count, is_new = await c.store.run_transaction(txn_fn)
+        if is_new and count > config.risk_accounts_per_device:
+            await self.record(uid, RiskSignal.ACCOUNT_ABUSE, evidence={"accounts_on_device": count})
+        return count
 
     async def clear_review(self, uid: str, actor: str, reason_code: str, reset_score: bool) -> dict[str, Any]:
         c = self._c

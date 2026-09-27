@@ -171,6 +171,7 @@ async def register_device(body: DeviceBody, request: Request, caller: Caller = D
                           c: Container = Depends(get_container)) -> dict:
     async def handler() -> dict:
         await c.notifications.register_device(caller.uid, body.token, body.platform)
+        await c.risk.device_linked(caller.uid, body.token)  # account-creation abuse signal (spec §28.4)
         return {"schema_version": 1, "registered": True}
 
     return await run_mutation(c, request, caller, "devices.register", body.model_dump(), handler)

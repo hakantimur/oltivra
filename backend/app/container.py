@@ -351,13 +351,27 @@ class Container:
     @cached_property
     def purchases(self):
         from app.purchases.service import PurchaseService
-        from app.purchases.verifiers import AppleJwsVerifier, FakeAppleVerifier, FakeGooglePlay, GooglePlayApiClient
+        from app.purchases.verifiers import (
+            AppleJwsVerifier,
+            AppStoreServerApiClient,
+            FakeAppleStore,
+            FakeAppleVerifier,
+            FakeGooglePlay,
+            GooglePlayApiClient,
+        )
 
-        if self.settings.purchase_verify_mode == "store":
-            paths = [p.strip() for p in self.settings.apple_root_cert_paths.split(",") if p.strip()]
-            return PurchaseService(self, GooglePlayApiClient(self.settings.google_play_package, self.io_limiter),
-                                   AppleJwsVerifier.from_paths(paths))
-        return PurchaseService(self, FakeGooglePlay(), FakeAppleVerifier(self.settings.internal_shared_secret))
+        s = self.settings
+        if s.purchase_verify_mode == "store":
+            paths = [p.strip() for p in s.apple_root_cert_paths.split(",") if p.strip()]
+            store = None
+            if s.apple_private_key_path:
+                with open(s.apple_private_key_path, encoding="utf-8") as fh:
+                    store = AppStoreServerApiClient(issuer_id=s.apple_issuer_id, key_id=s.apple_key_id,
+                                                    private_key_pem=fh.read(), bundle_id=s.apple_bundle_id,
+                                                    environment=s.apple_environment)
+            return PurchaseService(self, GooglePlayApiClient(s.google_play_package, self.io_limiter),
+                                   AppleJwsVerifier.from_paths(paths), store)
+        return PurchaseService(self, FakeGooglePlay(), FakeAppleVerifier(s.internal_shared_secret), FakeAppleStore())
 
     @cached_property
     def settlement(self):

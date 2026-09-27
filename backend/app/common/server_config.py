@@ -133,6 +133,9 @@ class ModerationConfig(BaseModel):
     risk_ranked_restrict_ms: int = 7 * 86_400_000
     risk_queue_restrict_score: float = 80.0
     risk_queue_restrict_ms: int = 86_400_000
+    # Account-creation abuse: distinct accounts seen on one device within the window.
+    risk_accounts_per_device: int = Field(default=3, ge=1)
+    risk_device_window_ms: int = 30 * 86_400_000
 
 
 class ContentConfig(BaseModel):

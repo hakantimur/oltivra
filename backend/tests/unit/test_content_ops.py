@@ -277,7 +277,8 @@ def test_rebuild_manifests_and_aggregate_stats(client, container):
     assert rebuilt["manifests"] > 0 and rebuilt["entries"] > 0
     stats = maintenance(client, "aggregate-question-stats").json()["result"]
     assert stats["groups"] > 0 and stats["wrapped"] in (True, False)
-    assert maintenance(client, "reconcile-purchases").json()["result"] == {"changed": 0}
+    assert maintenance(client, "reconcile-purchases").json()["result"] == {"google_changed": 0,
+                                                                            "apple_changed": 0}
 
 
 # ---------------------------------------------------------------------------------------------- web deletion
