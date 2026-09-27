@@ -46,7 +46,7 @@ class MatchmakingService:
 
     # ------------------------------------------------------------------------------------------ join / leave
     async def join(self, uid: str, user: dict[str, Any], mode: Mode, median_rtt_ms: int,
-                   request_id: str) -> dict[str, Any]:
+                   request_id: str, category_id: str | None = None) -> dict[str, Any]:
         c = self._c
         config = await c.config.get()
         if not config.features.new_matches_enabled:
@@ -56,6 +56,9 @@ class MatchmakingService:
         language = user.get("question_language", "en")
         if language not in config.features.competitive_languages:
             raise ApiError(ErrorCode.FEATURE_DISABLED, detail={"feature": "question_language", "language": language})
+        if category_id is not None and category_id not in config.features.category_queues_for(
+                language, c.settings.region):
+            raise ApiError(ErrorCode.FEATURE_DISABLED, detail={"feature": "category_queue", "category_id": category_id})
         now = c.clock.now_ms()
         ensure_can_play(user, now)
         fill_ms = config.quick.bot_fill_ms if mode == Mode.QUICK else config.survival.bot_fill_ms
@@ -67,6 +70,8 @@ class MatchmakingService:
             "language": language,
             "region": c.settings.region,
             "latency_band": latency_band(median_rtt_ms, config.matchmaking.ping_bands_ms),
+            # None = Mixed. Category tickets only ever match the same category (never widened into Mixed).
+            "category_id": category_id,
             "median_rtt_ms": median_rtt_ms,
             "mmr_snapshot": int(user.get("mmr", config.ranked.start_mmr)),
             "username": user["username_display"],
@@ -87,7 +92,8 @@ class MatchmakingService:
             runtime = current(txn.get(runtime_path(uid)), uid, now)
             if runtime["state"] == RuntimeState.QUEUED and runtime.get("active_ticket_id"):
                 existing = txn.get(ticket_path(runtime["active_ticket_id"]))
-                if existing and existing.get("state") == "QUEUED" and existing.get("mode") == mode.value:
+                if existing and existing.get("state") == "QUEUED" and existing.get("mode") == mode.value \
+                        and existing.get("category_id") == category_id:
                     return existing  # duplicate join returns the active ticket
             require_idle(runtime)
             txn.create(ticket_path(ticket["ticket_id"]), ticket)
@@ -151,7 +157,8 @@ class MatchmakingService:
         fill_at = ticket["human_fill_at_ms"]
         next_poll = fill_at if now < fill_at else now + (retry_after_ms or 1000)
         return {"schema_version": 1, "state": "QUEUED", "ticket_id": ticket["ticket_id"], "mode": ticket["mode"],
-                "latency_band": ticket["latency_band"], "human_fill_at_ms": fill_at,
+                "latency_band": ticket["latency_band"], "category_id": ticket.get("category_id"),
+                "human_fill_at_ms": fill_at,
                 "expires_at_ms": ticket["expires_at_ms"], "next_poll_at_ms": min(next_poll, ticket["expires_at_ms"]),
                 "server_time_ms": now}
 
@@ -202,7 +209,8 @@ class MatchmakingService:
     async def _candidates(self, ticket: dict[str, Any], config: GameConfig) -> list[dict[str, Any]]:
         query = (Query("matchmaking_tickets").filter("state", "==", "QUEUED").filter("mode", "==", ticket["mode"])
                  .filter("language", "==", ticket["language"]).filter("region", "==", ticket["region"])
-                 .filter("latency_band", "==", ticket["latency_band"]).order("created_at_ms")
+                 .filter("latency_band", "==", ticket["latency_band"])
+                 .filter("category_id", "==", ticket.get("category_id")).order("created_at_ms")
                  .take(config.matchmaking.candidate_scan_limit))
         now = self._c.clock.now_ms()
         return [r.data for r in await self._c.store.query(query)
@@ -248,7 +256,8 @@ class MatchmakingService:
                                ticket_id=t["ticket_id"]) for t in roster]
             try:
                 prepared = await c.match_factory.prepare(mode=Mode(ticket["mode"]), language=ticket["language"],
-                                                         humans=seats, config=config)
+                                                         humans=seats, config=config,
+                                                         category_id=ticket.get("category_id"))
             except InsufficientInventory as exc:
                 raise ApiError(ErrorCode.CAPACITY_UNAVAILABLE, retry_after_s=10,
                                detail={"reason": "question_inventory"}) from exc

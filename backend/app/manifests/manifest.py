@@ -16,6 +16,7 @@ from dataclasses import asdict, dataclass
 
 from app.common.clock import Clock
 from app.common.store.docstore import DocStore, Query
+from app.questions.difficulty import empirical_difficulty
 from app.questions.models import COMPETITIVE_MODES, Difficulty, QuestionStatus, competitive_eligibility
 
 CHUNK_ENTRIES = 4000
@@ -46,9 +47,26 @@ def _decode(blob: str) -> list[ManifestEntry]:
 
 
 class ManifestBuilder:
-    def __init__(self, store: DocStore, clock: Clock) -> None:
+    def __init__(self, store: DocStore, clock: Clock, config=None) -> None:
         self._store = store
         self._clock = clock
+        self._config = config  # ServerConfigService; None -> defaults (tests, seed tooling)
+
+    async def _content_config(self):
+        from app.common.server_config import ContentConfig
+
+        return (await self._config.get()).content if self._config else ContentConfig()
+
+    async def _summaries(self, groups, language: str) -> dict[str, dict[str, dict | None]]:
+        from app.questions.difficulty import MODES
+
+        paths = [f"question_stats_summaries/{g.id}_{g.data['version']}_{language}_{mode}"
+                 for g in groups for mode in MODES]
+        docs = await self._store.get_many(paths) if paths else []
+        out: dict[str, dict[str, dict | None]] = {}
+        for index, group in enumerate(groups):
+            out[group.id] = dict(zip(MODES, docs[index * len(MODES):(index + 1) * len(MODES)], strict=True))
+        return out
 
     async def build_all(self, languages: list[str]) -> dict[str, int]:
         """Rebuild every manifest for the given languages; returns key -> entry count."""
@@ -62,17 +80,23 @@ class ManifestBuilder:
         media_ids = sorted({g.data["media_asset_id"] for g in groups if g.data.get("media_asset_id")})
         media_docs = dict(zip(media_ids, await self._store.get_many([f"media_assets/{m}" for m in media_ids]),
                               strict=True)) if media_ids else {}
+        content = await self._content_config()
         for language in languages:
             paths = [f"question_translations/{g.id}_{language}_{g.data['version']}" for g in groups]
             translations = await self._store.get_many(paths) if paths else []
+            summaries = await self._summaries(groups, language)
             for group, translation in zip(groups, translations, strict=True):
                 data = group.data
                 media = media_docs.get(data.get("media_asset_id")) if data.get("media_asset_id") else None
                 for mode in COMPETITIVE_MODES:
                     if competitive_eligibility(data, translation, now, media, mode):
                         continue
+                    band = empirical_difficulty(
+                        mode, summaries[group.id], min_attempts=content.empirical_min_attempts,
+                        easy_min=content.empirical_easy_min_accuracy,
+                        medium_min=content.empirical_medium_min_accuracy) or data["declared_difficulty"]
                     entry = ManifestEntry(qid=data["qid"], gid=group.id, v=data["version"], cat=data["category_id"],
-                                          sub=data["subcategory_id"], d=data["declared_difficulty"],
+                                          sub=data["subcategory_id"], d=band,
                                           m=bool(data.get("media_asset_id")))
                     buckets[manifest_key(language, mode, entry.d)].append(entry)
         counts: dict[str, int] = {}

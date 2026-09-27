@@ -147,6 +147,11 @@ class MediaAsset(BaseModel):
     attribution: str | None = None
     copyright_status: str
     review_status: str = "PENDING"
+    question_group_id: str | None = None
+    question_version: int | None = None
+    # Spec §9.1 preferred targets (<=200 KB, <=1024 px); exceeding them is a warning, not a hard failure.
+    preferred_limits_ok: bool = True
+    created_at_ms: int | None = None
 
     @property
     def aspect_ratio(self) -> float:
@@ -156,6 +161,30 @@ class MediaAsset(BaseModel):
     def delivery_valid(self) -> bool:
         return (self.content_type == "image/webp" and self.review_status == "APPROVED"
                 and self.bytes <= 400_000 and max(self.width, self.height) <= 2048)
+
+
+MEDIA_PREFERRED_MAX_BYTES = 200_000
+MEDIA_PREFERRED_MAX_DIMENSION = 1024
+# Versioned question media never changes in place (spec §34.1), so caches may keep it forever.
+IMMUTABLE_CACHE_CONTROL = "public, max-age=31536000, immutable"
+MEDIA_EDITABLE_STATUSES = {"DRAFT", "GENERATED", "VALIDATION_PENDING"}
+
+
+def question_media_path(group_id: str, version: int) -> str:
+    return f"questions/{group_id}/v{version}/main.webp"
+
+
+def is_webp(data: bytes) -> bool:
+    return len(data) >= 12 and data[:4] == b"RIFF" and data[8:12] == b"WEBP"
+
+
+def media_warnings(size: int, width: int, height: int) -> list[str]:
+    warnings = []
+    if size > MEDIA_PREFERRED_MAX_BYTES:
+        warnings.append("above_preferred_bytes")
+    if max(width, height) > MEDIA_PREFERRED_MAX_DIMENSION:
+        warnings.append("above_preferred_dimension")
+    return warnings
 
 
 def translation_doc_id(group_id: str, language: str, version: int) -> str:

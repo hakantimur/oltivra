@@ -64,11 +64,13 @@ class QuestionPlanService:
         self._exposure = exposure
         self._clock = clock
 
-    async def _pools(self, language: str, mode: str, excluded: set[str]) -> dict[Difficulty, list[ManifestEntry]]:
+    async def _pools(self, language: str, mode: str, excluded: set[str],
+                     category_id: str | None = None) -> dict[Difficulty, list[ManifestEntry]]:
         pools: dict[Difficulty, list[ManifestEntry]] = {}
         for difficulty in Difficulty:
             entries = await self._manifests.get(language, mode, difficulty.value)
-            pools[difficulty] = [e for e in entries if e.gid not in excluded]
+            pools[difficulty] = [e for e in entries if e.gid not in excluded
+                                 and (category_id is None or e.cat == category_id)]
         return pools
 
     async def _verify(self, entries: list[ManifestEntry], language: str, mode: str
@@ -85,11 +87,12 @@ class QuestionPlanService:
         return items, bad
 
     async def quick_plan(self, language: str, human_uids: Iterable[str], seed: str,
-                         exclude_gids: Iterable[str] = ()) -> dict[str, list[dict[str, Any]]]:
+                         exclude_gids: Iterable[str] = (), category_id: str | None = None
+                         ) -> dict[str, list[dict[str, Any]]]:
         union = await self._exposure.union(human_uids)
         excluded = set(exclude_gids)
         for _ in range(MAX_REPLACEMENT_ROUNDS):
-            pools = await self._pools(language, "QUICK", excluded)
+            pools = await self._pools(language, "QUICK", excluded, category_id)
             normal, reserves = select_quick(pools, union, random.Random(seed + str(len(excluded))))
             normal_items, bad_normal = await self._verify(normal, language, "QUICK")
             reserve_items, bad_reserve = await self._verify(reserves, language, "QUICK")
@@ -100,11 +103,12 @@ class QuestionPlanService:
 
     async def survival_plan(self, language: str, human_uids: Iterable[str], seed: str,
                             exclude_gids: Iterable[str] = (), targets: dict[Difficulty, int] | None = None,
-                            union: ExposureUnion | None = None) -> dict[str, list[dict[str, Any]]]:
+                            union: ExposureUnion | None = None, category_id: str | None = None
+                            ) -> dict[str, list[dict[str, Any]]]:
         union = union or await self._exposure.union(human_uids)
         excluded = set(exclude_gids)
         for _ in range(MAX_REPLACEMENT_ROUNDS):
-            pools = await self._pools(language, "SURVIVAL", excluded)
+            pools = await self._pools(language, "SURVIVAL", excluded, category_id)
             picks = select_survival(pools, union, random.Random(seed + str(len(excluded))), targets)
             out: dict[str, list[dict[str, Any]]] = {}
             all_bad: set[str] = set()

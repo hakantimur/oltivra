@@ -128,7 +128,7 @@ class Container:
     def manifest_builder(self):
         from app.manifests.manifest import ManifestBuilder
 
-        return ManifestBuilder(self.store, self.clock)
+        return ManifestBuilder(self.store, self.clock, self.config)
 
     @cached_property
     def exposure(self):

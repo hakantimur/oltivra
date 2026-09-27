@@ -7,6 +7,7 @@ from collections import Counter
 
 import pytest
 
+from app.common.store.docstore import Query
 from app.manifests.manifest import ManifestEntry
 from app.questions.exposure import ExposureUnion, append_unique
 from app.questions.gate import language_gate_report
@@ -323,3 +324,39 @@ def test_synova_serves_image_questions_only_with_signed_image(api, container, mo
 def test_synova_rejects_unsupported_language(api):
     res = api.post("/v1/synova/questions/next", "solo1", {"language": "xx"})
     assert res.status_code == 403 or res.json()["error"]["code"] == "FEATURE_DISABLED"
+
+
+def test_empirical_difficulty_rules():
+    from app.questions.difficulty import empirical_difficulty
+
+    kwargs = {"min_attempts": 200, "easy_min": 0.7, "medium_min": 0.4}
+    few = {"SURVIVAL": {"correct": 150, "wrong": 49, "no_answer": 0}}
+    assert empirical_difficulty("SURVIVAL", few, **kwargs) is None  # 199 valid attempts: declared still used
+    hard = {"SURVIVAL": {"correct": 50, "wrong": 150, "no_answer": 20}}
+    assert empirical_difficulty("SURVIVAL", hard, **kwargs) == "HARD"
+    # Censored Quick observations are not attempts; Quick accuracy weighs less than Survival/Synova.
+    quick_only = {"QUICK": {"correct": 20, "wrong": 10, "no_answer": 0, "censored_by_early_quick_winner": 900}}
+    assert empirical_difficulty("QUICK", quick_only, **kwargs) is None
+    mixed = {"QUICK": {"correct": 190, "wrong": 10, "no_answer": 0},
+             "SYNOVA": {"correct": 100, "wrong": 150, "no_answer": 50}}
+    # Quick alone would say EASY (95%); the weighted blend with Synova lands in MEDIUM.
+    assert empirical_difficulty("QUICK", mixed, **kwargs) == "MEDIUM"
+
+
+def test_manifest_uses_empirical_band_per_mode(container):
+    async def scenario():
+        rows = await container.store.query(Query("question_groups").filter("declared_difficulty", "==", "EASY")
+                                           .filter("status", "==", "ACTIVE").take(1))
+        target = rows[0]
+        key = f"{target.id}_{target.data['version']}_en"
+        await container.store.set(f"question_stats_summaries/{key}_SURVIVAL",
+                                  {"correct": 40, "wrong": 200, "no_answer": 10})
+        await container.manifest_builder.build_all(["en"])
+        container.manifest_cache.invalidate()
+        survival_hard = await container.manifest_cache.get("en", "SURVIVAL", "HARD")
+        quick_easy = await container.manifest_cache.get("en", "QUICK", "EASY")
+        return target.data["qid"], {e.qid for e in survival_hard}, {e.qid for e in quick_easy}
+
+    qid, survival_hard, quick_easy = asyncio.run(scenario())
+    assert qid in survival_hard  # enough Survival evidence: re-banded for Survival only
+    assert qid in quick_easy  # Quick has no reliable data yet: declared EASY is kept

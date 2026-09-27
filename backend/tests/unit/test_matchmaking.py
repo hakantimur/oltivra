@@ -459,3 +459,54 @@ def test_sync_is_one_resolve_per_user_and_observed_event(players, container):
     again = players.post(f"/v1/matches/{match_id}/sync", "u1", {"observed_state_version": version}).json()
     assert again["throttled"] is True and again["changed"] is False
     assert players.post(f"/v1/matches/{match_id}/sync", "u1").status_code == 200  # legacy body-less sync
+
+
+# ---------------------------------------------------------------------------------------------- category queues
+
+
+def enable_category_queues(container, categories: list[str]) -> None:
+    config = asyncio.run(container.config.get())
+    features = config.features.model_copy(update={
+        "category_queues_enabled": True,
+        "category_queue_partitions": {f"en:{container.settings.region}": categories}})
+    asyncio.run(container.config.publish(config.model_copy(update={"features": features}), "admin1",
+                                         container.clock.now_ms()))
+
+
+def test_category_queue_disabled_by_default(players):
+    res = players.post("/v1/matchmaking/quick/join", "u1", {"median_rtt_ms": 40, "category_id": "history"})
+    assert res.json()["error"]["code"] == "FEATURE_DISABLED"
+    assert players.get("/v1/client-config", "u1").json()["category_queues"] == {"en": []}
+
+
+def test_category_queue_matches_only_same_category(players, container):
+    enable_category_queues(container, ["history", "music"])
+    assert players.get("/v1/client-config", "u1").json()["category_queues"] == {"en": ["history", "music"]}
+    other = players.post("/v1/matchmaking/quick/join", "u1", {"median_rtt_ms": 40, "category_id": "sports"})
+    assert other.json()["error"]["code"] == "FEATURE_DISABLED"
+    # Three Mixed tickets and a History ticket never form a match together.
+    for uid in ("u1", "u2", "u3"):
+        assert join(players, uid).json()["state"] == "QUEUED"
+    hist = players.post("/v1/matchmaking/quick/join", "u4", {"median_rtt_ms": 40, "category_id": "history"})
+    assert hist.json()["state"] == "QUEUED" and hist.json()["category_id"] == "history"
+    # At the fill deadline the History ticket forms with bots only, and every question is History.
+    container.clock.set(hist.json()["human_fill_at_ms"])
+    status = players.get("/v1/matchmaking/status", "u4").json()
+    assert status["state"] == "MATCHED"
+    match_id = status["match"]["match_id"]
+    auth = live_root(container, match_id)["authoritative"]
+    assert container.store._docs[f"match_index/{match_id}"]["participant_uids"] == ["u4"]
+    plan = auth["plan"]
+    assert plan["category_id"] == "history"
+    assert {i["category_id"] for i in plan["normal"] + plan["reserve"]} == {"history"}
+    assert container.store._docs[f"match_index/{match_id}"]["category_id"] == "history"
+
+
+def test_category_survival_pools_stay_in_category(players, container):
+    enable_category_queues(container, ["music"])
+    res = players.post("/v1/matchmaking/survival/join", "u1", {"median_rtt_ms": 40, "category_id": "music"})
+    container.clock.set(res.json()["human_fill_at_ms"])
+    match_id = players.get("/v1/matchmaking/status", "u1").json()["match"]["match_id"]
+    plan = live_root(container, match_id)["authoritative"]["plan"]
+    cats = {i["category_id"] for items in plan["pools"].values() for i in items or []}
+    assert cats == {"music"}

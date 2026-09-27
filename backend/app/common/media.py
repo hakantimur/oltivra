@@ -54,16 +54,28 @@ class GcsMediaSigner:
         return await anyio.to_thread.run_sync(_sign, limiter=self._limiter)
 
 
+class MediaObjectExists(Exception):
+    """The versioned object already exists; question media is never overwritten in place (spec §34.1)."""
+
+
 class MediaUploader(Protocol):
-    async def put(self, storage_path: str, data: bytes, content_type: str) -> None: ...
+    async def put(self, storage_path: str, data: bytes, content_type: str, cache_control: str | None = None
+                  ) -> None:
+        """Create-only upload: raises MediaObjectExists instead of replacing an existing object."""
+        ...
 
 
 class MemoryMediaUploader:
     def __init__(self) -> None:
         self.objects: dict[str, tuple[bytes, str]] = {}
+        self.cache_control: dict[str, str | None] = {}
 
-    async def put(self, storage_path: str, data: bytes, content_type: str) -> None:
+    async def put(self, storage_path: str, data: bytes, content_type: str, cache_control: str | None = None
+                  ) -> None:
+        if storage_path in self.objects:
+            raise MediaObjectExists(storage_path)
         self.objects[storage_path] = (data, content_type)
+        self.cache_control[storage_path] = cache_control
 
 
 class EmulatorMediaUploader:
@@ -73,13 +85,19 @@ class EmulatorMediaUploader:
         self._host = host
         self._bucket = bucket
 
-    async def put(self, storage_path: str, data: bytes, content_type: str) -> None:
+    async def put(self, storage_path: str, data: bytes, content_type: str, cache_control: str | None = None
+                  ) -> None:
         import httpx
 
         url = f"http://{self._host}/upload/storage/v1/b/{self._bucket}/o"
+        headers = {"content-type": content_type}
+        if cache_control:
+            headers["cache-control"] = cache_control
         async with httpx.AsyncClient(timeout=15.0) as client:
-            res = await client.post(url, params={"uploadType": "media", "name": storage_path}, content=data,
-                                    headers={"content-type": content_type})
+            res = await client.post(url, params={"uploadType": "media", "name": storage_path, "ifGenerationMatch": "0"},
+                                    content=data, headers=headers)
+            if res.status_code == 412:
+                raise MediaObjectExists(storage_path)
             res.raise_for_status()
 
 
@@ -90,7 +108,18 @@ class GcsMediaUploader:
         self._bucket = storage.Client().bucket(bucket)
         self._limiter = limiter
 
-    async def put(self, storage_path: str, data: bytes, content_type: str) -> None:
+    async def put(self, storage_path: str, data: bytes, content_type: str, cache_control: str | None = None
+                  ) -> None:
+        from google.api_core.exceptions import PreconditionFailed
+
         blob = self._bucket.blob(storage_path)
-        await anyio.to_thread.run_sync(lambda: blob.upload_from_string(data, content_type=content_type),
-                                       limiter=self._limiter)
+        blob.cache_control = cache_control
+
+        def _upload() -> None:
+            # if_generation_match=0: the write succeeds only when no live object exists at this path.
+            blob.upload_from_string(data, content_type=content_type, if_generation_match=0)
+
+        try:
+            await anyio.to_thread.run_sync(_upload, limiter=self._limiter)
+        except PreconditionFailed as exc:
+            raise MediaObjectExists(storage_path) from exc

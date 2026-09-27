@@ -45,6 +45,8 @@ async def bootstrap(body: BootstrapRequest, caller: Caller = Depends(account_cal
         "features": {
             "survival": config.features.survival_enabled,
             "category_queues": config.features.category_queues_enabled,
+            "category_queue_ids": config.features.category_queues_for(
+                (caller.user or {}).get("question_language", "en"), c.settings.region),
             "rewarded_xp": config.features.rewarded_offers_enabled,
         },
         "question_languages": config.features.competitive_languages,
@@ -71,6 +73,8 @@ async def client_config(caller: Caller = Depends(authenticated), c: Container = 
         "reaction_display_ms": 1800,
         "rewarded_xp_enabled": config.features.rewarded_offers_enabled,
         "survival_enabled": config.features.survival_enabled,
+        "category_queues": {lang: config.features.category_queues_for(lang, c.settings.region)
+                            for lang in config.features.competitive_languages},
         "question_languages": config.features.competitive_languages,
         "ui_languages": config.features.ui_languages,
         # Client connects only to its current match shard, selected by match_index (spec §14.1).
