@@ -319,6 +319,10 @@ class _FindingMatchScreenState extends ConsumerState<FindingMatchScreen> with Si
               const SizedBox(height: OSpace.xs),
               Text(modeRules(context, widget.mode, config),
                   style: OText.bodyMd.copyWith(color: OColors.inkSubtle), textAlign: TextAlign.center),
+              if (!ended) ...[
+                const SizedBox(height: OSpace.lg),
+                MatchRulesCard(mode: widget.mode, config: config),
+              ],
               if (ended)
                 _EndedView(
                   message: _error != null ? _errorMessage(context, _error!) : context.t(_overKey ?? 'error.generic'),

@@ -94,7 +94,7 @@ def test_all_submitted_wrong_protects_and_rescues_one_band_lower():
     rnd = state["round"]
     assert rnd["kind"] == "RESCUE"
     assert rnd["difficulty"] == {"HARD": "MEDIUM", "MEDIUM": "EASY", "EASY": "EASY"}[difficulty]
-    assert rnd["duration_ms"] == 11_000 and state["match_phase"] == "SURVIVAL_RESCUE"
+    assert rnd["duration_ms"] == 15_000 and state["match_phase"] == "SURVIVAL_RESCUE"
     assert rnd["gid"] not in state["used_gids"][:-1]  # fresh question group
 
 
@@ -120,7 +120,7 @@ def test_nobody_answers_starts_easy_fifteen_second_rescue():
     assert all(status(state, i) == "PROTECTED" for i in range(4))
     advance(state)
     rnd = state["round"]
-    assert rnd["kind"] == "RESCUE" and rnd["difficulty"] == "EASY" and rnd["duration_ms"] == 15_000
+    assert rnd["kind"] == "RESCUE" and rnd["difficulty"] == "EASY" and rnd["duration_ms"] == 20_000
     assert len(rnd["eligible"]) == 4
 
 
@@ -142,7 +142,7 @@ def test_three_unresolved_rounds_trigger_final_tiebreak_then_deterministic_order
         play(state)
         advance(state)
     rnd = state["round"]
-    assert rnd["kind"] == "TIEBREAK" and rnd["difficulty"] == "EASY" and rnd["duration_ms"] == 15_000
+    assert rnd["kind"] == "TIEBREAK" and rnd["difficulty"] == "EASY" and rnd["duration_ms"] == 20_000
     assert state["tiebreak_start_active"] == ["ph0", "ph1", "ph2"]
     play(state)  # nobody answers the final tiebreak: all eliminated, deterministic ordering decides
     assert state["deterministic_order"] == ["ph1", "ph0", "ph2"]
@@ -251,8 +251,17 @@ def test_refill_requested_when_reserve_low_and_applied_once():
     assert rules.pool_remaining(state) == before
 
 
-def test_survival_difficulty_follows_active_count():
-    state = survival(humans=2)
-    assert state["round"]["difficulty"] == "HARD"
-    state = survival(humans=6)
-    assert state["round"]["difficulty"] == "MEDIUM"
+def test_survival_opens_with_easy_rounds_whatever_the_count():
+    for humans in (2, 6, 10):
+        assert survival(humans=humans)["round"]["difficulty"] == "EASY"
+
+
+def test_survival_difficulty_follows_active_count_after_the_opening():
+    state = survival(humans=4)
+    state["round_index"] = 5
+    assert rules._normal_difficulty(state, KEYS, 2) == "HARD"
+    assert rules._normal_difficulty(state, KEYS, 3) in ("MEDIUM", "HARD")
+    assert rules._normal_difficulty(state, KEYS, 6) in ("EASY", "MEDIUM")
+    assert rules._normal_difficulty(state, KEYS, 9) in ("EASY", "MEDIUM")
+    state["round_index"] = 1  # rounds 1-3 are the EASY opening
+    assert rules._normal_difficulty(state, KEYS, 2) == "EASY"

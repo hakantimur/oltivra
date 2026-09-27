@@ -28,8 +28,9 @@ from app.questions.taxonomy import CATEGORIES
 
 SEED_ROOT = Path(__file__).resolve().parents[2] / "seed"
 SEED_DIR = SEED_ROOT / "questions"
-# Curated questions (spec §9.1): most carry a WebP under seed/media referenced by `media.file`; some are text-only.
-MEDIA_SEED_DIR = SEED_ROOT / "media_questions"
+# Curated questions (spec §9.1). Text-only since the 2026-09-27 playtest; an item may still carry `media.file`
+# (a WebP under seed/media), which is uploaded when an uploader is given.
+MEDIA_SEED_DIR = SEED_ROOT / "curated"
 MEDIA_FILES_DIR = SEED_ROOT / "media"
 SEED_LANGUAGES = ("en", "tr")
 
@@ -53,7 +54,7 @@ def seed_group_id(key: str) -> str:
 async def import_seed(repo: QuestionRepository, store, status: QuestionStatus, actor_uid: str = "seed-import",
                       items: list[dict[str, Any]] | None = None, uploader=None,
                       media_items: list[dict[str, Any]] | None = None, now_ms: int = 0) -> dict[str, int]:
-    """Import text questions and, when a media ``uploader`` is given, the image questions as well."""
+    """Import the text seed and the curated set; curated items with media need an ``uploader`` (else skipped)."""
     items = items if items is not None else load_seed_items()
     created = skipped = 0
     for category in CATEGORIES:
@@ -66,15 +67,16 @@ async def import_seed(repo: QuestionRepository, store, status: QuestionStatus, a
             created += 1
         else:
             skipped += 1
-    if uploader is not None:
-        media_items = media_items if media_items is not None else load_media_seed_items()
-        for item in media_items:
-            if await repo.get_group(seed_group_id(item["key"])):
-                skipped += 1
-                continue
-            asset_id = await _upload_media(repo, uploader, item, status, now_ms) if item.get("media") else None
-            await _create(repo, item, status, actor_uid, media_asset_id=asset_id)
-            created += 1
+    media_items = media_items if media_items is not None else load_media_seed_items()
+    for item in media_items:
+        if item.get("media") and uploader is None:
+            continue
+        if await repo.get_group(seed_group_id(item["key"])):
+            skipped += 1
+            continue
+        asset_id = await _upload_media(repo, uploader, item, status, now_ms) if item.get("media") else None
+        await _create(repo, item, status, actor_uid, media_asset_id=asset_id)
+        created += 1
     return {"created": created, "skipped": skipped}
 
 

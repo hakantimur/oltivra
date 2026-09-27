@@ -108,19 +108,19 @@ def test_unranked_bot_match_awards_xp_but_never_ranked_progress(players, contain
     for _ in range(10):
         play_round_human_wins(players, container, match_id)
     u = user(container, "u1")
-    assert u["total_xp"] == 150 and u["matches_completed"] == 1 and u["quick_wins_lifetime"] == 1
+    assert u["total_xp"] == 200 and u["matches_completed"] == 1 and u["quick_wins_lifetime"] == 1
     assert u["mmr"] == 1000 and u["ranked_matches_completed"] == 0
     assert u["quick_current_ranked_win_streak"] == 0 and u.get("quick_ranked_wins_lifetime", 0) == 0
     assert "badge_first_quick_win" in u["badge_ids"]
     week = iso_week_id(container.clock.now_ms())
     assert f"weekly_user_stats/{week}_u1" not in container.store._docs
     settlement = private(container, match_id, "u1")["settlement"]
-    assert settlement["xp_awarded"] == 150 and settlement["progress_level_after"] >= 2
+    assert settlement["xp_awarded"] == 200 and settlement["progress_level_after"] >= 2
     assert settlement["progress_ranked"] is False and "mmr_delta" not in settlement
     assert settlement["progress_new_badges"] == ["badge_first_quick_win"]
     profile = container.store._docs[f"public_profiles/{u['public_id']}"]
     assert profile["level"] == settlement["progress_level_after"]
-    assert container.store._docs[f"reward_offers/{match_id}_u1"]["base_xp"] == 150
+    assert container.store._docs[f"reward_offers/{match_id}_u1"]["base_xp"] == 200
     daily = players.get("/v1/missions/daily", "u1").json()
     assert any(m["progress"] > 0 for m in daily["missions"]) or all(
         m["template_id"] in ("play_survival_1", "win_ranked_quick_1", "send_reactions_5") for m in daily["missions"])
@@ -155,13 +155,13 @@ def test_ranked_match_updates_mmr_streak_weekly_and_leaderboard(players, contain
     assert sum(losers) < 0 and sorted(losers) == [-24, -8, 8]
     week = iso_week_id(container.clock.now_ms())
     weekly = container.store._docs[f"weekly_user_stats/{week}_u1"]
-    assert weekly["ranked_weekly_xp"] == 150 and weekly["quick_ranked_wins"] == 1 and weekly["league"] == "UNRANKED"
+    assert weekly["ranked_weekly_xp"] == 200 and weekly["quick_ranked_wins"] == 1 and weekly["league"] == "UNRANKED"
     board = players.get("/v1/leaderboards/weekly", "u2").json()
     assert board["entries"][0]["public_id"] == u1["public_id"] and board["entries"][0]["rank"] == 1
     assert board["me"]["rank"] >= 2 and len(board["entries"]) == 4
     league = players.get("/v1/league", "u1").json()
     assert league["league"] == "UNRANKED" and league["placement_matches_remaining"] == 4
-    assert "mmr" not in league and league["ranked_weekly_xp"] == 150
+    assert "mmr" not in league and league["ranked_weekly_xp"] == 200
 
 
 def test_ranked_loss_resets_streak(players, container):

@@ -21,18 +21,18 @@ from tests.engine_helpers import (
 
 
 @pytest.mark.parametrize("remaining_ms,points", [
-    (10_999, 10), (10_000, 10), (9_999, 9), (8_300, 8), (1_200, 1), (1_001, 1), (100, 1),
+    (15_000, 15), (14_001, 15), (14_000, 14), (13_999, 14), (8_300, 9), (1_200, 2), (1_000, 1), (100, 1),
 ])
 def test_scoring_boundaries(remaining_ms, points):
     assert points_for(100_000, 100_000 - remaining_ms) == points
 
 
-def test_round_loading_publishes_only_current_question_with_two_second_lead():
+def test_round_loading_publishes_only_current_question_after_the_ready_lead():
     state, result = new_match()
     assert state["state"] == MatchState.ROUND_LOADING
     rnd = state["round"]
-    assert rnd["starts_at_ms"] - state["created_at_ms"] == 2000
-    assert rnd["ends_at_ms"] - rnd["starts_at_ms"] == 11_000
+    assert rnd["starts_at_ms"] - state["created_at_ms"] == 6000  # first question: time to read the rules
+    assert rnd["ends_at_ms"] - rnd["starts_at_ms"] == 15_000
     kinds = {e.kind for e in result.effects}
     assert {"ROUND_START", "ROUND_RECOVERY"} <= kinds
     root = engine.project(state, KEYS)
@@ -50,28 +50,28 @@ def test_first_correct_answer_wins_and_closes_round():
     state, _ = new_match()
     starts = start_round(state)
     result = answer(state, "u1", True, starts + 2_500)
-    assert result.outcome["accepted"] and result.outcome["correct"] and result.outcome["score_delta"] == 8
+    assert result.outcome["accepted"] and result.outcome["correct"] and result.outcome["score_delta"] == 13
     assert state["state"] == MatchState.ROUND_REVEAL
     late = answer(state, "u2", True, starts + 2_600)
     assert late.outcome["error"] == "ROUND_NOT_ACTIVE"
     public = engine.project(state, KEYS)["public"]
     assert public["correct_answer_reveal"]["winner_pid"] == "ph1"
-    assert public["participants"]["ph1"]["score"] == 8
+    assert public["participants"]["ph1"]["score"] == 13
     assert [e["type"] for e in public["events"]][-1] == "WIN"
 
 
-def test_wrong_answer_locks_player_minus_four_and_round_continues():
+def test_wrong_answer_locks_player_minus_six_and_round_continues():
     state, _ = new_match()
     starts = start_round(state)
     wrong = answer(state, "u0", False, starts + 1_000)
-    assert wrong.outcome["score_delta"] == -4 and state["state"] == MatchState.ROUND_ACTIVE
+    assert wrong.outcome["score_delta"] == -6 and state["state"] == MatchState.ROUND_ACTIVE
     again = answer(state, "u0", True, starts + 1_500, request_id="another")
     assert again.outcome["error"] == "ANSWER_ALREADY_SUBMITTED"
     public = engine.project(state, KEYS)["public"]
-    assert public["participants"]["ph0"]["score"] == -4
+    assert public["participants"]["ph0"]["score"] == -6
     assert public["participants"]["ph0"]["answer_locked"] is True
     event = public["events"][-1]
-    assert event["type"] == "WRONG" and event["value"] == -4
+    assert event["type"] == "WRONG" and event["value"] == -6
     assert "concept" not in str(event)  # the selected wrong option is never public
 
 
@@ -81,9 +81,9 @@ def test_duplicate_request_returns_original_outcome():
     first = answer(state, "u0", False, starts + 1_000, request_id="same")
     replay = answer(state, "u0", False, starts + 1_200, request_id="same")
     assert replay.outcome["replay"] is True and replay.outcome["score_delta"] == first.outcome["score_delta"]
-    assert state["participants"]["ph0"]["score"] == -4
+    assert state["participants"]["ph0"]["score"] == -6
     reused = answer(state, "u0", True, starts + 1_300, request_id="same")  # same key, different option
-    assert reused.outcome["error"] == "IDEMPOTENCY_KEY_REUSED" and state["participants"]["ph0"]["score"] == -4
+    assert reused.outcome["error"] == "IDEMPOTENCY_KEY_REUSED" and state["participants"]["ph0"]["score"] == -6
 
 
 def test_late_and_invalid_answers_rejected():
@@ -134,9 +134,9 @@ def test_multiple_wrong_then_correct():
     answer(state, "u0", False, starts + 500)
     answer(state, "u1", False, starts + 700)
     res = answer(state, "u2", True, starts + 3_000)
-    assert res.outcome["score_delta"] == 8
+    assert res.outcome["score_delta"] == 12
     scores = {pid: p["score"] for pid, p in state["participants"].items()}
-    assert scores == {"ph0": -4, "ph1": -4, "ph2": 8, "ph3": 0}
+    assert scores == {"ph0": -6, "ph1": -6, "ph2": 12, "ph3": 0}
 
 
 def test_concurrent_correct_answers_yield_one_winner():
@@ -220,7 +220,7 @@ def test_top_score_tie_enters_sudden_death_and_winner_takes_first():
     for n in range(10):
         starts = start_round(state)
         uid = "u0" if n % 2 == 0 else "u1"
-        answer(state, uid, True, starts + 1_000)  # both reach 50 points
+        answer(state, uid, True, starts + 1_000)  # both reach 70 points
         advance(state)
     assert state["match_phase"] == Phase.QUICK_SUDDEN_DEATH
     assert state["round"]["difficulty"] == "MEDIUM" and state["round"]["eligible"] == ["ph0", "ph1"]
@@ -228,12 +228,12 @@ def test_top_score_tie_enters_sudden_death_and_winner_takes_first():
     spectator = answer(state, "u2", True, starts + 500)
     assert spectator.outcome["error"] == "FORBIDDEN"
     answer(state, "u0", False, starts + 600)  # wrong in SD: locked, no score change
-    assert state["participants"]["ph0"]["score"] == 50
+    assert state["participants"]["ph0"]["score"] == 70
     answer(state, "u1", True, starts + 900)
     advance(state)
     assert state["state"] == MatchState.FINISHED_PENDING_SETTLEMENT
     assert state["result"]["order"][:2] == ["ph1", "ph0"]
-    assert state["participants"]["ph1"]["score"] == 50  # SD never alters normal score
+    assert state["participants"]["ph1"]["score"] == 70  # SD never alters normal score
 
 
 def test_sudden_death_unresolved_cap_uses_secondary_rules():

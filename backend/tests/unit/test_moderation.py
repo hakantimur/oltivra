@@ -112,7 +112,7 @@ def test_ranked_restriction_keeps_mmr_but_awards_xp(players, container):
     for _ in range(10):
         play_round_human_wins(players, container, match_id, uid="u1")
     u1 = user(container, "u1")
-    assert u1["mmr"] == 1000 and u1["ranked_matches_completed"] == 0 and u1["total_xp"] == 150
+    assert u1["mmr"] == 1000 and u1["ranked_matches_completed"] == 0 and u1["total_xp"] == 200
     assert user(container, "u2")["ranked_matches_completed"] == 1  # others are unaffected
 
 

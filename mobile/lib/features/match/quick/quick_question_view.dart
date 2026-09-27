@@ -6,6 +6,7 @@ import '../../../theme/app_theme.dart';
 import '../../../theme/tokens.dart';
 import '../match_view_data.dart';
 import '../widgets/match_widgets.dart';
+import '../widgets/round_flash.dart';
 
 /// Quick Battle live question (P03 screens 1, 2, 3 and 5): active question, local wrong-answer lock, the
 /// server reveal, and Sudden Death. The layout stays stable across all of them; only states change.
@@ -144,8 +145,27 @@ class QuickQuestionView extends StatelessWidget {
       footer = context.t('match.rules_quick');
     }
 
+    // Centred round result (playtest 2026-09-27): the winner for everyone, a private card for an own wrong answer.
+    String? flashKey;
+    FlashContent? flash;
+    final roundWinner = s.roundWinnerPid;
+    if (revealed && roundWinner != null && s.participants[roundWinner] != null) {
+      final isMe = roundWinner == myPid;
+      flashKey = 'win:${s.roundId}';
+      flash = FlashContent(
+        kind: isMe ? FlashKind.youWon : FlashKind.otherWon,
+        title: isMe
+            ? context.t('match.flash_you_won')
+            : context.t('match.flash_other_won', {'name': s.participants[roundWinner]!.name}),
+        points: suddenDeath ? null : signed(s.roundPoints),
+      );
+    } else if (!revealed && confirmedWrong && delta != null && delta != 0) {
+      flashKey = 'wrong:${s.roundId}';
+      flash = FlashContent(kind: FlashKind.youWrong, title: context.t('match.flash_wrong'), points: signed(delta));
+    }
+
     final players = s.bySlot;
-    return Column(
+    final body = Column(
       children: [
         MatchTopBar(
           overline: context.t('mode.QUICK'),
@@ -206,6 +226,18 @@ class QuickQuestionView extends StatelessWidget {
                 icon: revealed ? Icons.lock_clock_rounded : Icons.bolt_rounded,
               ),
             ],
+          ),
+        ),
+      ],
+    );
+    return Stack(
+      children: [
+        body,
+        Positioned.fill(
+          child: RoundFlash(
+            eventKey: flashKey,
+            content: flash,
+            holdMs: flash?.kind == FlashKind.youWrong ? 1400 : 2400,
           ),
         ),
       ],

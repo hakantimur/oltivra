@@ -118,6 +118,13 @@ const Map<String, Map<String, String>> homeStrings = {
     'home.ready.format.SURVIVAL_timer': '{s}s round timer',
     'home.ready.format.SURVIVAL': 'Wrong or no answer eliminates instantly',
     'home.ready.connecting': 'Connecting to the arena…',
+    'home.rules.title': 'HOW IT WORKS',
+    'home.rules.quick.first': 'The first correct answer wins the question',
+    'home.rules.quick.speed': 'The faster you answer, the more points you get (up to {max})',
+    'home.rules.quick.wrong': 'A wrong answer costs {wrong} points; skipping costs nothing',
+    'home.rules.survival.out': 'A wrong answer or no answer knocks you out',
+    'home.rules.survival.timer': '{s} seconds per question',
+    'home.rules.survival.win': 'The last player standing wins',
   },
   'tr': {
     // Home tab
@@ -237,5 +244,12 @@ const Map<String, Map<String, String>> homeStrings = {
     'home.ready.format.SURVIVAL_timer': '{s} sn tur süresi',
     'home.ready.format.SURVIVAL': 'Yanlış ya da boş cevap anında eler',
     'home.ready.connecting': 'Arenaya bağlanılıyor…',
+    'home.rules.title': 'NASIL OYNANIR',
+    'home.rules.quick.first': 'Soruyu ilk doğru cevaplayan kazanır',
+    'home.rules.quick.speed': 'Ne kadar hızlı cevaplarsan o kadar çok puan alırsın (en fazla {max})',
+    'home.rules.quick.wrong': 'Yanlış cevap {wrong} puan kaybettirir; boş bırakmak puan kaybettirmez',
+    'home.rules.survival.out': 'Yanlış cevap veya cevapsız kalmak seni eler',
+    'home.rules.survival.timer': 'Her soru için {s} saniye',
+    'home.rules.survival.win': 'Son kalan oyuncu kazanır',
   },
 };

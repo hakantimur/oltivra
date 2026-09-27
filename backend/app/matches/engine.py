@@ -143,7 +143,8 @@ def open_round(state: dict[str, Any], keys: Keyring, now_ms: int, item: dict[str
     attempt = int((state.get("round_attempts") or {}).get(str(index), 0))
     seed = f"round:{match_id}:{index}" + (f":{attempt}" if attempt else "")
     round_id = f"r{index:02d}-{keys.resolver.hexdigest(seed)[:10]}"
-    lead = state["config"]["mode"]["round_lead_ms"]
+    mode_cfg = state["config"]["mode"]
+    lead = mode_cfg.get("first_round_lead_ms", mode_cfg["round_lead_ms"]) if index == 1 else mode_cfg["round_lead_ms"]
     starts = now_ms + lead
     ends = starts + duration_ms
     concepts = [o["concept_id"] for o in item["options"]]

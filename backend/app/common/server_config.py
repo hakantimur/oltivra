@@ -15,30 +15,39 @@ from app.common.store.docstore import DocStore
 
 
 class QuickConfig(BaseModel):
+    # Playtest 2026-09-27: 15 s window (points 15..1) and -6 for a wrong answer (same 40% of max as -4/10);
+    # a longer reveal leaves room for the round-result celebration.
     normal_questions: int = 10
-    seconds: int = 11
-    reveal_ms: int = 2500
-    wrong_penalty: int = -4
+    seconds: int = 15
+    reveal_ms: int = 3500
+    wrong_penalty: int = -6
     no_answer_penalty: int = 0
     bot_fill_ms: int = 3000
     sudden_death_unresolved_cap: int = 5
     reserve_questions: int = 5
     round_lead_ms: int = 2000
+    # The first question waits longer so the ready screen (roster + rules) can be read (playtest 2026-09-27).
+    first_round_lead_ms: int = 6000
     rematch_window_ms: int = 10_000
 
 
 class SurvivalConfig(BaseModel):
-    seconds: int = 11
-    reveal_ms: int = 3000
+    seconds: int = 15
+    reveal_ms: int = 3500
     bot_fill_ms: int = 5000
     unresolved_round_cap: int = 3
-    rescue_seconds: int = 15
+    rescue_seconds: int = 20
     candidate_questions: int = 30
     reserve_questions: int = 10
     round_lead_ms: int = 2000
-    # Weighted difficulty by active count bands (spec §4.4).
+    # The first question waits longer so the ready screen (roster + rules) can be read (playtest 2026-09-27).
+    first_round_lead_ms: int = 6000
+    # Opening rounds are always EASY so a full lobby is not wiped out at once (playtest 2026-09-27).
+    easy_opening_rounds: int = 3
+    # Weighted difficulty by active count bands (spec §4.4, eased after the playtest).
     easy_weight_8_10: float = 0.65
-    hard_weight_3_4: float = 0.65
+    easy_weight_5_7: float = 0.35
+    hard_weight_3_4: float = 0.5
 
 
 class MatchmakingConfig(BaseModel):

@@ -1,14 +1,14 @@
 [
   {
-    "key": "sports_c001",
+    "key": "sports_t001",
     "category_id": "sports",
     "subcategory_id": "tennis",
     "difficulty": "EASY",
     "global_relevance_score": 5,
     "time_sensitive": false,
     "question": {
-      "en": "Which Grand Slam tournament is played on this kind of court?",
-      "tr": "Hangi Grand Slam turnuvası bu tür bir kortta oynanır?"
+      "en": "Which Grand Slam tennis tournament is played on grass courts?",
+      "tr": "Hangi Grand Slam tenis turnuvası çim kortta oynanır?"
     },
     "options": [
       {
@@ -33,19 +33,7 @@
       }
     ],
     "correct": "wimbledon",
-    "source": "https://en.wikipedia.org/wiki/Grass_court",
-    "media": {
-      "file": "sports/sports_c001.webp",
-      "alt_text": {
-        "en": "An empty tennis court with a net, marked out on a grass lawn",
-        "tr": "Çimenlik bir alanda çizgileri çekilmiş, fileli boş bir tenis kortu"
-      },
-      "source": "https://commons.wikimedia.org/wiki/File:Appleby_Castle,_tennis_court_-_geograph.org.uk_-_4958770.jpg",
-      "author": "Stephen Craven",
-      "license": "CC BY-SA 2.0",
-      "attribution": "Stephen Craven / Wikimedia Commons, CC BY-SA 2.0",
-      "copyright_status": "LICENSED"
-    }
+    "source": "https://en.wikipedia.org/wiki/Grass_court"
   },
   {
     "key": "sports_c002",
@@ -84,15 +72,15 @@
     "source": "https://en.wikipedia.org/wiki/Three-point_field_goal"
   },
   {
-    "key": "sports_c003",
+    "key": "sports_t003",
     "category_id": "sports",
     "subcategory_id": "athletics",
     "difficulty": "MEDIUM",
     "global_relevance_score": 5,
     "time_sensitive": false,
     "question": {
-      "en": "How long is one lap of the inside lane on a standard outdoor track like this?",
-      "tr": "Bunun gibi standart bir açık hava pistinde iç kulvarda bir tur kaç metredir?"
+      "en": "How long is one lap of the inside lane on a standard outdoor running track?",
+      "tr": "Standart bir açık hava koşu pistinde iç kulvarda bir tur kaç metredir?"
     },
     "options": [
       {
@@ -117,30 +105,18 @@
       }
     ],
     "correct": "m400",
-    "source": "https://en.wikipedia.org/wiki/Running_track",
-    "media": {
-      "file": "sports/sports_c003.webp",
-      "alt_text": {
-        "en": "The curved red lanes of an empty outdoor running track",
-        "tr": "Boş bir açık hava koşu pistinin kıvrılan kırmızı kulvarları"
-      },
-      "source": "https://commons.wikimedia.org/wiki/File:Running_track,_Linford_Christie_Stadium_-_geograph.org.uk_-_4543964.jpg",
-      "author": "David Hawgood",
-      "license": "CC BY-SA 2.0",
-      "attribution": "David Hawgood / Wikimedia Commons, CC BY-SA 2.0",
-      "copyright_status": "LICENSED"
-    }
+    "source": "https://en.wikipedia.org/wiki/Running_track"
   },
   {
-    "key": "sports_c004",
+    "key": "sports_t004",
     "category_id": "sports",
     "subcategory_id": "football",
     "difficulty": "MEDIUM",
     "global_relevance_score": 4,
     "time_sensitive": false,
     "question": {
-      "en": "In which city is this famous football stadium?",
-      "tr": "Bu ünlü futbol stadyumu hangi şehirdedir?"
+      "en": "In which city is the Maracanã football stadium?",
+      "tr": "Maracanã futbol stadyumu hangi şehirdedir?"
     },
     "options": [
       {
@@ -165,30 +141,18 @@
       }
     ],
     "correct": "rio_de_janeiro",
-    "source": "https://en.wikipedia.org/wiki/Maracan%C3%A3_Stadium",
-    "media": {
-      "file": "sports/sports_c004.webp",
-      "alt_text": {
-        "en": "Aerial view of a large oval stadium with a ring-shaped white roof",
-        "tr": "Halka biçiminde beyaz çatısı olan büyük, oval bir stadyumun havadan görünümü"
-      },
-      "source": "https://commons.wikimedia.org/wiki/File:Maracana_stadium,_brazil_-_panoramio.jpg",
-      "author": "Pedro Lopez from Ottawa, Canada",
-      "license": "CC BY 2.0",
-      "attribution": "Pedro Lopez from Ottawa, Canada / Wikimedia Commons, CC BY 2.0",
-      "copyright_status": "LICENSED"
-    }
+    "source": "https://en.wikipedia.org/wiki/Maracan%C3%A3_Stadium"
   },
   {
-    "key": "sports_c005",
+    "key": "sports_t005",
     "category_id": "sports",
     "subcategory_id": "olympics",
     "difficulty": "HARD",
     "global_relevance_score": 4,
     "time_sensitive": false,
     "question": {
-      "en": "The ancient games held in this stadium honoured which Greek god?",
-      "tr": "Bu stadyumda düzenlenen antik oyunlar hangi Yunan tanrısı onuruna yapılırdı?"
+      "en": "The ancient Olympic Games held at Olympia honoured which Greek god?",
+      "tr": "Olympia'da düzenlenen antik Olimpiyat Oyunları hangi Yunan tanrısı onuruna yapılırdı?"
     },
     "options": [
       {
@@ -213,18 +177,6 @@
       }
     ],
     "correct": "zeus",
-    "source": "https://en.wikipedia.org/wiki/Ancient_Olympic_Games",
-    "media": {
-      "file": "sports/sports_c005.webp",
-      "alt_text": {
-        "en": "A long, flat earthen running track between grassy embankments",
-        "tr": "Çimenli setler arasında uzun, düz, toprak bir koşu alanı"
-      },
-      "source": "https://commons.wikimedia.org/wiki/File:Ancient_Olympia_Stadium_in_Greece_(51224128585).jpg",
-      "author": "dronepicr",
-      "license": "CC BY 2.0",
-      "attribution": "dronepicr / Wikimedia Commons, CC BY 2.0",
-      "copyright_status": "LICENSED"
-    }
+    "source": "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"
   }
 ]

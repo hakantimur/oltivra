@@ -73,10 +73,12 @@ def _normal_difficulty(state: dict[str, Any], keys: Keyring, active_count: int) 
     index = int(state.get("round_index", 0)) + 1
     roll = random.Random(int.from_bytes(keys.resolver.digest(f"difficulty:{state['match_id']}:{index}")[:8],
                                         "big")).random()
+    if index <= cfg.get("easy_opening_rounds", 0):
+        return "EASY"
     if active_count >= 8:
         return "EASY" if roll < cfg.get("easy_weight_8_10", 0.65) else "MEDIUM"
     if active_count >= 5:
-        return "MEDIUM"
+        return "EASY" if roll < cfg.get("easy_weight_5_7", 0.0) else "MEDIUM"
     if active_count >= 3:
         return "HARD" if roll < cfg.get("hard_weight_3_4", 0.65) else "MEDIUM"
     return "HARD"
