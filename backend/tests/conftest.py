@@ -14,6 +14,9 @@ from app.container import Container
 from app.main import create_app
 from tests.helpers import seeded_store
 
+# Tests never read a developer's local backend/.env.
+Settings.model_config["env_file"] = None
+
 
 def make_settings(**overrides: Any) -> Settings:
     base = dict(env="test", store_backend="memory", auth_mode="fake", app_check_mode="off",
