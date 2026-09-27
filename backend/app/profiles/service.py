@@ -157,7 +157,7 @@ class ProfileService:
             if reg and not self._registry_allows(reg, uid, now):
                 raise ApiError(ErrorCode.USERNAME_TAKEN)
             txn.set(registry_path(norm), {"schema_version": 1, "state": "ACTIVE", "uid": uid, "is_bot": False,
-                                          "updated_at_ms": now})
+                                          "name": norm, "updated_at_ms": now})
             if old_norm and old_norm != norm:
                 txn.set(registry_path(old_norm), {"schema_version": 1, "state": "RESERVED", "uid": None,
                                                   "reserved_for_uid": uid,

@@ -567,6 +567,12 @@ def project(state: dict[str, Any], keys: Keyring) -> dict[str, Any]:
         }
     if state.get("result"):
         public["result_summary"] = rules.public_result(state)
+    settlement = state.get("settlement") or {}
+    if settlement.get("status"):
+        public["settlement_status"] = settlement["status"]
+        if settlement["status"] == "SETTLED":
+            window = int(state["config"]["mode"].get("rematch_window_ms", 10_000))
+            public["rematch_until_ms"] = int(settlement.get("settled_at_ms", 0)) + window
     private: dict[str, Any] = {}
     access: dict[str, str] = {}
     for pid, p in humans(state).items():

@@ -223,6 +223,10 @@
           "order": "ASCENDING"
         },
         {
+          "fieldPath": "league",
+          "order": "ASCENDING"
+        },
+        {
           "fieldPath": "ranked_weekly_xp",
           "order": "DESCENDING"
         },
@@ -241,31 +245,57 @@
       ]
     },
     {
-      "collectionGroup": "weekly_user_stats",
+      "collectionGroup": "username_registry",
       "queryScope": "COLLECTION",
       "fields": [
         {
-          "fieldPath": "week_id",
+          "fieldPath": "state",
           "order": "ASCENDING"
         },
         {
-          "fieldPath": "league",
+          "fieldPath": "name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "friend_requests",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "recipient_uid",
           "order": "ASCENDING"
         },
         {
-          "fieldPath": "ranked_weekly_xp",
-          "order": "DESCENDING"
+          "fieldPath": "state",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "friend_requests",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "sender_uid",
+          "order": "ASCENDING"
         },
         {
-          "fieldPath": "quick_ranked_wins",
-          "order": "DESCENDING"
+          "fieldPath": "state",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "party_invites",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "uid",
+          "order": "ASCENDING"
         },
         {
-          "fieldPath": "survival_ranked_crowns",
-          "order": "DESCENDING"
-        },
-        {
-          "fieldPath": "tie_break_hash",
+          "fieldPath": "state",
           "order": "ASCENDING"
         }
       ]

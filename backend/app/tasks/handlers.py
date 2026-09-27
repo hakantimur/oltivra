@@ -41,3 +41,11 @@ async def settle(container, body: dict[str, Any]) -> dict[str, Any]:
 async def cleanup(container, body: dict[str, Any]) -> dict[str, Any]:
     match_id, shard_id = _ids(body)
     return await container.settlement.cleanup(match_id, shard_id)
+
+
+@task_handler(TaskKind.PARTY_EXPIRY, TaskKind.REMATCH_EXPIRY)
+async def party_expiry(container, body: dict[str, Any]) -> dict[str, Any]:
+    party_id = body.get("party_id")
+    if not party_id:
+        raise ApiError(ErrorCode.INVALID_REQUEST, detail={"reason": "missing_party"})
+    return await container.parties.expire(party_id)
