@@ -8,6 +8,7 @@ from __future__ import annotations
 
 from typing import Any
 
+from app.catalog.data import next_level_reward
 from app.catalog.service import CatalogService
 from app.common.clock import Clock
 from app.common.errors import ApiError, ErrorCode
@@ -268,6 +269,7 @@ class ProfileService:
             },
             "total_xp": user.get("total_xp", 0),
             "level_progress": level_progress(user.get("total_xp", 0)),
+            "next_level_reward": next_level_reward(level_for_xp(user.get("total_xp", 0))),
             "league_state": {"last_result": (user.get("league_state") or {}).get("last_result")},
             "quick_current_ranked_win_streak": user.get("quick_current_ranked_win_streak", 0),
             "matches_completed": user.get("matches_completed", 0),

@@ -10,6 +10,7 @@ from __future__ import annotations
 import logging
 from typing import Any
 
+from app.catalog.data import level_frames, next_level_reward
 from app.common.clock import iso_week_id, ms_to_datetime
 from app.common.ids import sha256_hex
 from app.matches.model import Mode, humans, participants
@@ -91,6 +92,7 @@ def _badges(user: dict[str, Any], league: str, categories: dict[str, Any]) -> tu
     if league == League.LEGEND.value:
         badges.add("badge_legend_league")
         frames.add("frame_legend")
+    frames |= level_frames(level_for_xp(int(user.get("total_xp", 0))))
     return badges, frames
 
 
@@ -207,8 +209,8 @@ class ProgressionHooks:
             badges, frames = _badges(user, after_league, categories)
             new_badges = sorted(badges - set(user.get("badge_ids") or []))
             user["badge_ids"] = list(user.get("badge_ids") or []) + new_badges
-            user["frame_ids"] = list(user.get("frame_ids") or ["frame_none"]) + sorted(
-                frames - set(user.get("frame_ids") or []))
+            new_frames = sorted(frames - set(user.get("frame_ids") or []))
+            user["frame_ids"] = list(user.get("frame_ids") or ["frame_none"]) + new_frames
             sequence = int(user.get("progression_sequence", 0)) + 1
             user["progression_sequence"] = sequence
             fields = {k: user[k] for k in (
@@ -233,12 +235,15 @@ class ProgressionHooks:
                               frame_id=user.get("frame_id", "frame_none"), updated_at_ms=now,
                               expires_at=ms_to_datetime(now + 400 * 86_400_000))
                 txn.set(weekly_path(prepared["week"], uid), weekly)
-            # Rewarded XP eligibility: one offer per settled match (spec §7.2, §31.2).
-            txn.set(f"reward_offers/{match_id}_{uid}", {
-                "schema_version": 1, "match_id": match_id, "uid": uid, "state": "ELIGIBLE", "base_xp": base_xp,
-                "created_at_ms": now, "eligible_until_ms": now + prepared["config"].economy.reward_offer_ttl_ms,
-                # Firestore TTL (spec §16.4); grants stay auditable in reward_transactions.
-                "expires_at": ms_to_datetime(now + prepared["config"].economy.reward_offer_ttl_ms + REWARD_RETAIN_MS)})
+            # Rewarded XP eligibility: one offer per settled match (spec §7.2, §31.2), only while the feature is on.
+            reward_offer = prepared["config"].features.rewarded_offers_enabled
+            if reward_offer:
+                txn.set(f"reward_offers/{match_id}_{uid}", {
+                    "schema_version": 1, "match_id": match_id, "uid": uid, "state": "ELIGIBLE", "base_xp": base_xp,
+                    "created_at_ms": now, "eligible_until_ms": now + prepared["config"].economy.reward_offer_ttl_ms,
+                    # Firestore TTL (spec §16.4); grants stay auditable in reward_transactions.
+                    "expires_at": ms_to_datetime(
+                        now + prepared["config"].economy.reward_offer_ttl_ms + REWARD_RETAIN_MS)})
             txn.set(f"progression_events/{uid}_{sequence:08d}", {
                 "schema_version": 1, "uid": uid, "sequence": sequence, "match_id": match_id, "kind": "MATCH_SETTLED",
                 "xp": base_xp, "ranked": ranked, "mmr_delta": delta, "badges": new_badges, "at_ms": now})
@@ -248,8 +253,10 @@ class ProgressionHooks:
                 progress_total_xp=user["total_xp"], progress_league_before=before_league,
                 progress_league_after=after_league, progress_ranked=ranked,
                 progress_streak=int(user.get("quick_current_ranked_win_streak", 0)),
-                progress_new_badges=new_badges, progress_missions_completed=missions_completed,
-                progress_reward_offer=True)
+                progress_new_badges=new_badges, progress_new_frames=new_frames,
+                progress_next_level_reward=next_level_reward(level_for_xp(user["total_xp"])),
+                progress_missions_completed=missions_completed,
+                progress_reward_offer=reward_offer)
         txn.set(intents_path(match_id), {"schema_version": 1, "match_id": match_id, "language": state["language"],
                                          "mode": mode, "intents": question_stat_intents(state), "applied": False,
                                          "created_at_ms": now})

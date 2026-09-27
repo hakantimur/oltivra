@@ -23,9 +23,12 @@ KEY_ID = "3335741209"
 
 
 @pytest.fixture
-def players(api):
+def players(api, container):
     for uid in ("u1", "u2"):
         api.onboard(uid)
+    # Rewarded XP is disabled by default; the dormant offer/SSV path stays covered with the flag switched on.
+    container.store._docs["server_config/v1"]["features"]["rewarded_offers_enabled"] = True
+    container.config.invalidate()
     return api
 
 
@@ -118,6 +121,16 @@ def test_reward_daily_cap(players, container):
     container.store._docs[f"reward_daily/u1_{utc_date_id(container.clock.now_ms())}"] = {"grants": 5}
     res = players.post(f"/v1/rewards/offers/{match_id}/start", "u1")
     assert res.status_code == 409 and res.json()["error"]["code"] == "REWARD_CAP_REACHED"
+
+
+def test_reward_offer_disabled_by_default(api, container):
+    api.onboard("u1")
+    match_id = settled_match(api, container)
+    assert f"reward_offers/{match_id}_u1" not in container.store._docs
+    res = api.post(f"/v1/rewards/offers/{match_id}/start", "u1")
+    assert res.json()["error"]["code"] == "FEATURE_DISABLED"
+    config = api.get("/v1/client-config", "u1").json()
+    assert config["rewarded_xp_enabled"] is False and config["ad_gate_every_matches"] == 3
 
 
 def test_reward_requires_own_settled_match(players, container):

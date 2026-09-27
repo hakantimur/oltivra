@@ -44,6 +44,11 @@ const Map<String, Map<String, String>> storeStrings = {
     'store.reward.unavailable': 'There’s no bonus XP offer for this match.',
     'store.reward.expired': 'This offer has expired.',
     'store.reward.cap': 'You’ve reached today’s bonus XP limit. Come back tomorrow.',
+    'store.ad_break.title': 'A short ad break',
+    'store.ad_break.body':
+        'To keep making Oltivra better and bring you more fun, we rely on ad revenue. Thanks for your support!',
+    'store.ad_break.hint': 'Your match starts right after the ad. Remove Ads turns these breaks off.',
+    'store.ad_break.continue': 'Continue',
     'store.reward.disabled': 'Bonus XP videos aren’t available right now.',
     'store.reward.ad_failed': 'No video is available right now. Please try again later.',
     'store.reward.not_completed': 'The video wasn’t finished, so no XP was added.',
@@ -136,6 +141,11 @@ const Map<String, Map<String, String>> storeStrings = {
     'store.reward.unavailable': 'Bu maç için bonus XP teklifi yok.',
     'store.reward.expired': 'Bu teklifin süresi doldu.',
     'store.reward.cap': 'Bugünkü bonus XP sınırına ulaştın. Yarın tekrar gel.',
+    'store.ad_break.title': 'Kısa bir reklam arası',
+    'store.ad_break.body':
+        'Oyun kalitemizi artırmak ve size eğlenceli vakit geçirtebilmek için reklam gelirlerine ihtiyaç duyuyoruz. Desteğin için teşekkürler!',
+    'store.ad_break.hint': 'Maçın reklamdan hemen sonra başlıyor. Reklamsız paket bu araları kapatır.',
+    'store.ad_break.continue': 'Devam et',
     'store.reward.disabled': 'Bonus XP videoları şu anda kullanılamıyor.',
     'store.reward.ad_failed': 'Şu anda video yok. Lütfen daha sonra tekrar dene.',
     'store.reward.not_completed': 'Video tamamlanmadığı için XP eklenmedi.',

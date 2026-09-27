@@ -43,6 +43,7 @@ Map<String, dynamic> _profile({String frameId = 'frame_none'}) => {
       'league': 'SILVER',
       'level': 12,
       'level_progress': {'level': 12, 'xp_into_level': 120, 'xp_for_level': 400},
+      'next_level_reward': {'level': 20, 'frame_id': 'frame_level_20'},
       'quick_current_ranked_win_streak': 4,
       'quick_best_ranked_win_streak': 7,
       'survival_ranked_crowns_lifetime': 3,
@@ -264,6 +265,7 @@ void main() {
     expect(find.text('mira_moves'), findsOneWidget);
     expect(find.text('LVL 12'), findsOneWidget);
     expect(find.text('120 / 400 XP'), findsOneWidget);
+    expect(find.text('Level 20 unlocks a new avatar frame'), findsOneWidget);
     expect(find.text('7'), findsOneWidget); // best streak
     expect(find.text('70% overall accuracy'), findsOneWidget);
     expect(find.text('#1 of 4'), findsOneWidget);

@@ -39,6 +39,11 @@ const frameColors = <String, Color>{
   'frame_crown': Color(0xFFFFC94A),
   'frame_diamond': Color(0xFF50DBC8),
   'frame_legend': Color(0xFFAF2759),
+  'frame_level_3': Color(0xFF16B8A6),
+  'frame_level_5': Color(0xFF5B7CFA),
+  'frame_level_10': Color(0xFF8E5CF6),
+  'frame_level_20': Color(0xFFF28C28),
+  'frame_level_30': Color(0xFF1B2130),
 };
 
 class OAvatar extends StatelessWidget {
