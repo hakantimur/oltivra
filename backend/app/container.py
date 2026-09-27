@@ -156,6 +156,16 @@ class Container:
             return GcsMediaSigner(self.settings.storage_bucket, self.settings.task_service_account, self.io_limiter)
         return EmulatorMediaSigner("127.0.0.1:9199", self.settings.storage_bucket)
 
+    @cached_property
+    def media_uploader(self):
+        from app.common.media import EmulatorMediaUploader, GcsMediaUploader, MemoryMediaUploader
+
+        if self.settings.env in ("stage", "prod"):
+            return GcsMediaUploader(self.settings.storage_bucket, self.io_limiter)
+        if self.settings.store_backend == "firebase":
+            return EmulatorMediaUploader("127.0.0.1:9199", self.settings.storage_bucket)
+        return MemoryMediaUploader()
+
     # ---- accounts & safety ----
     @cached_property
     def auth_admin(self):
@@ -172,6 +182,30 @@ class Container:
         from app.catalog.service import CatalogService
 
         return CatalogService(self.store, ttl_s=0 if self.settings.env == "test" else 30.0)
+
+    @cached_property
+    def categories(self):
+        from app.catalog.categories import CategoryService
+
+        return CategoryService(self.store, ttl_s=0 if self.settings.env == "test" else 30.0)
+
+    @cached_property
+    def duplicates(self):
+        from app.admin.duplicates import DuplicateService
+
+        return DuplicateService(self)
+
+    @cached_property
+    def pool_health(self):
+        from app.admin.pool_health import PoolHealthService
+
+        return PoolHealthService(self)
+
+    @cached_property
+    def audit(self):
+        from app.admin.audit import AuditLog
+
+        return AuditLog(self.store, self.clock)
 
     @cached_property
     def profiles(self):
