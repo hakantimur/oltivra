@@ -392,6 +392,7 @@ class LegalIdentity:
     address: str
     law: str
     effective: str
+    law_tr: str = ""
 
 
 def render(doc: str, language: str, identity: LegalIdentity) -> tuple[str, list[dict[str, object]]]:
@@ -401,7 +402,7 @@ def render(doc: str, language: str, identity: LegalIdentity) -> tuple[str, list[
         "operator": identity.operator,
         "contact": identity.contact,
         "address": f", {identity.address}" if identity.address else "",
-        "law": identity.law,
+        "law": identity.law_tr if lang == "tr" and identity.law_tr else identity.law,
         "effective": identity.effective,
     }
     sections = [{"heading": heading, "paragraphs": [p.format(**values) for p in paragraphs]}
