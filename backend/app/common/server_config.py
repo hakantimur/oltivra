@@ -82,6 +82,25 @@ class RankedConfig(BaseModel):
         return self
 
 
+class LeagueConfig(BaseModel):
+    """Weekly cohort leagues (playtest 2026-09-27, replaces MMR-threshold leagues and placement).
+
+    Each week a player competes in a group of ``group_size`` seats of their tier; bots fill the empty seats.
+    The top ``promote`` move up a tier, the bottom ``demote`` move down (never below Bronze).
+    """
+
+    group_size: int = Field(default=100, ge=10, le=200)
+    promote: int = Field(default=20, ge=0)
+    demote: int = Field(default=20, ge=0)
+    # While fewer humans than this played ranked in the current or previous week, matches with bots count as
+    # ranked so leagues and leaderboards are alive from day one.
+    bootstrap_active_humans: int = Field(default=100, ge=0)
+    # Weekly XP range of Bronze bots (log-uniform); each higher tier multiplies it by ``bot_xp_tier_factor``.
+    bot_xp_min: int = 40
+    bot_xp_max: int = 1400
+    bot_xp_tier_factor: float = 1.3
+
+
 class EconomyConfig(BaseModel):
     rewarded_xp_daily_cap: int = 5
     reward_offer_ttl_ms: int = 15 * 60_000
@@ -178,6 +197,7 @@ class GameConfig(BaseModel):
     survival: SurvivalConfig = Field(default_factory=SurvivalConfig)
     matchmaking: MatchmakingConfig = Field(default_factory=MatchmakingConfig)
     ranked: RankedConfig = Field(default_factory=RankedConfig)
+    leagues: LeagueConfig = Field(default_factory=LeagueConfig)
     economy: EconomyConfig = Field(default_factory=EconomyConfig)
     bots: BotConfig = Field(default_factory=BotConfig)
     features: FeatureConfig = Field(default_factory=FeatureConfig)
@@ -191,6 +211,7 @@ class GameConfig(BaseModel):
             "config_version": self.config_version,
             "mode": section.model_dump(),
             "ranked": self.ranked.model_dump(),
+            "leagues": self.leagues.model_dump(),
         }
 
 

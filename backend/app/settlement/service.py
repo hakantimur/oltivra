@@ -146,6 +146,12 @@ class SettlementService:
                 for uid, found in match_signals(state, uid_by_pid, config.moderation.risk_fast_correct_ms,
                                                 config.moderation.risk_fast_correct_min_rounds).items()}
 
+        if hooks and not cancelled and (state.get("ranked") or {}).get("eligible"):
+            # Weekly league seat (and any pending rollover) before the progression transaction reads the users.
+            finished = int(state.get("finished_at_ms") or state.get("created_at_ms") or now)
+            for uid in human_uids:
+                await c.leagues.ensure_group(uid, finished)
+
         def txn_fn(txn) -> dict[str, Any]:
             ledger = txn.get(ledger_path(match_id)) or {}
             runtimes = txn.get_many([runtime_path(u) for u in human_uids])
@@ -252,7 +258,7 @@ class SettlementService:
             return
         for uid, result in (ledger.get("participant_results") or {}).items():
             before, after = result.get("progress_league_before"), result.get("progress_league_after")
-            if result.get("is_bot") or not after or before == after or after == "UNRANKED":
+            if result.get("is_bot") or not after or before == after:
                 continue
             await self._c.notifications.notify(uid, NotificationKind.LEAGUE_RESULT, data={"league": after},
                                                body_args=[after])

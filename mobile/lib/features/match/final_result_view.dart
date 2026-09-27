@@ -253,7 +253,7 @@ class _ProgressCard extends StatelessWidget {
     final missions = settlement['progress_missions_completed'];
     final missionCount = missions is List ? missions.length : (missions is num ? missions.toInt() : 0);
     final lines = <Widget>[];
-    if (ranked && after != null && after != 'UNRANKED') {
+    if (ranked && after != null) {
       final changed = before != null && before != after;
       lines.add(Row(
         children: [
