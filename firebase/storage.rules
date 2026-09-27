@@ -1,0 +1,19 @@
+rules_version = '2';
+
+// Question media is never publicly listable or readable; the backend issues short-lived signed URLs
+// for the current round only (spec §34.1). Curated cosmetics are public, non-competitive assets.
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /avatars/{file} {
+      allow read: if true;
+      allow write: if false;
+    }
+    match /badges/{file} {
+      allow read: if true;
+      allow write: if false;
+    }
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

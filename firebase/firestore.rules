@@ -1,0 +1,57 @@
+rules_version = '2';
+
+// Default deny (spec §16.3). Clients never write Firestore directly; every mutation goes through
+// the backend. Only the documented, non-sensitive read paths below are opened.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    // Minimum safe public profile: display username, avatar, frame, league summary.
+    match /public_profiles/{uid} {
+      allow read: if signedIn();
+      allow write: if false;
+    }
+
+    // Curated catalogs and taxonomy are public, non-competitive content.
+    match /avatar_catalog/{id} {
+      allow read: if signedIn();
+      allow write: if false;
+    }
+    match /reaction_catalog/{id} {
+      allow read: if signedIn();
+      allow write: if false;
+    }
+    match /categories/{id} {
+      allow read: if signedIn();
+      allow write: if false;
+    }
+
+    // A participant may read the index of their own match to find its RTDB shard (spec §14.1).
+    match /match_index/{matchId} {
+      allow read: if signedIn() && request.auth.uid in resource.data.participant_uids;
+      allow write: if false;
+    }
+
+    // Own runtime pointer (queue / party / match) for reconnect.
+    match /user_runtime/{uid} {
+      allow read: if signedIn() && request.auth.uid == uid;
+      allow write: if false;
+    }
+
+    // Party lobby members observe the lobby live.
+    match /parties/{partyId} {
+      allow read: if signedIn() && (request.auth.uid == resource.data.host_uid
+                                    || request.auth.uid in resource.data.invited_uids);
+      allow write: if false;
+    }
+
+    // Everything else (users with MMR, questions, private answers, tickets, settlements, purchases,
+    // config, reports, moderation, audit, exposure history) is server-only.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

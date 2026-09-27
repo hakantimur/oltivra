@@ -1,0 +1,38 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "matches": {
+      "$matchId": {
+        "public": {
+          ".read": "auth != null && root.child('matches').child($matchId).child('access').child(auth.uid).exists()",
+          ".write": false
+        },
+        "player_private": {
+          "$uid": {
+            ".read": "auth != null && auth.uid === $uid && root.child('matches').child($matchId).child('access').child(auth.uid).val() === 'participant'",
+            ".write": false
+          }
+        },
+        "presence": {
+          "$uid": {
+            ".read": false,
+            ".write": "auth != null && auth.uid === $uid && root.child('matches').child($matchId).child('access').child(auth.uid).exists()",
+            ".validate": "newData.hasChildren(['ts', 'state']) && newData.child('ts').isNumber() && newData.child('ts').val() <= now + 60000 && (newData.child('state').val() === 'online' || newData.child('state').val() === 'background')",
+            "ts": { ".validate": true },
+            "state": { ".validate": true },
+            "$other": { ".validate": false }
+          }
+        },
+        "authoritative": {
+          ".read": false,
+          ".write": false
+        },
+        "access": {
+          ".read": false,
+          ".write": false
+        }
+      }
+    }
+  }
+}
