@@ -44,7 +44,7 @@ def fire(name: str, started: float, exc: Exception | None = None, length: int = 
 
 class Player(HttpUser):
     abstract = True
-    wait_time = between(1, 4)
+    wait_time = between(3, 10)  # lobby/result screens between matches
     mode = "quick"
     # Human-like answer delay after the question becomes answerable, in seconds.
     think = (1.2, 7.0)
@@ -93,6 +93,10 @@ class Player(HttpUser):
         res = self._post(f"/v1/matchmaking/{self.mode}/join", {"median_rtt_ms": self.rtt},
                          name=f"matchmaking/{self.mode}/join")
         if res.status_code != 200:
+            # Back off like the app does (honour Retry-After); hammering join trips the queue-churn risk signal
+            # and a temporary queue restriction, which is the server working as intended, not load capacity.
+            retry_after = int(res.headers.get("retry-after") or 0)
+            time.sleep(max(retry_after, 15))
             return
         match_id = self._wait_for_match()
         if not match_id:

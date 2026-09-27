@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import random
 from collections.abc import Callable
 from typing import Any, TypeVar
 
@@ -25,6 +26,10 @@ T = TypeVar("T")
 
 _OPS = {"==": "==", "!=": "!=", "<": "<", "<=": "<=", ">": ">", ">=": ">=", "in": "in",
         "array_contains": "array_contains"}
+
+
+TXN_CONTENTION_ATTEMPTS = 6
+TXN_CONTENTION_BASE_DELAY_S = 0.025
 
 
 def _encode(value: Any) -> Any:
@@ -133,7 +138,18 @@ class FirestoreDocStore:
                 raise DocAlreadyExists(str(exc)) from exc
             except gexc.NotFound as exc:
                 raise DocNotFound(str(exc)) from exc
-        return await self._run(_txn)
+
+        # ``transactional`` only retries commit conflicts; contention reported while reading inside the transaction
+        # (409 Aborted) surfaces here. Transaction bodies are retry-safe, so retry with jittered backoff (load test
+        # 2026-09-27: hot matchmaking and settlement documents under 300 concurrent players).
+        for attempt in range(1, TXN_CONTENTION_ATTEMPTS + 1):
+            try:
+                return await self._run(_txn)
+            except gexc.Aborted:
+                if attempt == TXN_CONTENTION_ATTEMPTS:
+                    raise
+                await anyio.sleep(random.uniform(0, TXN_CONTENTION_BASE_DELAY_S * 2 ** attempt))
+        raise AssertionError("unreachable")
 
 
 def _apply_write(writer, ref, op: WriteOp) -> None:
