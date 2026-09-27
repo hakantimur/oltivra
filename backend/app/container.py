@@ -191,6 +191,43 @@ class Container:
 
         return DeletionService(self.store, self.clock, self.keys, self.auth_admin)
 
+    # ---- live matches ----
+    @cached_property
+    def bots(self):
+        from app.bots.catalog import BotPool
+
+        return BotPool(self.store, self.keys)
+
+    @cached_property
+    def shard_admission(self):
+        from app.matches.shards import ShardAdmission
+
+        return ShardAdmission(self.store)
+
+    @cached_property
+    def matches(self):
+        from app.matches.service import MatchService
+
+        return MatchService(self)
+
+    @cached_property
+    def match_factory(self):
+        from app.matches.factory import MatchFactory
+
+        return MatchFactory(self)
+
+    @cached_property
+    def matchmaking(self):
+        from app.matchmaking.service import MatchmakingService
+
+        return MatchmakingService(self)
+
+    @cached_property
+    def settlement(self):
+        from app.settlement.service import SettlementService
+
+        return SettlementService(self)
+
     # ---- lifecycle ----
     async def startup(self) -> None:
         from app.tasks.dispatch import dispatch_task
@@ -204,6 +241,9 @@ class Container:
             from app.catalog.data import seed_catalogs
 
             await seed_catalogs(self.store)
+            from app.bots.catalog import seed_bots
+
+            await seed_bots(self.store, self.keys, self.clock.now_ms())
 
     async def shutdown(self) -> None:
         if isinstance(self.tasks, LocalTaskScheduler):
