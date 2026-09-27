@@ -1,0 +1,59 @@
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_database/firebase_database.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+import 'auth/auth_service.dart';
+import 'core/env.dart';
+import 'core/push.dart';
+import 'core/providers.dart';
+import 'l10n/strings.dart';
+import 'router/app_router.dart';
+import 'theme/app_theme.dart';
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  final prefs = await SharedPreferences.getInstance();
+  final overrides = [sharedPrefsProvider.overrideWithValue(prefs)];
+  if (!Env.fakeAuth || !Env.pollLive) {
+    await Firebase.initializeApp(
+      options: const FirebaseOptions(
+        apiKey: Env.firebaseApiKey,
+        appId: Env.firebaseAppId,
+        messagingSenderId: '0',
+        projectId: Env.firebaseProjectId,
+      ),
+    );
+    if (Env.useEmulators) {
+      await FirebaseAuth.instance.useAuthEmulator(Env.emulatorHost, 9099);
+      FirebaseDatabase.instance.useDatabaseEmulator(Env.emulatorHost, 9000);
+    }
+    if (!Env.fakeAuth) overrides.add(authServiceProvider.overrideWithValue(FirebaseAuthService()));
+  }
+  runApp(ProviderScope(overrides: overrides, child: const OltivraApp()));
+}
+
+class OltivraApp extends ConsumerWidget {
+  const OltivraApp({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    ref.watch(pushServiceProvider);
+    return MaterialApp.router(
+      title: 'Oltivra',
+      debugShowCheckedModeBanner: false,
+      theme: buildTheme(),
+      routerConfig: ref.watch(routerProvider),
+      locale: ref.watch(localeProvider),
+      supportedLocales: [for (final l in supportedLanguages) Locale(l)],
+      localizationsDelegates: const [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+    );
+  }
+}
