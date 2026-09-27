@@ -9,6 +9,7 @@ from pydantic import BaseModel, Field
 
 from app.common import rate_limit
 from app.common.api import Caller, get_container, player, run_mutation
+from app.common.errors import ApiError, ErrorCode
 from app.container import Container
 
 router = APIRouter(prefix="/v1")
@@ -51,6 +52,43 @@ async def search(username: str = Query(min_length=1, max_length=32), caller: Cal
                  c: Container = Depends(get_container)) -> dict:
     await c.rate_limiter.hit(rate_limit.USERNAME_SEARCH, caller.uid)
     return await c.friends.search(caller.uid, username)
+
+
+PUBLIC_PROFILE_FIELDS = ("public_id", "username_display", "avatar_id", "frame_id", "featured_badge_ids", "league",
+                         "level", "quick_best_ranked_win_streak", "survival_ranked_crowns_lifetime",
+                         "quick_ranked_wins_lifetime")
+
+
+@router.get("/users/{public_id}")
+async def public_player(public_id: str, caller: Caller = Depends(player),
+                        c: Container = Depends(get_container)) -> dict:
+    """Another player's minimum safe public profile plus the viewer's relationship to them (spec §6.1).
+
+    A player who blocked the viewer is indistinguishable from an unknown ID (no block reveal); a player the
+    viewer blocked is still shown, flagged ``blocked`` so the client can offer unblock instead of social actions.
+    """
+    from app.friends.service import friendship_path, request_path
+    from app.moderation.safety import block_path
+
+    profile = await c.store.get(f"public_profiles/{public_id}") if public_id else None
+    if not profile:
+        raise ApiError(ErrorCode.NOT_FOUND)
+    target = await c.profiles.uid_for_public_id(public_id)
+    me = caller.uid
+    blocked_me, i_blocked, friendship, outgoing, incoming = await c.store.get_many([
+        block_path(target, me), block_path(me, target), friendship_path(me, target), request_path(me, target),
+        request_path(target, me)])
+    if blocked_me:
+        raise ApiError(ErrorCode.NOT_FOUND)
+    blocked = bool(i_blocked)
+    relationship = {
+        "friend": bool(friendship) and not blocked and target != me,
+        "outgoing_request": not blocked and bool(outgoing) and outgoing.get("state") in ("PENDING", "SUPPRESSED"),
+        "incoming_request": not blocked and bool(incoming) and incoming.get("state") == "PENDING",
+        "blocked": blocked,
+    }
+    return {"schema_version": 1, "profile": {k: profile.get(k) for k in PUBLIC_PROFILE_FIELDS},
+            "relationship": relationship}
 
 
 @router.post("/friends/requests")
