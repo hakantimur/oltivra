@@ -152,7 +152,8 @@ def open_round(state: dict[str, Any], keys: Keyring, now_ms: int, item: dict[str
             keys.bot_plan, match_id=match_id, round_id=round_id, bot_id=p["bot_id"],
             question_version=f"{item['gid']}:{item['v']}", profile=profile, difficulty=item["difficulty"],
             option_concepts=concepts, correct_concept=item["correct"], starts_at_ms=starts, duration_ms=duration_ms,
-            reaction_ids=state.get("reaction_ids") or [], reaction_probability=0.15)
+            reaction_ids=state.get("reaction_ids") or [],
+            reaction_probability=float((state["config"].get("bots") or {}).get("reaction_probability", 0.15)))
     state["round_index"] = index
     state["round"] = {
         "round_id": round_id,
@@ -221,6 +222,9 @@ def _advance_to_next_round(state: dict[str, Any], keys: Keyring, now_ms: int, re
         return
     item, kind, duration_ms, eligible = spec
     open_round(state, keys, now_ms, item, kind, duration_ms, eligible, result)
+    rules = _rules(state["mode"])
+    if hasattr(rules, "after_open"):
+        rules.after_open(state, now_ms, result)
     bump(state, now_ms, f"OPEN_{kind.value}", source)
 
 

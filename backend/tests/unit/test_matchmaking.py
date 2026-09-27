@@ -410,3 +410,42 @@ def test_deletion_requested_mid_match_completes_after_settlement(players, contai
 def test_live_root_key_is_match_scoped(players, container):
     match_id = bot_fill_match(players, container)
     assert root_path(match_id) == f"matches/{match_id}"
+
+
+# ---------------------------------------------------------------------------------------------- survival
+
+
+def test_survival_bot_fill_plays_to_single_winner_and_settles(players, container):
+    res = join(players, "u1", mode="survival")
+    ticket = res.json()
+    assert ticket["human_fill_at_ms"] == container.clock.now_ms() + 5000
+    container.clock.set(ticket["human_fill_at_ms"])
+    status = players.get("/v1/matchmaking/status", "u1").json()
+    match_id = status["match"]["match_id"]
+    root = live_root(container, match_id)
+    assert len(root["public"]["participants"]) == 10
+    assert root["public"]["mode"] == "SURVIVAL" and root["public"]["active_count"] == 10
+    run_until_finished(container, match_id)
+    root = live_root(container, match_id)
+    standings = root["public"]["result_summary"]["standings"]
+    assert [s["place"] for s in standings].count(1) == 1
+    assert root["public"]["result_summary"]["winner_pid"] == standings[0]["pid"]
+    assert runtime(container, "u1")["state"] == "IDLE"
+    assert container.store._docs[f"settlement_ledgers/{match_id}"]["status"] == "SETTLED"
+
+
+def test_survival_refill_effect_extends_pool(players, container):
+    res = join(players, "u1", mode="survival")
+    container.clock.set(res.json()["human_fill_at_ms"])
+    match_id = players.get("/v1/matchmaking/status", "u1").json()["match"]["match_id"]
+    shard = history_shard(container, match_id)
+    from app.survival import rules
+
+    before = rules.pool_remaining(live_root(container, match_id)["authoritative"])
+    asyncio.run(container.survival_refill.refill(match_id, shard, {"batch": 1}))
+    auth = live_root(container, match_id)["authoritative"]
+    assert rules.pool_remaining(auth) > before
+    assert auth["refill_batches"] == 1
+    used = set(auth["used_gids"])
+    pooled = [i["gid"] for items in auth["plan"]["pools"].values() for i in items]
+    assert len(pooled) == len(set(pooled)) and not used & set(pooled)
