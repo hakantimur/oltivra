@@ -27,7 +27,7 @@ def identity(c: Container) -> LegalIdentity:
     s = c.settings
     return LegalIdentity(operator=s.legal_operator_name or UNSET, contact=s.legal_contact_email or UNSET,
                          address=s.legal_address, law=s.legal_governing_law or UNSET,
-                         effective=s.legal_effective_date)
+                         effective=s.legal_effective_date, law_tr=s.legal_governing_law_tr)
 
 
 def _language(request: Request, lang: str | None) -> str:

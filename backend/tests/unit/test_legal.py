@@ -46,3 +46,12 @@ def test_production_requires_legal_identity():
     with pytest.raises(ValueError, match="legal"):
         Settings(**base)
     Settings(**base, legal_operator_name="Acme", legal_contact_email="a@acme.test", legal_governing_law="law")
+
+
+def test_turkish_documents_use_turkish_governing_law():
+    ident = LegalIdentity(operator="Op", contact="c@op.test", address="", law="the laws of X",
+                          effective="2026-09-27", law_tr="X kanunları")
+    tr = " ".join(str(p) for s in render("terms", "tr", ident)[1] for p in s["paragraphs"])  # type: ignore[union-attr]
+    en = " ".join(str(p) for s in render("terms", "en", ident)[1] for p in s["paragraphs"])  # type: ignore[union-attr]
+    assert "X kanunları" in tr and "the laws of X" not in tr
+    assert "the laws of X" in en

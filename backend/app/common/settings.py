@@ -40,6 +40,7 @@ class Settings(BaseSettings):
     legal_contact_email: str = ""
     legal_address: str = ""
     legal_governing_law: str = ""
+    legal_governing_law_tr: str = ""  # Turkish wording for the TR documents; falls back to legal_governing_law
     legal_effective_date: str = "2026-09-27"
     storage_bucket: str = "demo-oltivra.appspot.com"
 
