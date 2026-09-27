@@ -138,13 +138,15 @@ class SettlementService:
         human_uids = [p["uid"] for p in humans(state).values()]
         shown = [int(q) for q in state.get("shown_qids") or []]
         hooks = getattr(c, "progression", None)
+        config = await c.config.get()
 
         def txn_fn(txn) -> dict[str, Any]:
             ledger = txn.get(ledger_path(match_id)) or {}
             runtimes = txn.get_many([runtime_path(u) for u in human_uids])
             exposures = txn.get_many([c.exposure.path(u) for u in human_uids])
             users = txn.get_many([f"users/{u}" for u in human_uids])
-            prepared = hooks.read(txn, state, results, dict(zip(human_uids, users, strict=True))) if hooks else None
+            by_uid = dict(zip(human_uids, users, strict=True))
+            prepared = hooks.read(txn, state, results, by_uid, config) if hooks else None
             if ledger.get("status") in ("SETTLED", "CANCELLED_NO_PROGRESSION"):
                 return ledger
             if hooks and not cancelled:
@@ -207,7 +209,8 @@ class SettlementService:
         """Steps 7–8 plus deferred account deletions. Each step is idempotent."""
         c = self._c
         now = c.clock.now_ms()
-        by_uid = {uid: {k: r[k] for k in ("place", "xp_awarded", "mmr_delta") if k in r}
+        # Client-visible result: never raw MMR or its delta (spec §7.3), only league/progress abstractions.
+        by_uid = {uid: {k: r[k] for k in ("place", "xp_awarded", "survival_rounds") if k in r}
                   | {k: r[k] for k in r if k.startswith("progress_")}
                   for uid, r in (ledger.get("participant_results") or {}).items() if not r.get("is_bot")}
         try:
@@ -221,6 +224,9 @@ class SettlementService:
         retention = (await c.config.get()).retention.live_cleanup_after_settlement_ms
         await c.tasks.schedule(TaskRequest(TaskKind.CLEANUP, shard_id, now + retention, {"match_id": match_id},
                                            (match_id,)))
+        hooks = getattr(c, "progression", None)
+        if hooks and ledger["status"] == "SETTLED":
+            await hooks.after_commit(match_id)
         for uid in ledger.get("deletion_uids") or []:
             await c.deletion.complete(uid)
 

@@ -113,8 +113,9 @@ class DeletionService:
             })
         for row in await self._store.query(Query("purchase_transactions").filter("uid", "==", uid)):
             await self._store.update(row.path, {"uid": anon})
-        for row in await self._store.query(Query("player_reports").filter("reporter_uid", "==", uid)):
-            await self._store.update(row.path, {"reporter_uid": anon})
+        for collection in ("player_reports", "question_reports", "question_reporters"):
+            for row in await self._store.query(Query(collection).filter("reporter_uid", "==", uid)):
+                await self._store.update(row.path, {"reporter_uid": anon})
         # 3. Personal profile, private settings, runtime, exposure, entitlements.
         public_id = user.get("public_id")
         for path in (f"public_profiles/{public_id}" if public_id else None,
