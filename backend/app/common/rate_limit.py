@@ -30,6 +30,7 @@ SYNC = Limit("sync", 20, 15)
 REWARD_OFFER = Limit("reward_offer", 10, 3_600)
 PING = Limit("ping", 30, 60)
 GENERIC_WRITE = Limit("generic_write", 60, 60)
+WEB_DELETE = Limit("web_delete", 5, 3_600)
 
 
 class RateLimiter:

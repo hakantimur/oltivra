@@ -220,6 +220,22 @@ class Container:
         return SafetyService(self.store, self.clock)
 
     @cached_property
+    def maintenance(self):
+        from app.maintenance.service import MaintenanceService
+
+        return MaintenanceService(self)
+
+    @cached_property
+    def ai_generation(self):
+        from app.admin.ai_generation import AnthropicQuestionGenerator, FakeQuestionGenerator, GenerationService
+
+        if self.settings.ai_provider == "anthropic":
+            generator = AnthropicQuestionGenerator(self.settings.anthropic_api_key, self.settings.ai_model)
+        else:
+            generator = FakeQuestionGenerator()
+        return GenerationService(self, generator)
+
+    @cached_property
     def sanctions(self):
         from app.moderation.sanctions import SanctionService
 
@@ -365,6 +381,19 @@ class Container:
             from app.bots.catalog import seed_bots
 
             await seed_bots(self.store, self.keys, self.clock.now_ms())
+            if self.settings.env == "dev":
+                await self._seed_dev_questions()
+
+    async def _seed_dev_questions(self) -> None:
+        """An in-memory dev server starts with the seed pool ACTIVE so matches can form without the emulator."""
+        from app.common.store.docstore import Query
+        from app.questions.models import QuestionStatus
+        from app.questions.seed import SEED_LANGUAGES, import_seed
+
+        if await self.store.query(Query("question_groups").take(1)):
+            return
+        await import_seed(self.question_repo, self.store, QuestionStatus.ACTIVE)
+        await self.manifest_builder.build_all(list(SEED_LANGUAGES))
 
     async def shutdown(self) -> None:
         if isinstance(self.tasks, LocalTaskScheduler):

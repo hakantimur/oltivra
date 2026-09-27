@@ -30,6 +30,10 @@ class Settings(BaseSettings):
     rtdb_shard_urls: str = ""
     shard_count: int = 2
     rtdb_emulator_host: str = "127.0.0.1:9000"
+    # Public web config for the external account-deletion page (not secrets).
+    firebase_web_api_key: str = "demo-api-key"
+    firebase_auth_domain: str = ""
+    auth_emulator_host: str = "127.0.0.1:9099"
     storage_bucket: str = "demo-oltivra.appspot.com"
 
     cloud_tasks_project: str = ""
@@ -54,6 +58,7 @@ class Settings(BaseSettings):
     apple_bundle_id: str = "com.oltivra.app"
     # Comma separated paths to pinned Apple root certificates (e.g. AppleRootCA-G3.cer), mounted from secrets.
     apple_root_cert_paths: str = ""
+    ai_provider: Literal["anthropic", "fake"] = "fake"
     anthropic_api_key: str = Field(default="", repr=False)
     ai_model: str = "claude-sonnet-5"
 

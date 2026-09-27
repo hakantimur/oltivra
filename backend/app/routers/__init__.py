@@ -20,6 +20,7 @@ def register_routers(app: FastAPI) -> None:
         social,
         synova,
         system,
+        web,
     )
 
     app.include_router(system.router)
@@ -36,3 +37,5 @@ def register_routers(app: FastAPI) -> None:
     app.include_router(admin_moderation.router)
     app.include_router(internal.router)
     app.include_router(internal.provider_router)
+    app.include_router(internal.maintenance_router)
+    app.include_router(web.router)

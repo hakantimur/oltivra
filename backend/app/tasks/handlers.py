@@ -49,3 +49,11 @@ async def party_expiry(container, body: dict[str, Any]) -> dict[str, Any]:
     if not party_id:
         raise ApiError(ErrorCode.INVALID_REQUEST, detail={"reason": "missing_party"})
     return await container.parties.expire(party_id)
+
+
+@task_handler(TaskKind.QUESTION_BATCH)
+async def question_batch(container, body: dict[str, Any]) -> dict[str, Any]:
+    job_id = body.get("job_id")
+    if not job_id:
+        raise ApiError(ErrorCode.INVALID_REQUEST, detail={"reason": "missing_job"})
+    return await container.ai_generation.run(job_id)

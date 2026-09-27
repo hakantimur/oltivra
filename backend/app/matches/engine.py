@@ -362,7 +362,7 @@ def apply_answer(state: dict[str, Any], keys: Keyring, *, uid: str, round_id: st
             return result
         return _reject(result, ErrorCode.ANSWER_ALREADY_SUBMITTED)
     if rnd.get("round_id") != round_id:
-        return _reject(result, ErrorCode.ROUND_NOT_ACTIVE)
+        return _reject(result, ErrorCode.ROUND_NOT_ACTIVE, reason="stale_round")
     if state.get("state") != MatchState.ROUND_ACTIVE:
         code = ErrorCode.ROUND_EXPIRED if received_at_ms >= rnd.get("ends_at_ms", 0) else ErrorCode.ROUND_NOT_ACTIVE
         return _reject(result, code)

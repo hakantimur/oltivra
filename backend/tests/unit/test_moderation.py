@@ -269,3 +269,20 @@ def test_user_view_and_search(players, container):
     assert view["user"]["uid"] == "u3" and view["sanctions"][0]["kind"] == "QUEUE_RESTRICTION"
     assert view["risk"]["score"] == 0 and view["runtime"] is None or view["runtime"]["state"] == "IDLE"
     assert players.get("/admin/v1/users/nobody", ADMIN, extra=AS_ADMIN).status_code == 404
+
+
+def test_late_answers_are_normal_play_but_stale_and_forged_ones_count(players, container):
+    match_id = bot_fill_match(players, container)
+    pub = public(container, match_id)
+    container.clock.set(pub["starts_at_ms"])
+    run_tasks(container)
+    container.clock.advance(500)
+    assert answer(players, container, match_id, "u1").status_code == 200
+    # A second answer after the round closed (normal network race) is rejected but not a risk signal.
+    late = players.post(f"/v1/matches/{match_id}/answer", "u1",
+                        {"round_id": pub["round_id"], "option_id": "whatever"})
+    assert late.status_code in (409, 400)
+    stale = players.post(f"/v1/matches/{match_id}/answer", "u1", {"round_id": "r_old", "option_id": "x"})
+    assert stale.status_code == 409 and stale.json()["error"]["detail"]["reason"] == "stale_round"
+    signals = asyncio.run(container.risk.get("u1"))["signals"]
+    assert signals == {"MALFORMED_REQUEST": 1}
