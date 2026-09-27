@@ -265,3 +265,33 @@ def test_partial_rematch_starts_at_window_end(players, container):
     assert set(root["player_private"]) == {"u1", "u2"} and len(root["public"]["participants"]) == 4
     assert root["authoritative"]["ranked"]["eligible"] is False  # 2 humans < ranked minimum
     assert runtime(container, "u3") == "IDLE"
+
+
+# ---------------------------------------------------------------------------------------------- public profile
+
+
+def test_public_profile_with_relationship_and_blocks(players, container):
+    target = pid(container, "u2")
+    res = players.get(f"/v1/users/{target}", "u1")
+    assert res.status_code == 200, res.text
+    body = res.json()
+    assert body["profile"]["public_id"] == target and body["profile"]["username_display"]
+    assert set(body["profile"]) == {"public_id", "username_display", "avatar_id", "frame_id", "featured_badge_ids",
+                                    "league", "level", "quick_best_ranked_win_streak",
+                                    "survival_ranked_crowns_lifetime", "quick_ranked_wins_lifetime"}
+    assert body["relationship"] == {"friend": False, "outgoing_request": False, "incoming_request": False,
+                                    "blocked": False}
+    players.post("/v1/friends/requests", "u1", {"target_public_id": target})
+    assert players.get(f"/v1/users/{target}", "u1").json()["relationship"]["outgoing_request"] is True
+    assert players.get(f"/v1/users/{pid(container, 'u1')}", "u2").json()["relationship"]["incoming_request"] is True
+    request_id = players.get("/v1/friends", "u2").json()["incoming_requests"][0]["request_id"]
+    players.post(f"/v1/friends/requests/{request_id}/accept", "u2")
+    assert players.get(f"/v1/users/{target}", "u1").json()["relationship"]["friend"] is True
+    # The blocker still sees the profile, flagged; the blocked viewer cannot tell it from an unknown ID.
+    players.post(f"/v1/blocks/{target}", "u1")
+    mine = players.get(f"/v1/users/{target}", "u1").json()
+    assert mine["relationship"] == {"friend": False, "outgoing_request": False, "incoming_request": False,
+                                    "blocked": True}
+    hidden = players.get(f"/v1/users/{pid(container, 'u1')}", "u2")
+    assert hidden.status_code == 404 and hidden.json()["error"]["code"] == "NOT_FOUND"
+    assert players.get("/v1/users/pdoesnotexist000000000", "u1").status_code == 404
