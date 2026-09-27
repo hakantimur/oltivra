@@ -1,0 +1,1442 @@
+[
+  {
+    "key": "history_001",
+    "category_id": "history",
+    "subcategory_id": "ancient_civilisations",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which civilisation built the Great Pyramids of Giza?",
+      "tr": "Gize piramitlerini hangi uygarlık inşa etti?"
+    },
+    "options": [
+      {
+        "concept_id": "maya",
+        "en": "Maya",
+        "tr": "Mayalar"
+      },
+      {
+        "concept_id": "egyptians",
+        "en": "Ancient Egyptians",
+        "tr": "Antik Mısırlılar"
+      },
+      {
+        "concept_id": "romans",
+        "en": "Romans",
+        "tr": "Romalılar"
+      },
+      {
+        "concept_id": "greeks",
+        "en": "Ancient Greeks",
+        "tr": "Antik Yunanlar"
+      }
+    ],
+    "correct": "egyptians",
+    "source": "https://en.wikipedia.org/wiki/Giza_pyramid_complex"
+  },
+  {
+    "key": "history_002",
+    "category_id": "history",
+    "subcategory_id": "world_wars",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In which year did World War II end?",
+      "tr": "İkinci Dünya Savaşı hangi yıl sona erdi?"
+    },
+    "options": [
+      {
+        "concept_id": "y1945",
+        "en": "1945",
+        "tr": "1945"
+      },
+      {
+        "concept_id": "y1944",
+        "en": "1944",
+        "tr": "1944"
+      },
+      {
+        "concept_id": "y1946",
+        "en": "1946",
+        "tr": "1946"
+      },
+      {
+        "concept_id": "y1939",
+        "en": "1939",
+        "tr": "1939"
+      }
+    ],
+    "correct": "y1945",
+    "source": "https://en.wikipedia.org/wiki/World_War_II"
+  },
+  {
+    "key": "history_003",
+    "category_id": "history",
+    "subcategory_id": "exploration",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who led the 1492 voyage for Spain that reached the Americas?",
+      "tr": "1492'de İspanya adına Amerika kıtasına ulaşan seferi kim yönetti?"
+    },
+    "options": [
+      {
+        "concept_id": "magellan",
+        "en": "Ferdinand Magellan",
+        "tr": "Macellan"
+      },
+      {
+        "concept_id": "da_gama",
+        "en": "Vasco da Gama",
+        "tr": "Vasco da Gama"
+      },
+      {
+        "concept_id": "vespucci",
+        "en": "Amerigo Vespucci",
+        "tr": "Amerigo Vespucci"
+      },
+      {
+        "concept_id": "columbus",
+        "en": "Christopher Columbus",
+        "tr": "Kristof Kolomb"
+      }
+    ],
+    "correct": "columbus",
+    "source": "https://en.wikipedia.org/wiki/Christopher_Columbus"
+  },
+  {
+    "key": "history_004",
+    "category_id": "history",
+    "subcategory_id": "historical_inventions",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who introduced movable-type printing to Europe around 1440?",
+      "tr": "1440 civarında Avrupa'ya hareketli harfli matbaayı kim getirdi?"
+    },
+    "options": [
+      {
+        "concept_id": "galileo",
+        "en": "Galileo Galilei",
+        "tr": "Galileo Galilei"
+      },
+      {
+        "concept_id": "luther",
+        "en": "Martin Luther",
+        "tr": "Martin Luther"
+      },
+      {
+        "concept_id": "gutenberg",
+        "en": "Johannes Gutenberg",
+        "tr": "Johannes Gutenberg"
+      },
+      {
+        "concept_id": "da_vinci",
+        "en": "Leonardo da Vinci",
+        "tr": "Leonardo da Vinci"
+      }
+    ],
+    "correct": "gutenberg",
+    "source": "https://en.wikipedia.org/wiki/Johannes_Gutenberg"
+  },
+  {
+    "key": "history_005",
+    "category_id": "history",
+    "subcategory_id": "historical_figures",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who was the first person to walk on the Moon?",
+      "tr": "Ay'da yürüyen ilk insan kimdir?"
+    },
+    "options": [
+      {
+        "concept_id": "collins",
+        "en": "Michael Collins",
+        "tr": "Michael Collins"
+      },
+      {
+        "concept_id": "armstrong",
+        "en": "Neil Armstrong",
+        "tr": "Neil Armstrong"
+      },
+      {
+        "concept_id": "aldrin",
+        "en": "Buzz Aldrin",
+        "tr": "Buzz Aldrin"
+      },
+      {
+        "concept_id": "gagarin",
+        "en": "Yuri Gagarin",
+        "tr": "Yuri Gagarin"
+      }
+    ],
+    "correct": "armstrong",
+    "source": "https://en.wikipedia.org/wiki/Neil_Armstrong"
+  },
+  {
+    "key": "history_006",
+    "category_id": "history",
+    "subcategory_id": "empires",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "The Colosseum was built by which empire?",
+      "tr": "Kolezyum hangi imparatorluk tarafından inşa edildi?"
+    },
+    "options": [
+      {
+        "concept_id": "roman",
+        "en": "Roman Empire",
+        "tr": "Roma İmparatorluğu"
+      },
+      {
+        "concept_id": "ottoman",
+        "en": "Ottoman Empire",
+        "tr": "Osmanlı İmparatorluğu"
+      },
+      {
+        "concept_id": "persian",
+        "en": "Persian Empire",
+        "tr": "Pers İmparatorluğu"
+      },
+      {
+        "concept_id": "mongol",
+        "en": "Mongol Empire",
+        "tr": "Moğol İmparatorluğu"
+      }
+    ],
+    "correct": "roman",
+    "source": "https://en.wikipedia.org/wiki/Colosseum"
+  },
+  {
+    "key": "history_007",
+    "category_id": "history",
+    "subcategory_id": "world_wars",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In which year did World War I begin?",
+      "tr": "Birinci Dünya Savaşı hangi yıl başladı?"
+    },
+    "options": [
+      {
+        "concept_id": "y1912",
+        "en": "1912",
+        "tr": "1912"
+      },
+      {
+        "concept_id": "y1916",
+        "en": "1916",
+        "tr": "1916"
+      },
+      {
+        "concept_id": "y1918",
+        "en": "1918",
+        "tr": "1918"
+      },
+      {
+        "concept_id": "y1914",
+        "en": "1914",
+        "tr": "1914"
+      }
+    ],
+    "correct": "y1914",
+    "source": "https://en.wikipedia.org/wiki/World_War_I"
+  },
+  {
+    "key": "history_008",
+    "category_id": "history",
+    "subcategory_id": "ancient_civilisations",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which ancient civilisation held the original Olympic Games?",
+      "tr": "İlk Olimpiyat Oyunları'nı hangi antik uygarlık düzenledi?"
+    },
+    "options": [
+      {
+        "concept_id": "egyptians",
+        "en": "Ancient Egyptians",
+        "tr": "Antik Mısırlılar"
+      },
+      {
+        "concept_id": "persians",
+        "en": "Persians",
+        "tr": "Persler"
+      },
+      {
+        "concept_id": "greeks",
+        "en": "Ancient Greeks",
+        "tr": "Antik Yunanlar"
+      },
+      {
+        "concept_id": "romans",
+        "en": "Romans",
+        "tr": "Romalılar"
+      }
+    ],
+    "correct": "greeks",
+    "source": "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"
+  },
+  {
+    "key": "history_009",
+    "category_id": "history",
+    "subcategory_id": "historical_figures",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who was the first President of the United States?",
+      "tr": "Amerika Birleşik Devletleri'nin ilk başkanı kimdir?"
+    },
+    "options": [
+      {
+        "concept_id": "franklin",
+        "en": "Benjamin Franklin",
+        "tr": "Benjamin Franklin"
+      },
+      {
+        "concept_id": "washington",
+        "en": "George Washington",
+        "tr": "George Washington"
+      },
+      {
+        "concept_id": "lincoln",
+        "en": "Abraham Lincoln",
+        "tr": "Abraham Lincoln"
+      },
+      {
+        "concept_id": "jefferson",
+        "en": "Thomas Jefferson",
+        "tr": "Thomas Jefferson"
+      }
+    ],
+    "correct": "washington",
+    "source": "https://en.wikipedia.org/wiki/George_Washington"
+  },
+  {
+    "key": "history_010",
+    "category_id": "history",
+    "subcategory_id": "archaeology",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which famous prehistoric stone circle stands in southern England?",
+      "tr": "Güney İngiltere'deki ünlü tarih öncesi taş çember hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "stonehenge",
+        "en": "Stonehenge",
+        "tr": "Stonehenge"
+      },
+      {
+        "concept_id": "hadrians_wall",
+        "en": "Hadrian's Wall",
+        "tr": "Hadrian Duvarı"
+      },
+      {
+        "concept_id": "tower_of_london",
+        "en": "Tower of London",
+        "tr": "Londra Kulesi"
+      },
+      {
+        "concept_id": "canterbury",
+        "en": "Canterbury Cathedral",
+        "tr": "Canterbury Katedrali"
+      }
+    ],
+    "correct": "stonehenge",
+    "source": "https://en.wikipedia.org/wiki/Stonehenge"
+  },
+  {
+    "key": "history_011",
+    "category_id": "history",
+    "subcategory_id": "historical_inventions",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Ancient Egyptians made a writing material from which plant?",
+      "tr": "Antik Mısırlılar hangi bitkiden yazı malzemesi yapıyordu?"
+    },
+    "options": [
+      {
+        "concept_id": "bamboo",
+        "en": "Bamboo",
+        "tr": "Bambu"
+      },
+      {
+        "concept_id": "cotton",
+        "en": "Cotton",
+        "tr": "Pamuk"
+      },
+      {
+        "concept_id": "papyrus",
+        "en": "Papyrus",
+        "tr": "Papirüs"
+      },
+      {
+        "concept_id": "hemp",
+        "en": "Hemp",
+        "tr": "Kenevir"
+      }
+    ],
+    "correct": "papyrus",
+    "source": "https://en.wikipedia.org/wiki/Papyrus"
+  },
+  {
+    "key": "history_012",
+    "category_id": "history",
+    "subcategory_id": "empires",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Genghis Khan founded which empire?",
+      "tr": "Cengiz Han hangi imparatorluğu kurdu?"
+    },
+    "options": [
+      {
+        "concept_id": "mughal",
+        "en": "Mughal Empire",
+        "tr": "Babür İmparatorluğu"
+      },
+      {
+        "concept_id": "byzantine",
+        "en": "Byzantine Empire",
+        "tr": "Bizans İmparatorluğu"
+      },
+      {
+        "concept_id": "mongol",
+        "en": "Mongol Empire",
+        "tr": "Moğol İmparatorluğu"
+      },
+      {
+        "concept_id": "ottoman",
+        "en": "Ottoman Empire",
+        "tr": "Osmanlı İmparatorluğu"
+      }
+    ],
+    "correct": "mongol",
+    "source": "https://en.wikipedia.org/wiki/Genghis_Khan"
+  },
+  {
+    "key": "history_013",
+    "category_id": "history",
+    "subcategory_id": "ancient_civilisations",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In which country is the Great Wall located?",
+      "tr": "Çin Seddi hangi ülkededir?"
+    },
+    "options": [
+      {
+        "concept_id": "korea",
+        "en": "Korea",
+        "tr": "Kore"
+      },
+      {
+        "concept_id": "china",
+        "en": "China",
+        "tr": "Çin"
+      },
+      {
+        "concept_id": "japan",
+        "en": "Japan",
+        "tr": "Japonya"
+      },
+      {
+        "concept_id": "mongolia",
+        "en": "Mongolia",
+        "tr": "Moğolistan"
+      }
+    ],
+    "correct": "china",
+    "source": "https://en.wikipedia.org/wiki/Great_Wall_of_China"
+  },
+  {
+    "key": "history_014",
+    "category_id": "history",
+    "subcategory_id": "historical_figures",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which French leader crowned himself Emperor in 1804?",
+      "tr": "1804'te kendini imparator ilan ederek taç giyen Fransız lider kimdir?"
+    },
+    "options": [
+      {
+        "concept_id": "napoleon",
+        "en": "Napoleon Bonaparte",
+        "tr": "Napolyon Bonapart"
+      },
+      {
+        "concept_id": "louis_xiv",
+        "en": "Louis XIV",
+        "tr": "XIV. Louis"
+      },
+      {
+        "concept_id": "de_gaulle",
+        "en": "Charles de Gaulle",
+        "tr": "Charles de Gaulle"
+      },
+      {
+        "concept_id": "louis_xvi",
+        "en": "Louis XVI",
+        "tr": "XVI. Louis"
+      }
+    ],
+    "correct": "napoleon",
+    "source": "https://en.wikipedia.org/wiki/Napoleon"
+  },
+  {
+    "key": "history_015",
+    "category_id": "history",
+    "subcategory_id": "world_wars",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which 1941 event brought the United States into World War II?",
+      "tr": "1941'de ABD'nin İkinci Dünya Savaşı'na girmesine hangi olay yol açtı?"
+    },
+    "options": [
+      {
+        "concept_id": "d_day",
+        "en": "D-Day landings",
+        "tr": "Normandiya Çıkarması"
+      },
+      {
+        "concept_id": "midway",
+        "en": "Battle of Midway",
+        "tr": "Midway Muharebesi"
+      },
+      {
+        "concept_id": "lusitania",
+        "en": "Sinking of the Lusitania",
+        "tr": "Lusitania'nın batışı"
+      },
+      {
+        "concept_id": "pearl_harbor",
+        "en": "Attack on Pearl Harbor",
+        "tr": "Pearl Harbor saldırısı"
+      }
+    ],
+    "correct": "pearl_harbor",
+    "source": "https://en.wikipedia.org/wiki/Attack_on_Pearl_Harbor"
+  },
+  {
+    "key": "history_016",
+    "category_id": "history",
+    "subcategory_id": "exploration",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Whose expedition made the first circumnavigation of the Earth (1519–1522)?",
+      "tr": "Dünyanın çevresini ilk kez dolaşan sefer (1519–1522) kimin seferiydi?"
+    },
+    "options": [
+      {
+        "concept_id": "cook",
+        "en": "James Cook",
+        "tr": "James Cook"
+      },
+      {
+        "concept_id": "drake",
+        "en": "Francis Drake",
+        "tr": "Francis Drake"
+      },
+      {
+        "concept_id": "magellan",
+        "en": "Ferdinand Magellan",
+        "tr": "Macellan"
+      },
+      {
+        "concept_id": "columbus",
+        "en": "Christopher Columbus",
+        "tr": "Kristof Kolomb"
+      }
+    ],
+    "correct": "magellan",
+    "source": "https://en.wikipedia.org/wiki/Magellan_expedition"
+  },
+  {
+    "key": "history_017",
+    "category_id": "history",
+    "subcategory_id": "exploration",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who was the first European to reach India by sea, in 1498?",
+      "tr": "1498'de deniz yoluyla Hindistan'a ulaşan ilk Avrupalı kimdir?"
+    },
+    "options": [
+      {
+        "concept_id": "cabral",
+        "en": "Pedro Álvares Cabral",
+        "tr": "Pedro Álvares Cabral"
+      },
+      {
+        "concept_id": "da_gama",
+        "en": "Vasco da Gama",
+        "tr": "Vasco da Gama"
+      },
+      {
+        "concept_id": "dias",
+        "en": "Bartolomeu Dias",
+        "tr": "Bartolomeu Dias"
+      },
+      {
+        "concept_id": "columbus",
+        "en": "Christopher Columbus",
+        "tr": "Kristof Kolomb"
+      }
+    ],
+    "correct": "da_gama",
+    "source": "https://en.wikipedia.org/wiki/Vasco_da_Gama"
+  },
+  {
+    "key": "history_018",
+    "category_id": "history",
+    "subcategory_id": "empires",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In which year did the Ottomans conquer Constantinople?",
+      "tr": "Osmanlılar Konstantinopolis'i hangi yıl fethetti?"
+    },
+    "options": [
+      {
+        "concept_id": "y1453",
+        "en": "1453",
+        "tr": "1453"
+      },
+      {
+        "concept_id": "y1071",
+        "en": "1071",
+        "tr": "1071"
+      },
+      {
+        "concept_id": "y1299",
+        "en": "1299",
+        "tr": "1299"
+      },
+      {
+        "concept_id": "y1517",
+        "en": "1517",
+        "tr": "1517"
+      }
+    ],
+    "correct": "y1453",
+    "source": "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+  },
+  {
+    "key": "history_019",
+    "category_id": "history",
+    "subcategory_id": "ancient_civilisations",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which civilisation developed cuneiform, one of the earliest writing systems?",
+      "tr": "En eski yazı sistemlerinden biri olan çivi yazısını hangi uygarlık geliştirdi?"
+    },
+    "options": [
+      {
+        "concept_id": "egyptians",
+        "en": "Ancient Egyptians",
+        "tr": "Antik Mısırlılar"
+      },
+      {
+        "concept_id": "phoenicians",
+        "en": "Phoenicians",
+        "tr": "Fenikeliler"
+      },
+      {
+        "concept_id": "hittites",
+        "en": "Hittites",
+        "tr": "Hititler"
+      },
+      {
+        "concept_id": "sumerians",
+        "en": "Sumerians",
+        "tr": "Sümerler"
+      }
+    ],
+    "correct": "sumerians",
+    "source": "https://en.wikipedia.org/wiki/Cuneiform"
+  },
+  {
+    "key": "history_020",
+    "category_id": "history",
+    "subcategory_id": "archaeology",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which artefact was the key to deciphering Egyptian hieroglyphs?",
+      "tr": "Mısır hiyerogliflerinin çözülmesinde anahtar rol oynayan eser hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "narmer",
+        "en": "Narmer Palette",
+        "tr": "Narmer Paleti"
+      },
+      {
+        "concept_id": "book_of_dead",
+        "en": "Book of the Dead",
+        "tr": "Ölüler Kitabı"
+      },
+      {
+        "concept_id": "rosetta",
+        "en": "Rosetta Stone",
+        "tr": "Rosetta Taşı"
+      },
+      {
+        "concept_id": "dead_sea_scrolls",
+        "en": "Dead Sea Scrolls",
+        "tr": "Lut Denizi Parşömenleri"
+      }
+    ],
+    "correct": "rosetta",
+    "source": "https://en.wikipedia.org/wiki/Rosetta_Stone"
+  },
+  {
+    "key": "history_021",
+    "category_id": "history",
+    "subcategory_id": "archaeology",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Whose nearly intact tomb did Howard Carter discover in 1922?",
+      "tr": "Howard Carter 1922'de kimin neredeyse bozulmamış mezarını keşfetti?"
+    },
+    "options": [
+      {
+        "concept_id": "akhenaten",
+        "en": "Akhenaten",
+        "tr": "Akhenaton"
+      },
+      {
+        "concept_id": "tutankhamun",
+        "en": "Tutankhamun",
+        "tr": "Tutankamon"
+      },
+      {
+        "concept_id": "ramesses",
+        "en": "Ramesses II",
+        "tr": "II. Ramses"
+      },
+      {
+        "concept_id": "khufu",
+        "en": "Khufu",
+        "tr": "Keops"
+      }
+    ],
+    "correct": "tutankhamun",
+    "source": "https://en.wikipedia.org/wiki/Tutankhamun"
+  },
+  {
+    "key": "history_022",
+    "category_id": "history",
+    "subcategory_id": "world_wars",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Whose assassination in Sarajevo in 1914 triggered World War I?",
+      "tr": "1914'te Saraybosna'da kimin suikaste kurban gitmesi Birinci Dünya Savaşı'nı tetikledi?"
+    },
+    "options": [
+      {
+        "concept_id": "franz_ferdinand",
+        "en": "Archduke Franz Ferdinand",
+        "tr": "Arşidük Franz Ferdinand"
+      },
+      {
+        "concept_id": "nicholas_ii",
+        "en": "Tsar Nicholas II",
+        "tr": "Çar II. Nikolay"
+      },
+      {
+        "concept_id": "wilhelm_ii",
+        "en": "Kaiser Wilhelm II",
+        "tr": "Kayzer II. Wilhelm"
+      },
+      {
+        "concept_id": "franz_joseph",
+        "en": "Emperor Franz Joseph",
+        "tr": "İmparator Franz Joseph"
+      }
+    ],
+    "correct": "franz_ferdinand",
+    "source": "https://en.wikipedia.org/wiki/Assassination_of_Archduke_Franz_Ferdinand"
+  },
+  {
+    "key": "history_023",
+    "category_id": "history",
+    "subcategory_id": "historical_inventions",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In which year did the Wright brothers make their first powered flight?",
+      "tr": "Wright kardeşler ilk motorlu uçuşlarını hangi yıl yaptı?"
+    },
+    "options": [
+      {
+        "concept_id": "y1899",
+        "en": "1899",
+        "tr": "1899"
+      },
+      {
+        "concept_id": "y1908",
+        "en": "1908",
+        "tr": "1908"
+      },
+      {
+        "concept_id": "y1914",
+        "en": "1914",
+        "tr": "1914"
+      },
+      {
+        "concept_id": "y1903",
+        "en": "1903",
+        "tr": "1903"
+      }
+    ],
+    "correct": "y1903",
+    "source": "https://en.wikipedia.org/wiki/Wright_Flyer"
+  },
+  {
+    "key": "history_024",
+    "category_id": "history",
+    "subcategory_id": "historical_figures",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who was the first woman to win a Nobel Prize?",
+      "tr": "Nobel Ödülü kazanan ilk kadın kimdir?"
+    },
+    "options": [
+      {
+        "concept_id": "franklin_r",
+        "en": "Rosalind Franklin",
+        "tr": "Rosalind Franklin"
+      },
+      {
+        "concept_id": "lovelace",
+        "en": "Ada Lovelace",
+        "tr": "Ada Lovelace"
+      },
+      {
+        "concept_id": "curie",
+        "en": "Marie Curie",
+        "tr": "Marie Curie"
+      },
+      {
+        "concept_id": "nightingale",
+        "en": "Florence Nightingale",
+        "tr": "Florence Nightingale"
+      }
+    ],
+    "correct": "curie",
+    "source": "https://en.wikipedia.org/wiki/Marie_Curie"
+  },
+  {
+    "key": "history_025",
+    "category_id": "history",
+    "subcategory_id": "empires",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who was the first emperor of a unified China?",
+      "tr": "Birleşik Çin'in ilk imparatoru kimdir?"
+    },
+    "options": [
+      {
+        "concept_id": "puyi",
+        "en": "Puyi",
+        "tr": "Puyi"
+      },
+      {
+        "concept_id": "qin_shi_huang",
+        "en": "Qin Shi Huang",
+        "tr": "Qin Shi Huang"
+      },
+      {
+        "concept_id": "kublai",
+        "en": "Kublai Khan",
+        "tr": "Kubilay Han"
+      },
+      {
+        "concept_id": "han_wudi",
+        "en": "Emperor Wu of Han",
+        "tr": "Han Wudi"
+      }
+    ],
+    "correct": "qin_shi_huang",
+    "source": "https://en.wikipedia.org/wiki/Qin_Shi_Huang"
+  },
+  {
+    "key": "history_026",
+    "category_id": "history",
+    "subcategory_id": "empires",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "What was the capital city of the Aztec Empire?",
+      "tr": "Aztek İmparatorluğu'nun başkenti neresiydi?"
+    },
+    "options": [
+      {
+        "concept_id": "tenochtitlan",
+        "en": "Tenochtitlan",
+        "tr": "Tenochtitlan"
+      },
+      {
+        "concept_id": "cusco",
+        "en": "Cusco",
+        "tr": "Cusco"
+      },
+      {
+        "concept_id": "teotihuacan",
+        "en": "Teotihuacan",
+        "tr": "Teotihuacan"
+      },
+      {
+        "concept_id": "chichen_itza",
+        "en": "Chichén Itzá",
+        "tr": "Chichén Itzá"
+      }
+    ],
+    "correct": "tenochtitlan",
+    "source": "https://en.wikipedia.org/wiki/Tenochtitlan"
+  },
+  {
+    "key": "history_027",
+    "category_id": "history",
+    "subcategory_id": "world_wars",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "What was the code name for the Allied invasion of Normandy in 1944?",
+      "tr": "Müttefiklerin 1944'teki Normandiya çıkarmasının kod adı neydi?"
+    },
+    "options": [
+      {
+        "concept_id": "barbarossa",
+        "en": "Operation Barbarossa",
+        "tr": "Barbarossa Harekâtı"
+      },
+      {
+        "concept_id": "market_garden",
+        "en": "Operation Market Garden",
+        "tr": "Market Garden Harekâtı"
+      },
+      {
+        "concept_id": "sea_lion",
+        "en": "Operation Sea Lion",
+        "tr": "Deniz Aslanı Harekâtı"
+      },
+      {
+        "concept_id": "overlord",
+        "en": "Operation Overlord",
+        "tr": "Overlord Harekâtı"
+      }
+    ],
+    "correct": "overlord",
+    "source": "https://en.wikipedia.org/wiki/Operation_Overlord"
+  },
+  {
+    "key": "history_028",
+    "category_id": "history",
+    "subcategory_id": "ancient_civilisations",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which Wonder of the Ancient World was a giant statue at the harbour of Rhodes?",
+      "tr": "Antik Dünya'nın hangi harikası, Rodos limanındaki dev bir heykeldi?"
+    },
+    "options": [
+      {
+        "concept_id": "lighthouse_alexandria",
+        "en": "Lighthouse of Alexandria",
+        "tr": "İskenderiye Feneri"
+      },
+      {
+        "concept_id": "statue_zeus",
+        "en": "Statue of Zeus",
+        "tr": "Zeus Heykeli"
+      },
+      {
+        "concept_id": "mausoleum",
+        "en": "Mausoleum at Halicarnassus",
+        "tr": "Halikarnas Mozolesi"
+      },
+      {
+        "concept_id": "colossus_rhodes",
+        "en": "Colossus of Rhodes",
+        "tr": "Rodos Heykeli"
+      }
+    ],
+    "correct": "colossus_rhodes",
+    "source": "https://en.wikipedia.org/wiki/Colossus_of_Rhodes"
+  },
+  {
+    "key": "history_029",
+    "category_id": "history",
+    "subcategory_id": "exploration",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which Norse explorer is thought to have reached North America around 1000 AD?",
+      "tr": "MS 1000 civarında Kuzey Amerika'ya ulaştığı düşünülen İskandinav kâşif kimdir?"
+    },
+    "options": [
+      {
+        "concept_id": "hardrada",
+        "en": "Harald Hardrada",
+        "tr": "Harald Hardrada"
+      },
+      {
+        "concept_id": "leif",
+        "en": "Leif Erikson",
+        "tr": "Leif Erikson"
+      },
+      {
+        "concept_id": "erik_red",
+        "en": "Erik the Red",
+        "tr": "Kızıl Erik"
+      },
+      {
+        "concept_id": "ragnar",
+        "en": "Ragnar Lodbrok",
+        "tr": "Ragnar Lodbrok"
+      }
+    ],
+    "correct": "leif",
+    "source": "https://en.wikipedia.org/wiki/Leif_Erikson"
+  },
+  {
+    "key": "history_030",
+    "category_id": "history",
+    "subcategory_id": "historical_figures",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which Macedonian king built an empire stretching from Greece to India?",
+      "tr": "Hangi Makedon kralı Yunanistan'dan Hindistan'a uzanan bir imparatorluk kurdu?"
+    },
+    "options": [
+      {
+        "concept_id": "alexander",
+        "en": "Alexander the Great",
+        "tr": "Büyük İskender"
+      },
+      {
+        "concept_id": "philip_ii",
+        "en": "Philip II",
+        "tr": "II. Filip"
+      },
+      {
+        "concept_id": "darius_iii",
+        "en": "Darius III",
+        "tr": "III. Darius"
+      },
+      {
+        "concept_id": "caesar",
+        "en": "Julius Caesar",
+        "tr": "Jül Sezar"
+      }
+    ],
+    "correct": "alexander",
+    "source": "https://en.wikipedia.org/wiki/Alexander_the_Great"
+  },
+  {
+    "key": "history_031",
+    "category_id": "history",
+    "subcategory_id": "ancient_civilisations",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which ancient people founded the city of Carthage?",
+      "tr": "Kartaca şehrini hangi antik halk kurdu?"
+    },
+    "options": [
+      {
+        "concept_id": "romans",
+        "en": "Romans",
+        "tr": "Romalılar"
+      },
+      {
+        "concept_id": "greeks",
+        "en": "Ancient Greeks",
+        "tr": "Antik Yunanlar"
+      },
+      {
+        "concept_id": "egyptians",
+        "en": "Ancient Egyptians",
+        "tr": "Antik Mısırlılar"
+      },
+      {
+        "concept_id": "phoenicians",
+        "en": "Phoenicians",
+        "tr": "Fenikeliler"
+      }
+    ],
+    "correct": "phoenicians",
+    "source": "https://en.wikipedia.org/wiki/Ancient_Carthage"
+  },
+  {
+    "key": "history_032",
+    "category_id": "history",
+    "subcategory_id": "empires",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which 1648 peace settlement ended the Thirty Years' War?",
+      "tr": "Otuz Yıl Savaşları'nı sona erdiren 1648 barışı hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "versailles",
+        "en": "Treaty of Versailles",
+        "tr": "Versay Antlaşması"
+      },
+      {
+        "concept_id": "vienna",
+        "en": "Congress of Vienna",
+        "tr": "Viyana Kongresi"
+      },
+      {
+        "concept_id": "westphalia",
+        "en": "Peace of Westphalia",
+        "tr": "Vestfalya Barışı"
+      },
+      {
+        "concept_id": "utrecht",
+        "en": "Treaty of Utrecht",
+        "tr": "Utrecht Antlaşması"
+      }
+    ],
+    "correct": "westphalia",
+    "source": "https://en.wikipedia.org/wiki/Peace_of_Westphalia"
+  },
+  {
+    "key": "history_033",
+    "category_id": "history",
+    "subcategory_id": "world_wars",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which treaty formally ended World War I between the Allies and Germany?",
+      "tr": "Birinci Dünya Savaşı'nı İtilaf Devletleri ile Almanya arasında resmen bitiren antlaşma hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "trianon",
+        "en": "Treaty of Trianon",
+        "tr": "Trianon Antlaşması"
+      },
+      {
+        "concept_id": "versailles",
+        "en": "Treaty of Versailles",
+        "tr": "Versay Antlaşması"
+      },
+      {
+        "concept_id": "brest_litovsk",
+        "en": "Treaty of Brest-Litovsk",
+        "tr": "Brest-Litovsk Antlaşması"
+      },
+      {
+        "concept_id": "sevres",
+        "en": "Treaty of Sèvres",
+        "tr": "Sevr Antlaşması"
+      }
+    ],
+    "correct": "versailles",
+    "source": "https://en.wikipedia.org/wiki/Treaty_of_Versailles"
+  },
+  {
+    "key": "history_034",
+    "category_id": "history",
+    "subcategory_id": "archaeology",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which archaeologist began excavating the site of Troy at Hisarlik in the 1870s?",
+      "tr": "1870'lerde Hisarlık'ta Truva kazılarını başlatan arkeolog kimdir?"
+    },
+    "options": [
+      {
+        "concept_id": "schliemann",
+        "en": "Heinrich Schliemann",
+        "tr": "Heinrich Schliemann"
+      },
+      {
+        "concept_id": "carter",
+        "en": "Howard Carter",
+        "tr": "Howard Carter"
+      },
+      {
+        "concept_id": "evans",
+        "en": "Arthur Evans",
+        "tr": "Arthur Evans"
+      },
+      {
+        "concept_id": "woolley",
+        "en": "Leonard Woolley",
+        "tr": "Leonard Woolley"
+      }
+    ],
+    "correct": "schliemann",
+    "source": "https://en.wikipedia.org/wiki/Heinrich_Schliemann"
+  },
+  {
+    "key": "history_035",
+    "category_id": "history",
+    "subcategory_id": "exploration",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who led the first expedition to reach the South Pole, in 1911?",
+      "tr": "1911'de Güney Kutbu'na ulaşan ilk seferi kim yönetti?"
+    },
+    "options": [
+      {
+        "concept_id": "scott",
+        "en": "Robert Falcon Scott",
+        "tr": "Robert Falcon Scott"
+      },
+      {
+        "concept_id": "shackleton",
+        "en": "Ernest Shackleton",
+        "tr": "Ernest Shackleton"
+      },
+      {
+        "concept_id": "peary",
+        "en": "Robert Peary",
+        "tr": "Robert Peary"
+      },
+      {
+        "concept_id": "amundsen",
+        "en": "Roald Amundsen",
+        "tr": "Roald Amundsen"
+      }
+    ],
+    "correct": "amundsen",
+    "source": "https://en.wikipedia.org/wiki/Roald_Amundsen"
+  },
+  {
+    "key": "history_036",
+    "category_id": "history",
+    "subcategory_id": "historical_inventions",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which Scottish engineer's improvements to the steam engine powered the Industrial Revolution?",
+      "tr": "Hangi İskoç mühendisin buhar makinesine getirdiği iyileştirmeler Sanayi Devrimi'ne güç verdi?"
+    },
+    "options": [
+      {
+        "concept_id": "george_stephenson",
+        "en": "George Stephenson",
+        "tr": "George Stephenson"
+      },
+      {
+        "concept_id": "thomas_newcomen",
+        "en": "Thomas Newcomen",
+        "tr": "Thomas Newcomen"
+      },
+      {
+        "concept_id": "richard_trevithick",
+        "en": "Richard Trevithick",
+        "tr": "Richard Trevithick"
+      },
+      {
+        "concept_id": "james_watt",
+        "en": "James Watt",
+        "tr": "James Watt"
+      }
+    ],
+    "correct": "james_watt",
+    "source": "https://en.wikipedia.org/wiki/James_Watt"
+  },
+  {
+    "key": "history_037",
+    "category_id": "history",
+    "subcategory_id": "historical_figures",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who was the first Roman emperor?",
+      "tr": "İlk Roma imparatoru kimdir?"
+    },
+    "options": [
+      {
+        "concept_id": "caligula",
+        "en": "Caligula",
+        "tr": "Caligula"
+      },
+      {
+        "concept_id": "augustus",
+        "en": "Augustus",
+        "tr": "Augustus"
+      },
+      {
+        "concept_id": "julius_caesar",
+        "en": "Julius Caesar",
+        "tr": "Jül Sezar"
+      },
+      {
+        "concept_id": "nero",
+        "en": "Nero",
+        "tr": "Neron"
+      }
+    ],
+    "correct": "augustus",
+    "source": "https://en.wikipedia.org/wiki/Augustus"
+  },
+  {
+    "key": "history_038",
+    "category_id": "history",
+    "subcategory_id": "empires",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "The city of Cusco was the capital of which civilisation's empire?",
+      "tr": "Cusco şehri hangi uygarlığın imparatorluğunun başkentiydi?"
+    },
+    "options": [
+      {
+        "concept_id": "inca",
+        "en": "Inca",
+        "tr": "İnkalar"
+      },
+      {
+        "concept_id": "aztec",
+        "en": "Aztec",
+        "tr": "Aztekler"
+      },
+      {
+        "concept_id": "maya",
+        "en": "Maya",
+        "tr": "Mayalar"
+      },
+      {
+        "concept_id": "olmec",
+        "en": "Olmec",
+        "tr": "Olmekler"
+      }
+    ],
+    "correct": "inca",
+    "source": "https://en.wikipedia.org/wiki/Cusco"
+  },
+  {
+    "key": "history_039",
+    "category_id": "history",
+    "subcategory_id": "ancient_civilisations",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "The Code of Hammurabi comes from which ancient civilisation?",
+      "tr": "Hammurabi Kanunları hangi antik uygarlığa aittir?"
+    },
+    "options": [
+      {
+        "concept_id": "assyrians",
+        "en": "Assyrians",
+        "tr": "Asurlular"
+      },
+      {
+        "concept_id": "hittites",
+        "en": "Hittites",
+        "tr": "Hititler"
+      },
+      {
+        "concept_id": "persians",
+        "en": "Persians",
+        "tr": "Persler"
+      },
+      {
+        "concept_id": "babylonians",
+        "en": "Babylonians",
+        "tr": "Babilliler"
+      }
+    ],
+    "correct": "babylonians",
+    "source": "https://en.wikipedia.org/wiki/Code_of_Hammurabi"
+  },
+  {
+    "key": "history_040",
+    "category_id": "history",
+    "subcategory_id": "world_wars",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Where did Churchill, Roosevelt and Stalin meet in February 1945?",
+      "tr": "Churchill, Roosevelt ve Stalin Şubat 1945'te nerede bir araya geldi?"
+    },
+    "options": [
+      {
+        "concept_id": "tehran",
+        "en": "Tehran",
+        "tr": "Tahran"
+      },
+      {
+        "concept_id": "casablanca",
+        "en": "Casablanca",
+        "tr": "Kazablanka"
+      },
+      {
+        "concept_id": "yalta",
+        "en": "Yalta",
+        "tr": "Yalta"
+      },
+      {
+        "concept_id": "potsdam",
+        "en": "Potsdam",
+        "tr": "Potsdam"
+      }
+    ],
+    "correct": "yalta",
+    "source": "https://en.wikipedia.org/wiki/Yalta_Conference"
+  }
+]

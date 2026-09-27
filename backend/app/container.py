@@ -111,6 +111,51 @@ class Container:
     def config(self) -> ServerConfigService:
         return ServerConfigService(self.store)
 
+    # ---- question platform ----
+    @cached_property
+    def question_repo(self):
+        from app.questions.repository import QuestionRepository
+
+        return QuestionRepository(self.store, self.clock)
+
+    @cached_property
+    def manifest_cache(self):
+        from app.manifests.manifest import ManifestCache
+
+        return ManifestCache(self.store, check_interval_s=0 if self.settings.env == "test" else 5.0)
+
+    @cached_property
+    def manifest_builder(self):
+        from app.manifests.manifest import ManifestBuilder
+
+        return ManifestBuilder(self.store, self.clock)
+
+    @cached_property
+    def exposure(self):
+        from app.questions.exposure import ExposureService
+
+        return ExposureService(self.store, self.clock)
+
+    @cached_property
+    def question_plans(self):
+        from app.questions.plan import QuestionPlanService
+
+        return QuestionPlanService(self.manifest_cache, self.question_repo, self.exposure, self.clock)
+
+    @cached_property
+    def question_stats(self):
+        from app.questions.stats import QuestionStatsService
+
+        return QuestionStatsService(self.store)
+
+    @cached_property
+    def media_signer(self):
+        from app.common.media import EmulatorMediaSigner, GcsMediaSigner
+
+        if self.settings.env in ("stage", "prod"):
+            return GcsMediaSigner(self.settings.storage_bucket, self.settings.task_service_account, self.io_limiter)
+        return EmulatorMediaSigner("127.0.0.1:9199", self.settings.storage_bucket)
+
     # ---- lifecycle ----
     async def startup(self) -> None:
         from app.tasks.dispatch import dispatch_task

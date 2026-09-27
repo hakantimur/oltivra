@@ -1,0 +1,1442 @@
+[
+  {
+    "key": "technology_inventions_001",
+    "category_id": "technology_inventions",
+    "subcategory_id": "computers",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "What does 'CPU' stand for?",
+      "tr": "'CPU' kısaltmasının açılımı nedir?"
+    },
+    "options": [
+      {
+        "concept_id": "central_processing_unit",
+        "en": "Central Processing Unit",
+        "tr": "Central Processing Unit"
+      },
+      {
+        "concept_id": "core_power_unit",
+        "en": "Core Power Unit",
+        "tr": "Core Power Unit"
+      },
+      {
+        "concept_id": "computer_personal_unit",
+        "en": "Computer Personal Unit",
+        "tr": "Computer Personal Unit"
+      },
+      {
+        "concept_id": "central_program_utility",
+        "en": "Central Program Utility",
+        "tr": "Central Program Utility"
+      }
+    ],
+    "correct": "central_processing_unit",
+    "source": "https://en.wikipedia.org/wiki/Central_processing_unit"
+  },
+  {
+    "key": "technology_inventions_002",
+    "category_id": "technology_inventions",
+    "subcategory_id": "computers",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "How many bits make up one byte?",
+      "tr": "Bir bayt kaç bitten oluşur?"
+    },
+    "options": [
+      {
+        "concept_id": "ten",
+        "en": "10",
+        "tr": "10"
+      },
+      {
+        "concept_id": "sixteen",
+        "en": "16",
+        "tr": "16"
+      },
+      {
+        "concept_id": "eight",
+        "en": "8",
+        "tr": "8"
+      },
+      {
+        "concept_id": "four",
+        "en": "4",
+        "tr": "4"
+      }
+    ],
+    "correct": "eight",
+    "source": "https://en.wikipedia.org/wiki/Byte"
+  },
+  {
+    "key": "technology_inventions_003",
+    "category_id": "technology_inventions",
+    "subcategory_id": "internet",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In web addresses, what does 'WWW' stand for?",
+      "tr": "Web adreslerindeki 'WWW' neyin kısaltmasıdır?"
+    },
+    "options": [
+      {
+        "concept_id": "world_web_window",
+        "en": "World Web Window",
+        "tr": "World Web Window"
+      },
+      {
+        "concept_id": "wide_web_world",
+        "en": "Wide Web World",
+        "tr": "Wide Web World"
+      },
+      {
+        "concept_id": "web_wide_world",
+        "en": "Web Wide World",
+        "tr": "Web Wide World"
+      },
+      {
+        "concept_id": "world_wide_web",
+        "en": "World Wide Web",
+        "tr": "World Wide Web"
+      }
+    ],
+    "correct": "world_wide_web",
+    "source": "https://en.wikipedia.org/wiki/World_Wide_Web"
+  },
+  {
+    "key": "technology_inventions_004",
+    "category_id": "technology_inventions",
+    "subcategory_id": "ai_basics",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In computing, what does 'AI' stand for?",
+      "tr": "Bilişimde 'AI' (YZ) kısaltması neyi ifade eder?"
+    },
+    "options": [
+      {
+        "concept_id": "advanced_interface",
+        "en": "Advanced interface",
+        "tr": "Gelişmiş arayüz"
+      },
+      {
+        "concept_id": "artificial_intelligence",
+        "en": "Artificial intelligence",
+        "tr": "Yapay zekâ"
+      },
+      {
+        "concept_id": "automated_internet",
+        "en": "Automated internet",
+        "tr": "Otomatik internet"
+      },
+      {
+        "concept_id": "analog_input",
+        "en": "Analog input",
+        "tr": "Analog giriş"
+      }
+    ],
+    "correct": "artificial_intelligence",
+    "source": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+  },
+  {
+    "key": "technology_inventions_005",
+    "category_id": "technology_inventions",
+    "subcategory_id": "smartphones",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which smartphone operating system is developed by Google?",
+      "tr": "Google tarafından geliştirilen akıllı telefon işletim sistemi hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "symbian",
+        "en": "Symbian",
+        "tr": "Symbian"
+      },
+      {
+        "concept_id": "blackberry_os",
+        "en": "BlackBerry OS",
+        "tr": "BlackBerry OS"
+      },
+      {
+        "concept_id": "android",
+        "en": "Android",
+        "tr": "Android"
+      },
+      {
+        "concept_id": "ios",
+        "en": "iOS",
+        "tr": "iOS"
+      }
+    ],
+    "correct": "android",
+    "source": "https://en.wikipedia.org/wiki/Android_(operating_system)"
+  },
+  {
+    "key": "technology_inventions_006",
+    "category_id": "technology_inventions",
+    "subcategory_id": "smartphones",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which Finnish company made the famous 3310 mobile phone?",
+      "tr": "Ünlü 3310 cep telefonunu hangi Fin şirketi üretti?"
+    },
+    "options": [
+      {
+        "concept_id": "siemens",
+        "en": "Siemens",
+        "tr": "Siemens"
+      },
+      {
+        "concept_id": "ericsson",
+        "en": "Ericsson",
+        "tr": "Ericsson"
+      },
+      {
+        "concept_id": "nokia",
+        "en": "Nokia",
+        "tr": "Nokia"
+      },
+      {
+        "concept_id": "motorola",
+        "en": "Motorola",
+        "tr": "Motorola"
+      }
+    ],
+    "correct": "nokia",
+    "source": "https://en.wikipedia.org/wiki/Nokia_3310"
+  },
+  {
+    "key": "technology_inventions_007",
+    "category_id": "technology_inventions",
+    "subcategory_id": "inventions",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Johannes Gutenberg introduced which invention to Europe around 1440?",
+      "tr": "Johannes Gutenberg 1440 civarında Avrupa'ya hangi icadı kazandırdı?"
+    },
+    "options": [
+      {
+        "concept_id": "telescope",
+        "en": "Telescope",
+        "tr": "Teleskop"
+      },
+      {
+        "concept_id": "compass",
+        "en": "Compass",
+        "tr": "Pusula"
+      },
+      {
+        "concept_id": "steam_engine",
+        "en": "Steam engine",
+        "tr": "Buhar makinesi"
+      },
+      {
+        "concept_id": "printing_press",
+        "en": "Printing press",
+        "tr": "Matbaa"
+      }
+    ],
+    "correct": "printing_press",
+    "source": "https://en.wikipedia.org/wiki/Printing_press"
+  },
+  {
+    "key": "technology_inventions_008",
+    "category_id": "technology_inventions",
+    "subcategory_id": "inventions",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In 1903, the Wright brothers made the first powered flight of what?",
+      "tr": "Wright kardeşler 1903'te neyle ilk motorlu uçuşu gerçekleştirdi?"
+    },
+    "options": [
+      {
+        "concept_id": "airplane",
+        "en": "Airplane",
+        "tr": "Uçak"
+      },
+      {
+        "concept_id": "airship",
+        "en": "Airship",
+        "tr": "Zeplin"
+      },
+      {
+        "concept_id": "helicopter",
+        "en": "Helicopter",
+        "tr": "Helikopter"
+      },
+      {
+        "concept_id": "hot_air_balloon",
+        "en": "Hot-air balloon",
+        "tr": "Sıcak hava balonu"
+      }
+    ],
+    "correct": "airplane",
+    "source": "https://en.wikipedia.org/wiki/Wright_brothers"
+  },
+  {
+    "key": "technology_inventions_009",
+    "category_id": "technology_inventions",
+    "subcategory_id": "inventors",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who was granted the first US patent for the telephone in 1876?",
+      "tr": "1876'da telefon için ilk ABD patentini kim aldı?"
+    },
+    "options": [
+      {
+        "concept_id": "samuel_morse",
+        "en": "Samuel Morse",
+        "tr": "Samuel Morse"
+      },
+      {
+        "concept_id": "alexander_graham_bell",
+        "en": "Alexander Graham Bell",
+        "tr": "Alexander Graham Bell"
+      },
+      {
+        "concept_id": "thomas_edison",
+        "en": "Thomas Edison",
+        "tr": "Thomas Edison"
+      },
+      {
+        "concept_id": "nikola_tesla",
+        "en": "Nikola Tesla",
+        "tr": "Nikola Tesla"
+      }
+    ],
+    "correct": "alexander_graham_bell",
+    "source": "https://en.wikipedia.org/wiki/Alexander_Graham_Bell"
+  },
+  {
+    "key": "technology_inventions_010",
+    "category_id": "technology_inventions",
+    "subcategory_id": "inventors",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Thomas Edison is famous for developing a practical version of what?",
+      "tr": "Thomas Edison neyin kullanışlı bir versiyonunu geliştirmesiyle ünlüdür?"
+    },
+    "options": [
+      {
+        "concept_id": "radio",
+        "en": "Radio",
+        "tr": "Radyo"
+      },
+      {
+        "concept_id": "television",
+        "en": "Television",
+        "tr": "Televizyon"
+      },
+      {
+        "concept_id": "light_bulb",
+        "en": "Light bulb",
+        "tr": "Ampul"
+      },
+      {
+        "concept_id": "telephone",
+        "en": "Telephone",
+        "tr": "Telefon"
+      }
+    ],
+    "correct": "light_bulb",
+    "source": "https://en.wikipedia.org/wiki/Thomas_Edison"
+  },
+  {
+    "key": "technology_inventions_011",
+    "category_id": "technology_inventions",
+    "subcategory_id": "space_technology",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "What was the name of the first artificial satellite, launched in 1957?",
+      "tr": "1957'de fırlatılan ilk yapay uydunun adı neydi?"
+    },
+    "options": [
+      {
+        "concept_id": "sputnik_1",
+        "en": "Sputnik 1",
+        "tr": "Sputnik 1"
+      },
+      {
+        "concept_id": "explorer_1",
+        "en": "Explorer 1",
+        "tr": "Explorer 1"
+      },
+      {
+        "concept_id": "vostok_1",
+        "en": "Vostok 1",
+        "tr": "Vostok 1"
+      },
+      {
+        "concept_id": "apollo_1",
+        "en": "Apollo 1",
+        "tr": "Apollo 1"
+      }
+    ],
+    "correct": "sputnik_1",
+    "source": "https://en.wikipedia.org/wiki/Sputnik_1"
+  },
+  {
+    "key": "technology_inventions_012",
+    "category_id": "technology_inventions",
+    "subcategory_id": "space_technology",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "What does 'GPS' stand for?",
+      "tr": "'GPS' kısaltmasının açılımı nedir?"
+    },
+    "options": [
+      {
+        "concept_id": "general_position_service",
+        "en": "General Position Service",
+        "tr": "General Position Service"
+      },
+      {
+        "concept_id": "global_path_satellite",
+        "en": "Global Path Satellite",
+        "tr": "Global Path Satellite"
+      },
+      {
+        "concept_id": "geo_positioning_signal",
+        "en": "Geo Positioning Signal",
+        "tr": "Geo Positioning Signal"
+      },
+      {
+        "concept_id": "global_positioning_system",
+        "en": "Global Positioning System",
+        "tr": "Global Positioning System"
+      }
+    ],
+    "correct": "global_positioning_system",
+    "source": "https://en.wikipedia.org/wiki/Global_Positioning_System"
+  },
+  {
+    "key": "technology_inventions_013",
+    "category_id": "technology_inventions",
+    "subcategory_id": "tech_history",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Bill Gates co-founded which company in 1975?",
+      "tr": "Bill Gates 1975'te hangi şirketin kurucuları arasında yer aldı?"
+    },
+    "options": [
+      {
+        "concept_id": "ibm",
+        "en": "IBM",
+        "tr": "IBM"
+      },
+      {
+        "concept_id": "apple",
+        "en": "Apple",
+        "tr": "Apple"
+      },
+      {
+        "concept_id": "microsoft",
+        "en": "Microsoft",
+        "tr": "Microsoft"
+      },
+      {
+        "concept_id": "intel",
+        "en": "Intel",
+        "tr": "Intel"
+      }
+    ],
+    "correct": "microsoft",
+    "source": "https://en.wikipedia.org/wiki/Microsoft"
+  },
+  {
+    "key": "technology_inventions_014",
+    "category_id": "technology_inventions",
+    "subcategory_id": "tech_history",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Larry Page and Sergey Brin founded which company?",
+      "tr": "Larry Page ve Sergey Brin hangi şirketi kurdu?"
+    },
+    "options": [
+      {
+        "concept_id": "amazon",
+        "en": "Amazon",
+        "tr": "Amazon"
+      },
+      {
+        "concept_id": "google",
+        "en": "Google",
+        "tr": "Google"
+      },
+      {
+        "concept_id": "facebook",
+        "en": "Facebook",
+        "tr": "Facebook"
+      },
+      {
+        "concept_id": "yahoo",
+        "en": "Yahoo",
+        "tr": "Yahoo"
+      }
+    ],
+    "correct": "google",
+    "source": "https://en.wikipedia.org/wiki/Google"
+  },
+  {
+    "key": "technology_inventions_015",
+    "category_id": "technology_inventions",
+    "subcategory_id": "computers",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In computing, what does 'RAM' stand for?",
+      "tr": "Bilişimde 'RAM' kısaltmasının açılımı nedir?"
+    },
+    "options": [
+      {
+        "concept_id": "read_access_memory",
+        "en": "Read Access Memory",
+        "tr": "Read Access Memory"
+      },
+      {
+        "concept_id": "runtime_allocated_memory",
+        "en": "Runtime Allocated Memory",
+        "tr": "Runtime Allocated Memory"
+      },
+      {
+        "concept_id": "random_access_memory",
+        "en": "Random Access Memory",
+        "tr": "Random Access Memory"
+      },
+      {
+        "concept_id": "rapid_action_memory",
+        "en": "Rapid Action Memory",
+        "tr": "Rapid Action Memory"
+      }
+    ],
+    "correct": "random_access_memory",
+    "source": "https://en.wikipedia.org/wiki/Random-access_memory"
+  },
+  {
+    "key": "technology_inventions_016",
+    "category_id": "technology_inventions",
+    "subcategory_id": "computers",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "What does 'USB' stand for?",
+      "tr": "'USB' kısaltmasının açılımı nedir?"
+    },
+    "options": [
+      {
+        "concept_id": "universal_storage_base",
+        "en": "Universal Storage Base",
+        "tr": "Universal Storage Base"
+      },
+      {
+        "concept_id": "united_serial_board",
+        "en": "United Serial Board",
+        "tr": "United Serial Board"
+      },
+      {
+        "concept_id": "unified_system_bus",
+        "en": "Unified System Bus",
+        "tr": "Unified System Bus"
+      },
+      {
+        "concept_id": "universal_serial_bus",
+        "en": "Universal Serial Bus",
+        "tr": "Universal Serial Bus"
+      }
+    ],
+    "correct": "universal_serial_bus",
+    "source": "https://en.wikipedia.org/wiki/USB"
+  },
+  {
+    "key": "technology_inventions_017",
+    "category_id": "technology_inventions",
+    "subcategory_id": "internet",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who invented the World Wide Web in 1989?",
+      "tr": "World Wide Web'i 1989'da kim icat etti?"
+    },
+    "options": [
+      {
+        "concept_id": "vint_cerf",
+        "en": "Vint Cerf",
+        "tr": "Vint Cerf"
+      },
+      {
+        "concept_id": "steve_jobs",
+        "en": "Steve Jobs",
+        "tr": "Steve Jobs"
+      },
+      {
+        "concept_id": "tim_berners_lee",
+        "en": "Tim Berners-Lee",
+        "tr": "Tim Berners-Lee"
+      },
+      {
+        "concept_id": "bill_gates",
+        "en": "Bill Gates",
+        "tr": "Bill Gates"
+      }
+    ],
+    "correct": "tim_berners_lee",
+    "source": "https://en.wikipedia.org/wiki/Tim_Berners-Lee"
+  },
+  {
+    "key": "technology_inventions_018",
+    "category_id": "technology_inventions",
+    "subcategory_id": "internet",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "What does 'HTTP' stand for?",
+      "tr": "'HTTP' kısaltmasının açılımı nedir?"
+    },
+    "options": [
+      {
+        "concept_id": "hypertext_transfer_protocol",
+        "en": "HyperText Transfer Protocol",
+        "tr": "HyperText Transfer Protocol"
+      },
+      {
+        "concept_id": "hyperlink_text_process",
+        "en": "Hyperlink Text Process",
+        "tr": "Hyperlink Text Process"
+      },
+      {
+        "concept_id": "home_tool_transfer_path",
+        "en": "Home Tool Transfer Path",
+        "tr": "Home Tool Transfer Path"
+      },
+      {
+        "concept_id": "high_transfer_text_protocol",
+        "en": "High Transfer Text Protocol",
+        "tr": "High Transfer Text Protocol"
+      }
+    ],
+    "correct": "hypertext_transfer_protocol",
+    "source": "https://en.wikipedia.org/wiki/HTTP"
+  },
+  {
+    "key": "technology_inventions_019",
+    "category_id": "technology_inventions",
+    "subcategory_id": "internet",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "The world's first website went online at which research organization?",
+      "tr": "Dünyanın ilk web sitesi hangi araştırma kurumunda yayına girdi?"
+    },
+    "options": [
+      {
+        "concept_id": "mit",
+        "en": "MIT",
+        "tr": "MIT"
+      },
+      {
+        "concept_id": "cern",
+        "en": "CERN",
+        "tr": "CERN"
+      },
+      {
+        "concept_id": "nasa",
+        "en": "NASA",
+        "tr": "NASA"
+      },
+      {
+        "concept_id": "ibm",
+        "en": "IBM",
+        "tr": "IBM"
+      }
+    ],
+    "correct": "cern",
+    "source": "https://en.wikipedia.org/wiki/CERN"
+  },
+  {
+    "key": "technology_inventions_020",
+    "category_id": "technology_inventions",
+    "subcategory_id": "ai_basics",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which IBM computer defeated world chess champion Garry Kasparov in 1997?",
+      "tr": "1997'de dünya satranç şampiyonu Garri Kasparov'u yenen IBM bilgisayarı hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "hal_9000",
+        "en": "HAL 9000",
+        "tr": "HAL 9000"
+      },
+      {
+        "concept_id": "watson",
+        "en": "Watson",
+        "tr": "Watson"
+      },
+      {
+        "concept_id": "deep_blue",
+        "en": "Deep Blue",
+        "tr": "Deep Blue"
+      },
+      {
+        "concept_id": "eniac",
+        "en": "ENIAC",
+        "tr": "ENIAC"
+      }
+    ],
+    "correct": "deep_blue",
+    "source": "https://en.wikipedia.org/wiki/Deep_Blue_(chess_computer)"
+  },
+  {
+    "key": "technology_inventions_021",
+    "category_id": "technology_inventions",
+    "subcategory_id": "ai_basics",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which IBM system won the TV quiz show Jeopardy! in 2011?",
+      "tr": "2011'de Jeopardy! adlı TV bilgi yarışmasını hangi IBM sistemi kazandı?"
+    },
+    "options": [
+      {
+        "concept_id": "siri",
+        "en": "Siri",
+        "tr": "Siri"
+      },
+      {
+        "concept_id": "watson",
+        "en": "Watson",
+        "tr": "Watson"
+      },
+      {
+        "concept_id": "deep_blue",
+        "en": "Deep Blue",
+        "tr": "Deep Blue"
+      },
+      {
+        "concept_id": "alphago",
+        "en": "AlphaGo",
+        "tr": "AlphaGo"
+      }
+    ],
+    "correct": "watson",
+    "source": "https://en.wikipedia.org/wiki/IBM_Watson"
+  },
+  {
+    "key": "technology_inventions_022",
+    "category_id": "technology_inventions",
+    "subcategory_id": "smartphones",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In which year was the first Apple iPhone released?",
+      "tr": "İlk Apple iPhone hangi yıl piyasaya çıktı?"
+    },
+    "options": [
+      {
+        "concept_id": "y2005",
+        "en": "2005",
+        "tr": "2005"
+      },
+      {
+        "concept_id": "y2010",
+        "en": "2010",
+        "tr": "2010"
+      },
+      {
+        "concept_id": "y2007",
+        "en": "2007",
+        "tr": "2007"
+      },
+      {
+        "concept_id": "y2009",
+        "en": "2009",
+        "tr": "2009"
+      }
+    ],
+    "correct": "y2007",
+    "source": "https://en.wikipedia.org/wiki/IPhone_(1st_generation)"
+  },
+  {
+    "key": "technology_inventions_023",
+    "category_id": "technology_inventions",
+    "subcategory_id": "smartphones",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In mobile phones, what does 'SMS' stand for?",
+      "tr": "Cep telefonlarında 'SMS' kısaltmasının açılımı nedir?"
+    },
+    "options": [
+      {
+        "concept_id": "short_message_service",
+        "en": "Short Message Service",
+        "tr": "Short Message Service"
+      },
+      {
+        "concept_id": "standard_mobile_signal",
+        "en": "Standard Mobile Signal",
+        "tr": "Standard Mobile Signal"
+      },
+      {
+        "concept_id": "simple_mail_system",
+        "en": "Simple Mail System",
+        "tr": "Simple Mail System"
+      },
+      {
+        "concept_id": "secure_message_sender",
+        "en": "Secure Message Sender",
+        "tr": "Secure Message Sender"
+      }
+    ],
+    "correct": "short_message_service",
+    "source": "https://en.wikipedia.org/wiki/SMS"
+  },
+  {
+    "key": "technology_inventions_024",
+    "category_id": "technology_inventions",
+    "subcategory_id": "inventions",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Paper was first invented in which country?",
+      "tr": "Kâğıt ilk olarak hangi ülkede icat edildi?"
+    },
+    "options": [
+      {
+        "concept_id": "greece",
+        "en": "Greece",
+        "tr": "Yunanistan"
+      },
+      {
+        "concept_id": "egypt",
+        "en": "Egypt",
+        "tr": "Mısır"
+      },
+      {
+        "concept_id": "china",
+        "en": "China",
+        "tr": "Çin"
+      },
+      {
+        "concept_id": "india",
+        "en": "India",
+        "tr": "Hindistan"
+      }
+    ],
+    "correct": "china",
+    "source": "https://en.wikipedia.org/wiki/Paper"
+  },
+  {
+    "key": "technology_inventions_025",
+    "category_id": "technology_inventions",
+    "subcategory_id": "inventions",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which instrument did Galileo use to discover Jupiter's four largest moons?",
+      "tr": "Galileo, Jüpiter'in en büyük dört uydusunu hangi aletle keşfetti?"
+    },
+    "options": [
+      {
+        "concept_id": "sextant",
+        "en": "Sextant",
+        "tr": "Sekstant"
+      },
+      {
+        "concept_id": "microscope",
+        "en": "Microscope",
+        "tr": "Mikroskop"
+      },
+      {
+        "concept_id": "astrolabe",
+        "en": "Astrolabe",
+        "tr": "Usturlap"
+      },
+      {
+        "concept_id": "telescope",
+        "en": "Telescope",
+        "tr": "Teleskop"
+      }
+    ],
+    "correct": "telescope",
+    "source": "https://en.wikipedia.org/wiki/Galilean_moons"
+  },
+  {
+    "key": "technology_inventions_026",
+    "category_id": "technology_inventions",
+    "subcategory_id": "inventors",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who developed the AC induction motor in the late 1880s?",
+      "tr": "1880'lerin sonunda AC indüksiyon motorunu kim geliştirdi?"
+    },
+    "options": [
+      {
+        "concept_id": "guglielmo_marconi",
+        "en": "Guglielmo Marconi",
+        "tr": "Guglielmo Marconi"
+      },
+      {
+        "concept_id": "michael_faraday",
+        "en": "Michael Faraday",
+        "tr": "Michael Faraday"
+      },
+      {
+        "concept_id": "thomas_edison",
+        "en": "Thomas Edison",
+        "tr": "Thomas Edison"
+      },
+      {
+        "concept_id": "nikola_tesla",
+        "en": "Nikola Tesla",
+        "tr": "Nikola Tesla"
+      }
+    ],
+    "correct": "nikola_tesla",
+    "source": "https://en.wikipedia.org/wiki/Induction_motor"
+  },
+  {
+    "key": "technology_inventions_027",
+    "category_id": "technology_inventions",
+    "subcategory_id": "inventors",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which inventor of dynamite later founded famous international prizes?",
+      "tr": "Dinamiti icat edip sonradan ünlü uluslararası ödülleri kuran mucit kimdir?"
+    },
+    "options": [
+      {
+        "concept_id": "james_watt",
+        "en": "James Watt",
+        "tr": "James Watt"
+      },
+      {
+        "concept_id": "werner_siemens",
+        "en": "Werner von Siemens",
+        "tr": "Werner von Siemens"
+      },
+      {
+        "concept_id": "alfred_nobel",
+        "en": "Alfred Nobel",
+        "tr": "Alfred Nobel"
+      },
+      {
+        "concept_id": "rudolf_diesel",
+        "en": "Rudolf Diesel",
+        "tr": "Rudolf Diesel"
+      }
+    ],
+    "correct": "alfred_nobel",
+    "source": "https://en.wikipedia.org/wiki/Alfred_Nobel"
+  },
+  {
+    "key": "technology_inventions_028",
+    "category_id": "technology_inventions",
+    "subcategory_id": "space_technology",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which space telescope, launched in 1990, is named after an American astronomer?",
+      "tr": "1990'da fırlatılan ve Amerikalı bir gökbilimcinin adını taşıyan uzay teleskobu hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "kepler",
+        "en": "Kepler",
+        "tr": "Kepler"
+      },
+      {
+        "concept_id": "spitzer",
+        "en": "Spitzer",
+        "tr": "Spitzer"
+      },
+      {
+        "concept_id": "hubble",
+        "en": "Hubble",
+        "tr": "Hubble"
+      },
+      {
+        "concept_id": "james_webb",
+        "en": "James Webb",
+        "tr": "James Webb"
+      }
+    ],
+    "correct": "hubble",
+    "source": "https://en.wikipedia.org/wiki/Hubble_Space_Telescope"
+  },
+  {
+    "key": "technology_inventions_029",
+    "category_id": "technology_inventions",
+    "subcategory_id": "space_technology",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which mission first landed humans on the Moon in 1969?",
+      "tr": "1969'da insanları ilk kez Ay'a indiren görev hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "apollo_13",
+        "en": "Apollo 13",
+        "tr": "Apollo 13"
+      },
+      {
+        "concept_id": "vostok_1",
+        "en": "Vostok 1",
+        "tr": "Vostok 1"
+      },
+      {
+        "concept_id": "apollo_11",
+        "en": "Apollo 11",
+        "tr": "Apollo 11"
+      },
+      {
+        "concept_id": "gemini_4",
+        "en": "Gemini 4",
+        "tr": "Gemini 4"
+      }
+    ],
+    "correct": "apollo_11",
+    "source": "https://en.wikipedia.org/wiki/Apollo_11"
+  },
+  {
+    "key": "technology_inventions_030",
+    "category_id": "technology_inventions",
+    "subcategory_id": "tech_history",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who wrote what is often called the first computer program, for Babbage's Analytical Engine?",
+      "tr": "Babbage'ın Analitik Makinesi için ilk bilgisayar programı sayılan algoritmayı kim yazdı?"
+    },
+    "options": [
+      {
+        "concept_id": "marie_curie",
+        "en": "Marie Curie",
+        "tr": "Marie Curie"
+      },
+      {
+        "concept_id": "ada_lovelace",
+        "en": "Ada Lovelace",
+        "tr": "Ada Lovelace"
+      },
+      {
+        "concept_id": "alan_turing",
+        "en": "Alan Turing",
+        "tr": "Alan Turing"
+      },
+      {
+        "concept_id": "grace_hopper",
+        "en": "Grace Hopper",
+        "tr": "Grace Hopper"
+      }
+    ],
+    "correct": "ada_lovelace",
+    "source": "https://en.wikipedia.org/wiki/Ada_Lovelace"
+  },
+  {
+    "key": "technology_inventions_031",
+    "category_id": "technology_inventions",
+    "subcategory_id": "computers",
+    "difficulty": "HARD",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which early general-purpose electronic computer was completed in 1945 in the USA?",
+      "tr": "1945'te ABD'de tamamlanan erken dönem genel amaçlı elektronik bilgisayar hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "univac_i",
+        "en": "UNIVAC I",
+        "tr": "UNIVAC I"
+      },
+      {
+        "concept_id": "colossus",
+        "en": "Colossus",
+        "tr": "Colossus"
+      },
+      {
+        "concept_id": "ibm_pc",
+        "en": "IBM PC",
+        "tr": "IBM PC"
+      },
+      {
+        "concept_id": "eniac",
+        "en": "ENIAC",
+        "tr": "ENIAC"
+      }
+    ],
+    "correct": "eniac",
+    "source": "https://en.wikipedia.org/wiki/ENIAC"
+  },
+  {
+    "key": "technology_inventions_032",
+    "category_id": "technology_inventions",
+    "subcategory_id": "internet",
+    "difficulty": "HARD",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "In which year did ARPANET, a forerunner of the internet, send its first message?",
+      "tr": "İnternetin öncüsü ARPANET ilk mesajını hangi yıl gönderdi?"
+    },
+    "options": [
+      {
+        "concept_id": "y1969",
+        "en": "1969",
+        "tr": "1969"
+      },
+      {
+        "concept_id": "y1983",
+        "en": "1983",
+        "tr": "1983"
+      },
+      {
+        "concept_id": "y1975",
+        "en": "1975",
+        "tr": "1975"
+      },
+      {
+        "concept_id": "y1959",
+        "en": "1959",
+        "tr": "1959"
+      }
+    ],
+    "correct": "y1969",
+    "source": "https://en.wikipedia.org/wiki/ARPANET"
+  },
+  {
+    "key": "technology_inventions_033",
+    "category_id": "technology_inventions",
+    "subcategory_id": "ai_basics",
+    "difficulty": "HARD",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which DeepMind program defeated Go champion Lee Sedol in 2016?",
+      "tr": "2016'da Go şampiyonu Lee Sedol'ü yenen DeepMind programı hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "alphago",
+        "en": "AlphaGo",
+        "tr": "AlphaGo"
+      },
+      {
+        "concept_id": "alphafold",
+        "en": "AlphaFold",
+        "tr": "AlphaFold"
+      },
+      {
+        "concept_id": "deep_blue",
+        "en": "Deep Blue",
+        "tr": "Deep Blue"
+      },
+      {
+        "concept_id": "stockfish",
+        "en": "Stockfish",
+        "tr": "Stockfish"
+      }
+    ],
+    "correct": "alphago",
+    "source": "https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol"
+  },
+  {
+    "key": "technology_inventions_034",
+    "category_id": "technology_inventions",
+    "subcategory_id": "ai_basics",
+    "difficulty": "HARD",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "What did Alan Turing call the test of machine intelligence he proposed in 1950?",
+      "tr": "Alan Turing 1950'de önerdiği makine zekâsı testine ne ad verdi?"
+    },
+    "options": [
+      {
+        "concept_id": "logic_game",
+        "en": "The logic game",
+        "tr": "Mantık oyunu"
+      },
+      {
+        "concept_id": "imitation_game",
+        "en": "The imitation game",
+        "tr": "Taklit oyunu"
+      },
+      {
+        "concept_id": "enigma_test",
+        "en": "The Enigma test",
+        "tr": "Enigma testi"
+      },
+      {
+        "concept_id": "mirror_test",
+        "en": "The mirror test",
+        "tr": "Ayna testi"
+      }
+    ],
+    "correct": "imitation_game",
+    "source": "https://en.wikipedia.org/wiki/Turing_test"
+  },
+  {
+    "key": "technology_inventions_035",
+    "category_id": "technology_inventions",
+    "subcategory_id": "smartphones",
+    "difficulty": "HARD",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which company made the 1994 Simon Personal Communicator, often called the first smartphone?",
+      "tr": "İlk akıllı telefon sayılan 1994 tarihli Simon Personal Communicator'ı hangi şirket üretti?"
+    },
+    "options": [
+      {
+        "concept_id": "apple",
+        "en": "Apple",
+        "tr": "Apple"
+      },
+      {
+        "concept_id": "ibm",
+        "en": "IBM",
+        "tr": "IBM"
+      },
+      {
+        "concept_id": "motorola",
+        "en": "Motorola",
+        "tr": "Motorola"
+      },
+      {
+        "concept_id": "nokia",
+        "en": "Nokia",
+        "tr": "Nokia"
+      }
+    ],
+    "correct": "ibm",
+    "source": "https://en.wikipedia.org/wiki/IBM_Simon"
+  },
+  {
+    "key": "technology_inventions_036",
+    "category_id": "technology_inventions",
+    "subcategory_id": "inventions",
+    "difficulty": "HARD",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "Karl Benz is credited with building the first practical what, in 1885?",
+      "tr": "Karl Benz 1885'te ilk kullanışlı neyi yapmasıyla tanınır?"
+    },
+    "options": [
+      {
+        "concept_id": "automobile",
+        "en": "Automobile",
+        "tr": "Otomobil"
+      },
+      {
+        "concept_id": "jet_engine",
+        "en": "Jet engine",
+        "tr": "Jet motoru"
+      },
+      {
+        "concept_id": "diesel_engine",
+        "en": "Diesel engine",
+        "tr": "Dizel motor"
+      },
+      {
+        "concept_id": "bicycle",
+        "en": "Bicycle",
+        "tr": "Bisiklet"
+      }
+    ],
+    "correct": "automobile",
+    "source": "https://en.wikipedia.org/wiki/Benz_Patent-Motorwagen"
+  },
+  {
+    "key": "technology_inventions_037",
+    "category_id": "technology_inventions",
+    "subcategory_id": "inventors",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who invented the first electric battery, the voltaic pile, around 1800?",
+      "tr": "1800 civarında ilk elektrik pilini (Volta pili) kim icat etti?"
+    },
+    "options": [
+      {
+        "concept_id": "benjamin_franklin",
+        "en": "Benjamin Franklin",
+        "tr": "Benjamin Franklin"
+      },
+      {
+        "concept_id": "andre_marie_ampere",
+        "en": "André-Marie Ampère",
+        "tr": "André-Marie Ampère"
+      },
+      {
+        "concept_id": "luigi_galvani",
+        "en": "Luigi Galvani",
+        "tr": "Luigi Galvani"
+      },
+      {
+        "concept_id": "alessandro_volta",
+        "en": "Alessandro Volta",
+        "tr": "Alessandro Volta"
+      }
+    ],
+    "correct": "alessandro_volta",
+    "source": "https://en.wikipedia.org/wiki/Voltaic_pile"
+  },
+  {
+    "key": "technology_inventions_038",
+    "category_id": "technology_inventions",
+    "subcategory_id": "space_technology",
+    "difficulty": "HARD",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which spacecraft became the first to enter interstellar space, in 2012?",
+      "tr": "2012'de yıldızlararası uzaya giren ilk uzay aracı hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "new_horizons",
+        "en": "New Horizons",
+        "tr": "New Horizons"
+      },
+      {
+        "concept_id": "voyager_2",
+        "en": "Voyager 2",
+        "tr": "Voyager 2"
+      },
+      {
+        "concept_id": "voyager_1",
+        "en": "Voyager 1",
+        "tr": "Voyager 1"
+      },
+      {
+        "concept_id": "pioneer_10",
+        "en": "Pioneer 10",
+        "tr": "Pioneer 10"
+      }
+    ],
+    "correct": "voyager_1",
+    "source": "https://en.wikipedia.org/wiki/Voyager_1"
+  },
+  {
+    "key": "technology_inventions_039",
+    "category_id": "technology_inventions",
+    "subcategory_id": "tech_history",
+    "difficulty": "HARD",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "Moore's law predicts that the number of what doubles about every two years?",
+      "tr": "Moore yasası yaklaşık her iki yılda bir neyin sayısının ikiye katlanacağını öngörür?"
+    },
+    "options": [
+      {
+        "concept_id": "websites",
+        "en": "Websites",
+        "tr": "Web siteleri"
+      },
+      {
+        "concept_id": "internet_users",
+        "en": "Internet users",
+        "tr": "İnternet kullanıcıları"
+      },
+      {
+        "concept_id": "transistors_on_a_chip",
+        "en": "Transistors on a chip",
+        "tr": "Çipteki transistörler"
+      },
+      {
+        "concept_id": "programming_languages",
+        "en": "Programming languages",
+        "tr": "Programlama dilleri"
+      }
+    ],
+    "correct": "transistors_on_a_chip",
+    "source": "https://en.wikipedia.org/wiki/Moore%27s_law"
+  },
+  {
+    "key": "technology_inventions_040",
+    "category_id": "technology_inventions",
+    "subcategory_id": "tech_history",
+    "difficulty": "HARD",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "The Intel 4004, the first commercial microprocessor, was released in which decade?",
+      "tr": "İlk ticari mikroişlemci Intel 4004 hangi on yılda piyasaya çıktı?"
+    },
+    "options": [
+      {
+        "concept_id": "1980s",
+        "en": "1980s",
+        "tr": "1980'ler"
+      },
+      {
+        "concept_id": "1970s",
+        "en": "1970s",
+        "tr": "1970'ler"
+      },
+      {
+        "concept_id": "1950s",
+        "en": "1950s",
+        "tr": "1950'ler"
+      },
+      {
+        "concept_id": "1960s",
+        "en": "1960s",
+        "tr": "1960'lar"
+      }
+    ],
+    "correct": "1970s",
+    "source": "https://en.wikipedia.org/wiki/Intel_4004"
+  }
+]

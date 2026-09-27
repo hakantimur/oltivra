@@ -1,0 +1,1442 @@
+[
+  {
+    "key": "movies_tv_001",
+    "category_id": "movies_tv",
+    "subcategory_id": "characters_franchises",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In Star Wars, who is revealed to be Luke Skywalker's father?",
+      "tr": "Yıldız Savaşları'nda Luke Skywalker'ın babasının kim olduğu ortaya çıkar?"
+    },
+    "options": [
+      {
+        "concept_id": "obi_wan",
+        "en": "Obi-Wan Kenobi",
+        "tr": "Obi-Wan Kenobi"
+      },
+      {
+        "concept_id": "darth_vader",
+        "en": "Darth Vader",
+        "tr": "Darth Vader"
+      },
+      {
+        "concept_id": "yoda",
+        "en": "Yoda",
+        "tr": "Yoda"
+      },
+      {
+        "concept_id": "han_solo",
+        "en": "Han Solo",
+        "tr": "Han Solo"
+      }
+    ],
+    "correct": "darth_vader",
+    "source": "https://en.wikipedia.org/wiki/Darth_Vader"
+  },
+  {
+    "key": "movies_tv_002",
+    "category_id": "movies_tv",
+    "subcategory_id": "characters_franchises",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "What is the name of the wizarding school Harry Potter attends?",
+      "tr": "Harry Potter'ın okuduğu büyücülük okulunun adı nedir?"
+    },
+    "options": [
+      {
+        "concept_id": "hogwarts",
+        "en": "Hogwarts",
+        "tr": "Hogwarts"
+      },
+      {
+        "concept_id": "durmstrang",
+        "en": "Durmstrang",
+        "tr": "Durmstrang"
+      },
+      {
+        "concept_id": "beauxbatons",
+        "en": "Beauxbatons",
+        "tr": "Beauxbatons"
+      },
+      {
+        "concept_id": "ilvermorny",
+        "en": "Ilvermorny",
+        "tr": "Ilvermorny"
+      }
+    ],
+    "correct": "hogwarts",
+    "source": "https://en.wikipedia.org/wiki/Hogwarts"
+  },
+  {
+    "key": "movies_tv_003",
+    "category_id": "movies_tv",
+    "subcategory_id": "characters_franchises",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Bruce Wayne is the secret identity of which superhero?",
+      "tr": "Bruce Wayne hangi süper kahramanın gizli kimliğidir?"
+    },
+    "options": [
+      {
+        "concept_id": "superman",
+        "en": "Superman",
+        "tr": "Süpermen"
+      },
+      {
+        "concept_id": "spider_man",
+        "en": "Spider-Man",
+        "tr": "Örümcek Adam"
+      },
+      {
+        "concept_id": "iron_man",
+        "en": "Iron Man",
+        "tr": "Demir Adam"
+      },
+      {
+        "concept_id": "batman",
+        "en": "Batman",
+        "tr": "Batman"
+      }
+    ],
+    "correct": "batman",
+    "source": "https://en.wikipedia.org/wiki/Batman"
+  },
+  {
+    "key": "movies_tv_004",
+    "category_id": "movies_tv",
+    "subcategory_id": "hollywood",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which actor played Jack Dawson in the 1997 film Titanic?",
+      "tr": "1997 yapımı Titanik filminde Jack Dawson'ı hangi oyuncu canlandırdı?"
+    },
+    "options": [
+      {
+        "concept_id": "pitt",
+        "en": "Brad Pitt",
+        "tr": "Brad Pitt"
+      },
+      {
+        "concept_id": "damon",
+        "en": "Matt Damon",
+        "tr": "Matt Damon"
+      },
+      {
+        "concept_id": "dicaprio",
+        "en": "Leonardo DiCaprio",
+        "tr": "Leonardo DiCaprio"
+      },
+      {
+        "concept_id": "depp",
+        "en": "Johnny Depp",
+        "tr": "Johnny Depp"
+      }
+    ],
+    "correct": "dicaprio",
+    "source": "https://en.wikipedia.org/wiki/Titanic_(1997_film)"
+  },
+  {
+    "key": "movies_tv_005",
+    "category_id": "movies_tv",
+    "subcategory_id": "hollywood",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In The Wizard of Oz (1939), what is the name of Dorothy's dog?",
+      "tr": "Oz Büyücüsü (1939) filminde Dorothy'nin köpeğinin adı nedir?"
+    },
+    "options": [
+      {
+        "concept_id": "lassie",
+        "en": "Lassie",
+        "tr": "Lassie"
+      },
+      {
+        "concept_id": "toto",
+        "en": "Toto",
+        "tr": "Toto"
+      },
+      {
+        "concept_id": "rex",
+        "en": "Rex",
+        "tr": "Rex"
+      },
+      {
+        "concept_id": "benji",
+        "en": "Benji",
+        "tr": "Benji"
+      }
+    ],
+    "correct": "toto",
+    "source": "https://en.wikipedia.org/wiki/Toto_(Oz)"
+  },
+  {
+    "key": "movies_tv_006",
+    "category_id": "movies_tv",
+    "subcategory_id": "directors",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who directed the 1993 film Jurassic Park?",
+      "tr": "1993 yapımı Jurassic Park filmini kim yönetti?"
+    },
+    "options": [
+      {
+        "concept_id": "spielberg",
+        "en": "Steven Spielberg",
+        "tr": "Steven Spielberg"
+      },
+      {
+        "concept_id": "lucas",
+        "en": "George Lucas",
+        "tr": "George Lucas"
+      },
+      {
+        "concept_id": "cameron",
+        "en": "James Cameron",
+        "tr": "James Cameron"
+      },
+      {
+        "concept_id": "zemeckis",
+        "en": "Robert Zemeckis",
+        "tr": "Robert Zemeckis"
+      }
+    ],
+    "correct": "spielberg",
+    "source": "https://en.wikipedia.org/wiki/Jurassic_Park_(film)"
+  },
+  {
+    "key": "movies_tv_007",
+    "category_id": "movies_tv",
+    "subcategory_id": "tv_streaming",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In which city is the TV series Friends set?",
+      "tr": "Friends dizisi hangi şehirde geçer?"
+    },
+    "options": [
+      {
+        "concept_id": "los_angeles",
+        "en": "Los Angeles",
+        "tr": "Los Angeles"
+      },
+      {
+        "concept_id": "chicago",
+        "en": "Chicago",
+        "tr": "Chicago"
+      },
+      {
+        "concept_id": "boston",
+        "en": "Boston",
+        "tr": "Boston"
+      },
+      {
+        "concept_id": "new_york",
+        "en": "New York City",
+        "tr": "New York"
+      }
+    ],
+    "correct": "new_york",
+    "source": "https://en.wikipedia.org/wiki/Friends"
+  },
+  {
+    "key": "movies_tv_008",
+    "category_id": "movies_tv",
+    "subcategory_id": "tv_streaming",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In The Simpsons, what is the name of Homer's wife?",
+      "tr": "Simpsonlar'da Homer'ın karısının adı nedir?"
+    },
+    "options": [
+      {
+        "concept_id": "lisa",
+        "en": "Lisa",
+        "tr": "Lisa"
+      },
+      {
+        "concept_id": "maggie",
+        "en": "Maggie",
+        "tr": "Maggie"
+      },
+      {
+        "concept_id": "marge",
+        "en": "Marge",
+        "tr": "Marge"
+      },
+      {
+        "concept_id": "patty",
+        "en": "Patty",
+        "tr": "Patty"
+      }
+    ],
+    "correct": "marge",
+    "source": "https://en.wikipedia.org/wiki/Marge_Simpson"
+  },
+  {
+    "key": "movies_tv_009",
+    "category_id": "movies_tv",
+    "subcategory_id": "awards",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "What is the popular name of the Academy Award statuette?",
+      "tr": "Akademi Ödülü heykelciğinin yaygın adı nedir?"
+    },
+    "options": [
+      {
+        "concept_id": "emmy",
+        "en": "Emmy",
+        "tr": "Emmy"
+      },
+      {
+        "concept_id": "oscar",
+        "en": "Oscar",
+        "tr": "Oscar"
+      },
+      {
+        "concept_id": "grammy",
+        "en": "Grammy",
+        "tr": "Grammy"
+      },
+      {
+        "concept_id": "tony",
+        "en": "Tony",
+        "tr": "Tony"
+      }
+    ],
+    "correct": "oscar",
+    "source": "https://en.wikipedia.org/wiki/Academy_Awards"
+  },
+  {
+    "key": "movies_tv_010",
+    "category_id": "movies_tv",
+    "subcategory_id": "bollywood",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Bollywood, the Hindi film industry, is mainly based in which city?",
+      "tr": "Hint film endüstrisi Bollywood esas olarak hangi şehirde bulunur?"
+    },
+    "options": [
+      {
+        "concept_id": "mumbai",
+        "en": "Mumbai",
+        "tr": "Mumbai"
+      },
+      {
+        "concept_id": "delhi",
+        "en": "Delhi",
+        "tr": "Delhi"
+      },
+      {
+        "concept_id": "kolkata",
+        "en": "Kolkata",
+        "tr": "Kalküta"
+      },
+      {
+        "concept_id": "chennai",
+        "en": "Chennai",
+        "tr": "Chennai"
+      }
+    ],
+    "correct": "mumbai",
+    "source": "https://en.wikipedia.org/wiki/Hindi_cinema"
+  },
+  {
+    "key": "movies_tv_011",
+    "category_id": "movies_tv",
+    "subcategory_id": "global_films",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "The animation studio Studio Ghibli is from which country?",
+      "tr": "Animasyon stüdyosu Studio Ghibli hangi ülkeye aittir?"
+    },
+    "options": [
+      {
+        "concept_id": "south_korea",
+        "en": "South Korea",
+        "tr": "Güney Kore"
+      },
+      {
+        "concept_id": "china",
+        "en": "China",
+        "tr": "Çin"
+      },
+      {
+        "concept_id": "france",
+        "en": "France",
+        "tr": "Fransa"
+      },
+      {
+        "concept_id": "japan",
+        "en": "Japan",
+        "tr": "Japonya"
+      }
+    ],
+    "correct": "japan",
+    "source": "https://en.wikipedia.org/wiki/Studio_Ghibli"
+  },
+  {
+    "key": "movies_tv_012",
+    "category_id": "movies_tv",
+    "subcategory_id": "characters_franchises",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "What is the name of the cowboy doll in Toy Story?",
+      "tr": "Oyuncak Hikayesi'ndeki kovboy oyuncağın adı nedir?"
+    },
+    "options": [
+      {
+        "concept_id": "buzz",
+        "en": "Buzz",
+        "tr": "Buzz"
+      },
+      {
+        "concept_id": "rex",
+        "en": "Rex",
+        "tr": "Rex"
+      },
+      {
+        "concept_id": "woody",
+        "en": "Woody",
+        "tr": "Woody"
+      },
+      {
+        "concept_id": "slinky",
+        "en": "Slinky",
+        "tr": "Slinky"
+      }
+    ],
+    "correct": "woody",
+    "source": "https://en.wikipedia.org/wiki/Woody_(Toy_Story)"
+  },
+  {
+    "key": "movies_tv_013",
+    "category_id": "movies_tv",
+    "subcategory_id": "hollywood",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which actor played Tony Stark / Iron Man in the Marvel Cinematic Universe?",
+      "tr": "Marvel Sinematik Evreni'nde Tony Stark / Demir Adam'ı hangi oyuncu oynadı?"
+    },
+    "options": [
+      {
+        "concept_id": "evans",
+        "en": "Chris Evans",
+        "tr": "Chris Evans"
+      },
+      {
+        "concept_id": "rdj",
+        "en": "Robert Downey Jr.",
+        "tr": "Robert Downey Jr."
+      },
+      {
+        "concept_id": "hemsworth",
+        "en": "Chris Hemsworth",
+        "tr": "Chris Hemsworth"
+      },
+      {
+        "concept_id": "ruffalo",
+        "en": "Mark Ruffalo",
+        "tr": "Mark Ruffalo"
+      }
+    ],
+    "correct": "rdj",
+    "source": "https://en.wikipedia.org/wiki/Robert_Downey_Jr."
+  },
+  {
+    "key": "movies_tv_014",
+    "category_id": "movies_tv",
+    "subcategory_id": "directors",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who directed the 1997 film Titanic?",
+      "tr": "1997 yapımı Titanik filmini kim yönetti?"
+    },
+    "options": [
+      {
+        "concept_id": "cameron",
+        "en": "James Cameron",
+        "tr": "James Cameron"
+      },
+      {
+        "concept_id": "spielberg",
+        "en": "Steven Spielberg",
+        "tr": "Steven Spielberg"
+      },
+      {
+        "concept_id": "scott",
+        "en": "Ridley Scott",
+        "tr": "Ridley Scott"
+      },
+      {
+        "concept_id": "nolan",
+        "en": "Christopher Nolan",
+        "tr": "Christopher Nolan"
+      }
+    ],
+    "correct": "cameron",
+    "source": "https://en.wikipedia.org/wiki/James_Cameron"
+  },
+  {
+    "key": "movies_tv_015",
+    "category_id": "movies_tv",
+    "subcategory_id": "awards",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which was the first non-English-language film to win the Oscar for Best Picture?",
+      "tr": "En İyi Film Oscar'ını kazanan ilk İngilizce olmayan film hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "roma",
+        "en": "Roma",
+        "tr": "Roma"
+      },
+      {
+        "concept_id": "amelie",
+        "en": "Amélie",
+        "tr": "Amelie"
+      },
+      {
+        "concept_id": "life_is_beautiful",
+        "en": "Life Is Beautiful",
+        "tr": "Hayat Güzeldir"
+      },
+      {
+        "concept_id": "parasite",
+        "en": "Parasite",
+        "tr": "Parazit"
+      }
+    ],
+    "correct": "parasite",
+    "source": "https://en.wikipedia.org/wiki/Parasite_(2019_film)"
+  },
+  {
+    "key": "movies_tv_016",
+    "category_id": "movies_tv",
+    "subcategory_id": "awards",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which film won all 11 Oscars it was nominated for at the 2004 ceremony?",
+      "tr": "2004 töreninde aday olduğu 11 Oscar'ın hepsini kazanan film hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "titanic",
+        "en": "Titanic",
+        "tr": "Titanik"
+      },
+      {
+        "concept_id": "gladiator",
+        "en": "Gladiator",
+        "tr": "Gladyatör"
+      },
+      {
+        "concept_id": "lotr_rotk",
+        "en": "The Return of the King",
+        "tr": "Kralın Dönüşü"
+      },
+      {
+        "concept_id": "ben_hur",
+        "en": "Ben-Hur",
+        "tr": "Ben-Hur"
+      }
+    ],
+    "correct": "lotr_rotk",
+    "source": "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King"
+  },
+  {
+    "key": "movies_tv_017",
+    "category_id": "movies_tv",
+    "subcategory_id": "directors",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who directed Pulp Fiction (1994)?",
+      "tr": "Ucuz Roman'ı (Pulp Fiction, 1994) kim yönetti?"
+    },
+    "options": [
+      {
+        "concept_id": "scorsese",
+        "en": "Martin Scorsese",
+        "tr": "Martin Scorsese"
+      },
+      {
+        "concept_id": "tarantino",
+        "en": "Quentin Tarantino",
+        "tr": "Quentin Tarantino"
+      },
+      {
+        "concept_id": "coen",
+        "en": "Joel Coen",
+        "tr": "Joel Coen"
+      },
+      {
+        "concept_id": "fincher",
+        "en": "David Fincher",
+        "tr": "David Fincher"
+      }
+    ],
+    "correct": "tarantino",
+    "source": "https://en.wikipedia.org/wiki/Pulp_Fiction"
+  },
+  {
+    "key": "movies_tv_018",
+    "category_id": "movies_tv",
+    "subcategory_id": "directors",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who directed the animated film Spirited Away (2001)?",
+      "tr": "Ruhların Kaçışı (Spirited Away, 2001) animasyon filmini kim yönetti?"
+    },
+    "options": [
+      {
+        "concept_id": "miyazaki",
+        "en": "Hayao Miyazaki",
+        "tr": "Hayao Miyazaki"
+      },
+      {
+        "concept_id": "takahata",
+        "en": "Isao Takahata",
+        "tr": "Isao Takahata"
+      },
+      {
+        "concept_id": "shinkai",
+        "en": "Makoto Shinkai",
+        "tr": "Makoto Shinkai"
+      },
+      {
+        "concept_id": "oshii",
+        "en": "Mamoru Oshii",
+        "tr": "Mamoru Oshii"
+      }
+    ],
+    "correct": "miyazaki",
+    "source": "https://en.wikipedia.org/wiki/Spirited_Away"
+  },
+  {
+    "key": "movies_tv_019",
+    "category_id": "movies_tv",
+    "subcategory_id": "directors",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who directed Inception (2010)?",
+      "tr": "Başlangıç'ı (Inception, 2010) kim yönetti?"
+    },
+    "options": [
+      {
+        "concept_id": "villeneuve",
+        "en": "Denis Villeneuve",
+        "tr": "Denis Villeneuve"
+      },
+      {
+        "concept_id": "fincher",
+        "en": "David Fincher",
+        "tr": "David Fincher"
+      },
+      {
+        "concept_id": "cameron",
+        "en": "James Cameron",
+        "tr": "James Cameron"
+      },
+      {
+        "concept_id": "nolan",
+        "en": "Christopher Nolan",
+        "tr": "Christopher Nolan"
+      }
+    ],
+    "correct": "nolan",
+    "source": "https://en.wikipedia.org/wiki/Inception"
+  },
+  {
+    "key": "movies_tv_020",
+    "category_id": "movies_tv",
+    "subcategory_id": "bollywood",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which Bollywood star is widely nicknamed \"King Khan\"?",
+      "tr": "Hangi Bollywood yıldızı yaygın olarak \"King Khan\" lakabıyla bilinir?"
+    },
+    "options": [
+      {
+        "concept_id": "aamir",
+        "en": "Aamir Khan",
+        "tr": "Amir Han"
+      },
+      {
+        "concept_id": "salman",
+        "en": "Salman Khan",
+        "tr": "Salman Han"
+      },
+      {
+        "concept_id": "srk",
+        "en": "Shah Rukh Khan",
+        "tr": "Şahrukh Han"
+      },
+      {
+        "concept_id": "amitabh",
+        "en": "Amitabh Bachchan",
+        "tr": "Amitabh Bachchan"
+      }
+    ],
+    "correct": "srk",
+    "source": "https://en.wikipedia.org/wiki/Shah_Rukh_Khan"
+  },
+  {
+    "key": "movies_tv_021",
+    "category_id": "movies_tv",
+    "subcategory_id": "bollywood",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which Oscar-nominated 2001 Bollywood film centres on a cricket match?",
+      "tr": "Konusu bir kriket maçı etrafında geçen, Oscar adayı 2001 Bollywood filmi hangisidir?"
+    },
+    "options": [
+      {
+        "concept_id": "sholay",
+        "en": "Sholay",
+        "tr": "Sholay"
+      },
+      {
+        "concept_id": "lagaan",
+        "en": "Lagaan",
+        "tr": "Lagaan"
+      },
+      {
+        "concept_id": "devdas",
+        "en": "Devdas",
+        "tr": "Devdas"
+      },
+      {
+        "concept_id": "dangal",
+        "en": "Dangal",
+        "tr": "Dangal"
+      }
+    ],
+    "correct": "lagaan",
+    "source": "https://en.wikipedia.org/wiki/Lagaan"
+  },
+  {
+    "key": "movies_tv_022",
+    "category_id": "movies_tv",
+    "subcategory_id": "global_films",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "In which city is the French film Amélie (2001) set?",
+      "tr": "Fransız filmi Amelie (2001) hangi şehirde geçer?"
+    },
+    "options": [
+      {
+        "concept_id": "paris",
+        "en": "Paris",
+        "tr": "Paris"
+      },
+      {
+        "concept_id": "lyon",
+        "en": "Lyon",
+        "tr": "Lyon"
+      },
+      {
+        "concept_id": "marseille",
+        "en": "Marseille",
+        "tr": "Marsilya"
+      },
+      {
+        "concept_id": "nice",
+        "en": "Nice",
+        "tr": "Nice"
+      }
+    ],
+    "correct": "paris",
+    "source": "https://en.wikipedia.org/wiki/Am%C3%A9lie"
+  },
+  {
+    "key": "movies_tv_023",
+    "category_id": "movies_tv",
+    "subcategory_id": "global_films",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which country's film industry is known as \"Nollywood\"?",
+      "tr": "Hangi ülkenin film endüstrisi \"Nollywood\" olarak bilinir?"
+    },
+    "options": [
+      {
+        "concept_id": "india",
+        "en": "India",
+        "tr": "Hindistan"
+      },
+      {
+        "concept_id": "ghana",
+        "en": "Ghana",
+        "tr": "Gana"
+      },
+      {
+        "concept_id": "kenya",
+        "en": "Kenya",
+        "tr": "Kenya"
+      },
+      {
+        "concept_id": "nigeria",
+        "en": "Nigeria",
+        "tr": "Nijerya"
+      }
+    ],
+    "correct": "nigeria",
+    "source": "https://en.wikipedia.org/wiki/Nollywood"
+  },
+  {
+    "key": "movies_tv_024",
+    "category_id": "movies_tv",
+    "subcategory_id": "tv_streaming",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In Breaking Bad, what is Walter White's job at the start of the series?",
+      "tr": "Breaking Bad'de dizinin başında Walter White'ın mesleği nedir?"
+    },
+    "options": [
+      {
+        "concept_id": "pharmacist",
+        "en": "Pharmacist",
+        "tr": "Eczacı"
+      },
+      {
+        "concept_id": "doctor",
+        "en": "Doctor",
+        "tr": "Doktor"
+      },
+      {
+        "concept_id": "chem_teacher",
+        "en": "Chemistry teacher",
+        "tr": "Kimya öğretmeni"
+      },
+      {
+        "concept_id": "police",
+        "en": "Police officer",
+        "tr": "Polis memuru"
+      }
+    ],
+    "correct": "chem_teacher",
+    "source": "https://en.wikipedia.org/wiki/Walter_White_(Breaking_Bad)"
+  },
+  {
+    "key": "movies_tv_025",
+    "category_id": "movies_tv",
+    "subcategory_id": "tv_streaming",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Game of Thrones is based on novels by which author?",
+      "tr": "Game of Thrones hangi yazarın romanlarına dayanır?"
+    },
+    "options": [
+      {
+        "concept_id": "tolkien",
+        "en": "J. R. R. Tolkien",
+        "tr": "J. R. R. Tolkien"
+      },
+      {
+        "concept_id": "grrm",
+        "en": "George R. R. Martin",
+        "tr": "George R. R. Martin"
+      },
+      {
+        "concept_id": "rowling",
+        "en": "J. K. Rowling",
+        "tr": "J. K. Rowling"
+      },
+      {
+        "concept_id": "king",
+        "en": "Stephen King",
+        "tr": "Stephen King"
+      }
+    ],
+    "correct": "grrm",
+    "source": "https://en.wikipedia.org/wiki/Game_of_Thrones"
+  },
+  {
+    "key": "movies_tv_026",
+    "category_id": "movies_tv",
+    "subcategory_id": "tv_streaming",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In which fictional town is Stranger Things set?",
+      "tr": "Stranger Things hangi kurgusal kasabada geçer?"
+    },
+    "options": [
+      {
+        "concept_id": "hawkins",
+        "en": "Hawkins",
+        "tr": "Hawkins"
+      },
+      {
+        "concept_id": "springfield",
+        "en": "Springfield",
+        "tr": "Springfield"
+      },
+      {
+        "concept_id": "riverdale",
+        "en": "Riverdale",
+        "tr": "Riverdale"
+      },
+      {
+        "concept_id": "derry",
+        "en": "Derry",
+        "tr": "Derry"
+      }
+    ],
+    "correct": "hawkins",
+    "source": "https://en.wikipedia.org/wiki/Stranger_Things"
+  },
+  {
+    "key": "movies_tv_027",
+    "category_id": "movies_tv",
+    "subcategory_id": "characters_franchises",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which actor first played James Bond in an official film, Dr. No (1962)?",
+      "tr": "Resmî ilk James Bond filmi Dr. No'da (1962) Bond'u kim oynadı?"
+    },
+    "options": [
+      {
+        "concept_id": "moore",
+        "en": "Roger Moore",
+        "tr": "Roger Moore"
+      },
+      {
+        "concept_id": "lazenby",
+        "en": "George Lazenby",
+        "tr": "George Lazenby"
+      },
+      {
+        "concept_id": "niven",
+        "en": "David Niven",
+        "tr": "David Niven"
+      },
+      {
+        "concept_id": "connery",
+        "en": "Sean Connery",
+        "tr": "Sean Connery"
+      }
+    ],
+    "correct": "connery",
+    "source": "https://en.wikipedia.org/wiki/Dr._No_(film)"
+  },
+  {
+    "key": "movies_tv_028",
+    "category_id": "movies_tv",
+    "subcategory_id": "characters_franchises",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "What is the surname of the hobbit Frodo in The Lord of the Rings?",
+      "tr": "Yüzüklerin Efendisi'ndeki hobbit Frodo'nun soyadı nedir?"
+    },
+    "options": [
+      {
+        "concept_id": "gamgee",
+        "en": "Gamgee",
+        "tr": "Gamgee"
+      },
+      {
+        "concept_id": "took",
+        "en": "Took",
+        "tr": "Took"
+      },
+      {
+        "concept_id": "baggins",
+        "en": "Baggins",
+        "tr": "Baggins"
+      },
+      {
+        "concept_id": "brandybuck",
+        "en": "Brandybuck",
+        "tr": "Brandybuck"
+      }
+    ],
+    "correct": "baggins",
+    "source": "https://en.wikipedia.org/wiki/Frodo_Baggins"
+  },
+  {
+    "key": "movies_tv_029",
+    "category_id": "movies_tv",
+    "subcategory_id": "hollywood",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Hollywood is a district of which US city?",
+      "tr": "Hollywood, ABD'nin hangi şehrinin bir semtidir?"
+    },
+    "options": [
+      {
+        "concept_id": "san_francisco",
+        "en": "San Francisco",
+        "tr": "San Francisco"
+      },
+      {
+        "concept_id": "los_angeles",
+        "en": "Los Angeles",
+        "tr": "Los Angeles"
+      },
+      {
+        "concept_id": "las_vegas",
+        "en": "Las Vegas",
+        "tr": "Las Vegas"
+      },
+      {
+        "concept_id": "san_diego",
+        "en": "San Diego",
+        "tr": "San Diego"
+      }
+    ],
+    "correct": "los_angeles",
+    "source": "https://en.wikipedia.org/wiki/Hollywood"
+  },
+  {
+    "key": "movies_tv_030",
+    "category_id": "movies_tv",
+    "subcategory_id": "hollywood",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which actor played the title role in Forrest Gump (1994)?",
+      "tr": "Forrest Gump (1994) filminde başrolü hangi oyuncu oynadı?"
+    },
+    "options": [
+      {
+        "concept_id": "hanks",
+        "en": "Tom Hanks",
+        "tr": "Tom Hanks"
+      },
+      {
+        "concept_id": "cruise",
+        "en": "Tom Cruise",
+        "tr": "Tom Cruise"
+      },
+      {
+        "concept_id": "carrey",
+        "en": "Jim Carrey",
+        "tr": "Jim Carrey"
+      },
+      {
+        "concept_id": "williams",
+        "en": "Robin Williams",
+        "tr": "Robin Williams"
+      }
+    ],
+    "correct": "hanks",
+    "source": "https://en.wikipedia.org/wiki/Forrest_Gump"
+  },
+  {
+    "key": "movies_tv_031",
+    "category_id": "movies_tv",
+    "subcategory_id": "awards",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which film won the very first Academy Award for Best Picture?",
+      "tr": "İlk En İyi Film Akademi Ödülü'nü hangi film kazandı?"
+    },
+    "options": [
+      {
+        "concept_id": "metropolis",
+        "en": "Metropolis",
+        "tr": "Metropolis"
+      },
+      {
+        "concept_id": "jazz_singer",
+        "en": "The Jazz Singer",
+        "tr": "Caz Şarkıcısı"
+      },
+      {
+        "concept_id": "sunrise",
+        "en": "Sunrise",
+        "tr": "Şafak"
+      },
+      {
+        "concept_id": "wings",
+        "en": "Wings",
+        "tr": "Kanatlar"
+      }
+    ],
+    "correct": "wings",
+    "source": "https://en.wikipedia.org/wiki/Wings_(1927_film)"
+  },
+  {
+    "key": "movies_tv_032",
+    "category_id": "movies_tv",
+    "subcategory_id": "awards",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who was the first woman to win the Oscar for Best Director?",
+      "tr": "En İyi Yönetmen Oscar'ını kazanan ilk kadın kimdir?"
+    },
+    "options": [
+      {
+        "concept_id": "coppola",
+        "en": "Sofia Coppola",
+        "tr": "Sofia Coppola"
+      },
+      {
+        "concept_id": "zhao",
+        "en": "Chloé Zhao",
+        "tr": "Chloé Zhao"
+      },
+      {
+        "concept_id": "bigelow",
+        "en": "Kathryn Bigelow",
+        "tr": "Kathryn Bigelow"
+      },
+      {
+        "concept_id": "campion",
+        "en": "Jane Campion",
+        "tr": "Jane Campion"
+      }
+    ],
+    "correct": "bigelow",
+    "source": "https://en.wikipedia.org/wiki/Kathryn_Bigelow"
+  },
+  {
+    "key": "movies_tv_033",
+    "category_id": "movies_tv",
+    "subcategory_id": "directors",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who directed the Japanese classic Seven Samurai (1954)?",
+      "tr": "Japon klasiği Yedi Samuray'ı (1954) kim yönetti?"
+    },
+    "options": [
+      {
+        "concept_id": "ozu",
+        "en": "Yasujirō Ozu",
+        "tr": "Yasujirō Ozu"
+      },
+      {
+        "concept_id": "kurosawa",
+        "en": "Akira Kurosawa",
+        "tr": "Akira Kurosawa"
+      },
+      {
+        "concept_id": "mizoguchi",
+        "en": "Kenji Mizoguchi",
+        "tr": "Kenji Mizoguchi"
+      },
+      {
+        "concept_id": "kitano",
+        "en": "Takeshi Kitano",
+        "tr": "Takeshi Kitano"
+      }
+    ],
+    "correct": "kurosawa",
+    "source": "https://en.wikipedia.org/wiki/Seven_Samurai"
+  },
+  {
+    "key": "movies_tv_034",
+    "category_id": "movies_tv",
+    "subcategory_id": "directors",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Who directed the 1960 thriller Psycho?",
+      "tr": "1960 yapımı gerilim filmi Sapık'ı (Psycho) kim yönetti?"
+    },
+    "options": [
+      {
+        "concept_id": "hitchcock",
+        "en": "Alfred Hitchcock",
+        "tr": "Alfred Hitchcock"
+      },
+      {
+        "concept_id": "kubrick",
+        "en": "Stanley Kubrick",
+        "tr": "Stanley Kubrick"
+      },
+      {
+        "concept_id": "wilder",
+        "en": "Billy Wilder",
+        "tr": "Billy Wilder"
+      },
+      {
+        "concept_id": "welles",
+        "en": "Orson Welles",
+        "tr": "Orson Welles"
+      }
+    ],
+    "correct": "hitchcock",
+    "source": "https://en.wikipedia.org/wiki/Psycho_(1960_film)"
+  },
+  {
+    "key": "movies_tv_035",
+    "category_id": "movies_tv",
+    "subcategory_id": "global_films",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "The Oscar-winning song \"Naatu Naatu\" comes from which Indian film?",
+      "tr": "Oscar ödüllü \"Naatu Naatu\" şarkısı hangi Hint filmindendir?"
+    },
+    "options": [
+      {
+        "concept_id": "baahubali",
+        "en": "Baahubali",
+        "tr": "Baahubali"
+      },
+      {
+        "concept_id": "lagaan",
+        "en": "Lagaan",
+        "tr": "Lagaan"
+      },
+      {
+        "concept_id": "pathaan",
+        "en": "Pathaan",
+        "tr": "Pathaan"
+      },
+      {
+        "concept_id": "rrr",
+        "en": "RRR",
+        "tr": "RRR"
+      }
+    ],
+    "correct": "rrr",
+    "source": "https://en.wikipedia.org/wiki/Naatu_Naatu"
+  },
+  {
+    "key": "movies_tv_036",
+    "category_id": "movies_tv",
+    "subcategory_id": "bollywood",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which Indian composer won two Oscars for Slumdog Millionaire?",
+      "tr": "Milyoner (Slumdog Millionaire) ile iki Oscar kazanan Hintli besteci kimdir?"
+    },
+    "options": [
+      {
+        "concept_id": "pritam",
+        "en": "Pritam",
+        "tr": "Pritam"
+      },
+      {
+        "concept_id": "shankar",
+        "en": "Ravi Shankar",
+        "tr": "Ravi Shankar"
+      },
+      {
+        "concept_id": "rahman",
+        "en": "A. R. Rahman",
+        "tr": "A. R. Rahman"
+      },
+      {
+        "concept_id": "burman",
+        "en": "R. D. Burman",
+        "tr": "R. D. Burman"
+      }
+    ],
+    "correct": "rahman",
+    "source": "https://en.wikipedia.org/wiki/A._R._Rahman"
+  },
+  {
+    "key": "movies_tv_037",
+    "category_id": "movies_tv",
+    "subcategory_id": "global_films",
+    "difficulty": "HARD",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "Cinema Paradiso, the 1988 Oscar-winning film, comes from which country?",
+      "tr": "Oscar ödüllü 1988 yapımı Cennet Sineması (Cinema Paradiso) hangi ülkenin filmidir?"
+    },
+    "options": [
+      {
+        "concept_id": "france",
+        "en": "France",
+        "tr": "Fransa"
+      },
+      {
+        "concept_id": "italy",
+        "en": "Italy",
+        "tr": "İtalya"
+      },
+      {
+        "concept_id": "spain",
+        "en": "Spain",
+        "tr": "İspanya"
+      },
+      {
+        "concept_id": "greece",
+        "en": "Greece",
+        "tr": "Yunanistan"
+      }
+    ],
+    "correct": "italy",
+    "source": "https://en.wikipedia.org/wiki/Cinema_Paradiso"
+  },
+  {
+    "key": "movies_tv_038",
+    "category_id": "movies_tv",
+    "subcategory_id": "tv_streaming",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In which year did The Simpsons premiere as a half-hour TV series?",
+      "tr": "Simpsonlar yarım saatlik bir dizi olarak ilk kez hangi yıl yayınlandı?"
+    },
+    "options": [
+      {
+        "concept_id": "y1989",
+        "en": "1989",
+        "tr": "1989"
+      },
+      {
+        "concept_id": "y1985",
+        "en": "1985",
+        "tr": "1985"
+      },
+      {
+        "concept_id": "y1992",
+        "en": "1992",
+        "tr": "1992"
+      },
+      {
+        "concept_id": "y1995",
+        "en": "1995",
+        "tr": "1995"
+      }
+    ],
+    "correct": "y1989",
+    "source": "https://en.wikipedia.org/wiki/The_Simpsons"
+  },
+  {
+    "key": "movies_tv_039",
+    "category_id": "movies_tv",
+    "subcategory_id": "characters_franchises",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "What is the title of the first Indiana Jones film (1981)?",
+      "tr": "İlk Indiana Jones filminin (1981) adı nedir?"
+    },
+    "options": [
+      {
+        "concept_id": "temple",
+        "en": "Temple of Doom",
+        "tr": "Kamçılı Kahraman"
+      },
+      {
+        "concept_id": "last_crusade",
+        "en": "The Last Crusade",
+        "tr": "Son Macera"
+      },
+      {
+        "concept_id": "crystal_skull",
+        "en": "Kingdom of the Crystal Skull",
+        "tr": "Kristal Kafatası Krallığı"
+      },
+      {
+        "concept_id": "raiders",
+        "en": "Raiders of the Lost Ark",
+        "tr": "Kutsal Hazine Avcıları"
+      }
+    ],
+    "correct": "raiders",
+    "source": "https://en.wikipedia.org/wiki/Raiders_of_the_Lost_Ark"
+  },
+  {
+    "key": "movies_tv_040",
+    "category_id": "movies_tv",
+    "subcategory_id": "hollywood",
+    "difficulty": "HARD",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which Hollywood studio's logo features a roaring lion?",
+      "tr": "Hangi Hollywood stüdyosunun logosunda kükreyen bir aslan bulunur?"
+    },
+    "options": [
+      {
+        "concept_id": "paramount",
+        "en": "Paramount Pictures",
+        "tr": "Paramount Pictures"
+      },
+      {
+        "concept_id": "universal",
+        "en": "Universal Pictures",
+        "tr": "Universal Pictures"
+      },
+      {
+        "concept_id": "mgm",
+        "en": "Metro-Goldwyn-Mayer",
+        "tr": "Metro-Goldwyn-Mayer"
+      },
+      {
+        "concept_id": "warner",
+        "en": "Warner Bros.",
+        "tr": "Warner Bros."
+      }
+    ],
+    "correct": "mgm",
+    "source": "https://en.wikipedia.org/wiki/Leo_the_Lion_(MGM)"
+  }
+]
