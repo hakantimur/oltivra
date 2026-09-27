@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-secondary-container": "#6a002f", "on-primary-container": "#00423b", "inverse-primary": "#50dbc8", "tertiary-container": "#ce9d1d", "inverse-surface": "#2a3040", "on-error": "#ffffff", "outline": "#6c7a77", "on-secondary-fixed": "#3f0019", "surface": "#faf8ff", "on-primary": "#ffffff", "surface-dim": "#d4d9ee", "background": "#faf8ff", "on-secondary": "#ffffff", "on-tertiary": "#ffffff", "surface-variant": "#dde2f7", "secondary": "#af2759", "on-surface": "#151b2a", "on-primary-fixed": "#00201c", "inverse-on-surface": "#edf0ff", "error-container": "#ffdad6", "primary-container": "#16b8a6", "surface-container-lowest": "#ffffff", "surface-tint": "#006b5f", "surface-container": "#e9edff", "surface-bright": "#faf8ff", "tertiary": "#795900", "primary": "#006b5f", "on-primary-fixed-variant": "#005048", "surface-container-high": "#e2e7fd", "on-secondary-fixed-variant": "#8e0441", "on-background": "#151b2a", "on-tertiary-fixed-variant": "#5b4300", "on-error-container": "#93000a", "outline-variant": "#bbcac6", "surface-container-highest": "#dde2f7", "on-surface-variant": "#3c4947", "tertiary-fixed-dim": "#f4bf40", "surface-container-low": "#f2f3ff", "primary-fixed-dim": "#50dbc8", "secondary-fixed-dim": "#ffb1c3", "secondary-fixed": "#ffd9e0", "tertiary-fixed": "#ffdf9e", "secondary-container": "#ff6695", "on-tertiary-fixed": "#261a00", "primary-fixed": "#71f8e4", "on-tertiary-container": "#4c3700", "error": "#ba1a1a" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "space-lg": "1rem", "gutter-compact": "0.5rem", "gutter": "0.75rem", "margin": "1.25rem", "space-xs": "0.25rem", "space-2xl": "2rem", "space-sm": "0.5rem", "space-xl": "1.5rem", "space-md": "0.75rem", "margin-mobile": "1.25rem" }, fontFamily: { "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "display-stat": ["Plus Jakarta Sans"] }, fontSize: { "headline-lg": ["24px", {"lineHeight": "30px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "body-md": ["15px", {"lineHeight": "22px", "fontWeight": "500"}], "headline-sm": ["18px", {"lineHeight": "24px", "fontWeight": "700"}], "headline-xl-mobile": ["28px", {"lineHeight": "34px", "letterSpacing": "-0.025em", "fontWeight": "800"}], "body-lg": ["17px", {"lineHeight": "24px", "fontWeight": "500"}], "body-sm": ["13px", {"lineHeight": "18px", "fontWeight": "500"}], "label-md": ["13px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "700"}], "headline-md": ["20px", {"lineHeight": "26px", "letterSpacing": "-0.015em", "fontWeight": "700"}], "label-lg": ["15px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "700"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "800"}], "headline-xl": ["34px", {"lineHeight": "40px", "letterSpacing": "-0.03em", "fontWeight": "800"}], "display-stat": ["44px", {"lineHeight": "48px", "letterSpacing": "-0.04em", "fontWeight": "800"}] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-primary-container/20 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[22px]">bolt</span></div><h1 class="font-headline-md text-headline-md text-on-surface truncate">Weekly Rankings</h1></div><div class="flex items-center gap-space-sm"><div class="flex items-center gap-1 bg-surface-container-high px-space-sm py-1 rounded-full"><span class="material-symbols-outlined text-tertiary-container text-[16px]">local_fire_department</span><span class="font-label-sm text-label-sm text-on-surface">5 WINS</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full px-margin pt-16 pb-24 bg-surface"><div class="flex flex-col w-full pb-8">
+<div class="flex items-center justify-between mb-4">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+        This week · Global
+      </span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Season 14 Arena</span>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container px-3 py-1.5 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-tertiary-container text-[18px]">schedule</span>
+<span class="font-label-md text-label-md text-on-surface">2d 14h left</span>
+</div>
+</div>
+<div class="p-1 bg-surface-container rounded-full flex gap-1 mb-5 shadow-sm">
+<button class="flex-1 py-2 rounded-full font-label-md text-label-md text-center transition-all bg-surface-container-lowest text-primary shadow-sm flex items-center justify-center gap-1.5" id="tab-leaderboard" onclick="switchView('leaderboard')">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+      Weekly Leaderboard
+    </button>
+<button class="flex-1 py-2 rounded-full font-label-md text-label-md text-center text-on-surface-variant transition-all hover:text-on-surface flex items-center justify-center gap-1.5" id="tab-division" onclick="switchView('division')">
+<span class="material-symbols-outlined text-[18px]">shield</span>
+      Division Standings
+    </button>
+</div>
+<div class="relative bg-gradient-to-r from-primary-container/20 via-surface-container to-surface-container p-4 rounded-xl mb-6 shadow-sm flex items-center justify-between overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-primary-container/10 blur-xl pointer-events-none"></div>
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative shrink-0">
+<div class="w-12 h-12 rounded-full overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Playful cartoon avatar of an energetic smiling quiz competitor with modern teal headphones and warm golden lighting in clean 3D illustration style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBteH433G4eGEDB5-QsDgH3KwStzO58PbvKJ6MjdN5WSFO-GnKByTZ6kS6seiQRZB0RKKnEOUTPgW6knvUGEk3J7ITyNBi1_6kTAoVt4AsjG_zszsdP4MlJXxkHsamAV_7JJY2yGpx2S_gjsKlJrQawbGFdG9YsGuk9c8egPcBl_EMqIu2m2bEcFB-wNvFxVkb5d0vKCQ3lTMh1zyWEC9gHTF5gWxrZ0r0-Q5_weaXsdM35rPsp-u3F"/>
+</div>
+<div class="absolute -bottom-1 -right-1 bg-primary text-on-primary font-label-sm text-label-sm px-1.5 py-0.2 rounded-full shadow-xs">
+          YOU
+        </div>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">mira_moves</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded-full font-label-sm text-label-sm shrink-0">Silver II</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">
+          Rank <span class="font-bold text-on-surface">#142</span> · Top 12% global
+        </p>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-2">
+<span class="font-headline-sm text-headline-sm text-primary">860</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">pts</span>
+</div>
+</div>
+<div class="flex flex-col" id="leaderboard-view">
+<div class="grid grid-cols-3 gap-2.5 mb-6 items-end">
+<div class="bg-surface-container-lowest p-3 rounded-2xl flex flex-col items-center text-center shadow-sm relative pt-6">
+<div class="absolute -top-3 w-7 h-7 rounded-full bg-surface-container-highest flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-outline text-[18px]" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<div class="w-12 h-12 rounded-full overflow-hidden shadow-xs mb-2">
+<img class="w-full h-full object-cover" data-alt="Friendly expressive 3D profile portrait of a stylish woman with silver hoop earrings and vibrant magenta hoodie smiling proudly" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNGxyDkSkJqQqGYglj8Xpcmmkp6M--jWD_PaPpLG1FGvbY0lN6zyLQ0SiZDw4n29iGziIiQKOWqx77LntNQAfAy0Yww0V5GiJEjupGyzMCwsMlRUVcpNGRuV798_RVdi-OdNuN0sXdgMIzbDZ9LnxqeRUYpBbckIswxIuBaDCUnROyCllvfxdonVASD1KNKO9D9D1Bo5Ynyw6_OZfaAfSdVZjVBCsVHaO0X8sV1QylWId7dghit6_Y"/>
+</div>
+<span class="font-label-md text-label-md text-on-surface truncate w-full">kevin_q</span>
+<span class="bg-surface-container px-2 py-0.5 rounded-full font-label-sm text-label-sm text-on-surface-variant mt-1 mb-1.5">Gold I</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">1,280</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">pts</span>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-outline h-full rounded-full w-4/5"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1 font-bold">#2</span>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-2xl flex flex-col items-center text-center shadow-md relative pt-7">
+<div class="absolute -top-4 w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px]" style="font-variation-settings: 'FILL' 1;">emoji_events</span>
+</div>
+<div class="w-14 h-14 rounded-full overflow-hidden shadow-sm mb-2">
+<img class="w-full h-full object-cover" data-alt="Joyful 3D character avatar of a young female trivia champion wearing turquoise glasses and yellow sweater beaming warmly" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGkWeON1m3qpk8qJ1_UHfSNoK-JcCpCDmkurpPqjrupVCQ06zsVKAV7Ezt3Hl-6GolImGQNvF0mEE_a1WILS_IqioVzR8dqoaZmcVlB2uyl_nr_hk55rVOHzmZ8nybX9vtBv-dduuQdAp5bpbp-xO6_UOpDP_Q1BX3gxPkC-O10Czg_iaT1WgCECY1v-6c33hRYD3Uyf7g0YLK9U55QJoYwZR8J5CRo-oSlWRV226d_MtHDgiDmn9A"/>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface truncate w-full">elena_z</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-2 py-0.5 rounded-full font-label-sm text-label-sm mt-1 mb-1.5">Diamond</span>
+<span class="font-headline-md text-headline-md text-primary">1,420</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">pts</span>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-tertiary-container h-full rounded-full w-full"></div>
+</div>
+<span class="font-label-md text-label-md text-tertiary mt-1 font-bold">#1 CHAMP</span>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-2xl flex flex-col items-center text-center shadow-sm relative pt-6">
+<div class="absolute -top-3 w-7 h-7 rounded-full bg-tertiary-fixed-dim/40 flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-tertiary-container text-[18px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+</div>
+<div class="w-12 h-12 rounded-full overflow-hidden shadow-xs mb-2">
+<img class="w-full h-full object-cover" data-alt="Charming playful avatar of a guy with short curly hair wearing mint green crewneck in soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlyki0g_lNF9_H7tk4WwsyETbr2iLPjmnqEXU3CtmzkqjzU7v4RQ7-sIjybbA_8ftey3pqFOYT_11POSw5sHIayhUpqQU3bw_7z0PpjE1pUxrfRCbAnkXYsBlaMbe9ogjJnfGU3TUjtShqVPGMx52z4hdzEU0HXU4KBG749k7B8imJfR1JyOouO43VmX7DxrQWeJ3H14Kz6SEiOaXlLO-qa_ZIS_IdBDS6REujh95YVcNmd4HHQ_Zk"/>
+</div>
+<span class="font-label-md text-label-md text-on-surface truncate w-full">tariq_9</span>
+<span class="bg-surface-container px-2 py-0.5 rounded-full font-label-sm text-label-sm text-on-surface-variant mt-1 mb-1.5">Gold I</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">1,190</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">pts</span>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-tertiary-container h-full rounded-full w-3/4"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1 font-bold">#3</span>
+</div>
+</div>
+<div class="flex items-center justify-between mb-3 px-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-on-surface-variant">Challengers</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Weekly Progress</span>
+</div>
+<div class="flex flex-col gap-2">
+<div class="bg-surface-container-lowest p-3 rounded-2xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3 min-w-0">
+<span class="font-label-md text-label-md text-on-surface-variant w-6 text-center">4</span>
+<div class="w-10 h-10 rounded-full overflow-hidden shrink-0 shadow-xs">
+<img class="w-full h-full object-cover" data-alt="Vibrant stylized character avatar of a young woman with a sleek ponytail and turquoise sweater in soft pastel light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgHFHP_P2okMDsP3dYE3aaTzqEyYiKvxZ0kkhAyaaCbxkklX30EIFiYim_9N7Ezl6SXZ7HHMP0KU2wqR4uxGg8JQVQaGHXm1i7POXFx779eAq0UWobEahINwuKj7pBWZTOD9ghQ9x14h-1TKPR32jnHkhKY8kIJzXz27yOd-q_SsTCXAydZDRJ7A1SsJ0UDC793JNVhCwD-hsjE8cFTrwqMhst4kItcfkmeNikMbjvT79YHD75Cigb"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface truncate">sora_7</span>
+<span class="bg-surface-container px-2 py-0.2 rounded-full font-label-sm text-label-sm text-on-surface-variant">Gold II</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">24 wins · 8 streak</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">1,040</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">pts</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-2xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3 min-w-0">
+<span class="font-label-md text-label-md text-on-surface-variant w-6 text-center">5</span>
+<div class="w-10 h-10 rounded-full overflow-hidden shrink-0 shadow-xs">
+<img class="w-full h-full object-cover" data-alt="Friendly 3D animated portrait of a boy with beanie and retro round glasses smiling against warm amber backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYHY-fuuFFl96__3HtosA_UWitMfTS3Sp3DNWXGI4r3Ocr-UyiDCID-hWk4L7ll22E9GTRZigL9mKunP5ia4pq4S46-7VVUYU3NrZYIJ55SD3_nY80g59IzScFB7oDucJyjG16zCSdHbXCQ_qD65PiPhLxaon3YFU1cuQJToGHIsiA8m-ieDjd0Sb6Gs8farfvBYeKcDPRhrMVcE-3JsMPL9eEKk6sGXnYKvs141Qcf1DW36yNGmNg"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface truncate">lucas_flow</span>
+<span class="bg-surface-container px-2 py-0.2 rounded-full font-label-sm text-label-sm text-on-surface-variant">Gold II</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">19 wins · 4 streak</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">980</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">pts</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-2xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3 min-w-0">
+<span class="font-label-md text-label-md text-on-surface-variant w-6 text-center">6</span>
+<div class="w-10 h-10 rounded-full overflow-hidden shrink-0 shadow-xs">
+<img class="w-full h-full object-cover" data-alt="Chic friendly avatar of a woman with braided hair wearing emerald green collar smiling calmly with ambient rim lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACTkETEn9Fs8G_SEQ_Vpie-bk2dSBMPmIqhG39sZnBj-cw9RVDj5mnCwyzxsBYKTBzt1a4KM1VjUPsRkUQ5cA4QmYZRUN0NIACYmMdtB6zF4ASZTtWYzWryxAy-akpGqYciIHgVi0tg68TG8WsRqlQ_RIXnXRlcsBrWo0kE_6rjZWAbe3P8gfGi7un4f3ZQeaPHA4S5lUlaMi0jXQph5AnrsV2pWhZin4xKGNlmrqER1rGU0788jqD"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface truncate">amara_x</span>
+<span class="bg-surface-container px-2 py-0.2 rounded-full font-label-sm text-label-sm text-on-surface-variant">Gold III</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">17 wins · 3 streak</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">940</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">pts</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-2xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3 min-w-0">
+<span class="font-label-md text-label-md text-on-surface-variant w-6 text-center">7</span>
+<div class="w-10 h-10 rounded-full overflow-hidden shrink-0 shadow-xs">
+<img class="w-full h-full object-cover" data-alt="Cheerful modern profile avatar of an energetic male player with headphones and colorful jacket against warm studio gradient" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcn0_gWwMVyXvT8Mvu4Un1rrcFK9CY5eN3KYhEvryHA7IKa4bqjhN7ePFeatilAl6gu1JARRJF8V2v0t2L5yZS5qvu0tlfPndB7r4Lgj4Eh7yCbrK6bMHGiezbpF6LA7PZXHfITPOSEAU-CpJXpUINhz8jGRo_yoqYVAUMrmI6JKVcTIbEOkzGuRDMhk7iPdwKKgT7KQZbTJwyrP0LFBKlhYVKn75xd6LbcGld8IjjO47jfM3so5ev"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface truncate">devon_beats</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed px-2 py-0.2 rounded-full font-label-sm text-label-sm">Silver I</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">16 wins · 2 streak</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">910</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">pts</span>
+</div>
+</div>
+<div class="py-2 flex items-center justify-center gap-2 text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-dim"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-dim"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-dim"></span>
+</div>
+<div class="bg-primary-container/15 p-3 rounded-2xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3 min-w-0">
+<span class="font-label-md text-label-md text-primary font-bold w-6 text-center">142</span>
+<div class="w-10 h-10 rounded-full overflow-hidden shrink-0 shadow-xs">
+<img class="w-full h-full object-cover" data-alt="Playful cartoon avatar of an energetic smiling quiz competitor with modern teal headphones and warm golden lighting in clean 3D illustration style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHg9Z1sLu845fhvpYRTU56d_hhB_-MO78Suu-A-LvmTV-62sBdkxXA32Dha9vY1uNumpfT5PBnOxZrOc4ODot-RFfZEogrtDF1wDWtU9-ZIGC4S0Wxyr4dlg3WEnv4Iy6K1RBITA5BeZ-iQloM-GDNzKsbS1_iGytGFuoRAIxgGyUwFT123nrRdDUBwNh1NU_pyramNoJKbPi_Ch1PVhXRwvM7_mwfNcgEsJWGJDl_tFstGeRnrn9h"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface font-bold truncate">mira_moves</span>
+<span class="bg-primary-container text-on-primary-container px-2 py-0.2 rounded-full font-label-sm text-label-sm">You</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">12 wins · Silver II promotion zone</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-2">
+<span class="font-headline-sm text-headline-sm text-primary">860</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">pts</span>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden flex flex-col" id="division-view">
+<div class="bg-surface-container-lowest p-4 rounded-2xl shadow-sm mb-4">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-[20px]">shield</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Silver II · Flight B</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">30 Players in this bracket</p>
+</div>
+</div>
+<span class="bg-primary-fixed text-on-primary-fixed px-2.5 py-1 rounded-full font-label-sm text-label-sm font-bold">
+          Top 5 Promote
+        </span>
+</div>
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden mb-2">
+<div class="bg-primary-container h-full rounded-full w-2/3"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Current: Rank 8</span>
+<span class="text-primary font-bold">+40 pts to Promotion (Rank 5)</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="bg-surface-container-lowest p-3 rounded-2xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3 min-w-0">
+<span class="font-label-md text-label-md text-tertiary-container font-bold w-6 text-center">1</span>
+<div class="w-10 h-10 rounded-full overflow-hidden shrink-0 shadow-xs">
+<img class="w-full h-full object-cover" data-alt="Clean 3D avatar of a friendly boy with glasses and sky blue cap smiling cheerful" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFBjWxWOWCmJexPEHDh-7bRlxT0YHqQ9-zyBcBXNpCEcZh0dStQ-50maafLzyRsKYqhSPWGJZTWDNG8nKAnBlGmeAn0NsGW3v1SUmPwxBWjhzMAKvHwQHSaqz1POb67eoxotpHTSEtA9E8xaubZ_uXJsItNisJesTw00Oo0kMwMZ50N0MsPDV47JObJrj_yLqp57fWmRa59mjHkgXzaXdvEkTTzy41ARi8Tqnosho4klVEKfuSbjQh"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface truncate">artemis_99</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">15 wins · Promo zone</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">940</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">pts</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-2xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3 min-w-0">
+<span class="font-label-md text-label-md text-on-surface-variant font-bold w-6 text-center">5</span>
+<div class="w-10 h-10 rounded-full overflow-hidden shrink-0 shadow-xs">
+<img class="w-full h-full object-cover" data-alt="Stylized 3D rendering of a cool competitor wearing a cozy turtleneck and modern round glasses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDtKltVGquph2l8wv5HXBfS6WN8cZYYJls8zADh78pxkkVqcmiW2Rv4KPi6DQWViPgspD3Rn3jRqK3mbgUSWpvk8wFHh_ZM7YmFQ3F6ad9wJ5QGWLVejOsqA9o4eIJCCbHfC1_nYAts7DNz371TLCAjfJH31w39K9DlBm7kNk-pcjg27JYmUFuVcPmH1RQuLSkW1sS7516WNiR152pEg01q9rH1EICxL0EDouFKPzf7pKbyacFwEr8"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface truncate">jasper_k</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">13 wins · Cutoff mark</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">900</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">pts</span>
+</div>
+</div>
+<div class="bg-primary-container/15 p-3 rounded-2xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3 min-w-0">
+<span class="font-label-md text-label-md text-primary font-bold w-6 text-center">8</span>
+<div class="w-10 h-10 rounded-full overflow-hidden shrink-0 shadow-xs">
+<img class="w-full h-full object-cover" data-alt="Playful cartoon avatar of an energetic smiling quiz competitor with modern teal headphones and warm golden lighting in clean 3D illustration style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKs5EuM-fgsP-YSncJNmzD4Rj7mfsnkMs9Z8zkIfgKYEuInUkEpx6hP7-Regv0wb5dmSJkWDvx0QoI514LCVES2Zjq-mH1e2_V4trd3KgY-JLAwZIHiXPoF8cel0V6u4lMbgV8NOeoZyO23JLnSykgomJPk_BmXqGof0AyitextD35hiv5YZFhXaeHrNn34paBVRkL8zQ5QOZmtxY2seuWfrvOCV5wICWyYMKo9fQHPwng6pGBVpKT"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface font-bold truncate">mira_moves</span>
+<span class="bg-primary-container text-on-primary-container px-2 py-0.2 rounded-full font-label-sm text-label-sm">You</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">12 wins · 860 pts</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-2">
+<button class="bg-primary text-on-primary font-label-sm text-label-sm px-3 py-1.5 rounded-full shadow-xs active:scale-95 transition-transform">
+            Play Duel
+          </button>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-6 p-4 bg-surface-container rounded-2xl flex items-center justify-between gap-3 shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-tertiary text-[22px]">rocket_launch</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Ready to climb?</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Win your next match for +35 bonus pts</span>
+</div>
+</div>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-4 py-2.5 rounded-full shadow-sm active:scale-95 transition-transform shrink-0">
+      Play Now
+    </button>
+</div>
+</div>
+<script>
+  function switchView(view) {
+    const leaderboardView = document.getElementById('leaderboard-view');
+    const divisionView = document.getElementById('division-view');
+    const tabLeaderboard = document.getElementById('tab-leaderboard');
+    const tabDivision = document.getElementById('tab-division');
+
+    if (view === 'leaderboard') {
+      leaderboardView.classList.remove('hidden');
+      divisionView.classList.add('hidden');
+      tabLeaderboard.className = 'flex-1 py-2 rounded-full font-label-md text-label-md text-center transition-all bg-surface-container-lowest text-primary shadow-sm flex items-center justify-center gap-1.5';
+      tabDivision.className = 'flex-1 py-2 rounded-full font-label-md text-label-md text-center text-on-surface-variant transition-all hover:text-on-surface flex items-center justify-center gap-1.5';
+    } else {
+      divisionView.classList.remove('hidden');
+      leaderboardView.classList.add('hidden');
+      tabDivision.className = 'flex-1 py-2 rounded-full font-label-md text-label-md text-center transition-all bg-surface-container-lowest text-primary shadow-sm flex items-center justify-center gap-1.5';
+      tabLeaderboard.className = 'flex-1 py-2 rounded-full font-label-md text-label-md text-center text-on-surface-variant transition-all hover:text-on-surface flex items-center justify-center gap-1.5';
+    }
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-primary font-bold"><div class="flex justify-between items-center h-16 px-margin"><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="missions" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="play" href="#"><span class="material-symbols-outlined text-[24px]">play_circle</span><span class="font-label-sm text-label-sm mt-0.5">Play</span></a><a aria-current="page" class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] transition-colors text-primary font-bold" data-path="weekly-rankings" href="#"><span class="material-symbols-outlined text-[24px]">leaderboard</span><span class="font-label-sm text-label-sm mt-0.5">Rankings</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="social" href="#"><span class="material-symbols-outlined text-[24px]">group</span><span class="font-label-sm text-label-sm mt-0.5">Social</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="my-profile" href="#"><span class="material-symbols-outlined text-[24px]">account_circle</span><span class="font-label-sm text-label-sm mt-0.5">Profile</span></a></div></nav></body></html>

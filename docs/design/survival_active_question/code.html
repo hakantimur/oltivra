@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "secondary-fixed": "#ffd9e0", "on-surface": "#151b2a", "inverse-on-surface": "#edf0ff", "on-primary": "#ffffff", "tertiary-container": "#ce9d1d", "surface-dim": "#d4d9ee", "surface-container-highest": "#dde2f7", "primary-fixed-dim": "#50dbc8", "on-tertiary-container": "#4c3700", "background": "#faf8ff", "on-secondary-fixed": "#3f0019", "tertiary-fixed": "#ffdf9e", "surface-variant": "#dde2f7", "on-primary-container": "#00423b", "error-container": "#ffdad6", "on-error": "#ffffff", "surface-tint": "#006b5f", "outline-variant": "#bbcac6", "secondary-container": "#ff6695", "error": "#ba1a1a", "secondary-fixed-dim": "#ffb1c3", "tertiary-fixed-dim": "#f4bf40", "on-surface-variant": "#3c4947", "surface-container": "#e9edff", "on-background": "#151b2a", "on-tertiary": "#ffffff", "surface-container-lowest": "#ffffff", "primary-fixed": "#71f8e4", "surface-bright": "#faf8ff", "on-error-container": "#93000a", "secondary": "#af2759", "surface-container-high": "#e2e7fd", "on-tertiary-fixed-variant": "#5b4300", "on-secondary-container": "#6a002f", "on-primary-fixed": "#00201c", "on-tertiary-fixed": "#261a00", "on-secondary": "#ffffff", "primary-container": "#16b8a6", "inverse-surface": "#2a3040", "tertiary": "#795900", "surface-container-low": "#f2f3ff", "on-secondary-fixed-variant": "#8e0441", "on-primary-fixed-variant": "#005048", "primary": "#006b5f", "outline": "#6c7a77", "inverse-primary": "#50dbc8", "surface": "#faf8ff" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "space-xl": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-md": "0.75rem", "space-2xl": "2rem", "gutter-compact": "0.5rem", "margin-mobile": "1.25rem", "margin": "1.25rem", "space-lg": "1rem", "gutter": "0.75rem" }, fontFamily: { "headline-xl": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-stat": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"] }, fontSize: { "headline-xl": ["34px", { "lineHeight": "40px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-lg": ["17px", { "lineHeight": "24px", "fontWeight": "500" }], "headline-lg": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "700" }], "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "500" }], "label-md": ["13px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "700" }], "display-stat": ["44px", { "lineHeight": "48px", "letterSpacing": "-0.04em", "fontWeight": "800" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "800" }], "headline-xl-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.025em", "fontWeight": "800" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "700" }] } } } }</script></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><main class="flex-1 flex flex-col relative w-full pt-safe pb-safe px-margin-mobile bg-surface"><div class="flex flex-col w-full pb-6 space-y-4 select-none">
+<!-- Top Match HUD Header -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-secondary-fixed text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</span>
+<div>
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Live Match</p>
+<h2 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Survival · Round 5</h2>
+</div>
+</div>
+<!-- Active Survivors Pill -->
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed shadow-sm">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">groups</span>
+<span class="font-label-md text-label-md">7 remaining</span>
+</div>
+</div>
+<!-- 10-Player Survival Roster Strip -->
+<div class="p-2.5 rounded-2xl bg-surface-container-low shadow-sm">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Contenders</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">3 Eliminated</span>
+</div>
+<div class="flex items-center justify-between gap-1.5 mt-2 overflow-x-hidden">
+<!-- Player 1 (You) -->
+<div class="relative flex flex-col items-center">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-sm">
+<span class="font-label-sm text-label-sm text-on-primary">Me</span>
+</div>
+<span class="w-1.5 h-1.5 mt-1 rounded-full bg-primary-container"></span>
+</div>
+<!-- Player 2 -->
+<div class="relative flex flex-col items-center">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center">
+<span class="font-label-sm text-label-sm">J8</span>
+</div>
+<span class="w-1.5 h-1.5 mt-1 rounded-full bg-primary-container"></span>
+</div>
+<!-- Player 3 -->
+<div class="relative flex flex-col items-center">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center">
+<span class="font-label-sm text-label-sm">K2</span>
+</div>
+<span class="w-1.5 h-1.5 mt-1 rounded-full bg-primary-container"></span>
+</div>
+<!-- Player 4 -->
+<div class="relative flex flex-col items-center">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center">
+<span class="font-label-sm text-label-sm">A7</span>
+</div>
+<span class="w-1.5 h-1.5 mt-1 rounded-full bg-primary-container"></span>
+</div>
+<!-- Player 5 -->
+<div class="relative flex flex-col items-center">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center">
+<span class="font-label-sm text-label-sm">V4</span>
+</div>
+<span class="w-1.5 h-1.5 mt-1 rounded-full bg-primary-container"></span>
+</div>
+<!-- Player 6 -->
+<div class="relative flex flex-col items-center">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center">
+<span class="font-label-sm text-label-sm">R9</span>
+</div>
+<span class="w-1.5 h-1.5 mt-1 rounded-full bg-primary-container"></span>
+</div>
+<!-- Player 7 -->
+<div class="relative flex flex-col items-center">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center">
+<span class="font-label-sm text-label-sm">T1</span>
+</div>
+<span class="w-1.5 h-1.5 mt-1 rounded-full bg-primary-container"></span>
+</div>
+<!-- Player 8 (Eliminated) -->
+<div class="relative flex flex-col items-center opacity-35">
+<div class="w-7 h-7 rounded-full bg-surface-dim text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</div>
+<span class="w-1.5 h-1.5 mt-1 rounded-full bg-transparent"></span>
+</div>
+<!-- Player 9 (Eliminated) -->
+<div class="relative flex flex-col items-center opacity-35">
+<div class="w-7 h-7 rounded-full bg-surface-dim text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</div>
+<span class="w-1.5 h-1.5 mt-1 rounded-full bg-transparent"></span>
+</div>
+<!-- Player 10 (Eliminated) -->
+<div class="relative flex flex-col items-center opacity-35">
+<div class="w-7 h-7 rounded-full bg-surface-dim text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</div>
+<span class="w-1.5 h-1.5 mt-1 rounded-full bg-transparent"></span>
+</div>
+</div>
+</div>
+<!-- Countdown Bar & Timer Display -->
+<div class="flex items-center gap-3 px-1">
+<div class="relative flex-1 h-3 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full rounded-full bg-primary-container transition-all duration-1000 ease-linear" id="countdown-progress" style="width: 73.3%;"></div>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container shadow-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary" style="font-variation-settings: 'FILL' 1;">timer</span>
+<span class="font-headline-sm text-headline-sm text-on-surface leading-none" id="countdown-text">11s</span>
+</div>
+</div>
+<!-- Trivia Question Card -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-md space-y-3">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wide">
+<span class="material-symbols-outlined text-[14px]">history_edu</span>
+        History · Round 5
+      </span>
+<span class="font-label-sm text-label-sm text-secondary font-bold tracking-tight">Sudden Death</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-surface leading-snug">
+      Which ancient city is known as the Rose Red City due to the color of the stone out of which it is carved?
+    </h1>
+<div class="flex items-center gap-2 pt-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-primary">verified</span>
+<p class="font-body-sm text-body-sm">Select one before the 11-second buzzer sounds.</p>
+</div>
+</div>
+<!-- 4 Answer Choices -->
+<div class="space-y-2.5 pt-1" id="trivia-options">
+<!-- Option A -->
+<button class="trivia-option group w-full text-left p-4 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all active:translate-y-0.5 flex items-center justify-between" onclick="selectAnswer(this, 'A')" type="button">
+<div class="flex items-center gap-3.5 min-w-0">
+<span class="opt-badge flex items-center justify-center w-8 h-8 rounded-full bg-surface-container-high text-on-surface font-label-lg text-label-lg group-hover:bg-primary group-hover:text-on-primary transition-colors">
+          A
+        </span>
+<span class="opt-label font-body-lg text-body-lg text-on-surface font-bold truncate">Petra</span>
+</div>
+<span class="opt-icon material-symbols-outlined text-outline-variant text-[20px] transition-transform">radio_button_unchecked</span>
+</button>
+<!-- Option B -->
+<button class="trivia-option group w-full text-left p-4 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all active:translate-y-0.5 flex items-center justify-between" onclick="selectAnswer(this, 'B')" type="button">
+<div class="flex items-center gap-3.5 min-w-0">
+<span class="opt-badge flex items-center justify-center w-8 h-8 rounded-full bg-surface-container-high text-on-surface font-label-lg text-label-lg group-hover:bg-primary group-hover:text-on-primary transition-colors">
+          B
+        </span>
+<span class="opt-label font-body-lg text-body-lg text-on-surface font-bold truncate">Persepolis</span>
+</div>
+<span class="opt-icon material-symbols-outlined text-outline-variant text-[20px] transition-transform">radio_button_unchecked</span>
+</button>
+<!-- Option C -->
+<button class="trivia-option group w-full text-left p-4 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all active:translate-y-0.5 flex items-center justify-between" onclick="selectAnswer(this, 'C')" type="button">
+<div class="flex items-center gap-3.5 min-w-0">
+<span class="opt-badge flex items-center justify-center w-8 h-8 rounded-full bg-surface-container-high text-on-surface font-label-lg text-label-lg group-hover:bg-primary group-hover:text-on-primary transition-colors">
+          C
+        </span>
+<span class="opt-label font-body-lg text-body-lg text-on-surface font-bold truncate">Palmyra</span>
+</div>
+<span class="opt-icon material-symbols-outlined text-outline-variant text-[20px] transition-transform">radio_button_unchecked</span>
+</button>
+<!-- Option D -->
+<button class="trivia-option group w-full text-left p-4 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all active:translate-y-0.5 flex items-center justify-between" onclick="selectAnswer(this, 'D')" type="button">
+<div class="flex items-center gap-3.5 min-w-0">
+<span class="opt-badge flex items-center justify-center w-8 h-8 rounded-full bg-surface-container-high text-on-surface font-label-lg text-label-lg group-hover:bg-primary group-hover:text-on-primary transition-colors">
+          D
+        </span>
+<span class="opt-label font-body-lg text-body-lg text-on-surface font-bold truncate">Pompeii</span>
+</div>
+<span class="opt-icon material-symbols-outlined text-outline-variant text-[20px] transition-transform">radio_button_unchecked</span>
+</button>
+</div>
+<!-- Stable Bottom Info Warning -->
+<div class="flex items-center justify-center gap-2 p-3 rounded-xl bg-secondary-fixed text-on-secondary-fixed shadow-xs">
+<span class="material-symbols-outlined text-[17px] text-secondary" style="font-variation-settings: 'FILL' 1;">warning</span>
+<p class="font-label-sm text-label-sm text-center">Wrong or missing answer eliminates instantly</p>
+</div>
+</div>
+<script>
+  let secondsLeft = 11;
+  const maxSeconds = 15;
+  const countdownEl = document.getElementById('countdown-text');
+  const progressEl = document.getElementById('countdown-progress');
+
+  const timer = setInterval(() => {
+    if (secondsLeft > 0) {
+      secondsLeft--;
+      countdownEl.textContent = secondsLeft + 's';
+      const pct = Math.max(0, (secondsLeft / maxSeconds) * 100);
+      progressEl.style.width = pct + '%';
+
+      if (secondsLeft <= 4) {
+        progressEl.classList.remove('bg-primary-container');
+        progressEl.classList.add('bg-secondary-container');
+      }
+    } else {
+      clearInterval(timer);
+      countdownEl.textContent = '0s';
+    }
+  }, 1000);
+
+  function selectAnswer(button, letter) {
+    const options = document.querySelectorAll('.trivia-option');
+    options.forEach(opt => {
+      opt.classList.remove('bg-surface-container-high', 'scale-[1.01]');
+      opt.classList.add('bg-surface-container-lowest');
+      const badge = opt.querySelector('.opt-badge');
+      const icon = opt.querySelector('.opt-icon');
+      badge.classList.remove('bg-primary', 'text-on-primary');
+      badge.classList.add('bg-surface-container-high', 'text-on-surface');
+      icon.textContent = 'radio_button_unchecked';
+      icon.classList.remove('text-primary');
+      icon.classList.add('text-outline-variant');
+    });
+
+    button.classList.remove('bg-surface-container-lowest');
+    button.classList.add('bg-surface-container-high', 'scale-[1.01]');
+
+    const activeBadge = button.querySelector('.opt-badge');
+    const activeIcon = button.querySelector('.opt-icon');
+    activeBadge.classList.remove('bg-surface-container-high', 'text-on-surface');
+    activeBadge.classList.add('bg-primary', 'text-on-primary');
+    activeIcon.textContent = 'check_circle';
+    activeIcon.classList.remove('text-outline-variant');
+    activeIcon.classList.add('text-primary');
+  }
+</script></main></body></html>

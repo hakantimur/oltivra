@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "secondary-fixed": "#ffd9e0", "on-surface": "#151b2a", "inverse-on-surface": "#edf0ff", "on-primary": "#ffffff", "tertiary-container": "#ce9d1d", "surface-dim": "#d4d9ee", "surface-container-highest": "#dde2f7", "primary-fixed-dim": "#50dbc8", "on-tertiary-container": "#4c3700", "background": "#faf8ff", "on-secondary-fixed": "#3f0019", "tertiary-fixed": "#ffdf9e", "surface-variant": "#dde2f7", "on-primary-container": "#00423b", "error-container": "#ffdad6", "on-error": "#ffffff", "surface-tint": "#006b5f", "outline-variant": "#bbcac6", "secondary-container": "#ff6695", "error": "#ba1a1a", "secondary-fixed-dim": "#ffb1c3", "tertiary-fixed-dim": "#f4bf40", "on-surface-variant": "#3c4947", "surface-container": "#e9edff", "on-background": "#151b2a", "on-tertiary": "#ffffff", "surface-container-lowest": "#ffffff", "primary-fixed": "#71f8e4", "surface-bright": "#faf8ff", "on-error-container": "#93000a", "secondary": "#af2759", "surface-container-high": "#e2e7fd", "on-tertiary-fixed-variant": "#5b4300", "on-secondary-container": "#6a002f", "on-primary-fixed": "#00201c", "on-tertiary-fixed": "#261a00", "on-secondary": "#ffffff", "primary-container": "#16b8a6", "inverse-surface": "#2a3040", "tertiary": "#795900", "surface-container-low": "#f2f3ff", "on-secondary-fixed-variant": "#8e0441", "on-primary-fixed-variant": "#005048", "primary": "#006b5f", "outline": "#6c7a77", "inverse-primary": "#50dbc8", "surface": "#faf8ff" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "space-xl": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-md": "0.75rem", "space-2xl": "2rem", "gutter-compact": "0.5rem", "margin-mobile": "1.25rem", "margin": "1.25rem", "space-lg": "1rem", "gutter": "0.75rem" }, fontFamily: { "headline-xl": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-stat": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"] }, fontSize: { "headline-xl": ["34px", { "lineHeight": "40px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-lg": ["17px", { "lineHeight": "24px", "fontWeight": "500" }], "headline-lg": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "700" }], "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "500" }], "label-md": ["13px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "700" }], "display-stat": ["44px", { "lineHeight": "48px", "letterSpacing": "-0.04em", "fontWeight": "800" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "800" }], "headline-xl-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.025em", "fontWeight": "800" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "700" }] } } } }</script></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><main class="flex-1 flex flex-col relative w-full pt-safe pb-safe px-margin-mobile bg-surface"><div class="flex flex-col w-full pb-6 space-y-4">
+<!-- HUD: Top Match Bar & Round Info -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center space-x-2">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-secondary-container text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Battle Royale</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Survival · Round 5</span>
+</div>
+</div>
+<div class="flex items-center space-x-1.5 px-3 py-1.5 rounded-full bg-surface-container-high shadow-sm">
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">groups</span>
+<span class="font-label-md text-label-md text-on-surface">7 remaining</span>
+</div>
+</div>
+<!-- Live 11s Round Progress Tracker (Ticking at 06s) -->
+<div class="w-full bg-surface-container-high rounded-full p-1 shadow-sm">
+<div class="flex items-center justify-between px-3 py-1 mb-1">
+<div class="flex items-center space-x-1.5">
+<span class="material-symbols-outlined text-primary text-[16px] animate-pulse">timer</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Time limit</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold" id="countdown-val">06s remaining</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden relative">
+<div class="h-full bg-primary-container rounded-full transition-all duration-1000 ease-linear" id="progress-bar" style="width: 54.5%;"></div>
+</div>
+</div>
+<!-- 10-Player Survival Roster Grid -->
+<div class="w-full p-3 rounded-DEFAULT bg-surface-container-low shadow-sm">
+<div class="flex items-center justify-between mb-2 px-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Field status</span>
+<span class="font-label-sm text-label-sm text-primary">5 / 7 locked in</span>
+</div>
+<div class="grid grid-cols-5 gap-2.5">
+<!-- Player 01 (You) -->
+<div class="relative flex flex-col items-center">
+<div class="relative w-12 h-12 rounded-full p-0.5 bg-primary-container shadow-sm">
+<img class="w-full h-full rounded-full object-cover" data-alt="Stylized modern illustrated user avatar portrait in geometric vibrant game show aesthetic with teal highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3afiN12OqJjH3vf8WwxSmLpph7O6vDfcCfzRRqCudpgXi7JcPV_0mcw7NLGN0GEueEQ3C1hG3d2WF3PemwlWzboqv4Buqjk-LaDIhzIlv8DWsLEqj5HueE8mJYuTj0oXwFxbsunnmR9gEQGWAhKccwqSLIVkKQNoI9P7OPw5jlzDMZYNyCPd-Ee3oX5XTwJ-hrlnKT6OIL8gk1eE6pL5OPbA3GHCcHIeQRLmZo8x-XBaSNeSQu6RG"/>
+<span class="absolute -bottom-1 -right-1 bg-primary text-on-primary w-5 h-5 rounded-full flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">lock</span>
+</span>
+</div>
+<span class="mt-1 font-label-sm text-label-sm text-primary font-extrabold truncate max-w-[54px]">YOU</span>
+</div>
+<!-- Player 02 (Locked) -->
+<div class="relative flex flex-col items-center">
+<div class="relative w-12 h-12 rounded-full p-0.5 bg-surface-container-highest">
+<img class="w-full h-full rounded-full object-cover" data-alt="Playful minimalist vector avatar character profile with bright warm lighting on pastel indigo backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAD7zQ-bjyWLNKA9X0ZBbnn4uYf_-TngFvQFGClFX9Cv-UN5K4FYKEvwbxXBRm4eN2fGvXB6xWLscFbSG0hpn45eIkGffNRYo1ddlC6BgUznN7BgvvqszNJ7elQnOocZgf0GHU-Q0ipdNPJDDjb4Mop0zb4b8MfiBnVDVC19XTI2gyTx0-s31kV-jDVxzWo31HAZ5ouzi5xDWsSQMde_Ofuet7EBZfqIgFAcN98sTiIHtubo5JODg_6"/>
+<span class="absolute -bottom-1 -right-1 bg-surface-tint text-on-primary w-4 h-4 rounded-full flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[10px]">lock</span>
+</span>
+</div>
+<span class="mt-1 font-body-sm text-body-sm text-on-surface-variant truncate max-w-[54px]">Kaelen</span>
+</div>
+<!-- Player 03 (Locked) -->
+<div class="relative flex flex-col items-center">
+<div class="relative w-12 h-12 rounded-full p-0.5 bg-surface-container-highest">
+<img class="w-full h-full rounded-full object-cover" data-alt="Smiling colorful 3D avatar headshot of a young gamer with glasses and bright yellow hoodie" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_Y00AvoMJR6rVAoyYEmCXzBHPwdr6_JUtF0Pj01hknbCASpAINyi-s2nP9qtWEXIDpUvMI4DpdyWKrQ4zEM3v06y5Pl-nzopR00tMsthTLevoellyEgmIAYyGZ1GkdMiTtN6MDApZUUigEwfw15cd5dgq9PK7bYcpqYVE6-XMp5A7rFEj8ooGvfesChU5LhrwnQC9Yw_1478ySl1dD2LXBc5SYk3cxcd1YKBtTJKdmCJrAGP4B1Gt"/>
+<span class="absolute -bottom-1 -right-1 bg-surface-tint text-on-primary w-4 h-4 rounded-full flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[10px]">lock</span>
+</span>
+</div>
+<span class="mt-1 font-body-sm text-body-sm text-on-surface-variant truncate max-w-[54px]">Mina_99</span>
+</div>
+<!-- Player 04 (Thinking) -->
+<div class="relative flex flex-col items-center">
+<div class="relative w-12 h-12 rounded-full p-0.5 bg-surface-container-highest">
+<img class="w-full h-full rounded-full object-cover" data-alt="Clean isometric profile icon of a focused digital competitor with headphones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0Z0NEX-dU_89kbV-NKpnK0if4NXv3sq_teCWE6AfOf8gKeL8vWyKZUsOd2GuMnbX0ys0aY1QS-G3G3woGXWdZKvRrm_nG-xEqfG9xMpG8DpXZ03J3NrLWHm0dp1kPyqraI1fR6S8El6MH7ZxzqBZEyteRHEU75MrcJI65OAvOB54haRYREkRa-Y872ysZTITb6kMyctWAVS00civkrgffHJ3ltg19Jm8vZZQhpAtwHmq5oKO0CDNL"/>
+<span class="absolute top-0 right-0 w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim animate-ping"></span>
+<span class="absolute top-0 right-0 w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+</div>
+<span class="mt-1 font-body-sm text-body-sm text-on-surface-variant truncate max-w-[54px]">Orion</span>
+</div>
+<!-- Player 05 (Locked) -->
+<div class="relative flex flex-col items-center">
+<div class="relative w-12 h-12 rounded-full p-0.5 bg-surface-container-highest">
+<img class="w-full h-full rounded-full object-cover" data-alt="Friendly stylized 3D avatar of a girl with lavender hair and modern studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF1o4X0_0Ooiqek1Z8tC-ZX6q2CqURWVNbURsHokLV3nVPplPvfFirjb1cVU6G63WZ4jlKx_pxNUuOHLYhrjyldEM-aMbNIn3F5LEkCNHex_5HarlaoTpX33ZMnFOVs7UUUdAifxDFLLnDY-2xkKifq5B5XFMGQyGMjzRhndfcFqVy6n3MyXLu__cFZWrRP5IGKbfelNAzcfu-hWPSOtpNFmuSiqXpPme4laUE3qAgNe9_6Y0ImHsj"/>
+<span class="absolute -bottom-1 -right-1 bg-surface-tint text-on-primary w-4 h-4 rounded-full flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[10px]">lock</span>
+</span>
+</div>
+<span class="mt-1 font-body-sm text-body-sm text-on-surface-variant truncate max-w-[54px]">SoraX</span>
+</div>
+<!-- Player 06 (Locked) -->
+<div class="relative flex flex-col items-center">
+<div class="relative w-12 h-12 rounded-full p-0.5 bg-surface-container-highest">
+<img class="w-full h-full rounded-full object-cover" data-alt="Rendered flat geometric avatar face of an adventurous explorer wearing cap" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUQigFrSVC_wddusrW5CKbc2XGqJKB_4SQgNA1GUme2Y8p5fpobjt8o70wK1-laUw6JfFnyNn5HCxaa5HOwBYsXI784l4tqXzj9iKlp35aS-A5T_XJF9l1AbTzYLpbpnNqBKhOLojgFzHcL47qC1V2TL0BFMKZGgCMt1FsemEwMAFwVhd83OniKQdM_sflKAFlHoEmaxY72wTwYoyVg3BBbWAVX6unZK1bIpSlUHxz9fOyUgRggh3E"/>
+<span class="absolute -bottom-1 -right-1 bg-surface-tint text-on-primary w-4 h-4 rounded-full flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[10px]">lock</span>
+</span>
+</div>
+<span class="mt-1 font-body-sm text-body-sm text-on-surface-variant truncate max-w-[54px]">Dax_R</span>
+</div>
+<!-- Player 07 (Thinking) -->
+<div class="relative flex flex-col items-center">
+<div class="relative w-12 h-12 rounded-full p-0.5 bg-surface-container-highest">
+<img class="w-full h-full rounded-full object-cover" data-alt="Warm modern portrait illustration of a confident trivia challenger with amber lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3QYKRl1J78ZdHDGqJb_ZSyTwD6yAfkChPfN2XOZg0NmjMb-428hOxt_waTVh6RBeg2ZWViST6HaftMx-WsCeBcvh1fGlEV8lnjwPt15Y94ajhU3MVNSCgx-faSkt009qtaEGU3XPKdKQB5Q0_jVnr6vdCGZ-glonFqcJXAqchk9S9ndgNGcfmrFd3BV_El5wOBc1nL-Nu3spNHTwzKX6OYh_Y6jzp_C-WXDUUehlls05zmWo5QlA1"/>
+<span class="absolute top-0 right-0 w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim animate-ping"></span>
+<span class="absolute top-0 right-0 w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+</div>
+<span class="mt-1 font-body-sm text-body-sm text-on-surface-variant truncate max-w-[54px]">ZaraV</span>
+</div>
+<!-- Player 08 (Eliminated earlier) -->
+<div class="relative flex flex-col items-center opacity-35 grayscale">
+<div class="relative w-12 h-12 rounded-full bg-surface-dim flex items-center justify-center">
+<span class="material-symbols-outlined text-outline text-[22px]">close</span>
+</div>
+<span class="mt-1 font-body-sm text-body-sm text-outline truncate max-w-[54px]">R-3</span>
+</div>
+<!-- Player 09 (Eliminated earlier) -->
+<div class="relative flex flex-col items-center opacity-35 grayscale">
+<div class="relative w-12 h-12 rounded-full bg-surface-dim flex items-center justify-center">
+<span class="material-symbols-outlined text-outline text-[22px]">close</span>
+</div>
+<span class="mt-1 font-body-sm text-body-sm text-outline truncate max-w-[54px]">R-2</span>
+</div>
+<!-- Player 10 (Eliminated earlier) -->
+<div class="relative flex flex-col items-center opacity-35 grayscale">
+<div class="relative w-12 h-12 rounded-full bg-surface-dim flex items-center justify-center">
+<span class="material-symbols-outlined text-outline text-[22px]">close</span>
+</div>
+<span class="mt-1 font-body-sm text-body-sm text-outline truncate max-w-[54px]">R-1</span>
+</div>
+</div>
+</div>
+<!-- Question Prompt Card -->
+<div class="relative w-full rounded-DEFAULT bg-surface-container-lowest p-5 shadow-sm overflow-hidden">
+<div class="absolute -top-10 -right-10 w-28 h-28 bg-primary-fixed/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between mb-2">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+        World Wonders &amp; Archeology
+      </span>
+<span class="font-label-sm text-label-sm text-outline">100 Pts</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold leading-snug">
+      Which ancient rock-cut city in southwestern Jordan is famously known as the Rose City?
+    </h2>
+</div>
+<!-- Answer Selection Set -->
+<div class="flex flex-col space-y-2.5">
+<!-- Choice A: Player Locked Choice (Neutral Mint/Turquoise Locked, NOT Green or Coral) -->
+<div class="relative flex items-center justify-between w-full min-h-[60px] px-4 py-3 rounded-DEFAULT bg-primary-fixed/30 shadow-md">
+<div class="flex items-center space-x-3 min-w-0">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary-container text-on-primary font-headline-sm text-headline-sm flex items-center justify-center shadow-sm">
+          A
+        </div>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Petra</span>
+</div>
+<div class="flex items-center space-x-1.5 px-2.5 py-1 rounded-full bg-primary-container/20 text-on-primary-container flex-shrink-0">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">lock</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wide">Locked</span>
+</div>
+</div>
+<!-- Choice B: Disabled / Unselected -->
+<div class="flex items-center justify-between w-full min-h-[60px] px-4 py-3 rounded-DEFAULT bg-surface-container-low opacity-60">
+<div class="flex items-center space-x-3 min-w-0">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-surface-container-highest text-on-surface-variant font-label-lg text-label-lg flex items-center justify-center">
+          B
+        </div>
+<span class="font-body-lg text-body-lg text-on-surface-variant truncate">Persepolis</span>
+</div>
+</div>
+<!-- Choice C: Disabled / Unselected -->
+<div class="flex items-center justify-between w-full min-h-[60px] px-4 py-3 rounded-DEFAULT bg-surface-container-low opacity-60">
+<div class="flex items-center space-x-3 min-w-0">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-surface-container-highest text-on-surface-variant font-label-lg text-label-lg flex items-center justify-center">
+          C
+        </div>
+<span class="font-body-lg text-body-lg text-on-surface-variant truncate">Palmyra</span>
+</div>
+</div>
+<!-- Choice D: Disabled / Unselected -->
+<div class="flex items-center justify-between w-full min-h-[60px] px-4 py-3 rounded-DEFAULT bg-surface-container-low opacity-60">
+<div class="flex items-center space-x-3 min-w-0">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-surface-container-highest text-on-surface-variant font-label-lg text-label-lg flex items-center justify-center">
+          D
+        </div>
+<span class="font-body-lg text-body-lg text-on-surface-variant truncate">Carthage</span>
+</div>
+</div>
+</div>
+<!-- Reassuring Lock Status Card with Gentle Pulsing Dots -->
+<div class="w-full rounded-DEFAULT bg-surface-container-lowest p-4 shadow-sm flex items-center space-x-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">shield_with_heart</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center space-x-1.5">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Answer locked</span>
+<div class="flex items-center space-x-1 pl-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-bounce" style="animation-delay: 0s;"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-bounce" style="animation-delay: 0.18s;"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-bounce" style="animation-delay: 0.36s;"></span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">
+        Waiting for the round to resolve…
+      </p>
+</div>
+</div>
+</div>
+<script>
+  // Controlled subtle countdown micro-interaction without leaking answer correctness
+  (function() {
+    let remaining = 6;
+    const total = 11;
+    const label = document.getElementById('countdown-val');
+    const bar = document.getElementById('progress-bar');
+
+    const timer = setInterval(() => {
+      remaining -= 1;
+      if (remaining >= 1) {
+        if (label) label.textContent = '0' + remaining + 's remaining';
+        if (bar) {
+          const pct = Math.max(8, (remaining / total) * 100);
+          bar.style.width = pct + '%';
+        }
+      } else {
+        if (label) label.textContent = 'Locking field…';
+        if (bar) bar.style.width = '0%';
+        clearInterval(timer);
+      }
+    }, 1000);
+  })();
+</script></main></body></html>

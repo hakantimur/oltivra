@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-fixed": "#261a00", "on-surface": "#151b2a", "on-background": "#151b2a", "secondary-fixed-dim": "#ffb1c3", "error-container": "#ffdad6", "surface-bright": "#faf8ff", "surface-container-high": "#e2e7fd", "on-tertiary": "#ffffff", "primary-fixed-dim": "#50dbc8", "surface": "#faf8ff", "error": "#ba1a1a", "outline": "#6c7a77", "surface-dim": "#d4d9ee", "surface-container": "#e9edff", "secondary": "#af2759", "on-primary": "#ffffff", "primary-fixed": "#71f8e4", "surface-tint": "#006b5f", "tertiary-fixed-dim": "#f4bf40", "primary": "#006b5f", "inverse-on-surface": "#edf0ff", "secondary-container": "#ff6695", "on-error": "#ffffff", "surface-container-low": "#f2f3ff", "on-primary-fixed-variant": "#005048", "on-secondary-container": "#6a002f", "surface-variant": "#dde2f7", "on-primary-fixed": "#00201c", "tertiary": "#795900", "inverse-surface": "#2a3040", "inverse-primary": "#50dbc8", "primary-container": "#16b8a6", "background": "#faf8ff", "on-primary-container": "#00423b", "secondary-fixed": "#ffd9e0", "tertiary-container": "#ce9d1d", "on-secondary": "#ffffff", "on-secondary-fixed": "#3f0019", "outline-variant": "#bbcac6", "surface-container-highest": "#dde2f7", "surface-container-lowest": "#ffffff", "on-secondary-fixed-variant": "#8e0441", "on-surface-variant": "#3c4947", "on-tertiary-fixed-variant": "#5b4300", "tertiary-fixed": "#ffdf9e", "on-tertiary-container": "#4c3700", "on-error-container": "#93000a" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "gutter": "0.75rem", "margin": "1.25rem", "margin-mobile": "1.25rem", "space-xl": "1.5rem", "space-sm": "0.5rem", "space-2xl": "2rem", "space-xs": "0.25rem", "space-md": "0.75rem", "gutter-compact": "0.5rem", "space-lg": "1rem" }, fontFamily: { "headline-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "display-stat": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"] }, fontSize: { "headline-lg": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-xl-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.025em", "fontWeight": "800" }], "headline-xl": ["34px", { "lineHeight": "40px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "800" }], "display-stat": ["44px", { "lineHeight": "48px", "letterSpacing": "-0.04em", "fontWeight": "800" }], "label-md": ["13px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "500" }], "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "700" }], "body-lg": ["17px", { "lineHeight": "24px", "fontWeight": "500" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-14 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Leave Match" class="w-11 h-11 flex items-center justify-center -ml-2 text-on-surface hover:text-primary active:scale-95 transition-all" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">close</span></button><h1 class="font-headline-sm text-headline-sm text-on-surface">Countdown</h1></div><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-14 pb-safe bg-surface"><div class="flex flex-col w-full px-margin pb-space-xl">
+<!-- Top Category Pill Badge -->
+<div class="flex justify-center items-center mt-space-sm mb-space-md">
+<div class="inline-flex items-center gap-space-xs bg-surface-container px-space-md py-1.5 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Survival · Last player standing</span>
+</div>
+</div>
+<!-- Countdown Stage Card -->
+<div class="relative bg-surface-container-lowest rounded-lg p-space-lg shadow-sm flex flex-col items-center justify-center text-center overflow-hidden mb-space-md">
+<!-- Ambient glowing backdrop accent -->
+<div class="absolute -top-12 -right-12 w-32 h-32 rounded-full bg-secondary-fixed/50 blur-2xl pointer-events-none"></div>
+<div class="absolute -bottom-12 -left-12 w-32 h-32 rounded-full bg-tertiary-fixed/50 blur-2xl pointer-events-none"></div>
+<div class="relative flex flex-col items-center">
+<!-- Animated SVG Timer Ring -->
+<div class="relative w-28 h-28 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90 transform" viewbox="0 0 100 100">
+<circle class="text-surface-container-high" cx="50" cy="50" fill="none" r="42" stroke="currentColor" stroke-width="8"></circle>
+<circle class="transition-all duration-1000 ease-linear" cx="50" cy="50" fill="none" id="countdown-circle" r="42" stroke="url(#timerGradient)" stroke-dasharray="264" stroke-dashoffset="0" stroke-linecap="round" stroke-width="8"></circle>
+<defs>
+<lineargradient id="timerGradient" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#FFC94A"></stop>
+<stop offset="100%" stop-color="#F65F8E"></stop>
+</lineargradient>
+</defs>
+</svg>
+<!-- Big Bold Dynamic Counter Number -->
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="font-display-stat text-display-stat text-on-surface leading-none select-none tracking-tight" id="countdown-val">3</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-center gap-space-xs">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Get Ready!</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Match begins automatically</p>
+</div>
+</div>
+<!-- Arena Roster Section Header -->
+<div class="flex items-center justify-between px-space-xs mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">groups</span>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Combatants (10/10)</span>
+</div>
+<div class="flex items-center gap-1.5 bg-primary-container/20 px-2 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-on-primary-container">Arena Locked</span>
+</div>
+</div>
+<!-- 10 Compact Arena Roster Slots (2-Column Grid) -->
+<div class="grid grid-cols-2 gap-gutter mb-space-md">
+<!-- Slot 1: Player (mira_moves) -->
+<div class="bg-primary/10 rounded-DEFAULT p-2.5 flex items-center justify-between shadow-sm relative overflow-hidden">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative flex-shrink-0">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm" data-alt="Stylized geometric vector portrait of an energetic young female trivia gamer with teal hair highlights and headphones against a crisp neutral studio backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqyIUWHQ_B3O4Jr6mvo_kzV_67zzjok1FCYE1fLAZU0ShVWaI8_FbCDsHttGYNhwrY7iEZkuJvOy7xDl5LerbJ5ieMQCeA4EKx3k7PhNRvsgOwhK811TSCqIZkuvvFPEQ1I4zONHUPag4jtKCtlZg89hZnDb-MnoaPNBU7xGuxDEZBO0yAECwGpuH3JEtoIeQIZHP6p8Z2N2zj-V-fpFKEPY6_N71sTJCznWODYteBhOAhw9l67LVj"/>
+<div class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container text-[11px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">mira_moves</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">YOU</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[18px] flex-shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<!-- Slot 2: alex_b -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-2.5 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<img class="w-9 h-9 rounded-full object-cover flex-shrink-0 shadow-sm" data-alt="Playful 3D stylized vector avatar of a smiling young male with curly hair and round orange spectacles on warm cream background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmKSv_lgx27imNVyki9Iu_SlldV51VUMi2M4CDsiP6GMNrWrh7s5x03-7QsMaTpkoUFpwP3rUlrlUV5f6zCO9yGASKAMQDTRlBgxjw-uT2gFIebK-09gC6p257THIB9OUIXwKPgXISDUt-mhTKJpSpMu_k-dRsbeKgjUnQylWIkWZf6VK6ARXmuuhM40qTzMZXxlPwMrgWzMJnbAzBLPLq2OFkhA0pd0nOAp4QCLYuywgaJtzdfYjA"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">alex_b</span>
+<span class="font-label-sm text-label-sm text-outline truncate">Ready</span>
+</div>
+</div>
+<div class="w-2 h-2 rounded-full bg-primary-container flex-shrink-0"></div>
+</div>
+<!-- Slot 3: norah_k -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-2.5 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<img class="w-9 h-9 rounded-full object-cover flex-shrink-0 shadow-sm" data-alt="Minimalist modern vector avatar illustration of a female contestant with braided hair and yellow hoop earrings on warm cream background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgIDAnGwoKUECuvVqjTJykB7urNdvCeaZ8K0IYnrvvaHITByXZHcBk9y8SAZeRZ7cHT4qct2l2zo_y_Fdn3_E8DbRHxIl2rwC9WWmQzXwUUdGLrusFvIvZXZC1NYYr_2eM0_HpVMkSPb3WA1paPe_LU_fgHxh7bcWV4JdsNOZUSJ01LXEBKYlffcsBUd8kcqS1bI-APqOFWvvbzqwnjKD0d5g-72-M_nHI-JRNMVcrc5v4IiGuHWxH"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">norah_k</span>
+<span class="font-label-sm text-label-sm text-outline truncate">Ready</span>
+</div>
+</div>
+<div class="w-2 h-2 rounded-full bg-primary-container flex-shrink-0"></div>
+</div>
+<!-- Slot 4: tariq_9 -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-2.5 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<img class="w-9 h-9 rounded-full object-cover flex-shrink-0 shadow-sm" data-alt="Friendly stylized 3D avatar badge of a bearded competitor with a baseball cap on warm cream background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfeu-ekd4v4Ge_8HOBLO3m1XqMn0BmJwEFwrDU_lVWsw9Aw0AntNsNpouVsqgrKY6XggLIfleYfn661A2ajBCH8mGEYEOa-aeRF8dKZcqe3Mjuu7Mwnlec8ycj1Dlnw8MdEbQY0Q851-BEXroEudOIC6MWCtOMUNVtjMp1HPNE7YJofRHO6iuj8RZhTvu5RhS8pN7ov1dMt_O7eLpyYgxlcV93GgcSV83UAr-xpqwWO8R57jcNeWPl"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">tariq_9</span>
+<span class="font-label-sm text-label-sm text-outline truncate">Ready</span>
+</div>
+</div>
+<div class="w-2 h-2 rounded-full bg-primary-container flex-shrink-0"></div>
+</div>
+<!-- Slot 5: lucas_v -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-2.5 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<img class="w-9 h-9 rounded-full object-cover flex-shrink-0 shadow-sm" data-alt="Modern vector character portrait badge of a young man with side-parted hair in a teal turtleneck sweater on cream background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKLmzIVMbD4yQRioESru2GmlO92TLx4hPOskEniKu6CZQwkcEQTIGSN7UPUc5RcQy2ZW_HI0Vcszh_XmPiNWzzik24NZH4yd1U3IKr0z6bKrRQ3KCWTog7YSPL7jq9hPxBNw7GJZzFPtsU74j2XIP2YDKRTAq261qKKrXcikWeMoCTE1NvcbP4EwQtetPzm3yaqo9K9IxFTY7rqkPTbLkW_J9_vvtF4LuuLVVcu-BoPVS511pA8ez1"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">lucas_v</span>
+<span class="font-label-sm text-label-sm text-outline truncate">Ready</span>
+</div>
+</div>
+<div class="w-2 h-2 rounded-full bg-primary-container flex-shrink-0"></div>
+</div>
+<!-- Slot 6: maya_p -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-2.5 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<img class="w-9 h-9 rounded-full object-cover flex-shrink-0 shadow-sm" data-alt="Vibrant clean vector avatar badge of an adventurous female trivia player wearing retro pink glasses on soft warm cream background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZR3PchFhA5k1hwA46wOKEpIlitqMwG4q6Ibxk08Sao7bInnlGdmIICFWXhyidS0IxvU992DjGIEptGE6hqez_gFrn6EEs-HmDL05cQFay2EyMPgyX7ALKt_-_eGWcIzytF5KTpo2cDcoTMGb9_W5abDV2tpIojnZw3WcTRfcS1-b12TiIzfn3ssmipewqnoYzRWsC1G2IzXTubcOnypToauzSFhLtIbbFKRPSNkeRoK2-0DojYv5R"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">maya_p</span>
+<span class="font-label-sm text-label-sm text-outline truncate">Ready</span>
+</div>
+</div>
+<div class="w-2 h-2 rounded-full bg-primary-container flex-shrink-0"></div>
+</div>
+<!-- Slot 7: sam_01 -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-2.5 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<img class="w-9 h-9 rounded-full object-cover flex-shrink-0 shadow-sm" data-alt="Geometric minimalist vector badge of a competitor with sleek dark hair and a bright yellow hoodie on soft cream background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdzGdt7z3R7BdevbzB9F53YiZRZUERe_GzrfciRl99AbBNcjcqSBs6RNWK9sCYBtE7AvUGvyuZFbcojKUQ3Kj0Pab9jI63hM3RSTV39IhAvULINiIniPWPrJIB2yvauCePr1eAPxzkFzrx7EQHO3P7zwD3vHM3YwljTHYX0Z0WyfSmz2vUn3wjwSiT48Jd6rBrlfPc8upVGk86VJnenxmUgtm-FuE5X-n0hpRnkmkD-sU1SGBaCBnX"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">sam_01</span>
+<span class="font-label-sm text-label-sm text-outline truncate">Ready</span>
+</div>
+</div>
+<div class="w-2 h-2 rounded-full bg-primary-container flex-shrink-0"></div>
+</div>
+<!-- Slot 8: jin_lee -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-2.5 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<img class="w-9 h-9 rounded-full object-cover flex-shrink-0 shadow-sm" data-alt="Charming contemporary 3D vector avatar of a contest participant with a confident grin and silver stud earrings on cream background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLiUBezQwzv1BUTHisPGvEIKp-k50uVmNBqYH3p0_5OVp7cLAN_iNnn2QO7eADuGqPQTErKMdt7J7YCyezInBHiRkcnOFKtzo4O-k6P25RixSi6xtrNVaiAg-_vY4z3442kxYJ0RhQKbsKvgfxV4uMCNWjLzpDLqcXtBoZNNhDTH3LeGIXxjPgTUBAMptrVf-eKpoVWUHDghx0lwz0FbEIn0VmAW4B2Zi7vT6TOR9yPTIRAsbrCpWb"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">jin_lee</span>
+<span class="font-label-sm text-label-sm text-outline truncate">Ready</span>
+</div>
+</div>
+<div class="w-2 h-2 rounded-full bg-primary-container flex-shrink-0"></div>
+</div>
+<!-- Slot 9: chloe_d -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-2.5 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<img class="w-9 h-9 rounded-full object-cover flex-shrink-0 shadow-sm" data-alt="Clean flat-art vector portrait of a female trivia champion with a bob haircut and a mint green scarf on warm cream backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLDHVzDBTt4q4f6NKQaEtngoCxTEdeVISCgHLOmASm-k2nuQuin2lXr9Ms-NWBsnEoaCfsHP3Evtj63BkIjoA5MLbxzx8H5XNYMAALNPLoKZsiyaOQNFCaUlzWdITGtzZy9bS9tXcCmTRh48qiTlOpUtH1ZQBtXeWdM5Zz7q-PEyIINPEmZyUx2UHPXcIcnaYa_ZW2v4ffSpFqbBz32mqI47kvjhWE3XnRKDEKodXp3Z7FtrVNKXM5"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">chloe_d</span>
+<span class="font-label-sm text-label-sm text-outline truncate">Ready</span>
+</div>
+</div>
+<div class="w-2 h-2 rounded-full bg-primary-container flex-shrink-0"></div>
+</div>
+<!-- Slot 10: kai_zen -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-2.5 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<img class="w-9 h-9 rounded-full object-cover flex-shrink-0 shadow-sm" data-alt="Expressive modern vector avatar of a focused male player with slick black hair and deep green jacket against a warm neutral studio canvas." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIBgAT2TcMvvHoS52XbZwj9fvul-CrpQOoA9591cfLePfjA42uo9LQ_jNpr9QueOJZhbVJ2-okcbjsbR6nHpygvDp2jvOV3UsFchvso68q5j2tvZnCzAgRnZQtVC1xWtbg8ZpQtiVLG3tYwAz0lpRRjH49HZ7aF4B3-e-QifOoyQ_F5JBvVXg453iXC1otKM1LNzdagX92JnMCiW4RhDZxzt-BxF2D_1Ku6LrvWQTDaMMubMWRq244"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">kai_zen</span>
+<span class="font-label-sm text-label-sm text-outline truncate">Ready</span>
+</div>
+</div>
+<div class="w-2 h-2 rounded-full bg-primary-container flex-shrink-0"></div>
+</div>
+</div>
+<!-- Compact Rules Reminder Footer -->
+<div class="w-full bg-surface-container-low rounded-DEFAULT p-space-md shadow-sm flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-secondary-container/20 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-secondary text-[22px]" style="font-variation-settings: 'FILL' 1;">timer_10</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold">11s round timer</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Wrong or no answer eliminates instantly</span>
+</div>
+</div>
+</div>
+<script>
+  (function initSurvivalCountdown() {
+    let timeLeft = 3;
+    const totalTime = 3;
+    const totalCircumference = 264;
+    const numEl = document.getElementById('countdown-val');
+    const ringEl = document.getElementById('countdown-circle');
+
+    if (!numEl || !ringEl) return;
+
+    const interval = setInterval(() => {
+      timeLeft -= 1;
+      if (timeLeft <= 0) {
+        clearInterval(interval);
+        numEl.textContent = 'GO!';
+        numEl.classList.add('text-secondary');
+        ringEl.style.strokeDashoffset = totalCircumference;
+      } else {
+        numEl.textContent = timeLeft;
+        const progress = (totalTime - timeLeft) / totalTime;
+        ringEl.style.strokeDashoffset = progress * totalCircumference;
+      }
+    }, 1000);
+  })();
+</script></main></body></html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "secondary-fixed": "#ffd9e0", "on-surface": "#151b2a", "inverse-on-surface": "#edf0ff", "on-primary": "#ffffff", "tertiary-container": "#ce9d1d", "surface-dim": "#d4d9ee", "surface-container-highest": "#dde2f7", "primary-fixed-dim": "#50dbc8", "on-tertiary-container": "#4c3700", "background": "#faf8ff", "on-secondary-fixed": "#3f0019", "tertiary-fixed": "#ffdf9e", "surface-variant": "#dde2f7", "on-primary-container": "#00423b", "error-container": "#ffdad6", "on-error": "#ffffff", "surface-tint": "#006b5f", "outline-variant": "#bbcac6", "secondary-container": "#ff6695", "error": "#ba1a1a", "secondary-fixed-dim": "#ffb1c3", "tertiary-fixed-dim": "#f4bf40", "on-surface-variant": "#3c4947", "surface-container": "#e9edff", "on-background": "#151b2a", "on-tertiary": "#ffffff", "surface-container-lowest": "#ffffff", "primary-fixed": "#71f8e4", "surface-bright": "#faf8ff", "on-error-container": "#93000a", "secondary": "#af2759", "surface-container-high": "#e2e7fd", "on-tertiary-fixed-variant": "#5b4300", "on-secondary-container": "#6a002f", "on-primary-fixed": "#00201c", "on-tertiary-fixed": "#261a00", "on-secondary": "#ffffff", "primary-container": "#16b8a6", "inverse-surface": "#2a3040", "tertiary": "#795900", "surface-container-low": "#f2f3ff", "on-secondary-fixed-variant": "#8e0441", "on-primary-fixed-variant": "#005048", "primary": "#006b5f", "outline": "#6c7a77", "inverse-primary": "#50dbc8", "surface": "#faf8ff" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "space-xl": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-md": "0.75rem", "space-2xl": "2rem", "gutter-compact": "0.5rem", "margin-mobile": "1.25rem", "margin": "1.25rem", "space-lg": "1rem", "gutter": "0.75rem" }, fontFamily: { "headline-xl": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-stat": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"] }, fontSize: { "headline-xl": ["34px", { "lineHeight": "40px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-lg": ["17px", { "lineHeight": "24px", "fontWeight": "500" }], "headline-lg": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "700" }], "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "500" }], "label-md": ["13px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "700" }], "display-stat": ["44px", { "lineHeight": "48px", "letterSpacing": "-0.04em", "fontWeight": "800" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "800" }], "headline-xl-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.025em", "fontWeight": "800" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "700" }] } } } }</script></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><main class="flex-1 flex flex-col relative w-full pt-safe pb-safe px-margin-mobile bg-surface"><div class="flex flex-col w-full pb-6 space-y-4">
+<!-- Pinned Top HUD: Round Status, Completed Timer & Survived Toast -->
+<header class="w-full flex flex-col gap-2 pt-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 bg-surface-container-high rounded-full font-label-sm text-on-surface-variant tracking-wider uppercase flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+          Survival Mode
+        </span>
+<span class="font-label-md text-on-surface">Round 5 Resolved</span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1 bg-surface-container-lowest rounded-full shadow-sm text-on-surface-variant font-label-sm">
+<span class="material-symbols-outlined text-sm text-secondary">timer_off</span>
+<span>00s</span>
+</div>
+</div>
+<!-- Celebration Hero Toast: You Survived -->
+<div class="w-full bg-primary-fixed/30 rounded-2xl p-3 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<h1 class="font-headline-sm text-on-surface">You Survived!</h1>
+<span class="px-2 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-[10px] uppercase tracking-wider">Safe</span>
+</div>
+<p class="font-body-sm text-on-surface-variant">Rank #2 maintained · +150 Survival Pts</p>
+</div>
+</div>
+<div class="text-right pr-1">
+<span class="font-headline-md text-primary font-headline-lg">+1</span>
+<p class="font-label-sm text-on-surface-variant uppercase text-[10px]">Life Kept</p>
+</div>
+</div>
+</header>
+<!-- Survival Roster (10 Players: 5 Active, 2 Just Eliminated, 3 Prior Eliminated) -->
+<section class="bg-surface-container-lowest p-3.5 rounded-2xl shadow-sm flex flex-col gap-2.5">
+<div class="flex items-center justify-between px-0.5">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-on-surface">Live Grid</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-[10px]">5 Remaining</span>
+</div>
+<span class="font-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">skull</span>
+        2 Eliminated this round
+      </span>
+</div>
+<!-- 10 Players Micro Avatars Grid -->
+<div class="grid grid-cols-5 gap-2 pt-1">
+<!-- Player 1: You (Active/Safe) -->
+<div class="flex flex-col items-center gap-1 relative">
+<div class="relative w-12 h-12 rounded-2xl p-0.5 bg-primary-container">
+<img class="w-full h-full rounded-[14px] object-cover" data-alt="Playful competitive 3D avatar with friendly expression, turquoise cap, gaming headphones in clean studio light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_Fzw6dmRY272_6eyg-xFzITPDXIVytetsXh6wNU0R6XDCGeRW0rFrdIw02yVo-bvUbHDu_ngOxqC9WWfAXpPAugc98vMWbHtTRS4Gid_IqTSm0b56p1JpbDzBudJfV6OwQ1azC8aHtEMGrSZyrV1FBuuwmD7475eXRT_xpYExqSjwAIivjWBQjuRcZ4epo_xzyiIX7pchjBZvF9fns8v7SBxAn0t3KIcoJVhcU7WBnQqnEQLzopCu"/>
+<span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-primary text-on-primary flex items-center justify-center text-[10px] shadow-sm">
+<span class="material-symbols-outlined text-[10px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</span>
+</div>
+<span class="font-label-sm text-on-surface truncate max-w-[56px] text-center">You</span>
+</div>
+<!-- Player 2: Active -->
+<div class="flex flex-col items-center gap-1 relative">
+<div class="relative w-12 h-12 rounded-2xl p-0.5 bg-surface-container">
+<img class="w-full h-full rounded-[14px] object-cover" data-alt="Stylized modern 3D illustration avatar of a young woman with glasses and teal hair in flat cheerful game-show design style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSEcp_H4bJubPVb-Z09NN2w5GrEoJkYoTEz3P7cWZgF0HEBQkdvoz8ascatF4LmoDahKYg0OMcDUDFYr6uRbpxFyQYdRhukJ-8OpiUT1CdEHzzXNWLTair0NM5obHYkC8FH3xigUp7S91N4bOBEoqigqaSvbTXtuJKAnBlRaFHqPVd4HNeS0DVBaoVtzFpwzTrQlpcb73Y17KUGbbF7T-KuHuVV6xoz9kN69R_JGW3HkTUhP_vrllF"/>
+<span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-primary text-on-primary flex items-center justify-center text-[10px] shadow-sm">
+<span class="material-symbols-outlined text-[10px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</span>
+</div>
+<span class="font-label-sm text-on-surface truncate max-w-[56px] text-center">Kiko_9</span>
+</div>
+<!-- Player 3: Active -->
+<div class="flex flex-col items-center gap-1 relative">
+<div class="relative w-12 h-12 rounded-2xl p-0.5 bg-surface-container">
+<img class="w-full h-full rounded-[14px] object-cover" data-alt="Minimalist geometric vibrant avatar character with gold beanie, colorful streetwear on clean soft background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFz7mbgThHR3usrp7H36_6Ufn9UMV681aIn1hEN-eIFb0yqV1ZpLPOKaint9P5hxulpwTvI1NtsQ0z2M5nishd_R2zgWMXOy3vRYM28YqAkmh9ePxayhtL9x1N-C6f4yldeZwmiWrDIVwFVeLpYeDtV9ikHnArvkEBfl4hXqFgAWmwvy5rF2giBX4XzfRPIJwSXW42VAS3cwt2LpYujya2Nr0DFMKIluUoICJnIsZXrdg4w8HYf9QK"/>
+<span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-primary text-on-primary flex items-center justify-center text-[10px] shadow-sm">
+<span class="material-symbols-outlined text-[10px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</span>
+</div>
+<span class="font-label-sm text-on-surface truncate max-w-[56px] text-center">Dexter</span>
+</div>
+<!-- Player 4: Active -->
+<div class="flex flex-col items-center gap-1 relative">
+<div class="relative w-12 h-12 rounded-2xl p-0.5 bg-surface-container">
+<img class="w-full h-full rounded-[14px] object-cover" data-alt="Charming digital 3D character portrait of smiling male quiz contestant with electric cyan hoodie and trendy sunglasses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkr6NQPGWfSwXS1amYva84lwFKjnFh1I_ttdtSfvyOupbbN_HPkj_EWIkKbMKWB_kulbAzN9gWaQojlGodQ3t3Xgr-kBcHZhKcE4Ue8F0gNlNkA6tGoioakTo3plo_g_G5LCVW3e8GQPVqW0ydFMqtVc1Ts6tw0Sf0FbgV3OMsHM0nnrEk5BqloxW5LPGD42bVLpmbYNCGoO0CdQtCS5H2cBLVopBmSrwQVaHpjkiBUaUvjrcLPZdW"/>
+<span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-primary text-on-primary flex items-center justify-center text-[10px] shadow-sm">
+<span class="material-symbols-outlined text-[10px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</span>
+</div>
+<span class="font-label-sm text-on-surface truncate max-w-[56px] text-center">Nadia_Z</span>
+</div>
+<!-- Player 5: Active -->
+<div class="flex flex-col items-center gap-1 relative">
+<div class="relative w-12 h-12 rounded-2xl p-0.5 bg-surface-container">
+<img class="w-full h-full rounded-[14px] object-cover" data-alt="Modern geometric avatar of energetic woman with stylish bandana and bright friendly game-show expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABtNyzgePeJR80wW1TueZIsCh7yaOumHO0li1PEzeTe_CgFzibJF0ARCRm0bSfQOpEZ2GY_VkVlum1-yPK8mebX5DEfAetz215JGWRnhwSVxUUjmHkSgL6sR-rLU1FCo2OfMsVRTEM1AdBLIsAhmdeRo-PcTC3GhNBQKDKlGtQHkDo8kkB_IVRcIHnLCfXODhs-OKWGu4Z1biZoT5d1PGihMzgF2aB-BwToXl_XC7F-GEME69KDQZQ"/>
+<span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-primary text-on-primary flex items-center justify-center text-[10px] shadow-sm">
+<span class="material-symbols-outlined text-[10px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</span>
+</div>
+<span class="font-label-sm text-on-surface truncate max-w-[56px] text-center">Voxel</span>
+</div>
+<!-- Player 6: JUST ELIMINATED (Highlighted with red flash badge) -->
+<div class="flex flex-col items-center gap-1 relative opacity-60">
+<div class="relative w-12 h-12 rounded-2xl p-0.5 bg-secondary-container">
+<div class="w-full h-full rounded-[14px] bg-surface-dim flex items-center justify-center grayscale contrast-75 overflow-hidden">
+<span class="material-symbols-outlined text-secondary text-2xl">close</span>
+</div>
+<span class="absolute -bottom-1 -right-1 px-1 py-0.2 rounded-full bg-secondary text-on-secondary font-label-sm text-[8px] uppercase tracking-tighter">OUT</span>
+</div>
+<span class="font-label-sm text-on-surface-variant line-through truncate max-w-[56px] text-center">Arun.B</span>
+</div>
+<!-- Player 7: JUST ELIMINATED -->
+<div class="flex flex-col items-center gap-1 relative opacity-60">
+<div class="relative w-12 h-12 rounded-2xl p-0.5 bg-secondary-container">
+<div class="w-full h-full rounded-[14px] bg-surface-dim flex items-center justify-center grayscale contrast-75 overflow-hidden">
+<span class="material-symbols-outlined text-secondary text-2xl">close</span>
+</div>
+<span class="absolute -bottom-1 -right-1 px-1 py-0.2 rounded-full bg-secondary text-on-secondary font-label-sm text-[8px] uppercase tracking-tighter">OUT</span>
+</div>
+<span class="font-label-sm text-on-surface-variant line-through truncate max-w-[56px] text-center">Sora_Q</span>
+</div>
+<!-- Player 8: Prior Eliminated -->
+<div class="flex flex-col items-center gap-1 relative opacity-30">
+<div class="relative w-12 h-12 rounded-2xl bg-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant text-xl">person_off</span>
+</div>
+<span class="font-label-sm text-on-surface-variant line-through truncate max-w-[56px] text-center">Marco</span>
+</div>
+<!-- Player 9: Prior Eliminated -->
+<div class="flex flex-col items-center gap-1 relative opacity-30">
+<div class="relative w-12 h-12 rounded-2xl bg-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant text-xl">person_off</span>
+</div>
+<span class="font-label-sm text-on-surface-variant line-through truncate max-w-[56px] text-center">TobyX</span>
+</div>
+<!-- Player 10: Prior Eliminated -->
+<div class="flex flex-col items-center gap-1 relative opacity-30">
+<div class="relative w-12 h-12 rounded-2xl bg-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant text-xl">person_off</span>
+</div>
+<span class="font-label-sm text-on-surface-variant line-through truncate max-w-[56px] text-center">Lara_00</span>
+</div>
+</div>
+</section>
+<!-- Current Question Recap -->
+<section class="bg-surface-container-lowest p-4 rounded-2xl shadow-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-on-surface-variant uppercase tracking-wider">World Heritage &amp; History</span>
+<span class="font-label-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">stars</span>
+        Hard Difficulty
+      </span>
+</div>
+<h2 class="font-headline-sm text-on-surface leading-tight">
+      Which ancient rock-cut city in southwestern Jordan was carved directly into pink sandstone cliffs?
+    </h2>
+</section>
+<!-- Answer Cards Stack: Correct Answer A clearly marked -->
+<section class="flex flex-col gap-2.5">
+<!-- Option A: CORRECT ANSWER (Highlight state) -->
+<div class="w-full min-h-[64px] rounded-2xl p-3.5 bg-primary-fixed/40 shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-xl bg-primary text-on-primary flex items-center justify-center font-headline-sm">
+          A
+        </div>
+<div class="flex flex-col">
+<span class="font-label-lg text-on-surface font-headline-sm">Petra</span>
+<span class="font-body-sm text-on-primary-container text-xs">Chosen by you &amp; 4 other survivors</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary text-on-primary font-label-sm text-xs shadow-sm">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>CORRECT ANSWER</span>
+</div>
+</div>
+<!-- Option B: Incorrect -->
+<div class="w-full min-h-[58px] rounded-2xl p-3 bg-surface-container-lowest shadow-sm flex items-center justify-between opacity-50">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-xl bg-surface-variant text-on-surface-variant flex items-center justify-center font-label-md">
+          B
+        </div>
+<span class="font-body-lg text-on-surface">Persepolis</span>
+</div>
+<span class="font-label-sm text-secondary flex items-center gap-1 text-xs">
+<span class="material-symbols-outlined text-xs">person_remove</span>
+        1 Eliminated
+      </span>
+</div>
+<!-- Option C: Incorrect -->
+<div class="w-full min-h-[58px] rounded-2xl p-3 bg-surface-container-lowest shadow-sm flex items-center justify-between opacity-50">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-xl bg-surface-variant text-on-surface-variant flex items-center justify-center font-label-md">
+          C
+        </div>
+<span class="font-body-lg text-on-surface">Palmyra</span>
+</div>
+<span class="font-label-sm text-on-surface-variant text-xs">0 Chosen</span>
+</div>
+<!-- Option D: Incorrect -->
+<div class="w-full min-h-[58px] rounded-2xl p-3 bg-surface-container-lowest shadow-sm flex items-center justify-between opacity-50">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-xl bg-surface-variant text-on-surface-variant flex items-center justify-center font-label-md">
+          D
+        </div>
+<span class="font-body-lg text-on-surface">Ephesus</span>
+</div>
+<span class="font-label-sm text-secondary flex items-center gap-1 text-xs">
+<span class="material-symbols-outlined text-xs">person_remove</span>
+        1 Eliminated
+      </span>
+</div>
+</section>
+<!-- All-Wrong Rescue Rule / Safety Policy Note -->
+<div class="w-full rounded-2xl bg-surface-container p-3 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-on-surface-variant text-lg mt-0.5">info</span>
+<p class="font-body-sm text-on-surface-variant text-xs leading-relaxed">
+<strong class="font-label-sm text-on-surface">Rescue Rule Applied:</strong> If no players choose correctly, all answering contestants remain safe. Round 6 introduces moderate difficulty modifiers.
+    </p>
+</div>
+<!-- Automatic Round Advancement Indicator -->
+<footer class="w-full pt-1">
+<div class="w-full rounded-2xl bg-surface-container-high p-3.5 flex flex-col gap-2 shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-2.5 h-2.5 rounded-full bg-primary-container animate-ping"></div>
+<span class="font-label-md text-on-surface" id="advance-label">Advancing to Round 6 in 2s...</span>
+</div>
+<span class="font-label-sm text-primary font-headline-sm uppercase tracking-wider">Fast Lane</span>
+</div>
+<!-- Seamless 2s Progress Bar -->
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full w-full transition-all duration-[2000ms] ease-linear" id="advance-bar"></div>
+</div>
+</div>
+</footer>
+</div>
+<script>
+  // Dynamic countdown micro-interaction for auto-advance prompt
+  (function() {
+    const label = document.getElementById('advance-label');
+    const bar = document.getElementById('advance-bar');
+    if (!label || !bar) return;
+
+    // Trigger visual depletion immediately
+    requestAnimationFrame(() => {
+      bar.style.width = '0%';
+    });
+
+    let seconds = 2;
+    const interval = setInterval(() => {
+      seconds--;
+      if (seconds > 0) {
+        label.textContent = `Advancing to Round 6 in ${seconds}s...`;
+      } else {
+        label.textContent = 'Loading Round 6 Match...';
+        clearInterval(interval);
+      }
+    }, 1000);
+  })();
+</script></main></body></html>

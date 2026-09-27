@@ -1,0 +1,39 @@
+# originals kept outside VCS (copies live under docs/)
+/stitch_oltivra.zip
+/stitch_oltivra/
+/synova_live_trivia_development_spec_v1_1.md
+
+# python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# node
+node_modules/
+.next/
+out/
+
+# flutter
+mobile/.dart_tool/
+mobile/build/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+*.iml
+.idea/
+
+# firebase
+firebase-debug.log
+firestore-debug.log
+database-debug.log
+ui-debug.log
+.firebase/
+emulator-data/
+
+# secrets
+.env
+*.key
+service-account*.json

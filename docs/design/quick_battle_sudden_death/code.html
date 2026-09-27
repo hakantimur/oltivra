@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface": "#faf8ff", "inverse-surface": "#2a3040", "on-primary-fixed": "#00201c", "tertiary-container": "#ce9d1d", "inverse-on-surface": "#edf0ff", "primary": "#006b5f", "surface-bright": "#faf8ff", "outline": "#6c7a77", "surface-container": "#e9edff", "primary-fixed": "#71f8e4", "on-secondary-container": "#6a002f", "surface-container-high": "#e2e7fd", "on-tertiary-container": "#4c3700", "inverse-primary": "#50dbc8", "on-secondary-fixed": "#3f0019", "on-primary": "#ffffff", "on-surface": "#151b2a", "primary-fixed-dim": "#50dbc8", "secondary-container": "#ff6695", "surface-tint": "#006b5f", "on-secondary-fixed-variant": "#8e0441", "secondary-fixed-dim": "#ffb1c3", "on-error": "#ffffff", "on-tertiary-fixed-variant": "#5b4300", "surface-dim": "#d4d9ee", "background": "#faf8ff", "tertiary-fixed-dim": "#f4bf40", "on-primary-container": "#00423b", "on-surface-variant": "#3c4947", "outline-variant": "#bbcac6", "on-primary-fixed-variant": "#005048", "on-error-container": "#93000a", "on-secondary": "#ffffff", "primary-container": "#16b8a6", "tertiary-fixed": "#ffdf9e", "on-background": "#151b2a", "surface-container-lowest": "#ffffff", "on-tertiary": "#ffffff", "on-tertiary-fixed": "#261a00", "tertiary": "#795900", "surface-container-low": "#f2f3ff", "secondary-fixed": "#ffd9e0", "surface-container-highest": "#dde2f7", "error": "#ba1a1a", "error-container": "#ffdad6", "secondary": "#af2759", "surface-variant": "#dde2f7" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "margin-mobile": "1.25rem", "margin": "1.25rem", "space-2xl": "2rem", "space-lg": "1rem", "gutter": "0.75rem", "space-md": "0.75rem", "space-xl": "1.5rem", "space-sm": "0.5rem", "gutter-compact": "0.5rem", "space-xs": "0.25rem" }, fontFamily: { "body-md": ["Plus Jakarta Sans"], "display-stat": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"] }, fontSize: { "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "500" }], "display-stat": ["44px", { "lineHeight": "48px", "letterSpacing": "-0.04em", "fontWeight": "800" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "700" }], "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "700" }], "body-lg": ["17px", { "lineHeight": "24px", "fontWeight": "500" }], "headline-xl-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.025em", "fontWeight": "800" }], "label-md": ["13px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "700" }], "headline-lg": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "800" }], "headline-xl": ["34px", { "lineHeight": "40px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "500" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><button aria-label="Leave Match" class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">close</span></button><div class="flex flex-col"><span class="font-label-sm text-label-sm text-outline uppercase">Round</span><span class="font-headline-sm text-headline-sm text-on-surface leading-none">Live Trivia Duel</span></div></div><div class="flex items-center gap-space-xs"><div class="px-space-sm py-space-xs bg-surface-container-lowest rounded-full shadow-[0_2px_6px_rgba(27,33,48,0.04)] flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[18px]">timer</span><span class="font-label-md text-label-md text-primary">10s</span></div><div class="px-space-sm py-space-xs bg-tertiary-fixed rounded-full flex items-center gap-space-xs"><span class="material-symbols-outlined text-on-tertiary-fixed text-[16px]">bolt</span><span class="font-label-md text-label-md text-on-tertiary-fixed">840</span></div><button aria-label="Send Reaction" class="w-11 h-11 rounded-full bg-surface-container-lowest shadow-[0_2px_6px_rgba(27,33,48,0.04)] flex items-center justify-center text-secondary hover:bg-secondary-container/20 transition-transform active:scale-95"><span class="material-symbols-outlined text-[22px]">sentiment_very_satisfied</span></button></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="flex flex-col relative w-full px-margin pt-20 pb-safe bg-surface flex-1"><div class="flex flex-col w-full pb-6 space-y-space-md">
+<!-- Sudden Death Alert Banner -->
+<div class="w-full bg-secondary text-on-secondary rounded-lg p-space-md shadow-md flex items-center justify-between gap-space-sm animate-pulse">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-full bg-surface-container-lowest/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px] text-on-secondary">local_fire_department</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed">Sudden Death Overtime</span>
+<span class="font-headline-sm text-headline-sm leading-tight truncate">First correct answer wins the match</span>
+</div>
+</div>
+<div class="shrink-0 bg-surface-container-lowest text-secondary px-space-sm py-1 rounded-full font-label-md text-label-md shadow-sm">
+      1v1 Tie
+    </div>
+</div>
+<!-- Real-time Tied Duelists & Spectators Grid -->
+<div class="grid grid-cols-2 gap-gutter">
+<!-- Active Contender 1: kevin_q -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-space-sm shadow-sm flex flex-col justify-between space-y-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="relative">
+<img class="w-8 h-8 rounded-full object-cover" data-alt="Playful vibrant avatar of a smiling young male esports competitor with teal gaming headset in clean geometric flat illustrative style with soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxaSsPZ4I-8sF__JN2P2Fjc0ftLi7hZrPCZuRQMQQ-TLNx-WFP7Q-QllDHCr2bflLe5zTDb53r1tXd6qRh06eIweSYrlhw_g_1pUL_kL3wnBFRbb4lO_6kIVxsWDgwMIORJmhdskRlhhR1dcxWyJTg4pXoyVURIzZJfYSF0ix_KojpPQ3B5psBt8yqBB31BcOXo8xi8bgT0lzsZkaDTOLi-JnPrEjFxESPpjWYzmWqC76mdNbntVAe"/>
+<span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 bg-primary-container rounded-full"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">kevin_q</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Active Duelist</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 bg-secondary-fixed text-on-secondary-fixed rounded-full">Tied 1st</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-outline">Score</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">42 <span class="font-label-sm text-label-sm text-outline">pts</span></span>
+</div>
+</div>
+<!-- Active Contender 2: mira_moves (You) -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-space-sm shadow-sm flex flex-col justify-between space-y-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="relative">
+<img class="w-8 h-8 rounded-full object-cover" data-alt="Warm smiling female gamer avatar with colorful geometric bangs and vibrant studio lighting on pale turquoise background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2qmd9_6nNgKCabCm2zULXkg2929SxyHFM2shhwUL4HHAOa5goGOahLfiF4bu8dbo4bv-cCXg_f_E88_c1rq0Pp_TuRdMU-x055E4W4mLtF-mv91h-sPH8UVgeho-NlNm7nlOtI4r1XSckPBTroi_9ohzSCYk7d_LsLvGs2vw1ggPk9goSZm8WqhunftzOXqFA9q8MPIzESzjpVC7FuilOGtbeyhr3h7-uPCR3D3q3PAnJ5VEudrDP"/>
+<span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 bg-primary-container rounded-full"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">mira_moves <span class="text-primary">(You)</span></span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Active Duelist</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 bg-secondary-fixed text-on-secondary-fixed rounded-full">Tied 1st</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-outline">Score</span>
+<span class="font-headline-sm text-headline-sm text-primary">42 <span class="font-label-sm text-label-sm text-outline">pts</span></span>
+</div>
+</div>
+<!-- Spectator 1: sora_7 (Dimmed) -->
+<div class="bg-surface-container-high/60 rounded-DEFAULT p-space-sm flex items-center justify-between opacity-60">
+<div class="flex items-center gap-space-xs min-w-0">
+<img class="w-7 h-7 rounded-full object-cover grayscale" data-alt="Stylized portrait avatar of a relaxed casual player wearing yellow spectacles in contemporary cheerful flat art style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDACJqa7oZn2kspphlQQRbBVbctx80GKia3gzW9VCGo0NINJLsLSpVTG6f9WughytnlPkEKmt5eJqY5NYQVMfesHrsccSM4AYXSW5TonzC-jfF4l2o297I_aDzhSdvTzsPYYb4hseVthDgWq8YLaUP2_Yv935PF3LjS5UqCpIKBG4LyVFz11i1wozJ2tOMmztOsh-4bZkEfnk2troeXHzFMZkb4rdnmXvd4YHEB8rw9f0OCLErZzz5C"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">sora_7</span>
+<span class="font-label-sm text-label-sm text-outline">Spectating</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-outline">21 pts</span>
+</div>
+<!-- Spectator 2: elena_z (Dimmed) -->
+<div class="bg-surface-container-high/60 rounded-DEFAULT p-space-sm flex items-center justify-between opacity-60">
+<div class="flex items-center gap-space-xs min-w-0">
+<img class="w-7 h-7 rounded-full object-cover grayscale" data-alt="Vector illustrated portrait of a female trivia contestant in soft monochrome grey tones with purple highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDmg7g34VmEGdZrwhWBOTe1qK_7XF1kDYt9lR1JjruTXNyG8TKxrMFnARLMgqTKT8EGDjCfiCCFJY1QzjoUMv0siO9ZBbm-FW7F1dZedzrIkCKj1GygrGX_GCo47KlQUEV4iXFteGBGxebZiPruPHtxFbBrSHmkBcg0mRBfySaSpuQUvpbgSiaAWPZ1aGEWWvWLSNUwb3IxsumL53BssNuVL2g7EeY8lnY0045hmA_8Dg6rjwQ8d-4"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">elena_z</span>
+<span class="font-label-sm text-label-sm text-outline">Spectating</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-outline">28 pts</span>
+</div>
+</div>
+<!-- Timer Bar: 11 Seconds High Alert -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-space-sm shadow-sm flex flex-col space-y-space-xs">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<div class="flex items-center gap-1 text-secondary font-bold">
+<span class="material-symbols-outlined text-[16px]">alarm</span>
+<span>FINAL COUNTDOWN</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-extrabold" id="countdown-text">11s</span>
+</div>
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full transition-all duration-1000 ease-linear" id="countdown-bar" style="width: 73%;"></div>
+</div>
+</div>
+<!-- Tiebreaker Question Card -->
+<div class="bg-surface-container-lowest rounded-lg p-space-lg shadow-sm flex flex-col space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm px-space-sm py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary">public</span>
+        Geography &amp; World · Hard
+      </span>
+<span class="text-secondary font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span> Tiebreaker
+      </span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">
+      What is the only sea on Earth that has no coastline?
+    </h2>
+<div class="flex items-center gap-space-xs text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">info</span>
+<span>No second chances. The first accurate lock wins.</span>
+</div>
+</div>
+<!-- Four Large Neutral Answer Options -->
+<div class="flex flex-col space-y-gutter-compact pt-1" id="trivia-options">
+<!-- Option A -->
+<button class="answer-btn w-full bg-surface-container-lowest text-on-surface hover:bg-surface-container-low active:scale-[0.99] transition-all rounded-DEFAULT p-space-md shadow-sm flex items-center justify-between group text-left" onclick="selectAnswer(this, 'A')" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<span class="pill-indicator w-9 h-9 rounded-full bg-surface-container-high text-on-surface font-headline-sm text-headline-sm flex items-center justify-center shrink-0 group-hover:bg-primary-container group-hover:text-on-primary">
+          A
+        </span>
+<span class="font-body-lg text-body-lg text-on-surface font-bold truncate">Sargasso Sea</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[22px] opacity-20 group-hover:opacity-100 transition-opacity">radio_button_unchecked</span>
+</button>
+<!-- Option B -->
+<button class="answer-btn w-full bg-surface-container-lowest text-on-surface hover:bg-surface-container-low active:scale-[0.99] transition-all rounded-DEFAULT p-space-md shadow-sm flex items-center justify-between group text-left" onclick="selectAnswer(this, 'B')" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<span class="pill-indicator w-9 h-9 rounded-full bg-surface-container-high text-on-surface font-headline-sm text-headline-sm flex items-center justify-center shrink-0 group-hover:bg-primary-container group-hover:text-on-primary">
+          B
+        </span>
+<span class="font-body-lg text-body-lg text-on-surface font-bold truncate">Weddell Sea</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[22px] opacity-20 group-hover:opacity-100 transition-opacity">radio_button_unchecked</span>
+</button>
+<!-- Option C -->
+<button class="answer-btn w-full bg-surface-container-lowest text-on-surface hover:bg-surface-container-low active:scale-[0.99] transition-all rounded-DEFAULT p-space-md shadow-sm flex items-center justify-between group text-left" onclick="selectAnswer(this, 'C')" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<span class="pill-indicator w-9 h-9 rounded-full bg-surface-container-high text-on-surface font-headline-sm text-headline-sm flex items-center justify-center shrink-0 group-hover:bg-primary-container group-hover:text-on-primary">
+          C
+        </span>
+<span class="font-body-lg text-body-lg text-on-surface font-bold truncate">Coral Sea</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[22px] opacity-20 group-hover:opacity-100 transition-opacity">radio_button_unchecked</span>
+</button>
+<!-- Option D -->
+<button class="answer-btn w-full bg-surface-container-lowest text-on-surface hover:bg-surface-container-low active:scale-[0.99] transition-all rounded-DEFAULT p-space-md shadow-sm flex items-center justify-between group text-left" onclick="selectAnswer(this, 'D')" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<span class="pill-indicator w-9 h-9 rounded-full bg-surface-container-high text-on-surface font-headline-sm text-headline-sm flex items-center justify-center shrink-0 group-hover:bg-primary-container group-hover:text-on-primary">
+          D
+        </span>
+<span class="font-body-lg text-body-lg text-on-surface font-bold truncate">Timor Sea</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[22px] opacity-20 group-hover:opacity-100 transition-opacity">radio_button_unchecked</span>
+</button>
+</div>
+<!-- Live Hype Toast (Micro-Interaction Feed) -->
+<div class="flex items-center justify-center gap-2 py-1 text-center">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<p class="font-label-sm text-label-sm text-outline">
+      kevin_q is hovering on an answer...
+    </p>
+</div>
+</div>
+<script>
+  let hasLocked = false;
+  let remainingSeconds = 11;
+
+  const timerInterval = setInterval(() => {
+    if (remainingSeconds > 0) {
+      remainingSeconds--;
+      const textElem = document.getElementById('countdown-text');
+      const barElem = document.getElementById('countdown-bar');
+      if (textElem && barElem) {
+        textElem.textContent = remainingSeconds + 's';
+        barElem.style.width = Math.max(0, (remainingSeconds / 15) * 100) + '%';
+      }
+    } else {
+      clearInterval(timerInterval);
+    }
+  }, 1000);
+
+  function selectAnswer(buttonElement, key) {
+    if (hasLocked) return;
+    hasLocked = true;
+
+    const allButtons = document.querySelectorAll('.answer-btn');
+    allButtons.forEach(btn => {
+      btn.disabled = true;
+      btn.classList.add('opacity-50', 'pointer-events-none');
+    });
+
+    buttonElement.classList.remove('opacity-50', 'bg-surface-container-lowest');
+    buttonElement.classList.add('bg-primary-fixed', 'text-on-primary-fixed', 'shadow-md');
+
+    const pill = buttonElement.querySelector('.pill-indicator');
+    if (pill) {
+      pill.classList.remove('bg-surface-container-high', 'text-on-surface');
+      pill.classList.add('bg-primary', 'text-on-primary');
+    }
+
+    const icon = buttonElement.querySelector('.material-symbols-outlined');
+    if (icon) {
+      icon.textContent = 'check_circle';
+      icon.classList.remove('opacity-20', 'text-outline');
+      icon.classList.add('text-primary');
+      icon.style.fontVariationSettings = "'FILL' 1";
+    }
+  }
+</script></main></body></html>
