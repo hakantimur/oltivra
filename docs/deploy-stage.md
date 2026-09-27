@@ -59,8 +59,11 @@ flutter build appbundle --release \
   --dart-define=AUTH_MODE=firebase --dart-define=LIVE_MODE=rtdb --dart-define=USE_EMULATORS=false \
   --dart-define=FIREBASE_PROJECT_ID=synova-36a5f --dart-define=FIREBASE_API_KEY=<android api key> \
   --dart-define=FIREBASE_APP_ID=1:269747180478:android:6c258e7cd845535c8a1fef \
-  --dart-define=FIREBASE_SENDER_ID=269747180478 --dart-define=GOOGLE_SERVER_CLIENT_ID=<web oauth client id>
+  --dart-define=FIREBASE_SENDER_ID=269747180478 --dart-define=GOOGLE_SERVER_CLIENT_ID=<web oauth client id> \n  --dart-define=ADMOB_INTERSTITIAL_ANDROID=ca-app-pub-8532987166068354/4350238650 \n  --dart-define=ADMOB_REWARDED_ANDROID=ca-app-pub-8532987166068354/7801389346
 ```
+
+The AdMob app ID lives in `mobile/android/gradle.properties` (`admobAppId`). Debug builds keep Google's sample ad
+units, so never tap real ads while developing.
 
 App Check uses Play Integrity (the Firebase Android app lists the SHA-256 of the Play app-signing key and the Play
 Console links the Cloud project under *Play Integrity API*). Emulator or sideloaded builds pass
