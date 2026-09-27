@@ -8,6 +8,7 @@ from fastapi import FastAPI
 def register_routers(app: FastAPI) -> None:
     from app.routers import (
         admin,
+        admin_moderation,
         catalog,
         internal,
         matches,
@@ -32,5 +33,6 @@ def register_routers(app: FastAPI) -> None:
     app.include_router(social.router)
     app.include_router(monetization.router)
     app.include_router(admin.router)
+    app.include_router(admin_moderation.router)
     app.include_router(internal.router)
     app.include_router(internal.provider_router)

@@ -124,6 +124,15 @@ class ModerationConfig(BaseModel):
     question_quarantine_min_reporters: int = 10
     question_quarantine_rate: float = 0.02
     question_report_period_ms: int = 30 * 86_400_000
+    # Anti-cheat risk score (spec §28.4): graduated, temporary restrictions; never an automatic ban.
+    risk_fast_correct_ms: int = Field(default=300, ge=100, le=2000)
+    risk_fast_correct_min_rounds: int = Field(default=3, ge=1)
+    risk_half_life_days: float = Field(default=14.0, gt=0)
+    risk_review_score: float = 25.0
+    risk_ranked_restrict_score: float = 40.0
+    risk_ranked_restrict_ms: int = 7 * 86_400_000
+    risk_queue_restrict_score: float = 80.0
+    risk_queue_restrict_ms: int = 86_400_000
 
 
 class ContentConfig(BaseModel):

@@ -104,6 +104,11 @@ class PartyService:
         return self._c.tasks.schedule(TaskRequest(kind, shard, eta_ms, {"party_id": party_id}, (party_id,)))
 
     # ------------------------------------------------------------------------------------------ challenge
+    async def _ensure_can_play(self, uid: str) -> None:
+        from app.moderation.sanctions import ensure_can_play
+
+        ensure_can_play(await self._c.store.get(f"users/{uid}"), self._c.clock.now_ms())
+
     async def create_challenge(self, host_uid: str, friend_public_ids: list[str], language: str) -> dict[str, Any]:
         c = self._c
         config = await c.config.get()
@@ -111,6 +116,7 @@ class PartyService:
             raise ApiError(ErrorCode.CAPACITY_UNAVAILABLE, retry_after_s=30)
         if language not in config.features.competitive_languages:
             raise ApiError(ErrorCode.FEATURE_DISABLED, detail={"feature": "question_language"})
+        await self._ensure_can_play(host_uid)
         unique = list(dict.fromkeys(friend_public_ids))
         if not 1 <= len(unique) <= MAX_INVITES:
             raise ApiError(ErrorCode.INVALID_REQUEST, detail={"reason": "invite_count"})
@@ -157,6 +163,7 @@ class PartyService:
         now = c.clock.now_ms()
         if not invite or invite.get("uid") != uid:
             raise ApiError(ErrorCode.NOT_FOUND)
+        await self._ensure_can_play(uid)
         party = await c.store.get(party_path(invite["party_id"]))
         if not party:
             raise ApiError(ErrorCode.NOT_FOUND)
@@ -350,6 +357,7 @@ class PartyService:
         idx = await c.store.get(f"match_index/{match_id}")
         if not idx or uid not in (idx.get("participant_uids") or []):
             raise ApiError(ErrorCode.NOT_MATCH_PARTICIPANT)
+        await self._ensure_can_play(uid)
         ledger = await c.store.get(f"settlement_ledgers/{match_id}")
         if not ledger or ledger.get("status") != "SETTLED":
             # Exposure history must be committed before a rematch selects questions.

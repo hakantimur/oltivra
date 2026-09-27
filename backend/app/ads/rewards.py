@@ -237,7 +237,18 @@ class RewardService:
             return {"granted": True, "duplicate": False, "uid": uid, "bonus_xp": bonus, "total_xp": total,
                     "level": level_for_xp(total)}
 
-        result = await c.store.run_transaction(txn_fn)
+        try:
+            result = await c.store.run_transaction(txn_fn)
+        except ApiError as exc:
+            if (exc.detail or {}).get("reason") == "offer_state":
+                # A signed callback that does not match the offer binding is a reward anomaly (spec §28.4).
+                from app.moderation.risk import RiskSignal
+
+                rows = await c.store.query(_offer_query(match_id, data["offer_id"]))
+                if rows and rows[0].data.get("uid"):
+                    await c.risk.record(rows[0].data["uid"], RiskSignal.REWARD_ANOMALY,
+                                        evidence={"match_id": match_id})
+            raise
         return {"ok": True, "granted": result["granted"], "duplicate": result["duplicate"]}
 
 

@@ -65,7 +65,11 @@ class PurchaseService:
                                                   "updated_at_ms": now})
             return {"state": tx["state"], "uid": owner}
 
-        return await self._c.store.run_transaction(txn_fn)
+        from app.moderation.risk import RiskSignal, watch
+
+        async with watch(self._c, uid, RiskSignal.PURCHASE_ANOMALY, reasons={"purchase_bound_to_other_account"},
+                         evidence={"tx": tx_id}):
+            return await self._c.store.run_transaction(txn_fn)
 
     async def entitlements(self, uid: str) -> dict[str, Any]:
         doc = await self._c.store.get(entitlement_path(uid)) or {}
