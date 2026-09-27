@@ -1,4 +1,4 @@
-package com.oltivra.oltivra
+package com.noriloop.oltivra
 
 import io.flutter.embedding.android.FlutterActivity
 
