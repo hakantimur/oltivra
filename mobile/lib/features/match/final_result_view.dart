@@ -20,7 +20,6 @@ class FinalResultView extends StatelessWidget {
     required this.onPlayAgain,
     this.onRematch,
     this.rematching = false,
-    this.onRewardOffer,
     this.onReportPlayer,
   });
 
@@ -31,8 +30,6 @@ class FinalResultView extends StatelessWidget {
   final VoidCallback? onRematch;
   final bool rematching;
 
-  /// Non-null when this viewer has a rewarded-XP offer and rewarded ads are enabled.
-  final VoidCallback? onRewardOffer;
 
   /// Opens the player report flow for a participant's public id.
   final ValueChanged<String>? onReportPlayer;
@@ -107,15 +104,6 @@ class FinalResultView extends StatelessWidget {
             onReport: onReportPlayer == null || entry['pid'] == myPid ? null : () => onReportPlayer!('${entry['pid']}'),
           ),
         const SizedBox(height: OSpace.xl),
-        if (onRewardOffer != null) ...[
-          OButton(
-            label: context.t('match.reward_offer'),
-            icon: Icons.play_circle_outline_rounded,
-            style: OButtonStyle.secondary,
-            onPressed: onRewardOffer,
-          ),
-          const SizedBox(height: OSpace.md),
-        ],
         if (me != null) ...[
           OButton(label: context.t('match.play_again'), icon: Icons.play_arrow_rounded, onPressed: onPlayAgain),
           const SizedBox(height: OSpace.sm),
@@ -279,6 +267,32 @@ class _ProgressCard extends StatelessWidget {
           Expanded(child: Text(context.t('match.level_up', {'level': levelAfter}), style: OText.labelLg)),
         ],
       ));
+    }
+    final newFrames = settlement['progress_new_frames'];
+    if (newFrames is List && newFrames.isNotEmpty) {
+      lines.add(Row(
+        key: const Key('result-new-frame'),
+        children: [
+          const Icon(Icons.card_giftcard_rounded, color: OColors.primary),
+          const SizedBox(width: OSpace.md),
+          Expanded(child: Text(context.t('match.frame_unlocked'), style: OText.labelLg)),
+        ],
+      ));
+    } else {
+      final next = settlement['progress_next_level_reward'];
+      final nextLevel = next is Map ? (next['level'] as num?)?.toInt() : null;
+      if (nextLevel != null) {
+        lines.add(Row(
+          children: [
+            const Icon(Icons.card_giftcard_outlined, color: OColors.inkSubtle),
+            const SizedBox(width: OSpace.md),
+            Expanded(
+              child: Text(context.t('match.next_reward', {'level': nextLevel}),
+                  style: OText.labelMd.copyWith(color: OColors.inkSubtle)),
+            ),
+          ],
+        ));
+      }
     }
     if (missionCount > 0) {
       lines.add(Row(

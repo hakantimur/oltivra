@@ -16,6 +16,7 @@ import 'package:oltivra/live/match_live_source.dart';
 import 'package:oltivra/live/match_snapshot.dart';
 import 'package:oltivra/session/session.dart';
 import 'package:oltivra/theme/app_theme.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 const matchId = 'm1';
 
@@ -32,6 +33,9 @@ class _NoInterstitials implements InterstitialAdGateway {
 
   @override
   void preload() => preloads++;
+
+  @override
+  bool get isReady => false;
 
   @override
   Future<bool> showIfReady() async => false;
@@ -101,6 +105,8 @@ class _Harness {
     tester.view.physicalSize = const Size(1080, 2400);
     tester.view.devicePixelRatio = 2.7;
     addTearDown(tester.view.reset);
+    SharedPreferences.setMockInitialValues({});
+    final prefs = await SharedPreferences.getInstance();
     final api = ApiClient(
       baseUrl: Uri.parse('http://api.test'),
       tokens: _Tokens(),
@@ -112,6 +118,7 @@ class _Harness {
     await tester.pumpWidget(ProviderScope(
       overrides: [
         apiClientProvider.overrideWithValue(api),
+        sharedPrefsProvider.overrideWithValue(prefs),
         matchLiveProvider(matchId).overrideWith((ref) => Stream.value(LiveUpdate(snapshot, health))),
         catalogProvider('reactions').overrideWith((ref) async => {
               'reactions': [
@@ -329,7 +336,8 @@ void main() {
         }),
         {
           'pid': 'p1',
-          'settlement': {'place': 1, 'xp_awarded': 85, 'progress_ranked': false, 'progress_reward_offer': true},
+          'settlement': {'place': 1, 'xp_awarded': 85, 'progress_ranked': false,
+              'progress_new_frames': ['frame_level_3']},
         },
       ),
     );
@@ -345,7 +353,8 @@ void main() {
     }
     expect(find.text('25 pts'), findsOneWidget);
     await tester.scrollUntilVisible(find.text('Play Again'), 200, scrollable: list);
-    expect(find.text('Watch an ad for bonus XP'), findsOneWidget);
+    expect(find.text('Watch an ad for bonus XP'), findsNothing); // rewarded XP removed (playtest 2026-09-27)
+    expect(find.text('New avatar frame unlocked! Equip it in Achievements.'), findsOneWidget);
     expect(find.text('Play Again'), findsOneWidget);
   });
 

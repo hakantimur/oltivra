@@ -71,6 +71,7 @@ async def client_config(caller: Caller = Depends(authenticated), c: Container = 
         "survival": {"seconds": config.survival.seconds, "rescue_seconds": config.survival.rescue_seconds},
         "ping_bands_ms": config.matchmaking.ping_bands_ms,
         "interstitial_min_interval_s": config.economy.interstitial_min_interval_s,
+        "ad_gate_every_matches": config.economy.ad_gate_every_matches,
         "reaction_display_ms": 1800,
         "rewarded_xp_enabled": config.features.rewarded_offers_enabled,
         "survival_enabled": config.features.survival_enabled,

@@ -105,6 +105,9 @@ class EconomyConfig(BaseModel):
     rewarded_xp_daily_cap: int = 5
     reward_offer_ttl_ms: int = 15 * 60_000
     interstitial_min_interval_s: int = 45
+    # Playtest 2026-09-27: after this many completed matches the next match starts after an interstitial,
+    # preceded by a short notice card. No fill, offline, missing consent or Remove Ads never blocks play.
+    ad_gate_every_matches: int = Field(default=3, ge=0)
     daily_mission_xp: int = 30
     weekly_mission_xp: int = 100
     weekly_mission_count: int = 4
@@ -145,7 +148,8 @@ class FeatureConfig(BaseModel):
     # Category queues (spec §3.5, §12.3): off by default; when the master flag is on, only the categories listed
     # for a "language:region" partition are offered. Mixed stays the default queue everywhere.
     category_queue_partitions: dict[str, list[str]] = Field(default_factory=dict)
-    rewarded_offers_enabled: bool = True
+    # Rewarded bonus XP is off: XP comes only from play, so leagues stay fair (playtest 2026-09-27).
+    rewarded_offers_enabled: bool = False
     competitive_languages: list[str] = Field(default_factory=lambda: ["en"])
     ui_languages: list[str] = Field(default_factory=lambda: ["en", "tr"])
     new_matches_enabled: bool = True
