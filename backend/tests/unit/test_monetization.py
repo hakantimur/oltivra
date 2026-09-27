@@ -153,7 +153,7 @@ def test_google_purchase_lifecycle(players, container, client):
                                                                 "purchase_token": "tok-purchased-1"})
     assert stolen.status_code == 409
     # RTDN voided purchase (refund) revokes after verification of the push identity.
-    data = base64.b64encode(json.dumps({"packageName": "com.oltivra.app", "voidedPurchaseNotification": {
+    data = base64.b64encode(json.dumps({"packageName": "com.noriloop.oltivra", "voidedPurchaseNotification": {
         "purchaseToken": "tok-purchased-1", "refundType": 1}}).encode()).decode()
     headers = {"x-internal-auth": "dev-internal-secret"}
     res = client.post("/internal/purchases/google-rtdn", json={"message": {"data": data}}, headers=headers)
@@ -169,7 +169,7 @@ def test_google_pending_grants_nothing_until_purchased(players, container, clien
                                                              "purchase_token": "tok-pending-1"}).json()
     assert res["remove_ads"] is False and res["purchase_state"] == "PENDING"
     play.purchases["tok-pending-1"] = GooglePurchase("PURCHASED", "GPA.2", False, 2)
-    data = base64.b64encode(json.dumps({"packageName": "com.oltivra.app", "oneTimeProductNotification": {
+    data = base64.b64encode(json.dumps({"packageName": "com.noriloop.oltivra", "oneTimeProductNotification": {
         "notificationType": 1, "purchaseToken": "tok-pending-1", "sku": "remove_ads_forever"}}).encode()).decode()
     client.post("/internal/purchases/google-rtdn", json={"message": {"data": data}},
                 headers={"x-internal-auth": "dev-internal-secret"})

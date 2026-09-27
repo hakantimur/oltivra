@@ -61,7 +61,7 @@ class Settings(BaseSettings):
     admin_require_mfa: bool = False
     admob_ssv_mode: Literal["google", "fake"] = "fake"
     purchase_verify_mode: Literal["store", "fake"] = "fake"
-    google_play_package: str = "com.oltivra.app"
+    google_play_package: str = "com.noriloop.oltivra"
     apple_bundle_id: str = "com.oltivra.app"
     # Comma separated paths to pinned Apple root certificates (e.g. AppleRootCA-G3.cer), mounted from secrets.
     apple_root_cert_paths: str = ""
