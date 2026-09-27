@@ -42,7 +42,7 @@ const Map<String, Map<String, String>> onboardingStrings = {
     'onboarding.terms.required': 'Both are required to play live battles and appear on leaderboards.',
     'onboarding.terms.read': 'Read {doc}',
     'onboarding.terms.continue': 'Agree and continue',
-    'onboarding.terms.footer': 'No marketing emails. No ad offers.',
+    'onboarding.terms.footer': 'No marketing emails. Ads never block your games.',
     'onboarding.terms.version': 'Version {v}',
     'onboarding.terms.tos_text':
         'Summary\n\n'
@@ -182,7 +182,7 @@ const Map<String, Map<String, String>> onboardingStrings = {
     'onboarding.terms.required': 'Canlı düellolarda oynamak ve sıralamalarda yer almak için ikisi de gerekli.',
     'onboarding.terms.read': '{doc} metnini oku',
     'onboarding.terms.continue': 'Kabul et ve devam et',
-    'onboarding.terms.footer': 'Pazarlama e-postası yok. Reklam teklifi yok.',
+    'onboarding.terms.footer': 'Pazarlama e-postası yok. Reklamlar oyununu asla engellemez.',
     'onboarding.terms.version': 'Sürüm {v}',
     'onboarding.terms.tos_text':
         'Özet\n\n'

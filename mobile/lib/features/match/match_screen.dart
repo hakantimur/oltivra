@@ -35,6 +35,7 @@ class MatchScreen extends ConsumerStatefulWidget {
 class _MatchScreenState extends ConsumerState<MatchScreen> {
   Timer? _ticker;
   bool _rematching = false;
+  bool _rewardClaimed = false;
 
   String get _id => widget.matchId;
 
@@ -138,7 +139,12 @@ class _MatchScreenState extends ConsumerState<MatchScreen> {
         onPlayAgain: () => context.go(Routes.queue(s.mode)),
         onRematch: s.isSpectator || s.me == null ? null : _rematch,
         rematching: _rematching,
-        onRewardOffer: offer && rewardedEnabled ? () => context.push(Routes.rewardedOffer(_id)) : null,
+        onRewardOffer: offer && rewardedEnabled && !_rewardClaimed
+            ? () async {
+                final granted = await context.push<bool>(Routes.rewardedOffer(_id));
+                if (granted == true && mounted) setState(() => _rewardClaimed = true);
+              }
+            : null,
         onReportPlayer: s.isSpectator ? null : (pid) => context.push(Routes.reportPlayer(pid, matchId: _id)),
       );
     }
