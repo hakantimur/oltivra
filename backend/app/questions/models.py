@@ -178,6 +178,21 @@ def is_webp(data: bytes) -> bool:
     return len(data) >= 12 and data[:4] == b"RIFF" and data[8:12] == b"WEBP"
 
 
+def webp_dimensions(data: bytes) -> tuple[int, int] | None:
+    """Pixel size from a WebP header (VP8, VP8L or VP8X); None when the header is not understood."""
+    if not is_webp(data) or len(data) < 30:
+        return None
+    chunk = data[12:16]
+    if chunk == b"VP8X":
+        return 1 + int.from_bytes(data[24:27], "little"), 1 + int.from_bytes(data[27:30], "little")
+    if chunk == b"VP8 " and data[23:26] == bytes.fromhex("9d012a"):
+        return int.from_bytes(data[26:28], "little") & 0x3FFF, int.from_bytes(data[28:30], "little") & 0x3FFF
+    if chunk == b"VP8L" and data[20] == 0x2F:
+        bits = int.from_bytes(data[21:25], "little")
+        return (bits & 0x3FFF) + 1, ((bits >> 14) & 0x3FFF) + 1
+    return None
+
+
 def media_warnings(size: int, width: int, height: int) -> list[str]:
     warnings = []
     if size > MEDIA_PREFERRED_MAX_BYTES:

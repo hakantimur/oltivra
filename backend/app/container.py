@@ -150,10 +150,12 @@ class Container:
 
     @cached_property
     def media_signer(self):
-        from app.common.media import EmulatorMediaSigner, GcsMediaSigner
+        from app.common.media import DevMediaSigner, EmulatorMediaSigner, GcsMediaSigner
 
         if self.settings.env in ("stage", "prod"):
             return GcsMediaSigner(self.settings.storage_bucket, self.settings.task_service_account, self.io_limiter)
+        if self.settings.env == "dev" and self.settings.store_backend == "memory":
+            return DevMediaSigner(self.settings.dev_media_base_url)
         return EmulatorMediaSigner("127.0.0.1:9199", self.settings.storage_bucket)
 
     @cached_property
@@ -406,7 +408,8 @@ class Container:
 
         if await self.store.query(Query("question_groups").take(1)):
             return
-        await import_seed(self.question_repo, self.store, QuestionStatus.ACTIVE)
+        await import_seed(self.question_repo, self.store, QuestionStatus.ACTIVE, uploader=self.media_uploader,
+                          now_ms=self.clock.now_ms())
         await self.manifest_builder.build_all(list(SEED_LANGUAGES))
 
     async def shutdown(self) -> None:

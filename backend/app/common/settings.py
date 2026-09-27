@@ -43,6 +43,8 @@ class Settings(BaseSettings):
     legal_governing_law_tr: str = ""  # Turkish wording for the TR documents; falls back to legal_governing_law
     legal_effective_date: str = "2026-09-27"
     storage_bucket: str = "demo-oltivra.appspot.com"
+    # In-memory dev server only: address devices use to fetch question images from the API (/dev/media).
+    dev_media_base_url: str = "http://10.0.2.2:8000"
 
     cloud_tasks_project: str = ""
     cloud_tasks_location: str = "europe-west1"

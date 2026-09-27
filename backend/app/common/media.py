@@ -25,6 +25,19 @@ class EmulatorMediaSigner:
                 f"?alt=media&exp={expires_at_ms}")
 
 
+class DevMediaSigner:
+    """In-memory dev server: the API itself serves uploaded media at ``/dev/media`` (see routers/dev_media.py).
+
+    ``base_url`` is the address the device uses for the API (the Android emulator reaches the host at 10.0.2.2).
+    """
+
+    def __init__(self, base_url: str) -> None:
+        self._base = base_url.rstrip("/")
+
+    async def sign(self, storage_path: str, expires_at_ms: int) -> str:
+        return f"{self._base}/dev/media/{quote(storage_path, safe='')}?exp={expires_at_ms}"
+
+
 class GcsMediaSigner:
     """V4 signed URL; uses IAM signBlob on Cloud Run, so it is always called outside RTDB transactions."""
 
