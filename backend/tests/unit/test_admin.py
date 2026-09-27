@@ -98,7 +98,8 @@ def test_list_filters_and_search(api):
     assert gid in {i["question_group_id"] for i in listed["items"]}
     assert all(i["difficulty"] == "MEDIUM" for i in listed["items"])
     found = api.get("/admin/v1/questions", ADMIN, extra=AS_ADMIN, q="vienna").json()["items"]
-    assert [i["question_group_id"] for i in found] == [gid]
+    assert gid in [i["question_group_id"] for i in found]
+    assert all("vienna" in (i["text"] or "").lower() for i in found)
 
 
 def test_invalid_transition_and_unknown_category(api):

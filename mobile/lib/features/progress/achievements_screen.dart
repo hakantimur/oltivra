@@ -223,7 +223,10 @@ class _FrameCard extends StatelessWidget {
                           : Text(context.t('progress.cosmetics.equip')),
                     )
                   : Center(
-                      child: Text(context.t('progress.cosmetics.earn_to_unlock'),
+                      child: Text(
+                          frame['level'] is num
+                              ? context.t('progress.cosmetics.reach_level', {'level': frame['level']})
+                              : context.t('progress.cosmetics.earn_to_unlock'),
                           style: OText.bodySm.copyWith(color: OColors.inkSubtle), textAlign: TextAlign.center),
                     ),
         ),

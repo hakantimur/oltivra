@@ -1,14 +1,14 @@
 [
   {
-    "key": "science_nature_c001",
+    "key": "science_nature_t001",
     "category_id": "science_nature",
     "subcategory_id": "space",
     "difficulty": "EASY",
     "global_relevance_score": 5,
     "time_sensitive": false,
     "question": {
-      "en": "Roughly how long does this body take to orbit Earth once?",
-      "tr": "Bu gök cismi Dünya'nın çevresini bir kez yaklaşık ne kadar sürede dolanır?"
+      "en": "Roughly how long does the Moon take to orbit Earth once?",
+      "tr": "Ay, Dünya'nın çevresini bir kez yaklaşık ne kadar sürede dolanır?"
     },
     "options": [
       {
@@ -33,19 +33,7 @@
       }
     ],
     "correct": "about_27_days",
-    "source": "https://en.wikipedia.org/wiki/Orbit_of_the_Moon",
-    "media": {
-      "file": "science_nature/science_nature_c001.webp",
-      "alt_text": {
-        "en": "A grey, cratered sphere against a black sky",
-        "tr": "Siyah gökyüzünde gri, kraterli bir küre"
-      },
-      "source": "https://commons.wikimedia.org/wiki/File:Full_Moon_Luc_Viatour.jpg",
-      "author": "Luc Viatour",
-      "license": "CC BY-SA 3.0",
-      "attribution": "Luc Viatour / Wikimedia Commons, CC BY-SA 3.0",
-      "copyright_status": "LICENSED"
-    }
+    "source": "https://en.wikipedia.org/wiki/Orbit_of_the_Moon"
   },
   {
     "key": "science_nature_c002",
@@ -84,15 +72,15 @@
     "source": "https://en.wikipedia.org/wiki/Diamond"
   },
   {
-    "key": "science_nature_c003",
+    "key": "science_nature_t003",
     "category_id": "science_nature",
     "subcategory_id": "animals",
     "difficulty": "MEDIUM",
     "global_relevance_score": 4,
     "time_sensitive": false,
     "question": {
-      "en": "This amphibian is native to lakes in which country?",
-      "tr": "Bu amfibi hangi ülkenin göllerine özgüdür?"
+      "en": "The axolotl, a salamander that keeps its gills as an adult, is native to which country?",
+      "tr": "Yetişkinken de solungaçlarını koruyan semender aksolotl hangi ülkeye özgüdür?"
     },
     "options": [
       {
@@ -117,30 +105,18 @@
       }
     ],
     "correct": "mexico",
-    "source": "https://en.wikipedia.org/wiki/Axolotl",
-    "media": {
-      "file": "science_nature/science_nature_c003.webp",
-      "alt_text": {
-        "en": "A pale pink amphibian with feathery gills on the sides of its head",
-        "tr": "Başının iki yanında tüy gibi solungaçları olan açık pembe bir amfibi"
-      },
-      "source": "https://commons.wikimedia.org/wiki/File:Axolotl_ambystoma_mexicanum_anfibio_ASAG.jpg",
-      "author": "Amandasofiarana",
-      "license": "CC BY-SA 4.0",
-      "attribution": "Amandasofiarana / Wikimedia Commons, CC BY-SA 4.0",
-      "copyright_status": "LICENSED"
-    }
+    "source": "https://en.wikipedia.org/wiki/Axolotl"
   },
   {
-    "key": "science_nature_c004",
+    "key": "science_nature_t004",
     "category_id": "science_nature",
     "subcategory_id": "plants",
     "difficulty": "MEDIUM",
     "global_relevance_score": 4,
     "time_sensitive": false,
     "question": {
-      "en": "This carnivorous plant grows wild in only one country. Which one?",
-      "tr": "Bu etobur bitki doğada yalnızca tek bir ülkede yetişir. Hangisi?"
+      "en": "The Venus flytrap grows wild in only one country. Which one?",
+      "tr": "Venüs sinekkapan bitkisi doğada yalnızca tek bir ülkede yetişir. Hangisi?"
     },
     "options": [
       {
@@ -165,30 +141,18 @@
       }
     ],
     "correct": "united_states",
-    "source": "https://en.wikipedia.org/wiki/Venus_flytrap",
-    "media": {
-      "file": "science_nature/science_nature_c004.webp",
-      "alt_text": {
-        "en": "A fly sitting on an open, toothed green-and-red leaf trap",
-        "tr": "Açık, dişli, yeşil-kırmızı bir yaprak kapanın üzerinde duran bir sinek"
-      },
-      "source": "https://commons.wikimedia.org/wiki/File:Venus_Flytrap_020.jpg",
-      "author": "Tippitiwichet",
-      "license": "CC BY 2.0",
-      "attribution": "Tippitiwichet / Wikimedia Commons, CC BY 2.0",
-      "copyright_status": "LICENSED"
-    }
+    "source": "https://en.wikipedia.org/wiki/Venus_flytrap"
   },
   {
-    "key": "science_nature_c005",
+    "key": "science_nature_t005",
     "category_id": "science_nature",
     "subcategory_id": "animals",
     "difficulty": "HARD",
     "global_relevance_score": 4,
     "time_sensitive": false,
     "question": {
-      "en": "What is the common nickname of these microscopic animals?",
-      "tr": "Bu mikroskobik hayvanlara halk arasında ne ad verilir?"
+      "en": "Tardigrades, microscopic eight-legged animals, are commonly known as what?",
+      "tr": "Mikroskobik, sekiz bacaklı hayvanlar olan tardigradlara halk arasında ne ad verilir?"
     },
     "options": [
       {
@@ -213,18 +177,6 @@
       }
     ],
     "correct": "water_bears",
-    "source": "https://en.wikipedia.org/wiki/Tardigrade",
-    "media": {
-      "file": "science_nature/science_nature_c005.webp",
-      "alt_text": {
-        "en": "Three tiny translucent eight-legged creatures under a microscope",
-        "tr": "Mikroskop altında üç küçük, yarı saydam, sekiz bacaklı canlı"
-      },
-      "source": "https://commons.wikimedia.org/wiki/File:Tard%C3%ADgrado_g%C3%A9nero_Milnesium.jpg",
-      "author": "Brandon Antonio Segura Torres & Priscilla Vieto Bonilla",
-      "license": "CC BY-SA 4.0",
-      "attribution": "Brandon Antonio Segura Torres & Priscilla Vieto Bonilla / Wikimedia Commons, CC BY-SA 4.0",
-      "copyright_status": "LICENSED"
-    }
+    "source": "https://en.wikipedia.org/wiki/Tardigrade"
   }
 ]

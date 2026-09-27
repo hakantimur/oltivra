@@ -1,14 +1,14 @@
 [
   {
-    "key": "history_c001",
+    "key": "history_t001",
     "category_id": "history",
     "subcategory_id": "ancient_civilisations",
     "difficulty": "EASY",
     "global_relevance_score": 5,
     "time_sensitive": false,
     "question": {
-      "en": "In which city does this ancient amphitheatre stand?",
-      "tr": "Bu antik amfitiyatro hangi şehirdedir?"
+      "en": "In which city does the Colosseum stand?",
+      "tr": "Kolezyum hangi şehirdedir?"
     },
     "options": [
       {
@@ -33,15 +33,7 @@
       }
     ],
     "correct": "rome",
-    "source": "https://en.wikipedia.org/wiki/Colosseum",
-    "image": {
-      "refined": "his_colosseum",
-      "index": 4,
-      "alt_text": {
-        "en": "A tall, partly ruined oval stone arena with rows of arches",
-        "tr": "Sıra sıra kemerleri olan, kısmen yıkık, yüksek, oval taş arena"
-      }
-    }
+    "source": "https://en.wikipedia.org/wiki/Colosseum"
   },
   {
     "key": "history_c002",
@@ -80,15 +72,15 @@
     "source": "https://en.wikipedia.org/wiki/Statue_of_Liberty"
   },
   {
-    "key": "history_c003",
+    "key": "history_t003",
     "category_id": "history",
     "subcategory_id": "archaeology",
     "difficulty": "MEDIUM",
     "global_relevance_score": 5,
     "time_sensitive": false,
     "question": {
-      "en": "Roughly how old is this prehistoric stone monument?",
-      "tr": "Bu tarih öncesi taş anıt yaklaşık kaç yaşındadır?"
+      "en": "Roughly how old is Stonehenge?",
+      "tr": "Stonehenge yaklaşık kaç yaşındadır?"
     },
     "options": [
       {
@@ -113,26 +105,18 @@
       }
     ],
     "correct": "about_5000_years",
-    "source": "https://en.wikipedia.org/wiki/Stonehenge",
-    "image": {
-      "refined": "his_stonehenge",
-      "index": 3,
-      "alt_text": {
-        "en": "A ring of huge standing stones, some topped with lintels, on a grassy plain",
-        "tr": "Çimenli bir ovada, bazılarının üstünde yatay taşlar bulunan dev dikili taşlardan oluşan bir halka"
-      }
-    }
+    "source": "https://en.wikipedia.org/wiki/Stonehenge"
   },
   {
-    "key": "history_c004",
+    "key": "history_t004",
     "category_id": "history",
     "subcategory_id": "empires",
     "difficulty": "MEDIUM",
     "global_relevance_score": 4,
     "time_sensitive": false,
     "question": {
-      "en": "These clay warriors were buried with which Chinese emperor?",
-      "tr": "Bu kil savaşçılar hangi Çin imparatoruyla birlikte gömüldü?"
+      "en": "The Terracotta Army was buried with which Chinese emperor?",
+      "tr": "Terracotta Ordusu hangi Çin imparatoruyla birlikte gömüldü?"
     },
     "options": [
       {
@@ -157,26 +141,18 @@
       }
     ],
     "correct": "qin_shi_huang",
-    "source": "https://en.wikipedia.org/wiki/Terracotta_Army",
-    "image": {
-      "refined": "his_terracotta",
-      "index": 1,
-      "alt_text": {
-        "en": "Rows of life-size grey clay soldier statues",
-        "tr": "Sıra sıra, gerçek boyutlu gri kil asker heykelleri"
-      }
-    }
+    "source": "https://en.wikipedia.org/wiki/Terracotta_Army"
   },
   {
-    "key": "history_c005",
+    "key": "history_t005",
     "category_id": "history",
     "subcategory_id": "ancient_civilisations",
     "difficulty": "HARD",
     "global_relevance_score": 4,
     "time_sensitive": false,
     "question": {
-      "en": "Which ancient people carved this building into a sandstone cliff?",
-      "tr": "Bu yapıyı kumtaşı bir kayalığa hangi antik halk oydu?"
+      "en": "Which ancient people carved the city of Petra into sandstone cliffs?",
+      "tr": "Petra kentini kumtaşı kayalıklara hangi antik halk oydu?"
     },
     "options": [
       {
@@ -201,14 +177,6 @@
       }
     ],
     "correct": "nabataeans",
-    "source": "https://en.wikipedia.org/wiki/Al-Khazneh",
-    "image": {
-      "refined": "his_petra",
-      "index": 5,
-      "alt_text": {
-        "en": "An ornate columned facade carved into a rose-coloured rock face",
-        "tr": "Pembe tonlu bir kaya yüzeyine oyulmuş, sütunlu, süslü bir cephe"
-      }
-    }
+    "source": "https://en.wikipedia.org/wiki/Al-Khazneh"
   }
 ]

@@ -247,7 +247,7 @@ def play_round_human_wins(api, container, match_id: str, uid: str = "u1") -> Non
     container.clock.advance(500)  # faster than any bot (min response 1.3s)
     res = answer(api, container, match_id, uid)
     assert res.status_code == 200, res.text
-    assert res.json()["correct"] is True and res.json()["score_delta"] == 10
+    assert res.json()["correct"] is True and res.json()["score_delta"] == 15
     pub = public(container, match_id)
     assert pub["state"] == "ROUND_REVEAL"
     container.clock.set(pub["reveal_ends_at_ms"] + 50)
@@ -271,7 +271,7 @@ def test_full_quick_match_settles_and_cleans_up(players, container):
         play_round_human_wins(players, container, match_id)
     root = live_root(container, match_id)
     assert root["public"]["state"] == "FINISHED"
-    assert root["public"]["result_summary"]["standings"][0]["score"] == 100
+    assert root["public"]["result_summary"]["standings"][0]["score"] == 150
     assert root["player_private"]["u1"]["settlement"]["place"] == 1
     assert runtime(container, "u1")["state"] == "IDLE"
     ledger = container.store._docs[f"settlement_ledgers/{match_id}"]
@@ -305,9 +305,9 @@ def test_answer_validation_and_replay(players, container):
     container.clock.set(pub["starts_at_ms"] + 100)
     key = str(uuid.uuid4())
     wrong = answer(players, container, match_id, "u1", correct=False, request_id=key)
-    assert wrong.status_code == 200 and wrong.json()["correct"] is False and wrong.json()["score_delta"] == -4
+    assert wrong.status_code == 200 and wrong.json()["correct"] is False and wrong.json()["score_delta"] == -6
     replay = answer(players, container, match_id, "u1", correct=False, request_id=key)
-    assert replay.json()["replay"] is True and replay.json()["score_delta"] == -4
+    assert replay.json()["replay"] is True and replay.json()["score_delta"] == -6
     second = answer(players, container, match_id, "u1", correct=True)
     assert second.status_code == 409 and second.json()["error"]["code"] == "ANSWER_ALREADY_SUBMITTED"
     assert private(container, match_id, "u1")["own_answer_status"] == "ANSWERED_WRONG"

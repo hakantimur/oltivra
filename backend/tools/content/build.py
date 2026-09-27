@@ -6,7 +6,7 @@ Usage:
 
 Reads ``content/questions/<category>.json`` (authored rows), resolves each row's picked Commons candidate from
 ``tools/content/work/refined/<topic>.json``, downloads it once, converts it to WebP (<=1024 px, <=200 KB, spec §9.1),
-checks that the Wikipedia source page exists, and writes ``seed/media_questions/<category>.json`` plus
+checks that the Wikipedia source page exists, and writes ``seed/curated/<category>.json`` plus
 ``seed/media/<category>/<key>.webp``. The correct answer's display position is irrelevant: every player gets an
 independently shuffled option order (spec §3.6).
 """
@@ -25,7 +25,7 @@ from tools.content.commons import WORK, fetch
 
 BACKEND = Path(__file__).resolve().parents[2]
 CONTENT_DIR = BACKEND / "content" / "questions"
-SEED_OUT = BACKEND / "seed" / "media_questions"
+SEED_OUT = BACKEND / "seed" / "curated"
 MEDIA_OUT = BACKEND / "seed" / "media"
 MAX_DIMENSION = 1024
 MAX_BYTES = 200_000

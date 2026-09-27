@@ -311,6 +311,12 @@ class Container:
         return QuestionReportService(self)
 
     @cached_property
+    def leagues(self):
+        from app.ranking.league_groups import LeagueService
+
+        return LeagueService(self)
+
+    @cached_property
     def leaderboard(self):
         from app.progression.leaderboard import LeaderboardService
 

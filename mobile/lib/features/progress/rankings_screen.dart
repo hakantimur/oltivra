@@ -10,11 +10,12 @@ import '../../theme/app_theme.dart';
 import '../../theme/tokens.dart';
 import '../../widgets/o_avatar.dart';
 import '../../widgets/o_widgets.dart';
+import 'league_standings.dart';
 import 'progress_api.dart';
 import 'progress_widgets.dart';
 
-/// Rankings tab (P06 weekly_rankings): this week's ranked leaderboard, global or the player's league,
-/// with the player's own row pinned. Ordered by ranked weekly XP on the server (spec §7.6).
+/// Rankings tab (P06 weekly_rankings): the player's weekly league group (default, playtest 2026-09-27) or the
+/// global weekly leaderboard with the player's own row pinned. Ordered by ranked weekly XP on the server.
 class RankingsScreen extends ConsumerStatefulWidget {
   const RankingsScreen({super.key});
 
@@ -23,12 +24,13 @@ class RankingsScreen extends ConsumerStatefulWidget {
 }
 
 class _RankingsScreenState extends ConsumerState<RankingsScreen> {
-  bool _leagueOnly = false;
+  bool _leagueOnly = true;
   final List<Json> _more = [];
   int? _nextOffset;
   bool _loadingMore = false;
 
-  String? _filter(String myLeague) => _leagueOnly && myLeague != 'UNRANKED' ? myLeague : null;
+  // The global board is never league-filtered any more: the league view is the player's own group.
+  String? _filter(String myLeague) => null;
 
   Future<void> _refresh(String? filter) async {
     setState(() {
@@ -62,7 +64,7 @@ class _RankingsScreenState extends ConsumerState<RankingsScreen> {
   @override
   Widget build(BuildContext context) {
     final session = ref.watch(sessionProvider).value;
-    final myLeague = session?.league ?? 'UNRANKED';
+    final myLeague = session?.league ?? 'BRONZE';
     final myPublicId = session?.publicId;
     final filter = _filter(myLeague);
     final board = ref.watch(weeklyLeaderboardProvider(filter));
@@ -71,7 +73,7 @@ class _RankingsScreenState extends ConsumerState<RankingsScreen> {
     return OPage(
       title: context.t('progress.rankings.title'),
       showBack: false,
-      onRefresh: () => _refresh(filter),
+      onRefresh: () => _leagueOnly ? ref.refresh(leagueStatusProvider.future) : _refresh(filter),
       actions: [
         IconButton(
           tooltip: context.t('progress.league.title'),
@@ -94,7 +96,7 @@ class _RankingsScreenState extends ConsumerState<RankingsScreen> {
                     const SizedBox(width: 6),
                     Flexible(
                       child: Text(
-                        context.t(filter == null ? 'progress.rankings.context_global' : 'progress.rankings.context_league',
+                        context.t(!_leagueOnly ? 'progress.rankings.context_global' : 'progress.rankings.context_league',
                             {'league': context.t('league.$myLeague')}).toUpperCase(),
                         style: OText.labelSm.copyWith(color: OColors.inkSubtle),
                       ),
@@ -116,14 +118,13 @@ class _RankingsScreenState extends ConsumerState<RankingsScreen> {
           ],
         ),
         const SizedBox(height: OSpace.lg),
-        if (myLeague != 'UNRANKED')
-          SegmentedButton<bool>(
+        SegmentedButton<bool>(
             showSelectedIcon: false,
             segments: [
-              ButtonSegment(value: false, icon: const Icon(Icons.public_rounded, size: 18),
-                  label: Text(context.t('progress.rankings.tab_global'))),
               ButtonSegment(value: true, icon: Icon(leagueIcon(myLeague), size: 18),
                   label: Text(context.t('progress.rankings.tab_league'))),
+              ButtonSegment(value: false, icon: const Icon(Icons.public_rounded, size: 18),
+                  label: Text(context.t('progress.rankings.tab_global'))),
             ],
             selected: {_leagueOnly},
             onSelectionChanged: (s) => setState(() {
@@ -133,11 +134,18 @@ class _RankingsScreenState extends ConsumerState<RankingsScreen> {
             }),
           ),
         const SizedBox(height: OSpace.lg),
-        progressAsync<Json>(
-          board,
-          (data) => _board(context, data, myPublicId, filter),
-          onRetry: () => ref.invalidate(weeklyLeaderboardProvider(filter)),
-        ),
+        if (_leagueOnly)
+          progressAsync<Json>(
+            ref.watch(leagueStatusProvider),
+            (data) => LeagueStandings(data: data),
+            onRetry: () => ref.invalidate(leagueStatusProvider),
+          )
+        else
+          progressAsync<Json>(
+            board,
+            (data) => _board(context, data, myPublicId, filter),
+            onRetry: () => ref.invalidate(weeklyLeaderboardProvider(filter)),
+          ),
         const SizedBox(height: OSpace.lg),
         OCard(
           color: OColors.surfaceContainer,

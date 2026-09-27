@@ -8,6 +8,7 @@ import 'package:go_router/go_router.dart';
 import '../../core/providers.dart';
 import '../../l10n/strings.dart';
 import '../../live/match_live_source.dart';
+import '../../api/api_client.dart';
 import '../../live/match_snapshot.dart';
 import '../../router/routes.dart';
 import '../../theme/app_theme.dart';
@@ -112,8 +113,9 @@ class _MatchReadyScreenState extends ConsumerState<MatchReadyScreen> {
       final language = questionLanguageName(
           context, (snapshot.public['language'] as String?) ?? session?.questionLanguage ?? 'en');
       body = snapshot.isSurvival
-          ? _SurvivalReady(snapshot: snapshot, seconds: seconds, progress: progress, config: config?['survival'])
-          : _QuickReady(snapshot: snapshot, seconds: seconds, progress: progress, language: language);
+          ? _SurvivalReady(snapshot: snapshot, seconds: seconds, progress: progress, config: config?['survival'],
+              clientConfig: config)
+          : _QuickReady(snapshot: snapshot, seconds: seconds, progress: progress, language: language, config: config);
     }
     return PopScope(
       canPop: false,
@@ -145,12 +147,14 @@ class _MatchReadyScreenState extends ConsumerState<MatchReadyScreen> {
 // ------------------------------------------------------------------------------------------ Quick Battle
 
 class _QuickReady extends StatelessWidget {
-  const _QuickReady({required this.snapshot, required this.seconds, required this.progress, required this.language});
+  const _QuickReady({required this.snapshot, required this.seconds, required this.progress, required this.language,
+      this.config});
 
   final MatchSnapshot snapshot;
   final int seconds;
   final double progress;
   final String language;
+  final Json? config;
 
   @override
   Widget build(BuildContext context) {
@@ -181,6 +185,8 @@ class _QuickReady extends StatelessWidget {
             Text(context.t('home.ready.standby'), style: OText.labelLg),
           ],
         ),
+        const SizedBox(height: OSpace.lg),
+        MatchRulesCard(mode: 'QUICK', config: config),
         const SizedBox(height: OSpace.xl),
         _RosterGrid(snapshot: snapshot, roster: roster, large: true),
         const SizedBox(height: OSpace.xl),
@@ -218,12 +224,14 @@ class _QuickReady extends StatelessWidget {
 // ------------------------------------------------------------------------------------------ Survival
 
 class _SurvivalReady extends StatelessWidget {
-  const _SurvivalReady({required this.snapshot, required this.seconds, required this.progress, this.config});
+  const _SurvivalReady({required this.snapshot, required this.seconds, required this.progress, this.config,
+      this.clientConfig});
 
   final MatchSnapshot snapshot;
   final int seconds;
   final double progress;
   final Object? config;
+  final Json? clientConfig;
 
   @override
   Widget build(BuildContext context) {
@@ -267,6 +275,8 @@ class _SurvivalReady extends StatelessWidget {
             ],
           ),
         ),
+        const SizedBox(height: OSpace.lg),
+        MatchRulesCard(mode: 'SURVIVAL', config: clientConfig),
         const SizedBox(height: OSpace.xl),
         Row(
           children: [

@@ -13,6 +13,8 @@ import '../../theme/app_theme.dart';
 import '../../theme/tokens.dart';
 import '../../widgets/o_avatar.dart';
 import '../../widgets/o_widgets.dart';
+import '../store/ad_break_notice.dart';
+import '../store/interstitials.dart';
 import 'home_api.dart';
 import 'widgets.dart';
 
@@ -57,7 +59,17 @@ class _FindingMatchScreenState extends ConsumerState<FindingMatchScreen> with Si
     _tick = Timer.periodic(const Duration(seconds: 1), (_) {
       if (mounted && _searching) setState(() {});
     });
-    _start();
+    final ads = ref.read(interstitialControllerProvider);
+    if (ads.breakDue()) {
+      // Ad break before joining the queue: a short notice card, then the ad (never during a match).
+      WidgetsBinding.instance.addPostFrameCallback((_) async {
+        if (!mounted) return;
+        await ads.runBreak(() => showAdBreakNotice(context));
+        if (mounted) _start();
+      });
+    } else {
+      _start();
+    }
   }
 
   @override
@@ -319,6 +331,10 @@ class _FindingMatchScreenState extends ConsumerState<FindingMatchScreen> with Si
               const SizedBox(height: OSpace.xs),
               Text(modeRules(context, widget.mode, config),
                   style: OText.bodyMd.copyWith(color: OColors.inkSubtle), textAlign: TextAlign.center),
+              if (!ended) ...[
+                const SizedBox(height: OSpace.lg),
+                MatchRulesCard(mode: widget.mode, config: config),
+              ],
               if (ended)
                 _EndedView(
                   message: _error != null ? _errorMessage(context, _error!) : context.t(_overKey ?? 'error.generic'),

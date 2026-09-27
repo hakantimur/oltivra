@@ -15,13 +15,14 @@ from app.manifests.manifest import ManifestEntry
 from app.questions.exposure import EXCLUSION_LADDER, ExposureUnion
 from app.questions.models import Difficulty
 
+# Eased after the 2026-09-27 playtest: 4 EASY / 4 MEDIUM / 2 HARD (spec §3.4 had 2/5/3).
 QUICK_NORMAL_ORDER: tuple[Difficulty, ...] = (
-    Difficulty.EASY, Difficulty.EASY,
-    Difficulty.MEDIUM, Difficulty.MEDIUM, Difficulty.MEDIUM, Difficulty.MEDIUM, Difficulty.MEDIUM,
-    Difficulty.HARD, Difficulty.HARD, Difficulty.HARD,
+    Difficulty.EASY, Difficulty.EASY, Difficulty.EASY, Difficulty.EASY,
+    Difficulty.MEDIUM, Difficulty.MEDIUM, Difficulty.MEDIUM, Difficulty.MEDIUM,
+    Difficulty.HARD, Difficulty.HARD,
 )
 QUICK_RESERVE_ORDER: tuple[Difficulty, ...] = (
-    Difficulty.MEDIUM, Difficulty.HARD, Difficulty.HARD, Difficulty.HARD, Difficulty.HARD,
+    Difficulty.MEDIUM, Difficulty.MEDIUM, Difficulty.MEDIUM, Difficulty.HARD, Difficulty.HARD,
 )
 SURVIVAL_POOL_TARGET: dict[Difficulty, int] = {Difficulty.EASY: 14, Difficulty.MEDIUM: 14, Difficulty.HARD: 12}
 QUICK_MAX_PER_CATEGORY = 2

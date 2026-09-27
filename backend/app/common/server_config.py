@@ -15,30 +15,39 @@ from app.common.store.docstore import DocStore
 
 
 class QuickConfig(BaseModel):
+    # Playtest 2026-09-27: 15 s window (points 15..1) and -6 for a wrong answer (same 40% of max as -4/10);
+    # a longer reveal leaves room for the round-result celebration.
     normal_questions: int = 10
-    seconds: int = 11
-    reveal_ms: int = 2500
-    wrong_penalty: int = -4
+    seconds: int = 15
+    reveal_ms: int = 3500
+    wrong_penalty: int = -6
     no_answer_penalty: int = 0
     bot_fill_ms: int = 3000
     sudden_death_unresolved_cap: int = 5
     reserve_questions: int = 5
     round_lead_ms: int = 2000
+    # The first question waits longer so the ready screen (roster + rules) can be read (playtest 2026-09-27).
+    first_round_lead_ms: int = 6000
     rematch_window_ms: int = 10_000
 
 
 class SurvivalConfig(BaseModel):
-    seconds: int = 11
-    reveal_ms: int = 3000
+    seconds: int = 15
+    reveal_ms: int = 3500
     bot_fill_ms: int = 5000
     unresolved_round_cap: int = 3
-    rescue_seconds: int = 15
+    rescue_seconds: int = 20
     candidate_questions: int = 30
     reserve_questions: int = 10
     round_lead_ms: int = 2000
-    # Weighted difficulty by active count bands (spec §4.4).
+    # The first question waits longer so the ready screen (roster + rules) can be read (playtest 2026-09-27).
+    first_round_lead_ms: int = 6000
+    # Opening rounds are always EASY so a full lobby is not wiped out at once (playtest 2026-09-27).
+    easy_opening_rounds: int = 3
+    # Weighted difficulty by active count bands (spec §4.4, eased after the playtest).
     easy_weight_8_10: float = 0.65
-    hard_weight_3_4: float = 0.65
+    easy_weight_5_7: float = 0.35
+    hard_weight_3_4: float = 0.5
 
 
 class MatchmakingConfig(BaseModel):
@@ -73,10 +82,32 @@ class RankedConfig(BaseModel):
         return self
 
 
+class LeagueConfig(BaseModel):
+    """Weekly cohort leagues (playtest 2026-09-27, replaces MMR-threshold leagues and placement).
+
+    Each week a player competes in a group of ``group_size`` seats of their tier; bots fill the empty seats.
+    The top ``promote`` move up a tier, the bottom ``demote`` move down (never below Bronze).
+    """
+
+    group_size: int = Field(default=100, ge=10, le=200)
+    promote: int = Field(default=20, ge=0)
+    demote: int = Field(default=20, ge=0)
+    # While fewer humans than this played ranked in the current or previous week, matches with bots count as
+    # ranked so leagues and leaderboards are alive from day one.
+    bootstrap_active_humans: int = Field(default=100, ge=0)
+    # Weekly XP range of Bronze bots (log-uniform); each higher tier multiplies it by ``bot_xp_tier_factor``.
+    bot_xp_min: int = 40
+    bot_xp_max: int = 1400
+    bot_xp_tier_factor: float = 1.3
+
+
 class EconomyConfig(BaseModel):
     rewarded_xp_daily_cap: int = 5
     reward_offer_ttl_ms: int = 15 * 60_000
     interstitial_min_interval_s: int = 45
+    # Playtest 2026-09-27: after this many completed matches the next match starts after an interstitial,
+    # preceded by a short notice card. No fill, offline, missing consent or Remove Ads never blocks play.
+    ad_gate_every_matches: int = Field(default=3, ge=0)
     daily_mission_xp: int = 30
     weekly_mission_xp: int = 100
     weekly_mission_count: int = 4
@@ -117,7 +148,8 @@ class FeatureConfig(BaseModel):
     # Category queues (spec §3.5, §12.3): off by default; when the master flag is on, only the categories listed
     # for a "language:region" partition are offered. Mixed stays the default queue everywhere.
     category_queue_partitions: dict[str, list[str]] = Field(default_factory=dict)
-    rewarded_offers_enabled: bool = True
+    # Rewarded bonus XP is off: XP comes only from play, so leagues stay fair (playtest 2026-09-27).
+    rewarded_offers_enabled: bool = False
     competitive_languages: list[str] = Field(default_factory=lambda: ["en"])
     ui_languages: list[str] = Field(default_factory=lambda: ["en", "tr"])
     new_matches_enabled: bool = True
@@ -169,6 +201,7 @@ class GameConfig(BaseModel):
     survival: SurvivalConfig = Field(default_factory=SurvivalConfig)
     matchmaking: MatchmakingConfig = Field(default_factory=MatchmakingConfig)
     ranked: RankedConfig = Field(default_factory=RankedConfig)
+    leagues: LeagueConfig = Field(default_factory=LeagueConfig)
     economy: EconomyConfig = Field(default_factory=EconomyConfig)
     bots: BotConfig = Field(default_factory=BotConfig)
     features: FeatureConfig = Field(default_factory=FeatureConfig)
@@ -182,6 +215,7 @@ class GameConfig(BaseModel):
             "config_version": self.config_version,
             "mode": section.model_dump(),
             "ranked": self.ranked.model_dump(),
+            "leagues": self.leagues.model_dump(),
         }
 
 

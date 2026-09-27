@@ -152,7 +152,8 @@ class _PlayerCard extends StatelessWidget {
     final level = asInt(lp['level']) ?? asInt(profile['level']);
     final into = asInt(lp['xp_into_level']);
     final forLevel = asInt(lp['xp_for_level']);
-    final league = (profile['league'] as String?) ?? 'UNRANKED';
+    final nextReward = profile['next_level_reward'] is Map ? asJson(profile['next_level_reward']) : null;
+    final league = (profile['league'] as String?) ?? 'BRONZE';
     final name = (profile['username_display'] as String?) ?? '';
 
     return Container(
@@ -208,6 +209,17 @@ class _PlayerCard extends StatelessWidget {
           ]),
           const SizedBox(height: OSpace.sm),
           OProgressBar(value: into / forLevel, height: 10, background: OColors.white),
+        ],
+        if (nextReward != null && asInt(nextReward['level']) != null) ...[
+          const SizedBox(height: OSpace.md),
+          Row(key: const Key('profile-next-reward'), children: [
+            const Icon(Icons.card_giftcard_rounded, size: 18, color: OColors.primary),
+            const SizedBox(width: OSpace.sm),
+            Expanded(
+              child: Text(context.t('progress.profile.next_reward', {'level': asInt(nextReward['level'])}),
+                  style: OText.labelMd),
+            ),
+          ]),
         ],
       ]),
     );

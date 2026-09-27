@@ -23,9 +23,12 @@ KEY_ID = "3335741209"
 
 
 @pytest.fixture
-def players(api):
+def players(api, container):
     for uid in ("u1", "u2"):
         api.onboard(uid)
+    # Rewarded XP is disabled by default; the dormant offer/SSV path stays covered with the flag switched on.
+    container.store._docs["server_config/v1"]["features"]["rewarded_offers_enabled"] = True
+    container.config.invalidate()
     return api
 
 
@@ -62,15 +65,15 @@ def user(container, uid):
 def test_reward_offer_and_ssv_grant_once(players, container, ssv_key, client):
     match_id = settled_match(players, container)
     offer = players.post(f"/v1/rewards/offers/{match_id}/start", "u1").json()
-    assert offer["state"] == "OFFERED" and offer["bonus_xp"] == 150 and offer["custom_data"].startswith("v1.")
+    assert offer["state"] == "OFFERED" and offer["bonus_xp"] == 200 and offer["custom_data"].startswith("v1.")
     assert players.post(f"/v1/rewards/offers/{match_id}/start", "u1").json()["offer_id"] == offer["offer_id"]
     res = client.get(f"/internal/ads/admob-ssv?{ssv_query(ssv_key, offer)}")
     assert res.status_code == 200 and res.json()["granted"] is True
-    assert user(container, "u1")["total_xp"] == 300
+    assert user(container, "u1")["total_xp"] == 400
     dup = client.get(f"/internal/ads/admob-ssv?{ssv_query(ssv_key, offer)}")
-    assert dup.json()["duplicate"] is True and user(container, "u1")["total_xp"] == 300
+    assert dup.json()["duplicate"] is True and user(container, "u1")["total_xp"] == 400
     replay = client.get(f"/internal/ads/admob-ssv?{ssv_query(ssv_key, offer, transaction_id='tx-2')}")
-    assert replay.status_code == 402 and user(container, "u1")["total_xp"] == 300
+    assert replay.status_code == 402 and user(container, "u1")["total_xp"] == 400
     assert players.get(f"/v1/rewards/offers/{match_id}", "u1").json()["state"] == "GRANTED"
     # Reward XP never touches ranked weekly XP or MMR.
     week = iso_week_id(container.clock.now_ms())
@@ -89,7 +92,7 @@ def test_ssv_rejects_bad_signature_tampering_and_binding(players, container, ssv
     assert client.get(f"/internal/ads/admob-ssv?{ssv_query(ssv_key, offer, user_id='x' * 24)}").status_code == 402
     unsigned = ssv_query(ssv_key, offer).split("&signature=")[0]
     assert client.get(f"/internal/ads/admob-ssv?{unsigned}").status_code == 402
-    assert user(container, "u1")["total_xp"] == 150
+    assert user(container, "u1")["total_xp"] == 200
 
 
 def test_ssv_after_offer_expiry_is_rejected(players, container, ssv_key, client):
@@ -118,6 +121,16 @@ def test_reward_daily_cap(players, container):
     container.store._docs[f"reward_daily/u1_{utc_date_id(container.clock.now_ms())}"] = {"grants": 5}
     res = players.post(f"/v1/rewards/offers/{match_id}/start", "u1")
     assert res.status_code == 409 and res.json()["error"]["code"] == "REWARD_CAP_REACHED"
+
+
+def test_reward_offer_disabled_by_default(api, container):
+    api.onboard("u1")
+    match_id = settled_match(api, container)
+    assert f"reward_offers/{match_id}_u1" not in container.store._docs
+    res = api.post(f"/v1/rewards/offers/{match_id}/start", "u1")
+    assert res.json()["error"]["code"] == "FEATURE_DISABLED"
+    config = api.get("/v1/client-config", "u1").json()
+    assert config["rewarded_xp_enabled"] is False and config["ad_gate_every_matches"] == 3
 
 
 def test_reward_requires_own_settled_match(players, container):

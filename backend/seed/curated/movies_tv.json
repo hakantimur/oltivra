@@ -1,14 +1,14 @@
 [
   {
-    "key": "movies_tv_c001",
+    "key": "movies_tv_t001",
     "category_id": "movies_tv",
     "subcategory_id": "characters_franchises",
     "difficulty": "EASY",
     "global_relevance_score": 5,
     "time_sensitive": false,
     "question": {
-      "en": "This village set from The Lord of the Rings films is in which country?",
-      "tr": "Yüzüklerin Efendisi filmleri için kurulan bu köy seti hangi ülkededir?"
+      "en": "The Hobbiton movie set from The Lord of the Rings films is in which country?",
+      "tr": "Yüzüklerin Efendisi filmlerindeki Hobbiton seti hangi ülkededir?"
     },
     "options": [
       {
@@ -33,19 +33,7 @@
       }
     ],
     "correct": "new_zealand",
-    "source": "https://en.wikipedia.org/wiki/Hobbiton_Movie_Set",
-    "media": {
-      "file": "movies_tv/movies_tv_c001.webp",
-      "alt_text": {
-        "en": "A round blue door set into a grassy hillside, surrounded by flowers",
-        "tr": "Çiçeklerle çevrili, çimenli bir yamaca yerleştirilmiş yuvarlak mavi bir kapı"
-      },
-      "source": "https://commons.wikimedia.org/wiki/File:Hobbiton_Movie_Set,_Matamata.jpg",
-      "author": "Andres Iga",
-      "license": "CC0",
-      "attribution": "Andres Iga / Wikimedia Commons, CC0",
-      "copyright_status": "PUBLIC_DOMAIN"
-    }
+    "source": "https://en.wikipedia.org/wiki/Hobbiton_Movie_Set"
   },
   {
     "key": "movies_tv_c002",
@@ -84,15 +72,15 @@
     "source": "https://en.wikipedia.org/wiki/Finding_Nemo"
   },
   {
-    "key": "movies_tv_c003",
+    "key": "movies_tv_t003",
     "category_id": "movies_tv",
     "subcategory_id": "global_films",
     "difficulty": "MEDIUM",
     "global_relevance_score": 4,
     "time_sensitive": false,
     "question": {
-      "en": "This early camera and projector was built by which famous brothers?",
-      "tr": "Bu erken dönem kamera ve projektörü hangi ünlü kardeşler yaptı?"
+      "en": "Which famous brothers built the Cinématographe, an early film camera and projector?",
+      "tr": "Erken dönem kamera ve projektörü Cinématographe'ı hangi ünlü kardeşler yaptı?"
     },
     "options": [
       {
@@ -117,19 +105,7 @@
       }
     ],
     "correct": "lumiere",
-    "source": "https://en.wikipedia.org/wiki/Cin%C3%A9matographe",
-    "media": {
-      "file": "movies_tv/movies_tv_c003.webp",
-      "alt_text": {
-        "en": "An open wooden box camera showing a brass hand crank mechanism inside",
-        "tr": "İçinde pirinç bir el krankı mekanizması görünen, açık, ahşap kutu biçiminde bir kamera"
-      },
-      "source": "https://commons.wikimedia.org/wiki/File:Cam%C3%A9ra_cin%C3%A9matographe_35_mm_Lumi%C3%A8re_vue_de_face_(couvercle_objectif_ouvert)._On_voit_l%27obturateur_mobile_%C3%A0_disque_et_la_fen%C3%AAtre_de_cadrage_du_film.jpg",
-      "author": "PODZO DI BORGO",
-      "license": "CC BY-SA 4.0",
-      "attribution": "PODZO DI BORGO / Wikimedia Commons, CC BY-SA 4.0",
-      "copyright_status": "LICENSED"
-    }
+    "source": "https://en.wikipedia.org/wiki/Cin%C3%A9matographe"
   },
   {
     "key": "movies_tv_c004",
@@ -168,15 +144,15 @@
     "source": "https://en.wikipedia.org/wiki/Game_of_Thrones"
   },
   {
-    "key": "movies_tv_c005",
+    "key": "movies_tv_t005",
     "category_id": "movies_tv",
     "subcategory_id": "directors",
     "difficulty": "HARD",
     "global_relevance_score": 4,
     "time_sensitive": false,
     "question": {
-      "en": "Which director made the 1902 silent film this famous image comes from?",
-      "tr": "Bu ünlü görüntünün alındığı 1902 yapımı sessiz filmi hangi yönetmen çekti?"
+      "en": "Who directed the 1902 silent film A Trip to the Moon?",
+      "tr": "1902 yapımı sessiz film Ay'a Seyahat'i kim yönetti?"
     },
     "options": [
       {
@@ -201,18 +177,6 @@
       }
     ],
     "correct": "georges_melies",
-    "source": "https://en.wikipedia.org/wiki/A_Trip_to_the_Moon",
-    "media": {
-      "file": "movies_tv/movies_tv_c005.webp",
-      "alt_text": {
-        "en": "A black-and-white Moon with a face, hit in the eye by a capsule",
-        "tr": "Yüzü olan siyah-beyaz bir Ay'ın gözüne çarpmış bir kapsül"
-      },
-      "source": "https://commons.wikimedia.org/wiki/File:A_Trip_to_the_Moon_(Le_Voyage_dans_la_Lune).jpg",
-      "author": "Breve Storia del Cinema",
-      "license": "Public domain",
-      "attribution": "Breve Storia del Cinema / Wikimedia Commons, Public domain",
-      "copyright_status": "PUBLIC_DOMAIN"
-    }
+    "source": "https://en.wikipedia.org/wiki/A_Trip_to_the_Moon"
   }
 ]

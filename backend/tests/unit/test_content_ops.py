@@ -63,7 +63,7 @@ def test_ai_job_runs_full_pipeline(api, container):
         4: ["correct_not_in_options"],
         5: ["translation_missing_tr"],
         6: ["option_too_long_en", "option_too_long_tr"],
-        7: ["no_source"],
+        7: ["no_source", "semantic_duplicate"],  # also close to a curated seed question
     }
     detail = api.get(f"/admin/v1/questions/{done['accepted'][0]}", ADMIN, extra=AS_ADMIN).json()
     group = detail["group"]

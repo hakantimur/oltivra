@@ -10,6 +10,7 @@ import 'package:oltivra/api/api_client.dart';
 import 'package:oltivra/auth/auth_service.dart';
 import 'package:oltivra/core/providers.dart';
 import 'package:oltivra/features/progress/achievements_screen.dart';
+import 'package:oltivra/features/progress/league_screen.dart';
 import 'package:oltivra/features/progress/missions_screen.dart';
 import 'package:oltivra/features/progress/my_profile_screen.dart';
 import 'package:oltivra/features/progress/rankings_screen.dart';
@@ -42,6 +43,7 @@ Map<String, dynamic> _profile({String frameId = 'frame_none'}) => {
       'league': 'SILVER',
       'level': 12,
       'level_progress': {'level': 12, 'xp_into_level': 120, 'xp_for_level': 400},
+      'next_level_reward': {'level': 20, 'frame_id': 'frame_level_20'},
       'quick_current_ranked_win_streak': 4,
       'quick_best_ranked_win_streak': 7,
       'survival_ranked_crowns_lifetime': 3,
@@ -98,8 +100,33 @@ Future<_Harness> _pump(WidgetTester tester, Widget screen, _Handler handler) asy
 void main() {
   setUpAll(() => GoogleFonts.config.allowRuntimeFetching = false);
 
-  testWidgets('rankings renders the own row highlighted', (tester) async {
+  testWidgets('rankings opens on the league group with promotion and relegation zones', (tester) async {
     await _pump(tester, const RankingsScreen(), (req) async {
+      if (req.url.path == '/v1/league') {
+        Map<String, dynamic> row(int rank, String name, {bool me = false}) => {
+              'rank': rank, 'public_id': 'p$rank', 'username': name, 'avatar_id': 'av_002', 'frame_id': 'frame_none',
+              'weekly_xp': 1000 - rank * 10, 'me': me, 'zone': rank <= 2 ? 'PROMOTE' : rank > 8 ? 'DEMOTE' : null,
+            };
+        return {
+          'league': 'SILVER', 'joined': true, 'rank': 3, 'group_size': 10, 'promote_count': 2, 'demote_count': 2,
+          'ranked_weekly_xp': 970,
+          'standings': [for (var i = 1; i <= 10; i++) row(i, i == 3 ? 'mira_moves' : 'rival_$i', me: i == 3)],
+        };
+      }
+      return {};
+    });
+
+    expect(find.text('Promotion zone · top 2'), findsOneWidget);
+    await tester.scrollUntilVisible(find.text('Relegation zone · bottom 2'), 200);
+    expect(find.text('Relegation zone · bottom 2'), findsOneWidget);
+    await tester.scrollUntilVisible(find.byKey(const ValueKey('league.me')), -200);
+    final mine = find.byKey(const ValueKey('league.me'));
+    expect(find.descendant(of: mine, matching: find.text('mira_moves')), findsOneWidget);
+  });
+
+  testWidgets('rankings global tab renders the own row highlighted', (tester) async {
+    await _pump(tester, const RankingsScreen(), (req) async {
+      if (req.url.path == '/v1/league') return {'league': 'SILVER', 'joined': false, 'standings': []};
       if (req.url.path == '/v1/leaderboards/weekly') {
         Map<String, dynamic> e(int rank, String pid, String name, int xp) => {
               'rank': rank, 'public_id': pid, 'username': name, 'avatar_id': 'av_002', 'frame_id': 'frame_none',
@@ -115,11 +142,33 @@ void main() {
       return {};
     });
 
+    await tester.tap(find.text('Global'));
+    await tester.pumpAndSettle();
     expect(find.text('elena_z'), findsOneWidget);
     final mine = find.byKey(const ValueKey('progress.rankings.me'));
     expect(mine, findsOneWidget);
     expect(find.descendant(of: mine, matching: find.text('You')), findsOneWidget);
     expect(find.descendant(of: mine, matching: find.text('mira_moves')), findsOneWidget);
+  });
+
+  testWidgets('league screen shows the weekly rank, the rules and last week\'s promotion', (tester) async {
+    await _pump(tester, const LeagueScreen(), (req) async {
+      if (req.url.path == '/v1/league') {
+        return {
+          'league': 'GOLD', 'leagues': ['BRONZE', 'SILVER', 'GOLD'], 'joined': true, 'rank': 7, 'group_size': 100,
+          'promote_count': 20, 'demote_count': 20, 'ranked_weekly_xp': 640,
+          'week_ends_at_ms': DateTime.now().millisecondsSinceEpoch + 86400000,
+          'last_result': {'week_id': '2026-W38', 'rank': 4, 'from': 'SILVER', 'to': 'GOLD', 'outcome': 'PROMOTED'},
+          'standings': [],
+        };
+      }
+      return {};
+    });
+    expect(find.text('Last week you finished #4 and moved up to Gold!'), findsOneWidget);
+    expect(find.text('#7 of 100 · 640 XP this week'), findsOneWidget);
+    expect(find.text('You’re in the promotion zone — keep it up!'), findsOneWidget);
+    await tester.scrollUntilVisible(find.text('The bottom 20 move down a league.'), 200);
+    expect(find.text('The top 20 move up a league when the week ends.'), findsOneWidget);
   });
 
   testWidgets('missions claim calls the claim endpoint', (tester) async {
@@ -216,8 +265,10 @@ void main() {
     expect(find.text('mira_moves'), findsOneWidget);
     expect(find.text('LVL 12'), findsOneWidget);
     expect(find.text('120 / 400 XP'), findsOneWidget);
+    expect(find.text('Level 20 unlocks a new avatar frame'), findsOneWidget);
     expect(find.text('7'), findsOneWidget); // best streak
     expect(find.text('70% overall accuracy'), findsOneWidget);
     expect(find.text('#1 of 4'), findsOneWidget);
   });
 }
+

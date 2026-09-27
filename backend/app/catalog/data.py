@@ -39,7 +39,35 @@ FRAMES: tuple[dict[str, Any], ...] = (
      "names": {"en": "Diamond League", "tr": "Elmas Lig"}},
     {"id": "frame_legend", "kind": "LEAGUE", "color": "#AF2759",
      "names": {"en": "Legend League", "tr": "Efsane Lig"}},
+    # Level rewards (playtest 2026-09-27): cosmetic frames unlocked by reaching a level.
+    {"id": "frame_level_3", "kind": "LEVEL", "level": 3, "color": "#16B8A6",
+     "names": {"en": "Spark", "tr": "Kıvılcım"}},
+    {"id": "frame_level_5", "kind": "LEVEL", "level": 5, "color": "#5B7CFA",
+     "names": {"en": "Rising Star", "tr": "Yükselen Yıldız"}},
+    {"id": "frame_level_10", "kind": "LEVEL", "level": 10, "color": "#8E5CF6",
+     "names": {"en": "Sharp Mind", "tr": "Keskin Zekâ"}},
+    {"id": "frame_level_20", "kind": "LEVEL", "level": 20, "color": "#F28C28",
+     "names": {"en": "Quiz Master", "tr": "Bilgi Ustası"}},
+    {"id": "frame_level_30", "kind": "LEVEL", "level": 30, "color": "#1B2130",
+     "names": {"en": "Grandmaster", "tr": "Büyük Usta"}},
 )
+
+# (level, frame id) milestones, ascending.
+LEVEL_FRAMES: tuple[tuple[int, str], ...] = tuple(
+    sorted((int(f["level"]), f["id"]) for f in FRAMES if f["kind"] == "LEVEL"))
+
+
+def level_frames(level: int) -> set[str]:
+    """Frames unlocked at or below ``level``."""
+    return {frame_id for at, frame_id in LEVEL_FRAMES if level >= at}
+
+
+def next_level_reward(level: int) -> dict[str, Any] | None:
+    """The next level milestone above ``level`` and the frame it unlocks, or ``None`` past the last one."""
+    for at, frame_id in LEVEL_FRAMES:
+        if at > level:
+            return {"level": at, "frame_id": frame_id}
+    return None
 
 BADGES: tuple[dict[str, Any], ...] = (
     {"id": "badge_first_quick_win", "names": {"en": "First Quick Win", "tr": "İlk Hızlı Zafer"}, "icon": "bolt"},

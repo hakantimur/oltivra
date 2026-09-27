@@ -23,8 +23,9 @@ from app.matches.model import (
 )
 
 
-def points_for(ends_at_ms: int, received_at_ms: int) -> int:
-    return max(1, min(10, (ends_at_ms - received_at_ms) // 1000))
+def points_for(ends_at_ms: int, received_at_ms: int, max_points: int = 15) -> int:
+    """Seconds left rounded up, 1..max_points: a 15 s window pays 15 in its first second and 1 in its last."""
+    return max(1, min(max_points, -(-(ends_at_ms - received_at_ms) // 1000)))
 
 
 def _cfg(state: dict[str, Any]) -> dict[str, Any]:
@@ -129,7 +130,7 @@ def _project_bot_wrongs(state: dict[str, Any], before_ms: int, now_ms: int) -> N
 def _award_win(state: dict[str, Any], pid: str, received_at_ms: int, now_ms: int) -> int:
     rnd = current_round(state)
     participant = participants(state)[pid]
-    points = points_for(rnd["ends_at_ms"], received_at_ms)
+    points = points_for(rnd["ends_at_ms"], received_at_ms, _cfg(state)["seconds"])
     rnd["winner_pid"] = pid
     if rnd["kind"] == RoundKind.NORMAL:
         participant["score"] += points
@@ -154,7 +155,7 @@ def apply_due_bot_winner(state: dict[str, Any], due_ms: int, now_ms: int, result
     rnd = current_round(state)
     _project_bot_wrongs(state, response_at, now_ms)
     plan = state["bot_plans"][pid]
-    points = points_for(rnd["ends_at_ms"], response_at)
+    points = points_for(rnd["ends_at_ms"], response_at, _cfg(state)["seconds"])
     rnd["answers"] = {**(rnd.get("answers") or {}), pid: {
         "concept_id": plan["selected_concept_id"], "received_at_ms": response_at, "correct": True,
         "request_id": f"bot:{plan['commit_hash'][:12]}",

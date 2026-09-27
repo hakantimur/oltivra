@@ -8,16 +8,19 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 import '../../core/providers.dart';
 import 'store_services.dart';
 
-/// Interstitial policy (spec §31.1–31.2, §24 recovery):
-/// - only after a match result is visible, never during a question or reconnect recovery;
-/// - at most one opportunity per completed match and >= `interstitial_min_interval_s` between displays;
-/// - a completed rewarded video satisfies that match's opportunity;
-/// - not right after a crash/reconnect recovery in that match;
-/// - skipped entirely with the Remove Ads entitlement;
-/// - never blocks navigation: if no ad is ready, the player moves on immediately.
+/// Ad break policy (playtest 2026-09-27, replaces the per-result interstitial of spec §31.1):
+/// - after every `ad_gate_every_matches` completed matches (default 3), the next match starts after one
+///   interstitial, announced first by a short notice card explaining why Oltivra shows ads;
+/// - never during a match: the break runs on the matchmaking screen before joining the queue;
+/// - skipped entirely with the Remove Ads entitlement or without ad consent;
+/// - never blocks play: no fill, offline or a failed show lets the player straight into matchmaking, and the
+///   break is offered again before a later match.
 abstract interface class InterstitialAdGateway {
-  /// Loads the next ad in the background (called during gameplay so it is ready at the result).
+  /// Loads the next ad in the background (called during gameplay so it is ready at the next break).
   void preload();
+
+  /// Whether an ad is loaded and can be shown right now.
+  bool get isReady;
 
   /// Shows a loaded ad and completes when it is dismissed; `false` when none was ready.
   Future<bool> showIfReady();
@@ -42,6 +45,9 @@ class GoogleInterstitialAdGateway implements InterstitialAdGateway {
   bool _loading = false;
 
   String get _unit => !kIsWeb && Platform.isIOS ? interstitialAdUnitIos : interstitialAdUnitAndroid;
+
+  @override
+  bool get isReady => _ad != null;
 
   @override
   void preload() {
@@ -99,48 +105,53 @@ final interstitialAdGatewayProvider = Provider<InterstitialAdGateway>(
   ),
 );
 
-/// Per-session interstitial bookkeeping (business logic only; never touches match authority).
+/// Completed matches since the last ad break, persisted so the rhythm survives app restarts.
+const adGateCountPrefKey = 'ads.matches_since_break';
+const adGateLastMatchPrefKey = 'ads.last_counted_match';
+
+/// Ad break bookkeeping (business logic only; never touches match authority).
 class InterstitialController {
   InterstitialController(this._ref);
 
   final Ref _ref;
-  int? _lastShownMs;
-  final _usedMatches = <String>{};
-  final _recoveredMatches = <String>{};
 
   bool get _adFree => _ref.read(sessionProvider).value?.removeAds ?? false;
 
-  int get _minIntervalMs {
-    final s = (_ref.read(clientConfigProvider).value?['interstitial_min_interval_s'] as num?)?.toInt() ?? 45;
-    return s * 1000;
-  }
+  bool get _adsAllowed => !_adFree && _ref.read(adConsentProvider).value == true;
 
-  /// Warm up during gameplay so an ad can be ready when the result is shown (only once consent allows ads).
+  int get every => (_ref.read(clientConfigProvider).value?['ad_gate_every_matches'] as num?)?.toInt() ?? 3;
+
+  int get completedSinceBreak => _ref.read(sharedPrefsProvider).getInt(adGateCountPrefKey) ?? 0;
+
+  /// Warm up during gameplay so an ad can be ready for the next break (only once consent allows ads).
   void preload() {
-    if (_adFree || _ref.read(adConsentProvider).value != true) return;
+    if (!_adsAllowed) return;
     _ref.read(interstitialAdGatewayProvider).preload();
   }
 
-  /// The match went through reconnect recovery: no interstitial right after it.
-  void markRecovered(String matchId) => _recoveredMatches.add(matchId);
+  /// Counts a completed match once (idempotent per match id).
+  Future<void> recordCompleted(String matchId) async {
+    final prefs = _ref.read(sharedPrefsProvider);
+    if (prefs.getString(adGateLastMatchPrefKey) == matchId) return;
+    await prefs.setString(adGateLastMatchPrefKey, matchId);
+    await prefs.setInt(adGateCountPrefKey, completedSinceBreak + 1);
+  }
 
-  /// A completed rewarded video satisfies this match's interstitial opportunity.
-  void markRewarded(String matchId) => _usedMatches.add(matchId);
+  /// Whether the next match should start with an ad break. An ad that is not loaded yet never blocks play;
+  /// it is requested for a later break instead.
+  bool breakDue() {
+    if (every <= 0 || completedSinceBreak < every || !_adsAllowed) return false;
+    final gateway = _ref.read(interstitialAdGatewayProvider);
+    if (gateway.isReady) return true;
+    gateway.preload();
+    return false;
+  }
 
-  bool eligible(String matchId, int nowMs) =>
-      !_adFree &&
-      _ref.read(adConsentProvider).value == true &&
-      !_usedMatches.contains(matchId) &&
-      !_recoveredMatches.contains(matchId) &&
-      (_lastShownMs == null || nowMs - _lastShownMs! >= _minIntervalMs);
-
-  /// Uses this match's opportunity when eligible; returns once the ad closed (or immediately when none).
-  Future<void> maybeShow(String matchId) async {
-    final now = DateTime.now().millisecondsSinceEpoch;
-    if (!eligible(matchId, now)) return;
-    _usedMatches.add(matchId);
+  /// Shows [notice] (the pre-ad card), then the interstitial. The counter resets only once an ad was shown.
+  Future<void> runBreak(Future<void> Function() notice) async {
+    await notice();
     if (await _ref.read(interstitialAdGatewayProvider).showIfReady()) {
-      _lastShownMs = DateTime.now().millisecondsSinceEpoch;
+      await _ref.read(sharedPrefsProvider).setInt(adGateCountPrefKey, 0);
     }
   }
 }

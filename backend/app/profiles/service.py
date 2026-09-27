@@ -8,12 +8,13 @@ from __future__ import annotations
 
 from typing import Any
 
+from app.catalog.data import next_level_reward
 from app.catalog.service import CatalogService
 from app.common.clock import Clock
 from app.common.errors import ApiError, ErrorCode
 from app.common.keys import Keyring
 from app.common.store.docstore import DocStore
-from app.ranking.leagues import display_league
+from app.ranking.leagues import tier_of
 from app.ranking.levels import level_for_xp
 from app.usernames.rules import check_username, normalize
 
@@ -245,7 +246,7 @@ class ProfileService:
             "avatar_id": user.get("avatar_id"),
             "frame_id": user.get("frame_id", "frame_none"),
             "featured_badge_ids": user.get("featured_badge_ids", []),
-            "league": display_league(user.get("mmr", 1000), user.get("placement_matches_completed", 0)).value,
+            "league": tier_of(user).value,
             "level": level_for_xp(user.get("total_xp", 0)),
             "quick_best_ranked_win_streak": user.get("quick_best_ranked_win_streak", 0),
             "survival_ranked_crowns_lifetime": user.get("survival_ranked_crowns_lifetime", 0),
@@ -254,7 +255,6 @@ class ProfileService:
 
     def own_profile(self, user: dict[str, Any], entitlement: dict[str, Any] | None = None) -> dict[str, Any]:
         """Safe self view: never raw MMR, internal risk score or moderation notes."""
-        from app.ranking.leagues import league_progress
         from app.ranking.levels import level_progress
 
         last_change = user.get("username_changed_at_ms") or user.get("username_claimed_at_ms")
@@ -269,7 +269,8 @@ class ProfileService:
             },
             "total_xp": user.get("total_xp", 0),
             "level_progress": level_progress(user.get("total_xp", 0)),
-            "league_progress": league_progress(user.get("mmr", 1000), user.get("placement_matches_completed", 0)),
+            "next_level_reward": next_level_reward(level_for_xp(user.get("total_xp", 0))),
+            "league_state": {"last_result": (user.get("league_state") or {}).get("last_result")},
             "quick_current_ranked_win_streak": user.get("quick_current_ranked_win_streak", 0),
             "matches_completed": user.get("matches_completed", 0),
             "question_language": user.get("question_language", "en"),

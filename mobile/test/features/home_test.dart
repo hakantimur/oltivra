@@ -3,6 +3,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_riverpod/misc.dart' show Override;
 import 'package:flutter_test/flutter_test.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -15,6 +16,8 @@ import 'package:oltivra/features/home/choose_battle_screen.dart';
 import 'package:oltivra/features/home/finding_match_screen.dart';
 import 'package:oltivra/features/home/home_screen.dart';
 import 'package:oltivra/features/home/match_ready_screen.dart';
+import 'package:oltivra/features/store/interstitials.dart';
+import 'package:oltivra/features/store/store_services.dart';
 import 'package:oltivra/live/match_live_source.dart';
 import 'package:oltivra/live/match_snapshot.dart';
 import 'package:oltivra/session/session.dart';
@@ -70,6 +73,22 @@ const _config = {
 
 typedef _Handler = FutureOr<Object?> Function(http.Request req);
 
+class _ReadyAds implements InterstitialAdGateway {
+  int shows = 0;
+
+  @override
+  bool get isReady => true;
+
+  @override
+  void preload() {}
+
+  @override
+  Future<bool> showIfReady() async {
+    shows++;
+    return true;
+  }
+}
+
 String _stub(GoRouterState s) => '${s.uri.path}${s.uri.hasQuery ? '?${s.uri.query}' : ''}';
 
 Future<void> _pumpApp(
@@ -80,11 +99,13 @@ Future<void> _pumpApp(
   List<String>? calls,
   MatchLiveSource? live,
   bool realQueue = true,
+  Map<String, Object> prefsInit = const {},
+  List<Override> overrides = const [],
 }) async {
   tester.view.physicalSize = const Size(1200, 2800);
   tester.view.devicePixelRatio = 2.0;
   addTearDown(tester.view.reset);
-  SharedPreferences.setMockInitialValues({});
+  SharedPreferences.setMockInitialValues(prefsInit);
   final prefs = await SharedPreferences.getInstance();
   final api = ApiClient(
     baseUrl: Uri.parse('http://api.test'),
@@ -122,6 +143,7 @@ Future<void> _pumpApp(
       apiClientProvider.overrideWithValue(api),
       sessionProvider.overrideWith(() => _FixedSession(session ?? _session())),
       if (live != null) matchLiveSourceProvider.overrideWithValue(live),
+      ...overrides,
     ],
     child: MaterialApp.router(routerConfig: router),
   ));
@@ -188,6 +210,35 @@ void main() {
       expect(find.textContaining(RegExp('bot|CPU|AI', caseSensitive: false)), findsNothing);
     });
 
+    testWidgets('after three completed matches an ad break with a notice runs before joining', (tester) async {
+      final calls = <String>[];
+      final ads = _ReadyAds();
+      await _pumpApp(
+        tester,
+        initial: '/play/queue/quick',
+        calls: calls,
+        prefsInit: {adGateCountPrefKey: 3},
+        overrides: [
+          interstitialAdGatewayProvider.overrideWithValue(ads),
+          adConsentProvider.overrideWithValue(const AsyncValue.data(true)),
+        ],
+        handler: (req) {
+          final now = DateTime.now().millisecondsSinceEpoch;
+          if (req.url.path == '/v1/ping') return {'server_received_at_ms': now, 'server_responded_at_ms': now};
+          return null;
+        },
+      );
+      expect(find.byKey(const Key('ad-break-notice')), findsOneWidget);
+      expect(find.text('A short ad break'), findsOneWidget);
+      expect(calls, isNot(contains('GET /v1/ping')));
+      await tester.tap(find.byKey(const Key('ad-break-continue')));
+      await _settle(tester);
+      expect(ads.shows, 1);
+      expect(calls, contains('GET /v1/ping'));
+      final prefs = await SharedPreferences.getInstance();
+      expect(prefs.getInt(adGateCountPrefKey), 0);
+    });
+
     testWidgets('cancel leaves the queue and returns to Play', (tester) async {
       final calls = <String>[];
       await _pumpApp(
@@ -251,7 +302,8 @@ void main() {
                 {'mission_id': 'c', 'template_id': 'send_reactions_5', 'target': 5, 'progress': 0, 'completed': false},
               ],
             },
-          '/v1/league' => {'league': 'SILVER', 'progress': 0.4, 'next_league': 'GOLD', 'ranked_weekly_xp': 320},
+          '/v1/league' => {'league': 'SILVER', 'joined': true, 'rank': 42, 'group_size': 100, 'promote_count': 20,
+              'demote_count': 20, 'ranked_weekly_xp': 320},
           '/v1/leaderboards/weekly' => {
               'entries': [],
               'me': {'rank': 142, 'league': 'SILVER', 'ranked_weekly_xp': 320},
@@ -267,7 +319,8 @@ void main() {
       expect(find.text('Answer 10 questions correctly'), findsOneWidget);
       expect(find.text('Send 5 reactions'), findsNothing);
       expect(find.text('Resets in 8h'), findsOneWidget);
-      expect(find.text('#142'), findsOneWidget);
+      expect(find.text('#42'), findsOneWidget); // rank in the weekly league group
+      expect(find.text('Silver League'), findsOneWidget);
       expect(find.text('320 XP'), findsOneWidget);
       expect(find.text('Rejoin'), findsNothing);
     });

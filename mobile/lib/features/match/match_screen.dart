@@ -36,7 +36,7 @@ class MatchScreen extends ConsumerStatefulWidget {
 class _MatchScreenState extends ConsumerState<MatchScreen> {
   Timer? _ticker;
   bool _rematching = false;
-  bool _rewardClaimed = false;
+  bool _counted = false;
   bool _adPreloaded = false;
 
   String get _id => widget.matchId;
@@ -76,7 +76,6 @@ class _MatchScreenState extends ConsumerState<MatchScreen> {
     final s = update.snapshot;
     final reconnecting = update.health == LiveHealth.reconnecting;
     final ads = ref.read(interstitialControllerProvider);
-    if (reconnecting) ads.markRecovered(_id);
     if (!_adPreloaded && s != null && s.exists && !s.isTerminal) {
       _adPreloaded = true;
       ads.preload();
@@ -138,8 +137,11 @@ class _MatchScreenState extends ConsumerState<MatchScreen> {
   Widget _content(MatchViewData data, MatchUi ui) {
     final s = data.s;
     if (s.isTerminal) {
-      final rewardedEnabled = ref.watch(sessionProvider).value?.rewardedXpEnabled ?? false;
-      final offer = s.settlementStatus == 'SETTLED' && s.settlement?['progress_reward_offer'] == true;
+      if (!_counted && !s.isSpectator && s.me != null) {
+        // Completed matches drive the ad break rhythm (every N matches, see InterstitialController).
+        _counted = true;
+        unawaited(ref.read(interstitialControllerProvider).recordCompleted(_id));
+      }
       return FinalResultView(
         snapshot: s,
         nowMs: data.nowMs,
@@ -147,14 +149,6 @@ class _MatchScreenState extends ConsumerState<MatchScreen> {
         onPlayAgain: () => context.go(Routes.queue(s.mode)),
         onRematch: s.isSpectator || s.me == null ? null : _rematch,
         rematching: _rematching,
-        onRewardOffer: offer && rewardedEnabled && !_rewardClaimed
-            ? () async {
-                final granted = await context.push<bool>(Routes.rewardedOffer(_id));
-                if (granted != true || !mounted) return;
-                ref.read(interstitialControllerProvider).markRewarded(_id);
-                setState(() => _rewardClaimed = true);
-              }
-            : null,
         onReportPlayer: s.isSpectator ? null : (pid) => context.push(Routes.reportPlayer(pid, matchId: _id)),
       );
     }
@@ -172,11 +166,8 @@ class _MatchScreenState extends ConsumerState<MatchScreen> {
     return QuickQuestionView(data: data);
   }
 
-  /// Interstitial opportunity (§31.1): only when leaving a visible result for Home, never after Play Again.
-  Future<void> _home() async {
-    await ref.read(interstitialControllerProvider).maybeShow(_id);
-    if (mounted) context.go(Routes.home);
-  }
+  /// Ads never interrupt the way out of a result; the ad break runs before a later match instead.
+  void _home() => context.go(Routes.home);
 
   void _retry() => ref.invalidate(matchLiveProvider(_id));
 

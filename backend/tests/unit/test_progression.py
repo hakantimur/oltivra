@@ -108,19 +108,21 @@ def test_unranked_bot_match_awards_xp_but_never_ranked_progress(players, contain
     for _ in range(10):
         play_round_human_wins(players, container, match_id)
     u = user(container, "u1")
-    assert u["total_xp"] == 150 and u["matches_completed"] == 1 and u["quick_wins_lifetime"] == 1
+    assert u["total_xp"] == 200 and u["matches_completed"] == 1 and u["quick_wins_lifetime"] == 1
     assert u["mmr"] == 1000 and u["ranked_matches_completed"] == 0
     assert u["quick_current_ranked_win_streak"] == 0 and u.get("quick_ranked_wins_lifetime", 0) == 0
     assert "badge_first_quick_win" in u["badge_ids"]
     week = iso_week_id(container.clock.now_ms())
     assert f"weekly_user_stats/{week}_u1" not in container.store._docs
     settlement = private(container, match_id, "u1")["settlement"]
-    assert settlement["xp_awarded"] == 150 and settlement["progress_level_after"] >= 2
+    assert settlement["xp_awarded"] == 200 and settlement["progress_level_after"] >= 2
     assert settlement["progress_ranked"] is False and "mmr_delta" not in settlement
     assert settlement["progress_new_badges"] == ["badge_first_quick_win"]
     profile = container.store._docs[f"public_profiles/{u['public_id']}"]
     assert profile["level"] == settlement["progress_level_after"]
-    assert container.store._docs[f"reward_offers/{match_id}_u1"]["base_xp"] == 150
+    # Rewarded bonus XP is off by default: XP comes only from play (playtest 2026-09-27).
+    assert f"reward_offers/{match_id}_u1" not in container.store._docs
+    assert settlement["progress_reward_offer"] is False
     daily = players.get("/v1/missions/daily", "u1").json()
     assert any(m["progress"] > 0 for m in daily["missions"]) or all(
         m["template_id"] in ("play_survival_1", "win_ranked_quick_1", "send_reactions_5") for m in daily["missions"])
@@ -148,20 +150,23 @@ def test_ranked_match_updates_mmr_streak_weekly_and_leaderboard(players, contain
         play_round_human_wins(players, container, match_id, uid="u1")
     u1 = user(container, "u1")
     # Four equal 1000 players, provisional K = 48: 48 * (3 - 1.5) / 3 = 24.
-    assert u1["mmr"] == 1024 and u1["ranked_matches_completed"] == 1 and u1["placement_matches_completed"] == 1
+    assert u1["mmr"] == 1024 and u1["ranked_matches_completed"] == 1
     assert u1["quick_current_ranked_win_streak"] == 1 and u1["quick_ranked_wins_lifetime"] == 1
     losers = [user(container, u)["mmr"] - 1000 for u in ("u2", "u3", "u4")]
     # Unique tiebroken placements (spec §3.7): 2nd gains vs 3rd/4th, the group loses overall.
     assert sum(losers) < 0 and sorted(losers) == [-24, -8, 8]
     week = iso_week_id(container.clock.now_ms())
     weekly = container.store._docs[f"weekly_user_stats/{week}_u1"]
-    assert weekly["ranked_weekly_xp"] == 150 and weekly["quick_ranked_wins"] == 1 and weekly["league"] == "UNRANKED"
+    assert weekly["ranked_weekly_xp"] == 200 and weekly["quick_ranked_wins"] == 1 and weekly["league"] == "BRONZE"
+    assert weekly["group_id"] == u1["league_state"]["group_id"]
     board = players.get("/v1/leaderboards/weekly", "u2").json()
     assert board["entries"][0]["public_id"] == u1["public_id"] and board["entries"][0]["rank"] == 1
     assert board["me"]["rank"] >= 2 and len(board["entries"]) == 4
     league = players.get("/v1/league", "u1").json()
-    assert league["league"] == "UNRANKED" and league["placement_matches_remaining"] == 4
-    assert "mmr" not in league and league["ranked_weekly_xp"] == 150
+    assert league["league"] == "BRONZE" and league["joined"] is True and len(league["standings"]) == 100
+    mine = [row for row in league["standings"] if row["me"]]
+    assert len(mine) == 1 and mine[0]["weekly_xp"] == 200 and league["rank"] == mine[0]["rank"]
+    assert "mmr" not in league and league["ranked_weekly_xp"] == 200
 
 
 def test_ranked_loss_resets_streak(players, container):
@@ -326,3 +331,19 @@ def test_deleting_match_player_finishes_via_tasks(players, container):
     match_id = bot_fill_match(players, container)
     run_until_finished(container, match_id)
     assert user(container, "u1")["matches_completed"] == 1
+
+
+def test_level_milestone_unlocks_a_frame_and_names_the_next_reward(players, container):
+    container.store._docs["users/u1"]["total_xp"] = 250  # a 200 XP win crosses level 3 (303 XP)
+    match_id = bot_fill_match(players, container)
+    for _ in range(10):
+        play_round_human_wins(players, container, match_id)
+    u = user(container, "u1")
+    assert "frame_level_3" in u["frame_ids"] and "frame_level_5" not in u["frame_ids"]
+    settlement = private(container, match_id, "u1")["settlement"]
+    assert settlement["progress_new_frames"] == ["frame_level_3"]
+    assert settlement["progress_next_level_reward"] == {"level": 5, "frame_id": "frame_level_5"}
+    profile = players.get("/v1/profile", "u1").json()["profile"]
+    assert profile["next_level_reward"] == {"level": 5, "frame_id": "frame_level_5"}
+    frames = {f["id"]: f for f in players.get("/v1/cosmetics", "u1").json()["frames"]}
+    assert frames["frame_level_3"]["level"] == 3

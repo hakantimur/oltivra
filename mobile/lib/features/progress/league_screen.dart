@@ -11,8 +11,8 @@ import '../../widgets/o_widgets.dart';
 import 'progress_api.dart';
 import 'progress_widgets.dart';
 
-/// League status (P06 league_status): current league crest, abstract progress to the next league (or
-/// placement matches left) and the ladder. Raw MMR is never sent to or shown by the client (spec §7.3).
+/// League status (P06 league_status): this week's tier, rank in the weekly group, promotion/relegation rules,
+/// last week's result and the ladder (weekly cohort leagues, playtest 2026-09-27). Raw MMR is never shown.
 class LeagueScreen extends ConsumerWidget {
   const LeagueScreen({super.key});
 
@@ -36,76 +36,66 @@ class _Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final league = (data['league'] as String?) ?? 'UNRANKED';
-    final next = data['next_league'] as String?;
-    final progress = asDouble(data['progress']);
-    final placementLeft = asInt(data['placement_matches_remaining']) ?? 0;
+    final league = (data['league'] as String?) ?? 'BRONZE';
     final ladder = ((data['leagues'] as List?) ?? const []).whereType<String>().toList();
-    final weeklyXp = asInt(data['ranked_weekly_xp']);
-    final rankedMatches = asInt(data['ranked_matches_completed']);
-    final unranked = league == 'UNRANKED';
-    final percent = progress == null ? null : (progress * 100).round();
+    final joined = data['joined'] == true;
+    final rank = asInt(data['rank']);
+    final size = asInt(data['group_size']) ?? 100;
+    final promote = asInt(data['promote_count']) ?? 0;
+    final demote = asInt(data['demote_count']) ?? 0;
+    final weeklyXp = asInt(data['ranked_weekly_xp']) ?? 0;
+    final endsAt = asInt(data['week_ends_at_ms']);
+    final last = data['last_result'] is Map ? asJson(data['last_result']) : null;
+    final String status;
+    if (!joined || rank == null) {
+      status = context.t('progress.league.join_body');
+    } else if (rank <= promote) {
+      status = context.t('progress.league.status_promote');
+    } else if (demote > 0 && rank > size - demote) {
+      status = context.t('progress.league.status_demote');
+    } else {
+      status = context.t('progress.league.status_safe');
+    }
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
+        if (last != null) ...[_LastResult(result: last), const SizedBox(height: OSpace.lg)],
         OCard(
           radius: ORadius.lg,
           padding: const EdgeInsets.all(OSpace.xl),
           child: Column(children: [
-            OPill(context.t(unranked ? 'progress.league.placement_pill' : 'progress.league.active_pill'), dot: true),
+            OPill(context.t('progress.league.active_pill'), dot: true),
             const SizedBox(height: OSpace.xl),
             LeagueCrest(league: league, size: 112),
             const SizedBox(height: OSpace.lg),
-            Text(
-              unranked ? context.t('league.UNRANKED') : context.t('progress.league.name', {'league': context.t('league.$league')}),
-              style: OText.headlineLg,
-              textAlign: TextAlign.center,
-            ),
+            Text(context.t('progress.league.name', {'league': context.t('league.$league')}),
+                style: OText.headlineLg, textAlign: TextAlign.center),
             const SizedBox(height: OSpace.sm),
-            Text(context.t('progress.league.context'),
-                style: OText.bodyMd.copyWith(color: OColors.inkSubtle), textAlign: TextAlign.center),
-            if (progress != null) ...[
-              const SizedBox(height: OSpace.xl),
-              Container(
-                padding: const EdgeInsets.all(OSpace.lg),
-                decoration: BoxDecoration(color: OColors.surfaceContainer, borderRadius: BorderRadius.circular(ORadius.md)),
-                child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                  Row(children: [
-                    const Icon(Icons.trending_up_rounded, size: 18, color: OColors.primary),
-                    const SizedBox(width: OSpace.sm),
-                    Expanded(
-                      child: Text(
-                        unranked
-                            ? context.t('progress.league.placement_title')
-                            : next != null
-                                ? context.t('progress.league.to_next', {'league': context.t('league.$next')})
-                                : context.t('progress.league.top_league'),
-                        style: OText.labelLg,
-                      ),
-                    ),
-                    if (!unranked && next != null && percent != null)
-                      Text('$percent%', style: OText.tabular(OText.labelLg)),
-                  ]),
-                  const SizedBox(height: OSpace.md),
-                  Semantics(
-                    label: unranked
-                        ? context.t('progress.league.placement_left', {'n': placementLeft})
-                        : '$percent%',
-                    child: OProgressBar(value: progress, height: 12),
-                  ),
-                  const SizedBox(height: OSpace.sm),
-                  Text(
-                    unranked
-                        ? context.t('progress.league.placement_left', {'n': placementLeft})
-                        : next != null
-                            ? context.t('progress.league.next_hint')
-                            : context.t('progress.league.top_hint'),
-                    style: OText.bodySm.copyWith(color: OColors.inkSubtle),
-                  ),
-                ]),
-              ),
+            if (joined && rank != null)
+              Text(context.t('progress.league.rank', {'rank': rank, 'size': size, 'xp': weeklyXp}),
+                  key: const Key('league-rank'), style: OText.labelLg, textAlign: TextAlign.center),
+            const SizedBox(height: OSpace.xs),
+            Text(status, style: OText.bodyMd.copyWith(color: OColors.inkSubtle), textAlign: TextAlign.center),
+            if (endsAt != null) ...[
+              const SizedBox(height: OSpace.md),
+              ProgressCountdown(endsAtMs: endsAt, labelKey: 'progress.rankings.ends_in', style: OText.labelMd),
             ],
+          ]),
+        ),
+        OSectionHeader(context.t('progress.league.how_title')),
+        OCard(
+          child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            _Rule(Icons.groups_rounded, context.t('progress.league.how_group', {'size': size})),
+            if (promote > 0)
+              _Rule(Icons.arrow_upward_rounded, context.t('progress.league.how_up', {'n': promote}),
+                  color: OColors.success),
+            if (demote > 0)
+              _Rule(Icons.arrow_downward_rounded, context.t('progress.league.how_down', {'n': demote}),
+                  color: OColors.coral)
+            else
+              _Rule(Icons.shield_rounded, context.t('progress.league.how_bronze')),
+            _Rule(Icons.bolt_rounded, context.t('progress.league.how_xp')),
           ]),
         ),
         if (ladder.isNotEmpty) ...[
@@ -117,40 +107,65 @@ class _Body extends StatelessWidget {
             ]),
           ),
         ],
-        if (weeklyXp != null || rankedMatches != null) ...[
-          OSectionHeader(context.t('progress.league.this_week')),
-          Row(children: [
-            if (weeklyXp != null)
-              Expanded(
-                child: StatTile(
-                  label: context.t('progress.league.weekly_xp'),
-                  value: weeklyXp,
-                  unit: context.t('progress.xp'),
-                  icon: Icons.bolt_rounded,
-                  accent: OColors.turquoise,
-                ),
-              ),
-            if (weeklyXp != null && rankedMatches != null) const SizedBox(width: OSpace.gutter),
-            if (rankedMatches != null)
-              Expanded(
-                child: StatTile(
-                  label: context.t('progress.league.ranked_matches'),
-                  value: rankedMatches,
-                  unit: context.t('progress.unit.played'),
-                  icon: Icons.sports_esports_rounded,
-                  accent: OColors.pink,
-                ),
-              ),
-          ]),
-        ],
         const SizedBox(height: OSpace.xl),
         OButton(
-          label: context.t('progress.league.see_rankings'),
+          label: context.t('progress.league.see_group'),
           icon: Icons.leaderboard_rounded,
           style: OButtonStyle.secondary,
           onPressed: () => context.canPop() ? context.pop() : context.go(Routes.rankings),
         ),
       ],
+    );
+  }
+}
+
+class _Rule extends StatelessWidget {
+  const _Rule(this.icon, this.text, {this.color = OColors.primary});
+
+  final IconData icon;
+  final String text;
+  final Color color;
+
+  @override
+  Widget build(BuildContext context) => Padding(
+        padding: const EdgeInsets.symmetric(vertical: OSpace.xs),
+        child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          Icon(icon, size: 18, color: color),
+          const SizedBox(width: OSpace.sm),
+          Expanded(child: Text(text, style: OText.bodyMd)),
+        ]),
+      );
+}
+
+class _LastResult extends StatelessWidget {
+  const _LastResult({required this.result});
+
+  final Json result;
+
+  @override
+  Widget build(BuildContext context) {
+    final outcome = result['outcome'] as String? ?? 'STAYED';
+    final to = (result['to'] as String?) ?? 'BRONZE';
+    final (color, icon) = switch (outcome) {
+      'PROMOTED' => (OColors.success, Icons.arrow_circle_up_rounded),
+      'RELEGATED' => (OColors.coral, Icons.arrow_circle_down_rounded),
+      _ => (OColors.primary, Icons.shield_rounded),
+    };
+    return Container(
+      key: const Key('league-last-result'),
+      padding: const EdgeInsets.all(OSpace.lg),
+      decoration: BoxDecoration(color: color.withValues(alpha: 0.12), borderRadius: BorderRadius.circular(ORadius.card)),
+      child: Row(children: [
+        Icon(icon, color: color),
+        const SizedBox(width: OSpace.md),
+        Expanded(
+          child: Text(
+            context.t('progress.league.last_$outcome',
+                {'rank': asInt(result['rank']) ?? 0, 'league': context.t('league.$to')}),
+            style: OText.labelLg,
+          ),
+        ),
+      ]),
     );
   }
 }

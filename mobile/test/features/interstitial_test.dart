@@ -4,18 +4,23 @@ import 'package:oltivra/core/providers.dart';
 import 'package:oltivra/features/store/interstitials.dart';
 import 'package:oltivra/features/store/store_services.dart';
 import 'package:oltivra/session/session.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class _FakeInterstitials implements InterstitialAdGateway {
   bool ready = true;
+  bool showSucceeds = true;
   int preloads = 0;
   int shows = 0;
+
+  @override
+  bool get isReady => ready;
 
   @override
   void preload() => preloads++;
 
   @override
   Future<bool> showIfReady() async {
-    if (!ready) return false;
+    if (!ready || !showSucceeds) return false;
     shows++;
     return true;
   }
@@ -34,15 +39,18 @@ class _Session extends SessionController {
 
 Future<(InterstitialController, _FakeInterstitials)> _setup({
   bool removeAds = false,
-  int interval = 45,
+  int every = 3,
   bool consent = true,
 }) async {
+  SharedPreferences.setMockInitialValues({});
+  final prefs = await SharedPreferences.getInstance();
   final ads = _FakeInterstitials();
   final c = ProviderContainer(
     overrides: [
+      sharedPrefsProvider.overrideWithValue(prefs),
       interstitialAdGatewayProvider.overrideWithValue(ads),
       sessionProvider.overrideWith(() => _Session(removeAds)),
-      clientConfigProvider.overrideWith((ref) async => {'interstitial_min_interval_s': interval}),
+      clientConfigProvider.overrideWith((ref) async => {'ad_gate_every_matches': every}),
       adConsentProvider.overrideWith((ref) async => consent),
     ],
   );
@@ -53,55 +61,73 @@ Future<(InterstitialController, _FakeInterstitials)> _setup({
   return (c.read(interstitialControllerProvider), ads);
 }
 
+Future<void> _complete(InterstitialController ctl, int n, {int from = 0}) async {
+  for (var i = from; i < from + n; i++) {
+    await ctl.recordCompleted('m$i');
+  }
+}
+
 void main() {
-  test('shows at most one interstitial per match', () async {
-    final (ctl, ads) = await _setup(interval: 0);
-    await ctl.maybeShow('m1');
-    await ctl.maybeShow('m1');
-    expect(ads.shows, 1);
-  });
-
-  test('respects the minimum interval between displays across matches', () async {
+  test('an ad break is due only after every third completed match', () async {
     final (ctl, ads) = await _setup();
-    await ctl.maybeShow('m1');
-    await ctl.maybeShow('m2');
+    await _complete(ctl, 2);
+    expect(ctl.breakDue(), isFalse);
+    await _complete(ctl, 1, from: 2);
+    expect(ctl.breakDue(), isTrue);
+
+    var noticeShown = 0;
+    await ctl.runBreak(() async => noticeShown++);
+    expect(noticeShown, 1);
     expect(ads.shows, 1);
-    expect(ctl.eligible('m2', DateTime.now().millisecondsSinceEpoch + 46000), isTrue);
+    expect(ctl.completedSinceBreak, 0);
+    expect(ctl.breakDue(), isFalse);
   });
 
-  test('rewarded completion and reconnect recovery suppress that match only', () async {
-    final (ctl, ads) = await _setup(interval: 0);
-    ctl.markRewarded('m1');
-    ctl.markRecovered('m2');
-    await ctl.maybeShow('m1');
-    await ctl.maybeShow('m2');
-    expect(ads.shows, 0);
-    await ctl.maybeShow('m3');
-    expect(ads.shows, 1);
+  test('the same match is counted once', () async {
+    final (ctl, _) = await _setup();
+    await ctl.recordCompleted('m1');
+    await ctl.recordCompleted('m1');
+    expect(ctl.completedSinceBreak, 1);
   });
 
-  test('ad-free players never load or see interstitials', () async {
-    final (ctl, ads) = await _setup(removeAds: true, interval: 0);
-    ctl.preload();
-    await ctl.maybeShow('m1');
-    expect(ads.preloads, 0);
-    expect(ads.shows, 0);
-  });
-
-  test('an unready ad does not start the interval', () async {
+  test('no fill never blocks play and the break is offered again later', () async {
     final (ctl, ads) = await _setup();
+    await _complete(ctl, 3);
     ads.ready = false;
-    await ctl.maybeShow('m1');
+    expect(ctl.breakDue(), isFalse);
+    expect(ads.preloads, 1);
     ads.ready = true;
-    await ctl.maybeShow('m2');
-    expect(ads.shows, 1);
+    expect(ctl.breakDue(), isTrue);
+  });
+
+  test('a failed show keeps the counter so the next match tries again', () async {
+    final (ctl, ads) = await _setup();
+    await _complete(ctl, 3);
+    ads.showSucceeds = false;
+    await ctl.runBreak(() async {});
+    expect(ads.shows, 0);
+    expect(ctl.completedSinceBreak, 3);
+  });
+
+  test('ad-free players never load or see ad breaks', () async {
+    final (ctl, ads) = await _setup(removeAds: true);
+    ctl.preload();
+    await _complete(ctl, 5);
+    expect(ctl.breakDue(), isFalse);
+    expect(ads.preloads, 0);
   });
 
   test('no ads are loaded or shown without UMP consent', () async {
-    final (ctl, ads) = await _setup(interval: 0, consent: false);
+    final (ctl, ads) = await _setup(consent: false);
     ctl.preload();
-    await ctl.maybeShow('m1');
+    await _complete(ctl, 5);
+    expect(ctl.breakDue(), isFalse);
     expect(ads.preloads, 0);
-    expect(ads.shows, 0);
+  });
+
+  test('a zero rhythm from the server turns ad breaks off', () async {
+    final (ctl, _) = await _setup(every: 0);
+    await _complete(ctl, 10);
+    expect(ctl.breakDue(), isFalse);
   });
 }
