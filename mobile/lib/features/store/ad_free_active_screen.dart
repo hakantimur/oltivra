@@ -74,8 +74,11 @@ class _AdFreeActiveScreenState extends ConsumerState<AdFreeActiveScreen> {
                   width: 150,
                   height: 150,
                   padding: const EdgeInsets.all(22),
-                  decoration: BoxDecoration(color: OColors.mint, shape: BoxShape.circle,
-                      border: Border.all(color: OColors.turquoise.withValues(alpha: 0.15), width: 8)),
+                  decoration: BoxDecoration(
+                    color: OColors.mint,
+                    shape: BoxShape.circle,
+                    border: Border.all(color: OColors.turquoise.withValues(alpha: 0.15), width: 8),
+                  ),
                   child: Container(
                     decoration: const BoxDecoration(color: OColors.white, shape: BoxShape.circle),
                     child: const Icon(Icons.verified_user_outlined, size: 52, color: OColors.turquoise),
@@ -87,8 +90,11 @@ class _AdFreeActiveScreenState extends ConsumerState<AdFreeActiveScreen> {
                   child: Container(
                     width: 44,
                     height: 44,
-                    decoration: BoxDecoration(color: OColors.success, shape: BoxShape.circle,
-                        border: Border.all(color: OColors.white, width: 3)),
+                    decoration: BoxDecoration(
+                      color: OColors.success,
+                      shape: BoxShape.circle,
+                      border: Border.all(color: OColors.white, width: 3),
+                    ),
                     child: const Icon(Icons.check_rounded, color: OColors.white),
                   ),
                 ),
@@ -100,39 +106,44 @@ class _AdFreeActiveScreenState extends ConsumerState<AdFreeActiveScreen> {
           const SizedBox(height: OSpace.md),
           Text(context.t('store.ad_free.heading'), style: OText.headlineXlMobile, textAlign: TextAlign.center),
           const SizedBox(height: OSpace.sm),
-          Text(context.t('store.ad_free.body'),
-              style: OText.bodyLg.copyWith(color: OColors.onSurfaceVariant), textAlign: TextAlign.center),
+          Text(
+            context.t('store.ad_free.body'),
+            style: OText.bodyLg.copyWith(color: OColors.onSurfaceVariant),
+            textAlign: TextAlign.center,
+          ),
           const SizedBox(height: OSpace.xl),
-          SettingsGroup(children: [
-            SettingsTile(
-              icon: Icons.verified_outlined,
-              iconBackground: OColors.mint,
-              iconColor: OColors.primary,
-              title: context.t('store.ad_free.status'),
-              subtitle: _sourceLabel(context, e['source_store'] as String?),
-              trailing: OPill(context.t('store.ad_free.active')),
-            ),
-            SettingsTile(
-              icon: Icons.smart_display_outlined,
-              iconBackground: OColors.sun,
-              iconColor: OColors.tertiary,
-              title: context.t('store.ad_free.rewarded'),
-              subtitle: context.t('store.ad_free.rewarded.sub'),
-            ),
-            SettingsTile(
-              icon: Icons.devices_rounded,
-              title: context.t('store.ad_free.devices'),
-              subtitle: context.t('store.ad_free.devices.sub'),
-            ),
-          ]),
+          SettingsGroup(
+            children: [
+              SettingsTile(
+                icon: Icons.verified_outlined,
+                iconBackground: OColors.mint,
+                iconColor: OColors.primary,
+                title: context.t('store.ad_free.status'),
+                subtitle: _sourceLabel(context, e['source_store'] as String?),
+                trailing: OPill(context.t('store.ad_free.active')),
+              ),
+              SettingsTile(
+                icon: Icons.smart_display_outlined,
+                iconBackground: OColors.sun,
+                iconColor: OColors.tertiary,
+                title: context.t('store.ad_free.rewarded'),
+                subtitle: context.t('store.ad_free.rewarded.sub'),
+              ),
+              SettingsTile(
+                icon: Icons.devices_rounded,
+                title: context.t('store.ad_free.devices'),
+                subtitle: context.t('store.ad_free.devices.sub'),
+              ),
+            ],
+          ),
         ],
       ],
     );
   }
 
   String _sourceLabel(BuildContext context, String? store) => switch (store) {
-        'GOOGLE_PLAY' => context.t('store.ad_free.source.google'),
-        'APP_STORE' => context.t('store.ad_free.source.apple'),
-        _ => context.t('store.ad_free.source.unknown'),
-      };
+    'GOOGLE_PLAY' => context.t('store.ad_free.source.google'),
+    'APP_STORE' => context.t('store.ad_free.source.apple'),
+    _ => context.t('store.ad_free.source.unknown'),
+  };
 }

@@ -26,6 +26,9 @@ class Settings(BaseSettings):
     internal_auth_mode: Literal["oidc", "shared_secret"] = "shared_secret"
 
     firebase_project_id: str = "demo-oltivra"
+    # Named Firestore database: Oltivra shares the Firebase project (and Auth) with Synova but keeps its data
+    # in its own EU database, separate from Synova's "(default)" database.
+    firestore_database: str = "(default)"
     # Comma separated RTDB URLs, index == shard number. Empty -> derived emulator namespaces.
     rtdb_shard_urls: str = ""
     shard_count: int = 2
@@ -34,7 +37,17 @@ class Settings(BaseSettings):
     firebase_web_api_key: str = "demo-api-key"
     firebase_auth_domain: str = ""
     auth_emulator_host: str = "127.0.0.1:9099"
+
+    # Legal identity shown in the Terms and Privacy Policy (app/legal). Required outside dev/test.
+    legal_operator_name: str = ""
+    legal_contact_email: str = ""
+    legal_address: str = ""
+    legal_governing_law: str = ""
+    legal_governing_law_tr: str = ""  # Turkish wording for the TR documents; falls back to legal_governing_law
+    legal_effective_date: str = "2026-09-27"
     storage_bucket: str = "demo-oltivra.appspot.com"
+    # In-memory dev server only: address devices use to fetch question images from the API (/dev/media).
+    dev_media_base_url: str = "http://10.0.2.2:8000"
 
     cloud_tasks_project: str = ""
     cloud_tasks_location: str = "europe-west1"
@@ -54,7 +67,7 @@ class Settings(BaseSettings):
     admin_require_mfa: bool = False
     admob_ssv_mode: Literal["google", "fake"] = "fake"
     purchase_verify_mode: Literal["store", "fake"] = "fake"
-    google_play_package: str = "com.oltivra.app"
+    google_play_package: str = "com.noriloop.oltivra"
     apple_bundle_id: str = "com.oltivra.app"
     # Comma separated paths to pinned Apple root certificates (e.g. AppleRootCA-G3.cer), mounted from secrets.
     apple_root_cert_paths: str = ""
@@ -78,6 +91,8 @@ class Settings(BaseSettings):
                 raise ValueError("memory store is forbidden outside dev/test")
             if self.admob_ssv_mode != "google" or self.purchase_verify_mode != "store":
                 raise ValueError("fake reward/purchase verification is forbidden outside dev/test")
+            if not (self.legal_operator_name and self.legal_contact_email and self.legal_governing_law):
+                raise ValueError("legal operator name, contact email and governing law must be configured")
         if self.env == "prod":
             if self.app_check_mode != "enforce":
                 raise ValueError("App Check must be enforced in prod")

@@ -223,6 +223,11 @@ class CategoryChip extends StatelessWidget {
 
 /// Question card with the optional signed image. The image region keeps its aspect ratio while loading or
 /// after a failure so answer controls never move (spec §22.2).
+const imageMaxHeightFraction = 0.14;
+
+/// Height of the image credit line under a question image.
+const attributionLineHeight = 14.0;
+
 class QuestionCard extends StatelessWidget {
   const QuestionCard({super.key, required this.snapshot, this.header});
 
@@ -240,20 +245,50 @@ class QuestionCard extends StatelessWidget {
         children: [
           if (header != null) ...[header!, const SizedBox(height: OSpace.md)],
           if (url != null) ...[
-            ClipRRect(
-              borderRadius: BorderRadius.circular(ORadius.card),
-              child: AspectRatio(
-                aspectRatio: snapshot.imageAspect <= 0 ? 16 / 9 : snapshot.imageAspect,
-                child: Image.network(
-                  url,
-                  fit: BoxFit.cover,
-                  semanticLabel: context.t('match.question_image'),
-                  loadingBuilder: (context, child, progress) => progress == null ? child : const _ImageFallback(),
-                  errorBuilder: (context, error, stack) => const _ImageFallback(),
+            // Capped so all four answers stay visible without scrolling, even under the result banner.
+            Center(
+              child: ConstrainedBox(
+                constraints: BoxConstraints(maxHeight: MediaQuery.sizeOf(context).height * imageMaxHeightFraction),
+                child: AspectRatio(
+                  aspectRatio: snapshot.imageAspect <= 0 ? 16 / 9 : snapshot.imageAspect,
+                  child: DecoratedBox(
+                    position: DecorationPosition.foreground,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(ORadius.card),
+                      border: Border.all(color: OColors.outlineVariant),
+                    ),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(ORadius.card),
+                      child: Image.network(
+                        url,
+                        fit: BoxFit.cover,
+                        semanticLabel: context.t('match.question_image'),
+                        loadingBuilder: (context, child, progress) =>
+                            progress == null ? child : const _ImageFallback(),
+                        errorBuilder: (context, error, stack) => const _ImageFallback(),
+                      ),
+                    ),
+                  ),
                 ),
               ),
             ),
-            const SizedBox(height: OSpace.lg),
+            const SizedBox(height: 2),
+            // Licence credit. The line is reserved from the start (no layout jump) but filled only at reveal,
+            // because an author's name or place could hint at the answer.
+            SizedBox(
+              height: attributionLineHeight,
+              child: snapshot.isRevealed && snapshot.imageAttribution.isNotEmpty
+                  ? Text(
+                      context.t('match.image_credit', {'credit': snapshot.imageAttribution}),
+                      key: const ValueKey('image-attribution'),
+                      style: OText.labelSm.copyWith(color: OColors.inkSubtle),
+                      textAlign: TextAlign.center,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                    )
+                  : null,
+            ),
+            const SizedBox(height: 2),
           ],
           Text(snapshot.questionText, style: OText.headlineMd, textAlign: TextAlign.center),
         ],

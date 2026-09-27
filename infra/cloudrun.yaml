@@ -38,6 +38,13 @@ spec:
             - { name: OLTIVRA_FIREBASE_PROJECT_ID, value: PROJECT_ID }
             - { name: OLTIVRA_CLOUD_TASKS_PROJECT, value: PROJECT_ID }
             - { name: OLTIVRA_TASK_SERVICE_ACCOUNT, value: oltivra-tasks@PROJECT_ID.iam.gserviceaccount.com }
+            # Legal identity on /legal pages; the postal address is kept out of the public repo.
+            - { name: OLTIVRA_LEGAL_OPERATOR_NAME, value: "Hakan Timur" }
+            - { name: OLTIVRA_LEGAL_CONTACT_EMAIL, value: support@noriloop.net }
+            - { name: OLTIVRA_LEGAL_GOVERNING_LAW, value: "the laws of the Republic of Türkiye" }
+            - { name: OLTIVRA_LEGAL_GOVERNING_LAW_TR, value: "Türkiye Cumhuriyeti kanunları" }
+            - name: OLTIVRA_LEGAL_ADDRESS
+              valueFrom: { secretKeyRef: { name: legal-address, key: latest } }
             # Secrets come from Secret Manager only (spec §28.5).
             - name: OLTIVRA_TIEBREAK_KEYS
               valueFrom: { secretKeyRef: { name: tiebreak-keys, key: latest } }

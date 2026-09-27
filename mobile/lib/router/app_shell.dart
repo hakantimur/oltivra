@@ -1,16 +1,34 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+
+import '../features/store/store_services.dart';
 
 import '../l10n/strings.dart';
 
 /// Bottom navigation with the five destinations from the design: Home, Play, Rankings, Social, Profile.
-class AppShell extends StatelessWidget {
+/// Entering the signed-in shell also starts the UMP consent flow once, before any ad is requested.
+class AppShell extends ConsumerStatefulWidget {
   const AppShell({super.key, required this.shell});
 
   final StatefulNavigationShell shell;
 
   @override
+  ConsumerState<AppShell> createState() => _AppShellState();
+}
+
+class _AppShellState extends ConsumerState<AppShell> {
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) ref.read(adConsentProvider);
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
+    final shell = widget.shell;
     final items = [
       (Icons.home_outlined, Icons.home_rounded, 'nav.home'),
       (Icons.sports_esports_outlined, Icons.sports_esports_rounded, 'nav.play'),

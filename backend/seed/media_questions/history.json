@@ -1,0 +1,230 @@
+[
+  {
+    "key": "history_c001",
+    "category_id": "history",
+    "subcategory_id": "ancient_civilisations",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "In which city does this ancient amphitheatre stand?",
+      "tr": "Bu antik amfitiyatro hangi şehirdedir?"
+    },
+    "options": [
+      {
+        "concept_id": "rome",
+        "en": "Rome",
+        "tr": "Roma"
+      },
+      {
+        "concept_id": "athens",
+        "en": "Athens",
+        "tr": "Atina"
+      },
+      {
+        "concept_id": "istanbul",
+        "en": "Istanbul",
+        "tr": "İstanbul"
+      },
+      {
+        "concept_id": "alexandria",
+        "en": "Alexandria",
+        "tr": "İskenderiye"
+      }
+    ],
+    "correct": "rome",
+    "source": "https://en.wikipedia.org/wiki/Colosseum",
+    "media": {
+      "file": "history/history_c001.webp",
+      "alt_text": {
+        "en": "A tall, partly ruined oval stone arena with rows of arches",
+        "tr": "Sıra sıra kemerleri olan, kısmen yıkık, yüksek, oval taş arena"
+      },
+      "source": "https://commons.wikimedia.org/wiki/File:Colosseum-Rome-May-2009.jpg",
+      "author": "Acediscovery",
+      "license": "CC BY 4.0",
+      "attribution": "Acediscovery / Wikimedia Commons, CC BY 4.0",
+      "copyright_status": "LICENSED"
+    }
+  },
+  {
+    "key": "history_c002",
+    "category_id": "history",
+    "subcategory_id": "historical_figures",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which country gave the Statue of Liberty to the United States?",
+      "tr": "Özgürlük Heykeli'ni ABD'ye hangi ülke hediye etti?"
+    },
+    "options": [
+      {
+        "concept_id": "france",
+        "en": "France",
+        "tr": "Fransa"
+      },
+      {
+        "concept_id": "united_kingdom",
+        "en": "United Kingdom",
+        "tr": "Birleşik Krallık"
+      },
+      {
+        "concept_id": "spain",
+        "en": "Spain",
+        "tr": "İspanya"
+      },
+      {
+        "concept_id": "italy",
+        "en": "Italy",
+        "tr": "İtalya"
+      }
+    ],
+    "correct": "france",
+    "source": "https://en.wikipedia.org/wiki/Statue_of_Liberty"
+  },
+  {
+    "key": "history_c003",
+    "category_id": "history",
+    "subcategory_id": "archaeology",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {
+      "en": "Roughly how old is this prehistoric stone monument?",
+      "tr": "Bu tarih öncesi taş anıt yaklaşık kaç yaşındadır?"
+    },
+    "options": [
+      {
+        "concept_id": "about_5000_years",
+        "en": "About 5,000 years",
+        "tr": "Yaklaşık 5.000 yıl"
+      },
+      {
+        "concept_id": "about_1000_years",
+        "en": "About 1,000 years",
+        "tr": "Yaklaşık 1.000 yıl"
+      },
+      {
+        "concept_id": "about_2000_years",
+        "en": "About 2,000 years",
+        "tr": "Yaklaşık 2.000 yıl"
+      },
+      {
+        "concept_id": "about_20000_years",
+        "en": "About 20,000 years",
+        "tr": "Yaklaşık 20.000 yıl"
+      }
+    ],
+    "correct": "about_5000_years",
+    "source": "https://en.wikipedia.org/wiki/Stonehenge",
+    "media": {
+      "file": "history/history_c003.webp",
+      "alt_text": {
+        "en": "A ring of huge standing stones, some topped with lintels, on a grassy plain",
+        "tr": "Çimenli bir ovada, bazılarının üstünde yatay taşlar bulunan dev dikili taşlardan oluşan bir halka"
+      },
+      "source": "https://commons.wikimedia.org/wiki/File:Stonehenge,_Condado_de_Wiltshire,_Inglaterra,_2014-08-12,_DD_18.JPG",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Diego Delso / Wikimedia Commons, CC BY-SA 4.0",
+      "copyright_status": "LICENSED"
+    }
+  },
+  {
+    "key": "history_c004",
+    "category_id": "history",
+    "subcategory_id": "empires",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "These clay warriors were buried with which Chinese emperor?",
+      "tr": "Bu kil savaşçılar hangi Çin imparatoruyla birlikte gömüldü?"
+    },
+    "options": [
+      {
+        "concept_id": "qin_shi_huang",
+        "en": "Qin Shi Huang",
+        "tr": "Qin Shi Huang"
+      },
+      {
+        "concept_id": "kublai_khan",
+        "en": "Kublai Khan",
+        "tr": "Kubilay Han"
+      },
+      {
+        "concept_id": "puyi",
+        "en": "Puyi",
+        "tr": "Puyi"
+      },
+      {
+        "concept_id": "emperor_wu_of_han",
+        "en": "Emperor Wu of Han",
+        "tr": "Han İmparatoru Wu"
+      }
+    ],
+    "correct": "qin_shi_huang",
+    "source": "https://en.wikipedia.org/wiki/Terracotta_Army",
+    "media": {
+      "file": "history/history_c004.webp",
+      "alt_text": {
+        "en": "Rows of life-size grey clay soldier statues",
+        "tr": "Sıra sıra, gerçek boyutlu gri kil asker heykelleri"
+      },
+      "source": "https://commons.wikimedia.org/wiki/File:A_rank_of_terracotta_soldiers.jpg",
+      "author": "High Contrast",
+      "license": "CC BY 3.0 de",
+      "attribution": "High Contrast / Wikimedia Commons, CC BY 3.0 de",
+      "copyright_status": "LICENSED"
+    }
+  },
+  {
+    "key": "history_c005",
+    "category_id": "history",
+    "subcategory_id": "ancient_civilisations",
+    "difficulty": "HARD",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {
+      "en": "Which ancient people carved this building into a sandstone cliff?",
+      "tr": "Bu yapıyı kumtaşı bir kayalığa hangi antik halk oydu?"
+    },
+    "options": [
+      {
+        "concept_id": "nabataeans",
+        "en": "Nabataeans",
+        "tr": "Nebatiler"
+      },
+      {
+        "concept_id": "phoenicians",
+        "en": "Phoenicians",
+        "tr": "Fenikeliler"
+      },
+      {
+        "concept_id": "hittites",
+        "en": "Hittites",
+        "tr": "Hititler"
+      },
+      {
+        "concept_id": "sumerians",
+        "en": "Sumerians",
+        "tr": "Sümerler"
+      }
+    ],
+    "correct": "nabataeans",
+    "source": "https://en.wikipedia.org/wiki/Al-Khazneh",
+    "media": {
+      "file": "history/history_c005.webp",
+      "alt_text": {
+        "en": "An ornate columned facade carved into a rose-coloured rock face",
+        "tr": "Pembe tonlu bir kaya yüzeyine oyulmuş, sütunlu, süslü bir cephe"
+      },
+      "source": "https://commons.wikimedia.org/wiki/File:Al-Khazneh_(The_Treasury)_2,_Petra,_Jordan.jpg",
+      "author": "Vyacheslav Argenberg",
+      "license": "CC BY 4.0",
+      "attribution": "Vyacheslav Argenberg / Wikimedia Commons, CC BY 4.0",
+      "copyright_status": "LICENSED"
+    }
+  }
+]

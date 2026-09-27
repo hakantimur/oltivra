@@ -1,0 +1,103 @@
+[
+  {
+    "key": "geography_c001",
+    "category_id": "geography",
+    "subcategory_id": "landmarks",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {"en": "In which country is this mountain-top citadel?", "tr": "Bu dağ tepesindeki antik kent hangi ülkededir?"},
+    "options": [
+      {"concept_id": "peru", "en": "Peru", "tr": "Peru"},
+      {"concept_id": "bolivia", "en": "Bolivia", "tr": "Bolivya"},
+      {"concept_id": "mexico", "en": "Mexico", "tr": "Meksika"},
+      {"concept_id": "colombia", "en": "Colombia", "tr": "Kolombiya"}
+    ],
+    "correct": "peru",
+    "source": "https://en.wikipedia.org/wiki/Machu_Picchu",
+    "image": {
+      "refined": "geo_machu_picchu", "index": 5,
+      "alt_text": {"en": "Stone ruins on green terraces below a steep mountain peak", "tr": "Sarp bir dağ zirvesinin altında, yeşil teraslar üzerindeki taş kalıntılar"}
+    }
+  },
+  {
+    "key": "geography_c002",
+    "category_id": "geography",
+    "subcategory_id": "landmarks",
+    "difficulty": "EASY",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {"en": "This giant sandstone monolith is a landmark of which country?", "tr": "Bu dev kumtaşı kaya hangi ülkenin simgelerindendir?"},
+    "options": [
+      {"concept_id": "australia", "en": "Australia", "tr": "Avustralya"},
+      {"concept_id": "south_africa", "en": "South Africa", "tr": "Güney Afrika"},
+      {"concept_id": "united_states", "en": "United States", "tr": "ABD"},
+      {"concept_id": "namibia", "en": "Namibia", "tr": "Namibya"}
+    ],
+    "correct": "australia",
+    "source": "https://en.wikipedia.org/wiki/Uluru",
+    "image": {
+      "refined": "geo_uluru", "index": 0,
+      "alt_text": {"en": "A huge red rock face rising above dry grassland and trees", "tr": "Kuru çayırlık ve ağaçların üzerinde yükselen devasa kızıl kaya yüzeyi"}
+    }
+  },
+  {
+    "key": "geography_c003",
+    "category_id": "geography",
+    "subcategory_id": "rivers",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {"en": "This waterfall lies on which river?", "tr": "Bu şelale hangi nehir üzerindedir?"},
+    "options": [
+      {"concept_id": "zambezi", "en": "Zambezi", "tr": "Zambezi"},
+      {"concept_id": "nile", "en": "Nile", "tr": "Nil"},
+      {"concept_id": "congo", "en": "Congo", "tr": "Kongo"},
+      {"concept_id": "niger", "en": "Niger", "tr": "Nijer"}
+    ],
+    "correct": "zambezi",
+    "source": "https://en.wikipedia.org/wiki/Victoria_Falls",
+    "image": {
+      "refined": "geo_victoria_falls", "index": 4,
+      "alt_text": {"en": "A wide waterfall plunging into a deep gorge, seen from above", "tr": "Yukarıdan görülen, derin bir kanyona dökülen geniş bir şelale"}
+    }
+  },
+  {
+    "key": "geography_c004",
+    "category_id": "geography",
+    "subcategory_id": "rivers",
+    "difficulty": "MEDIUM",
+    "global_relevance_score": 5,
+    "time_sensitive": false,
+    "question": {"en": "Which river flows through both Vienna and Budapest?", "tr": "Hem Viyana'dan hem Budapeşte'den geçen nehir hangisidir?"},
+    "options": [
+      {"concept_id": "danube", "en": "Danube", "tr": "Tuna"},
+      {"concept_id": "rhine", "en": "Rhine", "tr": "Ren"},
+      {"concept_id": "elbe", "en": "Elbe", "tr": "Elbe"},
+      {"concept_id": "vistula", "en": "Vistula", "tr": "Vistül"}
+    ],
+    "correct": "danube",
+    "source": "https://en.wikipedia.org/wiki/Danube"
+  },
+  {
+    "key": "geography_c005",
+    "category_id": "geography",
+    "subcategory_id": "countries",
+    "difficulty": "HARD",
+    "global_relevance_score": 4,
+    "time_sensitive": false,
+    "question": {"en": "The world's largest salt flat, shown here, is in which country?", "tr": "Burada görülen, dünyanın en büyük tuz düzlüğü hangi ülkededir?"},
+    "options": [
+      {"concept_id": "bolivia", "en": "Bolivia", "tr": "Bolivya"},
+      {"concept_id": "chile", "en": "Chile", "tr": "Şili"},
+      {"concept_id": "argentina", "en": "Argentina", "tr": "Arjantin"},
+      {"concept_id": "peru", "en": "Peru", "tr": "Peru"}
+    ],
+    "correct": "bolivia",
+    "source": "https://en.wikipedia.org/wiki/Salar_de_Uyuni",
+    "image": {
+      "refined": "geo_salar_uyuni", "index": 0,
+      "alt_text": {"en": "Small mounds of salt on a flat white plain under a blue sky", "tr": "Mavi gökyüzü altında düz beyaz bir ovada küçük tuz yığınları"}
+    }
+  }
+]

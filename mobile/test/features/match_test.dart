@@ -6,6 +6,8 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/testing.dart';
+import 'package:oltivra/features/store/interstitials.dart';
+import 'package:oltivra/features/store/store_services.dart';
 import 'package:oltivra/api/api_client.dart';
 import 'package:oltivra/core/providers.dart';
 import 'package:oltivra/features/match/match_screen.dart';
@@ -23,6 +25,16 @@ class _Tokens implements TokenSource {
 
   @override
   Future<String?> idToken({bool forceRefresh = false}) async => 'test:u1';
+}
+
+class _NoInterstitials implements InterstitialAdGateway {
+  int preloads = 0;
+
+  @override
+  void preload() => preloads++;
+
+  @override
+  Future<bool> showIfReady() async => false;
 }
 
 class _FixedSession extends SessionController {
@@ -111,6 +123,8 @@ class _Harness {
               'quick': {'wrong_penalty': -4},
             }),
         sessionProvider.overrideWith(_FixedSession.new),
+        interstitialAdGatewayProvider.overrideWithValue(_NoInterstitials()),
+        adConsentProvider.overrideWith((ref) async => true),
       ],
       child: MaterialApp(theme: buildTheme(), home: const MatchScreen(matchId: matchId)),
     ));
@@ -157,6 +171,62 @@ void main() {
     expect(body['request_id'], answers.single.headers['x-idempotency-key']);
     // Every other option is now disabled for this round.
     expect(_option(tester, 'Troposphere').onTap, isNull);
+  });
+
+  const imageQuestion = {
+    'text': 'Which country uses this flag?',
+    'options': _options,
+    'signed_image_url': 'http://img.test/questions/g/v1/main.webp?exp=1',
+    'image_aspect': 1.5,
+    'image_attribution': 'Jane Doe / Wikimedia Commons, CC BY 4.0',
+  };
+
+  Future<void> expectAllAnswersOnScreen(WidgetTester tester) async {
+    expect(find.byType(Image), findsOneWidget);
+    final screenHeight = tester.view.physicalSize.height / tester.view.devicePixelRatio;
+    for (final t in ['Troposphere', 'Stratosphere', 'Mesosphere', 'Thermosphere']) {
+      expect(tester.getBottomLeft(find.widgetWithText(AnswerOption, t)).dy, lessThanOrEqualTo(screenHeight), reason: t);
+    }
+  }
+
+  testWidgets('image question keeps all four answers on screen while answering', (tester) async {
+    await _Harness().pump(
+      tester,
+      _snap(_quickPublic('ROUND_ACTIVE', extra: {'current_question': imageQuestion}), {
+        'pid': 'p1',
+        'round_id': 'r3',
+        'eligible_to_answer': true,
+        'option_order': _order,
+        'own_answer_status': 'NOT_ANSWERED',
+      }),
+    );
+    // The credit is withheld while answering: an author's name or place could hint at the answer.
+    expect(find.byKey(const ValueKey('image-attribution')), findsNothing);
+    await expectAllAnswersOnScreen(tester);
+  });
+
+  testWidgets('image question keeps all four answers on screen with the result banner', (tester) async {
+    await _Harness().pump(
+      tester,
+      _snap(
+        _quickPublic('ROUND_REVEAL', extra: {
+          'current_question': imageQuestion,
+          'correct_answer_reveal': {'concept_id': 'c1', 'text': 'Stratosphere', 'winner_pid': 'p2', 'points': 7},
+        }),
+        {
+          'pid': 'p1',
+          'round_id': 'r3',
+          'eligible_to_answer': false,
+          'option_order': _order,
+          'own_answer_status': 'ANSWERED_WRONG',
+          'selected_concept_id': 'c3',
+          'score_delta': -4,
+        },
+      ),
+    );
+    expect(find.text('kevin_q wins +7'), findsOneWidget);
+    expect(find.text('Image: Jane Doe / Wikimedia Commons, CC BY 4.0'), findsOneWidget);
+    await expectAllAnswersOnScreen(tester);
   });
 
   testWidgets('revealed state highlights the correct option and keeps the own wrong trace', (tester) async {

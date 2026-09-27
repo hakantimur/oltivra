@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../core/legal.dart';
 import '../../core/env.dart';
 import '../../core/providers.dart';
 import '../../l10n/strings.dart';
@@ -163,6 +164,16 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
             title: context.t('settings.guide'),
             subtitle: context.t('settings.guide.sub'),
             onTap: () => context.push(Routes.guide),
+          ),
+          SettingsTile(
+            icon: Icons.gavel_rounded,
+            title: context.t('legal.terms'),
+            onTap: () => showLegalDocument(context, 'terms'),
+          ),
+          SettingsTile(
+            icon: Icons.privacy_tip_outlined,
+            title: context.t('legal.privacy'),
+            onTap: () => showLegalDocument(context, 'privacy'),
           ),
           SettingsTile(
             icon: Icons.open_in_new_rounded,

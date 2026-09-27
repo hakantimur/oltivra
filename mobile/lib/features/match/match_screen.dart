@@ -10,6 +10,7 @@ import '../../live/match_live_source.dart';
 import '../../live/match_snapshot.dart';
 import '../../router/routes.dart';
 import '../../widgets/o_widgets.dart';
+import '../store/interstitials.dart';
 import 'final_result_view.dart';
 import 'match_controller.dart';
 import 'match_unavailable_screen.dart';
@@ -36,6 +37,7 @@ class _MatchScreenState extends ConsumerState<MatchScreen> {
   Timer? _ticker;
   bool _rematching = false;
   bool _rewardClaimed = false;
+  bool _adPreloaded = false;
 
   String get _id => widget.matchId;
 
@@ -73,6 +75,12 @@ class _MatchScreenState extends ConsumerState<MatchScreen> {
     }
     final s = update.snapshot;
     final reconnecting = update.health == LiveHealth.reconnecting;
+    final ads = ref.read(interstitialControllerProvider);
+    if (reconnecting) ads.markRecovered(_id);
+    if (!_adPreloaded && s != null && s.exists && !s.isTerminal) {
+      _adPreloaded = true;
+      ads.preload();
+    }
     if (s == null || !s.exists) {
       if (update.health == LiveHealth.unavailable) {
         return MatchUnavailableScreen(matchId: _id, connectionLost: true, onRetry: _retry);
@@ -135,14 +143,16 @@ class _MatchScreenState extends ConsumerState<MatchScreen> {
       return FinalResultView(
         snapshot: s,
         nowMs: data.nowMs,
-        onHome: () => context.go(Routes.home),
+        onHome: _home,
         onPlayAgain: () => context.go(Routes.queue(s.mode)),
         onRematch: s.isSpectator || s.me == null ? null : _rematch,
         rematching: _rematching,
         onRewardOffer: offer && rewardedEnabled && !_rewardClaimed
             ? () async {
                 final granted = await context.push<bool>(Routes.rewardedOffer(_id));
-                if (granted == true && mounted) setState(() => _rewardClaimed = true);
+                if (granted != true || !mounted) return;
+                ref.read(interstitialControllerProvider).markRewarded(_id);
+                setState(() => _rewardClaimed = true);
               }
             : null,
         onReportPlayer: s.isSpectator ? null : (pid) => context.push(Routes.reportPlayer(pid, matchId: _id)),
@@ -160,6 +170,12 @@ class _MatchScreenState extends ConsumerState<MatchScreen> {
     }
     if (between) return RoundTransitionView(data: data);
     return QuickQuestionView(data: data);
+  }
+
+  /// Interstitial opportunity (§31.1): only when leaving a visible result for Home, never after Play Again.
+  Future<void> _home() async {
+    await ref.read(interstitialControllerProvider).maybeShow(_id);
+    if (mounted) context.go(Routes.home);
   }
 
   void _retry() => ref.invalidate(matchLiveProvider(_id));
