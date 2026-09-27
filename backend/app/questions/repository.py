@@ -227,3 +227,12 @@ class QuestionRepository:
 
     async def put_media(self, asset: MediaAsset) -> None:
         await self._store.set(f"media_assets/{asset.id}", asset.model_dump())
+
+    async def attach_media(self, group_id: str, version: int, asset_id: str) -> None:
+        """Bind the uploaded image to the (still editable) version it was stored under."""
+        await self._store.update(f"question_groups/{group_id}", {"media_asset_id": asset_id,
+                                                                 "updated_at_ms": self._clock.now_ms()})
+        snapshot = await self._store.get(f"question_versions/{group_id}_{version}")
+        if snapshot:
+            await self._store.update(f"question_versions/{group_id}_{version}",
+                                     {"snapshot": {**snapshot["snapshot"], "media_asset_id": asset_id}})

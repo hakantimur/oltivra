@@ -30,6 +30,8 @@ class JoinRequest(BaseModel):
     request_id: str
     # Median of 5–7 authenticated pings; used for grouping only (spec §21.2).
     median_rtt_ms: int = Field(ge=0, le=10_000)
+    # Optional category queue (spec §3.5); omitted = Mixed.
+    category_id: str | None = Field(default=None, max_length=64)
 
 
 class MutationBody(BaseModel):
@@ -65,7 +67,8 @@ async def join_queue(mode: str, body: JoinRequest, request: Request, caller: Cal
         await c.rate_limiter.hit(rate_limit.QUEUE_JOIN, caller.uid)
 
     async def handler() -> dict:
-        return await c.matchmaking.join(caller.uid, caller.user, queue_mode, body.median_rtt_ms, body.request_id)
+        return await c.matchmaking.join(caller.uid, caller.user, queue_mode, body.median_rtt_ms, body.request_id,
+                                         body.category_id)
 
     return await run_mutation(c, request, caller, f"matchmaking.join.{queue_mode.value}", body.model_dump(), handler)
 

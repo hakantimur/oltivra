@@ -114,10 +114,18 @@ class BotConfig(BaseModel):
 class FeatureConfig(BaseModel):
     survival_enabled: bool = True
     category_queues_enabled: bool = False
+    # Category queues (spec §3.5, §12.3): off by default; when the master flag is on, only the categories listed
+    # for a "language:region" partition are offered. Mixed stays the default queue everywhere.
+    category_queue_partitions: dict[str, list[str]] = Field(default_factory=dict)
     rewarded_offers_enabled: bool = True
     competitive_languages: list[str] = Field(default_factory=lambda: ["en"])
     ui_languages: list[str] = Field(default_factory=lambda: ["en", "tr"])
     new_matches_enabled: bool = True
+
+    def category_queues_for(self, language: str, region: str) -> list[str]:
+        if not self.category_queues_enabled:
+            return []
+        return list(self.category_queue_partitions.get(f"{language}:{region}", []))
 
 
 class ModerationConfig(BaseModel):
@@ -143,6 +151,10 @@ class ContentConfig(BaseModel):
     near_duplicate_threshold: float = Field(default=0.86, ge=0.5, le=1.0)
     ai_min_global_relevance: int = Field(default=4, ge=1, le=5)
     ai_max_candidates_per_job: int = Field(default=25, ge=1, le=100)
+    # Empirical difficulty (spec §3.4, §10.3): never before 200 valid human attempts per language/mode/version.
+    empirical_min_attempts: int = Field(default=200, ge=200)
+    empirical_easy_min_accuracy: float = Field(default=0.70, gt=0, lt=1)
+    empirical_medium_min_accuracy: float = Field(default=0.40, gt=0, lt=1)
 
 
 class RetentionConfig(BaseModel):

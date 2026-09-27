@@ -171,21 +171,54 @@ def test_validation_queue(api):
 # ---------------------------------------------------------------------------------------------- media
 
 
+def media_payload(gid: str, version: int = 1, data: bytes = b"RIFF\x10\x00\x00\x00WEBPVP8 fake", **extra) -> dict:
+    return {"question_group_id": gid, "version": version, "content_type": "image/webp",
+            "data_base64": base64.b64encode(data).decode(), "width": 640, "height": 480,
+            "alt_text": {"en": "A river"}, "source": "own photo", "license": "CC0", "copyright_status": "CLEARED",
+            **extra}
+
+
 def test_media_upload_and_review(api, container):
-    payload = {"content_type": "image/webp", "data_base64": base64.b64encode(b"RIFF....WEBPVP8 fake").decode(),
-               "width": 640, "height": 480, "alt_text": {"en": "A river"}, "source": "own photo",
-               "license": "CC0", "copyright_status": "CLEARED"}
-    res = api.post("/admin/v1/media", ADMIN, payload, extra=AS_ADMIN)
+    gid = create(api)["group"]["id"]
+    res = api.post("/admin/v1/media", ADMIN, media_payload(gid), extra=AS_ADMIN)
     assert res.status_code == 200, res.text
     media = res.json()["media"]
-    assert media["review_status"] == "PENDING" and media["storage_path"].endswith(".webp")
+    assert media["review_status"] == "PENDING" and res.json()["warnings"] == []
+    assert media["storage_path"] == f"questions/{gid}/v1/main.webp" and media["preferred_limits_ok"] is True
     assert container.media_uploader.objects[media["storage_path"]][0].startswith(b"RIFF")
+    assert "immutable" in container.media_uploader.cache_control[media["storage_path"]]
+    assert container.store._docs[f"question_groups/{gid}"]["media_asset_id"] == media["id"]
+    assert container.store._docs[f"question_versions/{gid}_1"]["snapshot"]["media_asset_id"] == media["id"]
     res = api.patch(f"/admin/v1/media/{media['id']}", ADMIN, {"review_status": "APPROVED"}, extra=AS_ADMIN)
     assert res.json()["media"]["review_status"] == "APPROVED"
     pending = api.get("/admin/v1/media", ADMIN, extra=AS_ADMIN, review_status="PENDING").json()["items"]
     assert pending == []
-    bad = api.post("/admin/v1/media", ADMIN, {**payload, "data_base64": "not base64!"}, extra=AS_ADMIN)
+    bad = api.post("/admin/v1/media", ADMIN, {**media_payload(gid), "data_base64": "not base64!"}, extra=AS_ADMIN)
     assert bad.status_code == 400
+
+
+def test_media_is_webp_versioned_and_never_overwritten(api, container):
+    gid = create(api)["group"]["id"]
+    png = api.post("/admin/v1/media", ADMIN, media_payload(gid, data=b"PNG_HEADER" + b"0" * 16),
+                   extra=AS_ADMIN)
+    assert png.status_code == 400 and png.json()["error"]["detail"]["reason"] == "not_webp"
+    jpeg = api.post("/admin/v1/media", ADMIN, media_payload(gid, content_type="image/jpeg"), extra=AS_ADMIN)
+    assert jpeg.status_code == 422 or jpeg.status_code == 400
+    big = media_payload(gid, data=b"RIFF\x10\x00\x00\x00WEBP" + b"0" * 250_000, width=2000, height=1000)
+    res = api.post("/admin/v1/media", ADMIN, big, extra=AS_ADMIN)
+    assert res.status_code == 200
+    assert set(res.json()["warnings"]) == {"above_preferred_bytes", "above_preferred_dimension"}
+    assert res.json()["media"]["preferred_limits_ok"] is False
+    # The same version path is never overwritten in place.
+    again = api.post("/admin/v1/media", ADMIN, media_payload(gid), extra=AS_ADMIN)
+    assert again.status_code == 409 and again.json()["error"]["detail"]["reason"] == "media_exists"
+    # A stale or verified version is immutable.
+    stale = api.post("/admin/v1/media", ADMIN, media_payload(gid, version=2), extra=AS_ADMIN)
+    assert stale.json()["error"]["detail"]["reason"] == "version_immutable"
+    active = create(api, "What is the capital city of Canada?")["group"]["id"]
+    activate(api, active)
+    locked = api.post("/admin/v1/media", ADMIN, media_payload(active), extra=AS_ADMIN)
+    assert locked.status_code == 409 and locked.json()["error"]["detail"]["reason"] == "version_immutable"
 
 
 # ---------------------------------------------------------------------------------------------- catalog/config

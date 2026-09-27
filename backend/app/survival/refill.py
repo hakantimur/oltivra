@@ -31,7 +31,8 @@ class SurvivalRefill:
         uids = [p["uid"] for p in humans(state).values()]
         try:
             items = await c.question_plans.survival_plan(state["language"], uids, seed=f"{match_id}:refill:{batch}",
-                                                         exclude_gids=exclude, targets=REFILL_TARGETS)
+                                                         exclude_gids=exclude, targets=REFILL_TARGETS,
+                                                         category_id=(state.get("plan") or {}).get("category_id"))
         except InsufficientInventory:
             log.warning("survival_refill_exhausted", extra={"match_id": match_id})
             items = {}

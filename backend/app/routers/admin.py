@@ -17,16 +17,25 @@ from pydantic import BaseModel, Field
 from app.common.api import Caller, get_container
 from app.common.errors import ApiError, ErrorCode
 from app.common.ids import new_uuid
+from app.common.media import MediaObjectExists
 from app.common.server_config import GameConfig
 from app.common.store.docstore import Query as DocQuery
 from app.container import Container
-from app.questions.models import MediaAsset, OptionText, QuestionStatus
+from app.questions.models import (
+    IMMUTABLE_CACHE_CONTROL,
+    MEDIA_EDITABLE_STATUSES,
+    MediaAsset,
+    OptionText,
+    QuestionStatus,
+    is_webp,
+    media_warnings,
+    question_media_path,
+)
 from app.questions.repository import TranslationInput
 
 router = APIRouter(prefix="/admin/v1", tags=["admin"])
 
 MAX_MEDIA_BYTES = 2 * 1024 * 1024
-MEDIA_TYPES = {"image/webp": "webp", "image/png": "png", "image/jpeg": "jpg"}
 
 
 async def admin_caller(request: Request, c: Container = Depends(get_container)) -> Caller:
@@ -88,7 +97,10 @@ class TransitionIn(BaseModel):
 
 
 class MediaIn(BaseModel):
-    content_type: Literal["image/webp", "image/png", "image/jpeg"]
+    # Question media is always the draft version's single WebP image (spec §9.1, §34.1).
+    question_group_id: str = Field(min_length=1, max_length=64)
+    version: int = Field(ge=1)
+    content_type: Literal["image/webp"]
     data_base64: str
     width: int = Field(ge=64, le=4096)
     height: int = Field(ge=64, le=4096)
@@ -331,16 +343,30 @@ async def upload_media(body: MediaIn, caller: Caller = Depends(admin_caller),
         raise ApiError(ErrorCode.INVALID_REQUEST, detail={"reason": "base64"}) from exc
     if not data or len(data) > MAX_MEDIA_BYTES:
         raise ApiError(ErrorCode.INVALID_REQUEST, detail={"reason": "size", "max_bytes": MAX_MEDIA_BYTES})
-    asset_id = new_uuid()
-    path = f"question_media/{asset_id}.{MEDIA_TYPES[body.content_type]}"
-    await c.media_uploader.put(path, data, body.content_type)
-    asset = MediaAsset(id=asset_id, storage_path=path, content_type=body.content_type, width=body.width,
+    if not is_webp(data):
+        raise ApiError(ErrorCode.INVALID_REQUEST, detail={"reason": "not_webp"})
+    group = await c.question_repo.get_group(body.question_group_id)
+    if not group:
+        raise ApiError(ErrorCode.NOT_FOUND)
+    if group["version"] != body.version or group["status"] not in MEDIA_EDITABLE_STATUSES:
+        # Verified/active versions are immutable: edit by creating a new version first.
+        raise ApiError(ErrorCode.CONFLICT, detail={"reason": "version_immutable", "current_version": group["version"]})
+    path = question_media_path(body.question_group_id, body.version)
+    try:
+        await c.media_uploader.put(path, data, body.content_type, cache_control=IMMUTABLE_CACHE_CONTROL)
+    except MediaObjectExists as exc:
+        raise ApiError(ErrorCode.CONFLICT, detail={"reason": "media_exists"}) from exc
+    warnings = media_warnings(len(data), body.width, body.height)
+    asset = MediaAsset(id=new_uuid(), storage_path=path, content_type=body.content_type, width=body.width,
                        height=body.height, bytes=len(data), alt_text=body.alt_text, source=body.source,
                        author=body.author, license=body.license, attribution=body.attribution,
-                       copyright_status=body.copyright_status, review_status="PENDING")
+                       copyright_status=body.copyright_status, review_status="PENDING",
+                       question_group_id=body.question_group_id, question_version=body.version,
+                       preferred_limits_ok=not warnings, created_at_ms=c.clock.now_ms())
     await c.question_repo.put_media(asset)
-    await c.audit.record(actor=caller.uid, action="MEDIA_UPLOAD", subject=f"media:{asset_id}")
-    return {"schema_version": 1, "media": asset.model_dump()}
+    await c.question_repo.attach_media(body.question_group_id, body.version, asset.id)
+    await c.audit.record(actor=caller.uid, action="MEDIA_UPLOAD", subject=f"media:{asset.id}")
+    return {"schema_version": 1, "media": asset.model_dump(), "warnings": warnings}
 
 
 @router.get("/media")

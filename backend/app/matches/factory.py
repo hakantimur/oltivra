@@ -74,7 +74,8 @@ class MatchFactory:
         self._c = container
 
     async def prepare(self, *, mode: Mode, language: str, humans: list[HumanSeat], source: str = "PUBLIC",
-                      fill_bots: bool = True, config: GameConfig | None = None) -> PreparedMatch:
+                      fill_bots: bool = True, config: GameConfig | None = None,
+                      category_id: str | None = None) -> PreparedMatch:
         c = self._c
         config = config or await c.config.get()
         match_id = new_uuid()
@@ -85,9 +86,12 @@ class MatchFactory:
         bots = await c.bots.pick(match_id, bot_count, avg_mmr, {h.username.lower() for h in humans}, config)
         uids = [h.uid for h in humans]
         if mode == Mode.QUICK:
-            plan = await c.question_plans.quick_plan(language, uids, seed=match_id)
+            plan = await c.question_plans.quick_plan(language, uids, seed=match_id, category_id=category_id)
         else:
-            plan = {"pools": await c.question_plans.survival_plan(language, uids, seed=match_id)}
+            plan = {"pools": await c.question_plans.survival_plan(language, uids, seed=match_id,
+                                                                  category_id=category_id)}
+        if category_id:
+            plan["category_id"] = category_id
         roster: list[dict[str, Any]] = [
             {"pid": c.profiles.public_id(h.uid), "kind": "HUMAN", "uid": h.uid, "username": h.username,
              "avatar_id": h.avatar_id, "frame_id": h.frame_id, "pre_match_mmr": h.mmr} for h in humans]
@@ -106,6 +110,7 @@ class MatchFactory:
                              "retention": config.retention.model_dump()},
             ranked=ranked_eligibility(mode, len(humans), len(bots), config.ranked, source),
             reaction_ids=reactions,
+            extra={"category_id": category_id} if category_id else {},
         )
 
     def index_doc(self, prepared: PreparedMatch, now_ms: int) -> dict[str, Any]:
