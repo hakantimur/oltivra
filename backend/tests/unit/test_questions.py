@@ -32,9 +32,11 @@ from app.questions.taxonomy import CATEGORIES, CATEGORY_IDS, is_valid_subcategor
 # ---------------------------------------------------------------- taxonomy & seed content
 
 
-def test_exactly_nine_categories_and_no_gaming():
-    assert len(CATEGORIES) == 9
-    assert "gaming" not in CATEGORY_IDS
+def test_twelve_categories_with_unique_ids():
+    assert len(CATEGORIES) == 12 and len(set(CATEGORY_IDS)) == 12
+    assert {"animals", "games_internet", "brands_logos"} <= set(CATEGORY_IDS)
+    for category in CATEGORIES:
+        assert category.subcategories and all(set(n) == {"en", "tr"} for n in category.subcategories.values())
 
 
 def test_every_seed_item_is_competitive_valid_in_both_languages():
@@ -260,7 +262,7 @@ def test_categories_endpoint_localised(api):
     res = api.get("/v1/categories", "u1", lang="tr")
     assert res.status_code == 200
     names = [c["name"] for c in res.json()["categories"]]
-    assert len(names) == 9 and "Coğrafya ve Dünya" in names
+    assert len(names) == 12 and "Coğrafya ve Dünya" in names and "Hayvanlar" in names
 
 
 def test_synova_serves_shared_question_and_decides_server_side(api, container):
