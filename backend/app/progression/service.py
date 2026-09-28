@@ -10,6 +10,7 @@ from __future__ import annotations
 import logging
 from typing import Any
 
+from app.bots.difficulty import after_match as bot_after_match
 from app.catalog.data import level_frames, next_level_reward
 from app.common.clock import iso_week_id, ms_to_datetime
 from app.common.ids import sha256_hex
@@ -128,6 +129,9 @@ class ProgressionHooks:
         ranked = bool((state.get("ranked") or {}).get("eligible"))
         ranked_cfg = (state.get("config") or {}).get("ranked") or {}
         deltas = self._mmr_deltas(state, results, prepared["users"], ranked_cfg) if ranked else {}
+        seats = participants(state)
+        with_bots = any(p.get("kind") == "BOT" for p in seats.values())
+        bot_cfg = prepared["config"].bots
         for uid, extra in prepared["by_uid"].items():
             user = dict(prepared["users"][uid])
             # A ranked-restricted player still plays, but the result never moves their rating (spec §28.4).
@@ -147,6 +151,10 @@ class ProgressionHooks:
             # The tier changes only at the weekly rollover (app.ranking.league_groups).
             before_league = tier_of(user).value
             user["total_xp"] = int(user.get("total_xp", 0)) + base_xp
+            if with_bots:
+                # Adaptive bot rosters (app.bots.difficulty): read with the pre-match counters.
+                user.update(bot_after_match(user, mode=mode, place=place, left=left, players=len(seats),
+                                            cfg=bot_cfg))
             user["matches_completed"] = int(user.get("matches_completed", 0)) + 1
             if mode == Mode.QUICK and won:
                 user["quick_wins_lifetime"] = int(user.get("quick_wins_lifetime", 0)) + 1
@@ -217,7 +225,7 @@ class ProgressionHooks:
                 "total_xp", "matches_completed", "quick_wins_lifetime", "mmr", "ranked_matches_completed",
                 "quick_current_ranked_win_streak", "quick_best_ranked_win_streak",
                 "quick_ranked_wins_lifetime", "survival_ranked_crowns_lifetime", "badge_ids", "frame_ids",
-                "progression_sequence") if k in user}
+                "progression_sequence", "bot_level", "bot_loss_streak") if k in user}
             txn.update(user_path(uid), fields)
             txn.set(f"public_profiles/{user['public_id']}", c.profiles.public_profile(user))
             if user_ranked:

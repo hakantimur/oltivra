@@ -112,6 +112,8 @@ def test_unranked_bot_match_awards_xp_but_never_ranked_progress(players, contain
     assert u["mmr"] == 1000 and u["ranked_matches_completed"] == 0
     assert u["quick_current_ranked_win_streak"] == 0 and u.get("quick_ranked_wins_lifetime", 0) == 0
     assert "badge_first_quick_win" in u["badge_ids"]
+    # The win moves the hidden adaptive bot level up one win step (app.bots.difficulty).
+    assert u["bot_level"] == 1.75 and u["bot_loss_streak"] == 0
     week = iso_week_id(container.clock.now_ms())
     assert f"weekly_user_stats/{week}_u1" not in container.store._docs
     settlement = private(container, match_id, "u1")["settlement"]

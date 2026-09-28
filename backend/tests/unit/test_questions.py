@@ -20,7 +20,7 @@ from app.questions.models import (
     competitive_eligibility,
     validate_competitive_text,
 )
-from app.questions.seed import SEED_LANGUAGES, load_seed_items, seed_group_id
+from app.questions.seed import SEED_LANGUAGES, load_media_seed_items, load_seed_items, seed_group_id
 from app.questions.selector import (
     QUICK_NORMAL_ORDER,
     InsufficientInventory,
@@ -104,12 +104,19 @@ def test_eligible_question_passes():
     assert "translation_missing" in competitive_eligibility(_group(), None, 10)
 
 
+def _imported_seed_items() -> list[dict]:
+    """Text seed + curated items the test snapshot imports (media items need an uploader and are skipped)."""
+    return load_seed_items() + [i for i in load_media_seed_items() if not i.get("media")]
+
+
 async def test_manifests_built_per_language_mode_difficulty_without_answers(container):
     store = container.store
+    # Derived from the seed files: the bank grows with every content PR (seed + curated).
+    expected = Counter(Difficulty(i["difficulty"]) for i in _imported_seed_items())
     for lang in SEED_LANGUAGES:
         for mode in ("QUICK", "SURVIVAL"):
             counts = {d: len(await container.manifest_cache.get(lang, mode, d.value)) for d in Difficulty}
-            assert counts == {Difficulty.EASY: 136, Difficulty.MEDIUM: 154, Difficulty.HARD: 95}  # seed + curated
+            assert counts == dict(expected)
     blobs = [doc for path, doc in store.dump("pool_manifest_chunks").items()]
     raw = json.dumps(await container.manifest_cache.get("en", "QUICK", "EASY"), default=vars)
     private = next(iter(store.dump("question_private").values()))
@@ -248,11 +255,13 @@ async def test_turkish_plan_uses_verified_turkish_text(container):
     assert all(item["text"] for item in plan["normal"])
 
 
-async def test_language_gate_reports_not_ready_for_seed(container):
+async def test_language_gate_report_matches_seed_bank(container):
+    items = _imported_seed_items()
     report = await language_gate_report(container.manifest_cache, "en", trials=20)
-    assert report.total_groups == 385
-    assert report.categories_represented == 9
-    assert report.soft_launch_ready is False
+    assert report.total_groups == len(items)
+    assert report.categories_represented == len({i["category_id"] for i in items})
+    # The curated bank (thousands of questions) clears the soft-launch gate.
+    assert report.soft_launch_ready is True
 
 
 # ---------------------------------------------------------------- API: categories + Synova (Phase 1 exit)

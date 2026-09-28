@@ -225,13 +225,22 @@ class MemoryDocStore:
         with self._lock:
             txn = _MemoryTxn(self)
             result = fn(txn)
-            # Apply staged writes atomically; roll back on any failure.
-            snapshot = copy.deepcopy(self._docs)
+            # Apply staged writes atomically; roll back on any failure. Only the touched documents are saved:
+            # copying the whole store made every transaction O(store size) (10k+ seeded questions).
+            missing = object()
+            saved: dict[str, Any] = {}
             try:
                 for op in txn.ops:
+                    path = op.path.strip("/")
+                    if path not in saved:
+                        saved[path] = copy.deepcopy(self._docs.get(path, missing))
                     self._apply(op)
             except Exception:
-                self._docs = snapshot
+                for path, doc in saved.items():
+                    if doc is missing:
+                        self._docs.pop(path, None)
+                    else:
+                        self._docs[path] = doc
                 raise
             return result
 
