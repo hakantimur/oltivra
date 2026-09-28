@@ -1,0 +1,3102 @@
+[
+ {
+  "key": "science_nature_q0961",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is a group of lions called?"
+  },
+  "options": [
+   {
+    "concept_id": "a_pride",
+    "en": "A pride"
+   },
+   {
+    "concept_id": "a_pack",
+    "en": "A pack"
+   },
+   {
+    "concept_id": "a_herd",
+    "en": "A herd"
+   },
+   {
+    "concept_id": "a_troop",
+    "en": "A troop"
+   }
+  ],
+  "correct": "a_pride",
+  "source": "https://en.wikipedia.org/wiki/Lion"
+ },
+ {
+  "key": "science_nature_q0962",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "A cow's stomach is divided into how many compartments?"
+  },
+  "options": [
+   {
+    "concept_id": "n_4",
+    "en": "4"
+   },
+   {
+    "concept_id": "n_1",
+    "en": "1"
+   },
+   {
+    "concept_id": "n_2",
+    "en": "2"
+   },
+   {
+    "concept_id": "n_7",
+    "en": "7"
+   }
+  ],
+  "correct": "n_4",
+  "source": "https://en.wikipedia.org/wiki/Ruminant"
+ },
+ {
+  "key": "science_nature_q0963",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Dolphins are mammals and breathe air. Through what do they breathe?"
+  },
+  "options": [
+   {
+    "concept_id": "a_blowhole_on_top_of_the_head",
+    "en": "A blowhole on top of the head"
+   },
+   {
+    "concept_id": "gills",
+    "en": "Gills"
+   },
+   {
+    "concept_id": "their_skin",
+    "en": "Their skin"
+   },
+   {
+    "concept_id": "their_mouth_only",
+    "en": "Their mouth only"
+   }
+  ],
+  "correct": "a_blowhole_on_top_of_the_head",
+  "source": "https://en.wikipedia.org/wiki/Blowhole_(anatomy)"
+ },
+ {
+  "key": "science_nature_q0964",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What does a snake do with its skin as it grows?"
+  },
+  "options": [
+   {
+    "concept_id": "it_sheds_the_whole_skin_often_in_one_piece",
+    "en": "It sheds the whole skin, often in one piece"
+   },
+   {
+    "concept_id": "it_stretches_it_like_rubber",
+    "en": "It stretches it like rubber"
+   },
+   {
+    "concept_id": "it_eats_it_every_night",
+    "en": "It eats it every night"
+   },
+   {
+    "concept_id": "it_changes_its_colour_to_grey",
+    "en": "It changes its colour to grey"
+   }
+  ],
+  "correct": "it_sheds_the_whole_skin_often_in_one_piece",
+  "source": "https://en.wikipedia.org/wiki/Moulting"
+ },
+ {
+  "key": "science_nature_q0965",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many arms does an octopus have?"
+  },
+  "options": [
+   {
+    "concept_id": "n_8",
+    "en": "8"
+   },
+   {
+    "concept_id": "n_6",
+    "en": "6"
+   },
+   {
+    "concept_id": "n_10",
+    "en": "10"
+   },
+   {
+    "concept_id": "n_12",
+    "en": "12"
+   }
+  ],
+  "correct": "n_8",
+  "source": "https://en.wikipedia.org/wiki/Octopus"
+ },
+ {
+  "key": "science_nature_q0966",
+  "category_id": "science_nature",
+  "subcategory_id": "space",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which planet is often called Earth's \"twin\" because it is so similar in size?"
+  },
+  "options": [
+   {
+    "concept_id": "venus",
+    "en": "Venus"
+   },
+   {
+    "concept_id": "mars",
+    "en": "Mars"
+   },
+   {
+    "concept_id": "mercury",
+    "en": "Mercury"
+   },
+   {
+    "concept_id": "neptune",
+    "en": "Neptune"
+   }
+  ],
+  "correct": "venus",
+  "source": "https://en.wikipedia.org/wiki/Venus"
+ },
+ {
+  "key": "science_nature_q0967",
+  "category_id": "science_nature",
+  "subcategory_id": "space",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which gas makes up most of the Sun?"
+  },
+  "options": [
+   {
+    "concept_id": "hydrogen",
+    "en": "Hydrogen"
+   },
+   {
+    "concept_id": "oxygen",
+    "en": "Oxygen"
+   },
+   {
+    "concept_id": "carbon_dioxide",
+    "en": "Carbon dioxide"
+   },
+   {
+    "concept_id": "nitrogen",
+    "en": "Nitrogen"
+   }
+  ],
+  "correct": "hydrogen",
+  "source": "https://en.wikipedia.org/wiki/Sun"
+ },
+ {
+  "key": "science_nature_q0968",
+  "category_id": "science_nature",
+  "subcategory_id": "space",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is surprising about the so-called \"dark side\" of the Moon?"
+  },
+  "options": [
+   {
+    "concept_id": "it_gets_sunlight_too_we_just_never_see_it",
+    "en": "It gets sunlight too; we just never see it"
+   },
+   {
+    "concept_id": "it_is_always_frozen_in_darkness",
+    "en": "It is always frozen in darkness"
+   },
+   {
+    "concept_id": "it_is_covered_in_black_rock",
+    "en": "It is covered in black rock"
+   },
+   {
+    "concept_id": "it_has_no_craters",
+    "en": "It has no craters"
+   }
+  ],
+  "correct": "it_gets_sunlight_too_we_just_never_see_it",
+  "source": "https://en.wikipedia.org/wiki/Far_side_of_the_Moon"
+ },
+ {
+  "key": "science_nature_q0969",
+  "category_id": "science_nature",
+  "subcategory_id": "space",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "A comet's nucleus is often called a \"dirty snowball\". What is it mostly made of?"
+  },
+  "options": [
+   {
+    "concept_id": "ice_dust_and_rock",
+    "en": "Ice, dust and rock"
+   },
+   {
+    "concept_id": "molten_metal",
+    "en": "Molten metal"
+   },
+   {
+    "concept_id": "burning_gas",
+    "en": "Burning gas"
+   },
+   {
+    "concept_id": "solid_diamond",
+    "en": "Solid diamond"
+   }
+  ],
+  "correct": "ice_dust_and_rock",
+  "source": "https://en.wikipedia.org/wiki/Comet"
+ },
+ {
+  "key": "science_nature_q0970",
+  "category_id": "science_nature",
+  "subcategory_id": "space",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the day with the most daylight of the year called?"
+  },
+  "options": [
+   {
+    "concept_id": "the_summer_solstice",
+    "en": "The summer solstice"
+   },
+   {
+    "concept_id": "the_equinox",
+    "en": "The equinox"
+   },
+   {
+    "concept_id": "the_eclipse",
+    "en": "The eclipse"
+   },
+   {
+    "concept_id": "the_zenith",
+    "en": "The zenith"
+   }
+  ],
+  "correct": "the_summer_solstice",
+  "source": "https://en.wikipedia.org/wiki/Solstice"
+ },
+ {
+  "key": "science_nature_q0971",
+  "category_id": "science_nature",
+  "subcategory_id": "human_body",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "A healthy adult's resting heart usually beats about how many times a minute?"
+  },
+  "options": [
+   {
+    "concept_id": "n_60_to_100",
+    "en": "60 to 100"
+   },
+   {
+    "concept_id": "n_10_to_20",
+    "en": "10 to 20"
+   },
+   {
+    "concept_id": "n_150_to_200",
+    "en": "150 to 200"
+   },
+   {
+    "concept_id": "n_300_to_400",
+    "en": "300 to 400"
+   }
+  ],
+  "correct": "n_60_to_100",
+  "source": "https://en.wikipedia.org/wiki/Heart_rate"
+ },
+ {
+  "key": "science_nature_q0972",
+  "category_id": "science_nature",
+  "subcategory_id": "human_body",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the windpipe, carrying air to the lungs, properly called?"
+  },
+  "options": [
+   {
+    "concept_id": "trachea",
+    "en": "Trachea"
+   },
+   {
+    "concept_id": "oesophagus",
+    "en": "Oesophagus"
+   },
+   {
+    "concept_id": "aorta",
+    "en": "Aorta"
+   },
+   {
+    "concept_id": "pharynx",
+    "en": "Pharynx"
+   }
+  ],
+  "correct": "trachea",
+  "source": "https://en.wikipedia.org/wiki/Trachea"
+ },
+ {
+  "key": "science_nature_q0973",
+  "category_id": "science_nature",
+  "subcategory_id": "human_body",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "The \"funny bone\" gets its joke name from which bone of the upper arm?"
+  },
+  "options": [
+   {
+    "concept_id": "the_humerus",
+    "en": "The humerus"
+   },
+   {
+    "concept_id": "the_radius",
+    "en": "The radius"
+   },
+   {
+    "concept_id": "the_ulna",
+    "en": "The ulna"
+   },
+   {
+    "concept_id": "the_femur",
+    "en": "The femur"
+   }
+  ],
+  "correct": "the_humerus",
+  "source": "https://en.wikipedia.org/wiki/Humerus"
+ },
+ {
+  "key": "science_nature_q0974",
+  "category_id": "science_nature",
+  "subcategory_id": "human_body",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "On which side of the belly is the appendix usually found?"
+  },
+  "options": [
+   {
+    "concept_id": "lower_right",
+    "en": "Lower right"
+   },
+   {
+    "concept_id": "upper_left",
+    "en": "Upper left"
+   },
+   {
+    "concept_id": "lower_left",
+    "en": "Lower left"
+   },
+   {
+    "concept_id": "right_in_the_middle",
+    "en": "Right in the middle"
+   }
+  ],
+  "correct": "lower_right",
+  "source": "https://en.wikipedia.org/wiki/Appendix_(anatomy)"
+ },
+ {
+  "key": "science_nature_q0975",
+  "category_id": "science_nature",
+  "subcategory_id": "human_body",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is your belly button actually?"
+  },
+  "options": [
+   {
+    "concept_id": "the_scar_where_the_umbilical_cord_was_attached",
+    "en": "The scar where the umbilical cord was attached"
+   },
+   {
+    "concept_id": "a_leftover_muscle",
+    "en": "A leftover muscle"
+   },
+   {
+    "concept_id": "a_small_gland",
+    "en": "A small gland"
+   },
+   {
+    "concept_id": "an_air_vent_for_the_stomach",
+    "en": "An air vent for the stomach"
+   }
+  ],
+  "correct": "the_scar_where_the_umbilical_cord_was_attached",
+  "source": "https://en.wikipedia.org/wiki/Navel"
+ },
+ {
+  "key": "science_nature_q0976",
+  "category_id": "science_nature",
+  "subcategory_id": "physics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Food stores which kind of energy that our bodies can use?"
+  },
+  "options": [
+   {
+    "concept_id": "chemical_energy",
+    "en": "Chemical energy"
+   },
+   {
+    "concept_id": "nuclear_energy",
+    "en": "Nuclear energy"
+   },
+   {
+    "concept_id": "sound_energy",
+    "en": "Sound energy"
+   },
+   {
+    "concept_id": "magnetic_energy",
+    "en": "Magnetic energy"
+   }
+  ],
+  "correct": "chemical_energy",
+  "source": "https://en.wikipedia.org/wiki/Chemical_energy"
+ },
+ {
+  "key": "science_nature_q0977",
+  "category_id": "science_nature",
+  "subcategory_id": "physics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What makes a rainbow appear in the sky?"
+  },
+  "options": [
+   {
+    "concept_id": "raindrops_splitting_sunlight_into_colours",
+    "en": "Raindrops splitting sunlight into colours"
+   },
+   {
+    "concept_id": "colourful_gases_in_the_clouds",
+    "en": "Colourful gases in the clouds"
+   },
+   {
+    "concept_id": "light_bouncing_off_the_sea",
+    "en": "Light bouncing off the sea"
+   },
+   {
+    "concept_id": "rain_reflecting_the_moon",
+    "en": "Rain reflecting the Moon"
+   }
+  ],
+  "correct": "raindrops_splitting_sunlight_into_colours",
+  "source": "https://en.wikipedia.org/wiki/Rainbow"
+ },
+ {
+  "key": "science_nature_q0978",
+  "category_id": "science_nature",
+  "subcategory_id": "physics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "In a room, why is the air near the ceiling usually warmer than near the floor?"
+  },
+  "options": [
+   {
+    "concept_id": "warm_air_is_lighter_and_rises",
+    "en": "Warm air is lighter and rises"
+   },
+   {
+    "concept_id": "lamps_heat_the_ceiling",
+    "en": "Lamps heat the ceiling"
+   },
+   {
+    "concept_id": "cold_air_is_pulled_up",
+    "en": "Cold air is pulled up"
+   },
+   {
+    "concept_id": "the_ceiling_blocks_wind",
+    "en": "The ceiling blocks wind"
+   }
+  ],
+  "correct": "warm_air_is_lighter_and_rises",
+  "source": "https://en.wikipedia.org/wiki/Convection"
+ },
+ {
+  "key": "science_nature_q0979",
+  "category_id": "science_nature",
+  "subcategory_id": "physics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which device turns the sound of your voice into an electrical signal?"
+  },
+  "options": [
+   {
+    "concept_id": "a_microphone",
+    "en": "A microphone"
+   },
+   {
+    "concept_id": "a_loudspeaker",
+    "en": "A loudspeaker"
+   },
+   {
+    "concept_id": "a_transformer",
+    "en": "A transformer"
+   },
+   {
+    "concept_id": "a_battery",
+    "en": "A battery"
+   }
+  ],
+  "correct": "a_microphone",
+  "source": "https://en.wikipedia.org/wiki/Microphone"
+ },
+ {
+  "key": "science_nature_q0980",
+  "category_id": "science_nature",
+  "subcategory_id": "physics",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Screens make every colour by mixing which three primary colours of light?"
+  },
+  "options": [
+   {
+    "concept_id": "red_green_and_blue",
+    "en": "Red, green and blue"
+   },
+   {
+    "concept_id": "red_yellow_and_blue",
+    "en": "Red, yellow and blue"
+   },
+   {
+    "concept_id": "cyan_magenta_and_yellow",
+    "en": "Cyan, magenta and yellow"
+   },
+   {
+    "concept_id": "black_white_and_grey",
+    "en": "Black, white and grey"
+   }
+  ],
+  "correct": "red_green_and_blue",
+  "source": "https://en.wikipedia.org/wiki/RGB_color_model"
+ },
+ {
+  "key": "science_nature_q0981",
+  "category_id": "science_nature",
+  "subcategory_id": "biology",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What do we call a group of similar cells working together, such as muscle?"
+  },
+  "options": [
+   {
+    "concept_id": "tissue",
+    "en": "Tissue"
+   },
+   {
+    "concept_id": "organ",
+    "en": "Organ"
+   },
+   {
+    "concept_id": "molecule",
+    "en": "Molecule"
+   },
+   {
+    "concept_id": "system",
+    "en": "System"
+   }
+  ],
+  "correct": "tissue",
+  "source": "https://en.wikipedia.org/wiki/Tissue_(biology)"
+ },
+ {
+  "key": "science_nature_q0982",
+  "category_id": "science_nature",
+  "subcategory_id": "biology",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Insects, worms and jellyfish have no backbone. What are such animals called?"
+  },
+  "options": [
+   {
+    "concept_id": "invertebrates",
+    "en": "Invertebrates"
+   },
+   {
+    "concept_id": "vertebrates",
+    "en": "Vertebrates"
+   },
+   {
+    "concept_id": "mammals",
+    "en": "Mammals"
+   },
+   {
+    "concept_id": "reptiles",
+    "en": "Reptiles"
+   }
+  ],
+  "correct": "invertebrates",
+  "source": "https://en.wikipedia.org/wiki/Invertebrate"
+ },
+ {
+  "key": "science_nature_q0983",
+  "category_id": "science_nature",
+  "subcategory_id": "biology",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "A tadpole turning into a frog is an example of what?"
+  },
+  "options": [
+   {
+    "concept_id": "metamorphosis",
+    "en": "Metamorphosis"
+   },
+   {
+    "concept_id": "hibernation",
+    "en": "Hibernation"
+   },
+   {
+    "concept_id": "migration",
+    "en": "Migration"
+   },
+   {
+    "concept_id": "photosynthesis",
+    "en": "Photosynthesis"
+   }
+  ],
+  "correct": "metamorphosis",
+  "source": "https://en.wikipedia.org/wiki/Metamorphosis"
+ },
+ {
+  "key": "science_nature_q0984",
+  "category_id": "science_nature",
+  "subcategory_id": "biology",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What are bees actually doing for flowers when they fly from bloom to bloom?"
+  },
+  "options": [
+   {
+    "concept_id": "carrying_pollen_so_seeds_can_form",
+    "en": "Carrying pollen so seeds can form"
+   },
+   {
+    "concept_id": "cleaning_their_petals",
+    "en": "Cleaning their petals"
+   },
+   {
+    "concept_id": "warming_them_at_night",
+    "en": "Warming them at night"
+   },
+   {
+    "concept_id": "adding_colour_to_them",
+    "en": "Adding colour to them"
+   }
+  ],
+  "correct": "carrying_pollen_so_seeds_can_form",
+  "source": "https://en.wikipedia.org/wiki/Pollination"
+ },
+ {
+  "key": "science_nature_q0985",
+  "category_id": "science_nature",
+  "subcategory_id": "chemistry",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Table salt has the chemical formula NaCl. What is its chemical name?"
+  },
+  "options": [
+   {
+    "concept_id": "sodium_chloride",
+    "en": "Sodium chloride"
+   },
+   {
+    "concept_id": "sodium_carbonate",
+    "en": "Sodium carbonate"
+   },
+   {
+    "concept_id": "calcium_chloride",
+    "en": "Calcium chloride"
+   },
+   {
+    "concept_id": "sodium_nitrate",
+    "en": "Sodium nitrate"
+   }
+  ],
+  "correct": "sodium_chloride",
+  "source": "https://en.wikipedia.org/wiki/Sodium_chloride"
+ },
+ {
+  "key": "science_nature_q0986",
+  "category_id": "science_nature",
+  "subcategory_id": "chemistry",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which metal has the chemical symbol Fe?"
+  },
+  "options": [
+   {
+    "concept_id": "iron",
+    "en": "Iron"
+   },
+   {
+    "concept_id": "lead",
+    "en": "Lead"
+   },
+   {
+    "concept_id": "tin",
+    "en": "Tin"
+   },
+   {
+    "concept_id": "zinc",
+    "en": "Zinc"
+   }
+  ],
+  "correct": "iron",
+  "source": "https://en.wikipedia.org/wiki/Iron"
+ },
+ {
+  "key": "science_nature_q0987",
+  "category_id": "science_nature",
+  "subcategory_id": "chemistry",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Chemically speaking, what is the orange-brown rust on old iron?"
+  },
+  "options": [
+   {
+    "concept_id": "iron_oxide",
+    "en": "Iron oxide"
+   },
+   {
+    "concept_id": "copper_sulphate",
+    "en": "Copper sulphate"
+   },
+   {
+    "concept_id": "iron_salt",
+    "en": "Iron salt"
+   },
+   {
+    "concept_id": "dried_mud",
+    "en": "Dried mud"
+   }
+  ],
+  "correct": "iron_oxide",
+  "source": "https://en.wikipedia.org/wiki/Rust"
+ },
+ {
+  "key": "science_nature_q0988",
+  "category_id": "science_nature",
+  "subcategory_id": "chemistry",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many oxygen atoms are in one molecule of carbon dioxide, CO₂?"
+  },
+  "options": [
+   {
+    "concept_id": "n_2",
+    "en": "2"
+   },
+   {
+    "concept_id": "n_1",
+    "en": "1"
+   },
+   {
+    "concept_id": "n_3",
+    "en": "3"
+   },
+   {
+    "concept_id": "n_4",
+    "en": "4"
+   }
+  ],
+  "correct": "n_2",
+  "source": "https://en.wikipedia.org/wiki/Carbon_dioxide"
+ },
+ {
+  "key": "science_nature_q0989",
+  "category_id": "science_nature",
+  "subcategory_id": "earth_science",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which simple instrument collects and measures rainfall?"
+  },
+  "options": [
+   {
+    "concept_id": "rain_gauge",
+    "en": "Rain gauge"
+   },
+   {
+    "concept_id": "barometer",
+    "en": "Barometer"
+   },
+   {
+    "concept_id": "thermometer",
+    "en": "Thermometer"
+   },
+   {
+    "concept_id": "hygrometer",
+    "en": "Hygrometer"
+   }
+  ],
+  "correct": "rain_gauge",
+  "source": "https://en.wikipedia.org/wiki/Rain_gauge"
+ },
+ {
+  "key": "science_nature_q0990",
+  "category_id": "science_nature",
+  "subcategory_id": "earth_science",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the weather usually like in the eye at the centre of a hurricane?"
+  },
+  "options": [
+   {
+    "concept_id": "calm_often_with_clear_sky",
+    "en": "Calm, often with clear sky"
+   },
+   {
+    "concept_id": "the_strongest_winds_of_all",
+    "en": "The strongest winds of all"
+   },
+   {
+    "concept_id": "heavy_snow",
+    "en": "Heavy snow"
+   },
+   {
+    "concept_id": "thick_fog_and_hail",
+    "en": "Thick fog and hail"
+   }
+  ],
+  "correct": "calm_often_with_clear_sky",
+  "source": "https://en.wikipedia.org/wiki/Eye_(cyclone)"
+ },
+ {
+  "key": "science_nature_q0991",
+  "category_id": "science_nature",
+  "subcategory_id": "earth_science",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What are the water droplets that form on grass on cool, clear mornings called?"
+  },
+  "options": [
+   {
+    "concept_id": "dew",
+    "en": "Dew"
+   },
+   {
+    "concept_id": "frost",
+    "en": "Frost"
+   },
+   {
+    "concept_id": "mist",
+    "en": "Mist"
+   },
+   {
+    "concept_id": "sleet",
+    "en": "Sleet"
+   }
+  ],
+  "correct": "dew",
+  "source": "https://en.wikipedia.org/wiki/Dew"
+ },
+ {
+  "key": "science_nature_q0992",
+  "category_id": "science_nature",
+  "subcategory_id": "earth_science",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Rocks slowly cracking and crumbling because of rain, frost and heat is called what?"
+  },
+  "options": [
+   {
+    "concept_id": "weathering",
+    "en": "Weathering"
+   },
+   {
+    "concept_id": "erupting",
+    "en": "Erupting"
+   },
+   {
+    "concept_id": "melting",
+    "en": "Melting"
+   },
+   {
+    "concept_id": "folding",
+    "en": "Folding"
+   }
+  ],
+  "correct": "weathering",
+  "source": "https://en.wikipedia.org/wiki/Weathering"
+ },
+ {
+  "key": "science_nature_q0993",
+  "category_id": "science_nature",
+  "subcategory_id": "environment",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is light pollution?"
+  },
+  "options": [
+   {
+    "concept_id": "too_much_artificial_light_hiding_the_night_sky",
+    "en": "Too much artificial light hiding the night sky"
+   },
+   {
+    "concept_id": "smoke_from_burning_lamps",
+    "en": "Smoke from burning lamps"
+   },
+   {
+    "concept_id": "sunlight_reflecting_off_buildings",
+    "en": "Sunlight reflecting off buildings"
+   },
+   {
+    "concept_id": "glowing_chemicals_in_rivers",
+    "en": "Glowing chemicals in rivers"
+   }
+  ],
+  "correct": "too_much_artificial_light_hiding_the_night_sky",
+  "source": "https://en.wikipedia.org/wiki/Light_pollution"
+ },
+ {
+  "key": "science_nature_q0994",
+  "category_id": "science_nature",
+  "subcategory_id": "environment",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "During which yearly event do people and cities switch off their lights for one hour for the planet?"
+  },
+  "options": [
+   {
+    "concept_id": "earth_hour",
+    "en": "Earth Hour"
+   },
+   {
+    "concept_id": "earth_day",
+    "en": "Earth Day"
+   },
+   {
+    "concept_id": "blackout_week",
+    "en": "Blackout Week"
+   },
+   {
+    "concept_id": "world_lights_off",
+    "en": "World Lights Off"
+   }
+  ],
+  "correct": "earth_hour",
+  "source": "https://en.wikipedia.org/wiki/Earth_Hour"
+ },
+ {
+  "key": "science_nature_q0995",
+  "category_id": "science_nature",
+  "subcategory_id": "environment",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is \"fast fashion\" often criticised for?"
+  },
+  "options": [
+   {
+    "concept_id": "cheap_clothes_worn_briefly_then_thrown_away",
+    "en": "Cheap clothes worn briefly, then thrown away"
+   },
+   {
+    "concept_id": "clothes_that_are_too_expensive",
+    "en": "Clothes that are too expensive"
+   },
+   {
+    "concept_id": "clothes_made_only_by_hand",
+    "en": "Clothes made only by hand"
+   },
+   {
+    "concept_id": "fashion_shows_that_run_too_long",
+    "en": "Fashion shows that run too long"
+   }
+  ],
+  "correct": "cheap_clothes_worn_briefly_then_thrown_away",
+  "source": "https://en.wikipedia.org/wiki/Fast_fashion"
+ },
+ {
+  "key": "science_nature_q0996",
+  "category_id": "science_nature",
+  "subcategory_id": "environment",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What powers a \"hybrid\" car?"
+  },
+  "options": [
+   {
+    "concept_id": "a_petrol_engine_plus_an_electric_motor",
+    "en": "A petrol engine plus an electric motor"
+   },
+   {
+    "concept_id": "only_solar_panels",
+    "en": "Only solar panels"
+   },
+   {
+    "concept_id": "wind_turbines_on_the_roof",
+    "en": "Wind turbines on the roof"
+   },
+   {
+    "concept_id": "hydrogen_and_steam",
+    "en": "Hydrogen and steam"
+   }
+  ],
+  "correct": "a_petrol_engine_plus_an_electric_motor",
+  "source": "https://en.wikipedia.org/wiki/Hybrid_vehicle"
+ },
+ {
+  "key": "science_nature_q0997",
+  "category_id": "science_nature",
+  "subcategory_id": "plants",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Linen cloth is woven from the fibres of which plant?"
+  },
+  "options": [
+   {
+    "concept_id": "flax",
+    "en": "Flax"
+   },
+   {
+    "concept_id": "cotton",
+    "en": "Cotton"
+   },
+   {
+    "concept_id": "hemp",
+    "en": "Hemp"
+   },
+   {
+    "concept_id": "jute",
+    "en": "Jute"
+   }
+  ],
+  "correct": "flax",
+  "source": "https://en.wikipedia.org/wiki/Flax"
+ },
+ {
+  "key": "science_nature_q0998",
+  "category_id": "science_nature",
+  "subcategory_id": "plants",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "What are a cactus's sharp spines actually?"
+  },
+  "options": [
+   {
+    "concept_id": "leaves_changed_into_needles",
+    "en": "Leaves changed into needles"
+   },
+   {
+    "concept_id": "hardened_roots",
+    "en": "Hardened roots"
+   },
+   {
+    "concept_id": "tiny_branches",
+    "en": "Tiny branches"
+   },
+   {
+    "concept_id": "old_flowers",
+    "en": "Old flowers"
+   }
+  ],
+  "correct": "leaves_changed_into_needles",
+  "source": "https://en.wikipedia.org/wiki/Cactus"
+ },
+ {
+  "key": "science_nature_q0999",
+  "category_id": "science_nature",
+  "subcategory_id": "plants",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Ginger, used in cooking and tea, comes from which part of the plant?"
+  },
+  "options": [
+   {
+    "concept_id": "an_underground_stem_called_a_rhizome",
+    "en": "An underground stem called a rhizome"
+   },
+   {
+    "concept_id": "the_flower",
+    "en": "The flower"
+   },
+   {
+    "concept_id": "the_seeds",
+    "en": "The seeds"
+   },
+   {
+    "concept_id": "the_leaves",
+    "en": "The leaves"
+   }
+  ],
+  "correct": "an_underground_stem_called_a_rhizome",
+  "source": "https://en.wikipedia.org/wiki/Ginger"
+ },
+ {
+  "key": "science_nature_q1000",
+  "category_id": "science_nature",
+  "subcategory_id": "plants",
+  "difficulty": "EASY",
+  "global_relevance_score": 5,
+  "time_sensitive": false,
+  "question": {
+   "en": "Onions, garlic and tulips grow from an underground food store called what?"
+  },
+  "options": [
+   {
+    "concept_id": "a_bulb",
+    "en": "A bulb"
+   },
+   {
+    "concept_id": "a_cone",
+    "en": "A cone"
+   },
+   {
+    "concept_id": "a_pod",
+    "en": "A pod"
+   },
+   {
+    "concept_id": "a_nut",
+    "en": "A nut"
+   }
+  ],
+  "correct": "a_bulb",
+  "source": "https://en.wikipedia.org/wiki/Bulb"
+ },
+ {
+  "key": "science_nature_q1001",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which is the fastest fish in the sea, reaching around 100 km/h in bursts?"
+  },
+  "options": [
+   {
+    "concept_id": "sailfish",
+    "en": "Sailfish"
+   },
+   {
+    "concept_id": "great_white_shark",
+    "en": "Great white shark"
+   },
+   {
+    "concept_id": "tuna",
+    "en": "Tuna"
+   },
+   {
+    "concept_id": "swordfish",
+    "en": "Swordfish"
+   }
+  ],
+  "correct": "sailfish",
+  "source": "https://en.wikipedia.org/wiki/Sailfish"
+ },
+ {
+  "key": "science_nature_q1002",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "In English, a group of crows is called what?"
+  },
+  "options": [
+   {
+    "concept_id": "a_murder",
+    "en": "A murder"
+   },
+   {
+    "concept_id": "a_parliament",
+    "en": "A parliament"
+   },
+   {
+    "concept_id": "a_flock_of_doom",
+    "en": "A flock of doom"
+   },
+   {
+    "concept_id": "a_gang",
+    "en": "A gang"
+   }
+  ],
+  "correct": "a_murder",
+  "source": "https://en.wikipedia.org/wiki/American_crow"
+ },
+ {
+  "key": "science_nature_q1003",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which small, quick predator is famous for fighting and killing cobras?"
+  },
+  "options": [
+   {
+    "concept_id": "mongoose",
+    "en": "Mongoose"
+   },
+   {
+    "concept_id": "weasel",
+    "en": "Weasel"
+   },
+   {
+    "concept_id": "ferret",
+    "en": "Ferret"
+   },
+   {
+    "concept_id": "meerkat",
+    "en": "Meerkat"
+   }
+  ],
+  "correct": "mongoose",
+  "source": "https://en.wikipedia.org/wiki/Mongoose"
+ },
+ {
+  "key": "science_nature_q1004",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "How can owls fly almost silently as they hunt?"
+  },
+  "options": [
+   {
+    "concept_id": "their_feathers_have_soft_comb_like_edges",
+    "en": "Their feathers have soft, comb-like edges"
+   },
+   {
+    "concept_id": "they_glide_only_downhill",
+    "en": "They glide only downhill"
+   },
+   {
+    "concept_id": "they_flap_only_once_a_minute",
+    "en": "They flap only once a minute"
+   },
+   {
+    "concept_id": "they_hold_their_breath",
+    "en": "They hold their breath"
+   }
+  ],
+  "correct": "their_feathers_have_soft_comb_like_edges",
+  "source": "https://en.wikipedia.org/wiki/Owl"
+ },
+ {
+  "key": "science_nature_q1005",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What colour is a giraffe's long tongue, thought to protect it from sunburn?"
+  },
+  "options": [
+   {
+    "concept_id": "dark_blue_black",
+    "en": "Dark blue-black"
+   },
+   {
+    "concept_id": "bright_pink",
+    "en": "Bright pink"
+   },
+   {
+    "concept_id": "yellow",
+    "en": "Yellow"
+   },
+   {
+    "concept_id": "white",
+    "en": "White"
+   }
+  ],
+  "correct": "dark_blue_black",
+  "source": "https://en.wikipedia.org/wiki/Giraffe"
+ },
+ {
+  "key": "science_nature_q1006",
+  "category_id": "science_nature",
+  "subcategory_id": "space",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "On which days of the year are day and night roughly equal in length everywhere?"
+  },
+  "options": [
+   {
+    "concept_id": "the_equinoxes",
+    "en": "The equinoxes"
+   },
+   {
+    "concept_id": "the_solstices",
+    "en": "The solstices"
+   },
+   {
+    "concept_id": "eclipse_days",
+    "en": "Eclipse days"
+   },
+   {
+    "concept_id": "new_moon_days",
+    "en": "New moon days"
+   }
+  ],
+  "correct": "the_equinoxes",
+  "source": "https://en.wikipedia.org/wiki/Equinox"
+ },
+ {
+  "key": "science_nature_q1007",
+  "category_id": "science_nature",
+  "subcategory_id": "space",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What strange shape does the storm at Saturn's north pole form?"
+  },
+  "options": [
+   {
+    "concept_id": "a_hexagon",
+    "en": "A hexagon"
+   },
+   {
+    "concept_id": "a_perfect_square",
+    "en": "A perfect square"
+   },
+   {
+    "concept_id": "a_star",
+    "en": "A star"
+   },
+   {
+    "concept_id": "a_figure_eight",
+    "en": "A figure eight"
+   }
+  ],
+  "correct": "a_hexagon",
+  "source": "https://en.wikipedia.org/wiki/Saturn's_hexagon"
+ },
+ {
+  "key": "science_nature_q1008",
+  "category_id": "science_nature",
+  "subcategory_id": "space",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Roughly how many Earth years does Neptune take to orbit the Sun once?"
+  },
+  "options": [
+   {
+    "concept_id": "about_165",
+    "en": "About 165"
+   },
+   {
+    "concept_id": "about_12",
+    "en": "About 12"
+   },
+   {
+    "concept_id": "about_84",
+    "en": "About 84"
+   },
+   {
+    "concept_id": "about_500",
+    "en": "About 500"
+   }
+  ],
+  "correct": "about_165",
+  "source": "https://en.wikipedia.org/wiki/Neptune"
+ },
+ {
+  "key": "science_nature_q1009",
+  "category_id": "science_nature",
+  "subcategory_id": "space",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Astronomers nickname the zone around a star where liquid water could exist after which fairy tale?"
+  },
+  "options": [
+   {
+    "concept_id": "goldilocks",
+    "en": "Goldilocks"
+   },
+   {
+    "concept_id": "cinderella",
+    "en": "Cinderella"
+   },
+   {
+    "concept_id": "snow_white",
+    "en": "Snow White"
+   },
+   {
+    "concept_id": "sleeping_beauty",
+    "en": "Sleeping Beauty"
+   }
+  ],
+  "correct": "goldilocks",
+  "source": "https://en.wikipedia.org/wiki/Circumstellar_habitable_zone"
+ },
+ {
+  "key": "science_nature_q1010",
+  "category_id": "science_nature",
+  "subcategory_id": "space",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the name of Pluto's largest moon, so big that the two orbit a point between them?"
+  },
+  "options": [
+   {
+    "concept_id": "charon",
+    "en": "Charon"
+   },
+   {
+    "concept_id": "titan",
+    "en": "Titan"
+   },
+   {
+    "concept_id": "triton",
+    "en": "Triton"
+   },
+   {
+    "concept_id": "nix",
+    "en": "Nix"
+   }
+  ],
+  "correct": "charon",
+  "source": "https://en.wikipedia.org/wiki/Charon_(moon)"
+ },
+ {
+  "key": "science_nature_q1011",
+  "category_id": "science_nature",
+  "subcategory_id": "human_body",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "How many vertebrae make up the human spine, counting the fused ones at the base?"
+  },
+  "options": [
+   {
+    "concept_id": "n_33",
+    "en": "33"
+   },
+   {
+    "concept_id": "n_12",
+    "en": "12"
+   },
+   {
+    "concept_id": "n_24",
+    "en": "24"
+   },
+   {
+    "concept_id": "n_52",
+    "en": "52"
+   }
+  ],
+  "correct": "n_33",
+  "source": "https://en.wikipedia.org/wiki/Vertebral_column"
+ },
+ {
+  "key": "science_nature_q1012",
+  "category_id": "science_nature",
+  "subcategory_id": "human_body",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which is the largest joint in the human body?"
+  },
+  "options": [
+   {
+    "concept_id": "the_knee",
+    "en": "The knee"
+   },
+   {
+    "concept_id": "the_hip",
+    "en": "The hip"
+   },
+   {
+    "concept_id": "the_shoulder",
+    "en": "The shoulder"
+   },
+   {
+    "concept_id": "the_elbow",
+    "en": "The elbow"
+   }
+  ],
+  "correct": "the_knee",
+  "source": "https://en.wikipedia.org/wiki/Knee"
+ },
+ {
+  "key": "science_nature_q1013",
+  "category_id": "science_nature",
+  "subcategory_id": "human_body",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "In \"REM sleep\", when most vivid dreams happen, what does REM stand for?"
+  },
+  "options": [
+   {
+    "concept_id": "rapid_eye_movement",
+    "en": "Rapid Eye Movement"
+   },
+   {
+    "concept_id": "resting_energy_mode",
+    "en": "Resting Energy Mode"
+   },
+   {
+    "concept_id": "relaxed_emotional_memory",
+    "en": "Relaxed Emotional Memory"
+   },
+   {
+    "concept_id": "real_early_morning",
+    "en": "Real Early Morning"
+   }
+  ],
+  "correct": "rapid_eye_movement",
+  "source": "https://en.wikipedia.org/wiki/Rapid_eye_movement_sleep"
+ },
+ {
+  "key": "science_nature_q1014",
+  "category_id": "science_nature",
+  "subcategory_id": "human_body",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which grow faster: fingernails or toenails?"
+  },
+  "options": [
+   {
+    "concept_id": "the_ones_on_the_hands",
+    "en": "The ones on the hands"
+   },
+   {
+    "concept_id": "the_ones_on_the_feet",
+    "en": "The ones on the feet"
+   },
+   {
+    "concept_id": "both_at_the_same_speed",
+    "en": "Both at the same speed"
+   },
+   {
+    "concept_id": "neither_grows_after_childhood",
+    "en": "Neither grows after childhood"
+   }
+  ],
+  "correct": "the_ones_on_the_hands",
+  "source": "https://en.wikipedia.org/wiki/Nail_(anatomy)"
+ },
+ {
+  "key": "science_nature_q1015",
+  "category_id": "science_nature",
+  "subcategory_id": "human_body",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which hormone, released as it gets dark, helps make us sleepy?"
+  },
+  "options": [
+   {
+    "concept_id": "melatonin",
+    "en": "Melatonin"
+   },
+   {
+    "concept_id": "adrenaline",
+    "en": "Adrenaline"
+   },
+   {
+    "concept_id": "insulin",
+    "en": "Insulin"
+   },
+   {
+    "concept_id": "oestrogen",
+    "en": "Oestrogen"
+   }
+  ],
+  "correct": "melatonin",
+  "source": "https://en.wikipedia.org/wiki/Melatonin"
+ },
+ {
+  "key": "science_nature_q1016",
+  "category_id": "science_nature",
+  "subcategory_id": "physics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "In physics, what is an object's tendency to keep doing what it is already doing called?"
+  },
+  "options": [
+   {
+    "concept_id": "inertia",
+    "en": "Inertia"
+   },
+   {
+    "concept_id": "momentum",
+    "en": "Momentum"
+   },
+   {
+    "concept_id": "friction",
+    "en": "Friction"
+   },
+   {
+    "concept_id": "gravity",
+    "en": "Gravity"
+   }
+  ],
+  "correct": "inertia",
+  "source": "https://en.wikipedia.org/wiki/Inertia"
+ },
+ {
+  "key": "science_nature_q1017",
+  "category_id": "science_nature",
+  "subcategory_id": "physics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which law says that squeezing a gas into a smaller space raises its pressure?"
+  },
+  "options": [
+   {
+    "concept_id": "boyle_s_law",
+    "en": "Boyle's law"
+   },
+   {
+    "concept_id": "hooke_s_law",
+    "en": "Hooke's law"
+   },
+   {
+    "concept_id": "ohm_s_law",
+    "en": "Ohm's law"
+   },
+   {
+    "concept_id": "newton_s_first_law",
+    "en": "Newton's first law"
+   }
+  ],
+  "correct": "boyle_s_law",
+  "source": "https://en.wikipedia.org/wiki/Boyle's_law"
+ },
+ {
+  "key": "science_nature_q1018",
+  "category_id": "science_nature",
+  "subcategory_id": "physics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which SI unit is used to measure energy?"
+  },
+  "options": [
+   {
+    "concept_id": "joule",
+    "en": "Joule"
+   },
+   {
+    "concept_id": "watt",
+    "en": "Watt"
+   },
+   {
+    "concept_id": "volt",
+    "en": "Volt"
+   },
+   {
+    "concept_id": "pascal",
+    "en": "Pascal"
+   }
+  ],
+  "correct": "joule",
+  "source": "https://en.wikipedia.org/wiki/Joule"
+ },
+ {
+  "key": "science_nature_q1019",
+  "category_id": "science_nature",
+  "subcategory_id": "physics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "A skydiver stops speeding up after a while and falls at a steady speed. What is this called?"
+  },
+  "options": [
+   {
+    "concept_id": "terminal_velocity",
+    "en": "Terminal velocity"
+   },
+   {
+    "concept_id": "escape_velocity",
+    "en": "Escape velocity"
+   },
+   {
+    "concept_id": "free_orbit",
+    "en": "Free orbit"
+   },
+   {
+    "concept_id": "sonic_speed",
+    "en": "Sonic speed"
+   }
+  ],
+  "correct": "terminal_velocity",
+  "source": "https://en.wikipedia.org/wiki/Terminal_velocity"
+ },
+ {
+  "key": "science_nature_q1020",
+  "category_id": "science_nature",
+  "subcategory_id": "physics",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "The desk toy \"Newton's cradle\", with swinging steel balls, shows the conservation of what?"
+  },
+  "options": [
+   {
+    "concept_id": "momentum_and_energy",
+    "en": "Momentum and energy"
+   },
+   {
+    "concept_id": "mass_and_colour",
+    "en": "Mass and colour"
+   },
+   {
+    "concept_id": "heat_and_light",
+    "en": "Heat and light"
+   },
+   {
+    "concept_id": "electric_charge",
+    "en": "Electric charge"
+   }
+  ],
+  "correct": "momentum_and_energy",
+  "source": "https://en.wikipedia.org/wiki/Newton's_cradle"
+ },
+ {
+  "key": "science_nature_q1021",
+  "category_id": "science_nature",
+  "subcategory_id": "biology",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "A relationship where one species benefits and the other is unaffected is called what?"
+  },
+  "options": [
+   {
+    "concept_id": "commensalism",
+    "en": "Commensalism"
+   },
+   {
+    "concept_id": "parasitism",
+    "en": "Parasitism"
+   },
+   {
+    "concept_id": "mutualism",
+    "en": "Mutualism"
+   },
+   {
+    "concept_id": "predation",
+    "en": "Predation"
+   }
+  ],
+  "correct": "commensalism",
+  "source": "https://en.wikipedia.org/wiki/Commensalism"
+ },
+ {
+  "key": "science_nature_q1022",
+  "category_id": "science_nature",
+  "subcategory_id": "biology",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What makes stem cells so special?"
+  },
+  "options": [
+   {
+    "concept_id": "they_can_turn_into_many_other_cell_types",
+    "en": "They can turn into many other cell types"
+   },
+   {
+    "concept_id": "they_live_forever",
+    "en": "They live forever"
+   },
+   {
+    "concept_id": "they_only_exist_in_plants",
+    "en": "They only exist in plants"
+   },
+   {
+    "concept_id": "they_carry_no_dna",
+    "en": "They carry no DNA"
+   }
+  ],
+  "correct": "they_can_turn_into_many_other_cell_types",
+  "source": "https://en.wikipedia.org/wiki/Stem_cell"
+ },
+ {
+  "key": "science_nature_q1023",
+  "category_id": "science_nature",
+  "subcategory_id": "biology",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "In which part of a plant cell does photosynthesis take place?"
+  },
+  "options": [
+   {
+    "concept_id": "chloroplast",
+    "en": "Chloroplast"
+   },
+   {
+    "concept_id": "nucleus",
+    "en": "Nucleus"
+   },
+   {
+    "concept_id": "mitochondrion",
+    "en": "Mitochondrion"
+   },
+   {
+    "concept_id": "vacuole",
+    "en": "Vacuole"
+   }
+  ],
+  "correct": "chloroplast",
+  "source": "https://en.wikipedia.org/wiki/Chloroplast"
+ },
+ {
+  "key": "science_nature_q1024",
+  "category_id": "science_nature",
+  "subcategory_id": "biology",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "CRISPR, which won a Nobel Prize in 2020, is a tool for doing what?"
+  },
+  "options": [
+   {
+    "concept_id": "editing_genes_precisely",
+    "en": "Editing genes precisely"
+   },
+   {
+    "concept_id": "counting_stars",
+    "en": "Counting stars"
+   },
+   {
+    "concept_id": "cloning_dinosaurs",
+    "en": "Cloning dinosaurs"
+   },
+   {
+    "concept_id": "dating_fossils",
+    "en": "Dating fossils"
+   }
+  ],
+  "correct": "editing_genes_precisely",
+  "source": "https://en.wikipedia.org/wiki/CRISPR_gene_editing"
+ },
+ {
+  "key": "science_nature_q1025",
+  "category_id": "science_nature",
+  "subcategory_id": "chemistry",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which element is named after Albert Einstein?"
+  },
+  "options": [
+   {
+    "concept_id": "einsteinium",
+    "en": "Einsteinium"
+   },
+   {
+    "concept_id": "albertium",
+    "en": "Albertium"
+   },
+   {
+    "concept_id": "relativium",
+    "en": "Relativium"
+   },
+   {
+    "concept_id": "curium",
+    "en": "Curium"
+   }
+  ],
+  "correct": "einsteinium",
+  "source": "https://en.wikipedia.org/wiki/Einsteinium"
+ },
+ {
+  "key": "science_nature_q1026",
+  "category_id": "science_nature",
+  "subcategory_id": "chemistry",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which acid makes an ant's bite sting, and was named after the Latin for ant?"
+  },
+  "options": [
+   {
+    "concept_id": "formic_acid",
+    "en": "Formic acid"
+   },
+   {
+    "concept_id": "citric_acid",
+    "en": "Citric acid"
+   },
+   {
+    "concept_id": "acetic_acid",
+    "en": "Acetic acid"
+   },
+   {
+    "concept_id": "lactic_acid",
+    "en": "Lactic acid"
+   }
+  ],
+  "correct": "formic_acid",
+  "source": "https://en.wikipedia.org/wiki/Formic_acid"
+ },
+ {
+  "key": "science_nature_q1027",
+  "category_id": "science_nature",
+  "subcategory_id": "chemistry",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Avogadro's number, the count of particles in one mole, is roughly what?"
+  },
+  "options": [
+   {
+    "concept_id": "n_6_1023",
+    "en": "6 × 10²³"
+   },
+   {
+    "concept_id": "n_3_108",
+    "en": "3 × 10⁸"
+   },
+   {
+    "concept_id": "n_1_106",
+    "en": "1 × 10⁶"
+   },
+   {
+    "concept_id": "n_9_8",
+    "en": "9.8"
+   }
+  ],
+  "correct": "n_6_1023",
+  "source": "https://en.wikipedia.org/wiki/Avogadro_constant"
+ },
+ {
+  "key": "science_nature_q1028",
+  "category_id": "science_nature",
+  "subcategory_id": "chemistry",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which letter of the alphabet appears nowhere on the periodic table?"
+  },
+  "options": [
+   {
+    "concept_id": "j",
+    "en": "J"
+   },
+   {
+    "concept_id": "q",
+    "en": "Q"
+   },
+   {
+    "concept_id": "x",
+    "en": "X"
+   },
+   {
+    "concept_id": "z",
+    "en": "Z"
+   }
+  ],
+  "correct": "j",
+  "source": "https://en.wikipedia.org/wiki/Periodic_table"
+ },
+ {
+  "key": "science_nature_q1029",
+  "category_id": "science_nature",
+  "subcategory_id": "earth_science",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which gas do volcanoes release in the greatest amounts?"
+  },
+  "options": [
+   {
+    "concept_id": "water_vapour",
+    "en": "Water vapour"
+   },
+   {
+    "concept_id": "carbon_dioxide",
+    "en": "Carbon dioxide"
+   },
+   {
+    "concept_id": "sulphur_dioxide",
+    "en": "Sulphur dioxide"
+   },
+   {
+    "concept_id": "methane",
+    "en": "Methane"
+   }
+  ],
+  "correct": "water_vapour",
+  "source": "https://en.wikipedia.org/wiki/Volcanic_gas"
+ },
+ {
+  "key": "science_nature_q1030",
+  "category_id": "science_nature",
+  "subcategory_id": "earth_science",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is a geode?"
+  },
+  "options": [
+   {
+    "concept_id": "a_hollow_rock_lined_with_crystals_inside",
+    "en": "A hollow rock lined with crystals inside"
+   },
+   {
+    "concept_id": "a_fossil_of_a_sea_creature",
+    "en": "A fossil of a sea creature"
+   },
+   {
+    "concept_id": "a_type_of_meteorite",
+    "en": "A type of meteorite"
+   },
+   {
+    "concept_id": "a_lump_of_volcanic_glass",
+    "en": "A lump of volcanic glass"
+   }
+  ],
+  "correct": "a_hollow_rock_lined_with_crystals_inside",
+  "source": "https://en.wikipedia.org/wiki/Geode"
+ },
+ {
+  "key": "science_nature_q1031",
+  "category_id": "science_nature",
+  "subcategory_id": "earth_science",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Sinkholes often open suddenly where water has dissolved which rock underground?"
+  },
+  "options": [
+   {
+    "concept_id": "limestone",
+    "en": "Limestone"
+   },
+   {
+    "concept_id": "granite",
+    "en": "Granite"
+   },
+   {
+    "concept_id": "basalt",
+    "en": "Basalt"
+   },
+   {
+    "concept_id": "slate",
+    "en": "Slate"
+   }
+  ],
+  "correct": "limestone",
+  "source": "https://en.wikipedia.org/wiki/Sinkhole"
+ },
+ {
+  "key": "science_nature_q1032",
+  "category_id": "science_nature",
+  "subcategory_id": "earth_science",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What are the fast, narrow rivers of wind high in the atmosphere, which planes ride to save fuel, called?"
+  },
+  "options": [
+   {
+    "concept_id": "jet_streams",
+    "en": "Jet streams"
+   },
+   {
+    "concept_id": "trade_winds",
+    "en": "Trade winds"
+   },
+   {
+    "concept_id": "monsoons",
+    "en": "Monsoons"
+   },
+   {
+    "concept_id": "sea_breezes",
+    "en": "Sea breezes"
+   }
+  ],
+  "correct": "jet_streams",
+  "source": "https://en.wikipedia.org/wiki/Jet_stream"
+ },
+ {
+  "key": "science_nature_q1033",
+  "category_id": "science_nature",
+  "subcategory_id": "environment",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What do \"food miles\" measure?"
+  },
+  "options": [
+   {
+    "concept_id": "how_far_food_travels_from_farm_to_plate",
+    "en": "How far food travels from farm to plate"
+   },
+   {
+    "concept_id": "how_much_food_a_person_eats",
+    "en": "How much food a person eats"
+   },
+   {
+    "concept_id": "how_long_food_stays_fresh",
+    "en": "How long food stays fresh"
+   },
+   {
+    "concept_id": "how_far_a_cow_walks",
+    "en": "How far a cow walks"
+   }
+  ],
+  "correct": "how_far_food_travels_from_farm_to_plate",
+  "source": "https://en.wikipedia.org/wiki/Food_miles"
+ },
+ {
+  "key": "science_nature_q1034",
+  "category_id": "science_nature",
+  "subcategory_id": "environment",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which big cat of Russia's Far East, with only around 100 left in the wild, is among the rarest on Earth?"
+  },
+  "options": [
+   {
+    "concept_id": "amur_leopard",
+    "en": "Amur leopard"
+   },
+   {
+    "concept_id": "snow_leopard",
+    "en": "Snow leopard"
+   },
+   {
+    "concept_id": "bengal_tiger",
+    "en": "Bengal tiger"
+   },
+   {
+    "concept_id": "iberian_lynx",
+    "en": "Iberian lynx"
+   }
+  ],
+  "correct": "amur_leopard",
+  "source": "https://en.wikipedia.org/wiki/Amur_leopard"
+ },
+ {
+  "key": "science_nature_q1035",
+  "category_id": "science_nature",
+  "subcategory_id": "environment",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is \"e-waste\"?"
+  },
+  "options": [
+   {
+    "concept_id": "thrown_away_electronics_like_old_phones",
+    "en": "Thrown-away electronics like old phones"
+   },
+   {
+    "concept_id": "unwanted_emails",
+    "en": "Unwanted emails"
+   },
+   {
+    "concept_id": "wasted_electricity",
+    "en": "Wasted electricity"
+   },
+   {
+    "concept_id": "rubbish_sold_online",
+    "en": "Rubbish sold online"
+   }
+  ],
+  "correct": "thrown_away_electronics_like_old_phones",
+  "source": "https://en.wikipedia.org/wiki/Electronic_waste"
+ },
+ {
+  "key": "science_nature_q1036",
+  "category_id": "science_nature",
+  "subcategory_id": "environment",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is \"vertical farming\"?"
+  },
+  "options": [
+   {
+    "concept_id": "growing_crops_in_stacked_layers_indoors",
+    "en": "Growing crops in stacked layers indoors"
+   },
+   {
+    "concept_id": "farming_only_on_steep_hills",
+    "en": "Farming only on steep hills"
+   },
+   {
+    "concept_id": "planting_trees_upside_down",
+    "en": "Planting trees upside down"
+   },
+   {
+    "concept_id": "farming_from_aircraft",
+    "en": "Farming from aircraft"
+   }
+  ],
+  "correct": "growing_crops_in_stacked_layers_indoors",
+  "source": "https://en.wikipedia.org/wiki/Vertical_farming"
+ },
+ {
+  "key": "science_nature_q1037",
+  "category_id": "science_nature",
+  "subcategory_id": "plants",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Some bamboo species are the world's fastest-growing plants. Roughly how much can they grow in a day?"
+  },
+  "options": [
+   {
+    "concept_id": "nearly_1_metre",
+    "en": "Nearly 1 metre"
+   },
+   {
+    "concept_id": "about_1_cm",
+    "en": "About 1 cm"
+   },
+   {
+    "concept_id": "about_10_cm",
+    "en": "About 10 cm"
+   },
+   {
+    "concept_id": "about_5_metres",
+    "en": "About 5 metres"
+   }
+  ],
+  "correct": "nearly_1_metre",
+  "source": "https://en.wikipedia.org/wiki/Bamboo"
+ },
+ {
+  "key": "science_nature_q1038",
+  "category_id": "science_nature",
+  "subcategory_id": "plants",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is unusual about \"air plants\" (Tillandsia)?"
+  },
+  "options": [
+   {
+    "concept_id": "they_need_no_soil_and_take_water_from_the_air",
+    "en": "They need no soil and take water from the air"
+   },
+   {
+    "concept_id": "they_float_in_the_sky",
+    "en": "They float in the sky"
+   },
+   {
+    "concept_id": "they_grow_only_in_space",
+    "en": "They grow only in space"
+   },
+   {
+    "concept_id": "they_breathe_out_helium",
+    "en": "They breathe out helium"
+   }
+  ],
+  "correct": "they_need_no_soil_and_take_water_from_the_air",
+  "source": "https://en.wikipedia.org/wiki/Tillandsia"
+ },
+ {
+  "key": "science_nature_q1039",
+  "category_id": "science_nature",
+  "subcategory_id": "plants",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "How does a sundew, a meat-eating plant, catch insects?"
+  },
+  "options": [
+   {
+    "concept_id": "with_sticky_drops_on_hair_like_tentacles",
+    "en": "With sticky drops on hair-like tentacles"
+   },
+   {
+    "concept_id": "with_snapping_jaws",
+    "en": "With snapping jaws"
+   },
+   {
+    "concept_id": "by_drowning_them_in_a_jug",
+    "en": "By drowning them in a jug"
+   },
+   {
+    "concept_id": "by_stinging_them",
+    "en": "By stinging them"
+   }
+  ],
+  "correct": "with_sticky_drops_on_hair_like_tentacles",
+  "source": "https://en.wikipedia.org/wiki/Drosera"
+ },
+ {
+  "key": "science_nature_q1040",
+  "category_id": "science_nature",
+  "subcategory_id": "plants",
+  "difficulty": "MEDIUM",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which African tree with a huge swollen trunk can store thousands of litres of water?"
+  },
+  "options": [
+   {
+    "concept_id": "baobab",
+    "en": "Baobab"
+   },
+   {
+    "concept_id": "acacia",
+    "en": "Acacia"
+   },
+   {
+    "concept_id": "mahogany",
+    "en": "Mahogany"
+   },
+   {
+    "concept_id": "ebony",
+    "en": "Ebony"
+   }
+  ],
+  "correct": "baobab",
+  "source": "https://en.wikipedia.org/wiki/Adansonia"
+ },
+ {
+  "key": "science_nature_q1041",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which fish can hop across mudflats and even climb mangrove roots?"
+  },
+  "options": [
+   {
+    "concept_id": "mudskipper",
+    "en": "Mudskipper"
+   },
+   {
+    "concept_id": "lungfish",
+    "en": "Lungfish"
+   },
+   {
+    "concept_id": "catfish",
+    "en": "Catfish"
+   },
+   {
+    "concept_id": "flying_fish",
+    "en": "Flying fish"
+   }
+  ],
+  "correct": "mudskipper",
+  "source": "https://en.wikipedia.org/wiki/Mudskipper"
+ },
+ {
+  "key": "science_nature_q1042",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "The golden poison frog of Colombia carries enough toxin to kill roughly how many people?"
+  },
+  "options": [
+   {
+    "concept_id": "about_10",
+    "en": "About 10"
+   },
+   {
+    "concept_id": "about_1_000",
+    "en": "About 1,000"
+   },
+   {
+    "concept_id": "just_1",
+    "en": "Just 1"
+   },
+   {
+    "concept_id": "none_it_is_harmless",
+    "en": "None; it is harmless"
+   }
+  ],
+  "correct": "about_10",
+  "source": "https://en.wikipedia.org/wiki/Golden_poison_frog"
+ },
+ {
+  "key": "science_nature_q1043",
+  "category_id": "science_nature",
+  "subcategory_id": "animals",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "How does a platypus find prey underwater with its eyes, ears and nose shut?"
+  },
+  "options": [
+   {
+    "concept_id": "its_bill_senses_the_prey_s_electric_fields",
+    "en": "Its bill senses the prey's electric fields"
+   },
+   {
+    "concept_id": "it_follows_smells_through_its_skin",
+    "en": "It follows smells through its skin"
+   },
+   {
+    "concept_id": "it_uses_echolocation_clicks",
+    "en": "It uses echolocation clicks"
+   },
+   {
+    "concept_id": "it_tastes_the_water_with_its_tail",
+    "en": "It tastes the water with its tail"
+   }
+  ],
+  "correct": "its_bill_senses_the_prey_s_electric_fields",
+  "source": "https://en.wikipedia.org/wiki/Platypus"
+ },
+ {
+  "key": "science_nature_q1044",
+  "category_id": "science_nature",
+  "subcategory_id": "space",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What do scientists call the stretching of an object into a long thin strand as it falls into a black hole?"
+  },
+  "options": [
+   {
+    "concept_id": "spaghettification",
+    "en": "Spaghettification"
+   },
+   {
+    "concept_id": "redshifting",
+    "en": "Redshifting"
+   },
+   {
+    "concept_id": "gravitational_collapse",
+    "en": "Gravitational collapse"
+   },
+   {
+    "concept_id": "tidal_locking",
+    "en": "Tidal locking"
+   }
+  ],
+  "correct": "spaghettification",
+  "source": "https://en.wikipedia.org/wiki/Spaghettification"
+ },
+ {
+  "key": "science_nature_q1045",
+  "category_id": "science_nature",
+  "subcategory_id": "space",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is a magnetar?"
+  },
+  "options": [
+   {
+    "concept_id": "a_neutron_star_with_a_huge_magnetic_field",
+    "en": "A neutron star with a huge magnetic field"
+   },
+   {
+    "concept_id": "a_magnetic_comet",
+    "en": "A magnetic comet"
+   },
+   {
+    "concept_id": "a_planet_made_of_iron",
+    "en": "A planet made of iron"
+   },
+   {
+    "concept_id": "a_telescope_that_detects_magnets",
+    "en": "A telescope that detects magnets"
+   }
+  ],
+  "correct": "a_neutron_star_with_a_huge_magnetic_field",
+  "source": "https://en.wikipedia.org/wiki/Magnetar"
+ },
+ {
+  "key": "science_nature_q1046",
+  "category_id": "science_nature",
+  "subcategory_id": "space",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "The James Webb telescope sits at L2. What are \"Lagrange points\" like L2?"
+  },
+  "options": [
+   {
+    "concept_id": "spots_where_a_craft_can_stay_put_on_little_fuel",
+    "en": "Spots where a craft can stay put on little fuel"
+   },
+   {
+    "concept_id": "black_holes_near_earth",
+    "en": "Black holes near Earth"
+   },
+   {
+    "concept_id": "craters_on_the_moon",
+    "en": "Craters on the Moon"
+   },
+   {
+    "concept_id": "stars_named_after_lagrange",
+    "en": "Stars named after Lagrange"
+   }
+  ],
+  "correct": "spots_where_a_craft_can_stay_put_on_little_fuel",
+  "source": "https://en.wikipedia.org/wiki/Lagrange_point"
+ },
+ {
+  "key": "science_nature_q1047",
+  "category_id": "science_nature",
+  "subcategory_id": "human_body",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "The \"islets of Langerhans\", which make insulin, are found in which organ?"
+  },
+  "options": [
+   {
+    "concept_id": "pancreas",
+    "en": "Pancreas"
+   },
+   {
+    "concept_id": "liver",
+    "en": "Liver"
+   },
+   {
+    "concept_id": "kidney",
+    "en": "Kidney"
+   },
+   {
+    "concept_id": "spleen",
+    "en": "Spleen"
+   }
+  ],
+  "correct": "pancreas",
+  "source": "https://en.wikipedia.org/wiki/Pancreatic_islets"
+ },
+ {
+  "key": "science_nature_q1048",
+  "category_id": "science_nature",
+  "subcategory_id": "human_body",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the medical term for a heart attack?"
+  },
+  "options": [
+   {
+    "concept_id": "myocardial_infarction",
+    "en": "Myocardial infarction"
+   },
+   {
+    "concept_id": "cardiac_arrhythmia",
+    "en": "Cardiac arrhythmia"
+   },
+   {
+    "concept_id": "pulmonary_embolism",
+    "en": "Pulmonary embolism"
+   },
+   {
+    "concept_id": "angina_pectoris",
+    "en": "Angina pectoris"
+   }
+  ],
+  "correct": "myocardial_infarction",
+  "source": "https://en.wikipedia.org/wiki/Myocardial_infarction"
+ },
+ {
+  "key": "science_nature_q1049",
+  "category_id": "science_nature",
+  "subcategory_id": "physics",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which British physicist predicted antimatter in 1928 with his equation for the electron?"
+  },
+  "options": [
+   {
+    "concept_id": "paul_dirac",
+    "en": "Paul Dirac"
+   },
+   {
+    "concept_id": "ernest_rutherford",
+    "en": "Ernest Rutherford"
+   },
+   {
+    "concept_id": "j_j_thomson",
+    "en": "J. J. Thomson"
+   },
+   {
+    "concept_id": "peter_higgs",
+    "en": "Peter Higgs"
+   }
+  ],
+  "correct": "paul_dirac",
+  "source": "https://en.wikipedia.org/wiki/Paul_Dirac"
+ },
+ {
+  "key": "science_nature_q1050",
+  "category_id": "science_nature",
+  "subcategory_id": "physics",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Why does the water around some nuclear reactor cores glow an eerie blue?"
+  },
+  "options": [
+   {
+    "concept_id": "particles_move_faster_than_light_can_in_water",
+    "en": "Particles move faster than light can in water"
+   },
+   {
+    "concept_id": "the_uranium_is_painted_blue",
+    "en": "The uranium is painted blue"
+   },
+   {
+    "concept_id": "blue_lamps_are_placed_underwater",
+    "en": "Blue lamps are placed underwater"
+   },
+   {
+    "concept_id": "the_water_is_boiling",
+    "en": "The water is boiling"
+   }
+  ],
+  "correct": "particles_move_faster_than_light_can_in_water",
+  "source": "https://en.wikipedia.org/wiki/Cherenkov_radiation"
+ },
+ {
+  "key": "science_nature_q1051",
+  "category_id": "science_nature",
+  "subcategory_id": "biology",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which is often called the largest single cell known?"
+  },
+  "options": [
+   {
+    "concept_id": "an_ostrich_egg_yolk",
+    "en": "An ostrich egg yolk"
+   },
+   {
+    "concept_id": "a_human_nerve_cell",
+    "en": "A human nerve cell"
+   },
+   {
+    "concept_id": "a_blue_whale_s_red_blood_cell",
+    "en": "A blue whale's red blood cell"
+   },
+   {
+    "concept_id": "an_amoeba",
+    "en": "An amoeba"
+   }
+  ],
+  "correct": "an_ostrich_egg_yolk",
+  "source": "https://en.wikipedia.org/wiki/Egg_cell"
+ },
+ {
+  "key": "science_nature_q1052",
+  "category_id": "science_nature",
+  "subcategory_id": "biology",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which was the first virus ever discovered, in the 1890s, by studying a sick crop?"
+  },
+  "options": [
+   {
+    "concept_id": "tobacco_mosaic_virus",
+    "en": "Tobacco mosaic virus"
+   },
+   {
+    "concept_id": "influenza_virus",
+    "en": "Influenza virus"
+   },
+   {
+    "concept_id": "rabies_virus",
+    "en": "Rabies virus"
+   },
+   {
+    "concept_id": "smallpox_virus",
+    "en": "Smallpox virus"
+   }
+  ],
+  "correct": "tobacco_mosaic_virus",
+  "source": "https://en.wikipedia.org/wiki/Tobacco_mosaic_virus"
+ },
+ {
+  "key": "science_nature_q1053",
+  "category_id": "science_nature",
+  "subcategory_id": "chemistry",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is special about \"aqua regia\", a mix of nitric and hydrochloric acid?"
+  },
+  "options": [
+   {
+    "concept_id": "it_can_dissolve_gold",
+    "en": "It can dissolve gold"
+   },
+   {
+    "concept_id": "it_glows_in_the_dark",
+    "en": "It glows in the dark"
+   },
+   {
+    "concept_id": "it_is_safe_to_drink",
+    "en": "It is safe to drink"
+   },
+   {
+    "concept_id": "it_freezes_at_room_temperature",
+    "en": "It freezes at room temperature"
+   }
+  ],
+  "correct": "it_can_dissolve_gold",
+  "source": "https://en.wikipedia.org/wiki/Aqua_regia"
+ },
+ {
+  "key": "science_nature_q1054",
+  "category_id": "science_nature",
+  "subcategory_id": "chemistry",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which element, number 118, is named after a living Russian-Armenian physicist?"
+  },
+  "options": [
+   {
+    "concept_id": "oganesson",
+    "en": "Oganesson"
+   },
+   {
+    "concept_id": "flerovium",
+    "en": "Flerovium"
+   },
+   {
+    "concept_id": "moscovium",
+    "en": "Moscovium"
+   },
+   {
+    "concept_id": "tennessine",
+    "en": "Tennessine"
+   }
+  ],
+  "correct": "oganesson",
+  "source": "https://en.wikipedia.org/wiki/Oganesson"
+ },
+ {
+  "key": "science_nature_q1055",
+  "category_id": "science_nature",
+  "subcategory_id": "earth_science",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What is the warm, dry wind that sweeps down the lee side of the Alps called?"
+  },
+  "options": [
+   {
+    "concept_id": "foehn",
+    "en": "Foehn"
+   },
+   {
+    "concept_id": "mistral",
+    "en": "Mistral"
+   },
+   {
+    "concept_id": "sirocco",
+    "en": "Sirocco"
+   },
+   {
+    "concept_id": "bora",
+    "en": "Bora"
+   }
+  ],
+  "correct": "foehn",
+  "source": "https://en.wikipedia.org/wiki/Foehn_wind"
+ },
+ {
+  "key": "science_nature_q1056",
+  "category_id": "science_nature",
+  "subcategory_id": "earth_science",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "The blue-violet gem tanzanite is mined in only one place on Earth. Near which mountain?"
+  },
+  "options": [
+   {
+    "concept_id": "kilimanjaro",
+    "en": "Kilimanjaro"
+   },
+   {
+    "concept_id": "mount_kenya",
+    "en": "Mount Kenya"
+   },
+   {
+    "concept_id": "everest",
+    "en": "Everest"
+   },
+   {
+    "concept_id": "ararat",
+    "en": "Ararat"
+   }
+  ],
+  "correct": "kilimanjaro",
+  "source": "https://en.wikipedia.org/wiki/Tanzanite"
+ },
+ {
+  "key": "science_nature_q1057",
+  "category_id": "science_nature",
+  "subcategory_id": "environment",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "What does \"Earth Overshoot Day\" mark each year?"
+  },
+  "options": [
+   {
+    "concept_id": "when_we_ve_used_up_the_year_s_natural_resources",
+    "en": "When we've used up the year's natural resources"
+   },
+   {
+    "concept_id": "the_hottest_day_ever_recorded",
+    "en": "The hottest day ever recorded"
+   },
+   {
+    "concept_id": "the_day_ozone_recovery_began",
+    "en": "The day ozone recovery began"
+   },
+   {
+    "concept_id": "the_start_of_a_new_ice_age",
+    "en": "The start of a new ice age"
+   }
+  ],
+  "correct": "when_we_ve_used_up_the_year_s_natural_resources",
+  "source": "https://en.wikipedia.org/wiki/Earth_Overshoot_Day"
+ },
+ {
+  "key": "science_nature_q1058",
+  "category_id": "science_nature",
+  "subcategory_id": "environment",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "Which 1971 treaty, named after an Iranian city, protects important wetlands?"
+  },
+  "options": [
+   {
+    "concept_id": "ramsar_convention",
+    "en": "Ramsar Convention"
+   },
+   {
+    "concept_id": "kyoto_protocol",
+    "en": "Kyoto Protocol"
+   },
+   {
+    "concept_id": "tehran_accord",
+    "en": "Tehran Accord"
+   },
+   {
+    "concept_id": "bonn_convention",
+    "en": "Bonn Convention"
+   }
+  ],
+  "correct": "ramsar_convention",
+  "source": "https://en.wikipedia.org/wiki/Ramsar_Convention"
+ },
+ {
+  "key": "science_nature_q1059",
+  "category_id": "science_nature",
+  "subcategory_id": "plants",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "With about 28,000 species, which is one of the two largest families of flowering plants?"
+  },
+  "options": [
+   {
+    "concept_id": "orchids",
+    "en": "Orchids"
+   },
+   {
+    "concept_id": "roses",
+    "en": "Roses"
+   },
+   {
+    "concept_id": "grasses",
+    "en": "Grasses"
+   },
+   {
+    "concept_id": "lilies",
+    "en": "Lilies"
+   }
+  ],
+  "correct": "orchids",
+  "source": "https://en.wikipedia.org/wiki/Orchidaceae"
+ },
+ {
+  "key": "science_nature_q1060",
+  "category_id": "science_nature",
+  "subcategory_id": "plants",
+  "difficulty": "HARD",
+  "global_relevance_score": 4,
+  "time_sensitive": false,
+  "question": {
+   "en": "The deep blue dye used for the first blue jeans came from which plant?"
+  },
+  "options": [
+   {
+    "concept_id": "indigo",
+    "en": "Indigo"
+   },
+   {
+    "concept_id": "woad",
+    "en": "Woad"
+   },
+   {
+    "concept_id": "madder",
+    "en": "Madder"
+   },
+   {
+    "concept_id": "saffron",
+    "en": "Saffron"
+   }
+  ],
+  "correct": "indigo",
+  "source": "https://en.wikipedia.org/wiki/Indigofera_tinctoria"
+ }
+]
