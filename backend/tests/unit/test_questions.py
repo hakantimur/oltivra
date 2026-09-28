@@ -43,7 +43,8 @@ def test_every_seed_item_is_competitive_valid_in_both_languages():
     items = load_seed_items()
     assert len(items) == 360
     per_category = Counter(i["category_id"] for i in items)
-    assert set(per_category) == set(CATEGORY_IDS) and set(per_category.values()) == {40}
+    # The legacy text seed covers the nine launch categories; later categories are curated content only.
+    assert len(per_category) == 9 and set(per_category) <= set(CATEGORY_IDS) and set(per_category.values()) == {40}
     seen_questions = set()
     for item in items:
         assert is_valid_subcategory(item["category_id"], item["subcategory_id"]), item["key"]
@@ -260,8 +261,8 @@ async def test_language_gate_report_matches_seed_bank(container):
     report = await language_gate_report(container.manifest_cache, "en", trials=20)
     assert report.total_groups == len(items)
     assert report.categories_represented == len({i["category_id"] for i in items})
-    # The curated bank (thousands of questions) clears the soft-launch gate.
-    assert report.soft_launch_ready is True
+    # The curated bank clears the size thresholds; the gate also needs every category represented.
+    assert report.soft_launch_ready is (report.categories_represented == len(CATEGORY_IDS))
 
 
 # ---------------------------------------------------------------- API: categories + Synova (Phase 1 exit)
