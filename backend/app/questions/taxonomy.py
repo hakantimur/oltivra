@@ -1,4 +1,8 @@
-"""Exactly nine global main categories (spec §8). Mixed is a matchmaking selection, not a category."""
+"""Global main categories (spec §8). Mixed is a matchmaking selection, not a category.
+
+The nine launch categories were joined on 2026-09-28 by Animals, Games & Internet and Brands & Logos (research:
+broader, easier-to-enter topics; every question stays globally known because it is translated for all markets).
+"""
 
 from __future__ import annotations
 
@@ -77,12 +81,35 @@ CATEGORIES: tuple[Category, ...] = (
         ("architecture", "Architecture", "Mimari"), ("mythology", "Mythology", "Mitoloji"),
         ("art_movements", "Art Movements", "Sanat Akımları"),
     ])),
+    Category("animals", {"en": "Animals", "tr": "Hayvanlar"}, "pets", _subs([
+        ("mammals", "Mammals", "Memeliler"), ("birds", "Birds", "Kuşlar"),
+        ("sea_life", "Sea Life", "Deniz Canlıları"),
+        ("reptiles_amphibians", "Reptiles & Amphibians", "Sürüngenler ve Amfibiler"),
+        ("insects", "Insects & Bugs", "Böcekler"), ("pets", "Pets & Farm Animals", "Evcil ve Çiftlik Hayvanları"),
+        ("animal_records", "Animal Records", "Hayvan Rekorları"),
+        ("behaviour", "Animal Behaviour", "Hayvan Davranışları"), ("habitats", "Habitats", "Yaşam Alanları"),
+    ])),
+    Category("games_internet", {"en": "Games & Internet", "tr": "Oyunlar ve İnternet"}, "sports_esports", _subs([
+        ("video_games", "Video Games", "Video Oyunları"), ("game_characters", "Game Characters", "Oyun Karakterleri"),
+        ("consoles", "Consoles & Devices", "Konsollar ve Cihazlar"), ("mobile_games", "Mobile Games", "Mobil Oyunlar"),
+        ("board_card_games", "Board & Card Games", "Kutu ve Kart Oyunları"), ("esports", "Esports", "E-spor"),
+        ("social_media", "Social Media", "Sosyal Medya"),
+        ("internet_culture", "Internet Culture", "İnternet Kültürü"),
+    ])),
+    Category("brands_logos", {"en": "Brands & Logos", "tr": "Markalar ve Logolar"}, "storefront", _subs([
+        ("logos", "Logos", "Logolar"), ("slogans", "Slogans", "Sloganlar"),
+        ("mascots", "Mascots", "Maskotlar"), ("brand_origins", "Brand Origins", "Marka Hikâyeleri"),
+        ("founders", "Founders", "Kurucular"), ("car_brands", "Car Brands", "Otomobil Markaları"),
+        ("fashion_brands", "Fashion Brands", "Moda Markaları"),
+        ("food_drink_brands", "Food & Drink Brands", "Yiyecek ve İçecek Markaları"),
+        ("tech_brands", "Tech Brands", "Teknoloji Markaları"),
+    ])),
 )
 
 CATEGORY_IDS: tuple[str, ...] = tuple(c.id for c in CATEGORIES)
 CATEGORY_BY_ID: dict[str, Category] = {c.id: c for c in CATEGORIES}
 
-assert len(CATEGORIES) == 9 and "gaming" not in CATEGORY_IDS
+assert len(CATEGORIES) == 12 and len(set(CATEGORY_IDS)) == len(CATEGORIES)
 
 
 def is_valid_subcategory(category_id: str, subcategory_id: str) -> bool:

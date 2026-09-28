@@ -352,6 +352,9 @@ IconData categoryIcon(String? id) => switch (id) {
       'sports' => Icons.sports_soccer_rounded,
       'technology_inventions' => Icons.memory_rounded,
       'food_culture' => Icons.restaurant_rounded,
+      'animals' => Icons.pets_rounded,
+      'games_internet' => Icons.sports_esports_rounded,
+      'brands_logos' => Icons.storefront_rounded,
       _ => Icons.shuffle_rounded,
     };
 

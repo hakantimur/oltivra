@@ -9,7 +9,7 @@ import '../../widgets/o_widgets.dart';
 import 'progress_api.dart';
 import 'progress_widgets.dart';
 
-/// Category statistics (P06 category_statistics): the nine approved categories with an accessible
+/// Category statistics (P06 category_statistics): all approved categories with an accessible
 /// bar + percentage accuracy and answered counts from `GET /v1/category-stats`.
 class CategoryStatsScreen extends ConsumerWidget {
   const CategoryStatsScreen({super.key});

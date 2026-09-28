@@ -32,16 +32,19 @@ from app.questions.taxonomy import CATEGORIES, CATEGORY_IDS, is_valid_subcategor
 # ---------------------------------------------------------------- taxonomy & seed content
 
 
-def test_exactly_nine_categories_and_no_gaming():
-    assert len(CATEGORIES) == 9
-    assert "gaming" not in CATEGORY_IDS
+def test_twelve_categories_with_unique_ids():
+    assert len(CATEGORIES) == 12 and len(set(CATEGORY_IDS)) == 12
+    assert {"animals", "games_internet", "brands_logos"} <= set(CATEGORY_IDS)
+    for category in CATEGORIES:
+        assert category.subcategories and all(set(n) == {"en", "tr"} for n in category.subcategories.values())
 
 
 def test_every_seed_item_is_competitive_valid_in_both_languages():
     items = load_seed_items()
     assert len(items) == 360
     per_category = Counter(i["category_id"] for i in items)
-    assert set(per_category) == set(CATEGORY_IDS) and set(per_category.values()) == {40}
+    # The legacy text seed covers the nine launch categories; later categories are curated content only.
+    assert len(per_category) == 9 and set(per_category) <= set(CATEGORY_IDS) and set(per_category.values()) == {40}
     seen_questions = set()
     for item in items:
         assert is_valid_subcategory(item["category_id"], item["subcategory_id"]), item["key"]
@@ -258,8 +261,8 @@ async def test_language_gate_report_matches_seed_bank(container):
     report = await language_gate_report(container.manifest_cache, "en", trials=20)
     assert report.total_groups == len(items)
     assert report.categories_represented == len({i["category_id"] for i in items})
-    # The curated bank (thousands of questions) clears the soft-launch gate.
-    assert report.soft_launch_ready is True
+    # The curated bank clears the size thresholds; the gate also needs every category represented.
+    assert report.soft_launch_ready is (report.categories_represented == len(CATEGORY_IDS))
 
 
 # ---------------------------------------------------------------- API: categories + Synova (Phase 1 exit)
@@ -269,7 +272,7 @@ def test_categories_endpoint_localised(api):
     res = api.get("/v1/categories", "u1", lang="tr")
     assert res.status_code == 200
     names = [c["name"] for c in res.json()["categories"]]
-    assert len(names) == 9 and "Coğrafya ve Dünya" in names
+    assert len(names) == 12 and "Coğrafya ve Dünya" in names and "Hayvanlar" in names
 
 
 def test_synova_serves_shared_question_and_decides_server_side(api, container):

@@ -1,6 +1,6 @@
 """Category/subcategory management (spec §8, §11 area 4).
 
-Exactly nine global main categories are fixed in code; admins manage localised names and subcategories
+The global main categories are fixed in code (app.questions.taxonomy); admins manage localised names and subcategories
 through ``categories/{id}`` overrides, which clients read via the API (and Firestore rules allow reads).
 """
 

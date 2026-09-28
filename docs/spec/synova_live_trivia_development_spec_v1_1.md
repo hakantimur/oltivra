@@ -717,7 +717,7 @@ No badge, frame, avatar, or cosmetic changes gameplay.
 
 # 8. GLOBAL QUESTION CATEGORIES
 
-There are exactly nine main categories:
+There are twelve main categories (the nine launch categories plus three added on 2026-09-28):
 
 1. Geography & World
 2. Science & Nature
@@ -728,8 +728,13 @@ There are exactly nine main categories:
 7. Food & Culture
 8. Technology & Inventions
 9. Arts & Literature
+10. Animals
+11. Games & Internet
+12. Brands & Logos
 
-There is no Gaming main category. Mixed is a matchmaking selection, not a database category.
+Games & Internet (video games, game characters, esports, social media, internet culture) replaces the earlier
+"no Gaming category" rule by product decision on 2026-09-28. Mixed is a matchmaking selection, not a database
+category.
 
 ## 8.1 Global relevance
 
@@ -3737,7 +3742,7 @@ Do not build initially:
 
 - Shared question platform serves Synova and Live Trivia.
 - Global relevance and 13+ quality filters work.
-- Exactly nine approved categories; no Gaming category.
+- Exactly the twelve approved categories of §8.
 - Versioning/source/license/translation rules work.
 - Recent-question avoidance records actually shown questions.
 - Competitive verification/report/quarantine work.
