@@ -51,6 +51,8 @@ class HumanSeat:
     frame_id: str
     mmr: int
     ticket_id: str | None = None
+    # Hidden adaptive bot ladder level (app.bots.difficulty.effective_level); None = config start level.
+    bot_level: float | None = None
 
 
 @dataclass
@@ -88,8 +90,8 @@ class MatchFactory:
         shard_id = shard_for(c.keys, match_id, c.settings.shard_ids)
         await c.shard_admission.check(shard_id, config.matchmaking.max_active_rooms_per_shard)
         bot_count = max(0, ROSTER_SIZE[mode] - len(humans)) if fill_bots else 0
-        avg_mmr = sum(h.mmr for h in humans) / max(1, len(humans))
-        bots = await c.bots.pick(match_id, bot_count, avg_mmr, {h.username.lower() for h in humans}, config)
+        levels = [config.bots.start_level if h.bot_level is None else h.bot_level for h in humans]
+        bots = await c.bots.pick(match_id, bot_count, levels, {h.username.lower() for h in humans}, config)
         uids = [h.uid for h in humans]
         if mode == Mode.QUICK:
             plan = await c.question_plans.quick_plan(language, uids, seed=match_id, category_id=category_id)

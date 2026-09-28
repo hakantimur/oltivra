@@ -12,6 +12,7 @@ import logging
 from typing import Any
 
 from app.accounts.runtime import RuntimeState, current, require_idle, runtime_path, transition
+from app.bots.difficulty import effective_level
 from app.common.clock import ms_to_datetime
 from app.common.errors import ApiError, ErrorCode
 from app.common.ids import random_token
@@ -311,8 +312,10 @@ class PartyService:
             return None
         accepted = list(party["accepted_uids"])
         users = await c.store.get_many([user_path(u) for u in accepted])
+        config = await c.config.get()
         seats = [HumanSeat(uid=u, username=d["username_display"], avatar_id=d["avatar_id"],
-                           frame_id=d.get("frame_id", "frame_none"), mmr=int(d.get("mmr", 1000)))
+                           frame_id=d.get("frame_id", "frame_none"), mmr=int(d.get("mmr", 1000)),
+                           bot_level=effective_level(d, config.bots))
                  for u, d in zip(accepted, users, strict=True) if d]
         try:
             prepared = await c.match_factory.prepare(mode=Mode(party["mode"]), language=party["question_language"],
