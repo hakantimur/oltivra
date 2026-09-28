@@ -10,6 +10,7 @@ import logging
 from typing import Any
 
 from app.accounts.runtime import RuntimeState, current, pointer, require_idle, runtime_path, transition
+from app.bots.difficulty import effective_level
 from app.common.clock import ms_to_datetime
 from app.common.errors import ApiError, ErrorCode
 from app.common.ids import new_uuid
@@ -74,6 +75,7 @@ class MatchmakingService:
             "category_id": category_id,
             "median_rtt_ms": median_rtt_ms,
             "mmr_snapshot": int(user.get("mmr", config.ranked.start_mmr)),
+            "bot_level_snapshot": effective_level(user, config.bots),
             "username": user["username_display"],
             "avatar_id": user["avatar_id"],
             "frame_id": user.get("frame_id", "frame_none"),
@@ -253,7 +255,7 @@ class MatchmakingService:
                 return None
             seats = [HumanSeat(uid=t["uid"], username=t["username"], avatar_id=t["avatar_id"],
                                frame_id=t.get("frame_id", "frame_none"), mmr=t["mmr_snapshot"],
-                               ticket_id=t["ticket_id"]) for t in roster]
+                               ticket_id=t["ticket_id"], bot_level=t.get("bot_level_snapshot")) for t in roster]
             try:
                 prepared = await c.match_factory.prepare(mode=Mode(ticket["mode"]), language=ticket["language"],
                                                          humans=seats, config=config,

@@ -124,22 +124,33 @@ class BotProfileConfig(BaseModel):
 
 
 def _default_bot_profiles() -> dict[str, BotProfileConfig]:
+    # Retuned 2026-09-28: softer and slower across the board so a casual player can win against the easy
+    # rosters of app.bots.difficulty (BEGINNER ~ easy, NORMAL ~ medium, STRONG ~ hard, EXPERT ~ master).
     means = {"EASY": 4200, "MEDIUM": 5600, "HARD": 6800}
     return {
-        "BEGINNER": BotProfileConfig(accuracy={"EASY": 0.70, "MEDIUM": 0.45, "HARD": 0.20}, mmr=850,
-                                     response_mean_ms={k: v + 900 for k, v in means.items()}, answer_rate=0.9),
-        "NORMAL": BotProfileConfig(accuracy={"EASY": 0.85, "MEDIUM": 0.65, "HARD": 0.40}, mmr=1000,
-                                   response_mean_ms=means),
-        "STRONG": BotProfileConfig(accuracy={"EASY": 0.94, "MEDIUM": 0.80, "HARD": 0.60}, mmr=1200,
-                                   response_mean_ms={k: v - 600 for k, v in means.items()}),
-        "EXPERT": BotProfileConfig(accuracy={"EASY": 0.98, "MEDIUM": 0.91, "HARD": 0.78}, mmr=1450,
-                                   response_mean_ms={k: v - 1100 for k, v in means.items()}, answer_rate=0.99),
+        "BEGINNER": BotProfileConfig(accuracy={"EASY": 0.60, "MEDIUM": 0.35, "HARD": 0.15}, mmr=850,
+                                     response_mean_ms={k: v + 2200 for k, v in means.items()}, answer_rate=0.88),
+        "NORMAL": BotProfileConfig(accuracy={"EASY": 0.75, "MEDIUM": 0.52, "HARD": 0.28}, mmr=1000,
+                                   response_mean_ms={k: v + 1100 for k, v in means.items()}, answer_rate=0.93),
+        "STRONG": BotProfileConfig(accuracy={"EASY": 0.88, "MEDIUM": 0.70, "HARD": 0.45}, mmr=1200,
+                                   response_mean_ms=means, answer_rate=0.95),
+        "EXPERT": BotProfileConfig(accuracy={"EASY": 0.95, "MEDIUM": 0.85, "HARD": 0.65}, mmr=1450,
+                                   response_mean_ms={k: v - 700 for k, v in means.items()}, answer_rate=0.98),
     }
 
 
 class BotConfig(BaseModel):
     profiles: dict[str, BotProfileConfig] = Field(default_factory=_default_bot_profiles)
     reaction_probability: float = 0.15
+    # Adaptive rosters (app.bots.difficulty): hidden per-player ladder level, 0 = three BEGINNER bots.
+    start_level: float = Field(default=1.0, ge=0)
+    win_step: float = Field(default=0.75, gt=0)
+    loss_step: float = Field(default=0.5, gt=0)
+    # The first matches never go above this level, so new players meet easy rosters.
+    warmup_matches: int = Field(default=3, ge=0)
+    warmup_max_level: float = Field(default=1.0, ge=0)
+    # After this many bot-match losses in a row the next roster is one rung easier.
+    loss_streak_relief: int = Field(default=3, ge=1)
 
 
 class FeatureConfig(BaseModel):
