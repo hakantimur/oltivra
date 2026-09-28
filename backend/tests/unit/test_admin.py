@@ -254,7 +254,7 @@ def test_config_publish_is_versioned_and_ranked_never_weaker(api, container):
 
 def test_bot_avatar_and_reaction_catalogs(api, container):
     bots = api.get("/admin/v1/bots", ADMIN, extra=AS_ADMIN).json()
-    assert len(bots["bots"]) == 48 and "NORMAL" in bots["profiles"]
+    assert len(bots["bots"]) == 150 and "NORMAL" in bots["profiles"]
     bot_id = bots["bots"][0]["bot_id"]
     res = api.put(f"/admin/v1/bots/{bot_id}", ADMIN, {"username": "river_fox", "profile": "STRONG"}, extra=AS_ADMIN)
     assert res.status_code == 200, res.text
@@ -277,7 +277,8 @@ def test_pool_health_report(api):
     report = api.get("/admin/v1/pool-health", ADMIN, extra=AS_ADMIN, language="en", trials=20).json()
     assert report["language"] == "en" and set(report["per_difficulty"]) == {"EASY", "MEDIUM", "HARD"}
     assert set(report["language_gate"]) == {"soft_launch", "full_scale"}
-    assert not report["language_gate"]["soft_launch"]["checks"]["total_active_groups"]  # seed pool is small
+    total = sum(report["per_difficulty"].values())
+    assert report["language_gate"]["soft_launch"]["checks"]["total_active_groups"] == (total >= 6000)
     assert 0.0 <= report["simulation"]["quick_success_rate"] <= 1.0
 
 
