@@ -1,0 +1,55 @@
+# Codemagic: builds the iOS app on a cloud Mac and uploads it to TestFlight.
+# Manual trigger only (no `triggering` section). Setup steps: docs/ios-release.md.
+workflows:
+  ios-testflight:
+    name: iOS TestFlight
+    max_build_duration: 60
+    instance_type: mac_mini_m2
+    integrations:
+      # App Store Connect API key added in Codemagic → Team integrations, saved under this name.
+      app_store_connect: Oltivra ASC
+    environment:
+      flutter: 3.47.2
+      xcode: latest
+      cocoapods: default
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: com.noriloop.oltivra
+      groups:
+        # Holds FIREBASE_API_KEY_IOS (API_KEY from the Oltivra iOS app's GoogleService-Info.plist).
+        - oltivra_ios
+      vars:
+        API_BASE_URL: https://oltivra-api-269747180478.europe-west1.run.app
+        FIREBASE_PROJECT_ID: synova-36a5f
+        FIREBASE_APP_ID_IOS: 1:269747180478:ios:e939b331d301df5e8a1fef
+        FIREBASE_SENDER_ID: "269747180478"
+        GOOGLE_IOS_CLIENT_ID: 269747180478-n3318o2626nr61h27dupp91jsa1l2b6l.apps.googleusercontent.com
+        GOOGLE_SERVER_CLIENT_ID: 269747180478-s7n59d7i7rsn3hi9tonru9cl71epurui.apps.googleusercontent.com
+    scripts:
+      - name: Use signing profiles
+        script: xcode-project use-profiles --project mobile/ios/Runner.xcodeproj
+      - name: Get packages
+        script: cd mobile && flutter pub get
+      - name: Install pods
+        script: cd mobile/ios && pod install --repo-update
+      - name: Build ipa
+        script: |
+          cd mobile
+          flutter build ipa --release \
+            --build-number=$BUILD_NUMBER \
+            --export-options-plist=/Users/builder/export_options.plist \
+            --dart-define=API_BASE_URL=$API_BASE_URL \
+            --dart-define=AUTH_MODE=firebase --dart-define=LIVE_MODE=rtdb --dart-define=USE_EMULATORS=false \
+            --dart-define=FIREBASE_PROJECT_ID=$FIREBASE_PROJECT_ID \
+            --dart-define=FIREBASE_API_KEY=$FIREBASE_API_KEY_IOS \
+            --dart-define=FIREBASE_APP_ID=$FIREBASE_APP_ID_IOS \
+            --dart-define=FIREBASE_SENDER_ID=$FIREBASE_SENDER_ID \
+            --dart-define=GOOGLE_IOS_CLIENT_ID=$GOOGLE_IOS_CLIENT_ID \
+            --dart-define=GOOGLE_SERVER_CLIENT_ID=$GOOGLE_SERVER_CLIENT_ID
+    artifacts:
+      - mobile/build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
+    publishing:
+      app_store_connect:
+        auth: integration
+        submit_to_testflight: true

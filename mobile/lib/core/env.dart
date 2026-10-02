@@ -21,6 +21,9 @@ abstract final class Env {
   /// OAuth *web* client id of the Firebase project; Android Google Sign-In needs it to mint an ID token.
   static const googleServerClientId = String.fromEnvironment('GOOGLE_SERVER_CLIENT_ID');
 
+  /// OAuth *iOS* client id of the Firebase iOS app (CLIENT_ID in its GoogleService-Info.plist); iOS only.
+  static const googleIosClientId = String.fromEnvironment('GOOGLE_IOS_CLIENT_ID');
+
   /// Firebase App Check (spec §15.2): Play Integrity in release builds. A debug token registered in the Firebase
   /// console switches to the debug provider (emulators, sideloaded dev builds).
   static const appCheckDebugToken = String.fromEnvironment('APP_CHECK_DEBUG_TOKEN');

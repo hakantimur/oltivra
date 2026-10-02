@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
+import 'dart:io';
 import 'dart:math';
 
 import 'package:crypto/crypto.dart';
@@ -128,6 +129,7 @@ class FirebaseAuthService implements AuthService {
     final google = GoogleSignIn.instance;
     if (!_googleReady) {
       await google.initialize(
+        clientId: Platform.isIOS && Env.googleIosClientId.isNotEmpty ? Env.googleIosClientId : null,
         serverClientId: Env.googleServerClientId.isEmpty ? null : Env.googleServerClientId,
       );
       _googleReady = true;

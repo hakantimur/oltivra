@@ -49,6 +49,9 @@ Future<Future<String?> Function()?> _activateAppCheck() async {
       providerAndroid: Env.appCheckDebugToken.isEmpty
           ? const AndroidPlayIntegrityProvider()
           : const AndroidDebugProvider(debugToken: Env.appCheckDebugToken),
+      providerApple: Env.appCheckDebugToken.isEmpty
+          ? const AppleAppAttestWithDeviceCheckFallbackProvider()
+          : const AppleDebugProvider(debugToken: Env.appCheckDebugToken),
     );
   } catch (_) {
     return null;
