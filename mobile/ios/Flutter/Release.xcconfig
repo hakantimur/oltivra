@@ -1,3 +1,6 @@
+#include? "Pods/Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"
 #include "Generated.xcconfig"
 // AdMob app ID; override with the real one for release (Google's sample ID by default).
 GAD_APPLICATION_ID = ca-app-pub-3940256099942544~1458002511
+// Google Sign-In callback scheme: the REVERSED_CLIENT_ID of the Oltivra iOS app in Firebase (not a secret).
+GOOGLE_REVERSED_CLIENT_ID = com.googleusercontent.apps.269747180478-n3318o2626nr61h27dupp91jsa1l2b6l
