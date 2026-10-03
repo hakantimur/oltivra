@@ -10,6 +10,7 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 
 import '../../core/providers.dart';
+import 'ad_diagnostics.dart';
 
 /// Thin wrappers over the ad (google_mobile_ads) and purchase (in_app_purchase) plugins so screens stay
 /// testable: tests override the providers below and never touch platform channels.
@@ -49,7 +50,10 @@ abstract interface class RewardedAdGateway {
 }
 
 class GoogleRewardedAdGateway implements RewardedAdGateway {
-  GoogleRewardedAdGateway({required this.personalized});
+  GoogleRewardedAdGateway({required this.personalized, this.onLoad});
+
+  /// Reports each load result (stage `load_rewarded`) to [AdDiagnostics].
+  final void Function(bool ok, {Object? code, String detail})? onLoad;
 
   final bool Function() personalized;
   static Future<InitializationStatus>? _init;
@@ -65,8 +69,14 @@ class GoogleRewardedAdGateway implements RewardedAdGateway {
         adUnitId: _unit,
         request: AdRequest(nonPersonalizedAds: !personalized()),
         rewardedAdLoadCallback: RewardedAdLoadCallback(
-          onAdLoaded: loaded.complete,
-          onAdFailedToLoad: (error) => loaded.completeError(error),
+          onAdLoaded: (ad) {
+            onLoad?.call(true);
+            loaded.complete(ad);
+          },
+          onAdFailedToLoad: (error) {
+            onLoad?.call(false, code: error.code, detail: error.message);
+            loaded.completeError(error);
+          },
         ),
       );
       final ad = await loaded.future.timeout(const Duration(seconds: 20));
@@ -94,6 +104,8 @@ class GoogleRewardedAdGateway implements RewardedAdGateway {
 final rewardedAdGatewayProvider = Provider<RewardedAdGateway>(
   (ref) => GoogleRewardedAdGateway(
     personalized: () => ref.read(sharedPrefsProvider).getBool(personalizedAdsPrefKey) ?? true,
+    onLoad: (ok, {code, detail = ''}) =>
+        ref.read(adDiagnosticsProvider).report('load_rewarded', ok: ok, code: code, detail: detail),
   ),
 );
 
@@ -114,10 +126,16 @@ abstract interface class AdConsentGateway {
   /// Returns whether ads may be requested.
   Future<bool> gather();
 
+  /// Why the last consent update failed (`<code>: <message>`), or null.
+  String? get lastError;
+
   Future<void> showPrivacyOptions();
 }
 
 class UmpConsentGateway implements AdConsentGateway {
+  @override
+  String? lastError;
+
   @override
   Future<AdConsentState> refresh() async {
     final info = ConsentInformation.instance;
@@ -125,7 +143,7 @@ class UmpConsentGateway implements AdConsentGateway {
     info.requestConsentInfoUpdate(
       ConsentRequestParameters(),
       () => updated.complete(),
-      (error) => updated.completeError(error.message),
+      (error) => updated.completeError('${error.errorCode}: ${error.message}'),
     );
     await updated.future.timeout(const Duration(seconds: 10));
     final status = await info.getPrivacyOptionsRequirementStatus();
@@ -137,10 +155,17 @@ class UmpConsentGateway implements AdConsentGateway {
 
   @override
   Future<bool> gather() async {
-    await refresh();
-    final done = Completer<void>();
-    ConsentForm.loadAndShowConsentFormIfRequired((error) => done.complete());
-    await done.future;
+    // Google's UMP flow: a failed update (offline, timeout, publisher misconfiguration) still falls back to
+    // canRequestAds(), which reflects the consent status cached from an earlier run.
+    lastError = null;
+    try {
+      await refresh();
+      final done = Completer<void>();
+      ConsentForm.loadAndShowConsentFormIfRequired((error) => done.complete());
+      await done.future;
+    } catch (e) {
+      lastError = '$e';
+    }
     return ConsentInformation.instance.canRequestAds();
   }
 
@@ -162,9 +187,14 @@ final adConsentGatewayProvider = Provider<AdConsentGateway>((ref) => UmpConsentG
 
 /// Gathered once per app run from the main shell; ad loads wait for it and are skipped without consent.
 final adConsentProvider = FutureProvider<bool>((ref) async {
+  final gateway = ref.read(adConsentGatewayProvider);
+  final diagnostics = ref.read(adDiagnosticsProvider);
   try {
-    return await ref.read(adConsentGatewayProvider).gather();
-  } catch (_) {
+    final allowed = await gateway.gather();
+    diagnostics.report('consent', ok: allowed, detail: gateway.lastError ?? '');
+    return allowed;
+  } catch (e) {
+    diagnostics.report('consent', ok: false, detail: '$e');
     return false;
   }
 });

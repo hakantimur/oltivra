@@ -41,6 +41,7 @@ Future<(InterstitialController, _FakeInterstitials)> _setup({
   bool removeAds = false,
   int every = 3,
   bool consent = true,
+  List<bool>? consents,
 }) async {
   SharedPreferences.setMockInitialValues({});
   final prefs = await SharedPreferences.getInstance();
@@ -51,7 +52,7 @@ Future<(InterstitialController, _FakeInterstitials)> _setup({
       interstitialAdGatewayProvider.overrideWithValue(ads),
       sessionProvider.overrideWith(() => _Session(removeAds)),
       clientConfigProvider.overrideWith((ref) async => {'ad_gate_every_matches': every}),
-      adConsentProvider.overrideWith((ref) async => consent),
+      adConsentProvider.overrideWith((ref) async => consents == null ? consent : consents.removeAt(0)),
     ],
   );
   addTearDown(c.dispose);
@@ -123,6 +124,14 @@ void main() {
     await _complete(ctl, 5);
     expect(ctl.breakDue(), isFalse);
     expect(ads.preloads, 0);
+  });
+
+  test('consent that failed at startup is gathered again before the next preload', () async {
+    final (ctl, ads) = await _setup(consents: [false, true]);
+    ctl.preload();
+    await Future<void>.delayed(Duration.zero);
+    await Future<void>.delayed(Duration.zero);
+    expect(ads.preloads, 1);
   });
 
   test('a zero rhythm from the server turns ad breaks off', () async {
