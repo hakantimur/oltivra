@@ -246,3 +246,39 @@ def test_app_check_monitor_mode_logs_but_never_rejects():
     asyncio.run(monitor.verify(None))
     asyncio.run(monitor.verify("bad"))
     asyncio.run(monitor.verify("valid-app-check"))
+
+
+def test_app_check_monitor_logs_reason_and_client(caplog):
+    import asyncio
+    import json
+    import logging
+
+    from app.auth.verifiers import MonitorAppCheck, StaticAppCheck
+    from app.common.logging import JsonFormatter, client_var
+
+    monitor = MonitorAppCheck(StaticAppCheck())
+    token = client_var.set("android/9")
+    try:
+        with caplog.at_level(logging.WARNING):
+            asyncio.run(monitor.verify(None))
+            asyncio.run(monitor.verify("not-a-jwt"))
+        lines = [json.loads(JsonFormatter().format(r)) for r in caplog.records]
+    finally:
+        client_var.reset(token)
+    assert [line["has_token"] for line in lines] == [False, True]
+    assert lines[0]["reason"] == "missing_token" and lines[0]["token_app"] == "-"
+    assert lines[1]["token_app"] == "malformed"
+    assert all(line["client"] == "android/9" for line in lines)
+    assert all("not-a-jwt" not in json.dumps(line) for line in lines)
+
+
+def test_request_logs_carry_client_headers():
+    from app.main import _client
+
+    class _Req:
+        def __init__(self, headers):
+            self.headers = headers
+
+    assert _client(_Req({"x-client-platform": "ios", "x-client-build": "12"})) == "ios/12"
+    assert _client(_Req({})) == "-"
+    assert _client(_Req({"x-client-platform": "a" * 100})) == "a" * 16 + "/?"

@@ -22,8 +22,15 @@ final authStateProvider = StreamProvider<AuthUser?>((ref) async* {
   yield* auth.changes;
 });
 
+/// `x-client-platform` / `x-client-build`; overridden in `main()` once the package info has loaded.
+final clientHeadersProvider = Provider<Map<String, String>>((ref) => const {});
+
 final apiClientProvider = Provider<ApiClient>(
-  (ref) => ApiClient(baseUrl: Uri.parse(Env.apiBaseUrl), tokens: ref.watch(authServiceProvider)),
+  (ref) => ApiClient(
+    baseUrl: Uri.parse(Env.apiBaseUrl),
+    tokens: ref.watch(authServiceProvider),
+    clientHeaders: ref.watch(clientHeadersProvider),
+  ),
 );
 
 // ------------------------------------------------------------------------------------------ locale

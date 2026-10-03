@@ -13,12 +13,19 @@ from fastapi.responses import JSONResponse
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
 from app.common.errors import ApiError, ErrorCode
-from app.common.logging import configure_logging, request_id_var
+from app.common.logging import client_var, configure_logging, request_id_var
 from app.common.settings import Settings
 from app.container import Container
 from app.routers import register_routers
 
 log = logging.getLogger("oltivra.http")
+
+
+def _client(request: Request) -> str:
+    """``<platform>/<build>`` sent by the app; clamped so a hostile header cannot bloat log lines."""
+    platform = request.headers.get("x-client-platform", "")[:16]
+    build = request.headers.get("x-client-build", "")[:16]
+    return f"{platform or '?'}/{build or '?'}" if platform or build else "-"
 
 
 def create_app(container: Container | None = None) -> FastAPI:
@@ -51,11 +58,13 @@ def create_app(container: Container | None = None) -> FastAPI:
         request_id = incoming if 8 <= len(incoming) <= 64 else str(uuid.uuid4())
         request.state.request_id = request_id
         token = request_id_var.set(request_id)
+        client_token = client_var.set(_client(request))
         started = time.perf_counter()
         try:
             response = await call_next(request)
         finally:
             request_id_var.reset(token)
+            client_var.reset(client_token)
         response.headers["x-request-id"] = request_id
         log.info("request", extra={"path": request.url.path, "method": request.method,
                                    "status": response.status_code,

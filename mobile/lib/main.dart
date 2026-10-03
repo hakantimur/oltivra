@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:firebase_app_check/firebase_app_check.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -5,6 +7,7 @@ import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'auth/auth_service.dart';
@@ -18,7 +21,10 @@ import 'theme/app_theme.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final prefs = await SharedPreferences.getInstance();
-  final overrides = [sharedPrefsProvider.overrideWithValue(prefs)];
+  final overrides = [
+    sharedPrefsProvider.overrideWithValue(prefs),
+    clientHeadersProvider.overrideWithValue(await _clientHeaders()),
+  ];
   if (!Env.fakeAuth || !Env.pollLive) {
     await Firebase.initializeApp(
       options: const FirebaseOptions(
@@ -38,6 +44,15 @@ Future<void> main() async {
     }
   }
   runApp(ProviderScope(overrides: overrides, child: const OltivraApp()));
+}
+
+Future<Map<String, String>> _clientHeaders() async {
+  try {
+    final info = await PackageInfo.fromPlatform();
+    return {'x-client-platform': Platform.operatingSystem, 'x-client-build': info.buildNumber};
+  } catch (_) {
+    return const {};
+  }
 }
 
 /// Activates App Check and returns the token source for API calls. A missing token never blocks a request here;
