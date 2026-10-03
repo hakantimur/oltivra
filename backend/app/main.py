@@ -62,13 +62,14 @@ def create_app(container: Container | None = None) -> FastAPI:
         started = time.perf_counter()
         try:
             response = await call_next(request)
+            response.headers["x-request-id"] = request_id
+            # Logged before the context vars reset so the line carries this request's id and client.
+            log.info("request", extra={"path": request.url.path, "method": request.method,
+                                       "status": response.status_code,
+                                       "latency_ms": round((time.perf_counter() - started) * 1000, 1)})
         finally:
             request_id_var.reset(token)
             client_var.reset(client_token)
-        response.headers["x-request-id"] = request_id
-        log.info("request", extra={"path": request.url.path, "method": request.method,
-                                   "status": response.status_code,
-                                   "latency_ms": round((time.perf_counter() - started) * 1000, 1)})
         return response
 
     def _rid(request: Request) -> str:

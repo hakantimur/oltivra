@@ -282,3 +282,33 @@ def test_request_logs_carry_client_headers():
     assert _client(_Req({"x-client-platform": "ios", "x-client-build": "12"})) == "ios/12"
     assert _client(_Req({})) == "-"
     assert _client(_Req({"x-client-platform": "a" * 100})) == "a" * 16 + "/?"
+
+
+def test_request_log_line_carries_request_id_and_client():
+    import json
+    import logging
+
+    from fastapi.testclient import TestClient
+
+    from app.common.logging import JsonFormatter
+    from app.main import create_app
+
+    lines: list[dict] = []
+
+    class _Capture(logging.Handler):
+        def emit(self, record: logging.LogRecord) -> None:  # formats at emit time, like the stdout handler
+            lines.append(json.loads(JsonFormatter().format(record)))
+
+    handler, http_log = _Capture(), logging.getLogger("oltivra.http")
+    level = http_log.level
+    http_log.addHandler(handler)
+    http_log.setLevel(logging.INFO)
+    try:
+        with TestClient(create_app()) as client:
+            client.get("/legal/privacy", headers={"x-request-id": "req-12345678",
+                                                  "x-client-platform": "ios", "x-client-build": "3"})
+    finally:
+        http_log.removeHandler(handler)
+        http_log.setLevel(level)
+    request_lines = [line for line in lines if line["message"] == "request"]
+    assert request_lines[-1]["request_id"] == "req-12345678" and request_lines[-1]["client"] == "ios/3"
