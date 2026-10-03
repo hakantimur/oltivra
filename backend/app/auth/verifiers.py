@@ -102,8 +102,29 @@ class MonitorAppCheck:
     async def verify(self, token: str | None) -> None:
         try:
             await self._inner.verify(token)
-        except ApiError:
-            _log.warning("app_check_monitor_failure", extra={"has_token": bool(token)})
+        except ApiError as err:
+            _log.warning("app_check_monitor_failure", extra={
+                "has_token": bool(token), "reason": _failure_reason(err), "token_app": _token_app(token)})
+
+
+def _failure_reason(err: ApiError) -> str:
+    """Why verification failed, without the token itself (the cause is the Firebase Admin error, if any)."""
+    cause = err.__cause__
+    if cause is None:
+        return "missing_token"
+    return f"{type(cause).__name__}: {str(cause)[:160]}"
+
+
+def _token_app(token: str | None) -> str:
+    """The Firebase app id (``sub``) claimed by an unverified token — tells Android, iOS and debug clients apart."""
+    if not token:
+        return "-"
+    try:
+        import jwt
+
+        return str(jwt.decode(token, options={"verify_signature": False}).get("sub", "?"))[:80]
+    except Exception:  # noqa: BLE001 - a malformed token is itself the answer
+        return "malformed"
 
 
 class FirebaseAppCheck:

@@ -9,12 +9,15 @@ import sys
 from typing import Any
 
 request_id_var: contextvars.ContextVar[str] = contextvars.ContextVar("request_id", default="-")
+# "<platform>/<build>" from the app's x-client-platform / x-client-build headers ("-" when absent: builds <= 8).
+client_var: contextvars.ContextVar[str] = contextvars.ContextVar("client", default="-")
 
 _REDACT_KEYS = {"authorization", "token", "id_token", "app_check", "purchase_token", "signed_image_url",
                 "signed_media_fallback_url_if_needed", "correct_concept_id", "secret", "password",
                 "signature", "jws", "x-firebase-appcheck"}
 _SAFE_EXTRA = {"match_id", "shard_id", "action", "state_version", "latency_ms", "outcome", "uid_ref",
-               "task", "attempt", "path", "method", "status", "task_kind", "round_id", "config_version"}
+               "task", "attempt", "path", "method", "status", "task_kind", "round_id", "config_version",
+               "has_token", "reason", "token_app"}
 
 
 def redact(value: Any) -> Any:
@@ -32,6 +35,7 @@ class JsonFormatter(logging.Formatter):
             "message": record.getMessage(),
             "logger": record.name,
             "request_id": request_id_var.get(),
+            "client": client_var.get(),
         }
         for key in _SAFE_EXTRA:
             if hasattr(record, key):

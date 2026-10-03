@@ -30,12 +30,20 @@ abstract interface class TokenSource {
 typedef Json = Map<String, dynamic>;
 
 class ApiClient {
-  ApiClient({required this.baseUrl, required this.tokens, http.Client? client, this.timeout = const Duration(seconds: 12)})
-      : _http = client ?? http.Client();
+  ApiClient({
+    required this.baseUrl,
+    required this.tokens,
+    http.Client? client,
+    this.timeout = const Duration(seconds: 12),
+    this.clientHeaders = const {},
+  }) : _http = client ?? http.Client();
 
   final Uri baseUrl;
   final TokenSource tokens;
   final Duration timeout;
+
+  /// Sent with every request (`x-client-platform`, `x-client-build`) so server logs can tell app builds apart.
+  final Map<String, String> clientHeaders;
   final http.Client _http;
   static const _uuid = Uuid();
 
@@ -59,7 +67,7 @@ class ApiClient {
   Future<Json> _send(String method, String path,
       {Json? body, String? requestId, Map<String, String>? query, bool retriedAuth = false}) async {
     final uri = baseUrl.replace(path: '${baseUrl.path}$path', queryParameters: query);
-    final headers = <String, String>{'accept': 'application/json'};
+    final headers = <String, String>{'accept': 'application/json', ...clientHeaders};
     final token = await tokens.idToken(forceRefresh: retriedAuth);
     if (token != null) headers['authorization'] = 'Bearer $token';
     final appCheck = await tokens.appCheckToken();
