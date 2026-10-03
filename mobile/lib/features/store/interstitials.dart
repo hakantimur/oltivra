@@ -6,6 +6,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 import '../../core/providers.dart';
+import 'ad_diagnostics.dart';
 import 'store_services.dart';
 
 /// Ad break policy (playtest 2026-09-27, replaces the per-result interstitial of spec §31.1):
@@ -38,7 +39,10 @@ const interstitialAdUnitIos = String.fromEnvironment(
 );
 
 class GoogleInterstitialAdGateway implements InterstitialAdGateway {
-  GoogleInterstitialAdGateway({required this.personalized});
+  GoogleInterstitialAdGateway({required this.personalized, this.onLoad});
+
+  /// Reports each load result (stage `load_interstitial`) to [AdDiagnostics].
+  final void Function(bool ok, {Object? code, String detail})? onLoad;
 
   final bool Function() personalized;
   InterstitialAd? _ad;
@@ -63,12 +67,17 @@ class GoogleInterstitialAdGateway implements InterstitialAdGateway {
             onAdLoaded: (ad) {
               _ad = ad;
               _loading = false;
+              onLoad?.call(true);
             },
-            onAdFailedToLoad: (_) => _loading = false,
+            onAdFailedToLoad: (error) {
+              _loading = false;
+              onLoad?.call(false, code: error.code, detail: error.message);
+            },
           ),
         );
-      } catch (_) {
+      } catch (e) {
         _loading = false;
+        onLoad?.call(false, code: 'exception', detail: '$e');
       }
     }());
   }
@@ -102,6 +111,8 @@ class GoogleInterstitialAdGateway implements InterstitialAdGateway {
 final interstitialAdGatewayProvider = Provider<InterstitialAdGateway>(
   (ref) => GoogleInterstitialAdGateway(
     personalized: () => ref.read(sharedPrefsProvider).getBool(personalizedAdsPrefKey) ?? true,
+    onLoad: (ok, {code, detail = ''}) =>
+        ref.read(adDiagnosticsProvider).report('load_interstitial', ok: ok, code: code, detail: detail),
   ),
 );
 
@@ -124,9 +135,19 @@ class InterstitialController {
   int get completedSinceBreak => _ref.read(sharedPrefsProvider).getInt(adGateCountPrefKey) ?? 0;
 
   /// Warm up during gameplay so an ad can be ready for the next break (only once consent allows ads).
+  /// Consent that failed earlier in this run is gathered again first, so one bad start does not disable ads
+  /// until the app restarts.
   void preload() {
-    if (!_adsAllowed) return;
-    _ref.read(interstitialAdGatewayProvider).preload();
+    if (_adFree) return;
+    final consent = _ref.read(adConsentProvider);
+    if (consent.value == true) {
+      _ref.read(interstitialAdGatewayProvider).preload();
+      return;
+    }
+    if (!consent.isLoading) _ref.invalidate(adConsentProvider);
+    unawaited(_ref.read(adConsentProvider.future).then((allowed) {
+      if (allowed && !_adFree) _ref.read(interstitialAdGatewayProvider).preload();
+    }, onError: (_) {}));
   }
 
   /// Counts a completed match once (idempotent per match id).

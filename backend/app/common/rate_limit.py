@@ -30,6 +30,7 @@ SYNC = Limit("sync", 20, 15)
 SYNC_EVENT = Limit("sync_event", 1, 60)
 REWARD_OFFER = Limit("reward_offer", 10, 3_600)
 PING = Limit("ping", 30, 60)
+AD_DIAGNOSTIC = Limit("ad_diagnostic", 20, 3_600)
 GENERIC_WRITE = Limit("generic_write", 60, 60)
 WEB_DELETE = Limit("web_delete", 5, 3_600)
 

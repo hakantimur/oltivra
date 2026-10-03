@@ -17,7 +17,7 @@ _REDACT_KEYS = {"authorization", "token", "id_token", "app_check", "purchase_tok
                 "signature", "jws", "x-firebase-appcheck"}
 _SAFE_EXTRA = {"match_id", "shard_id", "action", "state_version", "latency_ms", "outcome", "uid_ref",
                "task", "attempt", "path", "method", "status", "task_kind", "round_id", "config_version",
-               "has_token", "reason", "token_app"}
+               "has_token", "reason", "token_app", "stage", "ok", "code", "detail"}
 
 
 def redact(value: Any) -> Any:

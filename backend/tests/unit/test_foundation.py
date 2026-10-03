@@ -312,3 +312,34 @@ def test_request_log_line_carries_request_id_and_client():
         http_log.setLevel(level)
     request_lines = [line for line in lines if line["message"] == "request"]
     assert request_lines[-1]["request_id"] == "req-12345678" and request_lines[-1]["client"] == "ios/3"
+
+
+def test_ad_diagnostic_is_logged_with_client(api):
+    import json
+    import logging
+
+    from app.common.logging import JsonFormatter
+
+    lines: list[dict] = []
+
+    class _Capture(logging.Handler):
+        def emit(self, record: logging.LogRecord) -> None:
+            lines.append(json.loads(JsonFormatter().format(record)))
+
+    handler, ads_log = _Capture(), logging.getLogger("oltivra.ads")
+    level = ads_log.level
+    ads_log.addHandler(handler)
+    ads_log.setLevel(logging.INFO)
+    try:
+        res = api.client.post(
+            "/v1/diagnostics/ads",
+            json={"stage": "consent", "ok": False, "code": "3", "detail": "Publisher misconfiguration",
+                  "request_id": "r-1"},
+            headers={**api.headers("u1"), "x-client-platform": "android", "x-client-build": "9"})
+    finally:
+        ads_log.removeHandler(handler)
+        ads_log.setLevel(level)
+    assert res.status_code == 204
+    line = next(line for line in lines if line["message"] == "ad_diagnostic")
+    assert (line["stage"], line["ok"], line["code"], line["client"]) == ("consent", False, "3", "android/9")
+    assert api.post("/v1/diagnostics/ads", "u1", {"stage": "nope", "ok": True}).status_code == 400
