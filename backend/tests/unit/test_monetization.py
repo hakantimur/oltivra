@@ -295,7 +295,8 @@ def test_app_store_server_api_token_is_es256_with_bundle():
     pem = key.private_bytes(serialization.Encoding.PEM, serialization.PrivateFormat.PKCS8,
                             serialization.NoEncryption()).decode()
     client = AppStoreServerApiClient(issuer_id="iss-1", key_id="KEY123", private_key_pem=pem,
-                                     bundle_id="com.noriloop.oltivra", environment="Sandbox", clock=lambda: 1_800_000_000)
+                                     bundle_id="com.noriloop.oltivra", environment="Sandbox",
+                                     clock=lambda: 1_800_000_000)
     token = client.token()
     assert jwt.get_unverified_header(token)["kid"] == "KEY123"
     claims = jwt.decode(token, key.public_key(), algorithms=["ES256"], audience="appstoreconnect-v1",
