@@ -363,6 +363,7 @@ class Container:
     def purchases(self):
         from app.purchases.service import PurchaseService
         from app.purchases.verifiers import (
+            BUNDLED_APPLE_ROOT,
             AppleJwsVerifier,
             AppStoreServerApiClient,
             FakeAppleStore,
@@ -373,7 +374,7 @@ class Container:
 
         s = self.settings
         if s.purchase_verify_mode == "store":
-            paths = [p.strip() for p in s.apple_root_cert_paths.split(",") if p.strip()]
+            paths = [p.strip() for p in s.apple_root_cert_paths.split(",") if p.strip()] or [BUNDLED_APPLE_ROOT]
             store = None
             if s.apple_private_key_path:
                 with open(s.apple_private_key_path, encoding="utf-8") as fh:

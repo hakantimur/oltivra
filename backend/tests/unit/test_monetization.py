@@ -211,7 +211,7 @@ def test_unknown_product_rejected(players):
 
 
 def apple_payload(**extra):
-    return {"transactionId": "2000001", "originalTransactionId": "2000001", "bundleId": "com.oltivra.app",
+    return {"transactionId": "2000001", "originalTransactionId": "2000001", "bundleId": "com.noriloop.oltivra",
             "productId": "remove_ads_forever", "inAppOwnershipType": "PURCHASED", "environment": "Sandbox", **extra}
 
 
@@ -220,12 +220,12 @@ def test_apple_purchase_refund_and_restore(players, container, client):
     res = players.post("/v1/purchases/verify/apple", "u1", {"signed_transaction": fake.encode(apple_payload())})
     assert res.json()["remove_ads"] is True
     notification = fake.encode({"notificationType": "REFUND", "data": {
-        "bundleId": "com.oltivra.app", "signedTransactionInfo": fake.encode(apple_payload(revocationDate=1))}})
+        "bundleId": "com.noriloop.oltivra", "signedTransactionInfo": fake.encode(apple_payload(revocationDate=1))}})
     assert client.post("/internal/purchases/apple-notifications", json={"signedPayload": notification}).status_code \
         == 200
     assert players.get("/v1/purchases/entitlements", "u1").json()["remove_ads"] is False
     reversed_ = fake.encode({"notificationType": "REFUND_REVERSED", "data": {
-        "bundleId": "com.oltivra.app", "signedTransactionInfo": fake.encode(apple_payload())}})
+        "bundleId": "com.noriloop.oltivra", "signedTransactionInfo": fake.encode(apple_payload())}})
     client.post("/internal/purchases/apple-notifications", json={"signedPayload": reversed_})
     assert players.get("/v1/purchases/entitlements", "u1").json()["remove_ads"] is True
 
@@ -295,9 +295,18 @@ def test_app_store_server_api_token_is_es256_with_bundle():
     pem = key.private_bytes(serialization.Encoding.PEM, serialization.PrivateFormat.PKCS8,
                             serialization.NoEncryption()).decode()
     client = AppStoreServerApiClient(issuer_id="iss-1", key_id="KEY123", private_key_pem=pem,
-                                     bundle_id="com.oltivra.app", environment="Sandbox", clock=lambda: 1_800_000_000)
+                                     bundle_id="com.noriloop.oltivra", environment="Sandbox", clock=lambda: 1_800_000_000)
     token = client.token()
     assert jwt.get_unverified_header(token)["kid"] == "KEY123"
     claims = jwt.decode(token, key.public_key(), algorithms=["ES256"], audience="appstoreconnect-v1",
                         options={"verify_exp": False, "verify_iat": False})
-    assert claims["bid"] == "com.oltivra.app" and claims["iss"] == "iss-1"
+    assert claims["bid"] == "com.noriloop.oltivra" and claims["iss"] == "iss-1"
+
+
+def test_store_mode_pins_the_bundled_apple_root_certificate():
+    from app.common.settings import Settings
+    from app.container import Container
+
+    container = Container(Settings(purchase_verify_mode="store"))
+    (fingerprint,) = container.purchases.apple._roots
+    assert fingerprint.hex() == "63343abfb89a6a03ebb57e9b3f5fa7be7c4f5c756f3017b3a8c488c3653e9179"
