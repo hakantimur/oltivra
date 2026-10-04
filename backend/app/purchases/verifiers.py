@@ -11,6 +11,7 @@ import base64
 import datetime as dt
 import json
 from dataclasses import dataclass
+from pathlib import Path
 from typing import Any, Protocol
 
 import anyio
@@ -23,6 +24,9 @@ from app.common.errors import ApiError, ErrorCode
 
 PLAY_API = "https://androidpublisher.googleapis.com/androidpublisher/v3/applications"
 PLAY_SCOPE = "https://www.googleapis.com/auth/androidpublisher"
+# Apple Root CA - G3, pinned for App Store signed transactions (public, from apple.com/certificateauthority).
+BUNDLED_APPLE_ROOT = str(Path(__file__).parent / "certs" / "AppleRootCA-G3.cer")
+
 _PURCHASE_STATES = {0: "PURCHASED", 1: "CANCELLED", 2: "PENDING"}
 
 

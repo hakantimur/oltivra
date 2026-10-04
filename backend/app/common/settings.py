@@ -69,8 +69,9 @@ class Settings(BaseSettings):
     admob_ssv_mode: Literal["google", "fake"] = "fake"
     purchase_verify_mode: Literal["store", "fake"] = "fake"
     google_play_package: str = "com.noriloop.oltivra"
-    apple_bundle_id: str = "com.oltivra.app"
-    # Comma separated paths to pinned Apple root certificates (e.g. AppleRootCA-G3.cer), mounted from secrets.
+    apple_bundle_id: str = "com.noriloop.oltivra"
+    # Comma separated paths to pinned Apple root certificates; empty uses the bundled Apple Root CA - G3
+    # (app/purchases/certs/AppleRootCA-G3.cer, SHA-256 63343abf…9179, valid until 2039).
     apple_root_cert_paths: str = ""
     # App Store Server API (reconciliation); the .p8 key is mounted from Secret Manager.
     apple_issuer_id: str = ""
