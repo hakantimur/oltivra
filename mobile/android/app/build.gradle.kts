@@ -1,3 +1,4 @@
+import java.util.Base64
 import java.util.Properties
 
 plugins {
@@ -12,10 +13,25 @@ val keystoreProperties = Properties().apply {
     if (file.exists()) file.inputStream().use { load(it) }
 }
 
+// `--dart-define` values (Flutter passes them base64-encoded in the `dart-defines` property).
+val dartDefines: Map<String, String> = (project.findProperty("dart-defines") as String?)
+    ?.split(",")
+    ?.mapNotNull { encoded ->
+        val pair = String(Base64.getDecoder().decode(encoded)).split("=", limit = 2)
+        if (pair.size == 2) pair[0] to pair[1] else null
+    }
+    ?.toMap()
+    ?: emptyMap()
+
 android {
     namespace = "com.noriloop.oltivra"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
+
+    buildFeatures {
+        // Firebase config resources (google_app_id, ...) below.
+        resValues = true
+    }
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
@@ -38,6 +54,16 @@ android {
         // Real AdMob app ID: `-PadmobAppId=ca-app-pub-...~...` or `admobAppId=` in android/gradle.properties.
         manifestPlaceholders["admobAppId"] =
             (project.findProperty("admobAppId") as String?) ?: "ca-app-pub-3940256099942544~3347511713"
+        // Firebase Analytics reads its config from Android resources at process start (Dart-side
+        // `Firebase.initializeApp` comes too late for it), so real builds get the same values the Dart side uses.
+        // The default app then starts natively with identical options, which `Firebase.initializeApp` accepts.
+        val firebaseAppId = dartDefines["FIREBASE_APP_ID"]
+        if (dartDefines["USE_EMULATORS"] == "false" && firebaseAppId != null) {
+            resValue("string", "google_app_id", firebaseAppId)
+            resValue("string", "google_api_key", dartDefines["FIREBASE_API_KEY"] ?: "")
+            resValue("string", "gcm_defaultSenderId", dartDefines["FIREBASE_SENDER_ID"] ?: "")
+            resValue("string", "project_id", dartDefines["FIREBASE_PROJECT_ID"] ?: "")
+        }
     }
 
     signingConfigs {
