@@ -11,6 +11,7 @@ import 'package:package_info_plus/package_info_plus.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'auth/auth_service.dart';
+import 'core/analytics.dart';
 import 'core/env.dart';
 import 'core/push.dart';
 import 'core/providers.dart';
@@ -38,6 +39,7 @@ Future<void> main() async {
       await FirebaseAuth.instance.useAuthEmulator(Env.emulatorHost, 9099);
       FirebaseDatabase.instance.useDatabaseEmulator(Env.emulatorHost, 9000);
     }
+    if (!Env.useEmulators) overrides.add(analyticsProvider.overrideWithValue(FirebaseAnalyticsService()));
     if (!Env.fakeAuth) {
       final appCheck = await _activateAppCheck();
       overrides.add(authServiceProvider.overrideWithValue(FirebaseAuthService(appCheck: appCheck)));

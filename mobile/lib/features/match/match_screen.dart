@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../core/analytics.dart';
 import '../../core/providers.dart';
 import '../../l10n/strings.dart';
 import '../../live/match_live_source.dart';
@@ -37,6 +38,7 @@ class _MatchScreenState extends ConsumerState<MatchScreen> {
   Timer? _ticker;
   bool _rematching = false;
   bool _counted = false;
+  bool _levelLogged = false;
   bool _adPreloaded = false;
 
   String get _id => widget.matchId;
@@ -134,6 +136,16 @@ class _MatchScreenState extends ConsumerState<MatchScreen> {
     );
   }
 
+  /// Once per match, when the settlement shows a new level (same rule as the result screen's level-up line).
+  void _logLevelUp(MatchSnapshot s) {
+    if (_levelLogged || s.settlementStatus != 'SETTLED') return;
+    _levelLogged = true;
+    final settlement = s.settlement;
+    final before = (settlement?['progress_level_before'] as num?)?.toInt();
+    final after = (settlement?['progress_level_after'] as num?)?.toInt();
+    if (before != null && after != null && after > before) ref.read(analyticsProvider).levelUp(level: after);
+  }
+
   Widget _content(MatchViewData data, MatchUi ui) {
     final s = data.s;
     if (s.isTerminal) {
@@ -141,7 +153,9 @@ class _MatchScreenState extends ConsumerState<MatchScreen> {
         // Completed matches drive the ad break rhythm (every N matches, see InterstitialController).
         _counted = true;
         unawaited(ref.read(interstitialControllerProvider).recordCompleted(_id));
+        ref.read(analyticsProvider).matchCompleted(mode: s.mode);
       }
+      _logLevelUp(s);
       return FinalResultView(
         snapshot: s,
         nowMs: data.nowMs,

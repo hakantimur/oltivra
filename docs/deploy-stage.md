@@ -62,6 +62,10 @@ flutter build appbundle --release \
   --dart-define=FIREBASE_SENDER_ID=269747180478 --dart-define=GOOGLE_SERVER_CLIENT_ID=<web oauth client id> \n  --dart-define=ADMOB_INTERSTITIAL_ANDROID=ca-app-pub-8532987166068354/4350238650 \n  --dart-define=ADMOB_REWARDED_ANDROID=ca-app-pub-8532987166068354/7801389346
 ```
 
+Firebase Analytics (events `match_completed`, `level_up` for Google Ads app campaigns) needs `google_app_id` & co. as
+Android resources; `android/app/build.gradle.kts` derives them from the same `--dart-define`s when
+`USE_EMULATORS=false`, so no `google-services.json` is committed.
+
 The AdMob app ID lives in `mobile/android/gradle.properties` (`admobAppId`). Debug builds keep Google's sample ad
 units, so never tap real ads while developing.
 
